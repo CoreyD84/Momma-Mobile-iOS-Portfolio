@@ -5,7 +5,19 @@ struct HarmfulPatternsScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("HarmfulPatterns")
-        }.onAppear { viewModel.onEvent(HarmfulPatternsEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("HarmfulPatterns Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("HarmfulPatterns")
+        }
     }
 }

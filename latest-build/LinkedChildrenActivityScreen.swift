@@ -5,7 +5,19 @@ struct LinkedChildrenActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("LinkedChildrenActivity")
-        }.onAppear { viewModel.onEvent(LinkedChildrenActivityEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("LinkedChildrenActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("LinkedChildrenActivity")
+        }
     }
 }

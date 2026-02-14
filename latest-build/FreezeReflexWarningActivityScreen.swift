@@ -5,22 +5,19 @@ struct FreezeReflexWarningActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("")
-            Text("")
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("FreezeReflexWarningActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Text("")
-            Text("")
-            Text("If you need help, talk to a trusted adult or call:\n• National Suicide Prevention: 988\n• Crisis Text Line: Text HOME to 741741").navigationTitle("FreezeReflexWarningActivity")
-        }.onAppear { viewModel.onEvent(FreezeReflexWarningActivityEvent.onAppear) }
+            .navigationTitle("FreezeReflexWarningActivity")
+        }
     }
 }

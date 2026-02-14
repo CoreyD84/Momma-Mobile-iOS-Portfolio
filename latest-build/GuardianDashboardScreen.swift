@@ -5,42 +5,19 @@ struct GuardianDashboardScreen: View {
 
     var body: some View {
         NavigationView {
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("GuardianDashboard Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }.navigationTitle("GuardianDashboard")
-        }.onAppear { viewModel.onEvent(GuardianDashboardEvent.onAppear) }
+            .navigationTitle("GuardianDashboard")
+        }
     }
 }

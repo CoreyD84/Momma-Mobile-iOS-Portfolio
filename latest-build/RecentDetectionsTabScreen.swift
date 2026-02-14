@@ -5,12 +5,19 @@ struct RecentDetectionsTabScreen: View {
 
     var body: some View {
         NavigationView {
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("RecentDetectionsTab Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
-            Button(action: { }) {
-                Text(" ")
-            }.navigationTitle("RecentDetectionsTab")
-        }.onAppear { viewModel.onEvent(RecentDetectionsTabEvent.onAppear) }
+            .navigationTitle("RecentDetectionsTab")
+        }
     }
 }

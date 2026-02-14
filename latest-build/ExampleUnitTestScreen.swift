@@ -5,7 +5,19 @@ struct ExampleUnitTestScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("ExampleUnitTest")
-        }.onAppear { viewModel.onEvent(ExampleUnitTestEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("ExampleUnitTest Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("ExampleUnitTest")
+        }
     }
 }

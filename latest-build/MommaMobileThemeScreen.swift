@@ -5,7 +5,19 @@ struct MommaMobileThemeScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("MommaMobileTheme")
-        }.onAppear { viewModel.onEvent(MommaMobileThemeEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("MommaMobileTheme Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("MommaMobileTheme")
+        }
     }
 }

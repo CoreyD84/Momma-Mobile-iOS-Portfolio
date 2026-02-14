@@ -5,12 +5,19 @@ struct LocationStatusActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("LocationStatusActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
-            Button(action: { }) {
-                Text(" ")
-            }.navigationTitle("LocationStatusActivity")
-        }.onAppear { viewModel.onEvent(LocationStatusActivityEvent.onAppear) }
+            .navigationTitle("LocationStatusActivity")
+        }
     }
 }

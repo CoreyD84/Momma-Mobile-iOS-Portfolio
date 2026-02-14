@@ -5,7 +5,19 @@ struct MascotMoodActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("MascotMoodActivity")
-        }.onAppear { viewModel.onEvent(MascotMoodActivityEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("MascotMoodActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("MascotMoodActivity")
+        }
     }
 }

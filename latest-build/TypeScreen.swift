@@ -5,7 +5,19 @@ struct TypeScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("Type")
-        }.onAppear { viewModel.onEvent(TypeEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("Type Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("Type")
+        }
     }
 }

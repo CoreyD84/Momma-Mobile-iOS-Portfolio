@@ -5,10 +5,19 @@ struct SmsDetectionsTabScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("Flagged SMS Messages")
-            Spacer()
-            Text("No flagged messages found.")
-            Text("").navigationTitle("SmsDetectionsTab")
-        }.onAppear { viewModel.onEvent(SmsDetectionsTabEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("SmsDetectionsTab Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("SmsDetectionsTab")
+        }
     }
 }

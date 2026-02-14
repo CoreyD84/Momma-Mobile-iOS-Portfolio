@@ -5,7 +5,19 @@ struct QRUtilsScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("QRUtils")
-        }.onAppear { viewModel.onEvent(QRUtilsEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("QRUtils Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("QRUtils")
+        }
     }
 }

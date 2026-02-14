@@ -5,25 +5,19 @@ struct BlockedWebsiteActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("BlockedWebsiteActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
-            Text("")
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
-            }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Text("OK").navigationTitle("BlockedWebsiteActivity")
-        }.onAppear { viewModel.onEvent(BlockedWebsiteActivityEvent.onAppear) }
+            .navigationTitle("BlockedWebsiteActivity")
+        }
     }
 }

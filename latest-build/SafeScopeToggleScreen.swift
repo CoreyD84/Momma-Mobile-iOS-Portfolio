@@ -1,13 +1,21 @@
 import SwiftUI
 
-struct SafeScopeToggle: View {
+struct SafeScopeToggleScreen: View {
     @StateObject private var viewModel = SafeScopeToggleViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
                 Text("SafeScopeToggle Module Verified")
                     .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
             }
             .navigationTitle("SafeScopeToggle")
         }

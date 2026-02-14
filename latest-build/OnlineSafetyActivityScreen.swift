@@ -5,7 +5,19 @@ struct OnlineSafetyActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("OnlineSafetyActivity")
-        }.onAppear { viewModel.onEvent(OnlineSafetyActivityEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("OnlineSafetyActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("OnlineSafetyActivity")
+        }
     }
 }

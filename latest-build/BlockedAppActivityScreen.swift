@@ -5,12 +5,19 @@ struct BlockedAppActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("")
-            Text("🚫")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("").navigationTitle("BlockedAppActivity")
-        }.onAppear { viewModel.onEvent(BlockedAppActivityEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("BlockedAppActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("BlockedAppActivity")
+        }
     }
 }

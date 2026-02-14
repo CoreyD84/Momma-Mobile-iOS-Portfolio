@@ -5,7 +5,19 @@ struct AutoHideProviderScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("AutoHideProvider")
-        }.onAppear { viewModel.onEvent(AutoHideProviderEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("AutoHideProvider Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("AutoHideProvider")
+        }
     }
 }

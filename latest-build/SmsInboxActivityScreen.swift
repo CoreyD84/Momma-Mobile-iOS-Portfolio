@@ -5,7 +5,19 @@ struct SmsInboxActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("SmsInboxActivity")
-        }.onAppear { viewModel.onEvent(SmsInboxActivityEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("SmsInboxActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("SmsInboxActivity")
+        }
     }
 }

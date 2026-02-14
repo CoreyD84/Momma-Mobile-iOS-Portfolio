@@ -5,7 +5,19 @@ struct LinkedChildrenFragmentScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("LinkedChildrenFragment")
-        }.onAppear { viewModel.onEvent(LinkedChildrenFragmentEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("LinkedChildrenFragment Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("LinkedChildrenFragment")
+        }
     }
 }

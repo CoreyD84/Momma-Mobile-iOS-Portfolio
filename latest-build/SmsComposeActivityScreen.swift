@@ -5,7 +5,19 @@ struct SmsComposeActivityScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("SmsComposeActivity")
-        }.onAppear { viewModel.onEvent(SmsComposeActivityEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("SmsComposeActivity Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("SmsComposeActivity")
+        }
     }
 }

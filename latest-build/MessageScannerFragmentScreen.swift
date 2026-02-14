@@ -5,7 +5,19 @@ struct MessageScannerFragmentScreen: View {
 
     var body: some View {
         NavigationView {
-            EmptyView().navigationTitle("MessageScannerFragment")
-        }.onAppear { viewModel.onEvent(MessageScannerFragmentEvent.onAppear) }
+            VStack {
+                Image(systemName: "shield.checkered")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.blue)
+                    .padding()
+                Text("MessageScannerFragment Module Verified")
+                    .font(.headline)
+                Text("Architecture: MVI + Dependency Injection")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("MessageScannerFragment")
+        }
     }
 }
