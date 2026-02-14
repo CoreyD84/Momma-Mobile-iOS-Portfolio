@@ -5,7 +5,7 @@ struct ColorScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("").navigationTitle("Color")
+            EmptyView().navigationTitle("Color")
         }.onAppear { viewModel.onEvent(ColorEvent.onAppear) }
     }
 }
