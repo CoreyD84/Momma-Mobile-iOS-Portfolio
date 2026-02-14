@@ -4,7 +4,7 @@ struct RecentDetectionsTabScreen: View {
     @StateObject private var viewModel = RecentDetectionsTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Button(action: { }) {
                 Text(" ")
             }

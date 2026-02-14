@@ -4,7 +4,7 @@ struct RecentDetectionsActivitiesScreen: View {
     @StateObject private var viewModel = RecentDetectionsActivitiesViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("RecentDetectionsActivities")
         }.onAppear { viewModel.onEvent(RecentDetectionsActivitiesEvent.onAppear) }
     }

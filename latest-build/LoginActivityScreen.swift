@@ -4,7 +4,7 @@ struct LoginActivityScreen: View {
     @StateObject private var viewModel = LoginActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("LoginActivity")
         }.onAppear { viewModel.onEvent(LoginActivityEvent.onAppear) }
     }

@@ -4,7 +4,7 @@ struct LocationSyncScreen: View {
     @StateObject private var viewModel = LocationSyncViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("LocationSync")
         }.onAppear { viewModel.onEvent(LocationSyncEvent.onAppear) }
     }

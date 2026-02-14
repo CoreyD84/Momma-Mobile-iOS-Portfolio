@@ -4,7 +4,7 @@ struct LocationTrackerServiceScreen: View {
     @StateObject private var viewModel = LocationTrackerServiceViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("LocationTrackerService")
         }.onAppear { viewModel.onEvent(LocationTrackerServiceEvent.onAppear) }
     }

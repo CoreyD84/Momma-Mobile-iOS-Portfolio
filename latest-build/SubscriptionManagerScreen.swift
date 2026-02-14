@@ -4,7 +4,7 @@ struct SubscriptionManagerScreen: View {
     @StateObject private var viewModel = SubscriptionManagerViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("SubscriptionManager")
         }.onAppear { viewModel.onEvent(SubscriptionManagerEvent.onAppear) }
     }

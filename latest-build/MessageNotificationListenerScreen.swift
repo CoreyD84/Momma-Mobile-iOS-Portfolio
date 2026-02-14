@@ -4,7 +4,7 @@ struct MessageNotificationListenerScreen: View {
     @StateObject private var viewModel = MessageNotificationListenerViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("MessageNotificationListener")
         }.onAppear { viewModel.onEvent(MessageNotificationListenerEvent.onAppear) }
     }

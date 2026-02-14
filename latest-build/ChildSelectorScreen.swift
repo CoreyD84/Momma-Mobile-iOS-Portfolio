@@ -4,7 +4,7 @@ struct ChildSelectorScreen: View {
     @StateObject private var viewModel = ChildSelectorViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ProgressView()
             Text("")
             Text("")

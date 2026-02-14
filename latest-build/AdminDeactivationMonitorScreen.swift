@@ -4,7 +4,7 @@ struct AdminDeactivationMonitorScreen: View {
     @StateObject private var viewModel = AdminDeactivationMonitorViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("AdminDeactivationMonitor")
         }.onAppear { viewModel.onEvent(AdminDeactivationMonitorEvent.onAppear) }
     }

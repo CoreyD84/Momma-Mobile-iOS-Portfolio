@@ -4,7 +4,7 @@ struct PlatformControlReceiverScreen: View {
     @StateObject private var viewModel = PlatformControlReceiverViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("PlatformControlReceiver")
         }.onAppear { viewModel.onEvent(PlatformControlReceiverEvent.onAppear) }
     }

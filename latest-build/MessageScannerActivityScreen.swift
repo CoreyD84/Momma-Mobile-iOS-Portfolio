@@ -4,7 +4,7 @@ struct MessageScannerActivityScreen: View {
     @StateObject private var viewModel = MessageScannerActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("MessageScannerActivity")
         }.onAppear { viewModel.onEvent(MessageScannerActivityEvent.onAppear) }
     }

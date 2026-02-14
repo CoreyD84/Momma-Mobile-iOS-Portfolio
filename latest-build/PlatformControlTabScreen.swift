@@ -4,7 +4,7 @@ struct PlatformControlTabScreen: View {
     @StateObject private var viewModel = PlatformControlTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Emergency Contacts")
             Spacer()
             Text("Local Police Dept")

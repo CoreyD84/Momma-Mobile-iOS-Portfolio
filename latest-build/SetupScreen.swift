@@ -4,7 +4,7 @@ struct SetupScreen: View {
     @StateObject private var viewModel = SetupViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Spacer()
             Button(action: { }) {
                 Text(" ")

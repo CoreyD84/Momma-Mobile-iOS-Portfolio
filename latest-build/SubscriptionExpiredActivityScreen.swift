@@ -4,7 +4,7 @@ struct SubscriptionExpiredActivityScreen: View {
     @StateObject private var viewModel = SubscriptionExpiredActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("SubscriptionExpiredActivity")
         }.onAppear { viewModel.onEvent(SubscriptionExpiredActivityEvent.onAppear) }
     }

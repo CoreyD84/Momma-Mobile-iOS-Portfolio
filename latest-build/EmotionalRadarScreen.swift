@@ -4,7 +4,7 @@ struct EmotionalRadarScreen: View {
     @StateObject private var viewModel = EmotionalRadarViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("EmotionalRadar")
         }.onAppear { viewModel.onEvent(EmotionalRadarEvent.onAppear) }
     }

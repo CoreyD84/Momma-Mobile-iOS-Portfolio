@@ -4,7 +4,7 @@ struct MessageScannerTabScreen: View {
     @StateObject private var viewModel = MessageScannerTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Message Scanner")
             Spacer()
             Text("Enter message")

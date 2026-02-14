@@ -4,7 +4,7 @@ struct BlockedAppActivityScreen: View {
     @StateObject private var viewModel = BlockedAppActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("")
             Text("🚫")
             Spacer()

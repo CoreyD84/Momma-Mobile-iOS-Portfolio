@@ -4,7 +4,7 @@ struct SmsInboxActivityScreen: View {
     @StateObject private var viewModel = SmsInboxActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("SmsInboxActivity")
         }.onAppear { viewModel.onEvent(SmsInboxActivityEvent.onAppear) }
     }

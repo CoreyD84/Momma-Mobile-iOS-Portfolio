@@ -4,7 +4,7 @@ struct BootReceiverScreen: View {
     @StateObject private var viewModel = BootReceiverViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("BootReceiver")
         }.onAppear { viewModel.onEvent(BootReceiverEvent.onAppear) }
     }

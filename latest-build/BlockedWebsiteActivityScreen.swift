@@ -4,7 +4,7 @@ struct BlockedWebsiteActivityScreen: View {
     @StateObject private var viewModel = BlockedWebsiteActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Button(action: { }) {
                 Text(" ")
             }

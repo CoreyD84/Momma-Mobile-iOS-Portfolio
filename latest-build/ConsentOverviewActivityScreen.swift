@@ -4,7 +4,7 @@ struct ConsentOverviewActivityScreen: View {
     @StateObject private var viewModel = ConsentOverviewActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("ConsentOverviewActivity")
         }.onAppear { viewModel.onEvent(ConsentOverviewActivityEvent.onAppear) }
     }

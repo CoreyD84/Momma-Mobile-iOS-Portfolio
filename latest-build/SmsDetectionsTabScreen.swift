@@ -4,7 +4,7 @@ struct SmsDetectionsTabScreen: View {
     @StateObject private var viewModel = SmsDetectionsTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Flagged SMS Messages")
             Spacer()
             Text("No flagged messages found.")

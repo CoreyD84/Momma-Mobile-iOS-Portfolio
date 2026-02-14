@@ -4,7 +4,7 @@ struct MommaNotificationServiceScreen: View {
     @StateObject private var viewModel = MommaNotificationServiceViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("MommaNotificationService")
         }.onAppear { viewModel.onEvent(MommaNotificationServiceEvent.onAppear) }
     }

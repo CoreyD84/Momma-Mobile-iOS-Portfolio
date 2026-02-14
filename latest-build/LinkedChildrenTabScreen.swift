@@ -4,7 +4,7 @@ struct LinkedChildrenTabScreen: View {
     @StateObject private var viewModel = LinkedChildrenTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Linked Children")
             Spacer()
             Text("No children linked yet. Use the 'Link Child Device' tab to generate a QR code.")

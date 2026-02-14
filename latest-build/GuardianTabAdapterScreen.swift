@@ -4,7 +4,7 @@ struct GuardianTabAdapterScreen: View {
     @StateObject private var viewModel = GuardianTabAdapterViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("GuardianTabAdapter")
         }.onAppear { viewModel.onEvent(GuardianTabAdapterEvent.onAppear) }
     }

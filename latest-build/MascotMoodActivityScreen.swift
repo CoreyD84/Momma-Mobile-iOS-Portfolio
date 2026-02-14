@@ -4,7 +4,7 @@ struct MascotMoodActivityScreen: View {
     @StateObject private var viewModel = MascotMoodActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("MascotMoodActivity")
         }.onAppear { viewModel.onEvent(MascotMoodActivityEvent.onAppear) }
     }

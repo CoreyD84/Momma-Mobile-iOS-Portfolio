@@ -4,7 +4,7 @@ struct FreezeReflexWarningActivityScreen: View {
     @StateObject private var viewModel = FreezeReflexWarningActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("")
             Text("")
             Text("")

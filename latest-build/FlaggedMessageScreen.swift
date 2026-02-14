@@ -4,7 +4,7 @@ struct FlaggedMessageScreen: View {
     @StateObject private var viewModel = FlaggedMessageViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("FlaggedMessage")
         }.onAppear { viewModel.onEvent(FlaggedMessageEvent.onAppear) }
     }

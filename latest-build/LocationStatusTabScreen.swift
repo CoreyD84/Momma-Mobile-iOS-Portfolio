@@ -4,7 +4,7 @@ struct LocationStatusTabScreen: View {
     @StateObject private var viewModel = LocationStatusTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Spacer()
             ProgressView()
             VStack {

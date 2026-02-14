@@ -4,7 +4,7 @@ struct ConsentManagementActivityScreen: View {
     @StateObject private var viewModel = ConsentManagementActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
             }
             VStack {

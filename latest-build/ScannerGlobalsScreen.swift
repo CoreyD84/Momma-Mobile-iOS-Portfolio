@@ -4,7 +4,7 @@ struct ScannerGlobalsScreen: View {
     @StateObject private var viewModel = ScannerGlobalsViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("ScannerGlobals")
         }.onAppear { viewModel.onEvent(ScannerGlobalsEvent.onAppear) }
     }

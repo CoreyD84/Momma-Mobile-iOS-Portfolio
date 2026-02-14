@@ -4,7 +4,7 @@ struct SafeScopeToggleScreen: View {
     @StateObject private var viewModel = SafeScopeToggleViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Error: Not logged in")
             Text("")
             Spacer()

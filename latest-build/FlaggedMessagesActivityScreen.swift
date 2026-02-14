@@ -4,7 +4,7 @@ struct FlaggedMessagesActivityScreen: View {
     @StateObject private var viewModel = FlaggedMessagesActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("FlaggedMessagesActivity")
         }.onAppear { viewModel.onEvent(FlaggedMessagesActivityEvent.onAppear) }
     }

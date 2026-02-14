@@ -4,7 +4,7 @@ struct MommaTakeoverScreen: View {
     @StateObject private var viewModel = MommaTakeoverViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("MommaTakeover")
         }.onAppear { viewModel.onEvent(MommaTakeoverEvent.onAppear) }
     }

@@ -4,7 +4,7 @@ struct LinkedChildrenActivityScreen: View {
     @StateObject private var viewModel = LinkedChildrenActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("LinkedChildrenActivity")
         }.onAppear { viewModel.onEvent(LinkedChildrenActivityEvent.onAppear) }
     }

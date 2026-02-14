@@ -4,7 +4,7 @@ struct UninstallAttemptMonitorScreen: View {
     @StateObject private var viewModel = UninstallAttemptMonitorViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("UninstallAttemptMonitor")
         }.onAppear { viewModel.onEvent(UninstallAttemptMonitorEvent.onAppear) }
     }

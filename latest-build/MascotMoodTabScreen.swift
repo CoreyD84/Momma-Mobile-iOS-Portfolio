@@ -4,7 +4,7 @@ struct MascotMoodTabScreen: View {
     @StateObject private var viewModel = MascotMoodTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Mascot Mood History")
             Spacer()
             ProgressView()

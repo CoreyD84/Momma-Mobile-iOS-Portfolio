@@ -4,7 +4,7 @@ struct SubscriptionExpiredScreen: View {
     @StateObject private var viewModel = SubscriptionExpiredViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("")
             Text("")
             Text("")

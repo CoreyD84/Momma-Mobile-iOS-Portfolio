@@ -4,7 +4,7 @@ struct FirebaseExtensionsScreen: View {
     @StateObject private var viewModel = FirebaseExtensionsViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("FirebaseExtensions")
         }.onAppear { viewModel.onEvent(FirebaseExtensionsEvent.onAppear) }
     }

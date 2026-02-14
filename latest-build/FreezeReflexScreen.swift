@@ -4,7 +4,7 @@ struct FreezeReflexScreen: View {
     @StateObject private var viewModel = FreezeReflexViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("FreezeReflex")
         }.onAppear { viewModel.onEvent(FreezeReflexEvent.onAppear) }
     }

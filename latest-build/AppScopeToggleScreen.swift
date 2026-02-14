@@ -4,7 +4,7 @@ struct AppScopeToggleScreen: View {
     @StateObject private var viewModel = AppScopeToggleViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Error: Not logged in")
             Text("")
             Spacer()

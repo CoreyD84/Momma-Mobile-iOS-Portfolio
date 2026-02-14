@@ -4,7 +4,7 @@ struct FlaggedMessagesFragmentScreen: View {
     @StateObject private var viewModel = FlaggedMessagesFragmentViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Button(action: { }) {
                 Text(" ")
             }

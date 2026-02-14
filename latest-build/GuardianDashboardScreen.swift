@@ -4,7 +4,7 @@ struct GuardianDashboardScreen: View {
     @StateObject private var viewModel = GuardianDashboardViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Button(action: { }) {
                 Text(" ")
             }

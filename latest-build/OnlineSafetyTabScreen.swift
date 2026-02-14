@@ -4,7 +4,7 @@ struct OnlineSafetyTabScreen: View {
     @StateObject private var viewModel = OnlineSafetyTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("")
             Spacer()
             Text("")

@@ -4,7 +4,7 @@ struct GenerateLinkQrActivityScreen: View {
     @StateObject private var viewModel = GenerateLinkQrActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("GenerateLinkQrActivity")
         }.onAppear { viewModel.onEvent(GenerateLinkQrActivityEvent.onAppear) }
     }

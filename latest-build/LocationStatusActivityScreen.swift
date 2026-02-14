@@ -4,7 +4,7 @@ struct LocationStatusActivityScreen: View {
     @StateObject private var viewModel = LocationStatusActivityViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Button(action: { }) {
                 Text(" ")
             }

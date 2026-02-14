@@ -4,7 +4,7 @@ struct FlaggedMessagesTabScreen: View {
     @StateObject private var viewModel = FlaggedMessagesTabViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Button(action: { }) {
                 Text(" ")
             }.navigationTitle("FlaggedMessagesTab")

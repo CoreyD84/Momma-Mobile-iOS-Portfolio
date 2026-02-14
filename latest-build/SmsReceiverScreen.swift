@@ -4,7 +4,7 @@ struct SmsReceiverScreen: View {
     @StateObject private var viewModel = SmsReceiverViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             EmptyView().navigationTitle("SmsReceiver")
         }.onAppear { viewModel.onEvent(SmsReceiverEvent.onAppear) }
     }

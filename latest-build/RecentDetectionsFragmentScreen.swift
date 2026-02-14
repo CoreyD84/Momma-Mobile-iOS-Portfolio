@@ -4,7 +4,7 @@ struct RecentDetectionsFragmentScreen: View {
     @StateObject private var viewModel = RecentDetectionsFragmentViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Button(action: { }) {
                 Text(" ")
             }

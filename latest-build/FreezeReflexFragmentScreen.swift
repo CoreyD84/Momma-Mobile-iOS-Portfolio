@@ -4,7 +4,7 @@ struct FreezeReflexFragmentScreen: View {
     @StateObject private var viewModel = FreezeReflexFragmentViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Blocked (${blockedContacts.size})")
             Text("Conversations")
             Text("Attempts (${blockedAttempts.size})")
