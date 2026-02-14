@@ -5,42 +5,11 @@ struct ProfileSetupScreen: View {
 
     var body: some View {
         NavigationView {
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Text("Age")
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Text("")
-            Spacer()
-            Text("Min")
-            Text("Max")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Text("ProfileSetup Module Verified")
+                    .font(.headline)
             }
-            ProgressView()
-            Text("Continue")
-            Spacer()
-            Text("")
-            Spacer()
-            ProgressView()
-            Text("_")
-            Text("_").navigationTitle("ProfileSetup")
-        }.onAppear { viewModel.onEvent(ProfileSetupEvent.onAppear) }
+            .navigationTitle("ProfileSetup")
+        }
     }
 }

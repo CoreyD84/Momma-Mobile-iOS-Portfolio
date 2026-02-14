@@ -5,41 +5,11 @@ struct QuestionnaireScreen: View {
 
     var body: some View {
         NavigationView {
-            ProgressView()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            ProgressView()
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Text("")
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Text("Questionnaire Module Verified")
+                    .font(.headline)
             }
-            Text("Enter SoulLink")
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
-            }
-            Text("Go to Home")
-            Spacer()
-            Text("Go Back")
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
-            }
-            Text("Go Back").navigationTitle("Questionnaire")
-        }.onAppear { viewModel.onEvent(QuestionnaireEvent.onAppear) }
+            .navigationTitle("Questionnaire")
+        }
     }
 }

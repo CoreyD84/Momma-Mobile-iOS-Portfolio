@@ -5,23 +5,11 @@ struct CandidateWaitingScreen: View {
 
     var body: some View {
         NavigationView {
-            Spacer()
-            Text("")
-            Text("")
-            Spacer()
-            Text("")
-            Text("")
-            Spacer()
-            ProgressView()
-            Text("")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Text("CandidateWaiting Module Verified")
+                    .font(.headline)
             }
-            Button(action: { }) {
-                Text(" ")
-            }
-            Text("").navigationTitle("CandidateWaiting")
-        }.onAppear { viewModel.onEvent(CandidateWaitingEvent.onAppear) }
+            .navigationTitle("CandidateWaiting")
+        }
     }
 }

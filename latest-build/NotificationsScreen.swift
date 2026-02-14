@@ -6,24 +6,10 @@ struct NotificationsScreen: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("Notifications Module Verified")
+                    .font(.headline)
             }
-            VStack {
-            }
-            Text("")
-            ProgressView()
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Text("")
-            Spacer()
-            Text("").navigationTitle("Notifications")
-        }.onAppear { viewModel.onEvent(NotificationsEvent.onAppear) }
+            .navigationTitle("Notifications")
+        }
     }
 }

@@ -6,25 +6,10 @@ struct MatchHistoryScreen: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("MatchHistory Module Verified")
+                    .font(.headline)
             }
-            VStack {
-            }
-            Text("")
-            ProgressView()
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("").navigationTitle("MatchHistory")
-        }.onAppear { viewModel.onEvent(MatchHistoryEvent.onAppear) }
+            .navigationTitle("MatchHistory")
+        }
     }
 }

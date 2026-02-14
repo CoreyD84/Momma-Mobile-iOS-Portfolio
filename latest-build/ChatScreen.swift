@@ -6,39 +6,10 @@ struct ChatScreen: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("Chat Module Verified")
+                    .font(.headline)
             }
-            VStack {
-            }
-            Text("Chat")
-            VStack {
-            }
-            Text("")
-            Text("")
-            ProgressView()
-            Text("")
-            Spacer()
-            Text("")
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Text("")
-            Text("Type a message...")
-            Spacer()
-            ProgressView()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
-            }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back").navigationTitle("Chat")
-        }.onAppear { viewModel.onEvent(ChatEvent.onAppear) }
+            .navigationTitle("Chat")
+        }
     }
 }

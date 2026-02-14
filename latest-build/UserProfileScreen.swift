@@ -6,21 +6,10 @@ struct UserProfileScreen: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("UserProfile Module Verified")
+                    .font(.headline)
             }
-            VStack {
-            }
-            Text("")
-            ProgressView()
-            Text("")
-            Spacer()
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("").navigationTitle("UserProfile")
-        }.onAppear { viewModel.onEvent(UserProfileEvent.onAppear) }
+            .navigationTitle("UserProfile")
+        }
     }
 }

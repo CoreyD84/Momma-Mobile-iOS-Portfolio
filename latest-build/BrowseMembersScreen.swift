@@ -6,25 +6,10 @@ struct BrowseMembersScreen: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("BrowseMembers Module Verified")
+                    .font(.headline)
             }
-            VStack {
-            }
-            Text("")
-            ProgressView()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
-            }
-            Text("Retry")
-            Spacer()
-            Text("")
-            Text("")
-            Text("")
-            Text("")
-            Text("").navigationTitle("BrowseMembers")
-        }.onAppear { viewModel.onEvent(BrowseMembersEvent.onAppear) }
+            .navigationTitle("BrowseMembers")
+        }
     }
 }

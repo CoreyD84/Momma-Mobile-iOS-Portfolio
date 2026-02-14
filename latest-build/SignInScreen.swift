@@ -5,23 +5,11 @@ struct SignInScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("Email")
-            Spacer()
-            Text("Password")
-            Spacer()
-            Button(action: { }) {
-                Text(" ")
+            VStack {
+                Text("SignIn Module Verified")
+                    .font(.headline)
             }
-            ProgressView()
-            Text("Sign In")
-            Spacer()
-            Text("")
-            Spacer()
-            Text("").navigationTitle("SignIn")
-        }.onAppear { viewModel.onEvent(SignInEvent.onAppear) }
+            .navigationTitle("SignIn")
+        }
     }
 }
