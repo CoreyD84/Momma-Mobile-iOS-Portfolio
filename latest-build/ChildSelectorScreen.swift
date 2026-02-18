@@ -5,6 +5,7 @@ struct ChildSelectorScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: ChildSelector").font(.title).bold()
             ProgressView()
             Text("Action")
             Text("Action")

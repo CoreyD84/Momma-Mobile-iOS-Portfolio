@@ -5,6 +5,7 @@ struct SetupScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: Setup").font(.title).bold()
             Button("Action") { /* Trigger Event */ }
             ProgressView()
             Text("Action")

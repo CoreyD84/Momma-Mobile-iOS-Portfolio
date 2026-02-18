@@ -5,6 +5,7 @@ struct LocationStatusTabScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: LocationStatusTab").font(.title).bold()
             ProgressView()
             Text("Action")
             Text("Waiting for location data...")

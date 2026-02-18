@@ -5,6 +5,7 @@ struct ConsentManagementActivityScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: ConsentManagementActivity").font(.title).bold()
             Text("Consent Management")
             Text("Action")
             Text("Action")

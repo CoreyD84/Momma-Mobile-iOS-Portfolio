@@ -5,6 +5,7 @@ struct SafeScopeToggleScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: SafeScopeToggle").font(.title).bold()
             Text("Error: Not logged in")
             Text("Action")
             Text("SafeScope™ Filter")

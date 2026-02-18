@@ -5,6 +5,7 @@ struct GuardianDashboardScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: GuardianDashboard").font(.title).bold()
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }

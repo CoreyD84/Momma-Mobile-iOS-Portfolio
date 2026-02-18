@@ -5,6 +5,7 @@ struct MessageScannerTabScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: MessageScannerTab").font(.title).bold()
             Text("Message Scanner")
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)

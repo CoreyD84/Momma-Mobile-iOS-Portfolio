@@ -5,6 +5,7 @@ struct BlockedWebsiteActivityScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: BlockedWebsiteActivity").font(.title).bold()
             Button("Action") { /* Trigger Event */ }
             Text("Action")
             Text("Action")

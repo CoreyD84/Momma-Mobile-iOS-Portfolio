@@ -5,6 +5,7 @@ struct BlockedAppActivityScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: BlockedAppActivity").font(.title).bold()
             Text("Action")
             Text("🚫")
             Text("Action")

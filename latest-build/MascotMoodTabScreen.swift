@@ -5,6 +5,7 @@ struct MascotMoodTabScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: MascotMoodTab").font(.title).bold()
             Text("Mascot Mood History")
             ProgressView()
             Text("No mood history has been recorded yet.")

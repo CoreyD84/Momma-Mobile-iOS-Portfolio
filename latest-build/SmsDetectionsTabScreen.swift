@@ -5,6 +5,7 @@ struct SmsDetectionsTabScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: SmsDetectionsTab").font(.title).bold()
             Text("Flagged SMS Messages")
             Text("No flagged messages found.")
             Text("Action")

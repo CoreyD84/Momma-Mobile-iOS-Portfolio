@@ -5,6 +5,7 @@ struct PlatformControlTabScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: PlatformControlTab").font(.title).bold()
             Text("Emergency Contacts")
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)

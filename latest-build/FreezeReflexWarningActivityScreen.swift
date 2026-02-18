@@ -5,6 +5,7 @@ struct FreezeReflexWarningActivityScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: FreezeReflexWarningActivity").font(.title).bold()
             Text("Action")
             Text("Action")
             Text("Action")

@@ -5,6 +5,7 @@ struct AppScopeToggleScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: AppScopeToggle").font(.title).bold()
             Text("Error: Not logged in")
             Text("Action")
             Text("AppScope™ Filter")

@@ -5,6 +5,7 @@ struct SubscriptionExpiredScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: SubscriptionExpired").font(.title).bold()
             Text("Action")
             Text("Action")
             Text("Action")

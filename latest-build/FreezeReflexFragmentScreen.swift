@@ -5,6 +5,7 @@ struct FreezeReflexFragmentScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: FreezeReflexFragment").font(.title).bold()
             Text("Blocked (${blockedContacts.size})")
             Text("Conversations")
             Text("Attempts (${blockedAttempts.size})")

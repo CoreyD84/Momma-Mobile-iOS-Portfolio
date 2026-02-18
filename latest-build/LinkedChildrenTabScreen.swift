@@ -5,6 +5,7 @@ struct LinkedChildrenTabScreen: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("Momma Mobile: LinkedChildrenTab").font(.title).bold()
             Text("Linked Children")
             Text("No children linked yet. Use the 'Link Child Device' tab to generate a QR code.")
             Text("👤 Name: ${child.name}")
