@@ -5,32 +5,18 @@ struct HomeScreen: View {
     @AppStorage("isLoggedIn") var isLoggedIn = true
     var body: some View {
         NavigationView {
-            ZStack {
-                // Background Mascot Image (Name this "MommaDashBackground" in Xcode)
-                Image("MommaDashBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-                
-                ScrollView {
-                    VStack(spacing: 12) {
-                        Spacer().frame(height: 60)
-                        ForEach(["LINK CHILD DEVICE","RECENT","FLAGGED","FREEZE","LINKED","MASCOT","SCANNER","PLATFORMS","SMS","LOCATION","CONSENT"], id: \.self) { btn in
-                            NavigationLink(destination: AnyViewByName(name: btn)) {
-                                Text(btn)
-                                    .font(.system(size: 18, weight: .black, design: .monospaced))
-                                    .foregroundColor(.white)
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 240, height: 55)
-                                    .background(Color.purple)
-                                    .cornerRadius(6)
-                                    .shadow(color: .black.opacity(0.3), radius: 4, x: 0, y: 4)
-                            }
+            List {
+                Section("Discovered Modules") {
+                    ForEach(["AppModule","AwaitingPartner","BillingManager","BrowseMembers","CandidateInvitation","CandidateInvitationService","CandidateQuiz","CandidateWaiting","Chat","CloudinaryConfig","Color","CompatibilityEngine","CompatibilityVector","Elimination","FinalSelection","GhostDetectionService","GhostDetectionWorker","Home","LocationService","MainActivity","Match","MatchHistory","MatchProfileCard","MatchSuccess","MatchingService","Message","NavGraph","Notifications","PartnerDecision","Payment","Profile","ProfileSetup","ProgressBar","PushNotificationService","Question","QuestionCard","QuestionDatabase","Questionnaire","QuizQuestionDatabase","QuizScorer","Quiz","SecondChance","SignIn","SignUp","SoulLinkApplication","SoulLinkMessage","SoulLinkMessagingService","SoulLinkPersonality","Splash","TheThree","Theme","Type","User","UserProfile","Welcome"], id: \.self) { name in
+                        NavigationLink(destination: AnyViewByName(name: name)) {
+                            Label(name, systemImage: "app.badge")
                         }
                     }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing, 25)
                 }
+            }
+            .navigationTitle("Dashboard")
+            .toolbar {
+                Button("Logout") { isLoggedIn = false }
             }
         }
     }
@@ -39,67 +25,63 @@ struct HomeScreen: View {
 struct AnyViewByName: View {
     let name: String
     var body: some View {
-        let normalized = name.lowercased().replacingOccurrences(of: " ", with: "")
-        switch normalized {
-        case "linkchilddevice": LinkChildDeviceScreen()
-        case "scanner": ScannerScreen()
-        case "location": LocationScreen()
-        case "appmodule": AppModuleScreen()
-        case "awaitingpartner": AwaitingPartnerScreen()
-        case "billingmanager": BillingManagerScreen()
-        case "browsemembers": BrowseMembersScreen()
-        case "candidateinvitation": CandidateInvitationScreen()
-        case "candidateinvitationservice": CandidateInvitationServiceScreen()
-        case "candidatequiz": CandidateQuizScreen()
-        case "candidatewaiting": CandidateWaitingScreen()
-        case "chat": ChatScreen()
-        case "cloudinaryconfig": CloudinaryConfigScreen()
-        case "color": ColorScreen()
-        case "compatibilityengine": CompatibilityEngineScreen()
-        case "compatibilityvector": CompatibilityVectorScreen()
-        case "elimination": EliminationScreen()
-        case "finalselection": FinalSelectionScreen()
-        case "ghostdetectionservice": GhostDetectionServiceScreen()
-        case "ghostdetectionworker": GhostDetectionWorkerScreen()
-        case "home": HomeScreen()
-        case "locationservice": LocationServiceScreen()
-        case "mainactivity": MainActivityScreen()
-        case "match": MatchScreen()
-        case "matchhistory": MatchHistoryScreen()
-        case "matchprofilecard": MatchProfileCardScreen()
-        case "matchsuccess": MatchSuccessScreen()
-        case "matchingservice": MatchingServiceScreen()
-        case "message": MessageScreen()
-        case "navgraph": NavGraphScreen()
-        case "notifications": NotificationsScreen()
-        case "partnerdecision": PartnerDecisionScreen()
-        case "payment": PaymentScreen()
-        case "profile": ProfileScreen()
-        case "profilesetup": ProfileSetupScreen()
-        case "progressbar": ProgressBarScreen()
-        case "pushnotificationservice": PushNotificationServiceScreen()
-        case "question": QuestionScreen()
-        case "questioncard": QuestionCardScreen()
-        case "questiondatabase": QuestionDatabaseScreen()
-        case "questionnaire": QuestionnaireScreen()
-        case "quizquestiondatabase": QuizQuestionDatabaseScreen()
-        case "quizscorer": QuizScorerScreen()
-        case "quiz": QuizScreen()
-        case "secondchance": SecondChanceScreen()
-        case "signin": SignInScreen()
-        case "signup": SignUpScreen()
-        case "soullinkapplication": SoulLinkApplicationScreen()
-        case "soullinkmessage": SoulLinkMessageScreen()
-        case "soullinkmessagingservice": SoulLinkMessagingServiceScreen()
-        case "soullinkpersonality": SoulLinkPersonalityScreen()
-        case "splash": SplashScreen()
-        case "thethree": TheThreeScreen()
-        case "theme": ThemeScreen()
-        case "type": TypeScreen()
-        case "user": UserScreen()
-        case "userprofile": UserProfileScreen()
-        case "welcome": WelcomeScreen()
-        default: Text("Module Logic: Active")
+        switch name {
+        case "AppModule": AppModuleScreen()
+        case "AwaitingPartner": AwaitingPartnerScreen()
+        case "BillingManager": BillingManagerScreen()
+        case "BrowseMembers": BrowseMembersScreen()
+        case "CandidateInvitation": CandidateInvitationScreen()
+        case "CandidateInvitationService": CandidateInvitationServiceScreen()
+        case "CandidateQuiz": CandidateQuizScreen()
+        case "CandidateWaiting": CandidateWaitingScreen()
+        case "Chat": ChatScreen()
+        case "CloudinaryConfig": CloudinaryConfigScreen()
+        case "Color": ColorScreen()
+        case "CompatibilityEngine": CompatibilityEngineScreen()
+        case "CompatibilityVector": CompatibilityVectorScreen()
+        case "Elimination": EliminationScreen()
+        case "FinalSelection": FinalSelectionScreen()
+        case "GhostDetectionService": GhostDetectionServiceScreen()
+        case "GhostDetectionWorker": GhostDetectionWorkerScreen()
+        case "Home": HomeScreen()
+        case "LocationService": LocationServiceScreen()
+        case "MainActivity": MainActivityScreen()
+        case "Match": MatchScreen()
+        case "MatchHistory": MatchHistoryScreen()
+        case "MatchProfileCard": MatchProfileCardScreen()
+        case "MatchSuccess": MatchSuccessScreen()
+        case "MatchingService": MatchingServiceScreen()
+        case "Message": MessageScreen()
+        case "NavGraph": NavGraphScreen()
+        case "Notifications": NotificationsScreen()
+        case "PartnerDecision": PartnerDecisionScreen()
+        case "Payment": PaymentScreen()
+        case "Profile": ProfileScreen()
+        case "ProfileSetup": ProfileSetupScreen()
+        case "ProgressBar": ProgressBarScreen()
+        case "PushNotificationService": PushNotificationServiceScreen()
+        case "Question": QuestionScreen()
+        case "QuestionCard": QuestionCardScreen()
+        case "QuestionDatabase": QuestionDatabaseScreen()
+        case "Questionnaire": QuestionnaireScreen()
+        case "QuizQuestionDatabase": QuizQuestionDatabaseScreen()
+        case "QuizScorer": QuizScorerScreen()
+        case "Quiz": QuizScreen()
+        case "SecondChance": SecondChanceScreen()
+        case "SignIn": SignInScreen()
+        case "SignUp": SignUpScreen()
+        case "SoulLinkApplication": SoulLinkApplicationScreen()
+        case "SoulLinkMessage": SoulLinkMessageScreen()
+        case "SoulLinkMessagingService": SoulLinkMessagingServiceScreen()
+        case "SoulLinkPersonality": SoulLinkPersonalityScreen()
+        case "Splash": SplashScreen()
+        case "TheThree": TheThreeScreen()
+        case "Theme": ThemeScreen()
+        case "Type": TypeScreen()
+        case "User": UserScreen()
+        case "UserProfile": UserProfileScreen()
+        case "Welcome": WelcomeScreen()
+        default: Text("Module not found")
         }
     }
 }
