@@ -1,23 +1,15 @@
 import SwiftUI
 
 struct ConsentOverviewActivityScreen: View {
-    @EnvironmentObject var container: CodexiaContainer
-    
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
-                Text("Momma Mobile: ConsentOverviewActivity").font(.title2).bold().padding(.bottom)
+                Text("ConsentOverviewActivity").font(.title2).bold().padding(.bottom)
                 Button(action: {}) {
-                    HStack {
-                        Text("start_tab_index")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("start_tab_index"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Spacer()
             }.padding()
         }
         .navigationTitle("ConsentOverviewActivity")

@@ -1,215 +1,93 @@
 import SwiftUI
 
 struct AppScopeToggleScreen: View {
-    @EnvironmentObject var container: CodexiaContainer
-    
+    @State private var toggleState13 = true
+    @State private var toggleState16 = true
+    @State private var textState34 = ""
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
-                Text("Momma Mobile: AppScopeToggle").font(.title2).bold().padding(.bottom)
+                Text("AppScopeToggle").font(.title2).bold().padding(.bottom)
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Text("Error: Not logged in").font(.subheadline).foregroundColor(.secondary)
-                Text("Waiting for Child ID...").font(.subheadline).foregroundColor(.secondary)
-                Text("Error: Guardian ID is null.").font(.subheadline).foregroundColor(.secondary)
-                Text("Attaching Firebase listener...").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
-                    HStack {
-                        Text("AppScopeToggle")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("AppScopeToggle"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("AppScope™ Filter")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Text("Loading from Firebase...").font(.subheadline).foregroundColor(.secondary)
-                Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
-                Button(action: {}) {
-                    HStack {
-                        Text("AppScope Status")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("AppScope™ Filter"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
+                Toggle("Action", isOn: $toggleState13)
                 Button(action: {}) {
-                    HStack {
-                        Text("Blocked Apps")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("AppScope Status"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Add app")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
+                Toggle("Action", isOn: $toggleState16)
+                Button(action: {}) {
+                    HStack { Text("Blocked Apps"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Text("No blocked apps yet. Tap + to add apps to block.").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Add app"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Remove")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Block App")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Text("Enter the package name of the app to block").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Remove"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Examples: com.squareup.cash (Cash App), com.snapchat.android (Snapchat), com.zhiliaoapp.musically (TikTok)")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                TextField("Action", text: .constant(""))
-                    .textFieldStyle(.roundedBorder)
-                Text("Package name").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
-                    HStack {
-                        Text("com.example.app")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Block App"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Add")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Cancel")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Spacer()
+                Button(action: {}) {
+                    HStack { Text("Examples: com.squareup.cash (Cash App), com.snapchat.android (Snapchat), com.zhiliaoapp.musically (TikTok)"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
+                TextField("Action", text: $textState34).textFieldStyle(.roundedBorder)
+                Button(action: {}) {
+                    HStack { Text("com.example.app"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack { Text("Add"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack { Text("Cancel"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
             }.padding()
         }
         .navigationTitle("AppScopeToggle")

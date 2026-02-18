@@ -1,126 +1,55 @@
 import SwiftUI
 
 struct LocationStatusTabScreen: View {
-    @EnvironmentObject var container: CodexiaContainer
-    
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
-                Text("Momma Mobile: LocationStatusTab").font(.title2).bold().padding(.bottom)
+                Text("LocationStatusTab").font(.title2).bold().padding(.bottom)
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("LocationStatusTab")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Text("Failed to fetch childId").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
-                    HStack {
-                        Text("latitude")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("LocationStatusTab"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("longitude")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("latitude"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("timestamp")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Text("Error parsing location snapshot").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
-                    HStack {
-                        Text("Location listener cancelled")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("longitude"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Recenter Map")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("timestamp"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Child's Location")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Location listener cancelled"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Text("Waiting for location data...").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Recenter Map"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Spacer()
+                Button(action: {}) {
+                    HStack { Text("Child's Location"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
             }.padding()
         }
         .navigationTitle("LocationStatusTab")

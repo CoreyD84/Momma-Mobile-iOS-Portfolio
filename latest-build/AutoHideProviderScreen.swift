@@ -1,133 +1,59 @@
 import SwiftUI
 
 struct AutoHideProviderScreen: View {
-    @EnvironmentObject var container: CodexiaContainer
-    
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
-                Text("Momma Mobile: AutoHideProvider").font(.title2).bold().padding(.bottom)
+                Text("AutoHideProvider").font(.title2).bold().padding(.bottom)
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("guardian_id")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("guardian_id"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("MommaStealth"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Spacer()
             }.padding()
         }
         .navigationTitle("AutoHideProvider")

@@ -1,172 +1,77 @@
 import SwiftUI
 
 struct SafeScopeToggleScreen: View {
-    @EnvironmentObject var container: CodexiaContainer
-    
+    @State private var toggleState14 = true
+    @State private var toggleState17 = true
+    @State private var textState27 = ""
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
-                Text("Momma Mobile: SafeScopeToggle").font(.title2).bold().padding(.bottom)
+                Text("SafeScopeToggle").font(.title2).bold().padding(.bottom)
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Text("Error: Not logged in").font(.subheadline).foregroundColor(.secondary)
-                Text("Waiting for Child ID...").font(.subheadline).foregroundColor(.secondary)
-                Text("Error: Guardian ID is null.").font(.subheadline).foregroundColor(.secondary)
-                Text("Attaching Firebase listener...").font(.subheadline).foregroundColor(.secondary)
-                NavigationLink(destination: SafeScopeScreen()) {
-                    HStack {
-                        Text("SafeScopeToggle")
-                        Spacer()
-                        Image(systemName: "arrow.right.circle.fill")
-                    }
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 NavigationLink(destination: SafeScopeScreen()) {
-                    HStack {
-                        Text("SafeScopeToggle")
-                        Spacer()
-                        Image(systemName: "arrow.right.circle.fill")
-                    }
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("SafeScopeToggle"); Spacer(); Image(systemName: "arrow.right.circle.fill") }
+                    .padding().background(Color.green.opacity(0.1)).cornerRadius(8)
                 }
                 NavigationLink(destination: SafeScopeScreen()) {
-                    HStack {
-                        Text("SafeScope™ Filter")
-                        Spacer()
-                        Image(systemName: "arrow.right.circle.fill")
-                    }
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("SafeScopeToggle"); Spacer(); Image(systemName: "arrow.right.circle.fill") }
+                    .padding().background(Color.green.opacity(0.1)).cornerRadius(8)
                 }
-                Text("Loading from Firebase...").font(.subheadline).foregroundColor(.secondary)
-                Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
+                Button(action: {}) {
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                }
                 NavigationLink(destination: SafeScopeScreen()) {
-                    HStack {
-                        Text("SafeScope Status")
-                        Spacer()
-                        Image(systemName: "arrow.right.circle.fill")
-                    }
-                    .padding()
-                    .background(Color.green.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("SafeScope™ Filter"); Spacer(); Image(systemName: "arrow.right.circle.fill") }
+                    .padding().background(Color.green.opacity(0.1)).cornerRadius(8)
+                }
+                Toggle("Action", isOn: $toggleState14)
+                NavigationLink(destination: SafeScopeScreen()) {
+                    HStack { Text("SafeScope Status"); Spacer(); Image(systemName: "arrow.right.circle.fill") }
+                    .padding().background(Color.green.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
+                Toggle("Action", isOn: $toggleState17)
                 Button(action: {}) {
-                    HStack {
-                        Text("Blocked Websites")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Blocked Websites"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Remove")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Remove"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Block Website")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Block Website"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Action")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: .constant(""))
-                    .textFieldStyle(.roundedBorder)
+                TextField("Action", text: $textState27).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
-                    HStack {
-                        Text("Add")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Add"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
                 Button(action: {}) {
-                    HStack {
-                        Text("Cancel")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
+                    HStack { Text("Cancel"); Spacer(); Image(systemName: "chevron.right.circle") }
+                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Spacer()
             }.padding()
         }
         .navigationTitle("SafeScopeToggle")

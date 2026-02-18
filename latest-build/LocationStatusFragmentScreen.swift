@@ -1,15 +1,12 @@
 import SwiftUI
 
 struct LocationStatusFragmentScreen: View {
-    @EnvironmentObject var container: CodexiaContainer
-    
+
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red)
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60)).foregroundColor(.blue)
-            Text("LocationStatusFragment Logic Active").font(.headline)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("LocationStatusFragment").font(.title2).bold().padding(.bottom)
+            }.padding()
         }
         .navigationTitle("LocationStatusFragment")
     }
