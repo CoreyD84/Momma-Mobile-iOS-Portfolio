@@ -5,12 +5,10 @@ class CodexiaContainer: ObservableObject {
     static let shared = CodexiaContainer()
 
 
-    let setupViewModel: SetupViewModel
-    let subscriptionExpiredViewModel: SubscriptionExpiredViewModel
+    let safetyDashboardViewModel: SafetyDashboardViewModel
 
     private init() {
 
-        self.setupViewModel = SetupViewModelFactory.make()
-        self.subscriptionExpiredViewModel = SubscriptionExpiredViewModelFactory.make()
+        self.safetyDashboardViewModel = SafetyDashboardViewModelFactory.make()
     }
 }
