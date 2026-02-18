@@ -11,7 +11,7 @@ struct HomeScreen: View {
                         NavigationLink(destination: AnyViewByName(name: name)) {
                             HStack {
                                 Image(systemName: "square.grid.2x2.fill")
-                                    .foregroundColor(.accentColor)
+                                    .foregroundColor(CodexiaTheme.primary)
                                 Text(name)
                                     .font(.system(.body, design: .rounded))
                             }

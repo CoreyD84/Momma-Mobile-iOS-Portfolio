@@ -3,9 +3,9 @@ import SwiftUI
 struct ThemeScreen: View {
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 24) {
             Text("Theme").font(.largeTitle).bold().padding(.bottom, 10)
             Spacer()
-        }.padding()
+        }.padding().background(CodexiaTheme.background).navigationTitle("Theme")
     }
 }

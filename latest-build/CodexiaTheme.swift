@@ -4,22 +4,16 @@ import UIKit
 #endif
 
 struct CodexiaTheme {
-    // Semantic Primary: Adapts to the app's 'AccentColor' asset if defined
-    static let primary = Color.accentColor
-    static let secondary = Color.secondary
-    
-    // ✅ FIX: Use UIColor explicitly to resolve contextual type errors
+    static let primary = Color(hex: "#007AFF")
+    static let label = Color(UIColor.label)
     #if os(iOS)
     static let background = Color(UIColor.systemBackground)
     static let secondaryBackground = Color(UIColor.secondarySystemBackground)
-    static let label = Color(UIColor.label)
     #else
     static let background = Color.white
     static let secondaryBackground = Color.gray.opacity(0.1)
-    static let label = Color.black
     #endif
 
-    // Universal Component Styling
     struct Components {
         static let cornerRadius: CGFloat = 12
         static let padding: CGFloat = 16
@@ -27,12 +21,27 @@ struct CodexiaTheme {
     }
 }
 
-// Extension to allow the Scaffolder to call theme-specific modifiers universaly
+extension Color {
+    init(hex: String) {
+        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+        var int: UInt64 = 0
+        Scanner(string: hex).scanHexInt64(&int)
+        let a, r, g, b: UInt64
+        switch hex.count {
+        case 3: (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
+        case 6: (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
+        case 8: (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
+        default: (a, r, g, b) = (1, 1, 1, 0)
+        }
+        self.init(.sRGB, red: Double(r) / 255, green: Double(g) / 255, blue: Double(b) / 255, opacity: Double(a) / 255)
+    }
+}
+
 extension View {
     func codexiaCardStyle() -> some View {
         self.padding()
             .background(CodexiaTheme.secondaryBackground)
-            .cornerRadius(CodexiaTheme.Components.cornerRadius)
-            .shadow(radius: CodexiaTheme.Components.shadowRadius)
+            .cornerRadius(16)
+            .shadow(color: .black.opacity(0.1), radius: 5)
     }
 }

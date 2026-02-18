@@ -3,21 +3,21 @@ import SwiftUI
 struct MessageScreen: View {
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 24) {
             Text("Message").font(.largeTitle).bold().padding(.bottom, 10)
             Button(action: {}) {
                 Text("ACTION")
                     .font(.headline).foregroundColor(.white)
                     .frame(maxWidth: .infinity).padding()
-                    .background(Color.accentColor).cornerRadius(12)
+                    .background(CodexiaTheme.primary).cornerRadius(25)
             }
             Button(action: {}) {
                 Text("ACTION")
                     .font(.headline).foregroundColor(.white)
                     .frame(maxWidth: .infinity).padding()
-                    .background(Color.accentColor).cornerRadius(12)
+                    .background(CodexiaTheme.primary).cornerRadius(25)
             }
             Spacer()
-        }.padding()
+        }.padding().background(CodexiaTheme.background).navigationTitle("Message")
     }
 }
