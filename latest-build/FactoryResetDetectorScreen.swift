@@ -4,47 +4,229 @@ struct FactoryResetDetectorScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: FactoryResetDetector").font(.title).bold()
-            Text("FactoryResetDetector")
-            Text("device_fingerprint")
-            Button("device_id") { /* Trigger Event */ }
-            Text("installation_id")
-            Text("First time installation - creating device fingerprint")
-            Text("⚠️ Device ID mismatch - possible factory reset or device change")
-            Text("installation_id")
-            Text("⚠️ Installation ID missing - app data was cleared or factory reset")
-            Text("✅ No factory reset detected")
-            Button("device_id") { /* Trigger Event */ }
-            Text("installation_id")
-            Text("first_install_time")
-            Text("installation_id")
-            Text("🚨 FACTORY RESET DETECTED!")
-            Text("last_guardian_id")
-            Button("last_child_id") { /* Trigger Event */ }
-            Text("No guardian info found - cannot alert")
-            Text("last_guardian_id")
-            Button("last_child_id") { /* Trigger Event */ }
-            Button("last_linked_time") { /* Trigger Event */ }
-            Button("Guardian info saved to device storage") { /* Trigger Event */ }
-            Button("severity") { /* Trigger Event */ }
-            Button("message") { /* Trigger Event */ }
-            Button("timestamp") { /* Trigger Event */ }
-            Button("type") { /* Trigger Event */ }
-            Button("deviceId") { /* Trigger Event */ }
-            Button("actionRequired") { /* Trigger Event */ }
-            Button("recommendation") { /* Trigger Event */ }
-            Text("✅ Guardian alerted of factory reset")
-            Button("event") { /* Trigger Event */ }
-            Button("timestamp") { /* Trigger Event */ }
-            Button("severity") { /* Trigger Event */ }
-            Button("message") { /* Trigger Event */ }
-            Button("guardian_id") { /* Trigger Event */ }
-            Button("child_id") { /* Trigger Event */ }
-            Text("last_guardian_id")
-            Button("last_child_id") { /* Trigger Event */ }
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: FactoryResetDetector").font(.title2).bold().padding(.bottom)
+                Text("FactoryResetDetector").font(.subheadline).foregroundColor(.secondary)
+                Text("device_fingerprint").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
+                Text("First time installation - creating device fingerprint").font(.subheadline).foregroundColor(.secondary)
+                Text("⚠️ Device ID mismatch - possible factory reset or device change").font(.subheadline).foregroundColor(.secondary)
+                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
+                Text("⚠️ Installation ID missing - app data was cleared or factory reset").font(.subheadline).foregroundColor(.secondary)
+                Text("✅ No factory reset detected").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
+                Text("first_install_time").font(.subheadline).foregroundColor(.secondary)
+                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
+                Text("🚨 FACTORY RESET DETECTED!").font(.subheadline).foregroundColor(.secondary)
+                Text("last_guardian_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("last_child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("No guardian info found - cannot alert").font(.subheadline).foregroundColor(.secondary)
+                Text("last_guardian_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("last_child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("last_linked_time")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Guardian info saved to device storage")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("severity")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("message")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("type")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("deviceId")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("actionRequired")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("recommendation")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("✅ Guardian alerted of factory reset").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("event")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("severity")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("message")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("guardian_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("last_guardian_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("last_child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("FactoryResetDetector")
     }
 }

@@ -4,32 +4,223 @@ struct MascotMoodScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: MascotMood").font(.title).bold()
-            Button("MascotMood") { /* Trigger Event */ }
-            Button("calm") { /* Trigger Event */ }
-            Button("critical") { /* Trigger Event */ }
-            Button("high") { /* Trigger Event */ }
-            Button("medium") { /* Trigger Event */ }
-            Button("low") { /* Trigger Event */ }
-            Button("neutral") { /* Trigger Event */ }
-            Button("mood_set") { /* Trigger Event */ }
-            Button("household_id") { /* Trigger Event */ }
-            Button("child_id") { /* Trigger Event */ }
-            Text("Missing householdId or childId — skipping mood sync.")
-            Button("timestamp") { /* Trigger Event */ }
-            Button("calm") { /* Trigger Event */ }
-            Button("concerned") { /* Trigger Event */ }
-            Button("alert") { /* Trigger Event */ }
-            Button("watchful") { /* Trigger Event */ }
-            Button("mood_change") { /* Trigger Event */ }
-            Button("flag_detected") { /* Trigger Event */ }
-            Button("alert") { /* Trigger Event */ }
-            Button("reflex_trigger") { /* Trigger Event */ }
-            Button("mood") { /* Trigger Event */ }
-            Button("timestamp") { /* Trigger Event */ }
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: MascotMood").font(.title2).bold().padding(.bottom)
+                Button(action: {}) {
+                    HStack {
+                        Text("MascotMood")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("calm")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("critical")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("high")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("medium")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("low")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("neutral")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("mood_set")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("household_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Missing householdId or childId — skipping mood sync.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("calm")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("concerned")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("alert")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("watchful")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("mood_change")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("flag_detected")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("alert")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("reflex_trigger")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("mood")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("MascotMood")
     }
 }

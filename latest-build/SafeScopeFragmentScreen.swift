@@ -4,12 +4,14 @@ struct SafeScopeFragmentScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: SafeScopeFragment").font(.title).bold()
-            Text("ProduceStateDoesNotAssignValue")
-            Text("SafeScopeFragment")
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: SafeScopeFragment").font(.title2).bold().padding(.bottom)
+                Text("ProduceStateDoesNotAssignValue").font(.subheadline).foregroundColor(.secondary)
+                Text("SafeScopeFragment").font(.subheadline).foregroundColor(.secondary)
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("SafeScopeFragment")
     }
 }

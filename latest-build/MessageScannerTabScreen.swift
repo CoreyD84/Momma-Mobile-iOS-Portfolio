@@ -4,35 +4,82 @@ struct MessageScannerTabScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: MessageScannerTab").font(.title).bold()
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("Message Scanner")
-            TextField("Action", text: .constant(""))
-                .textFieldStyle(.roundedBorder)
-            Text("Enter message")
-            Button("Action") { /* Trigger Event */ }
-            Text("⚠️ Scanner not ready. Please wait for patterns to load.")
-            Button("Action") { /* Trigger Event */ }
-            Text("⚠️ Please enter a message to scan.")
-            Button("Action") { /* Trigger Event */ }
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("threat_grooming")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("✅ No threats detected")
-            Button("Scan") { /* Trigger Event */ }
-            Button("Action") { /* Trigger Event */ }
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: MessageScannerTab").font(.title2).bold().padding(.bottom)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("Message Scanner").font(.subheadline).foregroundColor(.secondary)
+                TextField("Action", text: .constant(""))
+                    .textFieldStyle(.roundedBorder)
+                Text("Enter message").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("⚠️ Scanner not ready. Please wait for patterns to load.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("⚠️ Please enter a message to scan.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("threat_grooming").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("MessageScannerTab").font(.subheadline).foregroundColor(.secondary)
+                Text("✅ No threats detected").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Scan")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("MessageScannerTab")
     }
 }

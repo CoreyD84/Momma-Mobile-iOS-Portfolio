@@ -4,23 +4,106 @@ struct ChildSelectorScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: ChildSelector").font(.title).bold()
-            Button("Action") { /* Trigger Event */ }
-            ProgressView()
-            Button("Action") { /* Trigger Event */ }
-            Button("No children linked. Please link a child device first.") { /* Trigger Event */ }
-            Button("Action") { /* Trigger Event */ }
-            Button("Select Child") { /* Trigger Event */ }
-            TextField("Action", text: .constant(""))
-                .textFieldStyle(.roundedBorder)
-            Button("Action") { /* Trigger Event */ }
-            Button("Action") { /* Trigger Event */ }
-            Button("Action") { /* Trigger Event */ }
-            Button("Action") { /* Trigger Event */ }
-            Text("MMM dd, yyyy 'at' h:mm a")
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: ChildSelector").font(.title2).bold().padding(.bottom)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                ProgressView()
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("No children linked. Please link a child device first.")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Select Child")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                TextField("Action", text: .constant(""))
+                    .textFieldStyle(.roundedBorder)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("MMM dd, yyyy 'at' h:mm a").font(.subheadline).foregroundColor(.secondary)
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("ChildSelector")
     }
 }

@@ -4,25 +4,126 @@ struct FreezeReflexTabScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: FreezeReflexTab").font(.title).bold()
-            Button("Action") { /* Trigger Event */ }
-            Button("guardian_id") { /* Trigger Event */ }
-            Button("child_id") { /* Trigger Event */ }
-            Text("Missing guardian or child identity. Please log in again.")
-            Button("isEscalated") { /* Trigger Event */ }
-            Text("No freeze reflex events recorded.")
-            Button("category") { /* Trigger Event */ }
-            Button("matchedPhrases") { /* Trigger Event */ }
-            Button("sourceApp") { /* Trigger Event */ }
-            Button("timestamp") { /* Trigger Event */ }
-            Button("deflectionUsed") { /* Trigger Event */ }
-            Button("Action") { /* Trigger Event */ }
-            Text("🚨 Freeze Reflex Triggered\\n")
-            Text("🛡️ Deflection: \\")
-            Button("Action") { /* Trigger Event */ }
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: FreezeReflexTab").font(.title2).bold().padding(.bottom)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("guardian_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Missing guardian or child identity. Please log in again.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("isEscalated")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("No freeze reflex events recorded.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("category")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("matchedPhrases")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("sourceApp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("deflectionUsed")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("🚨 Freeze Reflex Triggered\\n").font(.subheadline).foregroundColor(.secondary)
+                Text("🛡️ Deflection: \\").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("FreezeReflexTab")
     }
 }

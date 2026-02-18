@@ -4,20 +4,85 @@ struct EmotionalPatternLoaderScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: EmotionalPatternLoader").font(.title).bold()
-            Text("EmotionalPatternLoader")
-            Button("🔄 Starting to load patterns from Firebase root...") { /* Trigger Event */ }
-            Button("emotion_") { /* Trigger Event */ }
-            Button("threat_") { /* Trigger Event */ }
-            Button("mental_health") { /* Trigger Event */ }
-            Button("self_esteem") { /* Trigger Event */ }
-            Button("self_harm") { /* Trigger Event */ }
-            Text("suicidal_ideation")
-            Button("_emojis") { /* Trigger Event */ }
-            Text("⚠️ Firebase patterns were empty. Loading fallbacks.")
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: EmotionalPatternLoader").font(.title2).bold().padding(.bottom)
+                Text("EmotionalPatternLoader").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("🔄 Starting to load patterns from Firebase root...")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("emotion_")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("threat_")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("mental_health")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("self_esteem")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("self_harm")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("suicidal_ideation").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("_emojis")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("⚠️ Firebase patterns were empty. Loading fallbacks.").font(.subheadline).foregroundColor(.secondary)
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("EmotionalPatternLoader")
     }
 }

@@ -4,43 +4,171 @@ struct MommaTakeoverScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: MommaTakeover").font(.title).bold()
-            Button("Momma Takeover") { /* Trigger Event */ }
-            Button("MommaTakeover") { /* Trigger Event */ }
-            Text("I don't know… I'm really tired. I think I'm going to bed.")
-            Text("Sorry, I'm not feeling well. Maybe tomorrow.")
-            Text("I'm kinda busy right now. Can we talk later?")
-            Text("I need to go. My mom's calling me.")
-            Text("I'm not sure what to say. I'll talk to you later.")
-            Text("I'm not comfortable talking about that.")
-            Text("I need to go. My mom's calling me.")
-            Text("I don't think I should be sharing that.")
-            Button("I'm not okay with this. Please stop.") { /* Trigger Event */ }
-            Button("That's not okay. I'm stepping away.") { /* Trigger Event */ }
-            Text("I don't deserve to be talked to like this.")
-            Text("I'm logging off for now.")
-            Text("I'm not sure I trust this conversation.")
-            Text("I need to think about this. Talk later?")
-            Text("I'm feeling confused. I'm going to step away.")
-            Button("I'm not feeling okay. I need to talk to someone.") { /* Trigger Event */ }
-            Text("I'm going to take a break and breathe.")
-            Text("I'm reaching out to someone I trust.")
-            Button("Action") { /* Trigger Event */ }
-            Text("❌ No active window found for takeover.")
-            Text("❌ No input field found for Momma Takeover.")
-            Button("Action") { /* Trigger Event */ }
-            Text("⚠️ Failed to insert deflection phrase into input field.")
-            Text("✅ Inserted deflection: \\")
-            Button("Action") { /* Trigger Event */ }
-            Button("✅ Clicked send button!") { /* Trigger Event */ }
-            Button("⚠️ Could not find a send button to click.") { /* Trigger Event */ }
-            Button("Action") { /* Trigger Event */ }
-            Button("EditText") { /* Trigger Event */ }
-            Button("send") { /* Trigger Event */ }
-            Button("send") { /* Trigger Event */ }
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: MommaTakeover").font(.title2).bold().padding(.bottom)
+                Button(action: {}) {
+                    HStack {
+                        Text("Momma Takeover")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("MommaTakeover")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("I don't know… I'm really tired. I think I'm going to bed.").font(.subheadline).foregroundColor(.secondary)
+                Text("Sorry, I'm not feeling well. Maybe tomorrow.").font(.subheadline).foregroundColor(.secondary)
+                Text("I'm kinda busy right now. Can we talk later?").font(.subheadline).foregroundColor(.secondary)
+                Text("I need to go. My mom's calling me.").font(.subheadline).foregroundColor(.secondary)
+                Text("I'm not sure what to say. I'll talk to you later.").font(.subheadline).foregroundColor(.secondary)
+                Text("I'm not comfortable talking about that.").font(.subheadline).foregroundColor(.secondary)
+                Text("I need to go. My mom's calling me.").font(.subheadline).foregroundColor(.secondary)
+                Text("I don't think I should be sharing that.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("I'm not okay with this. Please stop.")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("That's not okay. I'm stepping away.")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("I don't deserve to be talked to like this.").font(.subheadline).foregroundColor(.secondary)
+                Text("I'm logging off for now.").font(.subheadline).foregroundColor(.secondary)
+                Text("I'm not sure I trust this conversation.").font(.subheadline).foregroundColor(.secondary)
+                Text("I need to think about this. Talk later?").font(.subheadline).foregroundColor(.secondary)
+                Text("I'm feeling confused. I'm going to step away.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("I'm not feeling okay. I need to talk to someone.")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("I'm going to take a break and breathe.").font(.subheadline).foregroundColor(.secondary)
+                Text("I'm reaching out to someone I trust.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("❌ No active window found for takeover.").font(.subheadline).foregroundColor(.secondary)
+                Text("❌ No input field found for Momma Takeover.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("⚠️ Failed to insert deflection phrase into input field.").font(.subheadline).foregroundColor(.secondary)
+                Text("✅ Inserted deflection: \\").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("✅ Clicked send button!")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("⚠️ Could not find a send button to click.")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("EditText")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("send")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("send")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("MommaTakeover")
     }
 }

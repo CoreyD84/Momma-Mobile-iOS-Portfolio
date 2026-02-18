@@ -4,59 +4,340 @@ struct GuardianNotificationServiceScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: GuardianNotificationService").font(.title).bold()
-            Text("GuardianNotificationService")
-            Text("guardian_service")
-            Text("GuardianNotificationService created")
-            Text("No guardian logged in, service will wait for authentication")
-            Button("Service started") { /* Trigger Event */ }
-            Text("Service destroyed, removing listeners")
-            Text("Guardian Monitoring Service")
-            Text("Keeps Momma Mobile monitoring active")
-            Button("momma_critical") { /* Trigger Event */ }
-            Text("Critical Alerts")
-            Text("Critical threats and FreezeReflex activations")
-            Button("momma_high") { /* Trigger Event */ }
-            Text("High Priority Alerts")
-            Text("Blocked contact attempts and high severity threats")
-            Button("momma_medium") { /* Trigger Event */ }
-            Text("Medium Priority Alerts")
-            Text("Medium severity threats")
-            Button("momma_info") { /* Trigger Event */ }
-            Button("Information") { /* Trigger Event */ }
-            Button("General information and updates") { /* Trigger Event */ }
-            Text("Momma Mobile Active")
-            Text("Monitoring for threats and protecting your child")
-            Button("source") { /* Trigger Event */ }
-            Button("message") { /* Trigger Event */ }
-            Button("severity") { /* Trigger Event */ }
-            Button("category") { /* Trigger Event */ }
-            Button("timestamp") { /* Trigger Event */ }
-            Text("Error handling FreezeReflex activation")
-            Button("source") { /* Trigger Event */ }
-            Button("message") { /* Trigger Event */ }
-            Button("timestamp") { /* Trigger Event */ }
-            Text("Error handling blocked attempt")
-            Button("category") { /* Trigger Event */ }
-            Button("severity") { /* Trigger Event */ }
-            Button("message") { /* Trigger Event */ }
-            Button("timestamp") { /* Trigger Event */ }
-            Button("HIGH") { /* Trigger Event */ }
-            Text("Error handling threat detection")
-            Button("Your child") { /* Trigger Event */ }
-            Button("Your child") { /* Trigger Event */ }
-            Button("open_tab") { /* Trigger Event */ }
-            Button("momma_critical") { /* Trigger Event */ }
-            Button("open_tab") { /* Trigger Event */ }
-            Button("momma_high") { /* Trigger Event */ }
-            Button("open_tab") { /* Trigger Event */ }
-            Button("CRITICAL") { /* Trigger Event */ }
-            Button("CRITICAL") { /* Trigger Event */ }
-            Button("CRITICAL") { /* Trigger Event */ }
-            Button("CRITICAL") { /* Trigger Event */ }
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: GuardianNotificationService").font(.title2).bold().padding(.bottom)
+                Text("GuardianNotificationService").font(.subheadline).foregroundColor(.secondary)
+                Text("guardian_service").font(.subheadline).foregroundColor(.secondary)
+                Text("GuardianNotificationService created").font(.subheadline).foregroundColor(.secondary)
+                Text("No guardian logged in, service will wait for authentication").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Service started")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Service destroyed, removing listeners").font(.subheadline).foregroundColor(.secondary)
+                Text("Guardian Monitoring Service").font(.subheadline).foregroundColor(.secondary)
+                Text("Keeps Momma Mobile monitoring active").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("momma_critical")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Critical Alerts").font(.subheadline).foregroundColor(.secondary)
+                Text("Critical threats and FreezeReflex activations").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("momma_high")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("High Priority Alerts").font(.subheadline).foregroundColor(.secondary)
+                Text("Blocked contact attempts and high severity threats").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("momma_medium")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Medium Priority Alerts").font(.subheadline).foregroundColor(.secondary)
+                Text("Medium severity threats").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("momma_info")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Information")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("General information and updates")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Momma Mobile Active").font(.subheadline).foregroundColor(.secondary)
+                Text("Monitoring for threats and protecting your child").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("source")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("message")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("severity")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("category")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Error handling FreezeReflex activation").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("source")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("message")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Error handling blocked attempt").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("category")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("severity")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("message")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("timestamp")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("HIGH")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("Error handling threat detection").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Your child")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Your child")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("open_tab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("momma_critical")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("open_tab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("momma_high")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("open_tab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("CRITICAL")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("CRITICAL")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("CRITICAL")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("CRITICAL")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("GuardianNotificationService")
     }
 }

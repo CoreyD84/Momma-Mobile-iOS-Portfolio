@@ -4,11 +4,12 @@ struct ExampleInstrumentedTestScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: ExampleInstrumentedTest").font(.title).bold()
-            Text("com.airnettie.mobile.child")
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: ExampleInstrumentedTest").font(.title2).bold().padding(.bottom)
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("ExampleInstrumentedTest")
     }
 }

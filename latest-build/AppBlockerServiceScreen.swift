@@ -4,18 +4,56 @@ struct AppBlockerServiceScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Momma Mobile: AppBlockerService").font(.title).bold()
-            Text("AppBlockerService")
-            Text("✅ App Blocker service connected.")
-            Button("child_id") { /* Trigger Event */ }
-            Button("guardian_id") { /* Trigger Event */ }
-            Text("⚠️ Child ID or Guardian ID not found in prefs - AppScope disabled")
-            Button("enabled") { /* Trigger Event */ }
-            Button("blockedApps") { /* Trigger Event */ }
-            Text("App Blocker service interrupted")
-            Spacer()
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Momma Mobile: AppBlockerService").font(.title2).bold().padding(.bottom)
+                Text("AppBlockerService").font(.subheadline).foregroundColor(.secondary)
+                Text("✅ App Blocker service connected.").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("guardian_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("⚠️ Child ID or Guardian ID not found in prefs - AppScope disabled").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("enabled")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("blockedApps")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Text("App Blocker service interrupted").font(.subheadline).foregroundColor(.secondary)
+                Spacer()
+            }.padding()
+        }
         .navigationTitle("AppBlockerService")
     }
 }
