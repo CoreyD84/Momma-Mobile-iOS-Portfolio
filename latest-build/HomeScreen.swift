@@ -1,12 +1,16 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @AppStorage("isLoggedIn") var isLoggedIn = true
     @State private var searchText = ""
     let allScreens = ["AdminDeactivationMonitor", "AppBlockerService", "AppScopeToggle", "AutoHideProvider", "BlockedAppActivity", "BlockedContact", "BlockedWebsiteActivity", "BootReceiver", "ChildLinkActivity", "ChildSelector", "ChildSyncService", "Color", "ComposePlatformControlFragment", "ConsentManagementActivity", "ConsentModal", "ConsentOverviewActivity", "ConsentOverviewFragment", "ConsentOverviewTab", "EmotionalPatternLoader", "EmotionalRadar", "EmotionalScanner", "EscalationMatrix", "ExampleInstrumentedTest", "ExampleUnitTest", "FactoryResetDetector", "FeelScopeService", "FirebaseExtensions", "FirebaseLogger", "FirebaseSync", "Flag", "FlaggedMessage", "FlaggedMessageAdapter", "FlaggedMessagesActivity", "FlaggedMessagesFragment", "FlaggedMessagesTab", "FreezeReflex", "FreezeReflexFragment", "FreezeReflexTab", "FreezeReflexWarningActivity", "GenerateLinkQrActivity", "GuardianDashboard", "GuardianNotificationService", "GuardianTabAdapter", "HarmfulPatterns", "HeartbeatMonitorService", "LinkedChildrenActivity", "LinkedChildrenFragment", "LinkedChildrenTab", "LocationStatusActivity", "LocationStatusFragment", "LocationStatusTab", "LocationSync", "LocationTrackerService", "LoginActivity", "MainActivity", "MainApplication", "MascotMood", "MascotMoodActivity", "MascotMoodFragment", "MascotMoodTab", "MessageNotificationListener", "MessageScannerActivity", "MessageScannerFragment", "MessageScannerTab", "MommaDeviceAdmin", "MommaMobileTheme", "MommaNotificationService", "MommaTakeover", "NettieDeviceAdminReceiver", "NettieProtectionService", "OnlineSafetyActivity", "OnlineSafetyFragment", "OnlineSafetyTab", "PlatformControlActivity", "PlatformControlReceiver", "PlatformControlTab", "PlatformEnforcementService", "QRUtils", "RecentDetectionsActivities", "RecentDetectionsFragment", "RecentDetectionsTab", "SafeScope", "SafeScopeFragment", "SafeScopeToggle", "SafeScopeVpnService", "ScannerEngine", "ScannerGlobals", "ServiceStarter", "SetupActivity", "Setup", "SmsComposeActivity", "SmsDetectionsActivity", "SmsDetectionsFragment", "SmsDetectionsTab", "SmsInboxActivity", "SmsReceiver", "SubscriptionExpiredActivity", "SubscriptionExpired", "SubscriptionManager", "Theme", "Type", "UninstallAttemptMonitor", "VpnPermissionActivity", "WebsiteBlockerService"]
     
     var body: some View {
         NavigationView {
             List {
+                Section {
+                   Button("Logout") { isLoggedIn = false }.foregroundColor(.red)
+                }
                 if searchText.isEmpty {
                     
                     Section(header: Text("Admin Hub")) {
@@ -50,7 +54,6 @@ struct HomeScreen: View {
     }
 }
 
-// Universal Resolver for Dynamic Navigation
 struct AnyViewByName: View {
     let name: String
     var body: some View {
