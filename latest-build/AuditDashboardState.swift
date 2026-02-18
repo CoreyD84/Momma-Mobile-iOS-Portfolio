@@ -1,6 +1,6 @@
 import Foundation
 
-struct SafetyDashboardState: Codable, Hashable, Identifiable {
+struct AuditDashboardState: Codable, Hashable, Identifiable {
     var id: String = UUID().uuidString
     var isLoading: Bool = false
 
@@ -8,5 +8,5 @@ struct SafetyDashboardState: Codable, Hashable, Identifiable {
         self.isLoading = isLoading
     }
 
-    static var initial: SafetyDashboardState { SafetyDashboardState() }
+    static var initial: AuditDashboardState { AuditDashboardState() }
 }

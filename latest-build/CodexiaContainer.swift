@@ -4,11 +4,11 @@ import Foundation
 class CodexiaContainer: ObservableObject {
     static let shared = CodexiaContainer()
 
-
-    let safetyDashboardViewModel: SafetyDashboardViewModel
+    let auditRepository: AuditRepository
+    let auditDashboardViewModel: AuditDashboardViewModel
 
     private init() {
-
-        self.safetyDashboardViewModel = SafetyDashboardViewModelFactory.make()
+        self.auditRepository = AuditRepositoryImpl.shared
+        self.auditDashboardViewModel = AuditDashboardViewModelFactory.make()
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-enum SafetyDashboardEvent: Equatable {
+enum AuditDashboardEvent: Equatable {
     case onAppear
     case refresh
 }

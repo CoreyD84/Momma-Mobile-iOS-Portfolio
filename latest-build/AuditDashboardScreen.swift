@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct SafetyDashboardScreen: View {
-    @StateObject private var viewModel = SafetyDashboardViewModel()
+struct AuditDashboardScreen: View {
+    @StateObject private var viewModel = AuditDashboardViewModel()
 
     var body: some View {
         NavigationView {
@@ -11,13 +11,13 @@ struct SafetyDashboardScreen: View {
                     .frame(width: 80, height: 80)
                     .foregroundColor(.blue)
                     .padding()
-                Text("SafetyDashboard Module Verified")
+                Text("AuditDashboard Module Verified")
                     .font(.headline)
                 Text("Architecture: MVI + Dependency Injection")
                     .font(.caption)
                     .foregroundColor(.gray)
             }
-            .navigationTitle("SafetyDashboard")
+            .navigationTitle("AuditDashboard")
         }
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-struct SafetyState: Codable, Hashable, Identifiable {
+struct AuditState: Codable, Hashable, Identifiable {
     var id: String = UUID().uuidString
     var isLoading: Bool = false
 
@@ -8,5 +8,5 @@ struct SafetyState: Codable, Hashable, Identifiable {
         self.isLoading = isLoading
     }
 
-    static var initial: SafetyState { SafetyState() }
+    static var initial: AuditState { AuditState() }
 }
