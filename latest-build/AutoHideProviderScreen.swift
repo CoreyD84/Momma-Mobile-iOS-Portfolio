@@ -7,7 +7,6 @@ struct AutoHideProviderScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: AutoHideProvider").font(.title).bold()
             Button("MommaStealth") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("MommaStealth") { /* Trigger Event */ }
             Text("com.airnettie.mobile.child.LauncherAlias")

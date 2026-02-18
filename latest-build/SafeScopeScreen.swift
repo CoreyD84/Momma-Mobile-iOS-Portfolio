@@ -9,19 +9,16 @@ struct SafeScopeScreen: View {
             Text("SpellCheckingInspection")
             Button("SafeScope") { /* Trigger Event */ }
             Text("✅ SafeScope activated — listening for Firebase toggle")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Text("Missing guardianId or childId — skipping toggle listener.")
             Text("🟢 SafeScope toggle ON — scanning enabled")
             Text("🔴 SafeScope toggle OFF — scanning disabled")
             Text("🛑 SafeScope deactivated — listener removed")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Text("Missing guardianId or childId — skipping toggle sync.")
             Button("critical") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Text("Missing guardianId or childId — skipping flag sync.")

@@ -19,10 +19,8 @@ struct UninstallAttemptMonitorScreen: View {
             Button("settings") { /* Trigger Event */ }
             Text("⚠️ App settings opened - possible uninstall attempt")
             Text("App settings accessed")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Text("Settings app opened")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Text("device_nickname")
             Button("severity") { /* Trigger Event */ }

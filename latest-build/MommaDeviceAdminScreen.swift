@@ -13,14 +13,12 @@ struct MommaDeviceAdminScreen: View {
             Button("disabled") { /* Trigger Event */ }
             Text("⚠️ Child is attempting to disable Device Admin!")
             Text("⚠️ Disabling this will alert your guardian and may violate your safety agreement.")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("event") { /* Trigger Event */ }
             Button("timestamp") { /* Trigger Event */ }
             Button("severity") { /* Trigger Event */ }
             Button("message") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("severity") { /* Trigger Event */ }
@@ -28,14 +26,12 @@ struct MommaDeviceAdminScreen: View {
             Button("timestamp") { /* Trigger Event */ }
             Button("type") { /* Trigger Event */ }
             Button("actionRequired") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("severity") { /* Trigger Event */ }
             Button("message") { /* Trigger Event */ }
             Button("timestamp") { /* Trigger Event */ }
             Button("type") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("last_seen") { /* Trigger Event */ }

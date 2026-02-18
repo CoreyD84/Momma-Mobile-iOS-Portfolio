@@ -15,7 +15,6 @@ struct VpnPermissionActivityScreen: View {
             Text("SafeScope requires VPN permission to filter content")
             Text("SafeScope enabled")
             Button("SafeScopeVpnService started after permission grant") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Text("SafeScope toggle reset to false in Firebase")

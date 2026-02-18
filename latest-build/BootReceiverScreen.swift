@@ -10,7 +10,6 @@ struct BootReceiverScreen: View {
             Text("com.airnettie.mobile.child.LauncherAlias")
             Button("MommaStealth") { /* Trigger Event */ }
             Button("MommaStealth") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("MommaStealth") { /* Trigger Event */ }
             Button("MommaStealth") { /* Trigger Event */ }

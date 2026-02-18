@@ -7,7 +7,6 @@ struct FactoryResetDetectorScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FactoryResetDetector").font(.title).bold()
             Text("FactoryResetDetector")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("device_fingerprint")
             Button("device_id") { /* Trigger Event */ }
             Text("installation_id")

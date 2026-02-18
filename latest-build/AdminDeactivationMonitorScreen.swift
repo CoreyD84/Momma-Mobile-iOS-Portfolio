@@ -9,11 +9,9 @@ struct AdminDeactivationMonitorScreen: View {
             Text("AdminDeactivationMonitor")
             Text("AdminDeactivationMonitor service created")
             Button("AdminDeactivationMonitor service started") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Text("Missing child ID or guardian ID, cannot monitor deactivation requests")
             Text("⚠️ Guardian has requested Device Admin deactivation")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("admin_deactivation_authorized")
             Text("✅ Guardian has authorized admin deactivation - device will NOT lock")
             Text("Processing admin deactivation request...")
@@ -24,9 +22,7 @@ struct AdminDeactivationMonitorScreen: View {
             Text("Device Admin is already inactive")
             Text("✅ Cleared deactivation request flag")
             Text("✅ Cleared authorization flag")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("admin_deactivation_authorized")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("device_nickname")
             Button("severity") { /* Trigger Event */ }
             Button("message") { /* Trigger Event */ }

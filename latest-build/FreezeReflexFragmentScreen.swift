@@ -143,7 +143,6 @@ struct FreezeReflexFragmentScreen: View {
             Text("MMM dd, yyyy • h:mm a")
             Button("Unknown time") { /* Trigger Event */ }
             Text("Please log in to block contacts")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("selected_child_id")
             Button("No linked children found") { /* Trigger Event */ }
             Button("identifier") { /* Trigger Event */ }

@@ -6,7 +6,6 @@ struct MainActivityScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: MainActivity").font(.title).bold()
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("token") { /* Trigger Event */ }

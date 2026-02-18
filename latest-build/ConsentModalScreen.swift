@@ -17,7 +17,6 @@ struct ConsentModalScreen: View {
             Button("Are you sure you want to revoke consent? Nettie will no longer monitor this platform.") { /* Trigger Event */ }
             Button("Revoke") { /* Trigger Event */ }
             Button("Cancel") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Text("⚠️ Missing guardian ID. Consent not logged.")

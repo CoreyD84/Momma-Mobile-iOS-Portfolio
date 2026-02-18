@@ -8,7 +8,6 @@ struct ConsentManagementActivityScreen: View {
             Text("Momma Mobile: ConsentManagementActivity").font(.title).bold()
             Button("Action") { /* Trigger Event */ }
             Text("ConsentManagement")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Button("nickname") { /* Trigger Event */ }
             Text("ConsentManagement")

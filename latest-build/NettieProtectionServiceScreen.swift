@@ -45,7 +45,6 @@ struct NettieProtectionServiceScreen: View {
             Text("⚠️ Global HOME action failed")
             Button("Grooming") { /* Trigger Event */ }
             Text("UnspecifiedRegisterReceiverFlag")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("✅ Nettie Protection Service connected (Unified: AppScope + SafeScope + FeelScope)")
             Button("child_id") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }

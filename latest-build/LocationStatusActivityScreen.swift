@@ -13,7 +13,6 @@ struct LocationStatusActivityScreen: View {
             Text("com.google.android.apps.maps")
             Text("📍 Location permission granted. Syncing live location...")
             Text("⚠️ Location permission denied. Showing default location.")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Text("LocationStatusActivity")
             Text("❌ Guardian ID not found")

@@ -12,7 +12,6 @@ struct NettieDeviceAdminReceiverScreen: View {
             Text("⚠️ Device Admin disabled - App can now be uninstalled")
             Text("⚠️ Device protection deactivated")
             Text("⚠️ User attempting to disable Device Admin - onDisableRequested called")
-            Text("nettie_secure_prefs")
             Text("admin_deactivation_authorized")
             Text("🔒 UNAUTHORIZED deactivation (cached) - attempting immediate lock")
             Text("🔒 Device locked immediately from onDisableRequested")
@@ -30,11 +29,8 @@ struct NettieDeviceAdminReceiverScreen: View {
             Text("🔒 LOCKING DEVICE NOW!")
             Text("🔒 Device locked - Guardian password required")
             Text("❌ Cannot lock device - admin not active")
-            Text("nettie_secure_prefs")
             Text("admin_deactivation_authorized")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Text("device_nickname")
             Button("severity") { /* Trigger Event */ }
@@ -44,7 +40,6 @@ struct NettieDeviceAdminReceiverScreen: View {
             Button("actionRequired") { /* Trigger Event */ }
             Text("✅ Alerted guardian of unauthorized admin deactivation")
             Text("✅ Set uninstall_imminent flag")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("device_nickname")
             Button("severity") { /* Trigger Event */ }
             Button("message") { /* Trigger Event */ }

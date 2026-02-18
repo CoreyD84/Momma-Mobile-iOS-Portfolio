@@ -33,7 +33,6 @@ struct MessageNotificationListenerScreen: View {
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("message") { /* Trigger Event */ }

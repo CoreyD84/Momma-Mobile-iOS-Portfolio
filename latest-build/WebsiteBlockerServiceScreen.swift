@@ -15,7 +15,6 @@ struct WebsiteBlockerServiceScreen: View {
             Text("com.duckduckgo.mobile.android")
             Text("com.sec.android.app.sbrowser")
             Text("com.google.android.googlequicksearchbox")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Text("✅ Website Blocker service connected.")
             Button("child_id") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }

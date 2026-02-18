@@ -31,7 +31,6 @@ struct ChildLinkActivityScreen: View {
             Button("last_seen") { /* Trigger Event */ }
             Button("mood") { /* Trigger Event */ }
             Button("linked_at") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Text("device_nickname")
             Button("ChildLinkActivity") { /* Trigger Event */ }
@@ -47,7 +46,6 @@ struct ChildLinkActivityScreen: View {
             Button("nickname") { /* Trigger Event */ }
             Button("last_seen") { /* Trigger Event */ }
             Button("mood") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Text("device_nickname")
             Button("ChildLinkActivity") { /* Trigger Event */ }

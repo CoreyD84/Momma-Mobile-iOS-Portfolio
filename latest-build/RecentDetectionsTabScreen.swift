@@ -9,7 +9,6 @@ struct RecentDetectionsTabScreen: View {
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Text("SpellCheckingInspection")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Text("RecentDetectionsTab")

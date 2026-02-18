@@ -7,7 +7,6 @@ struct ChildSyncServiceScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: ChildSyncService").font(.title).bold()
             Text("ChildSyncService")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("latitude") { /* Trigger Event */ }
@@ -17,7 +16,6 @@ struct ChildSyncServiceScreen: View {
             Button("provider") { /* Trigger Event */ }
             Button("age") { /* Trigger Event */ }
             Button("Location permission not granted. Stopping.") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("Child ID is null. Stopping service.") { /* Trigger Event */ }

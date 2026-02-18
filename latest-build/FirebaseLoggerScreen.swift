@@ -29,9 +29,7 @@ struct FirebaseLoggerScreen: View {
             Button("message") { /* Trigger Event */ }
             Button("timestamp") { /* Trigger Event */ }
             Text("yyyy-MM-dd_HH:mm:ss")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Spacer()
         }.padding()

@@ -7,7 +7,6 @@ struct FreezeReflexTabScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FreezeReflexTab").font(.title).bold()
             Button("Action") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Text("Missing guardian or child identity. Please log in again.")

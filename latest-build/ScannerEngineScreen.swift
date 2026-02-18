@@ -12,7 +12,6 @@ struct ScannerEngineScreen: View {
             Button("[^a-z0-9\\\\s]") { /* Trigger Event */ }
             Button("\\\\s+") { /* Trigger Event */ }
             Text("threat_grooming")
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("guardian_id") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }

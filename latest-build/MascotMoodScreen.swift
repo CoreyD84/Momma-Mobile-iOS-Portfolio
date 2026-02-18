@@ -14,7 +14,6 @@ struct MascotMoodScreen: View {
             Button("low") { /* Trigger Event */ }
             Button("neutral") { /* Trigger Event */ }
             Button("mood_set") { /* Trigger Event */ }
-            Button("nettie_prefs") { /* Trigger Event */ }
             Button("household_id") { /* Trigger Event */ }
             Button("child_id") { /* Trigger Event */ }
             Text("Missing householdId or childId — skipping mood sync.")
