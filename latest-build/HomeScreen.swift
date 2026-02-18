@@ -1,22 +1,35 @@
 
 import SwiftUI
+
 struct HomeScreen: View {
     @AppStorage("isLoggedIn") var isLoggedIn = true
     var body: some View {
         NavigationView {
             ZStack {
-                Color.black.edgesIgnoringSafeArea(.all)
+                // Background Mascot Image (Requires asset "MommaDashBackground" in Xcode)
+                Image("MommaDashBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                
                 ScrollView {
-                    VStack(spacing: 10) {
-                        Spacer().frame(height: 40)
+                    VStack(spacing: 12) {
+                        Spacer().frame(height: 60)
                         ForEach(["LINK CHILD DEVICE","RECENT","FLAGGED","FREEZE","LINKED","MASCOT","SCANNER","PLATFORMS","SMS","LOCATION","CONSENT"], id: \.self) { btn in
                             NavigationLink(destination: AnyViewByName(name: btn)) {
-                                Text(btn).font(.system(size: 16, weight: .black, design: .monospaced))
-                                    .foregroundColor(.white).frame(width: 220, height: 45)
-                                    .background(Color.purple).cornerRadius(4)
+                                Text(btn)
+                                    .font(.system(size: 18, weight: .black, design: .monospaced))
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 240, height: 55)
+                                    .background(Color.purple)
+                                    .cornerRadius(6)
+                                    .shadow(color: .black.opacity(0.3), radius: 4, x: 0, y: 4)
                             }
                         }
-                    }.frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing, 20)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding(.trailing, 25)
                 }
             }
         }
