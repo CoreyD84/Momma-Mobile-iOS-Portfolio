@@ -1,58 +1,127 @@
 import SwiftUI
-
 struct GuardianDashboardScreen: View {
-
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 15) {
-                Text("GuardianDashboard").font(.title2).bold().padding(.bottom)
+            VStack(alignment: .leading, spacing: 12) {
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("Action")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
             }.padding()
         }

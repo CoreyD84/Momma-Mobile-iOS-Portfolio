@@ -2,55 +2,46 @@ import SwiftUI
 
 struct HomeScreen: View {
     @AppStorage("isLoggedIn") var isLoggedIn = true
+    
+    var body: some View {
+        TabView {
+            // 🏠 HOME/DASHBOARD TAB
+            NavigationView {
+                FleetListView(category: "Admin")
+                    .navigationTitle("Admin Hub")
+                    .toolbar { Button("Logout") { isLoggedIn = false } }
+            }
+            .tabItem { Label("Admin", systemImage: "shield.fill") }
+            
+            // 📡 MONITORING TAB
+            NavigationView {
+                FleetListView(category: "Monitor")
+                    .navigationTitle("Monitoring")
+            }
+            .tabItem { Label("Monitor", systemImage: "waveform.path.ecg") }
+
+            // ⚙️ SETTINGS TAB
+            NavigationView {
+                FleetListView(category: "Settings")
+                    .navigationTitle("Settings")
+            }
+            .tabItem { Label("Settings", systemImage: "gearshape.fill") }
+        }
+    }
+}
+
+struct FleetListView: View {
+    let category: String
     @State private var searchText = ""
     let allScreens = ["AdminDeactivationMonitor", "AppBlockerService", "AppScopeToggle", "AutoHideProvider", "BlockedAppActivity", "BlockedContact", "BlockedWebsiteActivity", "BootReceiver", "ChildLinkActivity", "ChildSelector", "ChildSyncService", "Color", "ComposePlatformControlFragment", "ConsentManagementActivity", "ConsentModal", "ConsentOverviewActivity", "ConsentOverviewFragment", "ConsentOverviewTab", "EmotionalPatternLoader", "EmotionalRadar", "EmotionalScanner", "EscalationMatrix", "ExampleInstrumentedTest", "ExampleUnitTest", "FactoryResetDetector", "FeelScopeService", "FirebaseExtensions", "FirebaseLogger", "FirebaseSync", "Flag", "FlaggedMessage", "FlaggedMessageAdapter", "FlaggedMessagesActivity", "FlaggedMessagesFragment", "FlaggedMessagesTab", "FreezeReflex", "FreezeReflexFragment", "FreezeReflexTab", "FreezeReflexWarningActivity", "GenerateLinkQrActivity", "GuardianDashboard", "GuardianNotificationService", "GuardianTabAdapter", "HarmfulPatterns", "HeartbeatMonitorService", "LinkedChildrenActivity", "LinkedChildrenFragment", "LinkedChildrenTab", "LocationStatusActivity", "LocationStatusFragment", "LocationStatusTab", "LocationSync", "LocationTrackerService", "LoginActivity", "MainActivity", "MainApplication", "MascotMood", "MascotMoodActivity", "MascotMoodFragment", "MascotMoodTab", "MessageNotificationListener", "MessageScannerActivity", "MessageScannerFragment", "MessageScannerTab", "MommaDeviceAdmin", "MommaMobileTheme", "MommaNotificationService", "MommaTakeover", "NettieDeviceAdminReceiver", "NettieProtectionService", "OnlineSafetyActivity", "OnlineSafetyFragment", "OnlineSafetyTab", "PlatformControlActivity", "PlatformControlReceiver", "PlatformControlTab", "PlatformEnforcementService", "QRUtils", "RecentDetectionsActivities", "RecentDetectionsFragment", "RecentDetectionsTab", "SafeScope", "SafeScopeFragment", "SafeScopeToggle", "SafeScopeVpnService", "ScannerEngine", "ScannerGlobals", "ServiceStarter", "SetupActivity", "Setup", "SmsComposeActivity", "SmsDetectionsActivity", "SmsDetectionsFragment", "SmsDetectionsTab", "SmsInboxActivity", "SmsReceiver", "SubscriptionExpiredActivity", "SubscriptionExpired", "SubscriptionManager", "Theme", "Type", "UninstallAttemptMonitor", "VpnPermissionActivity", "WebsiteBlockerService"]
     
     var body: some View {
-        NavigationView {
-            List {
-                Section {
-                   Button("Logout") { isLoggedIn = false }.foregroundColor(.red)
-                }
-                if searchText.isEmpty {
-                    
-                    Section(header: Text("Admin Hub")) {
-                        ForEach(allScreens.filter { $0.contains("Admin") }, id: \.self) { name in
-                            NavigationLink(name, destination: AnyViewByName(name: name))
-                        }
-                    }
-
-                    Section(header: Text("Monitor Hub")) {
-                        ForEach(allScreens.filter { $0.contains("Monitor") }, id: \.self) { name in
-                            NavigationLink(name, destination: AnyViewByName(name: name))
-                        }
-                    }
-
-                    Section(header: Text("Service Hub")) {
-                        ForEach(allScreens.filter { $0.contains("Service") }, id: \.self) { name in
-                            NavigationLink(name, destination: AnyViewByName(name: name))
-                        }
-                    }
-
-                    Section(header: Text("Settings Hub")) {
-                        ForEach(allScreens.filter { $0.contains("Settings") }, id: \.self) { name in
-                            NavigationLink(name, destination: AnyViewByName(name: name))
-                        }
-                    }
-
-                    Section(header: Text("Auth Hub")) {
-                        ForEach(allScreens.filter { $0.contains("Auth") }, id: \.self) { name in
-                            NavigationLink(name, destination: AnyViewByName(name: name))
-                        }
-                    }
-                } else {
-                    ForEach(allScreens.filter { $0.localizedCaseInsensitiveContains(searchText) }, id: \.self) { name in
-                        NavigationLink(name, destination: AnyViewByName(name: name))
-                    }
-                }
+        List {
+            ForEach(allScreens.filter { $0.contains(category) && (searchText.isEmpty || $0.localizedCaseInsensitiveContains(searchText)) }, id: \.self) { name in
+                NavigationLink(name, destination: AnyViewByName(name: name))
             }
-            .searchable(text: $searchText)
-            .navigationTitle("Codexia Fleet")
         }
+        .searchable(text: $searchText)
     }
 }
 
@@ -162,7 +153,7 @@ struct AnyViewByName: View {
         case "UninstallAttemptMonitor": UninstallAttemptMonitorScreen()
         case "VpnPermissionActivity": VpnPermissionActivityScreen()
         case "WebsiteBlockerService": WebsiteBlockerServiceScreen()
-        default: Text("Screen Not Found")
+        default: Text("Unknown Screen")
         }
     }
 }

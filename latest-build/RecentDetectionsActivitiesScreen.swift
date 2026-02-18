@@ -1,18 +1,27 @@
 import SwiftUI
-
 struct RecentDetectionsActivitiesScreen: View {
-
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 15) {
-                Text("RecentDetectionsActivities").font(.title2).bold().padding(.bottom)
+            VStack(alignment: .leading, spacing: 12) {
                 Button(action: {}) {
-                    HStack { Text("DEPRECATION"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("DEPRECATION")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
                 Button(action: {}) {
-                    HStack { Text("RecentDetections"); Spacer(); Image(systemName: "chevron.right.circle") }
-                    .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
+                    HStack {
+                        Text("RecentDetections")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(10)
                 }
             }.padding()
         }

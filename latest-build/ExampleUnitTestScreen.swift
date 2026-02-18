@@ -1,11 +1,8 @@
 import SwiftUI
-
 struct ExampleUnitTestScreen: View {
-
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 15) {
-                Text("ExampleUnitTest").font(.title2).bold().padding(.bottom)
+            VStack(alignment: .leading, spacing: 12) {
             }.padding()
         }
         .navigationTitle("ExampleUnitTest")

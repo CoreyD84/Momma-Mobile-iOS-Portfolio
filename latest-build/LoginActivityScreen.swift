@@ -1,204 +1,153 @@
 import SwiftUI
-
 struct LoginActivityScreen: View {
     @AppStorage("isLoggedIn") var isLoggedIn = false
-
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 15) {
-                Text("LoginActivity").font(.title2).bold().padding(.bottom)
+            VStack(alignment: .leading, spacing: 12) {
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_email"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_email").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_password"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_password").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_email"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_email").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_email"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_email").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_password"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_password").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_email"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_email").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_password"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_password").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_id"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_id").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_name"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_name").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("guardian_id"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("guardian_id").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("name"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("name").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("Action"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("Action").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("household_id"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("household_id").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
                 Button(action: { isLoggedIn = true }) {
-                    HStack { Text("LoginActivity"); Spacer(); Image(systemName: "lock.open.fill") }
-                    .padding().frame(maxWidth: .infinity).background(Color.blue).foregroundColor(.white).cornerRadius(10)
-                }
+                    Text("LoginActivity").bold().frame(maxWidth: .infinity).padding().background(Color.blue).foregroundColor(.white).cornerRadius(12)
+                }.padding(.top)
             }.padding()
         }
         .navigationTitle("LoginActivity")

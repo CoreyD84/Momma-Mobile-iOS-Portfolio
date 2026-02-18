@@ -1,11 +1,8 @@
 import SwiftUI
-
 struct MainApplicationScreen: View {
-
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 15) {
-                Text("MainApplication").font(.title2).bold().padding(.bottom)
+            VStack(alignment: .leading, spacing: 12) {
             }.padding()
         }
         .navigationTitle("MainApplication")
