@@ -6,7 +6,7 @@ struct HomeScreen: View {
     var body: some View {
         NavigationView {
             ZStack {
-                // Background Mascot Image (Requires asset "MommaDashBackground" in Xcode)
+                // Background Mascot Image (Name this "MommaDashBackground" in Xcode)
                 Image("MommaDashBackground")
                     .resizable()
                     .scaledToFill()
