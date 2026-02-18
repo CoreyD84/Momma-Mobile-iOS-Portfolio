@@ -1,23 +1,21 @@
 import SwiftUI
 
 struct MessageScannerTabScreen: View {
-    @StateObject private var viewModel = MessageScannerTabViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("MessageScannerTab Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("MessageScannerTab")
-        }
+        VStack(spacing: 20) {
+            Text("Message Scanner")
+            TextField("Action", text: .constant(""))
+                .textFieldStyle(.roundedBorder)
+            Text("Enter message")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Text("Scan")
+            Text("Action")
+            Spacer()
+        }.padding()
+        .navigationTitle("MessageScannerTab")
     }
 }

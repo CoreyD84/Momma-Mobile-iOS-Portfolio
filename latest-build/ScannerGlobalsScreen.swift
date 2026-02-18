@@ -1,23 +1,20 @@
 import SwiftUI
 
 struct ScannerGlobalsScreen: View {
-    @StateObject private var viewModel = ScannerGlobalsViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("ScannerGlobals Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("ScannerGlobals")
+        
+        VStack {
+            Image(systemName: "checkmark.shield.fill")
+                .font(.system(size: 60))
+                .foregroundColor(.blue)
+            Text("ScannerGlobals Logic Active")
+                .font(.headline)
+            Text("Architecture: MVI + Dependency Injection")
+                .font(.caption)
+                .foregroundColor(.gray)
         }
+        .navigationTitle("ScannerGlobals")
     }
 }

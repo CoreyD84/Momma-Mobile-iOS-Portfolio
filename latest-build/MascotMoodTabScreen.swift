@@ -1,23 +1,18 @@
 import SwiftUI
 
 struct MascotMoodTabScreen: View {
-    @StateObject private var viewModel = MascotMoodTabViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("MascotMoodTab Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("MascotMoodTab")
-        }
+        VStack(spacing: 20) {
+            Text("Mascot Mood History")
+            ProgressView()
+            Text("No mood history has been recorded yet.")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Spacer()
+        }.padding()
+        .navigationTitle("MascotMoodTab")
     }
 }

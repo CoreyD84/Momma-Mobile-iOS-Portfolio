@@ -1,23 +1,20 @@
 import SwiftUI
 
 struct ChildSelectorScreen: View {
-    @StateObject private var viewModel = ChildSelectorViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("ChildSelector Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("ChildSelector")
-        }
+        VStack(spacing: 20) {
+            ProgressView()
+            Text("Action")
+            Text("Action")
+            TextField("Action", text: .constant(""))
+                .textFieldStyle(.roundedBorder)
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Spacer()
+        }.padding()
+        .navigationTitle("ChildSelector")
     }
 }

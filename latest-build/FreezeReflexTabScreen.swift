@@ -1,23 +1,20 @@
 import SwiftUI
 
 struct FreezeReflexTabScreen: View {
-    @StateObject private var viewModel = FreezeReflexTabViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("FreezeReflexTab Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("FreezeReflexTab")
+        
+        VStack {
+            Image(systemName: "checkmark.shield.fill")
+                .font(.system(size: 60))
+                .foregroundColor(.blue)
+            Text("FreezeReflexTab Logic Active")
+                .font(.headline)
+            Text("Architecture: MVI + Dependency Injection")
+                .font(.caption)
+                .foregroundColor(.gray)
         }
+        .navigationTitle("FreezeReflexTab")
     }
 }

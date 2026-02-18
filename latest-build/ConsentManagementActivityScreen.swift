@@ -1,23 +1,38 @@
 import SwiftUI
 
 struct ConsentManagementActivityScreen: View {
-    @StateObject private var viewModel = ConsentManagementActivityViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("ConsentManagementActivity Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("ConsentManagementActivity")
-        }
+        VStack(spacing: 20) {
+            Text("Consent Management")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Text("Grant Consent")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Text("Revoke Consent")
+            Text("Action")
+            Text("Action")
+            Text("• ")
+            Text("Action")
+            Toggle("Action", isOn: .constant(true))
+            Text("Action")
+            Spacer()
+        }.padding()
+        .navigationTitle("ConsentManagementActivity")
     }
 }

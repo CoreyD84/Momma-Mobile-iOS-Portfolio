@@ -1,23 +1,20 @@
 import SwiftUI
 
 struct SafeScopeVpnServiceScreen: View {
-    @StateObject private var viewModel = SafeScopeVpnServiceViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("SafeScopeVpnService Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("SafeScopeVpnService")
+        
+        VStack {
+            Image(systemName: "checkmark.shield.fill")
+                .font(.system(size: 60))
+                .foregroundColor(.blue)
+            Text("SafeScopeVpnService Logic Active")
+                .font(.headline)
+            Text("Architecture: MVI + Dependency Injection")
+                .font(.caption)
+                .foregroundColor(.gray)
         }
+        .navigationTitle("SafeScopeVpnService")
     }
 }

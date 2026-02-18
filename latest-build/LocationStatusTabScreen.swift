@@ -1,23 +1,17 @@
 import SwiftUI
 
 struct LocationStatusTabScreen: View {
-    @StateObject private var viewModel = LocationStatusTabViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("LocationStatusTab Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("LocationStatusTab")
-        }
+        VStack(spacing: 20) {
+            ProgressView()
+            Text("Action")
+            Text("Waiting for location data...")
+            ProgressView()
+            Text("Action")
+            Spacer()
+        }.padding()
+        .navigationTitle("LocationStatusTab")
     }
 }

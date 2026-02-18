@@ -1,23 +1,20 @@
 import SwiftUI
 
 struct FactoryResetDetectorScreen: View {
-    @StateObject private var viewModel = FactoryResetDetectorViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("FactoryResetDetector Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("FactoryResetDetector")
+        
+        VStack {
+            Image(systemName: "checkmark.shield.fill")
+                .font(.system(size: 60))
+                .foregroundColor(.blue)
+            Text("FactoryResetDetector Logic Active")
+                .font(.headline)
+            Text("Architecture: MVI + Dependency Injection")
+                .font(.caption)
+                .foregroundColor(.gray)
         }
+        .navigationTitle("FactoryResetDetector")
     }
 }

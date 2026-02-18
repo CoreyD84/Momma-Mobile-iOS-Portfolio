@@ -1,23 +1,22 @@
 import SwiftUI
 
 struct FreezeReflexWarningActivityScreen: View {
-    @StateObject private var viewModel = FreezeReflexWarningActivityViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("FreezeReflexWarningActivity Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("FreezeReflexWarningActivity")
-        }
+        VStack(spacing: 20) {
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Text("Action")
+            Text("Action")
+            Text("If you need help, talk to a trusted adult or call:\n• National Suicide Prevention: 988\n• Crisis Text Line: Text HOME to 741741")
+            Spacer()
+        }.padding()
+        .navigationTitle("FreezeReflexWarningActivity")
     }
 }

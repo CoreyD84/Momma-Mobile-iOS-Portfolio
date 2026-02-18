@@ -1,23 +1,21 @@
 import SwiftUI
 
 struct BlockedWebsiteActivityScreen: View {
-    @StateObject private var viewModel = BlockedWebsiteActivityViewModel()
-
+    @EnvironmentObject var container: CodexiaContainer
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Image(systemName: "shield.checkered")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(.blue)
-                    .padding()
-                Text("BlockedWebsiteActivity Module Verified")
-                    .font(.headline)
-                Text("Architecture: MVI + Dependency Injection")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            .navigationTitle("BlockedWebsiteActivity")
-        }
+        VStack(spacing: 20) {
+            Button("Action") { /* Trigger Event */ }
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Text("OK")
+            Spacer()
+        }.padding()
+        .navigationTitle("BlockedWebsiteActivity")
     }
 }
