@@ -9,7 +9,7 @@ struct RootNavigator: View {
             HomeScreen()
         } else {
             NavigationView {
-                LoginActivityScreen()
+                AppModuleScreen()
                     .toolbar {
                         ToolbarItem(placement: .bottomBar) {
                             Button("DEBUG: BYPASS LOGIN") {

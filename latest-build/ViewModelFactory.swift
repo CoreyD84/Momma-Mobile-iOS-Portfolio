@@ -2,58 +2,53 @@ import Foundation
 
 struct ViewModelFactory {
     @MainActor
-    static func makeAdminDeactivationMonitorViewModel() -> AdminDeactivationMonitorViewModel {
-        return AdminDeactivationMonitorViewModel()
+    static func makeAppModuleViewModel() -> AppModuleViewModel {
+        return AppModuleViewModel()
     }
 
     @MainActor
-    static func makeAppBlockerServiceViewModel() -> AppBlockerServiceViewModel {
-        return AppBlockerServiceViewModel()
+    static func makeAwaitingPartnerViewModel() -> AwaitingPartnerViewModel {
+        return AwaitingPartnerViewModel()
     }
 
     @MainActor
-    static func makeAppScopeToggleViewModel() -> AppScopeToggleViewModel {
-        return AppScopeToggleViewModel()
+    static func makeBillingManagerViewModel() -> BillingManagerViewModel {
+        return BillingManagerViewModel()
     }
 
     @MainActor
-    static func makeAutoHideProviderViewModel() -> AutoHideProviderViewModel {
-        return AutoHideProviderViewModel()
+    static func makeBrowseMembersViewModel() -> BrowseMembersViewModel {
+        return BrowseMembersViewModel()
     }
 
     @MainActor
-    static func makeBlockedAppActivityViewModel() -> BlockedAppActivityViewModel {
-        return BlockedAppActivityViewModel()
+    static func makeCandidateInvitationViewModel() -> CandidateInvitationViewModel {
+        return CandidateInvitationViewModel()
     }
 
     @MainActor
-    static func makeBlockedContactViewModel() -> BlockedContactViewModel {
-        return BlockedContactViewModel()
+    static func makeCandidateInvitationServiceViewModel() -> CandidateInvitationServiceViewModel {
+        return CandidateInvitationServiceViewModel()
     }
 
     @MainActor
-    static func makeBlockedWebsiteActivityViewModel() -> BlockedWebsiteActivityViewModel {
-        return BlockedWebsiteActivityViewModel()
+    static func makeCandidateQuizViewModel() -> CandidateQuizViewModel {
+        return CandidateQuizViewModel()
     }
 
     @MainActor
-    static func makeBootReceiverViewModel() -> BootReceiverViewModel {
-        return BootReceiverViewModel()
+    static func makeCandidateWaitingViewModel() -> CandidateWaitingViewModel {
+        return CandidateWaitingViewModel()
     }
 
     @MainActor
-    static func makeChildLinkActivityViewModel() -> ChildLinkActivityViewModel {
-        return ChildLinkActivityViewModel()
+    static func makeChatViewModel() -> ChatViewModel {
+        return ChatViewModel()
     }
 
     @MainActor
-    static func makeChildSelectorViewModel() -> ChildSelectorViewModel {
-        return ChildSelectorViewModel()
-    }
-
-    @MainActor
-    static func makeChildSyncServiceViewModel() -> ChildSyncServiceViewModel {
-        return ChildSyncServiceViewModel()
+    static func makeCloudinaryConfigViewModel() -> CloudinaryConfigViewModel {
+        return CloudinaryConfigViewModel()
     }
 
     @MainActor
@@ -62,213 +57,43 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeComposePlatformControlFragmentViewModel() -> ComposePlatformControlFragmentViewModel {
-        return ComposePlatformControlFragmentViewModel()
+    static func makeCompatibilityEngineViewModel() -> CompatibilityEngineViewModel {
+        return CompatibilityEngineViewModel()
     }
 
     @MainActor
-    static func makeConsentManagementActivityViewModel() -> ConsentManagementActivityViewModel {
-        return ConsentManagementActivityViewModel()
+    static func makeCompatibilityVectorViewModel() -> CompatibilityVectorViewModel {
+        return CompatibilityVectorViewModel()
     }
 
     @MainActor
-    static func makeConsentModalViewModel() -> ConsentModalViewModel {
-        return ConsentModalViewModel()
+    static func makeEliminationViewModel() -> EliminationViewModel {
+        return EliminationViewModel()
     }
 
     @MainActor
-    static func makeConsentOverviewActivityViewModel() -> ConsentOverviewActivityViewModel {
-        return ConsentOverviewActivityViewModel()
+    static func makeFinalSelectionViewModel() -> FinalSelectionViewModel {
+        return FinalSelectionViewModel()
     }
 
     @MainActor
-    static func makeConsentOverviewFragmentViewModel() -> ConsentOverviewFragmentViewModel {
-        return ConsentOverviewFragmentViewModel()
+    static func makeGhostDetectionServiceViewModel() -> GhostDetectionServiceViewModel {
+        return GhostDetectionServiceViewModel()
     }
 
     @MainActor
-    static func makeConsentOverviewTabViewModel() -> ConsentOverviewTabViewModel {
-        return ConsentOverviewTabViewModel()
+    static func makeGhostDetectionWorkerViewModel() -> GhostDetectionWorkerViewModel {
+        return GhostDetectionWorkerViewModel()
     }
 
     @MainActor
-    static func makeEmotionalPatternLoaderViewModel() -> EmotionalPatternLoaderViewModel {
-        return EmotionalPatternLoaderViewModel()
+    static func makeHomeViewModel() -> HomeViewModel {
+        return HomeViewModel()
     }
 
     @MainActor
-    static func makeEmotionalRadarViewModel() -> EmotionalRadarViewModel {
-        return EmotionalRadarViewModel()
-    }
-
-    @MainActor
-    static func makeEmotionalScannerViewModel() -> EmotionalScannerViewModel {
-        return EmotionalScannerViewModel()
-    }
-
-    @MainActor
-    static func makeEscalationMatrixViewModel() -> EscalationMatrixViewModel {
-        return EscalationMatrixViewModel()
-    }
-
-    @MainActor
-    static func makeExampleInstrumentedTestViewModel() -> ExampleInstrumentedTestViewModel {
-        return ExampleInstrumentedTestViewModel()
-    }
-
-    @MainActor
-    static func makeExampleUnitTestViewModel() -> ExampleUnitTestViewModel {
-        return ExampleUnitTestViewModel()
-    }
-
-    @MainActor
-    static func makeFactoryResetDetectorViewModel() -> FactoryResetDetectorViewModel {
-        return FactoryResetDetectorViewModel()
-    }
-
-    @MainActor
-    static func makeFeelScopeServiceViewModel() -> FeelScopeServiceViewModel {
-        return FeelScopeServiceViewModel()
-    }
-
-    @MainActor
-    static func makeFirebaseExtensionsViewModel() -> FirebaseExtensionsViewModel {
-        return FirebaseExtensionsViewModel()
-    }
-
-    @MainActor
-    static func makeFirebaseLoggerViewModel() -> FirebaseLoggerViewModel {
-        return FirebaseLoggerViewModel()
-    }
-
-    @MainActor
-    static func makeFirebaseSyncViewModel() -> FirebaseSyncViewModel {
-        return FirebaseSyncViewModel()
-    }
-
-    @MainActor
-    static func makeFlagViewModel() -> FlagViewModel {
-        return FlagViewModel()
-    }
-
-    @MainActor
-    static func makeFlaggedMessageViewModel() -> FlaggedMessageViewModel {
-        return FlaggedMessageViewModel()
-    }
-
-    @MainActor
-    static func makeFlaggedMessageAdapterViewModel() -> FlaggedMessageAdapterViewModel {
-        return FlaggedMessageAdapterViewModel()
-    }
-
-    @MainActor
-    static func makeFlaggedMessagesActivityViewModel() -> FlaggedMessagesActivityViewModel {
-        return FlaggedMessagesActivityViewModel()
-    }
-
-    @MainActor
-    static func makeFlaggedMessagesFragmentViewModel() -> FlaggedMessagesFragmentViewModel {
-        return FlaggedMessagesFragmentViewModel()
-    }
-
-    @MainActor
-    static func makeFlaggedMessagesTabViewModel() -> FlaggedMessagesTabViewModel {
-        return FlaggedMessagesTabViewModel()
-    }
-
-    @MainActor
-    static func makeFreezeReflexViewModel() -> FreezeReflexViewModel {
-        return FreezeReflexViewModel()
-    }
-
-    @MainActor
-    static func makeFreezeReflexFragmentViewModel() -> FreezeReflexFragmentViewModel {
-        return FreezeReflexFragmentViewModel()
-    }
-
-    @MainActor
-    static func makeFreezeReflexTabViewModel() -> FreezeReflexTabViewModel {
-        return FreezeReflexTabViewModel()
-    }
-
-    @MainActor
-    static func makeFreezeReflexWarningActivityViewModel() -> FreezeReflexWarningActivityViewModel {
-        return FreezeReflexWarningActivityViewModel()
-    }
-
-    @MainActor
-    static func makeGenerateLinkQrActivityViewModel() -> GenerateLinkQrActivityViewModel {
-        return GenerateLinkQrActivityViewModel()
-    }
-
-    @MainActor
-    static func makeGuardianDashboardViewModel() -> GuardianDashboardViewModel {
-        return GuardianDashboardViewModel()
-    }
-
-    @MainActor
-    static func makeGuardianNotificationServiceViewModel() -> GuardianNotificationServiceViewModel {
-        return GuardianNotificationServiceViewModel()
-    }
-
-    @MainActor
-    static func makeGuardianTabAdapterViewModel() -> GuardianTabAdapterViewModel {
-        return GuardianTabAdapterViewModel()
-    }
-
-    @MainActor
-    static func makeHarmfulPatternsViewModel() -> HarmfulPatternsViewModel {
-        return HarmfulPatternsViewModel()
-    }
-
-    @MainActor
-    static func makeHeartbeatMonitorServiceViewModel() -> HeartbeatMonitorServiceViewModel {
-        return HeartbeatMonitorServiceViewModel()
-    }
-
-    @MainActor
-    static func makeLinkedChildrenActivityViewModel() -> LinkedChildrenActivityViewModel {
-        return LinkedChildrenActivityViewModel()
-    }
-
-    @MainActor
-    static func makeLinkedChildrenFragmentViewModel() -> LinkedChildrenFragmentViewModel {
-        return LinkedChildrenFragmentViewModel()
-    }
-
-    @MainActor
-    static func makeLinkedChildrenTabViewModel() -> LinkedChildrenTabViewModel {
-        return LinkedChildrenTabViewModel()
-    }
-
-    @MainActor
-    static func makeLocationStatusActivityViewModel() -> LocationStatusActivityViewModel {
-        return LocationStatusActivityViewModel()
-    }
-
-    @MainActor
-    static func makeLocationStatusFragmentViewModel() -> LocationStatusFragmentViewModel {
-        return LocationStatusFragmentViewModel()
-    }
-
-    @MainActor
-    static func makeLocationStatusTabViewModel() -> LocationStatusTabViewModel {
-        return LocationStatusTabViewModel()
-    }
-
-    @MainActor
-    static func makeLocationSyncViewModel() -> LocationSyncViewModel {
-        return LocationSyncViewModel()
-    }
-
-    @MainActor
-    static func makeLocationTrackerServiceViewModel() -> LocationTrackerServiceViewModel {
-        return LocationTrackerServiceViewModel()
-    }
-
-    @MainActor
-    static func makeLoginActivityViewModel() -> LoginActivityViewModel {
-        return LoginActivityViewModel()
+    static func makeLocationServiceViewModel() -> LocationServiceViewModel {
+        return LocationServiceViewModel()
     }
 
     @MainActor
@@ -277,223 +102,153 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeMainApplicationViewModel() -> MainApplicationViewModel {
-        return MainApplicationViewModel()
+    static func makeMatchViewModel() -> MatchViewModel {
+        return MatchViewModel()
     }
 
     @MainActor
-    static func makeMascotMoodViewModel() -> MascotMoodViewModel {
-        return MascotMoodViewModel()
+    static func makeMatchHistoryViewModel() -> MatchHistoryViewModel {
+        return MatchHistoryViewModel()
     }
 
     @MainActor
-    static func makeMascotMoodActivityViewModel() -> MascotMoodActivityViewModel {
-        return MascotMoodActivityViewModel()
+    static func makeMatchProfileCardViewModel() -> MatchProfileCardViewModel {
+        return MatchProfileCardViewModel()
     }
 
     @MainActor
-    static func makeMascotMoodFragmentViewModel() -> MascotMoodFragmentViewModel {
-        return MascotMoodFragmentViewModel()
+    static func makeMatchSuccessViewModel() -> MatchSuccessViewModel {
+        return MatchSuccessViewModel()
     }
 
     @MainActor
-    static func makeMascotMoodTabViewModel() -> MascotMoodTabViewModel {
-        return MascotMoodTabViewModel()
+    static func makeMatchingServiceViewModel() -> MatchingServiceViewModel {
+        return MatchingServiceViewModel()
     }
 
     @MainActor
-    static func makeMessageNotificationListenerViewModel() -> MessageNotificationListenerViewModel {
-        return MessageNotificationListenerViewModel()
+    static func makeMessageViewModel() -> MessageViewModel {
+        return MessageViewModel()
     }
 
     @MainActor
-    static func makeMessageScannerActivityViewModel() -> MessageScannerActivityViewModel {
-        return MessageScannerActivityViewModel()
+    static func makeNavGraphViewModel() -> NavGraphViewModel {
+        return NavGraphViewModel()
     }
 
     @MainActor
-    static func makeMessageScannerFragmentViewModel() -> MessageScannerFragmentViewModel {
-        return MessageScannerFragmentViewModel()
+    static func makeNotificationsViewModel() -> NotificationsViewModel {
+        return NotificationsViewModel()
     }
 
     @MainActor
-    static func makeMessageScannerTabViewModel() -> MessageScannerTabViewModel {
-        return MessageScannerTabViewModel()
+    static func makePartnerDecisionViewModel() -> PartnerDecisionViewModel {
+        return PartnerDecisionViewModel()
     }
 
     @MainActor
-    static func makeMommaDeviceAdminViewModel() -> MommaDeviceAdminViewModel {
-        return MommaDeviceAdminViewModel()
+    static func makePaymentViewModel() -> PaymentViewModel {
+        return PaymentViewModel()
     }
 
     @MainActor
-    static func makeMommaMobileThemeViewModel() -> MommaMobileThemeViewModel {
-        return MommaMobileThemeViewModel()
+    static func makeProfileViewModel() -> ProfileViewModel {
+        return ProfileViewModel()
     }
 
     @MainActor
-    static func makeMommaNotificationServiceViewModel() -> MommaNotificationServiceViewModel {
-        return MommaNotificationServiceViewModel()
+    static func makeProfileSetupViewModel() -> ProfileSetupViewModel {
+        return ProfileSetupViewModel()
     }
 
     @MainActor
-    static func makeMommaTakeoverViewModel() -> MommaTakeoverViewModel {
-        return MommaTakeoverViewModel()
+    static func makeProgressBarViewModel() -> ProgressBarViewModel {
+        return ProgressBarViewModel()
     }
 
     @MainActor
-    static func makeNettieDeviceAdminReceiverViewModel() -> NettieDeviceAdminReceiverViewModel {
-        return NettieDeviceAdminReceiverViewModel()
+    static func makePushNotificationServiceViewModel() -> PushNotificationServiceViewModel {
+        return PushNotificationServiceViewModel()
     }
 
     @MainActor
-    static func makeNettieProtectionServiceViewModel() -> NettieProtectionServiceViewModel {
-        return NettieProtectionServiceViewModel()
+    static func makeQuestionViewModel() -> QuestionViewModel {
+        return QuestionViewModel()
     }
 
     @MainActor
-    static func makeOnlineSafetyActivityViewModel() -> OnlineSafetyActivityViewModel {
-        return OnlineSafetyActivityViewModel()
+    static func makeQuestionCardViewModel() -> QuestionCardViewModel {
+        return QuestionCardViewModel()
     }
 
     @MainActor
-    static func makeOnlineSafetyFragmentViewModel() -> OnlineSafetyFragmentViewModel {
-        return OnlineSafetyFragmentViewModel()
+    static func makeQuestionDatabaseViewModel() -> QuestionDatabaseViewModel {
+        return QuestionDatabaseViewModel()
     }
 
     @MainActor
-    static func makeOnlineSafetyTabViewModel() -> OnlineSafetyTabViewModel {
-        return OnlineSafetyTabViewModel()
+    static func makeQuestionnaireViewModel() -> QuestionnaireViewModel {
+        return QuestionnaireViewModel()
     }
 
     @MainActor
-    static func makePlatformControlActivityViewModel() -> PlatformControlActivityViewModel {
-        return PlatformControlActivityViewModel()
+    static func makeQuizQuestionDatabaseViewModel() -> QuizQuestionDatabaseViewModel {
+        return QuizQuestionDatabaseViewModel()
     }
 
     @MainActor
-    static func makePlatformControlReceiverViewModel() -> PlatformControlReceiverViewModel {
-        return PlatformControlReceiverViewModel()
+    static func makeQuizScorerViewModel() -> QuizScorerViewModel {
+        return QuizScorerViewModel()
     }
 
     @MainActor
-    static func makePlatformControlTabViewModel() -> PlatformControlTabViewModel {
-        return PlatformControlTabViewModel()
+    static func makeQuizViewModel() -> QuizViewModel {
+        return QuizViewModel()
     }
 
     @MainActor
-    static func makePlatformEnforcementServiceViewModel() -> PlatformEnforcementServiceViewModel {
-        return PlatformEnforcementServiceViewModel()
+    static func makeSecondChanceViewModel() -> SecondChanceViewModel {
+        return SecondChanceViewModel()
     }
 
     @MainActor
-    static func makeQRUtilsViewModel() -> QRUtilsViewModel {
-        return QRUtilsViewModel()
+    static func makeSignInViewModel() -> SignInViewModel {
+        return SignInViewModel()
     }
 
     @MainActor
-    static func makeRecentDetectionsActivitiesViewModel() -> RecentDetectionsActivitiesViewModel {
-        return RecentDetectionsActivitiesViewModel()
+    static func makeSignUpViewModel() -> SignUpViewModel {
+        return SignUpViewModel()
     }
 
     @MainActor
-    static func makeRecentDetectionsFragmentViewModel() -> RecentDetectionsFragmentViewModel {
-        return RecentDetectionsFragmentViewModel()
+    static func makeSoulLinkApplicationViewModel() -> SoulLinkApplicationViewModel {
+        return SoulLinkApplicationViewModel()
     }
 
     @MainActor
-    static func makeRecentDetectionsTabViewModel() -> RecentDetectionsTabViewModel {
-        return RecentDetectionsTabViewModel()
+    static func makeSoulLinkMessageViewModel() -> SoulLinkMessageViewModel {
+        return SoulLinkMessageViewModel()
     }
 
     @MainActor
-    static func makeSafeScopeViewModel() -> SafeScopeViewModel {
-        return SafeScopeViewModel()
+    static func makeSoulLinkMessagingServiceViewModel() -> SoulLinkMessagingServiceViewModel {
+        return SoulLinkMessagingServiceViewModel()
     }
 
     @MainActor
-    static func makeSafeScopeFragmentViewModel() -> SafeScopeFragmentViewModel {
-        return SafeScopeFragmentViewModel()
+    static func makeSoulLinkPersonalityViewModel() -> SoulLinkPersonalityViewModel {
+        return SoulLinkPersonalityViewModel()
     }
 
     @MainActor
-    static func makeSafeScopeToggleViewModel() -> SafeScopeToggleViewModel {
-        return SafeScopeToggleViewModel()
+    static func makeSplashViewModel() -> SplashViewModel {
+        return SplashViewModel()
     }
 
     @MainActor
-    static func makeSafeScopeVpnServiceViewModel() -> SafeScopeVpnServiceViewModel {
-        return SafeScopeVpnServiceViewModel()
-    }
-
-    @MainActor
-    static func makeScannerEngineViewModel() -> ScannerEngineViewModel {
-        return ScannerEngineViewModel()
-    }
-
-    @MainActor
-    static func makeScannerGlobalsViewModel() -> ScannerGlobalsViewModel {
-        return ScannerGlobalsViewModel()
-    }
-
-    @MainActor
-    static func makeServiceStarterViewModel() -> ServiceStarterViewModel {
-        return ServiceStarterViewModel()
-    }
-
-    @MainActor
-    static func makeSetupActivityViewModel() -> SetupActivityViewModel {
-        return SetupActivityViewModel()
-    }
-
-    @MainActor
-    static func makeSetupViewModel() -> SetupViewModel {
-        return SetupViewModel()
-    }
-
-    @MainActor
-    static func makeSmsComposeActivityViewModel() -> SmsComposeActivityViewModel {
-        return SmsComposeActivityViewModel()
-    }
-
-    @MainActor
-    static func makeSmsDetectionsActivityViewModel() -> SmsDetectionsActivityViewModel {
-        return SmsDetectionsActivityViewModel()
-    }
-
-    @MainActor
-    static func makeSmsDetectionsFragmentViewModel() -> SmsDetectionsFragmentViewModel {
-        return SmsDetectionsFragmentViewModel()
-    }
-
-    @MainActor
-    static func makeSmsDetectionsTabViewModel() -> SmsDetectionsTabViewModel {
-        return SmsDetectionsTabViewModel()
-    }
-
-    @MainActor
-    static func makeSmsInboxActivityViewModel() -> SmsInboxActivityViewModel {
-        return SmsInboxActivityViewModel()
-    }
-
-    @MainActor
-    static func makeSmsReceiverViewModel() -> SmsReceiverViewModel {
-        return SmsReceiverViewModel()
-    }
-
-    @MainActor
-    static func makeSubscriptionExpiredActivityViewModel() -> SubscriptionExpiredActivityViewModel {
-        return SubscriptionExpiredActivityViewModel()
-    }
-
-    @MainActor
-    static func makeSubscriptionExpiredViewModel() -> SubscriptionExpiredViewModel {
-        return SubscriptionExpiredViewModel()
-    }
-
-    @MainActor
-    static func makeSubscriptionManagerViewModel() -> SubscriptionManagerViewModel {
-        return SubscriptionManagerViewModel()
+    static func makeTheThreeViewModel() -> TheThreeViewModel {
+        return TheThreeViewModel()
     }
 
     @MainActor
@@ -507,17 +262,17 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeUninstallAttemptMonitorViewModel() -> UninstallAttemptMonitorViewModel {
-        return UninstallAttemptMonitorViewModel()
+    static func makeUserViewModel() -> UserViewModel {
+        return UserViewModel()
     }
 
     @MainActor
-    static func makeVpnPermissionActivityViewModel() -> VpnPermissionActivityViewModel {
-        return VpnPermissionActivityViewModel()
+    static func makeUserProfileViewModel() -> UserProfileViewModel {
+        return UserProfileViewModel()
     }
 
     @MainActor
-    static func makeWebsiteBlockerServiceViewModel() -> WebsiteBlockerServiceViewModel {
-        return WebsiteBlockerServiceViewModel()
+    static func makeWelcomeViewModel() -> WelcomeViewModel {
+        return WelcomeViewModel()
     }
 }

@@ -1,90 +1,82 @@
 import SwiftUI
 
-struct AdminDeactivationMonitorScreen_Previews: PreviewProvider {
+struct AppModuleScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        AdminDeactivationMonitorScreen()
-            .previewDisplayName("AdminDeactivationMonitor")
+        AppModuleScreen()
+            .previewDisplayName("AppModule")
     }
 }
 
-struct AppBlockerServiceScreen_Previews: PreviewProvider {
+struct AwaitingPartnerScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        AppBlockerServiceScreen()
-            .previewDisplayName("AppBlockerService")
+        AwaitingPartnerScreen()
+            .previewDisplayName("AwaitingPartner")
     }
 }
 
-struct AppScopeToggleScreen_Previews: PreviewProvider {
+struct BillingManagerScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        AppScopeToggleScreen()
-            .previewDisplayName("AppScopeToggle")
+        BillingManagerScreen()
+            .previewDisplayName("BillingManager")
     }
 }
 
-struct AutoHideProviderScreen_Previews: PreviewProvider {
+struct BrowseMembersScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        AutoHideProviderScreen()
-            .previewDisplayName("AutoHideProvider")
+        BrowseMembersScreen()
+            .previewDisplayName("BrowseMembers")
     }
 }
 
-struct BlockedAppActivityScreen_Previews: PreviewProvider {
+struct CandidateInvitationScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        BlockedAppActivityScreen()
-            .previewDisplayName("BlockedAppActivity")
+        CandidateInvitationScreen()
+            .previewDisplayName("CandidateInvitation")
     }
 }
 
-struct BlockedContactScreen_Previews: PreviewProvider {
+struct CandidateInvitationServiceScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        BlockedContactScreen()
-            .previewDisplayName("BlockedContact")
+        CandidateInvitationServiceScreen()
+            .previewDisplayName("CandidateInvitationService")
     }
 }
 
-struct BlockedWebsiteActivityScreen_Previews: PreviewProvider {
+struct CandidateQuizScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        BlockedWebsiteActivityScreen()
-            .previewDisplayName("BlockedWebsiteActivity")
+        CandidateQuizScreen()
+            .previewDisplayName("CandidateQuiz")
     }
 }
 
-struct BootReceiverScreen_Previews: PreviewProvider {
+struct CandidateWaitingScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        BootReceiverScreen()
-            .previewDisplayName("BootReceiver")
+        CandidateWaitingScreen()
+            .previewDisplayName("CandidateWaiting")
     }
 }
 
-struct ChildLinkActivityScreen_Previews: PreviewProvider {
+struct ChatScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ChildLinkActivityScreen()
-            .previewDisplayName("ChildLinkActivity")
+        ChatScreen()
+            .previewDisplayName("Chat")
     }
 }
 
-struct ChildSelectorScreen_Previews: PreviewProvider {
+struct CloudinaryConfigScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ChildSelectorScreen()
-            .previewDisplayName("ChildSelector")
-    }
-}
-
-struct ChildSyncServiceScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        ChildSyncServiceScreen()
-            .previewDisplayName("ChildSyncService")
+        CloudinaryConfigScreen()
+            .previewDisplayName("CloudinaryConfig")
     }
 }
 
@@ -96,339 +88,67 @@ struct ColorScreen_Previews: PreviewProvider {
     }
 }
 
-struct ComposePlatformControlFragmentScreen_Previews: PreviewProvider {
+struct CompatibilityEngineScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ComposePlatformControlFragmentScreen()
-            .previewDisplayName("ComposePlatformControlFragment")
+        CompatibilityEngineScreen()
+            .previewDisplayName("CompatibilityEngine")
     }
 }
 
-struct ConsentManagementActivityScreen_Previews: PreviewProvider {
+struct CompatibilityVectorScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ConsentManagementActivityScreen()
-            .previewDisplayName("ConsentManagementActivity")
+        CompatibilityVectorScreen()
+            .previewDisplayName("CompatibilityVector")
     }
 }
 
-struct ConsentModalScreen_Previews: PreviewProvider {
+struct EliminationScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ConsentModalScreen()
-            .previewDisplayName("ConsentModal")
+        EliminationScreen()
+            .previewDisplayName("Elimination")
     }
 }
 
-struct ConsentOverviewActivityScreen_Previews: PreviewProvider {
+struct FinalSelectionScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ConsentOverviewActivityScreen()
-            .previewDisplayName("ConsentOverviewActivity")
+        FinalSelectionScreen()
+            .previewDisplayName("FinalSelection")
     }
 }
 
-struct ConsentOverviewFragmentScreen_Previews: PreviewProvider {
+struct GhostDetectionServiceScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ConsentOverviewFragmentScreen()
-            .previewDisplayName("ConsentOverviewFragment")
+        GhostDetectionServiceScreen()
+            .previewDisplayName("GhostDetectionService")
     }
 }
 
-struct ConsentOverviewTabScreen_Previews: PreviewProvider {
+struct GhostDetectionWorkerScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        ConsentOverviewTabScreen()
-            .previewDisplayName("ConsentOverviewTab")
+        GhostDetectionWorkerScreen()
+            .previewDisplayName("GhostDetectionWorker")
     }
 }
 
-struct EmotionalPatternLoaderScreen_Previews: PreviewProvider {
+struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        EmotionalPatternLoaderScreen()
-            .previewDisplayName("EmotionalPatternLoader")
+        HomeScreen()
+            .previewDisplayName("Home")
     }
 }
 
-struct EmotionalRadarScreen_Previews: PreviewProvider {
+struct LocationServiceScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        EmotionalRadarScreen()
-            .previewDisplayName("EmotionalRadar")
-    }
-}
-
-struct EmotionalScannerScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        EmotionalScannerScreen()
-            .previewDisplayName("EmotionalScanner")
-    }
-}
-
-struct EscalationMatrixScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        EscalationMatrixScreen()
-            .previewDisplayName("EscalationMatrix")
-    }
-}
-
-struct ExampleInstrumentedTestScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        ExampleInstrumentedTestScreen()
-            .previewDisplayName("ExampleInstrumentedTest")
-    }
-}
-
-struct ExampleUnitTestScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        ExampleUnitTestScreen()
-            .previewDisplayName("ExampleUnitTest")
-    }
-}
-
-struct FactoryResetDetectorScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FactoryResetDetectorScreen()
-            .previewDisplayName("FactoryResetDetector")
-    }
-}
-
-struct FeelScopeServiceScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FeelScopeServiceScreen()
-            .previewDisplayName("FeelScopeService")
-    }
-}
-
-struct FirebaseExtensionsScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FirebaseExtensionsScreen()
-            .previewDisplayName("FirebaseExtensions")
-    }
-}
-
-struct FirebaseLoggerScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FirebaseLoggerScreen()
-            .previewDisplayName("FirebaseLogger")
-    }
-}
-
-struct FirebaseSyncScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FirebaseSyncScreen()
-            .previewDisplayName("FirebaseSync")
-    }
-}
-
-struct FlagScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FlagScreen()
-            .previewDisplayName("Flag")
-    }
-}
-
-struct FlaggedMessageScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FlaggedMessageScreen()
-            .previewDisplayName("FlaggedMessage")
-    }
-}
-
-struct FlaggedMessageAdapterScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FlaggedMessageAdapterScreen()
-            .previewDisplayName("FlaggedMessageAdapter")
-    }
-}
-
-struct FlaggedMessagesActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FlaggedMessagesActivityScreen()
-            .previewDisplayName("FlaggedMessagesActivity")
-    }
-}
-
-struct FlaggedMessagesFragmentScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FlaggedMessagesFragmentScreen()
-            .previewDisplayName("FlaggedMessagesFragment")
-    }
-}
-
-struct FlaggedMessagesTabScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FlaggedMessagesTabScreen()
-            .previewDisplayName("FlaggedMessagesTab")
-    }
-}
-
-struct FreezeReflexScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FreezeReflexScreen()
-            .previewDisplayName("FreezeReflex")
-    }
-}
-
-struct FreezeReflexFragmentScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FreezeReflexFragmentScreen()
-            .previewDisplayName("FreezeReflexFragment")
-    }
-}
-
-struct FreezeReflexTabScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FreezeReflexTabScreen()
-            .previewDisplayName("FreezeReflexTab")
-    }
-}
-
-struct FreezeReflexWarningActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        FreezeReflexWarningActivityScreen()
-            .previewDisplayName("FreezeReflexWarningActivity")
-    }
-}
-
-struct GenerateLinkQrActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        GenerateLinkQrActivityScreen()
-            .previewDisplayName("GenerateLinkQrActivity")
-    }
-}
-
-struct GuardianDashboardScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        GuardianDashboardScreen()
-            .previewDisplayName("GuardianDashboard")
-    }
-}
-
-struct GuardianNotificationServiceScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        GuardianNotificationServiceScreen()
-            .previewDisplayName("GuardianNotificationService")
-    }
-}
-
-struct GuardianTabAdapterScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        GuardianTabAdapterScreen()
-            .previewDisplayName("GuardianTabAdapter")
-    }
-}
-
-struct HarmfulPatternsScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        HarmfulPatternsScreen()
-            .previewDisplayName("HarmfulPatterns")
-    }
-}
-
-struct HeartbeatMonitorServiceScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        HeartbeatMonitorServiceScreen()
-            .previewDisplayName("HeartbeatMonitorService")
-    }
-}
-
-struct LinkedChildrenActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LinkedChildrenActivityScreen()
-            .previewDisplayName("LinkedChildrenActivity")
-    }
-}
-
-struct LinkedChildrenFragmentScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LinkedChildrenFragmentScreen()
-            .previewDisplayName("LinkedChildrenFragment")
-    }
-}
-
-struct LinkedChildrenTabScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LinkedChildrenTabScreen()
-            .previewDisplayName("LinkedChildrenTab")
-    }
-}
-
-struct LocationStatusActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LocationStatusActivityScreen()
-            .previewDisplayName("LocationStatusActivity")
-    }
-}
-
-struct LocationStatusFragmentScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LocationStatusFragmentScreen()
-            .previewDisplayName("LocationStatusFragment")
-    }
-}
-
-struct LocationStatusTabScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LocationStatusTabScreen()
-            .previewDisplayName("LocationStatusTab")
-    }
-}
-
-struct LocationSyncScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LocationSyncScreen()
-            .previewDisplayName("LocationSync")
-    }
-}
-
-struct LocationTrackerServiceScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LocationTrackerServiceScreen()
-            .previewDisplayName("LocationTrackerService")
-    }
-}
-
-struct LoginActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        LoginActivityScreen()
-            .previewDisplayName("LoginActivity")
+        LocationServiceScreen()
+            .previewDisplayName("LocationService")
     }
 }
 
@@ -440,355 +160,243 @@ struct MainActivityScreen_Previews: PreviewProvider {
     }
 }
 
-struct MainApplicationScreen_Previews: PreviewProvider {
+struct MatchScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MainApplicationScreen()
-            .previewDisplayName("MainApplication")
+        MatchScreen()
+            .previewDisplayName("Match")
     }
 }
 
-struct MascotMoodScreen_Previews: PreviewProvider {
+struct MatchHistoryScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MascotMoodScreen()
-            .previewDisplayName("MascotMood")
+        MatchHistoryScreen()
+            .previewDisplayName("MatchHistory")
     }
 }
 
-struct MascotMoodActivityScreen_Previews: PreviewProvider {
+struct MatchProfileCardScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MascotMoodActivityScreen()
-            .previewDisplayName("MascotMoodActivity")
+        MatchProfileCardScreen()
+            .previewDisplayName("MatchProfileCard")
     }
 }
 
-struct MascotMoodFragmentScreen_Previews: PreviewProvider {
+struct MatchSuccessScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MascotMoodFragmentScreen()
-            .previewDisplayName("MascotMoodFragment")
+        MatchSuccessScreen()
+            .previewDisplayName("MatchSuccess")
     }
 }
 
-struct MascotMoodTabScreen_Previews: PreviewProvider {
+struct MatchingServiceScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MascotMoodTabScreen()
-            .previewDisplayName("MascotMoodTab")
+        MatchingServiceScreen()
+            .previewDisplayName("MatchingService")
     }
 }
 
-struct MessageNotificationListenerScreen_Previews: PreviewProvider {
+struct MessageScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MessageNotificationListenerScreen()
-            .previewDisplayName("MessageNotificationListener")
+        MessageScreen()
+            .previewDisplayName("Message")
     }
 }
 
-struct MessageScannerActivityScreen_Previews: PreviewProvider {
+struct NavGraphScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MessageScannerActivityScreen()
-            .previewDisplayName("MessageScannerActivity")
+        NavGraphScreen()
+            .previewDisplayName("NavGraph")
     }
 }
 
-struct MessageScannerFragmentScreen_Previews: PreviewProvider {
+struct NotificationsScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MessageScannerFragmentScreen()
-            .previewDisplayName("MessageScannerFragment")
+        NotificationsScreen()
+            .previewDisplayName("Notifications")
     }
 }
 
-struct MessageScannerTabScreen_Previews: PreviewProvider {
+struct PartnerDecisionScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MessageScannerTabScreen()
-            .previewDisplayName("MessageScannerTab")
+        PartnerDecisionScreen()
+            .previewDisplayName("PartnerDecision")
     }
 }
 
-struct MommaDeviceAdminScreen_Previews: PreviewProvider {
+struct PaymentScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MommaDeviceAdminScreen()
-            .previewDisplayName("MommaDeviceAdmin")
+        PaymentScreen()
+            .previewDisplayName("Payment")
     }
 }
 
-struct MommaMobileThemeScreen_Previews: PreviewProvider {
+struct ProfileScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MommaMobileThemeScreen()
-            .previewDisplayName("MommaMobileTheme")
+        ProfileScreen()
+            .previewDisplayName("Profile")
     }
 }
 
-struct MommaNotificationServiceScreen_Previews: PreviewProvider {
+struct ProfileSetupScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MommaNotificationServiceScreen()
-            .previewDisplayName("MommaNotificationService")
+        ProfileSetupScreen()
+            .previewDisplayName("ProfileSetup")
     }
 }
 
-struct MommaTakeoverScreen_Previews: PreviewProvider {
+struct ProgressBarScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        MommaTakeoverScreen()
-            .previewDisplayName("MommaTakeover")
+        ProgressBarScreen()
+            .previewDisplayName("ProgressBar")
     }
 }
 
-struct NettieDeviceAdminReceiverScreen_Previews: PreviewProvider {
+struct PushNotificationServiceScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        NettieDeviceAdminReceiverScreen()
-            .previewDisplayName("NettieDeviceAdminReceiver")
+        PushNotificationServiceScreen()
+            .previewDisplayName("PushNotificationService")
     }
 }
 
-struct NettieProtectionServiceScreen_Previews: PreviewProvider {
+struct QuestionScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        NettieProtectionServiceScreen()
-            .previewDisplayName("NettieProtectionService")
+        QuestionScreen()
+            .previewDisplayName("Question")
     }
 }
 
-struct OnlineSafetyActivityScreen_Previews: PreviewProvider {
+struct QuestionCardScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        OnlineSafetyActivityScreen()
-            .previewDisplayName("OnlineSafetyActivity")
+        QuestionCardScreen()
+            .previewDisplayName("QuestionCard")
     }
 }
 
-struct OnlineSafetyFragmentScreen_Previews: PreviewProvider {
+struct QuestionDatabaseScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        OnlineSafetyFragmentScreen()
-            .previewDisplayName("OnlineSafetyFragment")
+        QuestionDatabaseScreen()
+            .previewDisplayName("QuestionDatabase")
     }
 }
 
-struct OnlineSafetyTabScreen_Previews: PreviewProvider {
+struct QuestionnaireScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        OnlineSafetyTabScreen()
-            .previewDisplayName("OnlineSafetyTab")
+        QuestionnaireScreen()
+            .previewDisplayName("Questionnaire")
     }
 }
 
-struct PlatformControlActivityScreen_Previews: PreviewProvider {
+struct QuizQuestionDatabaseScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        PlatformControlActivityScreen()
-            .previewDisplayName("PlatformControlActivity")
+        QuizQuestionDatabaseScreen()
+            .previewDisplayName("QuizQuestionDatabase")
     }
 }
 
-struct PlatformControlReceiverScreen_Previews: PreviewProvider {
+struct QuizScorerScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        PlatformControlReceiverScreen()
-            .previewDisplayName("PlatformControlReceiver")
+        QuizScorerScreen()
+            .previewDisplayName("QuizScorer")
     }
 }
 
-struct PlatformControlTabScreen_Previews: PreviewProvider {
+struct QuizScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        PlatformControlTabScreen()
-            .previewDisplayName("PlatformControlTab")
+        QuizScreen()
+            .previewDisplayName("Quiz")
     }
 }
 
-struct PlatformEnforcementServiceScreen_Previews: PreviewProvider {
+struct SecondChanceScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        PlatformEnforcementServiceScreen()
-            .previewDisplayName("PlatformEnforcementService")
+        SecondChanceScreen()
+            .previewDisplayName("SecondChance")
     }
 }
 
-struct QRUtilsScreen_Previews: PreviewProvider {
+struct SignInScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        QRUtilsScreen()
-            .previewDisplayName("QRUtils")
+        SignInScreen()
+            .previewDisplayName("SignIn")
     }
 }
 
-struct RecentDetectionsActivitiesScreen_Previews: PreviewProvider {
+struct SignUpScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        RecentDetectionsActivitiesScreen()
-            .previewDisplayName("RecentDetectionsActivities")
+        SignUpScreen()
+            .previewDisplayName("SignUp")
     }
 }
 
-struct RecentDetectionsFragmentScreen_Previews: PreviewProvider {
+struct SoulLinkApplicationScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        RecentDetectionsFragmentScreen()
-            .previewDisplayName("RecentDetectionsFragment")
+        SoulLinkApplicationScreen()
+            .previewDisplayName("SoulLinkApplication")
     }
 }
 
-struct RecentDetectionsTabScreen_Previews: PreviewProvider {
+struct SoulLinkMessageScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        RecentDetectionsTabScreen()
-            .previewDisplayName("RecentDetectionsTab")
+        SoulLinkMessageScreen()
+            .previewDisplayName("SoulLinkMessage")
     }
 }
 
-struct SafeScopeScreen_Previews: PreviewProvider {
+struct SoulLinkMessagingServiceScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        SafeScopeScreen()
-            .previewDisplayName("SafeScope")
+        SoulLinkMessagingServiceScreen()
+            .previewDisplayName("SoulLinkMessagingService")
     }
 }
 
-struct SafeScopeFragmentScreen_Previews: PreviewProvider {
+struct SoulLinkPersonalityScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        SafeScopeFragmentScreen()
-            .previewDisplayName("SafeScopeFragment")
+        SoulLinkPersonalityScreen()
+            .previewDisplayName("SoulLinkPersonality")
     }
 }
 
-struct SafeScopeToggleScreen_Previews: PreviewProvider {
+struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        SafeScopeToggleScreen()
-            .previewDisplayName("SafeScopeToggle")
+        SplashScreen()
+            .previewDisplayName("Splash")
     }
 }
 
-struct SafeScopeVpnServiceScreen_Previews: PreviewProvider {
+struct TheThreeScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        SafeScopeVpnServiceScreen()
-            .previewDisplayName("SafeScopeVpnService")
-    }
-}
-
-struct ScannerEngineScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        ScannerEngineScreen()
-            .previewDisplayName("ScannerEngine")
-    }
-}
-
-struct ScannerGlobalsScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        ScannerGlobalsScreen()
-            .previewDisplayName("ScannerGlobals")
-    }
-}
-
-struct ServiceStarterScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        ServiceStarterScreen()
-            .previewDisplayName("ServiceStarter")
-    }
-}
-
-struct SetupActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SetupActivityScreen()
-            .previewDisplayName("SetupActivity")
-    }
-}
-
-struct SetupScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SetupScreen()
-            .previewDisplayName("Setup")
-    }
-}
-
-struct SmsComposeActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SmsComposeActivityScreen()
-            .previewDisplayName("SmsComposeActivity")
-    }
-}
-
-struct SmsDetectionsActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SmsDetectionsActivityScreen()
-            .previewDisplayName("SmsDetectionsActivity")
-    }
-}
-
-struct SmsDetectionsFragmentScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SmsDetectionsFragmentScreen()
-            .previewDisplayName("SmsDetectionsFragment")
-    }
-}
-
-struct SmsDetectionsTabScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SmsDetectionsTabScreen()
-            .previewDisplayName("SmsDetectionsTab")
-    }
-}
-
-struct SmsInboxActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SmsInboxActivityScreen()
-            .previewDisplayName("SmsInboxActivity")
-    }
-}
-
-struct SmsReceiverScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SmsReceiverScreen()
-            .previewDisplayName("SmsReceiver")
-    }
-}
-
-struct SubscriptionExpiredActivityScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SubscriptionExpiredActivityScreen()
-            .previewDisplayName("SubscriptionExpiredActivity")
-    }
-}
-
-struct SubscriptionExpiredScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SubscriptionExpiredScreen()
-            .previewDisplayName("SubscriptionExpired")
-    }
-}
-
-struct SubscriptionManagerScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        // Targets the Screen view directly using its internal @StateObject
-        SubscriptionManagerScreen()
-            .previewDisplayName("SubscriptionManager")
+        TheThreeScreen()
+            .previewDisplayName("TheThree")
     }
 }
 
@@ -808,26 +416,26 @@ struct TypeScreen_Previews: PreviewProvider {
     }
 }
 
-struct UninstallAttemptMonitorScreen_Previews: PreviewProvider {
+struct UserScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        UninstallAttemptMonitorScreen()
-            .previewDisplayName("UninstallAttemptMonitor")
+        UserScreen()
+            .previewDisplayName("User")
     }
 }
 
-struct VpnPermissionActivityScreen_Previews: PreviewProvider {
+struct UserProfileScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        VpnPermissionActivityScreen()
-            .previewDisplayName("VpnPermissionActivity")
+        UserProfileScreen()
+            .previewDisplayName("UserProfile")
     }
 }
 
-struct WebsiteBlockerServiceScreen_Previews: PreviewProvider {
+struct WelcomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         // Targets the Screen view directly using its internal @StateObject
-        WebsiteBlockerServiceScreen()
-            .previewDisplayName("WebsiteBlockerService")
+        WelcomeScreen()
+            .previewDisplayName("Welcome")
     }
 }
