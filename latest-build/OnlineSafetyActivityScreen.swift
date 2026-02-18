@@ -1,5 +1,10 @@
 import SwiftUI
-struct OnlineSafetyActivityScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("OnlineSafetyActivity").font(.headline)
+
+struct OnlineSafetyActivityScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("OnlineSafetyActivity") } }
+        }.padding()
+        .navigationTitle("OnlineSafetyActivity")
+    }
+}

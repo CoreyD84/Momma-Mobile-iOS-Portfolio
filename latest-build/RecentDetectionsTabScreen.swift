@@ -1,6 +1,8 @@
 import SwiftUI
-struct RecentDetectionsTabScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("RecentDetectionsTab").font(.headline)
+
+struct RecentDetectionsTabScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("household_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -33,4 +35,7 @@ struct RecentDetectionsTabScreen: View { var body: some View { VStack(spacing: 1
             Button(action: {}) { Text("RecentDetectionsTab").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("RecentDetectionsTab").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("RecentDetectionsTab") } }
+        }.padding()
+        .navigationTitle("RecentDetectionsTab")
+    }
+}

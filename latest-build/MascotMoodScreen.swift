@@ -1,6 +1,8 @@
 import SwiftUI
-struct MascotMoodScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("MascotMood").font(.headline)
+
+struct MascotMoodScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("MascotMood").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("calm").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("critical").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -23,4 +25,7 @@ struct MascotMoodScreen: View { var body: some View { VStack(spacing: 15) {
             Button(action: {}) { Text("mood").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("timestamp").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("MascotMood") } }
+        }.padding()
+        .navigationTitle("MascotMood")
+    }
+}

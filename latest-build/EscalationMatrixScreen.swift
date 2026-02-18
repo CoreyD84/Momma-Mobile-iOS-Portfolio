@@ -1,6 +1,8 @@
 import SwiftUI
-struct EscalationMatrixScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("EscalationMatrix").font(.headline)
+
+struct EscalationMatrixScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("emotion_sadness").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("emotion_anger").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("emotion_anxiety").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -20,4 +22,7 @@ struct EscalationMatrixScreen: View { var body: some View { VStack(spacing: 15) 
             Button(action: {}) { Text("threat_codes").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("threat_parental").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("EscalationMatrix") } }
+        }.padding()
+        .navigationTitle("EscalationMatrix")
+    }
+}

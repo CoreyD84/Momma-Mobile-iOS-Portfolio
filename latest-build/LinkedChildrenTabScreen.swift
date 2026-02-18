@@ -1,6 +1,8 @@
 import SwiftUI
-struct LinkedChildrenTabScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("LinkedChildrenTab").font(.headline)
+
+struct LinkedChildrenTabScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Unnamed").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -58,4 +60,7 @@ struct LinkedChildrenTabScreen: View { var body: some View { VStack(spacing: 15)
             Button(action: {}) { Text("LinkedChildrenTab").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Incorrect password").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("LinkedChildrenTab") } }
+        }.padding()
+        .navigationTitle("LinkedChildrenTab")
+    }
+}

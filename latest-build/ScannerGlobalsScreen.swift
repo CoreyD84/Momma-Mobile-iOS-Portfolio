@@ -1,6 +1,8 @@
 import SwiftUI
-struct ScannerGlobalsScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("ScannerGlobals").font(.headline)
+
+struct ScannerGlobalsScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("ScannerGlobals").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("emotion_sadness").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("i want to disappear").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -39,4 +41,7 @@ struct ScannerGlobalsScreen: View { var body: some View { VStack(spacing: 15) {
             Button(action: {}) { Text("talk privately").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("get a new account").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("ScannerGlobals") } }
+        }.padding()
+        .navigationTitle("ScannerGlobals")
+    }
+}

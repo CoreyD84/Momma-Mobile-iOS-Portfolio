@@ -1,6 +1,8 @@
 import SwiftUI
-struct ConsentModalScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("ConsentModal").font(.headline)
+
+struct ConsentModalScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("ConsentModal").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("discord").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -28,4 +30,7 @@ struct ConsentModalScreen: View { var body: some View { VStack(spacing: 15) {
             Button(action: {}) { Text("local").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("mobile-device").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("ConsentModal") } }
+        }.padding()
+        .navigationTitle("ConsentModal")
+    }
+}

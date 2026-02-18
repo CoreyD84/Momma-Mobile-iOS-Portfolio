@@ -1,6 +1,8 @@
 import SwiftUI
-struct PlatformEnforcementServiceScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("PlatformEnforcementService").font(.headline)
+
+struct PlatformEnforcementServiceScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("PlatformEnforcement").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("com.roblox.client").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("messenger").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -25,4 +27,7 @@ struct PlatformEnforcementServiceScreen: View { var body: some View { VStack(spa
             Button(action: {}) { Text("_alt").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("This app").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("PlatformEnforcementService") } }
+        }.padding()
+        .navigationTitle("PlatformEnforcementService")
+    }
+}

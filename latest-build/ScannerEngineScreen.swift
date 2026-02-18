@@ -1,6 +1,8 @@
 import SwiftUI
-struct ScannerEngineScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("ScannerEngine").font(.headline)
+
+struct ScannerEngineScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("ScannerEngine").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("[^a-z0-9\\\\s]").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("\\\\s+").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -15,4 +17,7 @@ struct ScannerEngineScreen: View { var body: some View { VStack(spacing: 15) {
             Button(action: {}) { Text("timestamp").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("isEscalated").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("ScannerEngine") } }
+        }.padding()
+        .navigationTitle("ScannerEngine")
+    }
+}

@@ -1,6 +1,8 @@
 import SwiftUI
-struct HeartbeatMonitorServiceScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("HeartbeatMonitorService").font(.headline)
+
+struct HeartbeatMonitorServiceScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("HeartbeatMonitor").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("HeartbeatMonitorService created").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("HeartbeatMonitorService started").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -36,4 +38,7 @@ struct HeartbeatMonitorServiceScreen: View { var body: some View { VStack(spacin
             Button(action: {}) { Text("message").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("lastSeen").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("HeartbeatMonitorService") } }
+        }.padding()
+        .navigationTitle("HeartbeatMonitorService")
+    }
+}

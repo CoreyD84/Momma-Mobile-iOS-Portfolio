@@ -1,6 +1,8 @@
 import SwiftUI
-struct LocationStatusActivityScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("LocationStatusActivity").font(.headline)
+
+struct LocationStatusActivityScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -15,4 +17,7 @@ struct LocationStatusActivityScreen: View { var body: some View { VStack(spacing
             Button(action: {}) { Text("stylesheet").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("map").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("LocationStatusActivity") } }
+        }.padding()
+        .navigationTitle("LocationStatusActivity")
+    }
+}

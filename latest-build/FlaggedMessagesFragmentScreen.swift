@@ -1,6 +1,8 @@
 import SwiftUI
-struct FlaggedMessagesFragmentScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("FlaggedMessagesFragment").font(.headline)
+
+struct FlaggedMessagesFragmentScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("FlaggedMessages").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -33,4 +35,7 @@ struct FlaggedMessagesFragmentScreen: View { var body: some View { VStack(spacin
             Button(action: {}) { Text("FlaggedMessages").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("FlaggedMessages").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("FlaggedMessagesFragment") } }
+        }.padding()
+        .navigationTitle("FlaggedMessagesFragment")
+    }
+}

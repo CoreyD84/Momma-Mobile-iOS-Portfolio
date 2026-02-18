@@ -1,6 +1,8 @@
 import SwiftUI
-struct ChildSyncServiceScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("ChildSyncService").font(.headline)
+
+struct ChildSyncServiceScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("ChildSyncService").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("child_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("guardian_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -20,4 +22,7 @@ struct ChildSyncServiceScreen: View { var body: some View { VStack(spacing: 15) 
             Button(action: {}) { Text("nettielocation").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Nettie Sync").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("ChildSyncService") } }
+        }.padding()
+        .navigationTitle("ChildSyncService")
+    }
+}

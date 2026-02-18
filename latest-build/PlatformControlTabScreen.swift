@@ -1,6 +1,8 @@
 import SwiftUI
-struct PlatformControlTabScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("PlatformControlTab").font(.headline)
+
+struct PlatformControlTabScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Discord").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -39,4 +41,7 @@ struct PlatformControlTabScreen: View { var body: some View { VStack(spacing: 15
             Button(action: {}) { Text("Revoke Consent").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Revoke Consent").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("PlatformControlTab") } }
+        }.padding()
+        .navigationTitle("PlatformControlTab")
+    }
+}

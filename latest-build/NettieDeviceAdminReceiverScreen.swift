@@ -1,6 +1,8 @@
 import SwiftUI
-struct NettieDeviceAdminReceiverScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("NettieDeviceAdminReceiver").font(.headline)
+
+struct NettieDeviceAdminReceiverScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("NettieDeviceAdmin").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("household_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("household_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -20,4 +22,7 @@ struct NettieDeviceAdminReceiverScreen: View { var body: some View { VStack(spac
             Button(action: {}) { Text("Password failed").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Password succeeded").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("NettieDeviceAdminReceiver") } }
+        }.padding()
+        .navigationTitle("NettieDeviceAdminReceiver")
+    }
+}

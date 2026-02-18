@@ -1,5 +1,10 @@
 import SwiftUI
-struct ExampleInstrumentedTestScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("ExampleInstrumentedTest").font(.headline)
+
+struct ExampleInstrumentedTestScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("ExampleInstrumentedTest") } }
+        }.padding()
+        .navigationTitle("ExampleInstrumentedTest")
+    }
+}

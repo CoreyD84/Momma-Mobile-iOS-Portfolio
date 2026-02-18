@@ -1,6 +1,8 @@
 import SwiftUI
-struct GuardianNotificationServiceScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("GuardianNotificationService").font(.headline)
+
+struct GuardianNotificationServiceScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("guardian_service").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("GuardianNotificationService created").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Service started").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -37,4 +39,7 @@ struct GuardianNotificationServiceScreen: View { var body: some View { VStack(sp
             Button(action: {}) { Text("CRITICAL").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("CRITICAL").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("GuardianNotificationService") } }
+        }.padding()
+        .navigationTitle("GuardianNotificationService")
+    }
+}

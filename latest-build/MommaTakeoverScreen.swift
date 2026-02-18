@@ -1,6 +1,8 @@
 import SwiftUI
-struct MommaTakeoverScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("MommaTakeover").font(.headline)
+
+struct MommaTakeoverScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("Momma Takeover").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("MommaTakeover").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("I'm not okay with this. Please stop.").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -16,4 +18,7 @@ struct MommaTakeoverScreen: View { var body: some View { VStack(spacing: 15) {
             Button(action: {}) { Text("send").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("send").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("MommaTakeover") } }
+        }.padding()
+        .navigationTitle("MommaTakeover")
+    }
+}

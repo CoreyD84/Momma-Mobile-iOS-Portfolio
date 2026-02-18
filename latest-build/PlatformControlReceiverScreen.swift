@@ -1,6 +1,8 @@
 import SwiftUI
-struct PlatformControlReceiverScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("PlatformControlReceiver").font(.headline)
+
+struct PlatformControlReceiverScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("messenger").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("discord").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("roblox").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -15,4 +17,7 @@ struct PlatformControlReceiverScreen: View { var body: some View { VStack(spacin
             Button(action: {}) { Text("enabled").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("blocked_apps").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("PlatformControlReceiver") } }
+        }.padding()
+        .navigationTitle("PlatformControlReceiver")
+    }
+}

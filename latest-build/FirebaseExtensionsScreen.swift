@@ -1,5 +1,10 @@
 import SwiftUI
-struct FirebaseExtensionsScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("FirebaseExtensions").font(.headline)
+
+struct FirebaseExtensionsScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("FirebaseExtensions") } }
+        }.padding()
+        .navigationTitle("FirebaseExtensions")
+    }
+}

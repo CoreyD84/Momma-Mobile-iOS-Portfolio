@@ -1,6 +1,8 @@
 import SwiftUI
-struct NettieProtectionServiceScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("NettieProtectionService").font(.headline)
+
+struct NettieProtectionServiceScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("com.android.chrome").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("org.mozilla.firefox").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("com.opera.browser").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -41,4 +43,7 @@ struct NettieProtectionServiceScreen: View { var body: some View { VStack(spacin
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("NettieProtectionService") } }
+        }.padding()
+        .navigationTitle("NettieProtectionService")
+    }
+}

@@ -1,6 +1,8 @@
 import SwiftUI
-struct EmotionalPatternLoaderScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("EmotionalPatternLoader").font(.headline)
+
+struct EmotionalPatternLoaderScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("🔄 Starting to load patterns from Firebase root...").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("emotion_").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("threat_").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -10,4 +12,7 @@ struct EmotionalPatternLoaderScreen: View { var body: some View { VStack(spacing
             Button(action: {}) { Text("suicidal_ideation").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("_emojis").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("EmotionalPatternLoader") } }
+        }.padding()
+        .navigationTitle("EmotionalPatternLoader")
+    }
+}

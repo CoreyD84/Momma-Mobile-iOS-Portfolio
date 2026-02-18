@@ -1,6 +1,8 @@
 import SwiftUI
-struct SubscriptionManagerScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("SubscriptionManager").font(.headline)
+
+struct SubscriptionManagerScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("SubscriptionManager").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("status").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("type").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -24,4 +26,7 @@ struct SubscriptionManagerScreen: View { var body: some View { VStack(spacing: 1
             Button(action: {}) { Text("PAID").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("TRIAL").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("SubscriptionManager") } }
+        }.padding()
+        .navigationTitle("SubscriptionManager")
+    }
+}

@@ -1,6 +1,8 @@
 import SwiftUI
-struct MessageNotificationListenerScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("MessageNotificationListener").font(.headline)
+
+struct MessageNotificationListenerScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("com.textnow.wrapper").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("com.whatsapp").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("com.facebook.orca").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -31,4 +33,7 @@ struct MessageNotificationListenerScreen: View { var body: some View { VStack(sp
             Button(action: {}) { Text("sourceApp").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("performHomeAction").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("MessageNotificationListener") } }
+        }.padding()
+        .navigationTitle("MessageNotificationListener")
+    }
+}

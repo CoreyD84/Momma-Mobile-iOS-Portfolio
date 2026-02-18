@@ -1,5 +1,10 @@
 import SwiftUI
-struct FlagScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("Flag").font(.headline)
+
+struct FlagScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("Flag") } }
+        }.padding()
+        .navigationTitle("Flag")
+    }
+}

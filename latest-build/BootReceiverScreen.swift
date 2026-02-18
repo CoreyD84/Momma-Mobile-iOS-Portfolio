@@ -1,6 +1,8 @@
 import SwiftUI
-struct BootReceiverScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("BootReceiver").font(.headline)
+
+struct BootReceiverScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -11,4 +13,7 @@ struct BootReceiverScreen: View { var body: some View { VStack(spacing: 15) {
             Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("BootReceiver") } }
+        }.padding()
+        .navigationTitle("BootReceiver")
+    }
+}

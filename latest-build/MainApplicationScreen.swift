@@ -1,5 +1,10 @@
 import SwiftUI
-struct MainApplicationScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("MainApplication").font(.headline)
+
+struct MainApplicationScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("MainApplication") } }
+        }.padding()
+        .navigationTitle("MainApplication")
+    }
+}

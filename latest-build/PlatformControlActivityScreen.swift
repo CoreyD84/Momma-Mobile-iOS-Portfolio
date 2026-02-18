@@ -1,5 +1,10 @@
 import SwiftUI
-struct PlatformControlActivityScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("PlatformControlActivity").font(.headline)
+
+struct PlatformControlActivityScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("PlatformControlActivity") } }
+        }.padding()
+        .navigationTitle("PlatformControlActivity")
+    }
+}

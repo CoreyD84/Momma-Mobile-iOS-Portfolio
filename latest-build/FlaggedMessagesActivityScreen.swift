@@ -1,5 +1,10 @@
 import SwiftUI
-struct FlaggedMessagesActivityScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("FlaggedMessagesActivity").font(.headline)
+
+struct FlaggedMessagesActivityScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("FlaggedMessagesActivity") } }
+        }.padding()
+        .navigationTitle("FlaggedMessagesActivity")
+    }
+}

@@ -1,6 +1,8 @@
 import SwiftUI
-struct EmotionalScannerScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("EmotionalScanner").font(.headline)
+
+struct EmotionalScannerScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("EmotionalScanner").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("get back at you").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("get back to you").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -32,4 +34,7 @@ struct EmotionalScannerScreen: View { var body: some View { VStack(spacing: 15) 
             Button(action: {}) { Text("phrase").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("emoji").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("EmotionalScanner") } }
+        }.padding()
+        .navigationTitle("EmotionalScanner")
+    }
+}

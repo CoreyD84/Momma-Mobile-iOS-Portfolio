@@ -1,5 +1,10 @@
 import SwiftUI
-struct SmsComposeActivityScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("SmsComposeActivity").font(.headline)
+
+struct SmsComposeActivityScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Spacer()
-        }.padding().navigationTitle("SmsComposeActivity") } }
+        }.padding()
+        .navigationTitle("SmsComposeActivity")
+    }
+}

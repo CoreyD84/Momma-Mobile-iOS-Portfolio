@@ -1,6 +1,8 @@
 import SwiftUI
-struct ConsentManagementActivityScreen: View { var body: some View { VStack(spacing: 15) {
-            Text("ConsentManagementActivity").font(.headline)
+
+struct ConsentManagementActivityScreen: View {
+    var body: some View {
+        VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("ConsentManagement").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("household_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -75,4 +77,7 @@ struct ConsentManagementActivityScreen: View { var body: some View { VStack(spac
             Button(action: {}) { Text("lastUpdated").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("version").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding().navigationTitle("ConsentManagementActivity") } }
+        }.padding()
+        .navigationTitle("ConsentManagementActivity")
+    }
+}
