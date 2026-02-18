@@ -27,7 +27,16 @@ struct RecentDetectionsFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("RecentDetections").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetections")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Error loading recent detections").font(.subheadline).foregroundColor(.secondary)
                 Text("Please log in to view alerts").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
@@ -40,8 +49,26 @@ struct RecentDetectionsFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("blockedAttempts").font(.subheadline).foregroundColor(.secondary)
-                Text("RecentDetections").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("blockedAttempts")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetections")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("No alerts yet. All clear! ✅").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -154,7 +181,16 @@ struct RecentDetectionsFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("🚨 FREEZEREFLEX: ").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("🚨 FREEZEREFLEX: ")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("🚨 ")
@@ -235,7 +271,16 @@ struct RecentDetectionsFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("RecentDetections").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetections")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Unable to delete: not authenticated")
@@ -256,7 +301,16 @@ struct RecentDetectionsFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("RecentDetections").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetections")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Alert deleted")
@@ -267,8 +321,26 @@ struct RecentDetectionsFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("RecentDetections").font(.subheadline).foregroundColor(.secondary)
-                Text("RecentDetections").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetections")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetections")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Spacer()
             }.padding()
         }

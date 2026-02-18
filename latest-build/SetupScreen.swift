@@ -39,7 +39,16 @@ struct SetupScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Setup complete!").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Setup complete!")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Step 1: Core Permissions").font(.subheadline).foregroundColor(.secondary)
                 Text("To monitor this device for safety, we need access to Location and SMS. Please tap \\").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
@@ -52,7 +61,16 @@ struct SetupScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Grant Permissions").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Grant Permissions")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -101,7 +119,16 @@ struct SetupScreen: View {
                 Text("Step 1: Try Accessibility First").font(.subheadline).foregroundColor(.secondary)
                 Text("• Tap 'Open Accessibility Settings' below").font(.subheadline).foregroundColor(.secondary)
                 Text("• Find 'Nettie Protection' in the list").font(.subheadline).foregroundColor(.secondary)
-                Text("• Try to tap on it").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("• Try to tap on it")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Step 2: If You See 'App was denied access'").font(.subheadline).foregroundColor(.secondary)
                 Text("• Tap 'Learn how to allow access' in the dialog").font(.subheadline).foregroundColor(.secondary)
                 Text("• OR tap 'Open App Settings' below").font(.subheadline).foregroundColor(.secondary)

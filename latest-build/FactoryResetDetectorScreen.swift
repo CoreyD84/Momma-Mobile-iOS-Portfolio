@@ -8,7 +8,16 @@ struct FactoryResetDetectorScreen: View {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: FactoryResetDetector").font(.title2).bold().padding(.bottom)
                 Text("FactoryResetDetector").font(.subheadline).foregroundColor(.secondary)
-                Text("device_fingerprint").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_fingerprint")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("device_id")
@@ -19,10 +28,28 @@ struct FactoryResetDetectorScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("installation_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("First time installation - creating device fingerprint").font(.subheadline).foregroundColor(.secondary)
                 Text("⚠️ Device ID mismatch - possible factory reset or device change").font(.subheadline).foregroundColor(.secondary)
-                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("installation_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("⚠️ Installation ID missing - app data was cleared or factory reset").font(.subheadline).foregroundColor(.secondary)
                 Text("✅ No factory reset detected").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
@@ -35,11 +62,47 @@ struct FactoryResetDetectorScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
-                Text("first_install_time").font(.subheadline).foregroundColor(.secondary)
-                Text("installation_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("installation_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("first_install_time")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("installation_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("🚨 FACTORY RESET DETECTED!").font(.subheadline).foregroundColor(.secondary)
-                Text("last_guardian_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("last_guardian_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("last_child_id")
@@ -51,7 +114,16 @@ struct FactoryResetDetectorScreen: View {
                     .cornerRadius(8)
                 }
                 Text("No guardian info found - cannot alert").font(.subheadline).foregroundColor(.secondary)
-                Text("last_guardian_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("last_guardian_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("last_child_id")
@@ -213,7 +285,16 @@ struct FactoryResetDetectorScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("last_guardian_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("last_guardian_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("last_child_id")

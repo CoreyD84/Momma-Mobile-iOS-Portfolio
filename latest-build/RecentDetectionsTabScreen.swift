@@ -48,12 +48,48 @@ struct RecentDetectionsTabScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("RecentDetectionsTab").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetectionsTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("⚠️ Missing guardian or child identity. Please log in again.").font(.subheadline).foregroundColor(.secondary)
-                Text("RecentDetectionsTab").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetectionsTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("No recent detections found.").font(.subheadline).foregroundColor(.secondary)
-                Text("RecentDetectionsTab").font(.subheadline).foregroundColor(.secondary)
-                Text("RecentDetectionsTab").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetectionsTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetectionsTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("severity")
@@ -235,7 +271,16 @@ struct RecentDetectionsTabScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("RecentDetectionsTab").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetectionsTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -256,8 +301,26 @@ struct RecentDetectionsTabScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("RecentDetectionsTab").font(.subheadline).foregroundColor(.secondary)
-                Text("RecentDetectionsTab").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetectionsTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("RecentDetectionsTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Spacer()
             }.padding()
         }

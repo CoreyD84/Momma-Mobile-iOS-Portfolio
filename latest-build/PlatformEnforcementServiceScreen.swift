@@ -7,8 +7,26 @@ struct PlatformEnforcementServiceScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: PlatformEnforcementService").font(.title2).bold().padding(.bottom)
-                Text("PlatformEnforcement").font(.subheadline).foregroundColor(.secondary)
-                Text("com.roblox.client").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("PlatformEnforcement")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("com.roblox.client")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("messenger")
@@ -119,7 +137,16 @@ struct PlatformEnforcementServiceScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Platform enforcement service created").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Platform enforcement service created")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Platform enforcement service started")

@@ -7,11 +7,47 @@ struct MommaNotificationServiceScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: MommaNotificationService").font(.title2).bold().padding(.bottom)
-                Text("MommaNotifications").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("MommaNotifications")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("freezereflex_critical").font(.subheadline).foregroundColor(.secondary)
-                Text("freezereflex_high").font(.subheadline).foregroundColor(.secondary)
-                Text("freezereflex_medium").font(.subheadline).foregroundColor(.secondary)
-                Text("freezereflex_info").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("freezereflex_high")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("freezereflex_medium")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("freezereflex_info")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("severity")
@@ -83,8 +119,26 @@ struct MommaNotificationServiceScreen: View {
                     .cornerRadius(8)
                 }
                 Text("freezereflex_activated").font(.subheadline).foregroundColor(.secondary)
-                Text("blocked_attempt").font(.subheadline).foregroundColor(.secondary)
-                Text("threat_detected").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("blocked_attempt")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("threat_detected")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("title")
@@ -249,7 +303,16 @@ struct MommaNotificationServiceScreen: View {
                     .cornerRadius(8)
                 }
                 Text("✅ Generic notification sent").font(.subheadline).foregroundColor(.secondary)
-                Text("Critical Alerts").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Critical Alerts")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Critical threats that triggered FreezeReflex").font(.subheadline).foregroundColor(.secondary)
                 Text("High Priority Alerts").font(.subheadline).foregroundColor(.secondary)
                 Text("Blocked contact attempts and high-priority threats").font(.subheadline).foregroundColor(.secondary)
@@ -275,7 +338,16 @@ struct MommaNotificationServiceScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("✅ Notification channels created").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("✅ Notification channels created")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("⚠️ Cannot save FCM token - user not logged in")

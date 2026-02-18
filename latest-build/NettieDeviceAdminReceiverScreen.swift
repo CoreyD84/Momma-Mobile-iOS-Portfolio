@@ -7,7 +7,16 @@ struct NettieDeviceAdminReceiverScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: NettieDeviceAdminReceiver").font(.title2).bold().padding(.bottom)
-                Text("NettieDeviceAdmin").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("NettieDeviceAdmin")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("✅ Device Admin enabled - App is now protected from uninstallation").font(.subheadline).foregroundColor(.secondary)
                 Text("✅ Device protection activated").font(.subheadline).foregroundColor(.secondary)
                 Text("⚠️ Device Admin disabled - App can now be uninstalled").font(.subheadline).foregroundColor(.secondary)
@@ -51,7 +60,16 @@ struct NettieDeviceAdminReceiverScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("device_nickname").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_nickname")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("severity")
@@ -104,7 +122,16 @@ struct NettieDeviceAdminReceiverScreen: View {
                 }
                 Text("✅ Alerted guardian of unauthorized admin deactivation").font(.subheadline).foregroundColor(.secondary)
                 Text("✅ Set uninstall_imminent flag").font(.subheadline).foregroundColor(.secondary)
-                Text("device_nickname").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_nickname")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("severity")
@@ -156,9 +183,36 @@ struct NettieDeviceAdminReceiverScreen: View {
                     .cornerRadius(8)
                 }
                 Text("✅ Alerted guardian of unauthorized deactivation attempt").font(.subheadline).foregroundColor(.secondary)
-                Text("Password changed").font(.subheadline).foregroundColor(.secondary)
-                Text("Password failed").font(.subheadline).foregroundColor(.secondary)
-                Text("Password succeeded").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Password changed")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Password failed")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Password succeeded")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Spacer()
             }.padding()
         }

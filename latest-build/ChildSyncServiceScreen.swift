@@ -7,7 +7,16 @@ struct ChildSyncServiceScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: ChildSyncService").font(.title2).bold().padding(.bottom)
-                Text("ChildSyncService").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("ChildSyncService")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("child_id")
@@ -138,7 +147,16 @@ struct ChildSyncServiceScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("MissingPermission").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("MissingPermission")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("❌ Error setting up location sync").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {

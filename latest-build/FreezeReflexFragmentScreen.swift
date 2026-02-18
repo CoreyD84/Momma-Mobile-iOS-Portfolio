@@ -94,7 +94,16 @@ struct FreezeReflexFragmentScreen: View {
                 TextField("Action", text: .constant(""))
                     .textFieldStyle(.roundedBorder)
                 Text("Phone Number or Contact ID").font(.subheadline).foregroundColor(.secondary)
-                Text("e.g., +1234567890").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("e.g., +1234567890")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 TextField("Action", text: .constant(""))
                     .textFieldStyle(.roundedBorder)
                 Text("Platform").font(.subheadline).foregroundColor(.secondary)
@@ -164,8 +173,26 @@ struct FreezeReflexFragmentScreen: View {
                     .cornerRadius(8)
                 }
                 Text("🚨 FreezeReflex Protection").font(.subheadline).foregroundColor(.secondary)
-                Text("Threats Blocked").font(.subheadline).foregroundColor(.secondary)
-                Text("Contacts Blocked").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Threats Blocked")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Contacts Blocked")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Attempts Stopped")
@@ -227,7 +254,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("No Blocked Contacts").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("No Blocked Contacts")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -369,7 +405,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Original Message").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Original Message")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -541,7 +586,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("No Blocked Attempts").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("No Blocked Attempts")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Blocked contacts haven't tried to message yet.").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -553,7 +607,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("🚫 Blocked Attempt").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("🚫 Blocked Attempt")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -656,7 +719,16 @@ struct FreezeReflexFragmentScreen: View {
                     .cornerRadius(8)
                 }
                 Text("FreezeReflex Settings").font(.subheadline).foregroundColor(.secondary)
-                Text("Enable FreezeReflex").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Enable FreezeReflex")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Automatically freeze apps and block dangerous contacts").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -669,7 +741,16 @@ struct FreezeReflexFragmentScreen: View {
                     .cornerRadius(8)
                 }
                 Text("Automatically respond to blocked contacts with deflection messages").font(.subheadline).foregroundColor(.secondary)
-                Text("Push Notifications").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Push Notifications")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Receive instant alerts when FreezeReflex activates").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -746,7 +827,16 @@ struct FreezeReflexFragmentScreen: View {
                 }
                 Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
                 Text("Please log in to view FreezeReflex data").font(.subheadline).foregroundColor(.secondary)
-                Text("blockedContacts").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("blockedContacts")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("identifier")
@@ -787,7 +877,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("originalMessage").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("originalMessage")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("blockedAt")
@@ -910,7 +1009,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("blockedAttempts").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("blockedAttempts")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("source")
@@ -963,7 +1071,16 @@ struct FreezeReflexFragmentScreen: View {
                     .cornerRadius(8)
                 }
                 Text("Please log in to block contacts").font(.subheadline).foregroundColor(.secondary)
-                Text("selected_child_id").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("selected_child_id")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("No linked children found")
@@ -1014,7 +1131,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("originalMessage").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("originalMessage")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("blockedAt")
@@ -1046,7 +1172,16 @@ struct FreezeReflexFragmentScreen: View {
                     .cornerRadius(8)
                 }
                 Text("Contact blocked successfully").font(.subheadline).foregroundColor(.secondary)
-                Text("Unblock Contact?").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Unblock Contact?")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Unblock")
@@ -1057,7 +1192,16 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Contact unblocked").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Contact unblocked")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Cancel")

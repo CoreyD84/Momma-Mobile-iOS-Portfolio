@@ -37,7 +37,16 @@ struct FeelScopeServiceScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("performHomeAction").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("performHomeAction")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("✅ Performed global HOME action - app closed").font(.subheadline).foregroundColor(.secondary)
                 Text("⚠️ Global HOME action failed").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
@@ -96,7 +105,16 @@ struct FeelScopeServiceScreen: View {
                 }
                 Text("com.enflick.android.TextNow").font(.subheadline).foregroundColor(.secondary)
                 Text("com.enflick.android.textnow").font(.subheadline).foregroundColor(.secondary)
-                Text("com.textnow.wrapper").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.textnow.wrapper")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("com.whatsapp")
@@ -130,12 +148,39 @@ struct FeelScopeServiceScreen: View {
                     .cornerRadius(8)
                 }
                 Text("org.telegram.messenger").font(.subheadline).foregroundColor(.secondary)
-                Text("com.twitter.android").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.twitter.android")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("com.zhiliaoapp.musically").font(.subheadline).foregroundColor(.secondary)
                 Text("com.google.android.apps.messaging").font(.subheadline).foregroundColor(.secondary)
                 Text("com.samsung.android.messaging").font(.subheadline).foregroundColor(.secondary)
-                Text("com.android.mms").font(.subheadline).foregroundColor(.secondary)
-                Text("com.skype.raider").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.android.mms")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("com.skype.raider")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("com.viber.voip")
@@ -147,7 +192,16 @@ struct FeelScopeServiceScreen: View {
                     .cornerRadius(8)
                 }
                 Text("us.zoom.videomeetings").font(.subheadline).foregroundColor(.secondary)
-                Text("com.kik.android").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.kik.android")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("com.imo.android.imoim").font(.subheadline).foregroundColor(.secondary)
                 Text("jp.naver.line.android").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
@@ -164,7 +218,16 @@ struct FeelScopeServiceScreen: View {
                 Text("⚠️ FeelScope Accessibility Service has been interrupted.").font(.subheadline).foregroundColor(.secondary)
                 Text("📡 Unregistered critical threat broadcast receiver").font(.subheadline).foregroundColor(.secondary)
                 Text("FeelScope service destroyed.").font(.subheadline).foregroundColor(.secondary)
-                Text("FeelScopeService").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("FeelScopeService")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Spacer()
             }.padding()
         }

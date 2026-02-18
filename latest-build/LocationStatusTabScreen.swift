@@ -38,7 +38,16 @@ struct LocationStatusTabScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("LocationStatusTab").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("LocationStatusTab")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Failed to fetch childId").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -91,7 +100,16 @@ struct LocationStatusTabScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Child's Location").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Child's Location")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Waiting for location data...").font(.subheadline).foregroundColor(.secondary)
                 ProgressView()
                 Button(action: {}) {

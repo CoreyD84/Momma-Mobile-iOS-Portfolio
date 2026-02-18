@@ -21,8 +21,26 @@ struct SafeScopeToggleScreen: View {
                 Text("Waiting for Child ID...").font(.subheadline).foregroundColor(.secondary)
                 Text("Error: Guardian ID is null.").font(.subheadline).foregroundColor(.secondary)
                 Text("Attaching Firebase listener...").font(.subheadline).foregroundColor(.secondary)
-                Text("SafeScopeToggle").font(.subheadline).foregroundColor(.secondary)
-                Text("SafeScopeToggle").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("SafeScopeToggle")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("SafeScopeToggle")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -33,11 +51,29 @@ struct SafeScopeToggleScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("SafeScope™ Filter").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("SafeScope™ Filter")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 ProgressView()
                 Text("Loading from Firebase...").font(.subheadline).foregroundColor(.secondary)
                 Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
-                Text("SafeScope Status").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("SafeScope Status")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -49,7 +85,16 @@ struct SafeScopeToggleScreen: View {
                     .cornerRadius(8)
                 }
                 Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
-                Text("Blocked Websites").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Blocked Websites")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")

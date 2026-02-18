@@ -7,7 +7,16 @@ struct MommaDeviceAdminScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: MommaDeviceAdmin").font(.title2).bold().padding(.bottom)
-                Text("MommaDeviceAdmin").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("MommaDeviceAdmin")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("✅ Device Admin ENABLED - App is now protected from uninstallation").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -252,7 +261,16 @@ struct MommaDeviceAdminScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("uninstall_imminent").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("uninstall_imminent")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("⚠️ Final heartbeat sent - uninstall imminent flag set").font(.subheadline).foregroundColor(.secondary)
                 Spacer()
             }.padding()

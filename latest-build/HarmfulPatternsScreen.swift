@@ -7,8 +7,26 @@ struct HarmfulPatternsScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: HarmfulPatterns").font(.title2).bold().padding(.bottom)
-                Text("emotion_sadness").font(.subheadline).foregroundColor(.secondary)
-                Text("i want to disappear").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("emotion_sadness")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("i want to disappear")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("i feel so sad")
@@ -70,7 +88,16 @@ struct HarmfulPatternsScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("emotion_anxiety").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("emotion_anxiety")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("i'm anxious")
@@ -101,7 +128,16 @@ struct HarmfulPatternsScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("threat_self_harm").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("threat_self_harm")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("i want to hurt myself").font(.subheadline).foregroundColor(.secondary)
                 Text("i want to kill myself").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
@@ -124,9 +160,36 @@ struct HarmfulPatternsScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("threat_bullying").font(.subheadline).foregroundColor(.secondary)
-                Text("you're worthless").font(.subheadline).foregroundColor(.secondary)
-                Text("no one likes you").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("threat_bullying")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("you're worthless")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("no one likes you")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("go away loser")
@@ -157,17 +220,107 @@ struct HarmfulPatternsScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("threat_grooming").font(.subheadline).foregroundColor(.secondary)
-                Text("keep this secret").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("threat_grooming")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("keep this secret")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("don't tell your parents").font(.subheadline).foregroundColor(.secondary)
-                Text("this is our secret").font(.subheadline).foregroundColor(.secondary)
-                Text("don't tell anyone").font(.subheadline).foregroundColor(.secondary)
-                Text("don't tell your mom").font(.subheadline).foregroundColor(.secondary)
-                Text("don't tell your dad").font(.subheadline).foregroundColor(.secondary)
-                Text("send me a picture").font(.subheadline).foregroundColor(.secondary)
-                Text("how old are you").font(.subheadline).foregroundColor(.secondary)
-                Text("what's your age").font(.subheadline).foregroundColor(.secondary)
-                Text("where do you live").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("this is our secret")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("don't tell anyone")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("don't tell your mom")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("don't tell your dad")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("send me a picture")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("how old are you")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("what's your age")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("where do you live")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("what school do you go to").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -220,8 +373,26 @@ struct HarmfulPatternsScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("our little secret").font(.subheadline).foregroundColor(.secondary)
-                Text("mature for your age").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("our little secret")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("mature for your age")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("special relationship").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -236,11 +407,29 @@ struct HarmfulPatternsScreen: View {
                 Text("let's talk privately").font(.subheadline).foregroundColor(.secondary)
                 Text("create another account").font(.subheadline).foregroundColor(.secondary)
                 Text("make another account").font(.subheadline).foregroundColor(.secondary)
-                Text("get a new account").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("get a new account")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("use a different account").font(.subheadline).foregroundColor(.secondary)
                 Text("emotion_sadness_emojis").font(.subheadline).foregroundColor(.secondary)
                 Text("emotion_anger_emojis").font(.subheadline).foregroundColor(.secondary)
-                Text("emotion_fear_emojis").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("emotion_fear_emojis")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("emotion_isolation_emojis").font(.subheadline).foregroundColor(.secondary)
                 Text("emotion_support_emojis").font(.subheadline).foregroundColor(.secondary)
                 Text("threat_bullying_emojis").font(.subheadline).foregroundColor(.secondary)
@@ -248,8 +437,26 @@ struct HarmfulPatternsScreen: View {
                 Text("threat_manipulation_emojis").font(.subheadline).foregroundColor(.secondary)
                 Text("threat_secrecy_emojis").font(.subheadline).foregroundColor(.secondary)
                 Text("threat_escalation_emojis").font(.subheadline).foregroundColor(.secondary)
-                Text("HarmfulPatterns").font(.subheadline).foregroundColor(.secondary)
-                Text("HarmfulPatterns").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("HarmfulPatterns")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("HarmfulPatterns")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Spacer()
             }.padding()
         }

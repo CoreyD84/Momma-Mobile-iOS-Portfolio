@@ -7,7 +7,16 @@ struct AppBlockerServiceScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: AppBlockerService").font(.title2).bold().padding(.bottom)
-                Text("AppBlockerService").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("AppBlockerService")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("✅ App Blocker service connected.").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {

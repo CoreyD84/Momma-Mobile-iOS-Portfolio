@@ -8,7 +8,16 @@ struct UninstallAttemptMonitorScreen: View {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: UninstallAttemptMonitor").font(.title2).bold().padding(.bottom)
                 Text("UninstallAttemptMonitor").font(.subheadline).foregroundColor(.secondary)
-                Text("UninstallAttemptMonitor service created").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("UninstallAttemptMonitor service created")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("UninstallAttemptMonitor service started")
@@ -57,7 +66,16 @@ struct UninstallAttemptMonitorScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Settings app opened").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Settings app opened")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("household_id")
@@ -68,7 +86,16 @@ struct UninstallAttemptMonitorScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("device_nickname").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_nickname")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("severity")

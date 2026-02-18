@@ -153,7 +153,16 @@ struct ChildLinkActivityScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("yyyy-MM-dd HH:mm:ss").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("yyyy-MM-dd HH:mm:ss")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("nickname")
@@ -204,7 +213,16 @@ struct ChildLinkActivityScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("device_nickname").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_nickname")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("ChildLinkActivity")
@@ -276,7 +294,16 @@ struct ChildLinkActivityScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("yyyy-MM-dd HH:mm:ss").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("yyyy-MM-dd HH:mm:ss")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("calm")
@@ -327,7 +354,16 @@ struct ChildLinkActivityScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("device_nickname").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_nickname")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("ChildLinkActivity")
@@ -350,7 +386,16 @@ struct ChildLinkActivityScreen: View {
                 }
                 Text("🔒 Enable Device Protection?").font(.subheadline).foregroundColor(.secondary)
                 Text("To prevent unauthorized app removal, Momma Mobile needs Device Administrator permission. This ensures the app stays protected and can't be uninstalled without guardian authorization.").font(.subheadline).foregroundColor(.secondary)
-                Text("Enable Protection").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Enable Protection")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Skip")
@@ -364,7 +409,16 @@ struct ChildLinkActivityScreen: View {
                 Text("⚠️ Warning: App can be uninstalled without protection").font(.subheadline).foregroundColor(.secondary)
                 Text("📊 Enable Uninstall Detection?").font(.subheadline).foregroundColor(.secondary)
                 Text("Momma Mobile can detect when someone tries to uninstall the app and alert your guardian immediately. This requires Usage Access permission.").font(.subheadline).foregroundColor(.secondary)
-                Text("Enable Detection").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Enable Detection")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Skip")
@@ -425,7 +479,16 @@ struct ChildLinkActivityScreen: View {
                     .cornerRadius(8)
                 }
                 Text("Stealth Mode enabled. App icon hidden.").font(.subheadline).foregroundColor(.secondary)
-                Text("No, keep visible").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("No, keep visible")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Enable Emotional Radar?").font(.subheadline).foregroundColor(.secondary)
                 Text("To help protect you from harmful messages, Nettie needs permission to become your default SMS app. This allows her to scan incoming texts for emotional safety risks. No messages are stored or shared — only flagged patterns are reported to your guardian.").font(.subheadline).foregroundColor(.secondary)
                 Text("Enable Emotional Radar").font(.subheadline).foregroundColor(.secondary)

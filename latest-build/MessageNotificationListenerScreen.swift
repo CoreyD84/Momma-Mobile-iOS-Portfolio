@@ -10,7 +10,16 @@ struct MessageNotificationListenerScreen: View {
                 Text("MessageNotificationListener").font(.subheadline).foregroundColor(.secondary)
                 Text("com.enflick.android.TextNow").font(.subheadline).foregroundColor(.secondary)
                 Text("com.enflick.android.textnow").font(.subheadline).foregroundColor(.secondary)
-                Text("com.textnow.wrapper").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.textnow.wrapper")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("com.whatsapp")
@@ -44,12 +53,39 @@ struct MessageNotificationListenerScreen: View {
                     .cornerRadius(8)
                 }
                 Text("org.telegram.messenger").font(.subheadline).foregroundColor(.secondary)
-                Text("com.twitter.android").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.twitter.android")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("com.zhiliaoapp.musically").font(.subheadline).foregroundColor(.secondary)
                 Text("com.google.android.apps.messaging").font(.subheadline).foregroundColor(.secondary)
                 Text("com.samsung.android.messaging").font(.subheadline).foregroundColor(.secondary)
-                Text("com.android.mms").font(.subheadline).foregroundColor(.secondary)
-                Text("com.skype.raider").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.android.mms")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("com.skype.raider")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("com.viber.voip")
@@ -61,7 +97,16 @@ struct MessageNotificationListenerScreen: View {
                     .cornerRadius(8)
                 }
                 Text("us.zoom.videomeetings").font(.subheadline).foregroundColor(.secondary)
-                Text("com.kik.android").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.kik.android")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("com.imo.android.imoim").font(.subheadline).foregroundColor(.secondary)
                 Text("jp.naver.line.android").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
@@ -256,7 +301,16 @@ struct MessageNotificationListenerScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("performHomeAction").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("performHomeAction")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("📡 Broadcast sent to FeelScopeService for emergency response").font(.subheadline).foregroundColor(.secondary)
                 Text("✅ Notification Listener connected").font(.subheadline).foregroundColor(.secondary)
                 Text("⚠️ Notification Listener disconnected").font(.subheadline).foregroundColor(.secondary)

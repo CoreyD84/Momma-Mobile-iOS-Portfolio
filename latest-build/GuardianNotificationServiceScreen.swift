@@ -8,8 +8,26 @@ struct GuardianNotificationServiceScreen: View {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: GuardianNotificationService").font(.title2).bold().padding(.bottom)
                 Text("GuardianNotificationService").font(.subheadline).foregroundColor(.secondary)
-                Text("guardian_service").font(.subheadline).foregroundColor(.secondary)
-                Text("GuardianNotificationService created").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("guardian_service")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("GuardianNotificationService created")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("No guardian logged in, service will wait for authentication").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -34,7 +52,16 @@ struct GuardianNotificationServiceScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Critical Alerts").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Critical Alerts")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Critical threats and FreezeReflex activations").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -90,7 +117,16 @@ struct GuardianNotificationServiceScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Momma Mobile Active").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Momma Mobile Active")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Monitoring for threats and protecting your child").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {

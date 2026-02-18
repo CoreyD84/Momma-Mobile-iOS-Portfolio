@@ -8,7 +8,16 @@ struct AdminDeactivationMonitorScreen: View {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: AdminDeactivationMonitor").font(.title2).bold().padding(.bottom)
                 Text("AdminDeactivationMonitor").font(.subheadline).foregroundColor(.secondary)
-                Text("AdminDeactivationMonitor service created").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("AdminDeactivationMonitor service created")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("AdminDeactivationMonitor service started")
@@ -50,7 +59,16 @@ struct AdminDeactivationMonitorScreen: View {
                 Text("✅ Cleared deactivation request flag").font(.subheadline).foregroundColor(.secondary)
                 Text("✅ Cleared authorization flag").font(.subheadline).foregroundColor(.secondary)
                 Text("admin_deactivation_authorized").font(.subheadline).foregroundColor(.secondary)
-                Text("device_nickname").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("device_nickname")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("severity")

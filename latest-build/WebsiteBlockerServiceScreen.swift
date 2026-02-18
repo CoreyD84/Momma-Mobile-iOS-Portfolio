@@ -8,11 +8,56 @@ struct WebsiteBlockerServiceScreen: View {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: WebsiteBlockerService").font(.title2).bold().padding(.bottom)
                 Text("WebsiteBlockerService").font(.subheadline).foregroundColor(.secondary)
-                Text("com.android.chrome").font(.subheadline).foregroundColor(.secondary)
-                Text("org.mozilla.firefox").font(.subheadline).foregroundColor(.secondary)
-                Text("com.opera.browser").font(.subheadline).foregroundColor(.secondary)
-                Text("com.microsoft.emmx").font(.subheadline).foregroundColor(.secondary)
-                Text("com.brave.browser").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.android.chrome")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("org.mozilla.firefox")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("com.opera.browser")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("com.microsoft.emmx")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("com.brave.browser")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("com.duckduckgo.mobile.android").font(.subheadline).foregroundColor(.secondary)
                 Text("com.sec.android.app.sbrowser").font(.subheadline).foregroundColor(.secondary)
                 Text("com.google.android.googlequicksearchbox").font(.subheadline).foregroundColor(.secondary)

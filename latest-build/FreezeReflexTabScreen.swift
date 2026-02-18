@@ -110,7 +110,16 @@ struct FreezeReflexTabScreen: View {
                     .cornerRadius(8)
                 }
                 Text("🚨 Freeze Reflex Triggered\\n").font(.subheadline).foregroundColor(.secondary)
-                Text("🛡️ Deflection: \\").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("🛡️ Deflection: \\")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")

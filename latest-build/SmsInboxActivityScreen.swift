@@ -18,7 +18,16 @@ struct SmsInboxActivityScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("(Unknown sender)").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("(Unknown sender)")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("📭 No SMS messages found.").font(.subheadline).foregroundColor(.secondary)
                 Spacer()
             }.padding()

@@ -41,11 +41,29 @@ struct AppScopeToggleScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("AppScope™ Filter").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("AppScope™ Filter")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 ProgressView()
                 Text("Loading from Firebase...").font(.subheadline).foregroundColor(.secondary)
                 Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
-                Text("AppScope Status").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("AppScope Status")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -162,7 +180,16 @@ struct AppScopeToggleScreen: View {
                 TextField("Action", text: .constant(""))
                     .textFieldStyle(.roundedBorder)
                 Text("Package name").font(.subheadline).foregroundColor(.secondary)
-                Text("com.example.app").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("com.example.app")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Add")

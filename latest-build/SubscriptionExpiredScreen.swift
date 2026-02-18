@@ -57,8 +57,26 @@ struct SubscriptionExpiredScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Free Trial Ended").font(.subheadline).foregroundColor(.secondary)
-                Text("Beta Trial Ended").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Free Trial Ended")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("Beta Trial Ended")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Text("Subscription Expired").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
@@ -116,8 +134,26 @@ struct SubscriptionExpiredScreen: View {
                 Text("🛡️ SafeScope Web Filtering").font(.subheadline).foregroundColor(.secondary)
                 Text("📱 App Control & Blocking").font(.subheadline).foregroundColor(.secondary)
                 Text("📍 Real-time GPS Tracking").font(.subheadline).foregroundColor(.secondary)
-                Text("💬 Message Scanner").font(.subheadline).foregroundColor(.secondary)
-                Text("📲 SMS Monitoring").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("💬 Message Scanner")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                Button(action: {}) {
+                    HStack {
+                        Text("📲 SMS Monitoring")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -200,7 +236,16 @@ struct SubscriptionExpiredScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("Enter License Key").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("Enter License Key")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -225,7 +270,16 @@ struct SubscriptionExpiredScreen: View {
                 TextField("Action", text: .constant(""))
                     .textFieldStyle(.roundedBorder)
                 Text("License Key").font(.subheadline).foregroundColor(.secondary)
-                Text("XXXX-XXXX-XXXX-XXXX").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("XXXX-XXXX-XXXX-XXXX")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -296,7 +350,16 @@ struct SubscriptionExpiredScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Text("⏰ Trial Ending Soon").font(.subheadline).foregroundColor(.secondary)
+                Button(action: {}) {
+                    HStack {
+                        Text("⏰ Trial Ending Soon")
+                        Spacer()
+                        Image(systemName: "chevron.right.circle")
+                    }
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
+                    .cornerRadius(8)
+                }
                 Button(action: {}) {
                     HStack {
                         Text("Action")
