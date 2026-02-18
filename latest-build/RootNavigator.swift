@@ -1,2 +1,2 @@
 import SwiftUI
-struct RootNavigator: View { @AppStorage("isLoggedIn") var isLoggedIn = false; var body: some View { if isLoggedIn { HomeScreen() } else { NavigationView { LoginActivityScreen() } } } }
+struct RootNavigator: View { @AppStorage("isLoggedIn") var isLoggedIn = false; var body: some View { if isLoggedIn { HomeScreen() } else { AdminDeactivationMonitorScreen() } } }

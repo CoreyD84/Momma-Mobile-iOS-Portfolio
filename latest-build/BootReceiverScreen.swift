@@ -1,100 +1,14 @@
 import SwiftUI
-struct BootReceiverScreen: View {
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("guardian_id")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("MommaStealth")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(10)
-                }
-            }.padding()
-        }
-        .navigationTitle("BootReceiver")
-    }
-}
+struct BootReceiverScreen: View { var body: some View { VStack(spacing: 15) {
+            Text("BootReceiver").font(.headline)
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("guardian_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Button(action: {}) { Text("MommaStealth").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Spacer()
+        }.padding().navigationTitle("BootReceiver") } }

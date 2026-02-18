@@ -1,10 +1,5 @@
 import SwiftUI
-struct OnlineSafetyFragmentScreen: View {
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-            }.padding()
-        }
-        .navigationTitle("OnlineSafetyFragment")
-    }
-}
+struct OnlineSafetyFragmentScreen: View { var body: some View { VStack(spacing: 15) {
+            Text("OnlineSafetyFragment").font(.headline)
+            Spacer()
+        }.padding().navigationTitle("OnlineSafetyFragment") } }

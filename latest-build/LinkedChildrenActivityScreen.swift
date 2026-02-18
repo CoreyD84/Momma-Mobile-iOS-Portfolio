@@ -1,10 +1,5 @@
 import SwiftUI
-struct LinkedChildrenActivityScreen: View {
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-            }.padding()
-        }
-        .navigationTitle("LinkedChildrenActivity")
-    }
-}
+struct LinkedChildrenActivityScreen: View { var body: some View { VStack(spacing: 15) {
+            Text("LinkedChildrenActivity").font(.headline)
+            Spacer()
+        }.padding().navigationTitle("LinkedChildrenActivity") } }

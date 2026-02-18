@@ -2,158 +2,146 @@ import SwiftUI
 
 struct HomeScreen: View {
     @AppStorage("isLoggedIn") var isLoggedIn = true
-    
     var body: some View {
-        TabView {
-            // 🏠 HOME/DASHBOARD TAB
-            NavigationView {
-                FleetListView(category: "Admin")
-                    .navigationTitle("Admin Hub")
-                    .toolbar { Button("Logout") { isLoggedIn = false } }
+        NavigationView {
+            ZStack {
+                Color.black.edgesIgnoringSafeArea(.all) // Dark background for contrast
+                ScrollView {
+                    VStack(spacing: 12) {
+                        Spacer().frame(height: 50)
+                        ForEach(["LINK CHILD DEVICE","RECENT","FLAGGED","FREEZE","LINKED","MASCOT","SCANNER","PLATFORMS","SMS","LOCATION","CONSENT"], id: \.self) { btnLabel in
+                            NavigationLink(destination: AnyViewByName(name: btnLabel)) {
+                                Text(btnLabel)
+                                    .font(.system(size: 16, weight: .bold, design: .monospaced))
+                                    .foregroundColor(.white)
+                                    .frame(width: 220, height: 50)
+                                    .background(Color(red: 0.4, green: 0.0, blue: 0.9))
+                                    .cornerRadius(4)
+                            }
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding(.trailing, 20)
+                }
             }
-            .tabItem { Label("Admin", systemImage: "shield.fill") }
-            
-            // 📡 MONITORING TAB
-            NavigationView {
-                FleetListView(category: "Monitor")
-                    .navigationTitle("Monitoring")
-            }
-            .tabItem { Label("Monitor", systemImage: "waveform.path.ecg") }
-
-            // ⚙️ SETTINGS TAB
-            NavigationView {
-                FleetListView(category: "Settings")
-                    .navigationTitle("Settings")
-            }
-            .tabItem { Label("Settings", systemImage: "gearshape.fill") }
+            .navigationTitle("Dashboard")
         }
-    }
-}
-
-struct FleetListView: View {
-    let category: String
-    @State private var searchText = ""
-    let allScreens = ["AdminDeactivationMonitor", "AppBlockerService", "AppScopeToggle", "AutoHideProvider", "BlockedAppActivity", "BlockedContact", "BlockedWebsiteActivity", "BootReceiver", "ChildLinkActivity", "ChildSelector", "ChildSyncService", "Color", "ComposePlatformControlFragment", "ConsentManagementActivity", "ConsentModal", "ConsentOverviewActivity", "ConsentOverviewFragment", "ConsentOverviewTab", "EmotionalPatternLoader", "EmotionalRadar", "EmotionalScanner", "EscalationMatrix", "ExampleInstrumentedTest", "ExampleUnitTest", "FactoryResetDetector", "FeelScopeService", "FirebaseExtensions", "FirebaseLogger", "FirebaseSync", "Flag", "FlaggedMessage", "FlaggedMessageAdapter", "FlaggedMessagesActivity", "FlaggedMessagesFragment", "FlaggedMessagesTab", "FreezeReflex", "FreezeReflexFragment", "FreezeReflexTab", "FreezeReflexWarningActivity", "GenerateLinkQrActivity", "GuardianDashboard", "GuardianNotificationService", "GuardianTabAdapter", "HarmfulPatterns", "HeartbeatMonitorService", "LinkedChildrenActivity", "LinkedChildrenFragment", "LinkedChildrenTab", "LocationStatusActivity", "LocationStatusFragment", "LocationStatusTab", "LocationSync", "LocationTrackerService", "LoginActivity", "MainActivity", "MainApplication", "MascotMood", "MascotMoodActivity", "MascotMoodFragment", "MascotMoodTab", "MessageNotificationListener", "MessageScannerActivity", "MessageScannerFragment", "MessageScannerTab", "MommaDeviceAdmin", "MommaMobileTheme", "MommaNotificationService", "MommaTakeover", "NettieDeviceAdminReceiver", "NettieProtectionService", "OnlineSafetyActivity", "OnlineSafetyFragment", "OnlineSafetyTab", "PlatformControlActivity", "PlatformControlReceiver", "PlatformControlTab", "PlatformEnforcementService", "QRUtils", "RecentDetectionsActivities", "RecentDetectionsFragment", "RecentDetectionsTab", "SafeScope", "SafeScopeFragment", "SafeScopeToggle", "SafeScopeVpnService", "ScannerEngine", "ScannerGlobals", "ServiceStarter", "SetupActivity", "Setup", "SmsComposeActivity", "SmsDetectionsActivity", "SmsDetectionsFragment", "SmsDetectionsTab", "SmsInboxActivity", "SmsReceiver", "SubscriptionExpiredActivity", "SubscriptionExpired", "SubscriptionManager", "Theme", "Type", "UninstallAttemptMonitor", "VpnPermissionActivity", "WebsiteBlockerService"]
-    
-    var body: some View {
-        List {
-            ForEach(allScreens.filter { $0.contains(category) && (searchText.isEmpty || $0.localizedCaseInsensitiveContains(searchText)) }, id: \.self) { name in
-                NavigationLink(name, destination: AnyViewByName(name: name))
-            }
-        }
-        .searchable(text: $searchText)
     }
 }
 
 struct AnyViewByName: View {
     let name: String
     var body: some View {
-        switch name {
-        case "AdminDeactivationMonitor": AdminDeactivationMonitorScreen()
-        case "AppBlockerService": AppBlockerServiceScreen()
-        case "AppScopeToggle": AppScopeToggleScreen()
-        case "AutoHideProvider": AutoHideProviderScreen()
-        case "BlockedAppActivity": BlockedAppActivityScreen()
-        case "BlockedContact": BlockedContactScreen()
-        case "BlockedWebsiteActivity": BlockedWebsiteActivityScreen()
-        case "BootReceiver": BootReceiverScreen()
-        case "ChildLinkActivity": ChildLinkActivityScreen()
-        case "ChildSelector": ChildSelectorScreen()
-        case "ChildSyncService": ChildSyncServiceScreen()
-        case "Color": ColorScreen()
-        case "ComposePlatformControlFragment": ComposePlatformControlFragmentScreen()
-        case "ConsentManagementActivity": ConsentManagementActivityScreen()
-        case "ConsentModal": ConsentModalScreen()
-        case "ConsentOverviewActivity": ConsentOverviewActivityScreen()
-        case "ConsentOverviewFragment": ConsentOverviewFragmentScreen()
-        case "ConsentOverviewTab": ConsentOverviewTabScreen()
-        case "EmotionalPatternLoader": EmotionalPatternLoaderScreen()
-        case "EmotionalRadar": EmotionalRadarScreen()
-        case "EmotionalScanner": EmotionalScannerScreen()
-        case "EscalationMatrix": EscalationMatrixScreen()
-        case "ExampleInstrumentedTest": ExampleInstrumentedTestScreen()
-        case "ExampleUnitTest": ExampleUnitTestScreen()
-        case "FactoryResetDetector": FactoryResetDetectorScreen()
-        case "FeelScopeService": FeelScopeServiceScreen()
-        case "FirebaseExtensions": FirebaseExtensionsScreen()
-        case "FirebaseLogger": FirebaseLoggerScreen()
-        case "FirebaseSync": FirebaseSyncScreen()
-        case "Flag": FlagScreen()
-        case "FlaggedMessage": FlaggedMessageScreen()
-        case "FlaggedMessageAdapter": FlaggedMessageAdapterScreen()
-        case "FlaggedMessagesActivity": FlaggedMessagesActivityScreen()
-        case "FlaggedMessagesFragment": FlaggedMessagesFragmentScreen()
-        case "FlaggedMessagesTab": FlaggedMessagesTabScreen()
-        case "FreezeReflex": FreezeReflexScreen()
-        case "FreezeReflexFragment": FreezeReflexFragmentScreen()
-        case "FreezeReflexTab": FreezeReflexTabScreen()
-        case "FreezeReflexWarningActivity": FreezeReflexWarningActivityScreen()
-        case "GenerateLinkQrActivity": GenerateLinkQrActivityScreen()
-        case "GuardianDashboard": GuardianDashboardScreen()
-        case "GuardianNotificationService": GuardianNotificationServiceScreen()
-        case "GuardianTabAdapter": GuardianTabAdapterScreen()
-        case "HarmfulPatterns": HarmfulPatternsScreen()
-        case "HeartbeatMonitorService": HeartbeatMonitorServiceScreen()
-        case "LinkedChildrenActivity": LinkedChildrenActivityScreen()
-        case "LinkedChildrenFragment": LinkedChildrenFragmentScreen()
-        case "LinkedChildrenTab": LinkedChildrenTabScreen()
-        case "LocationStatusActivity": LocationStatusActivityScreen()
-        case "LocationStatusFragment": LocationStatusFragmentScreen()
-        case "LocationStatusTab": LocationStatusTabScreen()
-        case "LocationSync": LocationSyncScreen()
-        case "LocationTrackerService": LocationTrackerServiceScreen()
-        case "LoginActivity": LoginActivityScreen()
-        case "MainActivity": MainActivityScreen()
-        case "MainApplication": MainApplicationScreen()
-        case "MascotMood": MascotMoodScreen()
-        case "MascotMoodActivity": MascotMoodActivityScreen()
-        case "MascotMoodFragment": MascotMoodFragmentScreen()
-        case "MascotMoodTab": MascotMoodTabScreen()
-        case "MessageNotificationListener": MessageNotificationListenerScreen()
-        case "MessageScannerActivity": MessageScannerActivityScreen()
-        case "MessageScannerFragment": MessageScannerFragmentScreen()
-        case "MessageScannerTab": MessageScannerTabScreen()
-        case "MommaDeviceAdmin": MommaDeviceAdminScreen()
-        case "MommaMobileTheme": MommaMobileThemeScreen()
-        case "MommaNotificationService": MommaNotificationServiceScreen()
-        case "MommaTakeover": MommaTakeoverScreen()
-        case "NettieDeviceAdminReceiver": NettieDeviceAdminReceiverScreen()
-        case "NettieProtectionService": NettieProtectionServiceScreen()
-        case "OnlineSafetyActivity": OnlineSafetyActivityScreen()
-        case "OnlineSafetyFragment": OnlineSafetyFragmentScreen()
-        case "OnlineSafetyTab": OnlineSafetyTabScreen()
-        case "PlatformControlActivity": PlatformControlActivityScreen()
-        case "PlatformControlReceiver": PlatformControlReceiverScreen()
-        case "PlatformControlTab": PlatformControlTabScreen()
-        case "PlatformEnforcementService": PlatformEnforcementServiceScreen()
-        case "QRUtils": QRUtilsScreen()
-        case "RecentDetectionsActivities": RecentDetectionsActivitiesScreen()
-        case "RecentDetectionsFragment": RecentDetectionsFragmentScreen()
-        case "RecentDetectionsTab": RecentDetectionsTabScreen()
-        case "SafeScope": SafeScopeScreen()
-        case "SafeScopeFragment": SafeScopeFragmentScreen()
-        case "SafeScopeToggle": SafeScopeToggleScreen()
-        case "SafeScopeVpnService": SafeScopeVpnServiceScreen()
-        case "ScannerEngine": ScannerEngineScreen()
-        case "ScannerGlobals": ScannerGlobalsScreen()
-        case "ServiceStarter": ServiceStarterScreen()
-        case "SetupActivity": SetupActivityScreen()
-        case "Setup": SetupScreen()
-        case "SmsComposeActivity": SmsComposeActivityScreen()
-        case "SmsDetectionsActivity": SmsDetectionsActivityScreen()
-        case "SmsDetectionsFragment": SmsDetectionsFragmentScreen()
-        case "SmsDetectionsTab": SmsDetectionsTabScreen()
-        case "SmsInboxActivity": SmsInboxActivityScreen()
-        case "SmsReceiver": SmsReceiverScreen()
-        case "SubscriptionExpiredActivity": SubscriptionExpiredActivityScreen()
-        case "SubscriptionExpired": SubscriptionExpiredScreen()
-        case "SubscriptionManager": SubscriptionManagerScreen()
-        case "Theme": ThemeScreen()
-        case "Type": TypeScreen()
-        case "UninstallAttemptMonitor": UninstallAttemptMonitorScreen()
-        case "VpnPermissionActivity": VpnPermissionActivityScreen()
-        case "WebsiteBlockerService": WebsiteBlockerServiceScreen()
-        default: Text("Unknown Screen")
+        switch name.lowercased().replacingOccurrences(of: " ", with: "") {
+        case "admindeactivationmonitor": AdminDeactivationMonitorScreen()
+        case "appblockerservice": AppBlockerServiceScreen()
+        case "appscopetoggle": AppScopeToggleScreen()
+        case "autohideprovider": AutoHideProviderScreen()
+        case "blockedappactivity": BlockedAppActivityScreen()
+        case "blockedcontact": BlockedContactScreen()
+        case "blockedwebsiteactivity": BlockedWebsiteActivityScreen()
+        case "bootreceiver": BootReceiverScreen()
+        case "childlinkactivity": ChildLinkActivityScreen()
+        case "childselector": ChildSelectorScreen()
+        case "childsyncservice": ChildSyncServiceScreen()
+        case "color": ColorScreen()
+        case "composeplatformcontrolfragment": ComposePlatformControlFragmentScreen()
+        case "consentmanagementactivity": ConsentManagementActivityScreen()
+        case "consentmodal": ConsentModalScreen()
+        case "consentoverviewactivity": ConsentOverviewActivityScreen()
+        case "consentoverviewfragment": ConsentOverviewFragmentScreen()
+        case "consentoverviewtab": ConsentOverviewTabScreen()
+        case "emotionalpatternloader": EmotionalPatternLoaderScreen()
+        case "emotionalradar": EmotionalRadarScreen()
+        case "emotionalscanner": EmotionalScannerScreen()
+        case "escalationmatrix": EscalationMatrixScreen()
+        case "exampleinstrumentedtest": ExampleInstrumentedTestScreen()
+        case "exampleunittest": ExampleUnitTestScreen()
+        case "factoryresetdetector": FactoryResetDetectorScreen()
+        case "feelscopeservice": FeelScopeServiceScreen()
+        case "firebaseextensions": FirebaseExtensionsScreen()
+        case "firebaselogger": FirebaseLoggerScreen()
+        case "firebasesync": FirebaseSyncScreen()
+        case "flag": FlagScreen()
+        case "flaggedmessage": FlaggedMessageScreen()
+        case "flaggedmessageadapter": FlaggedMessageAdapterScreen()
+        case "flaggedmessagesactivity": FlaggedMessagesActivityScreen()
+        case "flaggedmessagesfragment": FlaggedMessagesFragmentScreen()
+        case "flaggedmessagestab": FlaggedMessagesTabScreen()
+        case "freezereflex": FreezeReflexScreen()
+        case "freezereflexfragment": FreezeReflexFragmentScreen()
+        case "freezereflextab": FreezeReflexTabScreen()
+        case "freezereflexwarningactivity": FreezeReflexWarningActivityScreen()
+        case "generatelinkqractivity": GenerateLinkQrActivityScreen()
+        case "guardiandashboard": GuardianDashboardScreen()
+        case "guardiannotificationservice": GuardianNotificationServiceScreen()
+        case "guardiantabadapter": GuardianTabAdapterScreen()
+        case "harmfulpatterns": HarmfulPatternsScreen()
+        case "heartbeatmonitorservice": HeartbeatMonitorServiceScreen()
+        case "linkedchildrenactivity": LinkedChildrenActivityScreen()
+        case "linkedchildrenfragment": LinkedChildrenFragmentScreen()
+        case "linkedchildrentab": LinkedChildrenTabScreen()
+        case "locationstatusactivity": LocationStatusActivityScreen()
+        case "locationstatusfragment": LocationStatusFragmentScreen()
+        case "locationstatustab": LocationStatusTabScreen()
+        case "locationsync": LocationSyncScreen()
+        case "locationtrackerservice": LocationTrackerServiceScreen()
+        case "loginactivity": LoginActivityScreen()
+        case "mainactivity": MainActivityScreen()
+        case "mainapplication": MainApplicationScreen()
+        case "mascotmood": MascotMoodScreen()
+        case "mascotmoodactivity": MascotMoodActivityScreen()
+        case "mascotmoodfragment": MascotMoodFragmentScreen()
+        case "mascotmoodtab": MascotMoodTabScreen()
+        case "messagenotificationlistener": MessageNotificationListenerScreen()
+        case "messagescanneractivity": MessageScannerActivityScreen()
+        case "messagescannerfragment": MessageScannerFragmentScreen()
+        case "messagescannertab": MessageScannerTabScreen()
+        case "mommadeviceadmin": MommaDeviceAdminScreen()
+        case "mommamobiletheme": MommaMobileThemeScreen()
+        case "mommanotificationservice": MommaNotificationServiceScreen()
+        case "mommatakeover": MommaTakeoverScreen()
+        case "nettiedeviceadminreceiver": NettieDeviceAdminReceiverScreen()
+        case "nettieprotectionservice": NettieProtectionServiceScreen()
+        case "onlinesafetyactivity": OnlineSafetyActivityScreen()
+        case "onlinesafetyfragment": OnlineSafetyFragmentScreen()
+        case "onlinesafetytab": OnlineSafetyTabScreen()
+        case "platformcontrolactivity": PlatformControlActivityScreen()
+        case "platformcontrolreceiver": PlatformControlReceiverScreen()
+        case "platformcontroltab": PlatformControlTabScreen()
+        case "platformenforcementservice": PlatformEnforcementServiceScreen()
+        case "qrutils": QRUtilsScreen()
+        case "recentdetectionsactivities": RecentDetectionsActivitiesScreen()
+        case "recentdetectionsfragment": RecentDetectionsFragmentScreen()
+        case "recentdetectionstab": RecentDetectionsTabScreen()
+        case "safescope": SafeScopeScreen()
+        case "safescopefragment": SafeScopeFragmentScreen()
+        case "safescopetoggle": SafeScopeToggleScreen()
+        case "safescopevpnservice": SafeScopeVpnServiceScreen()
+        case "scannerengine": ScannerEngineScreen()
+        case "scannerglobals": ScannerGlobalsScreen()
+        case "servicestarter": ServiceStarterScreen()
+        case "setupactivity": SetupActivityScreen()
+        case "setup": SetupScreen()
+        case "smscomposeactivity": SmsComposeActivityScreen()
+        case "smsdetectionsactivity": SmsDetectionsActivityScreen()
+        case "smsdetectionsfragment": SmsDetectionsFragmentScreen()
+        case "smsdetectionstab": SmsDetectionsTabScreen()
+        case "smsinboxactivity": SmsInboxActivityScreen()
+        case "smsreceiver": SmsReceiverScreen()
+        case "subscriptionexpiredactivity": SubscriptionExpiredActivityScreen()
+        case "subscriptionexpired": SubscriptionExpiredScreen()
+        case "subscriptionmanager": SubscriptionManagerScreen()
+        case "theme": ThemeScreen()
+        case "type": TypeScreen()
+        case "uninstallattemptmonitor": UninstallAttemptMonitorScreen()
+        case "vpnpermissionactivity": VpnPermissionActivityScreen()
+        case "websiteblockerservice": WebsiteBlockerServiceScreen()
+        default: 
+            VStack {
+                Text("Screen Logic: \(name)")
+                Text("Architecture Active").font(.caption).foregroundColor(.gray)
+            }.navigationTitle(name)
         }
     }
 }

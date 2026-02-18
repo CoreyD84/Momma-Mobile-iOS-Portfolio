@@ -1,10 +1,5 @@
 import SwiftUI
-struct ThemeScreen: View {
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-            }.padding()
-        }
-        .navigationTitle("Theme")
-    }
-}
+struct ThemeScreen: View { var body: some View { VStack(spacing: 15) {
+            Text("Theme").font(.headline)
+            Spacer()
+        }.padding().navigationTitle("Theme") } }

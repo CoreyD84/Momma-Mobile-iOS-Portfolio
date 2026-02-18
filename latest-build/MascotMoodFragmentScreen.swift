@@ -1,10 +1,5 @@
 import SwiftUI
-struct MascotMoodFragmentScreen: View {
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-            }.padding()
-        }
-        .navigationTitle("MascotMoodFragment")
-    }
-}
+struct MascotMoodFragmentScreen: View { var body: some View { VStack(spacing: 15) {
+            Text("MascotMoodFragment").font(.headline)
+            Spacer()
+        }.padding().navigationTitle("MascotMoodFragment") } }
