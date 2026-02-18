@@ -150,36 +150,6 @@ struct FlaggedMessagesFragmentScreen: View {
                 }
                 Button(action: {}) {
                     HStack {
-                        Text("\\n")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("\\n")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Button(action: {}) {
-                    HStack {
-                        Text("\\n")
-                        Spacer()
-                        Image(systemName: "chevron.right.circle")
-                    }
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                Button(action: {}) {
-                    HStack {
                         Text("Action")
                         Spacer()
                         Image(systemName: "chevron.right.circle")
