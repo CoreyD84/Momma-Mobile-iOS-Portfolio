@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct FactoryResetDetectorScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -33,7 +32,6 @@ struct FactoryResetDetectorScreen: View {
             Button(action: {}) { Text("last_guardian_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("last_child_id").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("FactoryResetDetector")
+        }.padding().navigationTitle("FactoryResetDetector")
     }
 }

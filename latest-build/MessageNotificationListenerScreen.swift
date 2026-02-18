@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct MessageNotificationListenerScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -33,7 +32,6 @@ struct MessageNotificationListenerScreen: View {
             Button(action: {}) { Text("sourceApp").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("performHomeAction").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("MessageNotificationListener")
+        }.padding().navigationTitle("MessageNotificationListener")
     }
 }

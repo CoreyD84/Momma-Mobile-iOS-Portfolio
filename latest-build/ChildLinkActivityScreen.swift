@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct ChildLinkActivityScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -51,7 +50,6 @@ struct ChildLinkActivityScreen: View {
             Button(action: {}) { Text("No, keep visible").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Not now").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("ChildLinkActivity")
+        }.padding().navigationTitle("ChildLinkActivity")
     }
 }

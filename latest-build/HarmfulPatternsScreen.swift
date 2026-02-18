@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct HarmfulPatternsScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -47,7 +46,6 @@ struct HarmfulPatternsScreen: View {
             Button(action: {}) { Text("HarmfulPatterns").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("HarmfulPatterns").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("HarmfulPatterns")
+        }.padding().navigationTitle("HarmfulPatterns")
     }
 }

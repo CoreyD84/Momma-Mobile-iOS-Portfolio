@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct FeelScopeServiceScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -24,7 +23,6 @@ struct FeelScopeServiceScreen: View {
             Button(action: {}) { Text("com.tencent.mm").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("FeelScopeService").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("FeelScopeService")
+        }.padding().navigationTitle("FeelScopeService")
     }
 }

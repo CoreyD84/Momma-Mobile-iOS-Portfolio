@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct EmotionalRadarScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -14,7 +13,6 @@ struct EmotionalRadarScreen: View {
             Button(action: {}) { Text("timestamp").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("severity").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("EmotionalRadar")
+        }.padding().navigationTitle("EmotionalRadar")
     }
 }

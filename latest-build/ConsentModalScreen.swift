@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct ConsentModalScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -30,7 +29,6 @@ struct ConsentModalScreen: View {
             Button(action: {}) { Text("local").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("mobile-device").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("ConsentModal")
+        }.padding().navigationTitle("ConsentModal")
     }
 }

@@ -1,30 +1,22 @@
-import SwiftUI
 
+import SwiftUI
 struct HomeScreen: View {
     @AppStorage("isLoggedIn") var isLoggedIn = true
     var body: some View {
         NavigationView {
             ZStack {
-                // Background Placeholder to match character art
-                LinearGradient(colors: [.purple.opacity(0.3), .black], startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
-                
+                Color.black.edgesIgnoringSafeArea(.all)
                 ScrollView {
-                    VStack(spacing: 8) {
-                        Spacer().frame(height: 60)
+                    VStack(spacing: 10) {
+                        Spacer().frame(height: 40)
                         ForEach(["LINK CHILD DEVICE","RECENT","FLAGGED","FREEZE","LINKED","MASCOT","SCANNER","PLATFORMS","SMS","LOCATION","CONSENT"], id: \.self) { btn in
                             NavigationLink(destination: AnyViewByName(name: btn)) {
-                                Text(btn)
-                                    .font(.system(size: 16, weight: .black, design: .monospaced))
-                                    .foregroundColor(.white)
-                                    .frame(width: 200, height: 45)
-                                    .background(Color(red: 0.5, green: 0.1, blue: 0.9))
-                                    .cornerRadius(2)
+                                Text(btn).font(.system(size: 16, weight: .black, design: .monospaced))
+                                    .foregroundColor(.white).frame(width: 220, height: 45)
+                                    .background(Color.purple).cornerRadius(4)
                             }
                         }
-                        Button("LOGOUT") { isLoggedIn = false }.padding().foregroundColor(.gray)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing, 25)
+                    }.frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing, 20)
                 }
             }
         }
@@ -36,6 +28,9 @@ struct AnyViewByName: View {
     var body: some View {
         let normalized = name.lowercased().replacingOccurrences(of: " ", with: "")
         switch normalized {
+        case "linkchilddevice": LinkChildDeviceScreen()
+        case "scanner": ScannerScreen()
+        case "location": LocationScreen()
         case "admindeactivationmonitor": AdminDeactivationMonitorScreen()
         case "appblockerservice": AppBlockerServiceScreen()
         case "appscopetoggle": AppScopeToggleScreen()
@@ -140,11 +135,7 @@ struct AnyViewByName: View {
         case "uninstallattemptmonitor": UninstallAttemptMonitorScreen()
         case "vpnpermissionactivity": VpnPermissionActivityScreen()
         case "websiteblockerservice": WebsiteBlockerServiceScreen()
-        default: 
-            VStack {
-                Text(name).font(.headline)
-                Text("Module Logic: Active").font(.caption)
-            }.navigationTitle("Momma Service")
+        default: Text("Module Logic: Active")
         }
     }
 }

@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct HeartbeatMonitorServiceScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -38,7 +37,6 @@ struct HeartbeatMonitorServiceScreen: View {
             Button(action: {}) { Text("message").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("lastSeen").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("HeartbeatMonitorService")
+        }.padding().navigationTitle("HeartbeatMonitorService")
     }
 }

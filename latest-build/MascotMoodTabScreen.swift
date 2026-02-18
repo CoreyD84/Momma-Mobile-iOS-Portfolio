@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct MascotMoodTabScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -21,7 +20,6 @@ struct MascotMoodTabScreen: View {
             Button(action: {}) { Text("angry").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("distressed").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("MascotMoodTab")
+        }.padding().navigationTitle("MascotMoodTab")
     }
 }

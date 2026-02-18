@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct PlatformEnforcementServiceScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -27,7 +26,6 @@ struct PlatformEnforcementServiceScreen: View {
             Button(action: {}) { Text("_alt").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("This app").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("PlatformEnforcementService")
+        }.padding().navigationTitle("PlatformEnforcementService")
     }
 }

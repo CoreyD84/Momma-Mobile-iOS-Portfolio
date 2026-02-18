@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct FlaggedMessageAdapterScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -13,7 +12,6 @@ struct FlaggedMessageAdapterScreen: View {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("🛡️ Deflection: \\").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("FlaggedMessageAdapter")
+        }.padding().navigationTitle("FlaggedMessageAdapter")
     }
 }

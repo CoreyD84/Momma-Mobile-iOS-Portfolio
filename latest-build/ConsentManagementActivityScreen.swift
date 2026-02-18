@@ -1,6 +1,6 @@
 import SwiftUI
-
 struct ConsentManagementActivityScreen: View {
+    @State private var toggle93 = true
     var body: some View {
         VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -56,6 +56,7 @@ struct ConsentManagementActivityScreen: View {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Toggle("Action", isOn: $toggle93)
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("granted").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -77,7 +78,6 @@ struct ConsentManagementActivityScreen: View {
             Button(action: {}) { Text("lastUpdated").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("version").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("ConsentManagementActivity")
+        }.padding().navigationTitle("ConsentManagementActivity")
     }
 }

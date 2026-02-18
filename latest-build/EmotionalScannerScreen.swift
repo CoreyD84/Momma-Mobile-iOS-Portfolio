@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct EmotionalScannerScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -34,7 +33,6 @@ struct EmotionalScannerScreen: View {
             Button(action: {}) { Text("phrase").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("emoji").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("EmotionalScanner")
+        }.padding().navigationTitle("EmotionalScanner")
     }
 }

@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct LocationSyncScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -12,7 +11,6 @@ struct LocationSyncScreen: View {
             Button(action: {}) { Text("timestamp").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("provider").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("LocationSync")
+        }.padding().navigationTitle("LocationSync")
     }
 }

@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct ChildSyncServiceScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -22,7 +21,6 @@ struct ChildSyncServiceScreen: View {
             Button(action: {}) { Text("nettielocation").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Nettie Sync").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("ChildSyncService")
+        }.padding().navigationTitle("ChildSyncService")
     }
 }

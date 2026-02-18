@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct EscalationMatrixScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -22,7 +21,6 @@ struct EscalationMatrixScreen: View {
             Button(action: {}) { Text("threat_codes").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("threat_parental").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("EscalationMatrix")
+        }.padding().navigationTitle("EscalationMatrix")
     }
 }

@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct FirebaseSyncScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -12,7 +11,6 @@ struct FirebaseSyncScreen: View {
             Button(action: {}) { Text("FirebaseSync").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("FirebaseSync").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("FirebaseSync")
+        }.padding().navigationTitle("FirebaseSync")
     }
 }

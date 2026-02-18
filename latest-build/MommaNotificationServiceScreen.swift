@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct MommaNotificationServiceScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -38,7 +37,6 @@ struct MommaNotificationServiceScreen: View {
             Button(action: {}) { Text("✅ Notification channels created").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("⚠️ Cannot save FCM token - user not logged in").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("MommaNotificationService")
+        }.padding().navigationTitle("MommaNotificationService")
     }
 }

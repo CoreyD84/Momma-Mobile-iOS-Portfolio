@@ -1,6 +1,6 @@
 import SwiftUI
-
 struct FreezeReflexFragmentScreen: View {
+    @State private var toggle124 = true
     var body: some View {
         VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -82,6 +82,7 @@ struct FreezeReflexFragmentScreen: View {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Toggle("Action", isOn: $toggle124)
             Button(action: {}) { Text("blockedContacts").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("identifier").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("platform").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -121,7 +122,6 @@ struct FreezeReflexFragmentScreen: View {
             Button(action: {}) { Text("Contact unblocked").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Cancel").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("FreezeReflexFragment")
+        }.padding().navigationTitle("FreezeReflexFragment")
     }
 }

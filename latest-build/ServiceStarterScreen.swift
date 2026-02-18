@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct ServiceStarterScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -10,7 +9,6 @@ struct ServiceStarterScreen: View {
             Button(action: {}) { Text("GuardianNotificationService stopped").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Error stopping GuardianNotificationService").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("ServiceStarter")
+        }.padding().navigationTitle("ServiceStarter")
     }
 }

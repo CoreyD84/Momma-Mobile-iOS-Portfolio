@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct SmsReceiverScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -11,7 +10,6 @@ struct SmsReceiverScreen: View {
             Button(action: {}) { Text("sms").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("SmsReceiver").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("SmsReceiver")
+        }.padding().navigationTitle("SmsReceiver")
     }
 }

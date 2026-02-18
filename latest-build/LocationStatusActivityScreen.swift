@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct LocationStatusActivityScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -17,7 +16,6 @@ struct LocationStatusActivityScreen: View {
             Button(action: {}) { Text("stylesheet").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("map").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("LocationStatusActivity")
+        }.padding().navigationTitle("LocationStatusActivity")
     }
 }

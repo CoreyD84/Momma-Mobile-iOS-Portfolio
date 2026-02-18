@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct LinkedChildrenTabScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -60,7 +59,6 @@ struct LinkedChildrenTabScreen: View {
             Button(action: {}) { Text("LinkedChildrenTab").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Incorrect password").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("LinkedChildrenTab")
+        }.padding().navigationTitle("LinkedChildrenTab")
     }
 }

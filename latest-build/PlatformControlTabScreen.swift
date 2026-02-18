@@ -1,6 +1,7 @@
 import SwiftUI
-
 struct PlatformControlTabScreen: View {
+    @State private var toggle27 = true
+    @State private var toggle28 = true
     var body: some View {
         VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -20,6 +21,8 @@ struct PlatformControlTabScreen: View {
             Button(action: {}) { Text("(555) 555-9876").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Platform Controls").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Toggle("Action", isOn: $toggle27)
+            Toggle("Action", isOn: $toggle28)
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Child Profile").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("nickname").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -41,7 +44,6 @@ struct PlatformControlTabScreen: View {
             Button(action: {}) { Text("Revoke Consent").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Revoke Consent").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("PlatformControlTab")
+        }.padding().navigationTitle("PlatformControlTab")
     }
 }

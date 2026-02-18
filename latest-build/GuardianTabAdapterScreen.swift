@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct GuardianTabAdapterScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -12,7 +11,6 @@ struct GuardianTabAdapterScreen: View {
             Button(action: {}) { Text("SMS").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Location").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("GuardianTabAdapter")
+        }.padding().navigationTitle("GuardianTabAdapter")
     }
 }

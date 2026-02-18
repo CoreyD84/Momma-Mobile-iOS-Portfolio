@@ -1,14 +1,17 @@
 import SwiftUI
-
 struct AppScopeToggleScreen: View {
+    @State private var toggle13 = true
+    @State private var toggle16 = true
     var body: some View {
         VStack(spacing: 15) {
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("AppScopeToggle").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("AppScope™ Filter").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Toggle("Action", isOn: $toggle13)
             Button(action: {}) { Text("AppScope Status").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+            Toggle("Action", isOn: $toggle16)
             Button(action: {}) { Text("Blocked Apps").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Add app").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
@@ -23,7 +26,6 @@ struct AppScopeToggleScreen: View {
             Button(action: {}) { Text("Add").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("Cancel").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("AppScopeToggle")
+        }.padding().navigationTitle("AppScopeToggle")
     }
 }

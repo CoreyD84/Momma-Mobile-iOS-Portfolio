@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct PlatformControlReceiverScreen: View {
     var body: some View {
         VStack(spacing: 15) {
@@ -17,7 +16,6 @@ struct PlatformControlReceiverScreen: View {
             Button(action: {}) { Text("enabled").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Button(action: {}) { Text("blocked_apps").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
             Spacer()
-        }.padding()
-        .navigationTitle("PlatformControlReceiver")
+        }.padding().navigationTitle("PlatformControlReceiver")
     }
 }
