@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct PlatformControlTabScreen: View {
-    @State private var textState14 = ""
-    @State private var textState18 = ""
-    @State private var textState22 = ""
-    @State private var toggleState27 = true
-    @State private var toggleState28 = true
-    @State private var textState32 = ""
-    @State private var textState35 = ""
+    @State private var input14 = ""
+    @State private var input18 = ""
+    @State private var input22 = ""
+    @State private var toggle27 = true
+    @State private var toggle28 = true
+    @State private var input32 = ""
+    @State private var input35 = ""
 
     var body: some View {
         ScrollView {
@@ -61,17 +61,17 @@ struct PlatformControlTabScreen: View {
                     HStack { Text("Emergency Contacts"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState14).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input14).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("(555) 555-1212"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState18).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input18).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("(555) 555-3434"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState22).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input22).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("(555) 555-9876"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
@@ -84,8 +84,8 @@ struct PlatformControlTabScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Toggle("Action", isOn: $toggleState27)
-                Toggle("Action", isOn: $toggleState28)
+                Toggle("Action", isOn: $toggle27)
+                Toggle("Action", isOn: $toggle28)
                 Button(action: {}) {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
@@ -94,12 +94,12 @@ struct PlatformControlTabScreen: View {
                     HStack { Text("Child Profile"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState32).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input32).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("nickname"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState35).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input35).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("dob"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MessageScannerTabScreen: View {
-    @State private var textState6 = ""
+    @State private var input6 = ""
 
     var body: some View {
         ScrollView {
@@ -27,7 +27,7 @@ struct MessageScannerTabScreen: View {
                     HStack { Text("Message Scanner"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState6).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input6).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)

@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct SafeScopeToggleScreen: View {
-    @State private var toggleState14 = true
-    @State private var toggleState17 = true
-    @State private var textState27 = ""
+    @State private var toggle14 = true
+    @State private var toggle17 = true
+    @State private var input27 = ""
 
     var body: some View {
         ScrollView {
@@ -29,7 +29,7 @@ struct SafeScopeToggleScreen: View {
                     HStack { Text("SafeScope™ Filter"); Spacer(); Image(systemName: "arrow.right.circle.fill") }
                     .padding().background(Color.green.opacity(0.1)).cornerRadius(8)
                 }
-                Toggle("Action", isOn: $toggleState14)
+                Toggle("Action", isOn: $toggle14)
                 NavigationLink(destination: SafeScopeScreen()) {
                     HStack { Text("SafeScope Status"); Spacer(); Image(systemName: "arrow.right.circle.fill") }
                     .padding().background(Color.green.opacity(0.1)).cornerRadius(8)
@@ -38,7 +38,7 @@ struct SafeScopeToggleScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Toggle("Action", isOn: $toggleState17)
+                Toggle("Action", isOn: $toggle17)
                 Button(action: {}) {
                     HStack { Text("Blocked Websites"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
@@ -63,7 +63,7 @@ struct SafeScopeToggleScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState27).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input27).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("Add"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)

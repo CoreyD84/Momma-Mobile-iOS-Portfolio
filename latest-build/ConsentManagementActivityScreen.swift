@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ConsentManagementActivityScreen: View {
-    @State private var toggleState93 = true
+    @State private var toggle93 = true
 
     var body: some View {
         ScrollView {
@@ -219,7 +219,7 @@ struct ConsentManagementActivityScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Toggle("Action", isOn: $toggleState93)
+                Toggle("Action", isOn: $toggle93)
                 Button(action: {}) {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)

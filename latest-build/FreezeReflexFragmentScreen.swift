@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct FreezeReflexFragmentScreen: View {
-    @State private var textState12 = ""
-    @State private var textState16 = ""
-    @State private var textState21 = ""
-    @State private var toggleState124 = true
+    @State private var input12 = ""
+    @State private var input16 = ""
+    @State private var input21 = ""
+    @State private var toggle124 = true
 
     var body: some View {
         ScrollView {
@@ -42,12 +42,12 @@ struct FreezeReflexFragmentScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState12).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input12).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("e.g., +1234567890"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState16).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input16).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("SMS"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
@@ -56,7 +56,7 @@ struct FreezeReflexFragmentScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState21).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input21).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
@@ -329,7 +329,7 @@ struct FreezeReflexFragmentScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                Toggle("Action", isOn: $toggleState124)
+                Toggle("Action", isOn: $toggle124)
                 NavigationLink(destination: BlockedContactScreen()) {
                     HStack { Text("blockedContacts"); Spacer(); Image(systemName: "arrow.right.circle.fill") }
                     .padding().background(Color.green.opacity(0.1)).cornerRadius(8)

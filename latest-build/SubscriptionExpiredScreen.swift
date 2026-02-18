@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SubscriptionExpiredScreen: View {
-    @State private var textState39 = ""
+    @State private var input39 = ""
 
     var body: some View {
         ScrollView {
@@ -107,7 +107,7 @@ struct SubscriptionExpiredScreen: View {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState39).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input39).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("XXXX-XXXX-XXXX-XXXX"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)

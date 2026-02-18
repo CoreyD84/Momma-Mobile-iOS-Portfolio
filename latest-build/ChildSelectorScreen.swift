@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChildSelectorScreen: View {
-    @State private var textState7 = ""
+    @State private var input7 = ""
 
     var body: some View {
         ScrollView {
@@ -27,7 +27,7 @@ struct ChildSelectorScreen: View {
                     HStack { Text("Select Child"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
                 }
-                TextField("Action", text: $textState7).textFieldStyle(.roundedBorder)
+                TextField("Action", text: $input7).textFieldStyle(.roundedBorder)
                 Button(action: {}) {
                     HStack { Text("Action"); Spacer(); Image(systemName: "chevron.right.circle") }
                     .padding().background(Color.blue.opacity(0.1)).cornerRadius(8)
