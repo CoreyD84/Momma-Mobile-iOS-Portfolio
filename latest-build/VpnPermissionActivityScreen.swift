@@ -23,24 +23,24 @@ struct VpnPermissionActivityScreen: View {
                 Text("VPN permission granted by user").font(.subheadline).foregroundColor(.secondary)
                 Text("VPN permission denied by user").font(.subheadline).foregroundColor(.secondary)
                 Text("SafeScope requires VPN permission to filter content").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
+                NavigationLink(destination: SafeScopeScreen()) {
                     HStack {
                         Text("SafeScope enabled")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: SafeScopeScreen()) {
                     HStack {
                         Text("SafeScopeVpnService started after permission grant")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {

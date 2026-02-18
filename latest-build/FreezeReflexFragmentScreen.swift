@@ -254,14 +254,14 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: BlockedContactScreen()) {
                     HStack {
                         Text("No Blocked Contacts")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {
@@ -719,14 +719,14 @@ struct FreezeReflexFragmentScreen: View {
                     .cornerRadius(8)
                 }
                 Text("FreezeReflex Settings").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
+                NavigationLink(destination: FreezeReflexScreen()) {
                     HStack {
                         Text("Enable FreezeReflex")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Text("Automatically freeze apps and block dangerous contacts").font(.subheadline).foregroundColor(.secondary)
@@ -827,14 +827,14 @@ struct FreezeReflexFragmentScreen: View {
                 }
                 Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
                 Text("Please log in to view FreezeReflex data").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
+                NavigationLink(destination: BlockedContactScreen()) {
                     HStack {
                         Text("blockedContacts")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {
@@ -1049,14 +1049,14 @@ struct FreezeReflexFragmentScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("type")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Text("MMM dd, yyyy • h:mm a").font(.subheadline).foregroundColor(.secondary)

@@ -278,28 +278,28 @@ struct ConsentManagementActivityScreen: View {
                 Text("DATA COLLECTION & STORAGE:").font(.subheadline).foregroundColor(.secondary)
                 Text("Collect and store message content, timestamps, platform information, and emotional analysis results").font(.subheadline).foregroundColor(.secondary)
                 Text("Store data securely in Firebase (Google Cloud Platform, US region) with encryption").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
+                NavigationLink(destination: FlagScreen()) {
                     HStack {
                         Text("Retain flagged messages and emotional logs for up to 90 days or until you delete them")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Text("Use anonymized data to improve detection algorithms (no personally identifiable information shared)").font(.subheadline).foregroundColor(.secondary)
                 Text("GUARDIAN ACCESS & CONTROL:").font(.subheadline).foregroundColor(.secondary)
                 Text("Provide you with access to emotional insights, flagged content, and activity summaries").font(.subheadline).foregroundColor(.secondary)
                 Text("Display mascot mood overlays on the child's device to reflect emotional state").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
+                NavigationLink(destination: FlagScreen()) {
                     HStack {
                         Text("Allow you to review, acknowledge, or delete any flagged content at any time")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Text("Enable you to adjust monitoring settings and platform controls").font(.subheadline).foregroundColor(.secondary)
@@ -722,14 +722,14 @@ struct ConsentManagementActivityScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("consentType")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {

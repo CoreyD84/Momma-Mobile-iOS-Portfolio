@@ -99,14 +99,14 @@ struct AdminDeactivationMonitorScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("type")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {

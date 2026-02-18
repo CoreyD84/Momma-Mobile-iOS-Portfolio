@@ -27,14 +27,14 @@ struct SubscriptionManagerScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("type")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {
@@ -89,14 +89,14 @@ struct SubscriptionManagerScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("type")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {
@@ -119,14 +119,14 @@ struct SubscriptionManagerScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("type")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Text("❌ Failed to load subscription status").font(.subheadline).foregroundColor(.secondary)
@@ -140,14 +140,14 @@ struct SubscriptionManagerScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("type")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {
@@ -191,14 +191,14 @@ struct SubscriptionManagerScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: TypeScreen()) {
                     HStack {
                         Text("type")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {

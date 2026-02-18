@@ -8,14 +8,14 @@ struct SafeScopeFragmentScreen: View {
             VStack(alignment: .leading, spacing: 15) {
                 Text("Momma Mobile: SafeScopeFragment").font(.title2).bold().padding(.bottom)
                 Text("ProduceStateDoesNotAssignValue").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
+                NavigationLink(destination: SafeScopeScreen()) {
                     HStack {
                         Text("SafeScopeFragment")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Spacer()

@@ -21,24 +21,24 @@ struct SafeScopeToggleScreen: View {
                 Text("Waiting for Child ID...").font(.subheadline).foregroundColor(.secondary)
                 Text("Error: Guardian ID is null.").font(.subheadline).foregroundColor(.secondary)
                 Text("Attaching Firebase listener...").font(.subheadline).foregroundColor(.secondary)
-                Button(action: {}) {
+                NavigationLink(destination: SafeScopeScreen()) {
                     HStack {
                         Text("SafeScopeToggle")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: SafeScopeScreen()) {
                     HStack {
                         Text("SafeScopeToggle")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {
@@ -51,27 +51,27 @@ struct SafeScopeToggleScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                Button(action: {}) {
+                NavigationLink(destination: SafeScopeScreen()) {
                     HStack {
                         Text("SafeScope™ Filter")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 ProgressView()
                 Text("Loading from Firebase...").font(.subheadline).foregroundColor(.secondary)
                 Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
-                Button(action: {}) {
+                NavigationLink(destination: SafeScopeScreen()) {
                     HStack {
                         Text("SafeScope Status")
                         Spacer()
-                        Image(systemName: "chevron.right.circle")
+                        Image(systemName: "arrow.right.circle.fill")
                     }
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
                 Button(action: {}) {
