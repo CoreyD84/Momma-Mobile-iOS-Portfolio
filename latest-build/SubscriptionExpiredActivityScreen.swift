@@ -4,18 +4,13 @@ struct SubscriptionExpiredActivityScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("SubscriptionExpiredActivity Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: SubscriptionExpiredActivity").font(.title).bold()
+            Text("✅ License key activated! Welcome to MommaNettie Premium!")
+            Text("❌ Invalid license key. Please check and try again.")
+            Text("❌ Error activating license: ${e.message}")
+            Spacer()
+        }.padding()
         .navigationTitle("SubscriptionExpiredActivity")
     }
 }

@@ -4,18 +4,32 @@ struct FreezeReflexTabScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("FreezeReflexTab Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: FreezeReflexTab").font(.title).bold()
+            Text("Action")
+            Text("nettie_prefs")
+            Text("guardian_id")
+            Text("child_id")
+            Text("Missing guardian or child identity. Please log in again.")
+            Text("feelscope/detections/$guardianId/$childId")
+            Text("isEscalated")
+            Text("No freeze reflex events recorded.")
+            Text("category")
+            Text("matchedPhrases")
+            Text("sourceApp")
+            Text("timestamp")
+            Text("deflectionUsed")
+            Text("Action")
+            Text("🚨 Freeze Reflex Triggered\\n")
+            Text("🧭 Category: $category\\n")
+            Text("🔍 Matched: ${matched.joinToString(")
+            Text("📱 App: $sourceApp\\n")
+            Text("🕒 Time: $timestamp\\n")
+            Text("🛡️ Deflection: \\")
+            Text("Failed to load freeze reflex history: ${error.message}")
+            Text("Action")
+            Spacer()
+        }.padding()
         .navigationTitle("FreezeReflexTab")
     }
 }

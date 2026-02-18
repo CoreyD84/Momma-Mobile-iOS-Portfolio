@@ -10,8 +10,16 @@ struct BlockedWebsiteActivityScreen: View {
             Text("Action")
             Text("Action")
             Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("OK") { /* Trigger Event */ }
+            Text("Action")
+            Text("🚫")
+            Text("Action")
+            Text("WEBSITE BLOCKED")
             Text("Action")
             Text("Action")
+            Text("Action")
+            Text("This website has been restricted by SafeScope.")
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Text("OK")

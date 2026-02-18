@@ -4,18 +4,20 @@ struct SetupActivityScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("SetupActivity Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: SetupActivity").font(.title).bold()
+            Text("Action")
+            Text("linking_token")
+            Text("SetupActivity")
+            Text("SetupActivity")
+            Text("package:$packageName")
+            Text("Momma Mobile needs Device Admin to prevent uninstallation.")
+            Text("${packageName}/${NettieProtectionService::class.java.canonicalName}")
+            Text("enabled_notification_listeners")
+            Text("UNCHECKED_CAST")
+            Text("Linking token is missing!")
+            Spacer()
+        }.padding()
         .navigationTitle("SetupActivity")
     }
 }

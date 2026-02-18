@@ -4,18 +4,17 @@ struct LocationTrackerServiceScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("LocationTrackerService Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: LocationTrackerService").font(.title).bold()
+            Text("❌ Failed to send location: ${e.localizedMessage}")
+            Text("MissingPermission")
+            Text("🚫 LocationManager unavailable — using mock fallback")
+            Text("🚫 Location permission not granted — using mock fallback")
+            Text("❌ Failed to request location updates: ${e.localizedMessage}")
+            Text("⚠️ Failed to remove location updates: ${e.localizedMessage}")
+            Text("LocationTrackerService")
+            Spacer()
+        }.padding()
         .navigationTitle("LocationTrackerService")
     }
 }

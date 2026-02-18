@@ -4,18 +4,21 @@ struct BootReceiverScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("BootReceiver Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: BootReceiver").font(.title).bold()
+            Text("MommaStealth")
+            Text("com.airnettie.mobile.child.LauncherAlias")
+            Text("MommaStealth")
+            Text("MommaStealth")
+            Text("nettie_prefs")
+            Text("guardian_id")
+            Text("MommaStealth")
+            Text("MommaStealth")
+            Text("MommaStealth")
+            Text("MommaStealth")
+            Text("MommaStealth")
+            Spacer()
+        }.padding()
         .navigationTitle("BootReceiver")
     }
 }

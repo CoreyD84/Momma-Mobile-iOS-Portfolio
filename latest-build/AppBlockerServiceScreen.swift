@@ -4,18 +4,24 @@ struct AppBlockerServiceScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("AppBlockerService Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: AppBlockerService").font(.title).bold()
+            Text("AppBlockerService")
+            Text("nettie_prefs")
+            Text("✅ App Blocker service connected.")
+            Text("child_id")
+            Text("guardian_id")
+            Text("⚠️ Child ID or Guardian ID not found in prefs - AppScope disabled")
+            Text("guardianLinks/$guardianId/appScope/$childId")
+            Text("enabled")
+            Text("blockedApps")
+            Text("📱 AppScope updated. Blocked apps: ${blockedApps.size}")
+            Text("❌ Failed to load AppScope settings: ${error.message}")
+            Text("🚫 AppScope BLOCKING app: $packageName")
+            Text("🚫 $packageName is blocked by your guardian")
+            Text("App Blocker service interrupted")
+            Spacer()
+        }.padding()
         .navigationTitle("AppBlockerService")
     }
 }

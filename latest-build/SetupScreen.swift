@@ -14,15 +14,18 @@ struct SetupScreen: View {
             Text("Setup complete!")
             Text("Error: ${uiState.errorDetails}")
             Text("Step 1: Core Permissions")
-            Text("To monitor this device for safety, we need access to Location and SMS. Please tap ")
+            Text("To monitor this device for safety, we need access to Location and SMS. Please tap \\")
             Button("Action") { /* Trigger Event */ }
             Text("Grant Permissions")
             Text("Action")
+            Text("Step 2: Enable Protection Features")
             Text("Action")
+            Text("Nettie Protection provides:")
             Text("✓ App blocking (AppScope)")
             Text("✓ Website filtering (SafeScope)")
             Text("✓ Message monitoring (FeelScope)")
             Text("Action")
+            Text("Instructions:")
             Text("Step 1: Try Accessibility First")
             Text("• Tap 'Open Accessibility Settings' below")
             Text("• Find 'Nettie Protection' in the list")
@@ -37,12 +40,15 @@ struct SetupScreen: View {
             Text("3. Toggle the switch to ON")
             Text("4. Tap 'Allow' on the confirmation dialog")
             Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("Open Accessibility Settings")
             Button("Action") { /* Trigger Event */ }
             Text("Open App Settings (if needed)")
             Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("Open Accessibility Settings")
             Text("Action")
+            Text("Note: This is required for the app to function properly.")
             Text("Step 3: Platform Controls")
             Text("To monitor usage of specific apps like Messenger and Discord, the app needs access to usage stats.")
             Button("Action") { /* Trigger Event */ }

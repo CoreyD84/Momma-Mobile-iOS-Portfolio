@@ -4,18 +4,28 @@ struct FlaggedMessageAdapterScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("FlaggedMessageAdapter Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: FlaggedMessageAdapter").font(.title).bold()
+            Text("Action")
+            Text("MMM dd, yyyy • h:mm a")
+            Text("features/sms")
+            Text("chat")
+            Text("web")
+            Text("🧠")
+            Text("Action")
+            Text("⚠️ Severity: ${message.severity ?: ")
+            Text("🧭 Category: ${message.category ?: ")
+            Text("$sourceIcon Source: ${message.sourceApp.ifBlank { message.source }}")
+            Text("🕒 $formattedTime")
+            Text("🔍 Matched: ${message.matchedItems.joinToString(")
+            Text("Action")
+            Text("📝 No notes added.")
+            Text("📝 ${message.notes}")
+            Text("🚨 Escalated")
+            Text("Action")
+            Text("🛡️ Deflection: \\")
+            Spacer()
+        }.padding()
         .navigationTitle("FlaggedMessageAdapter")
     }
 }

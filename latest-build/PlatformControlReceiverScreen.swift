@@ -4,18 +4,28 @@ struct PlatformControlReceiverScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("PlatformControlReceiver Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: PlatformControlReceiver").font(.title).bold()
+            Text("PlatformControlReceiver")
+            Text("messenger")
+            Text("discord")
+            Text("roblox")
+            Text("tiktok")
+            Text("tiktok_alt")
+            Text("snapchat")
+            Text("instagram")
+            Text("youtube")
+            Text("facebook")
+            Text("twitter")
+            Text("com.airnettie.mobile.PLATFORM_CONTROL")
+            Text("platform")
+            Text("enabled")
+            Text("Received platform control update: $platform, enabled=$isEnabled")
+            Text("blocked_apps")
+            Text("Updated blocked status for $packageName to $isBlocked")
+            Text("No package mapping found for platform key: $platform")
+            Spacer()
+        }.padding()
         .navigationTitle("PlatformControlReceiver")
     }
 }

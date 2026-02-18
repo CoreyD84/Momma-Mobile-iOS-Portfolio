@@ -4,18 +4,23 @@ struct EmotionalRadarScreen: View {
     @EnvironmentObject var container: CodexiaContainer
     
     var body: some View {
-        
-        VStack {
-            Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red) // 🚨 FORCE CHANGE
-            Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("EmotionalRadar Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
-        }
+        VStack(spacing: 20) {
+            Text("Momma Mobile: EmotionalRadar").font(.title).bold()
+            Text("EmotionalRadar")
+            Text("I want to disappear")
+            Text("you're worthless")
+            Text("I'm scared")
+            Text("Action")
+            Text("Action")
+            Text("No authenticated user — skipping flag.")
+            Text("flags/$uid")
+            Text("source")
+            Text("message")
+            Text("timestamp")
+            Text("severity")
+            Text("⚠️ Legacy flag triggered from $source: $message")
+            Spacer()
+        }.padding()
         .navigationTitle("EmotionalRadar")
     }
 }
