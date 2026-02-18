@@ -13,7 +13,7 @@ struct SafeScopeToggleScreen: View {
             Text("Loading from Firebase...")
             Text("SafeScope Status")
             Text("Action")
-            Toggle("Action", isOn: .constant(true))
+            Toggle("Enabled", isOn: .constant(true))
             Text("Blocked Websites")
             Text("Action")
             Text("Action")

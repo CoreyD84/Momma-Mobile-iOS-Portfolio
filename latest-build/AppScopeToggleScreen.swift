@@ -13,7 +13,7 @@ struct AppScopeToggleScreen: View {
             Text("Loading from Firebase...")
             Text("AppScope Status")
             Text("Action")
-            Toggle("Action", isOn: .constant(true))
+            Toggle("Enabled", isOn: .constant(true))
             Text("Blocked Apps")
             Text("Action")
             Text("Action")

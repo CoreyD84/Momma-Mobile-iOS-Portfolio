@@ -30,7 +30,7 @@ struct ConsentManagementActivityScreen: View {
             Text("Action")
             Text("• ")
             Text("Action")
-            Toggle("Action", isOn: .constant(true))
+            Toggle("Enabled", isOn: .constant(true))
             Text("Action")
             Spacer()
         }.padding()

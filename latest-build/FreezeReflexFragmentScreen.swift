@@ -71,7 +71,7 @@ struct FreezeReflexFragmentScreen: View {
             Text("Block Contact Manually")
             Text("Action")
             Text("Action")
-            Toggle("Action", isOn: .constant(true))
+            Toggle("Enabled", isOn: .constant(true))
             Spacer()
         }.padding()
         .navigationTitle("FreezeReflexFragment")
