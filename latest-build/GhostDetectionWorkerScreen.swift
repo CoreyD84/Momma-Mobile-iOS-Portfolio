@@ -1,8 +1,11 @@
 import SwiftUI
+
 struct GhostDetectionWorkerScreen: View {
+
     var body: some View {
-        VStack(spacing: 15) {
+        VStack(spacing: 20) {
+            Text("GhostDetectionWorker").font(.largeTitle).bold().padding(.bottom, 10)
             Spacer()
-        }.padding().navigationTitle("GhostDetectionWorker")
+        }.padding()
     }
 }

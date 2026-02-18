@@ -1,53 +1,281 @@
 import SwiftUI
+
 struct MatchHistoryScreen: View {
+
     var body: some View {
-        VStack(spacing: 15) {
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Match History").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Back").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Your Statistics").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("All").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Successful").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Declined").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Ghosted").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("2nd Chance").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Unknown User").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Initiator").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("No Match History").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("No Declined Matches").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("No Ghosted Matches").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Today").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Yesterday").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("MMM d, yyyy").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+        VStack(spacing: 20) {
+            Text("MatchHistory").font(.largeTitle).bold().padding(.bottom, 10)
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("MATCH HISTORY")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("BACK")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("YOUR STATISTICS")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ALL")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("SUCCESSFUL")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("DECLINED")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("GHOSTED")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("2ND CHANCE")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("UNKNOWN USER")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("INITIATOR")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("NO MATCH HISTORY")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("NO DECLINED MATCHES")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("NO GHOSTED MATCHES")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("TODAY")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("YESTERDAY")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("MMM D, YYYY")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
             Spacer()
-        }.padding().navigationTitle("MatchHistory")
+        }.padding()
     }
 }

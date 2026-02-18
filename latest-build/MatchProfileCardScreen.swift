@@ -1,28 +1,131 @@
 import SwiftUI
+
 struct MatchProfileCardScreen: View {
+
     var body: some View {
-        VStack(spacing: 15) {
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("SoulLink's Insight").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Values").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Conflict").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Future").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Communication").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Philosophy").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+        VStack(spacing: 20) {
+            Text("MatchProfileCard").font(.largeTitle).bold().padding(.bottom, 10)
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("SOULLINK'S INSIGHT")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("VALUES")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("CONFLICT")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("FUTURE")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("COMMUNICATION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PHILOSOPHY")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
             Spacer()
-        }.padding().navigationTitle("MatchProfileCard")
+        }.padding()
     }
 }

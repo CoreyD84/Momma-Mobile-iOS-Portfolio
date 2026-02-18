@@ -6,17 +6,22 @@ struct HomeScreen: View {
     var body: some View {
         NavigationView {
             List {
-                Section("Discovered Modules") {
+                Section(header: Text("Applications Modules")) {
                     ForEach(["AppModule","AwaitingPartner","BillingManager","BrowseMembers","CandidateInvitation","CandidateInvitationService","CandidateQuiz","CandidateWaiting","Chat","CloudinaryConfig","Color","CompatibilityEngine","CompatibilityVector","Elimination","FinalSelection","GhostDetectionService","GhostDetectionWorker","Home","LocationService","MainActivity","Match","MatchHistory","MatchProfileCard","MatchSuccess","MatchingService","Message","NavGraph","Notifications","PartnerDecision","Payment","Profile","ProfileSetup","ProgressBar","PushNotificationService","Question","QuestionCard","QuestionDatabase","Questionnaire","QuizQuestionDatabase","QuizScorer","Quiz","SecondChance","SignIn","SignUp","SoulLinkApplication","SoulLinkMessage","SoulLinkMessagingService","SoulLinkPersonality","Splash","TheThree","Theme","Type","User","UserProfile","Welcome"], id: \.self) { name in
                         NavigationLink(destination: AnyViewByName(name: name)) {
-                            Label(name, systemImage: "app.badge")
+                            HStack {
+                                Image(systemName: "square.grid.2x2.fill")
+                                    .foregroundColor(.accentColor)
+                                Text(name)
+                                    .font(.system(.body, design: .rounded))
+                            }
                         }
                     }
                 }
             }
             .navigationTitle("Dashboard")
             .toolbar {
-                Button("Logout") { isLoggedIn = false }
+                Button("Sign Out") { isLoggedIn = false }
             }
         }
     }
@@ -81,7 +86,11 @@ struct AnyViewByName: View {
         case "User": UserScreen()
         case "UserProfile": UserProfileScreen()
         case "Welcome": WelcomeScreen()
-        default: Text("Module not found")
+        default: 
+            VStack {
+                Image(systemName: "exclamationmark.triangle")
+                Text("Module Logic: Under Construction")
+            }
         }
     }
 }

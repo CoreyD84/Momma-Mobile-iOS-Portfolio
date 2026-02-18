@@ -1,66 +1,359 @@
 import SwiftUI
+
 struct PaymentScreen: View {
+
     var body: some View {
-        VStack(spacing: 15) {
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("search").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("candidate").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("payment_completed").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("payment_token").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("the_three").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("payment").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("the_three").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("payment").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Candidate").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("✨ Join The Match ✨").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("One-time payment").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Chance to be SoulLink's final recommendation").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("SoulLink's final recommendation").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Go Back").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("SoulLink").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Payment Successful").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Payment\\nSuccessful").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Continue").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Begin Search").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Payment Error").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Action").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Try Again").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Go Back").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+        VStack(spacing: 20) {
+            Text("Payment").font(.largeTitle).bold().padding(.bottom, 10)
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("SEARCH")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("CANDIDATE")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PAYMENT COMPLETED")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PAYMENT TOKEN")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("THE THREE")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PAYMENT")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("THE THREE")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PAYMENT")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("CANDIDATE")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("✨ JOIN THE MATCH ✨")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ONE-TIME PAYMENT")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("CHANCE TO BE SOULLINK'S FINAL RECOMMENDATION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("SOULLINK'S FINAL RECOMMENDATION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("GO BACK")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("SOULLINK")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PAYMENT SUCCESSFUL")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PAYMENT\\NSUCCESSFUL")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("CONTINUE")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("BEGIN SEARCH")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("PAYMENT ERROR")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("ACTION")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("TRY AGAIN")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("GO BACK")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
             Spacer()
-        }.padding().navigationTitle("Payment")
+        }.padding()
     }
 }

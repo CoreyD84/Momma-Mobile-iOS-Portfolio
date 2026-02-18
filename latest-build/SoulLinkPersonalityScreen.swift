@@ -1,20 +1,83 @@
 import SwiftUI
+
 struct SoulLinkPersonalityScreen: View {
+
     var body: some View {
-        VStack(spacing: 15) {
-            Button(action: {}) { Text("Let's begin.\\n\\n").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("• What you value\\n").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("but to understand.").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Let's look ahead.\\n\\n").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("\\n\\n").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Can you sense them?").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("You misread that. It's okay—this is where you learn about each other.").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Here's why:\\n\\n").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("SoulLink has identified a high-alignment match for you.\\n\\n").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("They declined.\\n\\n").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("As promised, I'll search again for you at no cost. But first, let's update your fingerprint. ").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
-            Button(action: {}) { Text("Earlier you said: \\").padding().frame(maxWidth: .infinity).background(Color.blue.opacity(0.1)).cornerRadius(10) }
+        VStack(spacing: 20) {
+            Text("SoulLinkPersonality").font(.largeTitle).bold().padding(.bottom, 10)
+            Button(action: {}) {
+                Text("LET'S BEGIN.\\N\\N")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("• WHAT YOU VALUE\\N")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("BUT TO UNDERSTAND.")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("LET'S LOOK AHEAD.\\N\\N")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("\\N\\N")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("CAN YOU SENSE THEM?")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("YOU MISREAD THAT. IT'S OKAY—THIS IS WHERE YOU LEARN ABOUT EACH OTHER.")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("HERE'S WHY:\\N\\N")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("SOULLINK HAS IDENTIFIED A HIGH-ALIGNMENT MATCH FOR YOU.\\N\\N")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("THEY DECLINED.\\N\\N")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("AS PROMISED, I'LL SEARCH AGAIN FOR YOU AT NO COST. BUT FIRST, LET'S UPDATE YOUR FINGERPRINT. ")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
+            Button(action: {}) {
+                Text("EARLIER YOU SAID: \\")
+                    .font(.headline).foregroundColor(.white)
+                    .frame(maxWidth: .infinity).padding()
+                    .background(Color.accentColor).cornerRadius(12)
+            }
             Spacer()
-        }.padding().navigationTitle("SoulLinkPersonality")
+        }.padding()
     }
 }
