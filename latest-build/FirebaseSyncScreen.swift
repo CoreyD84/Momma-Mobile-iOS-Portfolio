@@ -6,14 +6,14 @@ struct FirebaseSyncScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FirebaseSync").font(.title).bold()
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
-            Text("flags")
-            Text("FirebaseSync")
-            Text("FirebaseSync")
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
+            Button("flags") { /* Trigger Event */ }
+            Button("FirebaseSync") { /* Trigger Event */ }
+            Button("FirebaseSync") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("FirebaseSync")

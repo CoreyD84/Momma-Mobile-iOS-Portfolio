@@ -9,46 +9,39 @@ struct EmotionalScannerScreen: View {
             Text("EmotionalScanner")
             Text("get back at you")
             Text("get back to you")
-            Text("got back to")
+            Button("got back to") { /* Trigger Event */ }
             Text("getting back to")
-            Text("hit me back")
-            Text("text me back")
-            Text("call me back")
-            Text("write back")
-            Text("talk back")
-            Text("come back")
-            Text("be back")
-            Text("right back")
-            Text("back at")
-            Text("back to")
-            Text("lol")
-            Text("lmao")
-            Text("haha")
-            Text("omg")
-            Text("wtf")
-            Text("brb")
-            Text("ttyl")
-            Text("idk")
-            Text("tbh")
-            Text("ngl")
-            Text("phrase")
-            Text("sms")
-            Text("unknown")
+            Button("hit me back") { /* Trigger Event */ }
+            Button("text me back") { /* Trigger Event */ }
+            Button("call me back") { /* Trigger Event */ }
+            Button("write back") { /* Trigger Event */ }
+            Button("talk back") { /* Trigger Event */ }
+            Button("come back") { /* Trigger Event */ }
+            Button("be back") { /* Trigger Event */ }
+            Button("right back") { /* Trigger Event */ }
+            Button("back at") { /* Trigger Event */ }
+            Button("back to") { /* Trigger Event */ }
+            Button("lol") { /* Trigger Event */ }
+            Button("lmao") { /* Trigger Event */ }
+            Button("haha") { /* Trigger Event */ }
+            Button("omg") { /* Trigger Event */ }
+            Button("wtf") { /* Trigger Event */ }
+            Button("brb") { /* Trigger Event */ }
+            Button("ttyl") { /* Trigger Event */ }
+            Button("idk") { /* Trigger Event */ }
+            Button("tbh") { /* Trigger Event */ }
+            Button("ngl") { /* Trigger Event */ }
+            Button("phrase") { /* Trigger Event */ }
+            Button("sms") { /* Trigger Event */ }
+            Button("unknown") { /* Trigger Event */ }
             Text("🟢 Message contains whitelisted casual phrase, skipping critical flags")
             Text("Action")
             Text("Action")
-            Text("⚪ Skipping whitelisted phrase: '$phrase'")
-            Text("\\\\b${Regex.escape(phraseLower)}\\\\b")
-            Text("⚪ Skipping partial match for CRITICAL phrase: '$phrase'")
-            Text("phrase")
+            Button("phrase") { /* Trigger Event */ }
             Text("Action")
             Text("Action")
-            Text("⚪ Skipping single emoji in long message: '$emoji'")
-            Text("emoji")
-            Text("🟢 Message scanned from $sourceApp: no threats detected.")
-            Text("🚨 Message from $sourceApp flagged with ${uniqueResults.size} unique issues.")
-            Text("🔥")
-            Text("$logIcon ${detection.source.uppercase()}: '${detection.match}' | Category: ${detection.meta.category}, Severity: ${detection.meta.severity}")
+            Button("emoji") { /* Trigger Event */ }
+            Button("🔥") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("EmotionalScanner")

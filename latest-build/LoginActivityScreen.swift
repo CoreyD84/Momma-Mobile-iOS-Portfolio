@@ -6,61 +6,59 @@ struct LoginActivityScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: LoginActivity").font(.title).bold()
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("nettie_prefs")
-            Text("guardian_email")
-            Text("guardian_password")
-            Text("guardian_email")
-            Text("LoginActivity")
             Button("LoginActivity") { /* Trigger Event */ }
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("Action")
             Button("LoginActivity") { /* Trigger Event */ }
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("Action")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("nettie_prefs")
-            Text("guardian_email")
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_email") { /* Trigger Event */ }
             Text("guardian_password")
-            Text("guardian_email")
+            Button("guardian_email") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_email") { /* Trigger Event */ }
             Text("guardian_password")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("Action")
-            Text("Action")
-            Text("nettie_prefs")
-            Text("guardian_name")
-            Text("guardian_id")
-            Text("guardian_profiles/$guardianId")
-            Text("name")
-            Text("LoginActivity")
-            Text("Action")
-            Text("LoginActivity")
-            Text("Action")
-            Text("LoginActivity")
-            Text("Action")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("nettie_prefs")
-            Text("household_id")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("LoginActivity")
-            Text("betaTesterCount/count")
-            Text("LoginActivity")
-            Text("LoginActivity")
+            Button("guardian_email") { /* Trigger Event */ }
+            Text("guardian_password")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_name") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("name") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
+            Button("LoginActivity") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("LoginActivity")

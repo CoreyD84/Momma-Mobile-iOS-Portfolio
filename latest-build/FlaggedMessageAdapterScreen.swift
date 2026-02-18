@@ -6,23 +6,16 @@ struct FlaggedMessageAdapterScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FlaggedMessageAdapter").font(.title).bold()
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("MMM dd, yyyy • h:mm a")
-            Text("features/sms")
-            Text("chat")
-            Text("web")
-            Text("🧠")
-            Text("Action")
-            Text("⚠️ Severity: ${message.severity ?: ")
-            Text("🧭 Category: ${message.category ?: ")
-            Text("$sourceIcon Source: ${message.sourceApp.ifBlank { message.source }}")
-            Text("🕒 $formattedTime")
-            Text("🔍 Matched: ${message.matchedItems.joinToString(")
-            Text("Action")
+            Button("chat") { /* Trigger Event */ }
+            Button("web") { /* Trigger Event */ }
+            Button("🧠") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("📝 No notes added.")
-            Text("📝 ${message.notes}")
-            Text("🚨 Escalated")
-            Text("Action")
+            Button("🚨 Escalated") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("🛡️ Deflection: \\")
             Spacer()
         }.padding()

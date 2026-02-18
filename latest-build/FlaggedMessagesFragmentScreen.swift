@@ -6,7 +6,7 @@ struct FlaggedMessagesFragmentScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FlaggedMessagesFragment").font(.title).bold()
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Text("FlaggedMessages")
             Text("Error loading flagged messages")
@@ -15,45 +15,35 @@ struct FlaggedMessagesFragmentScreen: View {
             Text("ERROR: Not logged in")
             Text("FlaggedMessages")
             Text("FlaggedMessages")
-            Text("Loading detections for: $guardianId")
-            Text("feelscope/detections/$guardianId")
             Text("FlaggedMessages")
             Text("No threats detected yet. All clear! ✅")
             Text("FlaggedMessages")
-            Text("timestamp")
-            Text("message")
-            Text("severity")
-            Text("category")
-            Text("timestamp")
-            Text("sourceApp")
-            Text("isEscalated")
+            Button("timestamp") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("category") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
+            Button("isEscalated") { /* Trigger Event */ }
             Text("MMM dd, yyyy • h:mm a")
-            Text("Unknown time")
-            Button("Action") { /* Trigger Event */ }
-            Text("Action")
-            Text("🚨 ")
-            Text("\\n")
-            Text("Category: $category")
-            Text("\\nApp: $sourceApp")
-            Text("\\n")
-            Text("Time: $formattedTime")
-            Text("\\n")
-            Text("Child ID: ${childId.take(8)}...")
-            Text("Action")
-            Text("critical")
-            Text("high")
-            Text("low")
+            Button("Unknown time") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
-            Text("🗑️")
+            Button("🚨 ") { /* Trigger Event */ }
+            Button("\\n") { /* Trigger Event */ }
+            Button("\\n") { /* Trigger Event */ }
+            Button("\\n") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("critical") { /* Trigger Event */ }
+            Button("high") { /* Trigger Event */ }
+            Button("low") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("🗑️") { /* Trigger Event */ }
             Text("FlaggedMessages")
-            Text("Error loading detections: ${error.message}")
             Text("FlaggedMessages")
-            Text("ERROR: ${error.message}")
-            Text("feelscope/detections/$guardianId/$childId/$detectionId")
-            Text("Detection deleted")
+            Button("Detection deleted") { /* Trigger Event */ }
             Text("FlaggedMessages")
-            Text("Failed to delete: ${error.message}")
             Text("FlaggedMessages")
             Spacer()
         }.padding()

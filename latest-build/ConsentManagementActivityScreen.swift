@@ -6,39 +6,36 @@ struct ConsentManagementActivityScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: ConsentManagementActivity").font(.title).bold()
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("ConsentManagement")
-            Text("nettie_prefs")
-            Text("household_id")
-            Text("guardianLinks/$guardianId/linkedChildren")
-            Text("nickname")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
+            Button("nickname") { /* Trigger Event */ }
             Text("ConsentManagement")
-            Text("guardian_profiles/$guardianId/consent/$childId")
-            Text("granted")
+            Button("granted") { /* Trigger Event */ }
             Text("ConsentManagement")
             Text("Consent Management")
-            Text("Back")
-            Text("Action")
-            Text("Select Child")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Current Status")
-            Text("Action")
-            Text("⚠️ No linked children found. Please link a child device first.")
-            Text("Action")
-            Text("Child: ${availableChildren.getOrNull(selectedChildIndex)?.second ?: ")
-            Text("Action")
-            Text("Action")
-            Text("Loading...")
+            Button("Back") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Select Child") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Current Status") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("⚠️ No linked children found. Please link a child device first.") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Loading...") { /* Trigger Event */ }
             Text("✅ Consent Granted - Monitoring Active")
-            Text("❌ Consent Revoked - Monitoring Inactive")
+            Button("❌ Consent Revoked - Monitoring Inactive") { /* Trigger Event */ }
             Text("⚠️ No Consent Status Found")
-            Text("Action")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("PARENTAL CONSENT FOR NETTIE MONITORING SERVICE")
-            Text("Action")
-            Text("Version 1.0")
+            Button("Action") { /* Trigger Event */ }
+            Button("Version 1.0") { /* Trigger Event */ }
             Text("MONITORING & DETECTION:")
             Text("Monitor text-based communications across supported platforms (SMS, Discord, Roblox, and other connected services)")
             Text("Analyze emotional signals and detect potentially harmful patterns using AI-powered analysis")
@@ -47,20 +44,19 @@ struct ConsentManagementActivityScreen: View {
             Text("DATA COLLECTION & STORAGE:")
             Text("Collect and store message content, timestamps, platform information, and emotional analysis results")
             Text("Store data securely in Firebase (Google Cloud Platform, US region) with encryption")
-            Text("Retain flagged messages and emotional logs for up to 90 days or until you delete them")
+            Button("Retain flagged messages and emotional logs for up to 90 days or until you delete them") { /* Trigger Event */ }
             Text("Use anonymized data to improve detection algorithms (no personally identifiable information shared)")
             Text("GUARDIAN ACCESS & CONTROL:")
             Text("Provide you with access to emotional insights, flagged content, and activity summaries")
             Text("Display mascot mood overlays on the child's device to reflect emotional state")
-            Text("Allow you to review, acknowledge, or delete any flagged content at any time")
+            Button("Allow you to review, acknowledge, or delete any flagged content at any time") { /* Trigger Event */ }
             Text("Enable you to adjust monitoring settings and platform controls")
-            Text("YOUR RIGHTS:")
-            Text("You may revoke this consent at any time through this screen")
+            Button("YOUR RIGHTS:") { /* Trigger Event */ }
+            Button("You may revoke this consent at any time through this screen") { /* Trigger Event */ }
             Text("Upon revocation, active monitoring will cease immediately")
-            Text("You may request deletion of all stored data by contacting D2thecor@gmail.com")
             Text("You have the right to export all collected data in a readable format")
             Text("Nettie will never share your child's data with third parties for marketing purposes")
-            Text("LIMITATIONS:")
+            Button("LIMITATIONS:") { /* Trigger Event */ }
             Text("Nettie is a monitoring tool, not a replacement for parental supervision")
             Text("Nettie cannot guarantee detection of all harmful content")
             Text("Nettie will not intervene directly with your child without your explicit authorization")
@@ -68,64 +64,58 @@ struct ConsentManagementActivityScreen: View {
             Text("Nettie uses Firebase (Google) for data storage and authentication")
             Text("Platform monitoring requires permissions on the child's device")
             Text("No data is sold or shared with advertisers")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("Required Confirmations")
-            Text("I confirm I am the legal parent/guardian of the child(ren) on this account")
             Text("I understand that Nettie will monitor my child's communications")
             Text("I agree to the data collection and storage practices described above")
-            Text("I understand I can revoke consent at any time")
+            Button("I understand I can revoke consent at any time") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Text("Please check all required confirmations")
             Button("Action") { /* Trigger Event */ }
-            Text("No linked children found. Please link a child device first.")
+            Button("No linked children found. Please link a child device first.") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Text("Consent granted successfully")
             Text("Failed to grant consent")
             Text("Missing guardian or child information")
-            Text("Grant Consent")
-            Text("Grant Consent")
+            Button("Grant Consent") { /* Trigger Event */ }
+            Button("Grant Consent") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
-            Text("No linked children found")
+            Button("No linked children found") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
-            Text("Consent revoked successfully")
-            Text("Failed to revoke consent")
+            Button("Consent revoked successfully") { /* Trigger Event */ }
+            Button("Failed to revoke consent") { /* Trigger Event */ }
             Text("Missing guardian or child information")
-            Text("Revoke Consent")
-            Text("Revoke Consent")
-            Text("Action")
-            Text("Questions? Contact: D2thecor@gmail.com")
-            Text("Action")
-            Text("Action")
-            Text("• ")
-            Text("Action")
-            Text("Action")
+            Button("Revoke Consent") { /* Trigger Event */ }
+            Button("Revoke Consent") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("• ") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Toggle("Action", isOn: .constant(true))
-            Text("Action")
-            Text("Action")
-            Text("guardian_profiles/$guardianId/consent/$childId")
-            Text("granted")
-            Text("timestamp")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("granted") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("ConsentManagement")
             Text("ConsentManagement")
-            Text("guardian_profiles/$guardianId/consent/$childId")
-            Text("granted")
-            Text("timestamp")
+            Button("granted") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("ConsentManagement")
             Text("ConsentManagement")
-            Text("consent_logs/$householdId/$guardianId")
-            Text("timestamp")
-            Text("consentGiven")
-            Text("ipAddress")
-            Text("version")
-            Text("userAgent")
-            Text("consentType")
-            Text("childId")
-            Text("consent_status/$householdId/$guardianId")
-            Text("consentGiven")
-            Text("lastUpdated")
-            Text("version")
+            Button("timestamp") { /* Trigger Event */ }
+            Button("consentGiven") { /* Trigger Event */ }
+            Button("ipAddress") { /* Trigger Event */ }
+            Button("version") { /* Trigger Event */ }
+            Button("userAgent") { /* Trigger Event */ }
+            Button("consentType") { /* Trigger Event */ }
+            Button("childId") { /* Trigger Event */ }
+            Button("consentGiven") { /* Trigger Event */ }
+            Button("lastUpdated") { /* Trigger Event */ }
+            Button("version") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("ConsentManagementActivity")

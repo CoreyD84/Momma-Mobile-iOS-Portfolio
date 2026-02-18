@@ -6,12 +6,12 @@ struct MainActivityScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: MainActivity").font(.title).bold()
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
-            Text("token")
-            Text("Invalid link. Please re-scan the QR code.")
-            Text("linking_token")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("token") { /* Trigger Event */ }
+            Button("Invalid link. Please re-scan the QR code.") { /* Trigger Event */ }
+            Button("linking_token") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("MainActivity")

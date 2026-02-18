@@ -7,42 +7,31 @@ struct SubscriptionManagerScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: SubscriptionManager").font(.title).bold()
             Text("SubscriptionManager")
-            Text("subscriptions/$guardianId")
-            Text("status")
-            Text("type")
-            Text("trialStartDate")
-            Text("trialEndDate")
-            Text("createdAt")
-            Text("isBetaTester")
-            Text("✅ Subscription initialized for $guardianId - ${if (isBetaTester) ")
+            Button("status") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("trialStartDate") { /* Trigger Event */ }
+            Button("trialEndDate") { /* Trigger Event */ }
+            Button("createdAt") { /* Trigger Event */ }
+            Button("isBetaTester") { /* Trigger Event */ }
             Text("❌ Failed to initialize subscription")
             Text("🔧 DEVELOPER MODE: Bypassing subscription check")
-            Text("subscriptions/$guardianId")
-            Text("⚠️ No subscription found for $guardianId - initializing trial")
-            Text("status")
-            Text("type")
-            Text("trialEndDate")
-            Text("⏰ Trial expired for $guardianId - updating status")
-            Text("status")
-            Text("type")
-            Text("📊 Subscription status for $guardianId: $subscriptionStatus")
+            Button("status") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("trialEndDate") { /* Trigger Event */ }
+            Button("status") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
             Text("❌ Failed to load subscription status")
-            Text("subscriptions/$guardianId")
-            Text("status")
-            Text("type")
-            Text("upgradedAt")
-            Text("licenseKey")
-            Text("✅ User $guardianId upgraded to PAID subscription")
+            Button("status") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("upgradedAt") { /* Trigger Event */ }
+            Button("licenseKey") { /* Trigger Event */ }
             Text("❌ Failed to upgrade subscription")
-            Text("subscriptions/$guardianId")
-            Text("trialEndDate")
-            Text("trialEndDate")
-            Text("✅ Extended trial for $guardianId by $additionalDays days")
-            Text("subscriptions/$guardianId")
-            Text("type")
-            Text("trialEndDate")
-            Text("PAID")
-            Text("TRIAL")
+            Button("trialEndDate") { /* Trigger Event */ }
+            Button("trialEndDate") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("trialEndDate") { /* Trigger Event */ }
+            Button("PAID") { /* Trigger Event */ }
+            Button("TRIAL") { /* Trigger Event */ }
             Text("Error checking subscription")
             Spacer()
         }.padding()

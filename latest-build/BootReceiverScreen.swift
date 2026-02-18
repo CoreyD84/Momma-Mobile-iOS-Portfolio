@@ -6,17 +6,17 @@ struct BootReceiverScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: BootReceiver").font(.title).bold()
-            Text("MommaStealth")
+            Button("MommaStealth") { /* Trigger Event */ }
             Text("com.airnettie.mobile.child.LauncherAlias")
-            Text("MommaStealth")
-            Text("MommaStealth")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("MommaStealth")
-            Text("MommaStealth")
-            Text("MommaStealth")
-            Text("MommaStealth")
-            Text("MommaStealth")
+            Button("MommaStealth") { /* Trigger Event */ }
+            Button("MommaStealth") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("MommaStealth") { /* Trigger Event */ }
+            Button("MommaStealth") { /* Trigger Event */ }
+            Button("MommaStealth") { /* Trigger Event */ }
+            Button("MommaStealth") { /* Trigger Event */ }
+            Button("MommaStealth") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("BootReceiver")

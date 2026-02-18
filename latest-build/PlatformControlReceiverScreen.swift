@@ -7,23 +7,20 @@ struct PlatformControlReceiverScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: PlatformControlReceiver").font(.title).bold()
             Text("PlatformControlReceiver")
-            Text("messenger")
-            Text("discord")
-            Text("roblox")
-            Text("tiktok")
-            Text("tiktok_alt")
-            Text("snapchat")
-            Text("instagram")
-            Text("youtube")
-            Text("facebook")
-            Text("twitter")
+            Button("messenger") { /* Trigger Event */ }
+            Button("discord") { /* Trigger Event */ }
+            Button("roblox") { /* Trigger Event */ }
+            Button("tiktok") { /* Trigger Event */ }
+            Button("tiktok_alt") { /* Trigger Event */ }
+            Button("snapchat") { /* Trigger Event */ }
+            Button("instagram") { /* Trigger Event */ }
+            Button("youtube") { /* Trigger Event */ }
+            Button("facebook") { /* Trigger Event */ }
+            Button("twitter") { /* Trigger Event */ }
             Text("com.airnettie.mobile.PLATFORM_CONTROL")
-            Text("platform")
-            Text("enabled")
-            Text("Received platform control update: $platform, enabled=$isEnabled")
-            Text("blocked_apps")
-            Text("Updated blocked status for $packageName to $isBlocked")
-            Text("No package mapping found for platform key: $platform")
+            Button("platform") { /* Trigger Event */ }
+            Button("enabled") { /* Trigger Event */ }
+            Button("blocked_apps") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("PlatformControlReceiver")

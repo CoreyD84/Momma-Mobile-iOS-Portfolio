@@ -6,7 +6,7 @@ struct ConsentOverviewActivityScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: ConsentOverviewActivity").font(.title).bold()
-            Text("start_tab_index")
+            Button("start_tab_index") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("ConsentOverviewActivity")

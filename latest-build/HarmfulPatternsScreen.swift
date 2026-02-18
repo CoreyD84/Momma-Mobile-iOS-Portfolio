@@ -8,28 +8,28 @@ struct HarmfulPatternsScreen: View {
             Text("Momma Mobile: HarmfulPatterns").font(.title).bold()
             Text("emotion_sadness")
             Text("i want to disappear")
-            Text("i feel so sad")
-            Text("i am depressed")
+            Button("i feel so sad") { /* Trigger Event */ }
+            Button("i am depressed") { /* Trigger Event */ }
             Text("i can't do this anymore")
-            Text("emotion_anger")
-            Text("i hate you")
-            Text("i'm so mad")
-            Text("i'm furious")
+            Button("emotion_anger") { /* Trigger Event */ }
+            Button("i hate you") { /* Trigger Event */ }
+            Button("i'm so mad") { /* Trigger Event */ }
+            Button("i'm furious") { /* Trigger Event */ }
             Text("emotion_anxiety")
-            Text("i'm anxious")
-            Text("i'm worried")
-            Text("panic attack")
+            Button("i'm anxious") { /* Trigger Event */ }
+            Button("i'm worried") { /* Trigger Event */ }
+            Button("panic attack") { /* Trigger Event */ }
             Text("threat_self_harm")
             Text("i want to hurt myself")
             Text("i want to kill myself")
-            Text("self harm")
-            Text("suicidal")
+            Button("self harm") { /* Trigger Event */ }
+            Button("suicidal") { /* Trigger Event */ }
             Text("threat_bullying")
             Text("you're worthless")
             Text("no one likes you")
-            Text("go away loser")
-            Text("kill yourself")
-            Text("you should die")
+            Button("go away loser") { /* Trigger Event */ }
+            Button("kill yourself") { /* Trigger Event */ }
+            Button("you should die") { /* Trigger Event */ }
             Text("threat_grooming")
             Text("keep this secret")
             Text("don't tell your parents")
@@ -42,16 +42,16 @@ struct HarmfulPatternsScreen: View {
             Text("what's your age")
             Text("where do you live")
             Text("what school do you go to")
-            Text("are you alone")
+            Button("are you alone") { /* Trigger Event */ }
             Text("when are your parents home")
-            Text("send me pics")
-            Text("show me")
-            Text("meet up")
-            Text("come over")
+            Button("send me pics") { /* Trigger Event */ }
+            Button("show me") { /* Trigger Event */ }
+            Button("meet up") { /* Trigger Event */ }
+            Button("come over") { /* Trigger Event */ }
             Text("our little secret")
             Text("mature for your age")
             Text("special relationship")
-            Text("talk privately")
+            Button("talk privately") { /* Trigger Event */ }
             Text("let's talk privately")
             Text("create another account")
             Text("make another account")

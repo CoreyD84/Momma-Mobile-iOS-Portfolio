@@ -6,8 +6,8 @@ struct BlockedContactScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: BlockedContact").font(.title).bold()
-            Text("SMS")
-            Text("CRITICAL")
+            Button("SMS") { /* Trigger Event */ }
+            Button("CRITICAL") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("BlockedContact")

@@ -6,45 +6,33 @@ struct FirebaseLoggerScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FirebaseLogger").font(.title).bold()
-            Text("Action")
-            Text("FirebaseLogger")
-            Text("phrase")
-            Text("Messenger")
-            Text("❌ Missing guardianId/childId — cannot log detection.")
-            Text("Message: \\")
-            Text("emoji")
-            Text("feelscope/$basePath/$guardianId/$childId")
-            Text("message")
-            Text("matchedPhrases")
-            Text("severity")
-            Text("timestamp")
-            Text("source")
-            Text("isEscalated")
-            Text("category")
-            Text("sourceApp")
-            Text("🧠 Logging $source detection payload: $payload")
-            Text("✅ Detection logged to $basePath: $severity | ${matchedPhrases.size} matches")
-            Text("❌ Failed to log detection: ${error.localizedMessage}")
-            Text("critical")
-            Text("🚨 Critical detection escalated to FirebaseSync: $caseId")
-            Text("critical")
-            Text("logs/$guardianId/$childId")
-            Text("type")
-            Text("message")
-            Text("timestamp")
-            Text("✅ Logged event: [$type] $message")
-            Text("❌ Failed to log event: ${it.localizedMessage}")
-            Text("logs/system/$uid")
-            Text("type")
-            Text("message")
-            Text("timestamp")
-            Text("✅ Logged system event: [$type] $message")
-            Text("❌ Failed to log system event: ${it.localizedMessage}")
+            Button("Action") { /* Trigger Event */ }
+            Button("FirebaseLogger") { /* Trigger Event */ }
+            Button("phrase") { /* Trigger Event */ }
+            Button("Messenger") { /* Trigger Event */ }
+            Button("Message: \\") { /* Trigger Event */ }
+            Button("emoji") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("matchedPhrases") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("source") { /* Trigger Event */ }
+            Button("isEscalated") { /* Trigger Event */ }
+            Button("category") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
+            Button("critical") { /* Trigger Event */ }
+            Button("critical") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("yyyy-MM-dd_HH:mm:ss")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("nettie_prefs")
-            Text("child_id")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("FirebaseLogger")

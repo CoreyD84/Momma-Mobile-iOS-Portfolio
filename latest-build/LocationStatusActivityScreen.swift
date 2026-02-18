@@ -10,44 +10,37 @@ struct LocationStatusActivityScreen: View {
             Button("Action") { /* Trigger Event */ }
             Text("Showing default location")
             Button("Action") { /* Trigger Event */ }
-            Text("google.navigation:q=$currentLat,$currentLng")
             Text("com.google.android.apps.maps")
             Text("📍 Location permission granted. Syncing live location...")
             Text("⚠️ Location permission denied. Showing default location.")
-            Text("nettie_prefs")
-            Text("guardian_id")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
             Text("LocationStatusActivity")
             Text("❌ Guardian ID not found")
             Text("LocationStatusActivity")
-            Text("guardianLinks/$guardianId/linkedChildren")
             Text("LocationStatusActivity")
-            Text("❌ No linked children found")
-            Text("LocationStatusActivity")
+            Button("❌ No linked children found") { /* Trigger Event */ }
             Text("LocationStatusActivity")
             Text("LocationStatusActivity")
-            Text("guardianLinks/$guardianId/location/$firstChildId")
+            Text("LocationStatusActivity")
             Text("LocationStatusActivity")
             Text("LocationStatusActivity")
             Text("📍 No location data available")
-            Text("latitude")
-            Text("longitude")
-            Text("timestamp")
+            Button("latitude") { /* Trigger Event */ }
+            Button("longitude") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("LocationStatusActivity")
             Text("✅ Live location synced")
             Text("LocationStatusActivity")
             Text("⚠️ Invalid location data")
             Text("LocationStatusActivity")
-            Text("❌ Failed to load location: ${error.message}")
             Text("LocationStatusActivity")
-            Text("❌ Failed to load linked children: ${error.message}")
             Button("Action") { /* Trigger Event */ }
-            Text("Action")
-            Text("viewport")
-            Text("stylesheet")
-            Text("https://unpkg.com/leaflet/dist/leaflet.js")
-            Text("map")
+            Button("Action") { /* Trigger Event */ }
+            Button("viewport") { /* Trigger Event */ }
+            Button("stylesheet") { /* Trigger Event */ }
+            Button("map") { /* Trigger Event */ }
             Text("Child's Last Location")
-            Text("text/html")
             Spacer()
         }.padding()
         .navigationTitle("LocationStatusActivity")

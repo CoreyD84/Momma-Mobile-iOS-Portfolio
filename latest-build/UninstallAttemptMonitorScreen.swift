@@ -8,39 +8,34 @@ struct UninstallAttemptMonitorScreen: View {
             Text("Momma Mobile: UninstallAttemptMonitor").font(.title).bold()
             Text("UninstallAttemptMonitor")
             Text("UninstallAttemptMonitor service created")
-            Text("UninstallAttemptMonitor service started")
-            Text("✅ Started monitoring for uninstall attempts")
+            Button("UninstallAttemptMonitor service started") { /* Trigger Event */ }
+            Button("✅ Started monitoring for uninstall attempts") { /* Trigger Event */ }
             Text("com.android.settings")
             Text("⚠️ Settings app opened - possible uninstall attempt")
             Text("com.google.android.packageinstaller")
             Text("com.android.packageinstaller")
             Text("🚨 Package Installer opened - UNINSTALL ATTEMPT DETECTED!")
             Text("Package Installer opened")
-            Text("settings")
+            Button("settings") { /* Trigger Event */ }
             Text("⚠️ App settings opened - possible uninstall attempt")
             Text("App settings accessed")
-            Text("Error checking for uninstall attempts: ${e.message}")
-            Text("nettie_prefs")
-            Text("household_id")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
             Text("Settings app opened")
-            Text("nettie_prefs")
-            Text("household_id")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
             Text("device_nickname")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
             Text("✅ Alerted guardian of uninstall attempt")
-            Text("❌ Failed to alert guardian: ${error.message}")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/uninstall_imminent")
             Text("✅ Set uninstall_imminent flag")
-            Text("logs/$guardianId/$childId")
-            Text("event")
-            Text("timestamp")
-            Text("severity")
-            Text("message")
+            Button("event") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
             Text("UninstallAttemptMonitor service destroyed")
             Spacer()
         }.padding()

@@ -8,52 +8,39 @@ struct HeartbeatMonitorServiceScreen: View {
             Text("Momma Mobile: HeartbeatMonitorService").font(.title).bold()
             Text("HeartbeatMonitor")
             Text("HeartbeatMonitorService created")
-            Text("HeartbeatMonitorService started")
+            Button("HeartbeatMonitorService started") { /* Trigger Event */ }
             Text("Guardian not authenticated, cannot monitor heartbeats")
-            Text("✅ Heartbeat monitoring started (checking every 2 minutes)")
-            Text("guardianLinks/$guardianId/linkedChildren")
-            Text("last_seen")
-            Text("nickname")
+            Button("✅ Heartbeat monitoring started (checking every 2 minutes)") { /* Trigger Event */ }
+            Button("last_seen") { /* Trigger Event */ }
+            Button("nickname") { /* Trigger Event */ }
             Text("uninstall_imminent")
             Text("offline_alert_sent")
-            Text("🚨 CRITICAL: Child $childId ($nickname) has disabled Device Admin - uninstall imminent!")
-            Text("offline_alert_sent")
-            Text("⚠️ Child $childId ($nickname) hasn't reported in ${timeSinceLastSeen / 1000 / 60} minutes")
             Text("offline_alert_sent")
             Text("offline_alert_sent")
-            Text("✅ Child $childId ($nickname) is back online")
-            Text("Failed to check heartbeats: ${error.message}")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
-            Text("lastSeen")
-            Text("minutesOffline")
-            Text("✅ Offline alert sent for child $childId")
-            Text("❌ Failed to send offline alert: ${error.message}")
-            Text("logs/$guardianId/$childId")
-            Text("event")
-            Text("timestamp")
-            Text("severity")
-            Text("message")
-            Text("lastSeen")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
-            Text("lastSeen")
-            Text("✅ Uninstall imminent alert sent for child $childId")
-            Text("❌ Failed to send uninstall imminent alert: ${error.message}")
-            Text("logs/$guardianId/$childId")
-            Text("event")
-            Text("timestamp")
-            Text("severity")
-            Text("message")
-            Text("lastSeen")
+            Text("offline_alert_sent")
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
+            Button("lastSeen") { /* Trigger Event */ }
+            Button("minutesOffline") { /* Trigger Event */ }
+            Button("event") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("lastSeen") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
+            Button("lastSeen") { /* Trigger Event */ }
+            Button("event") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("lastSeen") { /* Trigger Event */ }
             Text("HeartbeatMonitorService destroyed")
             Spacer()
         }.padding()

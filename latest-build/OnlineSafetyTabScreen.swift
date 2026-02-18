@@ -6,17 +6,15 @@ struct OnlineSafetyTabScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: OnlineSafetyTab").font(.title).bold()
+            Button("Action") { /* Trigger Event */ }
             Text("Action")
-            Text("Action")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("💡 Online Safety Tip")
-            Text("Next tip")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Tip ${currentTipIndex + 1} of ${safetyTips.size}")
+            Button("Next tip") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("Talk to your child regularly about their online activities and who they're communicating with.")
-            Text("Set clear rules about screen time and which apps/websites are appropriate for your child's age.")
             Text("Teach your child never to share personal information (address, phone number, school name) online.")
             Text("Remind your child that people online may not be who they claim to be.")
             Text("Encourage your child to tell you immediately if something online makes them uncomfortable.")
@@ -33,12 +31,12 @@ struct OnlineSafetyTabScreen: View {
             Text("Teach your child about digital footprints and how their online behavior can affect their future.")
             Text("Encourage your child to come to you with questions or concerns without fear of punishment.")
             Text("Set up age-appropriate email and social media accounts together.")
-            Text("Discuss the dangers of clicking on unknown links or downloading files from strangers.")
+            Button("Discuss the dangers of clicking on unknown links or downloading files from strangers.") { /* Trigger Event */ }
             Text("Teach your child about respectful online communication and treating others with kindness.")
             Text("Monitor in-app purchases and set up parental approval for transactions.")
             Text("Discuss the difference between healthy and unhealthy online relationships.")
             Text("Teach your child to recognize warning signs of online predators (excessive compliments, secrecy, gifts).")
-            Text("Review and update privacy settings regularly as apps and platforms change.")
+            Button("Review and update privacy settings regularly as apps and platforms change.") { /* Trigger Event */ }
             Text("Discuss the risks of sharing photos online, especially those that reveal location or personal details.")
             Text("Teach your child about phishing scams and how to identify suspicious messages.")
             Text("Make sure your child knows that if they make a mistake online, they can come to you for help.")

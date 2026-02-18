@@ -6,16 +6,14 @@ struct SetupActivityScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: SetupActivity").font(.title).bold()
-            Text("Action")
-            Text("linking_token")
-            Text("SetupActivity")
-            Text("SetupActivity")
-            Text("package:$packageName")
+            Button("Action") { /* Trigger Event */ }
+            Button("linking_token") { /* Trigger Event */ }
+            Button("SetupActivity") { /* Trigger Event */ }
+            Button("SetupActivity") { /* Trigger Event */ }
             Text("Momma Mobile needs Device Admin to prevent uninstallation.")
-            Text("${packageName}/${NettieProtectionService::class.java.canonicalName}")
             Text("enabled_notification_listeners")
-            Text("UNCHECKED_CAST")
-            Text("Linking token is missing!")
+            Button("UNCHECKED_CAST") { /* Trigger Event */ }
+            Button("Linking token is missing!") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("SetupActivity")

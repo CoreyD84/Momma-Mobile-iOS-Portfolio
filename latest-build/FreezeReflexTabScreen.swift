@@ -6,28 +6,22 @@ struct FreezeReflexTabScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FreezeReflexTab").font(.title).bold()
-            Text("Action")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
+            Button("Action") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
             Text("Missing guardian or child identity. Please log in again.")
-            Text("feelscope/detections/$guardianId/$childId")
-            Text("isEscalated")
+            Button("isEscalated") { /* Trigger Event */ }
             Text("No freeze reflex events recorded.")
-            Text("category")
-            Text("matchedPhrases")
-            Text("sourceApp")
-            Text("timestamp")
-            Text("deflectionUsed")
-            Text("Action")
+            Button("category") { /* Trigger Event */ }
+            Button("matchedPhrases") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("deflectionUsed") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("🚨 Freeze Reflex Triggered\\n")
-            Text("🧭 Category: $category\\n")
-            Text("🔍 Matched: ${matched.joinToString(")
-            Text("📱 App: $sourceApp\\n")
-            Text("🕒 Time: $timestamp\\n")
             Text("🛡️ Deflection: \\")
-            Text("Failed to load freeze reflex history: ${error.message}")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("FreezeReflexTab")

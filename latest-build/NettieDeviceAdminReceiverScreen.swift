@@ -14,12 +14,10 @@ struct NettieDeviceAdminReceiverScreen: View {
             Text("⚠️ User attempting to disable Device Admin - onDisableRequested called")
             Text("nettie_secure_prefs")
             Text("admin_deactivation_authorized")
-            Text("❌ Failed to read secure prefs: ${e.message}")
             Text("🔒 UNAUTHORIZED deactivation (cached) - attempting immediate lock")
             Text("🔒 Device locked immediately from onDisableRequested")
             Text("🔒 Device locked - guardian will be notified")
             Text("❌ Cannot lock device - admin not active")
-            Text("❌ Failed to lock device in onDisableRequested: ${e.message}")
             Text("✅ Deactivation authorized (cached)")
             Text("🚨 CRITICAL WARNING 🚨\\n\\n")
             Text("⚠️ UNAUTHORIZED ATTEMPT DETECTED ⚠️\\n\\n")
@@ -32,36 +30,27 @@ struct NettieDeviceAdminReceiverScreen: View {
             Text("🔒 LOCKING DEVICE NOW!")
             Text("🔒 Device locked - Guardian password required")
             Text("❌ Cannot lock device - admin not active")
-            Text("❌ Failed to lock device: ${e.message}")
             Text("nettie_secure_prefs")
             Text("admin_deactivation_authorized")
-            Text("❌ Failed to read secure prefs: ${e.message}")
-            Text("nettie_prefs")
-            Text("household_id")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/deviceAdminEnabled")
-            Text("✅ Updated deviceAdminEnabled status to: $isEnabled")
-            Text("❌ Failed to update admin status: ${error.message}")
-            Text("nettie_prefs")
-            Text("household_id")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
             Text("device_nickname")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
             Text("✅ Alerted guardian of unauthorized admin deactivation")
-            Text("❌ Failed to alert guardian: ${error.message}")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/uninstall_imminent")
             Text("✅ Set uninstall_imminent flag")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("device_nickname")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
             Text("✅ Alerted guardian of unauthorized deactivation attempt")
             Text("Password changed")
             Text("Password failed")

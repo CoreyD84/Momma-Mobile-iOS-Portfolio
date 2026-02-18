@@ -29,9 +29,8 @@ struct MessageScannerTabScreen: View {
             Text("MessageScannerTab")
             Text("MessageScannerTab")
             Text("✅ No threats detected")
-            Text("⚠️ Matched: ${it.matched.joinToString()}, Category: ${it.category}, Severity: ${it.severity}")
-            Text("Scan")
-            Text("Action")
+            Button("Scan") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("MessageScannerTab")

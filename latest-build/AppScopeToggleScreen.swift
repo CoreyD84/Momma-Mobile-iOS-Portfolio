@@ -6,44 +6,38 @@ struct AppScopeToggleScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: AppScopeToggle").font(.title).bold()
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("Error: Not logged in")
             Text("Waiting for Child ID...")
-            Text("Child ID received: $childId. Creating Firebase listener...")
-            Text("guardianLinks/$guardianId/appScope/$childId/enabled")
             Text("Error: Guardian ID is null.")
-            Text("guardianLinks/$guardianId/appScope/$childId/blockedApps")
             Text("Attaching Firebase listener...")
-            Text("Success! Firebase value received: $isEnabled")
-            Text("Firebase Listener Error: ${error.message}")
-            Text("AppScopeToggle")
-            Text("Action")
+            Button("AppScopeToggle") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("AppScope™ Filter")
             ProgressView()
             Text("Loading from Firebase...")
             Toggle("Action", isOn: .constant(true))
             Text("AppScope Status")
-            Text("Action")
-            Text("Active - Blocking ${blockedApps.size} apps")
+            Button("Action") { /* Trigger Event */ }
             Toggle("Action", isOn: .constant(true))
-            Text("Blocked Apps")
-            Text("Add app")
-            Text("Action")
+            Button("Blocked Apps") { /* Trigger Event */ }
+            Button("Add app") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("No blocked apps yet. Tap + to add apps to block.")
-            Text("Action")
-            Text("Action")
-            Text("Remove")
-            Text("Block App")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Remove") { /* Trigger Event */ }
+            Button("Block App") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("Enter the package name of the app to block")
-            Text("Action")
-            Text("Examples: com.squareup.cash (Cash App), com.snapchat.android (Snapchat), com.zhiliaoapp.musically (TikTok)")
+            Button("Action") { /* Trigger Event */ }
+            Button("Examples: com.squareup.cash (Cash App), com.snapchat.android (Snapchat), com.zhiliaoapp.musically (TikTok)") { /* Trigger Event */ }
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
             Text("Package name")
             Text("com.example.app")
-            Text("Add")
-            Text("Cancel")
+            Button("Add") { /* Trigger Event */ }
+            Button("Cancel") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("AppScopeToggle")

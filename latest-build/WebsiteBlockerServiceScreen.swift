@@ -15,33 +15,20 @@ struct WebsiteBlockerServiceScreen: View {
             Text("com.duckduckgo.mobile.android")
             Text("com.sec.android.app.sbrowser")
             Text("com.google.android.googlequicksearchbox")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("✅ Website Blocker service connected.")
-            Text("child_id")
-            Text("guardian_id")
+            Button("child_id") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
             Text("⚠️ Child or Guardian ID not found - SafeScope disabled")
-            Text("guardianLinks/$guardianId/safeScope/$childId")
-            Text("enabled")
-            Text("🛡️ SafeScope updated. Keywords: ${blockedKeywords.size}")
-            Text("🚫 SafeScope BLOCKING. Reason: Found keyword '$matchedKeyword'")
-            Text(".com")
-            Text(".net")
-            Text(".org")
-            Text(".xxx")
-            Text("http")
-            Text("q=")
-            Text("com.android.chrome:id/url_bar")
-            Text("org.mozilla.firefox:id/mozac_browser_toolbar_url_view")
-            Text("com.opera.browser:id/url_field")
-            Text("com.duckduckgo.mobile.android:id/omnibarTextInput")
-            Text("com.sec.android.app.sbrowser:id/location_bar_edit_text")
-            Text("com.google.android.googlequicksearchbox:id/search_box_text_input")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("http://")
-            Text("http")
-            Text("www.")
+            Button("enabled") { /* Trigger Event */ }
+            Button(".net") { /* Trigger Event */ }
+            Button(".org") { /* Trigger Event */ }
+            Button(".xxx") { /* Trigger Event */ }
+            Button("q=") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("www.") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("WebsiteBlockerService")

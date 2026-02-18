@@ -6,19 +6,17 @@ struct EmotionalRadarScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: EmotionalRadar").font(.title).bold()
-            Text("EmotionalRadar")
+            Button("EmotionalRadar") { /* Trigger Event */ }
             Text("I want to disappear")
             Text("you're worthless")
-            Text("I'm scared")
-            Text("Action")
-            Text("Action")
+            Button("I'm scared") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("No authenticated user — skipping flag.")
-            Text("flags/$uid")
-            Text("source")
-            Text("message")
-            Text("timestamp")
-            Text("severity")
-            Text("⚠️ Legacy flag triggered from $source: $message")
+            Button("source") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("EmotionalRadar")

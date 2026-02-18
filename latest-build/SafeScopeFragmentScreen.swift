@@ -7,7 +7,6 @@ struct SafeScopeFragmentScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: SafeScopeFragment").font(.title).bold()
             Text("ProduceStateDoesNotAssignValue")
-            Text("guardianLinks/$guardianId/linkedChildren")
             Text("SafeScopeFragment")
             Spacer()
         }.padding()

@@ -11,45 +11,35 @@ struct MommaNotificationServiceScreen: View {
             Text("freezereflex_high")
             Text("freezereflex_medium")
             Text("freezereflex_info")
-            Text("📱 New FCM token: $token")
-            Text("📨 Message received from: ${message.from}")
-            Text("severity")
-            Text("type")
-            Text("childName")
-            Text("threat")
-            Text("contact")
-            Text("category")
-            Text("message")
-            Text("🚨 Notification type: $type, severity: $severity")
+            Button("severity") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("childName") { /* Trigger Event */ }
+            Button("threat") { /* Trigger Event */ }
+            Button("contact") { /* Trigger Event */ }
+            Button("category") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
             Text("freezereflex_activated")
             Text("blocked_attempt")
             Text("threat_detected")
-            Text("title")
-            Text("body")
-            Text("critical")
-            Text("high")
-            Text("open_tab")
-            Text("🚨 FreezeReflex Activated - $childName")
-            Text("Blocked dangerous contact: $contact")
-            Text("Category: $category\\nContact: $contact\\n\\nMessage: $message\\n\\n✅ App frozen, contact blocked, auto-takeover enabled.")
-            Text("View Details")
+            Button("title") { /* Trigger Event */ }
+            Button("body") { /* Trigger Event */ }
+            Button("critical") { /* Trigger Event */ }
+            Button("high") { /* Trigger Event */ }
+            Button("open_tab") { /* Trigger Event */ }
+            Button("View Details") { /* Trigger Event */ }
             Text("✅ FreezeReflex activation notification sent")
-            Text("open_tab")
-            Text("🚫 Blocked Contact Attempted - $childName")
-            Text("$contact tried to message")
-            Text("Blocked contact: $contact\\n\\nAttempted message: $message\\n\\n✅ Auto-blocked by FreezeReflex. MommaTakeover sent deflection response.")
+            Button("open_tab") { /* Trigger Event */ }
             Text("✅ Blocked attempt notification sent")
-            Text("critical")
-            Text("high")
-            Text("medium")
-            Text("open_tab")
-            Text("⚠️ Threat Detected - $childName")
-            Text("critical")
-            Text("high")
+            Button("critical") { /* Trigger Event */ }
+            Button("high") { /* Trigger Event */ }
+            Button("medium") { /* Trigger Event */ }
+            Button("open_tab") { /* Trigger Event */ }
+            Button("critical") { /* Trigger Event */ }
+            Button("high") { /* Trigger Event */ }
             Text("✅ Threat detected notification sent")
-            Text("critical")
-            Text("high")
-            Text("medium")
+            Button("critical") { /* Trigger Event */ }
+            Button("high") { /* Trigger Event */ }
+            Button("medium") { /* Trigger Event */ }
             Text("✅ Generic notification sent")
             Text("Critical Alerts")
             Text("Critical threats that triggered FreezeReflex")
@@ -57,14 +47,10 @@ struct MommaNotificationServiceScreen: View {
             Text("Blocked contact attempts and high-priority threats")
             Text("Medium Priority Alerts")
             Text("Medium-priority threats and detections")
-            Text("Information")
-            Text("General information and updates")
+            Button("Information") { /* Trigger Event */ }
+            Button("General information and updates") { /* Trigger Event */ }
             Text("✅ Notification channels created")
-            Text("users/$userId/fcmToken")
-            Text("✅ FCM token saved to Firebase for user: $userId")
-            Text("❌ Failed to save FCM token: ${e.message}")
-            Text("⚠️ Cannot save FCM token - user not logged in")
-            Text("❌ Error saving FCM token: ${e.message}")
+            Button("⚠️ Cannot save FCM token - user not logged in") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("MommaNotificationService")

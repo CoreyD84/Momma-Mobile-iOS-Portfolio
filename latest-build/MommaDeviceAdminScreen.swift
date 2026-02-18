@@ -8,41 +8,37 @@ struct MommaDeviceAdminScreen: View {
             Text("Momma Mobile: MommaDeviceAdmin").font(.title).bold()
             Text("MommaDeviceAdmin")
             Text("✅ Device Admin ENABLED - App is now protected from uninstallation")
-            Text("enabled")
+            Button("enabled") { /* Trigger Event */ }
             Text("⚠️ Device Admin DISABLED - App can now be uninstalled!")
-            Text("disabled")
+            Button("disabled") { /* Trigger Event */ }
             Text("⚠️ Child is attempting to disable Device Admin!")
             Text("⚠️ Disabling this will alert your guardian and may violate your safety agreement.")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
-            Text("logs/$guardianId/$childId")
-            Text("event")
-            Text("timestamp")
-            Text("severity")
-            Text("message")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId")
-            Text("last_seen")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("event") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("last_seen") { /* Trigger Event */ }
             Text("uninstall_imminent")
             Text("⚠️ Final heartbeat sent - uninstall imminent flag set")
             Spacer()

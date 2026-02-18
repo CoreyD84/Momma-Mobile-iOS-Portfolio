@@ -8,36 +8,30 @@ struct PlatformEnforcementServiceScreen: View {
             Text("Momma Mobile: PlatformEnforcementService").font(.title).bold()
             Text("PlatformEnforcement")
             Text("com.roblox.client")
-            Text("messenger")
-            Text("discord")
-            Text("roblox")
-            Text("tiktok")
-            Text("tiktok_alt")
-            Text("snapchat")
-            Text("instagram")
-            Text("youtube")
-            Text("facebook")
-            Text("twitter")
-            Text("whatsapp")
+            Button("messenger") { /* Trigger Event */ }
+            Button("discord") { /* Trigger Event */ }
+            Button("roblox") { /* Trigger Event */ }
+            Button("tiktok") { /* Trigger Event */ }
+            Button("tiktok_alt") { /* Trigger Event */ }
+            Button("snapchat") { /* Trigger Event */ }
+            Button("instagram") { /* Trigger Event */ }
+            Button("youtube") { /* Trigger Event */ }
+            Button("facebook") { /* Trigger Event */ }
+            Button("twitter") { /* Trigger Event */ }
+            Button("whatsapp") { /* Trigger Event */ }
             Text("Platform enforcement service created")
-            Text("Platform enforcement service started")
-            Text("tiktok")
-            Text("blocked_apps")
-            Text("Received platforms to block: ${platforms.joinToString()}")
-            Text("Error starting platform enforcement service")
-            Text("roblox")
-            Text("tiktok")
-            Text("tiktok_alt")
-            Text("Enforcing block on packages: ${blockedPackages.joinToString()}")
+            Button("Platform enforcement service started") { /* Trigger Event */ }
+            Button("tiktok") { /* Trigger Event */ }
+            Button("blocked_apps") { /* Trigger Event */ }
+            Button("Error starting platform enforcement service") { /* Trigger Event */ }
+            Button("roblox") { /* Trigger Event */ }
+            Button("tiktok") { /* Trigger Event */ }
+            Button("tiktok_alt") { /* Trigger Event */ }
             Text("Platform enforcement service destroyed")
             Text("UsageStatsManager not available, cannot enforce app blocking.")
-            Text("Blocked app detected in foreground: $currentPackage")
             Text("Error in app enforcement loop")
-            Text("_alt")
-            Text("This app")
-            Text("$platformName is currently blocked by your guardian.")
-            Text("Blocked and closed app: $packageName")
-            Text("Error while blocking app: $packageName")
+            Button("_alt") { /* Trigger Event */ }
+            Button("This app") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("PlatformEnforcementService")

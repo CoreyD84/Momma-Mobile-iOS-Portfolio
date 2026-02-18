@@ -7,18 +7,13 @@ struct AppBlockerServiceScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: AppBlockerService").font(.title).bold()
             Text("AppBlockerService")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("✅ App Blocker service connected.")
-            Text("child_id")
-            Text("guardian_id")
+            Button("child_id") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
             Text("⚠️ Child ID or Guardian ID not found in prefs - AppScope disabled")
-            Text("guardianLinks/$guardianId/appScope/$childId")
-            Text("enabled")
-            Text("blockedApps")
-            Text("📱 AppScope updated. Blocked apps: ${blockedApps.size}")
-            Text("❌ Failed to load AppScope settings: ${error.message}")
-            Text("🚫 AppScope BLOCKING app: $packageName")
-            Text("🚫 $packageName is blocked by your guardian")
+            Button("enabled") { /* Trigger Event */ }
+            Button("blockedApps") { /* Trigger Event */ }
             Text("App Blocker service interrupted")
             Spacer()
         }.padding()

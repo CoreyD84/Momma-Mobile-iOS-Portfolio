@@ -6,32 +6,27 @@ struct MascotMoodTabScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: MascotMoodTab").font(.title).bold()
-            Text("Action")
-            Text("Action")
-            Text("MascotMoodTab")
-            Text("guardianLinks/$guardianId/linkedChildren")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("MascotMoodTab") { /* Trigger Event */ }
             Text("Failed to fetch childId")
-            Text("guardianLinks/$guardianId/mascotMood/$childId")
-            Text("No mood data found for child $childId")
-            Text("Invalid timestamp key found in mood data: ${snap.key}")
-            Text("Mood history updated. Found ${moods.size} events.")
-            Text("MascotMood listener cancelled")
+            Button("MascotMood listener cancelled") { /* Trigger Event */ }
             Text("Mascot Mood History")
             ProgressView()
             Text("No mood history has been recorded yet.")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("calm")
-            Text("happy")
-            Text("anxious")
-            Text("sad")
-            Text("angry")
-            Text("distressed")
-            Text("🧠")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("calm") { /* Trigger Event */ }
+            Button("happy") { /* Trigger Event */ }
+            Button("anxious") { /* Trigger Event */ }
+            Button("sad") { /* Trigger Event */ }
+            Button("angry") { /* Trigger Event */ }
+            Button("distressed") { /* Trigger Event */ }
+            Button("🧠") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("MascotMoodTab")

@@ -8,54 +8,36 @@ struct AdminDeactivationMonitorScreen: View {
             Text("Momma Mobile: AdminDeactivationMonitor").font(.title).bold()
             Text("AdminDeactivationMonitor")
             Text("AdminDeactivationMonitor service created")
-            Text("AdminDeactivationMonitor service started")
-            Text("nettie_prefs")
-            Text("household_id")
+            Button("AdminDeactivationMonitor service started") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
             Text("Missing child ID or guardian ID, cannot monitor deactivation requests")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/adminDeactivationRequested")
             Text("⚠️ Guardian has requested Device Admin deactivation")
-            Text("Failed to monitor deactivation requests: ${error.message}")
-            Text("✅ Monitoring admin deactivation requests for child: $childId")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/adminDeactivationAuthorized")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("admin_deactivation_authorized")
-            Text("✅ Authorization status updated: $isAuthorized")
             Text("✅ Guardian has authorized admin deactivation - device will NOT lock")
-            Text("❌ Failed to monitor authorization flag: ${error.message}")
-            Text("✅ Monitoring authorization flag for child: $childId")
             Text("Processing admin deactivation request...")
             Text("com.airnettie.mobile.admin.NettieDeviceAdminReceiver")
             Text("🔓 Deactivating Device Admin as requested by guardian")
             Text("✅ Device Admin successfully deactivated")
-            Text("❌ Failed to deactivate Device Admin: ${e.message}")
-            Text("Unknown error")
+            Button("Unknown error") { /* Trigger Event */ }
             Text("Device Admin is already inactive")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/deviceAdminEnabled")
-            Text("✅ Updated deviceAdminEnabled status to: $isActive")
-            Text("❌ Failed to update admin status: ${error.message}")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/adminDeactivationRequested")
             Text("✅ Cleared deactivation request flag")
-            Text("❌ Failed to clear deactivation request: ${error.message}")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId/adminDeactivationAuthorized")
             Text("✅ Cleared authorization flag")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("admin_deactivation_authorized")
-            Text("❌ Failed to clear authorization flag: ${error.message}")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("device_nickname")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
             Text("✅ Notified guardian of successful deactivation")
-            Text("❌ Failed to notify guardian: ${error.message}")
-            Text("logs/$guardianId/$childId")
-            Text("event")
-            Text("timestamp")
-            Text("severity")
-            Text("message")
+            Button("event") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
             Text("AdminDeactivationMonitor service destroyed")
             Spacer()
         }.padding()

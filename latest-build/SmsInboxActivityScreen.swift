@@ -7,9 +7,8 @@ struct SmsInboxActivityScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: SmsInboxActivity").font(.title).bold()
             Text("SMS permission denied. Cannot load inbox.")
-            Text("(No content)")
+            Button("(No content)") { /* Trigger Event */ }
             Text("(Unknown sender)")
-            Text("📨 From $address:\\n$body")
             Text("📭 No SMS messages found.")
             Spacer()
         }.padding()

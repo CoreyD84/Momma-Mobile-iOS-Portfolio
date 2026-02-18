@@ -6,28 +6,22 @@ struct LocationStatusTabScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: LocationStatusTab").font(.title).bold()
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             ProgressView()
-            Text("Action")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("LocationStatusTab")
-            Text("guardianLinks/$guardianId/linkedChildren")
             Text("Failed to fetch childId")
-            Text("guardianLinks/$guardianId/location/$childId")
-            Text("No location data found for child $childId")
-            Text("latitude")
-            Text("longitude")
-            Text("timestamp")
-            Text("📍 Location updated: Lat: $lat, Lon: $lon")
+            Button("latitude") { /* Trigger Event */ }
+            Button("longitude") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("Error parsing location snapshot")
-            Text("Location listener cancelled")
-            Text("Recenter Map")
+            Button("Location listener cancelled") { /* Trigger Event */ }
+            Button("Recenter Map") { /* Trigger Event */ }
             Text("Child's Location")
-            Text("Accuracy: ${latestLocation!!.accuracy.toInt()}m")
             Text("Waiting for location data...")
             ProgressView()
-            Text("Action")
-            Text("Last updated: $relativeTime (Accuracy: ${location.accuracy.toInt()}m)")
+            Button("Action") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("LocationStatusTab")

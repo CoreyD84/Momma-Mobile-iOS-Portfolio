@@ -6,20 +6,15 @@ struct SmsReceiverScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: SmsReceiver").font(.title).bold()
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
-            Text("⚠️ Missing guardian/child ID. Cannot process SMS.")
-            Text("Unknown")
-            Text("sms")
-            Text("Clear")
-            Text("🟢 SMS from $sender is safe.")
-            Text("🚨 FLAGGED SMS from $sender. Contains ${detections.size} issues.")
-            Text("[SMS from: $sender] $messageBody")
-            Text("sms")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("Unknown") { /* Trigger Event */ }
+            Button("sms") { /* Trigger Event */ }
+            Button("Clear") { /* Trigger Event */ }
+            Button("sms") { /* Trigger Event */ }
             Text("critical_sms_detected")
-            Text("Critical SMS detected from $sender. Matched on: '${criticalMatch.match}'")
-            Text("SmsReceiver")
+            Button("SmsReceiver") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("SmsReceiver")

@@ -6,9 +6,8 @@ struct FlaggedMessageScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FlaggedMessage").font(.title).bold()
-            Text("Action")
-            Text("phrase")
-            Text(",                   // optional: ")
+            Button("Action") { /* Trigger Event */ }
+            Button("phrase") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("FlaggedMessage")

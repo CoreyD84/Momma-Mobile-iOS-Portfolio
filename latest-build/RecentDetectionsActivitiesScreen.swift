@@ -6,7 +6,7 @@ struct RecentDetectionsActivitiesScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: RecentDetectionsActivities").font(.title).bold()
-            Text("DEPRECATION")
+            Button("DEPRECATION") { /* Trigger Event */ }
             Text("RecentDetections")
             Text("Error loading Recent Detections")
             Spacer()

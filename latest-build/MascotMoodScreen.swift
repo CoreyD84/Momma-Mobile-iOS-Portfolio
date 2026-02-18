@@ -6,34 +6,29 @@ struct MascotMoodScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: MascotMood").font(.title).bold()
-            Text("MascotMood")
-            Text("calm")
-            Text("critical")
-            Text("high")
-            Text("medium")
-            Text("low")
-            Text("neutral")
-            Text("🧠 Mascot mood set to: $currentMood (from severity: $severity)")
-            Text("mood_set")
-            Text("nettie_prefs")
-            Text("household_id")
-            Text("child_id")
+            Button("MascotMood") { /* Trigger Event */ }
+            Button("calm") { /* Trigger Event */ }
+            Button("critical") { /* Trigger Event */ }
+            Button("high") { /* Trigger Event */ }
+            Button("medium") { /* Trigger Event */ }
+            Button("low") { /* Trigger Event */ }
+            Button("neutral") { /* Trigger Event */ }
+            Button("mood_set") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
             Text("Missing householdId or childId — skipping mood sync.")
-            Text("feelscope/households/$householdId/detections/$childId")
-            Text("timestamp")
-            Text("calm")
-            Text("concerned")
-            Text("alert")
-            Text("watchful")
-            Text("mood_change")
-            Text("flag_detected")
-            Text("alert")
-            Text("reflex_trigger")
-            Text("Mood sync failed: ${error.message}")
-            Text("mascotMood/$householdId/$childId")
-            Text("mood")
-            Text("timestamp")
-            Text("Mascot mood synced: $mood")
+            Button("timestamp") { /* Trigger Event */ }
+            Button("calm") { /* Trigger Event */ }
+            Button("concerned") { /* Trigger Event */ }
+            Button("alert") { /* Trigger Event */ }
+            Button("watchful") { /* Trigger Event */ }
+            Button("mood_change") { /* Trigger Event */ }
+            Button("flag_detected") { /* Trigger Event */ }
+            Button("alert") { /* Trigger Event */ }
+            Button("reflex_trigger") { /* Trigger Event */ }
+            Button("mood") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("MascotMood")

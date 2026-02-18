@@ -6,50 +6,41 @@ struct RecentDetectionsTabScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: RecentDetectionsTab").font(.title).bold()
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Text("SpellCheckingInspection")
-            Text("nettie_prefs")
-            Text("household_id")
-            Text("child_id")
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
             Text("RecentDetectionsTab")
             Text("⚠️ Missing guardian or child identity. Please log in again.")
             Text("RecentDetectionsTab")
-            Text("feelscope/households/$householdId/detections/$childId")
             Text("No recent detections found.")
             Text("RecentDetectionsTab")
             Text("RecentDetectionsTab")
-            Text("severity")
-            Text("matchedPhrases")
-            Text("category")
-            Text("sourceApp")
-            Text("timestamp")
+            Button("severity") { /* Trigger Event */ }
+            Button("matchedPhrases") { /* Trigger Event */ }
+            Button("category") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("MMM dd, yyyy • h:mm a")
-            Text("Unknown")
-            Text("isEscalated")
-            Button("Action") { /* Trigger Event */ }
-            Text("Action")
-            Text("[$severity] $category")
-            Text(" 🚨")
-            Text("\\nMatched: ${matched.joinToString(")
-            Text("\\nApp: $sourceApp")
-            Text("\\nTime: $timestamp")
-            Text("Action")
-            Text("critical")
-            Text("high")
-            Text("medium")
-            Text("low")
+            Button("Unknown") { /* Trigger Event */ }
+            Button("isEscalated") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
-            Text("🗑️")
-            Text("❌ Failed to load detections: ${error.message}")
+            Button(" 🚨") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("critical") { /* Trigger Event */ }
+            Button("high") { /* Trigger Event */ }
+            Button("medium") { /* Trigger Event */ }
+            Button("low") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("🗑️") { /* Trigger Event */ }
             Text("RecentDetectionsTab")
-            Text("Action")
-            Text("Unable to delete: missing household/child info")
-            Text("feelscope/households/$householdId/detections/$childId/$detectionKey")
-            Text("Detection deleted")
+            Button("Action") { /* Trigger Event */ }
+            Button("Detection deleted") { /* Trigger Event */ }
             Text("RecentDetectionsTab")
-            Text("Failed to delete: ${error.message}")
             Text("RecentDetectionsTab")
             Spacer()
         }.padding()

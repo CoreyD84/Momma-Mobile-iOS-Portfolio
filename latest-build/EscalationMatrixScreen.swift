@@ -7,10 +7,10 @@ struct EscalationMatrixScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: EscalationMatrix").font(.title).bold()
             Text("emotion_sadness")
-            Text("emotion_anger")
+            Button("emotion_anger") { /* Trigger Event */ }
             Text("emotion_anxiety")
             Text("emotion_distress")
-            Text("emotion_fear")
+            Button("emotion_fear") { /* Trigger Event */ }
             Text("emotion_isolation")
             Text("emotion_support")
             Text("emotion_sadness_emojis")
@@ -33,7 +33,7 @@ struct EscalationMatrixScreen: View {
             Text("threat_secrecy_emojis")
             Text("threat_bullying_emojis")
             Text("threat_grooming_emojis")
-            Text("threat_codes")
+            Button("threat_codes") { /* Trigger Event */ }
             Text("threat_parental")
             Text("threat_bullying")
             Text("Action")

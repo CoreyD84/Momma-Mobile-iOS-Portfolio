@@ -10,73 +10,51 @@ struct GuardianNotificationServiceScreen: View {
             Text("guardian_service")
             Text("GuardianNotificationService created")
             Text("No guardian logged in, service will wait for authentication")
-            Text("Service started")
+            Button("Service started") { /* Trigger Event */ }
             Text("Service destroyed, removing listeners")
             Text("Guardian Monitoring Service")
             Text("Keeps Momma Mobile monitoring active")
-            Text("momma_critical")
+            Button("momma_critical") { /* Trigger Event */ }
             Text("Critical Alerts")
             Text("Critical threats and FreezeReflex activations")
-            Text("momma_high")
+            Button("momma_high") { /* Trigger Event */ }
             Text("High Priority Alerts")
             Text("Blocked contact attempts and high severity threats")
-            Text("momma_medium")
+            Button("momma_medium") { /* Trigger Event */ }
             Text("Medium Priority Alerts")
             Text("Medium severity threats")
-            Text("momma_info")
-            Text("Information")
-            Text("General information and updates")
+            Button("momma_info") { /* Trigger Event */ }
+            Button("Information") { /* Trigger Event */ }
+            Button("General information and updates") { /* Trigger Event */ }
             Text("Momma Mobile Active")
             Text("Monitoring for threats and protecting your child")
-            Text("Setting up Firebase listeners for guardian: $guardianId")
-            Text("guardians/$guardianId/children")
-            Text("Error getting children list: ${error.message}")
-            Text("Setting up listeners for child: $childId")
-            Text("freezeReflex/$guardianId/$childId/conversations")
-            Text("FreezeReflex listener cancelled: ${error.message}")
-            Text("freezeReflex/$guardianId/$childId/blockedAttempts")
-            Text("Blocked attempts listener cancelled: ${error.message}")
-            Text("detections/$guardianId/$childId")
-            Text("Detections listener cancelled: ${error.message}")
-            Text("source")
-            Text("message")
-            Text("severity")
-            Text("category")
-            Text("timestamp")
-            Text("FreezeReflex activated for child $childId: $category from $source")
+            Button("source") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("category") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("Error handling FreezeReflex activation")
-            Text("source")
-            Text("message")
-            Text("timestamp")
-            Text("Blocked attempt for child $childId from $source")
+            Button("source") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("Error handling blocked attempt")
-            Text("category")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("HIGH")
-            Text("Threat detected for child $childId: $category ($severity)")
+            Button("category") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("HIGH") { /* Trigger Event */ }
             Text("Error handling threat detection")
-            Text("children/$childId/name")
-            Text("Your child")
-            Text("Your child")
-            Text("open_tab")
-            Text("momma_critical")
-            Text("🚨 FreezeReflex Activated - $childName")
-            Text("Blocked dangerous contact: $source")
-            Text("Category: $category\\nContact: $source\\n\\nMessage: $message\\n\\n✅ App frozen, contact blocked, auto-takeover enabled.")
-            Text("open_tab")
-            Text("momma_high")
-            Text("🚫 Blocked Contact Attempted - $childName")
-            Text("$source tried to message")
-            Text("Blocked contact: $source\\n\\nAttempted message: $message\\n\\n✅ Auto-blocked by FreezeReflex. MommaTakeover sent deflection response.")
-            Text("open_tab")
-            Text("CRITICAL")
-            Text("CRITICAL")
-            Text("CRITICAL")
-            Text("$icon Threat Detected - $childName")
-            Text("$category\\n\\n$message")
-            Text("CRITICAL")
+            Button("Your child") { /* Trigger Event */ }
+            Button("Your child") { /* Trigger Event */ }
+            Button("open_tab") { /* Trigger Event */ }
+            Button("momma_critical") { /* Trigger Event */ }
+            Button("open_tab") { /* Trigger Event */ }
+            Button("momma_high") { /* Trigger Event */ }
+            Button("open_tab") { /* Trigger Event */ }
+            Button("CRITICAL") { /* Trigger Event */ }
+            Button("CRITICAL") { /* Trigger Event */ }
+            Button("CRITICAL") { /* Trigger Event */ }
+            Button("CRITICAL") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("GuardianNotificationService")

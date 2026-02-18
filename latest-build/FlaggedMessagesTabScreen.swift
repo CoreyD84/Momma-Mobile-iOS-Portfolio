@@ -7,12 +7,12 @@ struct FlaggedMessagesTabScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FlaggedMessagesTab").font(.title).bold()
             Button("Action") { /* Trigger Event */ }
-            Text("I'm scared")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("sms")
-            Text("Messenger")
+            Button("I'm scared") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("sms") { /* Trigger Event */ }
+            Button("Messenger") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("FlaggedMessagesTab")

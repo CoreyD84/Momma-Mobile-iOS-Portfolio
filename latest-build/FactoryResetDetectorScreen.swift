@@ -7,47 +7,43 @@ struct FactoryResetDetectorScreen: View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FactoryResetDetector").font(.title).bold()
             Text("FactoryResetDetector")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("device_fingerprint")
-            Text("device_id")
+            Button("device_id") { /* Trigger Event */ }
             Text("installation_id")
             Text("First time installation - creating device fingerprint")
             Text("⚠️ Device ID mismatch - possible factory reset or device change")
             Text("installation_id")
             Text("⚠️ Installation ID missing - app data was cleared or factory reset")
             Text("✅ No factory reset detected")
-            Text("device_id")
+            Button("device_id") { /* Trigger Event */ }
             Text("installation_id")
             Text("first_install_time")
             Text("installation_id")
-            Text("Device fingerprint created: $installationId")
             Text("🚨 FACTORY RESET DETECTED!")
             Text("last_guardian_id")
-            Text("last_child_id")
+            Button("last_child_id") { /* Trigger Event */ }
             Text("No guardian info found - cannot alert")
             Text("last_guardian_id")
-            Text("last_child_id")
-            Text("last_linked_time")
-            Text("Guardian info saved to device storage")
-            Text("flags/$guardianId/$childId")
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("deviceId")
-            Text("actionRequired")
-            Text("recommendation")
+            Button("last_child_id") { /* Trigger Event */ }
+            Button("last_linked_time") { /* Trigger Event */ }
+            Button("Guardian info saved to device storage") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
+            Button("deviceId") { /* Trigger Event */ }
+            Button("actionRequired") { /* Trigger Event */ }
+            Button("recommendation") { /* Trigger Event */ }
             Text("✅ Guardian alerted of factory reset")
-            Text("❌ Failed to alert guardian: ${e.message}")
-            Text("logs/$guardianId/$childId")
-            Text("event")
-            Text("timestamp")
-            Text("severity")
-            Text("message")
-            Text("guardian_id")
-            Text("child_id")
+            Button("event") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
             Text("last_guardian_id")
-            Text("last_child_id")
+            Button("last_child_id") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("FactoryResetDetector")

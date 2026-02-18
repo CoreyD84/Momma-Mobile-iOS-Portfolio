@@ -6,46 +6,36 @@ struct ConsentModalScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: ConsentModal").font(.title).bold()
-            Text("ConsentModal")
-            Text("Action")
-            Text("discord")
-            Text("roblox")
-            Text("facebook")
-            Text("features/sms")
+            Button("ConsentModal") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("discord") { /* Trigger Event */ }
+            Button("roblox") { /* Trigger Event */ }
+            Button("facebook") { /* Trigger Event */ }
             Text("\\n\\nThis applies to all interactions on this platform, including private messages.")
-            Text("Consent for $platform")
-            Text("I Consent")
-            Text("Cancel")
-            Text("Revoke Consent for $platform")
-            Text("Are you sure you want to revoke consent? Nettie will no longer monitor this platform.")
-            Text("Revoke")
-            Text("Cancel")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("household_id")
+            Button("I Consent") { /* Trigger Event */ }
+            Button("Cancel") { /* Trigger Event */ }
+            Button("Are you sure you want to revoke consent? Nettie will no longer monitor this platform.") { /* Trigger Event */ }
+            Button("Revoke") { /* Trigger Event */ }
+            Button("Cancel") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("household_id") { /* Trigger Event */ }
             Text("⚠️ Missing guardian ID. Consent not logged.")
             Text("Consent could not be logged. Missing guardian info.")
-            Text("initial")
-            Text("consent_logs/$householdId/$guardianId")
-            Text("timestamp")
-            Text("consentGiven")
-            Text("ipAddress")
-            Text("version")
-            Text("userAgent")
-            Text("consentType")
-            Text("platform")
-            Text("✅ Consent logged for $platform: granted=$granted")
-            Text("❌ Failed to log consent: ${it.localizedMessage}")
-            Text("consent_status/$householdId/$guardianId")
-            Text("consentGiven")
-            Text("lastUpdated")
-            Text("version")
-            Text("platform")
-            Text("✅ Consent status updated for $platform")
-            Text("❌ Failed to update consent status: ${it.localizedMessage}")
-            Text("local")
-            Text("mobile-device")
-            Text("MommaNettie-Android/${android.os.Build.VERSION.RELEASE} (${android.os.Build.MODEL})")
+            Button("initial") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("consentGiven") { /* Trigger Event */ }
+            Button("ipAddress") { /* Trigger Event */ }
+            Button("version") { /* Trigger Event */ }
+            Button("userAgent") { /* Trigger Event */ }
+            Button("consentType") { /* Trigger Event */ }
+            Button("platform") { /* Trigger Event */ }
+            Button("consentGiven") { /* Trigger Event */ }
+            Button("lastUpdated") { /* Trigger Event */ }
+            Button("version") { /* Trigger Event */ }
+            Button("platform") { /* Trigger Event */ }
+            Button("local") { /* Trigger Event */ }
+            Button("mobile-device") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("ConsentModal")

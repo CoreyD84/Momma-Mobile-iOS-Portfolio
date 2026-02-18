@@ -6,62 +6,47 @@ struct PlatformControlTabScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: PlatformControlTab").font(.title).bold()
-            Text("Action")
-            Text("Action")
-            Text("Discord")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Discord") { /* Trigger Event */ }
             Text("📄 Share stories of online safety wins...")
-            Text("guardianLinks/$guardianId/linkedChildren")
             Text("PlatformControlTab")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId")
-            Text("guardianLinks/$guardianId/platformControls/$childId")
-            Text("nickname")
-            Text("dob")
-            Text("MM/dd/yyyy")
+            Button("nickname") { /* Trigger Event */ }
+            Button("dob") { /* Trigger Event */ }
             Text("PlatformControlTab")
             Text("PlatformControlTab")
-            Text("guardianLinks/$guardianId/emergencyContacts")
-            Text("police")
-            Text("school")
-            Text("sheriff")
+            Button("police") { /* Trigger Event */ }
+            Button("school") { /* Trigger Event */ }
+            Button("sheriff") { /* Trigger Event */ }
             Text("Emergency Contacts")
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
-            Text("guardianLinks/$guardianId/emergencyContacts/police")
             Text("Local Police Dept")
-            Text("(555) 555-1212")
+            Button("(555) 555-1212") { /* Trigger Event */ }
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
-            Text("guardianLinks/$guardianId/emergencyContacts/school")
             Text("Local School")
-            Text("(555) 555-3434")
+            Button("(555) 555-3434") { /* Trigger Event */ }
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
-            Text("guardianLinks/$guardianId/emergencyContacts/sheriff")
             Text("Sheriff")
-            Text("(555) 555-9876")
+            Button("(555) 555-9876") { /* Trigger Event */ }
             Text("Platform Controls")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Toggle("Action", isOn: .constant(true))
             Toggle("Action", isOn: .constant(true))
-            Text("guardianLinks/$guardianId/platformControls/$childId/$key")
-            Text("Failed to update $platform")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("Toggles above control both access and Nettie’s emotional radar per platform.")
-            Text("guardianLinks/$guardianId/linkedChildren/$childId")
-            Text("Child Profile")
-            Text("🎉 Happy Birthday, $nickname! 🎂")
+            Button("Child Profile") { /* Trigger Event */ }
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
-            Text("nickname")
+            Button("nickname") { /* Trigger Event */ }
             Text("Child's Name")
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
-            Text("dob")
-            Text("Date of Birth (MM/DD/YYYY)")
-            Text("e.g., 01/23/2010")
-            Text("guardian_profiles/$guardianId/consent/$childId")
-            Text("granted")
-            Text("ConsentSection")
+            Button("dob") { /* Trigger Event */ }
+            Button("granted") { /* Trigger Event */ }
+            Button("ConsentSection") { /* Trigger Event */ }
             Text("Consent & Emotional Monitoring")
             Text("By granting consent, you allow Nettie to:")
             Text("• Monitor emotional signals across supported platforms (SMS, Discord, Roblox, etc.)")
@@ -70,28 +55,24 @@ struct PlatformControlTabScreen: View {
             Text("• Respect boundaries and only intervene when safety is at risk")
             Text("• Log emotional spikes and matched phrases for review")
             Text("• Use mascot mood overlays to gently reflect your child’s emotional state")
-            Text("Action")
-            Text("This consent can be revoked at any time. Nettie will never override your authority — she’s here to support, not replace.")
-            Text("Consent currently granted")
-            Text("Action")
             Button("Action") { /* Trigger Event */ }
-            Text("guardian_profiles/$guardianId/consent/$childId")
-            Text("granted")
-            Text("timestamp")
-            Text("Consent granted for $childId")
+            Button("This consent can be revoked at any time. Nettie will never override your authority — she’s here to support, not replace.") { /* Trigger Event */ }
+            Text("Consent currently granted")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("granted") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
             Text("Failed to grant consent")
             Text("Missing guardian info — please sign in again")
-            Text("Grant Consent")
-            Text("Grant Consent")
+            Button("Grant Consent") { /* Trigger Event */ }
+            Button("Grant Consent") { /* Trigger Event */ }
             Button("Action") { /* Trigger Event */ }
-            Text("guardian_profiles/$guardianId/consent/$childId")
-            Text("granted")
-            Text("timestamp")
-            Text("Consent revoked for $childId")
-            Text("Failed to revoke consent")
+            Button("granted") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("Failed to revoke consent") { /* Trigger Event */ }
             Text("Missing guardian info — please sign in again")
-            Text("Revoke Consent")
-            Text("Revoke Consent")
+            Button("Revoke Consent") { /* Trigger Event */ }
+            Button("Revoke Consent") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("PlatformControlTab")

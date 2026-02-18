@@ -6,20 +6,17 @@ struct FreezeReflexFragmentScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Momma Mobile: FreezeReflexFragment").font(.title).bold()
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Blocked (${blockedContacts.size})")
-            Text("Conversations")
-            Text("Attempts (${blockedAttempts.size})")
-            Text("Settings")
+            Button("Conversations") { /* Trigger Event */ }
+            Button("Settings") { /* Trigger Event */ }
             ProgressView()
-            Text("Action")
-            Text("Error: $errorMessage")
-            Text("SMS")
+            Button("Action") { /* Trigger Event */ }
+            Button("SMS") { /* Trigger Event */ }
             Text("Block Contact Manually")
-            Text("Action")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("Enter the contact details to block proactively")
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
@@ -28,155 +25,140 @@ struct FreezeReflexFragmentScreen: View {
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
             Text("Platform")
-            Text("SMS")
-            Text("Action")
+            Button("SMS") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             TextField("Action", text: .constant(""))
                 .textFieldStyle(.roundedBorder)
             Text("Reason (Optional)")
             Text("e.g., Known predator, suspicious behavior")
             Button("Action") { /* Trigger Event */ }
             Text("Manually blocked by guardian")
-            Text("Block Contact")
-            Text("Cancel")
-            Text("Action")
+            Button("Block Contact") { /* Trigger Event */ }
+            Button("Cancel") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("🚨 FreezeReflex Protection")
             Text("Threats Blocked")
             Text("Contacts Blocked")
-            Text("Attempts Stopped")
+            Button("Attempts Stopped") { /* Trigger Event */ }
             Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("✅")
-            Text("Action")
-            Text("No Blocked Contacts")
-            Text("Action")
-            Text("All clear! No dangerous contacts detected yet.")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("CRITICAL")
-            Text("HIGH")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Reason: ${contact.reason}")
-            Text("Action")
-            Text("Blocked: ${contact.formattedTime}")
-            Text("View Message")
             Button("Action") { /* Trigger Event */ }
-            Text("Unblock")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Text("No Blocked Contacts")
+            Button("Action") { /* Trigger Event */ }
+            Text("All clear! No dangerous contacts detected yet.")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("CRITICAL") { /* Trigger Event */ }
+            Button("HIGH") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("View Message") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Unblock") { /* Trigger Event */ }
             Text("Original Message")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("From: ${contact.identifier}")
-            Text("Close")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Close") { /* Trigger Event */ }
             Text("No conversation logs yet")
-            Text("CRITICAL")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Category: ${conversation.category}")
-            Text("Action")
-            Text("App: ${conversation.sourceApp}")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("✅ ${conversation.action}")
-            Text("🛡️")
+            Button("CRITICAL") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("🛡️") { /* Trigger Event */ }
             Text("No Blocked Attempts")
             Text("Blocked contacts haven't tried to message yet.")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("🚫 Blocked Attempt")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("✅ Auto-blocked by FreezeReflex")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("FreezeReflex Settings")
             Text("Enable FreezeReflex")
             Text("Automatically freeze apps and block dangerous contacts")
-            Text("Auto-Takeover")
+            Button("Auto-Takeover") { /* Trigger Event */ }
             Text("Automatically respond to blocked contacts with deflection messages")
             Text("Push Notifications")
             Text("Receive instant alerts when FreezeReflex activates")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("Manual Block Contact")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
             Text("Proactively block a contact before they send dangerous messages")
             Button("Action") { /* Trigger Event */ }
             Text("Block Contact Manually")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Toggle("Action", isOn: .constant(true))
             Text("Please log in to view FreezeReflex data")
-            Text("freezeReflex/$guardianId")
             Text("blockedContacts")
-            Text("identifier")
-            Text("platform")
-            Text("reason")
-            Text("severity")
+            Button("identifier") { /* Trigger Event */ }
+            Button("platform") { /* Trigger Event */ }
+            Button("reason") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
             Text("originalMessage")
-            Text("blockedAt")
-            Text("guardianId")
+            Button("blockedAt") { /* Trigger Event */ }
+            Button("guardianId") { /* Trigger Event */ }
             Text("MMM dd, yyyy • h:mm a")
-            Text("Unknown time")
-            Text("conversations")
-            Text("source")
-            Text("message")
-            Text("severity")
-            Text("category")
-            Text("sourceApp")
-            Text("timestamp")
-            Text("action")
+            Button("Unknown time") { /* Trigger Event */ }
+            Button("conversations") { /* Trigger Event */ }
+            Button("source") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("category") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("action") { /* Trigger Event */ }
             Text("MMM dd, yyyy • h:mm a")
-            Text("Unknown time")
+            Button("Unknown time") { /* Trigger Event */ }
             Text("blockedAttempts")
-            Text("source")
-            Text("message")
-            Text("timestamp")
-            Text("type")
+            Button("source") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("type") { /* Trigger Event */ }
             Text("MMM dd, yyyy • h:mm a")
-            Text("Unknown time")
+            Button("Unknown time") { /* Trigger Event */ }
             Text("Please log in to block contacts")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("selected_child_id")
-            Text("guardianLinks/$guardianId/linkedChildren")
-            Text("No linked children found")
-            Text("Failed to get child info: ${error.message}")
-            Text("identifier")
-            Text("platform")
-            Text("reason")
-            Text("severity")
+            Button("No linked children found") { /* Trigger Event */ }
+            Button("identifier") { /* Trigger Event */ }
+            Button("platform") { /* Trigger Event */ }
+            Button("reason") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
             Text("originalMessage")
-            Text("blockedAt")
-            Text("childId")
-            Text("guardianId")
-            Text("freezeReflex/$guardianId/$childId/blockedContacts/$phoneNumber")
+            Button("blockedAt") { /* Trigger Event */ }
+            Button("childId") { /* Trigger Event */ }
+            Button("guardianId") { /* Trigger Event */ }
             Text("Contact blocked successfully")
-            Text("Failed to block contact: ${error.message}")
             Text("Unblock Contact?")
-            Text("Are you sure you want to unblock ${contact.identifier}? They will be able to message your child again.")
-            Text("Unblock")
-            Text("freezeReflex/$guardianId/${contact.childId}/blockedContacts/${contact.identifier}")
+            Button("Unblock") { /* Trigger Event */ }
             Text("Contact unblocked")
-            Text("Failed to unblock: ${error.message}")
-            Text("Cancel")
+            Button("Cancel") { /* Trigger Event */ }
             Spacer()
         }.padding()
         .navigationTitle("FreezeReflexFragment")

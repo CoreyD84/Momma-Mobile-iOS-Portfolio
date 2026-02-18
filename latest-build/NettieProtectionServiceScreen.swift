@@ -18,11 +18,11 @@ struct NettieProtectionServiceScreen: View {
             Text("com.enflick.android.TextNow")
             Text("com.enflick.android.textnow")
             Text("com.textnow.wrapper")
-            Text("com.whatsapp")
-            Text("com.facebook.orca")
+            Button("com.whatsapp") { /* Trigger Event */ }
+            Button("com.facebook.orca") { /* Trigger Event */ }
             Text("com.instagram.android")
             Text("com.snapchat.android")
-            Text("com.discord")
+            Button("com.discord") { /* Trigger Event */ }
             Text("org.telegram.messenger")
             Text("com.twitter.android")
             Text("com.zhiliaoapp.musically")
@@ -30,88 +30,53 @@ struct NettieProtectionServiceScreen: View {
             Text("com.samsung.android.messaging")
             Text("com.android.mms")
             Text("com.skype.raider")
-            Text("com.viber.voip")
+            Button("com.viber.voip") { /* Trigger Event */ }
             Text("us.zoom.videomeetings")
             Text("com.kik.android")
             Text("com.imo.android.imoim")
             Text("jp.naver.line.android")
-            Text("com.tencent.mm")
+            Button("com.tencent.mm") { /* Trigger Event */ }
             Text("com.airnettie.mobile.child.CRITICAL_THREAT")
-            Text("category")
-            Text("match")
-            Text("sourceApp")
+            Button("category") { /* Trigger Event */ }
+            Button("match") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
             Text("performHomeAction")
-            Text("🚨 Received CRITICAL threat broadcast: $match from $sourceApp")
             Text("✅ Performed global HOME action - app closed")
             Text("⚠️ Global HOME action failed")
-            Text("❌ Error performing HOME action: ${e.message}")
-            Text("Grooming")
+            Button("Grooming") { /* Trigger Event */ }
             Text("UnspecifiedRegisterReceiverFlag")
-            Text("nettie_prefs")
+            Button("nettie_prefs") { /* Trigger Event */ }
             Text("✅ Nettie Protection Service connected (Unified: AppScope + SafeScope + FeelScope)")
-            Text("child_id")
-            Text("guardian_id")
+            Button("child_id") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
             Text("⚠️ Child ID or Guardian ID not found in prefs - AppScope disabled")
-            Text("✅ Setting up AppScope listener for guardian ($guardianId) and child ($childId)")
-            Text("guardianLinks/$guardianId/appScope/$childId")
-            Text("enabled")
-            Text("blockedApps")
-            Text("📱 AppScope updated - Enabled: $appScopeEnabled, Blocked apps: $blockedApps")
-            Text("📱 Blocked apps list: ${blockedApps.joinToString(")
-            Text("❌ Failed to load AppScope settings: ${error.message}")
-            Text("🚫 AppScope BLOCKING app: $packageName")
-            Text("🚫 $packageName is blocked by your guardian")
-            Text("child_id")
-            Text("guardian_id")
+            Button("enabled") { /* Trigger Event */ }
+            Button("blockedApps") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
             Text("⚠️ Child ID or Guardian ID not found in prefs - SafeScope disabled")
-            Text("✅ Setting up SafeScope listener for guardian ($guardianId) and child ($childId)")
-            Text("guardianLinks/$guardianId/safeScope/$childId")
-            Text("enabled")
-            Text("🛡️ SafeScope updated - Enabled: $safeScopeEnabled, Blocked keywords: ${blockedKeywords.size}")
-            Text("❌ Failed to load SafeScope settings: ${error.message}")
-            Text("Extracted URL: $url")
-            Text("🚫 SafeScope BLOCKING. Reason: Found keyword '$matchedKeyword' in URL: $url")
+            Button("enabled") { /* Trigger Event */ }
             Text("Error checking browser URL")
-            Text(".com")
-            Text(".net")
-            Text(".org")
-            Text(".xxx")
-            Text(".tv")
-            Text(".cam")
-            Text("http://")
-            Text("http://$cleanUrl")
-            Text("q=")
-            Text("com.android.chrome:id/url_bar")
-            Text("org.mozilla.firefox:id/mozac_browser_toolbar_url_view")
-            Text("com.opera.browser:id/url_field")
-            Text("com.duckduckgo.mobile.android:id/omnibarTextInput")
-            Text("com.sec.android.app.sbrowser:id/location_bar_edit_text")
-            Text("Action")
-            Text("com.google.android.googlequicksearchbox:id/search_box_text_input")
-            Text("com.google.android.googlequicksearchbox:id/search_edit_frame")
-            Text("Action")
-            Text("https://www.google.com/search?q=$it")
-            Text("Action")
-            Text("http://")
-            Text("Action")
-            Text("http://")
-            Text("http://")
-            Text("http://$cleanUrl")
-            Text("www.")
+            Button(".net") { /* Trigger Event */ }
+            Button(".org") { /* Trigger Event */ }
+            Button(".xxx") { /* Trigger Event */ }
+            Button(".tv") { /* Trigger Event */ }
+            Button(".cam") { /* Trigger Event */ }
+            Button("q=") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("www.") { /* Trigger Event */ }
             Text("✅ Setting up FeelScope (message monitoring)")
             Text("com.airnettie.mobile.child.CRITICAL_THREAT")
             Text("📡 Registered critical threat broadcast receiver")
             Text("📚 Emotional patterns loaded. Scanner is active.")
-            Text("Action")
-            Text(" ")
-            Text("Action")
-            Text(" ")
-            Text("📝 Scanning text from $sourceApp")
-            Text("🚨 CRITICAL threat detected: '${result.match}'. Initiating MommaTakeover.")
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
             Text("❗️ Critical threat detected but takeover is on cooldown.")
             Text("⚠️ Nettie Protection Service interrupted")
             Text("📡 Unregistered critical threat broadcast receiver")
-            Text("Failed to unregister receiver: ${e.message}")
             Text("Nettie Protection Service destroyed")
             Spacer()
         }.padding()

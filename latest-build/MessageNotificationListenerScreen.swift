@@ -11,11 +11,11 @@ struct MessageNotificationListenerScreen: View {
             Text("com.enflick.android.TextNow")
             Text("com.enflick.android.textnow")
             Text("com.textnow.wrapper")
-            Text("com.whatsapp")
-            Text("com.facebook.orca")
+            Button("com.whatsapp") { /* Trigger Event */ }
+            Button("com.facebook.orca") { /* Trigger Event */ }
             Text("com.instagram.android")
             Text("com.snapchat.android")
-            Text("com.discord")
+            Button("com.discord") { /* Trigger Event */ }
             Text("org.telegram.messenger")
             Text("com.twitter.android")
             Text("com.zhiliaoapp.musically")
@@ -23,50 +23,33 @@ struct MessageNotificationListenerScreen: View {
             Text("com.samsung.android.messaging")
             Text("com.android.mms")
             Text("com.skype.raider")
-            Text("com.viber.voip")
+            Button("com.viber.voip") { /* Trigger Event */ }
             Text("us.zoom.videomeetings")
             Text("com.kik.android")
             Text("com.imo.android.imoim")
             Text("jp.naver.line.android")
-            Text("com.tencent.mm")
-            Text("📨 Notification received from: $packageName")
-            Text("⏭️ Skipping non-messaging app: $packageName")
-            Text("✅ Processing messaging app: $packageName")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("Action")
-            Text("⏭️ Skipping notification with insufficient text from $packageName")
-            Text("📬 Notification from $packageName")
-            Text("📬 Title: '$title'")
-            Text("📬 Message: '$messageText'")
-            Text("❌ Error processing notification from $packageName: ${e.message}")
-            Text("🔍 Scanning message: '$normalizedMessage'")
-            Text("🚨 Threats detected in notification from $sourceApp")
-            Text("⚠️ ${detection.meta.category} [${detection.meta.severity}]: ${detection.match}")
-            Text("🟢 No threats detected in notification from $sourceApp")
-            Text("nettie_prefs")
-            Text("guardian_id")
-            Text("child_id")
-            Text("❌ Missing guardianId/childId — cannot save detection")
-            Text("feelscope/detections/$guardianId/$childId")
-            Text("message")
-            Text("category")
-            Text("severity")
-            Text("matchedPhrases")
-            Text("source")
-            Text("sourceApp")
-            Text("timestamp")
-            Text("isEscalated")
-            Text("✅ Detection saved to Firebase")
-            Text("❌ Failed to save detection: ${e.message}")
-            Text("❌ Error saving detection to Firebase: ${e.message}")
+            Button("com.tencent.mm") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("Action") { /* Trigger Event */ }
+            Button("nettie_prefs") { /* Trigger Event */ }
+            Button("guardian_id") { /* Trigger Event */ }
+            Button("child_id") { /* Trigger Event */ }
+            Button("message") { /* Trigger Event */ }
+            Button("category") { /* Trigger Event */ }
+            Button("severity") { /* Trigger Event */ }
+            Button("matchedPhrases") { /* Trigger Event */ }
+            Button("source") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
+            Button("timestamp") { /* Trigger Event */ }
+            Button("isEscalated") { /* Trigger Event */ }
+            Button("✅ Detection saved to Firebase") { /* Trigger Event */ }
             Text("❗️ CRITICAL threat detected but response is on cooldown")
-            Text("🚨 CRITICAL THREAT DETECTED: '${detection.match}' from $sourceApp")
             Text("🚨 Initiating emergency response...")
-            Text("category")
-            Text("match")
-            Text("sourceApp")
+            Button("category") { /* Trigger Event */ }
+            Button("match") { /* Trigger Event */ }
+            Button("sourceApp") { /* Trigger Event */ }
             Text("performHomeAction")
             Text("📡 Broadcast sent to FeelScopeService for emergency response")
             Text("✅ Notification Listener connected")
