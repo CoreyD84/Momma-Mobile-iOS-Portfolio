@@ -1,5 +1,13 @@
 import Foundation
 
 struct ViewModelFactory {
-    // No ViewModels detected for factory generation.
+    @MainActor
+    static func makeSetupViewModel() -> SetupViewModel {
+        return SetupViewModel()
+    }
+
+    @MainActor
+    static func makeSubscriptionExpiredViewModel() -> SubscriptionExpiredViewModel {
+        return SubscriptionExpiredViewModel()
+    }
 }

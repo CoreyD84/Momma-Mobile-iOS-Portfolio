@@ -1,5 +1,4 @@
 import Foundation
 
-enum CodexiaRoute: Hashable {
-    case financialDashboard
-}
+// No navigation routes detected in IR.
+enum CodexiaRoute: Hashable {}
