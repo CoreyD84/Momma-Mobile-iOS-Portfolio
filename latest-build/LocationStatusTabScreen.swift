@@ -17,7 +17,6 @@ struct LocationStatusTabScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                ProgressView()
                 Button(action: {}) {
                     HStack {
                         Text("Action")
@@ -111,7 +110,6 @@ struct LocationStatusTabScreen: View {
                     .cornerRadius(8)
                 }
                 Text("Waiting for location data...").font(.subheadline).foregroundColor(.secondary)
-                ProgressView()
                 Button(action: {}) {
                     HStack {
                         Text("Action")

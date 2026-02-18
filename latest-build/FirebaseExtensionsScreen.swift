@@ -8,13 +8,8 @@ struct FirebaseExtensionsScreen: View {
         VStack {
             Text("MOMMA MOBILE LIVE").font(.caption).foregroundColor(.red)
             Image(systemName: "checkmark.shield.fill")
-                .font(.system(size: 60))
-                .foregroundColor(.blue)
-            Text("FirebaseExtensions Logic Active")
-                .font(.headline)
-            Text("Architecture: MVI + Dependency Injection")
-                .font(.caption)
-                .foregroundColor(.gray)
+                .font(.system(size: 60)).foregroundColor(.blue)
+            Text("FirebaseExtensions Logic Active").font(.headline)
         }
         .navigationTitle("FirebaseExtensions")
     }

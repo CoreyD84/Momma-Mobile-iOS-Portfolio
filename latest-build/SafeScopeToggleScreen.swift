@@ -61,7 +61,6 @@ struct SafeScopeToggleScreen: View {
                     .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
-                ProgressView()
                 Text("Loading from Firebase...").font(.subheadline).foregroundColor(.secondary)
                 Toggle("Action", isOn: .constant(true)).padding(.vertical, 5)
                 NavigationLink(destination: SafeScopeScreen()) {

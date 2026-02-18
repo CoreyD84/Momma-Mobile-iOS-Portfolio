@@ -17,7 +17,6 @@ struct ChildSelectorScreen: View {
                     .background(Color.blue.opacity(0.1))
                     .cornerRadius(8)
                 }
-                ProgressView()
                 Button(action: {}) {
                     HStack {
                         Text("Action")

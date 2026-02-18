@@ -58,7 +58,6 @@ struct MascotMoodTabScreen: View {
                     .background(Color.green.opacity(0.1))
                     .cornerRadius(8)
                 }
-                ProgressView()
                 Text("No mood history has been recorded yet.").font(.subheadline).foregroundColor(.secondary)
                 Button(action: {}) {
                     HStack {
