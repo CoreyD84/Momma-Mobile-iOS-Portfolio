@@ -1,17 +1,37 @@
 import SwiftUI
 
 struct ColorScreen: View {
+    @StateObject private var viewModel = ColorViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("Color").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Color")
+            Button(action: { }) {
+                Text("SoulLink")
             }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("Color")
+            Text("DeepIndigo")
+            Text("MysticPurple")
+            Text("SoulGold")
+            Text("MoonlightBlue")
+            Text("EtherealWhite")
+            Text("SoftLavender")
+            Text("TwilightGray")
+            Text("Semantic")
+            Text("SuccessGreen")
+            Text("WarningAmber")
+            Text("ErrorRose")
+            Text("InfoCyan")
+            Text("Gradient")
+            Text("GradientStart")
+            Text("GradientMiddle")
+            Text("GradientEnd")
+            Text("Light")
+            Text("LightBackground")
+            Text("LightSurface")
+            Text("LightPrimary")
+            Text("LightOnPrimary")
+                .navigationTitle("Color")
+        }
+        .onAppear { viewModel.onEvent(ColorEvent.onAppear) }
     }
 }

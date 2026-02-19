@@ -1,53 +1,58 @@
 import SwiftUI
 
 struct QuizScorerScreen: View {
+    @StateObject private var viewModel = QuizScorerViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("QuizScorer").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text(" } ?: ")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("QuizQuestion")
+            Text("QuizResult")
+            Text("Inject")
+            Text("Singleton")
+            Text("Scores")
+            Text("Singleton")
+            VStack {
             }
-            Button(action: {}) {
-                Text("CONFLICT")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Calculate")
+            VStack {
             }
-            Button(action: {}) {
-                Text("VALUE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("QuizResult")
+            Text("Emotional")
+            Text("QuizResult")
+            Text(" } ?: ")
+            Text("Calculate")
+            VStack {
             }
-            Button(action: {}) {
-                Text("FEEL")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Weight")
+            Text("conflict")
+            Text("value")
+            Text("feel")
+            Text("conflict")
+            Text("value")
+            Text("feel")
+            Text("Adjust")
+            Text("CompatibilityScore")
+            Text("QuizResult")
+            VStack {
             }
-            Button(action: {}) {
-                Text("CONFLICT")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Quiz")
+            Text("Compare")
+            Text("CompatibilityScore")
+            Text("QuizResult")
+            Text("CompatibilityScore")
+            Text("QuizResult")
+            VStack {
             }
-            Button(action: {}) {
-                Text("VALUE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("FEEL")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("QuizScorer")
+            Text("CandidateComparison")
+            Text("Within")
+            Text("CandidateComparison")
+            Text("Double")
+            Text("Double")
+            Text("Int")
+            Text("Double")
+            Text("Boolean")
+                .navigationTitle("QuizScorer")
+        }
+        .onAppear { viewModel.onEvent(QuizScorerEvent.onAppear) }
     }
 }

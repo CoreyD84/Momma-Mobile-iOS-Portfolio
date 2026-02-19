@@ -1,71 +1,25 @@
 import SwiftUI
 
 struct SoulLinkMessageScreen: View {
+    @StateObject private var viewModel = SoulLinkMessageViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("SoulLinkMessage").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            VStack {
             }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("SOULLINK")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("")
+            VStack {
             }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("")
+            VStack {
             }
-            Button(action: {}) {
-                Text("SOULLINK")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("SoulLinkMessage")
+            Text("")
+                .navigationTitle("SoulLinkMessage")
+        }
+        .onAppear { viewModel.onEvent(SoulLinkMessageEvent.onAppear) }
     }
 }

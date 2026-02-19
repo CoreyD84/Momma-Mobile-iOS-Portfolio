@@ -1,87 +1,96 @@
 import SwiftUI
 
 struct MatchingServiceScreen: View {
+    @StateObject private var viewModel = MatchingServiceViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("MatchingService").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("USER NOT FOUND")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("CompatibilityVector")
+            Text("User")
+            Text("CompatibilityEngine")
+            Text("CompatibilityScore")
+            Text("Inject")
+            Text("Singleton")
+            Text("Service")
+            Text("Singleton")
+            Text("MatchingService")
+            Text("CompatibilityEngine")
+            Text("Find")
+            VStack {
             }
-            Text("Compatibility vector not found. Please complete the questionnaire.").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Failed to search for matches").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("No potential matches found in your area").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("No compatible matches found").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("VALUES")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Get")
+            Text("Result")
+            Text("User not found")
+            Text("Get")
+            Text("Result")
+            Text("Compatibility vector not found. Please complete the questionnaire.")
+            Text("Search")
+            Text("Result")
+            Text("Failed to search for matches")
+            Text("No potential matches found in your area")
+            Text("Get")
+            Text("String")
+            Text("No compatible matches found")
+            Text("Rank")
+            Text("Result")
+            Text("Build")
+            Text("MatchCandidate")
+            Text("Result")
+            VStack {
             }
-            Button(action: {}) {
-                Text("CONFLICT RESOLUTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Result")
+            Text("Generate")
+            VStack {
             }
-            Button(action: {}) {
-                Text("FUTURE VISION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Determine")
+            Text("values")
+            Text("conflict resolution")
+            Text("future vision")
+            Text("communication")
+            Text("philosophy")
+            Text("connection")
+            Text("Generate")
+            Text("I sense a deep potential here.")
+            Text("This connection holds genuine promise.")
+            Text("There's real potential to explore.")
+            Text("Growth is possible with effort.")
+            Text("Generate")
+            VStack {
             }
-            Button(action: {}) {
-                Text("COMMUNICATION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("CompatibilityBreakdown")
+            VStack {
             }
-            Button(action: {}) {
-                Text("PHILOSOPHY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("String")
+            Text("Shared core values")
+            Text("Compatible conflict styles")
+            Text("Aligned life goals")
+            Text("Natural communication flow")
+            Text("Similar worldviews")
+            Text("Potential for growth together")
+            VStack {
             }
-            Button(action: {}) {
-                Text("CONNECTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("I sense a deep potential here.").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("This connection holds genuine promise.").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("There's real potential to explore.").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Growth is possible with effort.").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("SHARED CORE VALUES")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("Compatible conflict styles").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("ALIGNED LIFE GOALS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("Natural communication flow").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("SIMILAR WORLDVIEWS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("Potential for growth together").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Different core values").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Contrasting conflict approaches").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Divergent life paths").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Communication style differences").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Different worldviews").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("MatchingService")
+            Text("String")
+            Text("Different core values")
+            Text("Contrasting conflict approaches")
+            Text("Divergent life paths")
+            Text("Communication style differences")
+            Text("Different worldviews")
+            Text("MatchCandidate")
+            Text("User")
+            Text("CompatibilityScore")
+            Text("String")
+            Text("Detailed")
+            Text("CompatibilityBreakdown")
+            Text("Int")
+            Text("Int")
+            Text("Int")
+            Text("Int")
+            Text("Int")
+            Text("Int")
+            Text("List")
+            Text("List")
+                .navigationTitle("MatchingService")
+        }
+        .onAppear { viewModel.onEvent(MatchingServiceEvent.onAppear) }
     }
 }

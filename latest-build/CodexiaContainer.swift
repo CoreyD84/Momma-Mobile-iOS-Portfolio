@@ -4,7 +4,14 @@ import Foundation
 class CodexiaContainer: ObservableObject {
     static let shared = CodexiaContainer()
 
-
+    let authRepository: AuthRepository
+    let compatibilityRepository: CompatibilityRepository
+    let matchRepository: MatchRepository
+    let messageRepository: MessageRepository
+    let notificationRepository: NotificationRepository
+    let paymentRepository: PaymentRepository
+    let photoRepository: PhotoRepository
+    let userRepository: UserRepository
     let appModuleViewModel: AppModuleViewModel
     let awaitingPartnerViewModel: AwaitingPartnerViewModel
     let billingManagerViewModel: BillingManagerViewModel
@@ -62,7 +69,14 @@ class CodexiaContainer: ObservableObject {
     let welcomeViewModel: WelcomeViewModel
 
     private init() {
-
+        self.authRepository = AuthRepositoryImpl.shared
+        self.compatibilityRepository = CompatibilityRepositoryImpl.shared
+        self.matchRepository = MatchRepositoryImpl.shared
+        self.messageRepository = MessageRepositoryImpl.shared
+        self.notificationRepository = NotificationRepositoryImpl.shared
+        self.paymentRepository = PaymentRepositoryImpl.shared
+        self.photoRepository = PhotoRepositoryImpl.shared
+        self.userRepository = UserRepositoryImpl.shared
         self.appModuleViewModel = AppModuleViewModelFactory.make()
         self.awaitingPartnerViewModel = AwaitingPartnerViewModelFactory.make()
         self.billingManagerViewModel = BillingManagerViewModelFactory.make()

@@ -1,44 +1,95 @@
 import SwiftUI
 
 struct LocationServiceScreen: View {
+    @StateObject private var viewModel = LocationServiceViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("LocationService").font(.largeTitle).bold().padding(.bottom, 10)
-            Text("Location permission not granted").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Unable to get current location").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("UNKNOWN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Manifest")
+            Text("Context")
+            Text("PackageManager")
+            Text("Address")
+            Text("Geocoder")
+            Text("Build")
+            Text("ContextCompat")
+            Text("FusedLocationProviderClient")
+            Text("LocationServices")
+            Text("Priority")
+            Text("CancellationTokenSource")
+            Text("Location")
+            Text("ApplicationContext")
+            Text("Locale")
+            Text("Inject")
+            Text("Singleton")
+            Text("Singleton")
+            Text("LocationService")
+            Text("ApplicationContext")
+            Text("FusedLocationProviderClient")
+            Text("LocationServices")
+            Toggle("Check", isOn: .constant(false))
+            VStack {
             }
-            Button(action: {}) {
-                Text("UNKNOWN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("ContextCompat")
+            Text("Manifest")
+            Text("PackageManager")
+            Text("ContextCompat")
+            Text("Manifest")
+            Text("PackageManager")
+            Text("Get")
+            VStack {
             }
-            Button(action: {}) {
-                Text("UNKNOWN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Location permission not granted")
+            Text("Get")
+            Text("CancellationTokenSource")
+            Text("Priority")
+            Text("Unable to get current location")
+            Text("Convert")
+            Text("Location")
+            Text("Unknown")
+            Text("Unknown")
+            Text("Unknown")
+            Text("Result")
+            VStack {
             }
-            Button(action: {}) {
-                Text("DEPRECATION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Result")
+            Text("Get")
+            Text("Double")
+            Text("Double")
+            VStack {
             }
-            Text("Less than 1 mile away").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("1 MILE AWAY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Geocoder")
+            VStack {
             }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("LocationService")
+            Text("Android")
+            Text("Older")
+            Text("DEPRECATION")
+            VStack {
+            }
+            Text("Calculate")
+            VStack {
+            }
+            Text("Math")
+            Text("Math")
+            Text("Math")
+            Text("Math")
+            Text("Math")
+            Text("Math")
+            Text("Math")
+            Text("Math")
+            Toggle("Check", isOn: .constant(false))
+            Text("Location")
+            Text("Location")
+            Text("Int")
+            VStack {
+            }
+            Text("If")
+            Text("Format")
+            VStack {
+            }
+            Text("Less than 1 mile away")
+            Text("1 mile away")
+                .navigationTitle("LocationService")
+        }
+        .onAppear { viewModel.onEvent(LocationServiceEvent.onAppear) }
     }
 }

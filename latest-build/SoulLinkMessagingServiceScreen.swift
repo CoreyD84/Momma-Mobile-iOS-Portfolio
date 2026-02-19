@@ -1,120 +1,84 @@
 import SwiftUI
 
 struct SoulLinkMessagingServiceScreen: View {
+    @StateObject private var viewModel = SoulLinkMessagingServiceViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("SoulLinkMessagingService").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("SOULLINKMESSAGING")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("NotificationChannel")
+            Text("NotificationManager")
+            Text("PendingIntent")
+            Text("Context")
+            Text("Intent")
+            Text("Build")
+            Text("NotificationCompat")
+            Text("FirebaseMessagingService")
+            Text("RemoteMessage")
+            Text("AndroidEntryPoint")
+            Text("CoroutineScope")
+            Text("Dispatchers")
+            Text("SupervisorJob")
+            Text("Inject")
+            Text("AndroidEntryPoint")
+            Button(action: { }) {
+                Text("SoulLinkMessagingService")
             }
-            Button(action: {}) {
-                Text("SOULLINK NOTIFICATIONS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Inject")
+            Text("CoroutineScope")
+            Text("soullink_notifications")
+            Button(action: { }) {
+                Text("SoulLink Notifications")
             }
-            Button(action: {}) {
-                Text("SOULLINK NOTIFICATIONS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("FCM TOKEN SAVED TO FIRESTORE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Save")
+            VStack {
             }
-            Button(action: {}) {
-                Text("FAILED TO SAVE FCM TOKEN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("SOULLINK")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Handle")
+            Button(action: { }) {
+                Text("SoulLink")
             }
-            Button(action: {}) {
-                Text("TYPE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Handle")
+            VStack {
             }
-            Text("candidate_invitation").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("INVITATIONID")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("type")
+            Text("candidate_invitation")
+            Text("invitationId")
+            Text("initiatorName")
+            Text("You've Been Chosen! ✨")
+            Text("match_ready")
+            Text("matchId")
+            Text("The Three Are Ready! 🎉")
+            Text("Three candidates have accepted. Time to see your matches!")
+            Text("candidate_accepted")
+            Text("candidateName")
+            Text("acceptedCount")
+            Text("Candidate Accepted! 🎊")
+            Text("candidate_declined")
+            Text("candidateName")
+            Text("Searching for Your Match")
+            Text("We're inviting another great candidate for you!")
+            VStack {
             }
-            Button(action: {}) {
-                Text("INITIATORNAME")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Text("You've Been Chosen! ✨").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("MATCH READY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Intent")
+            Text("Add")
+            Text("PendingIntent")
+            Text("PendingIntent")
+            Text("NotificationCompat")
+            Text("NotificationCompat")
+            Text("Context")
+            VStack {
             }
-            Button(action: {}) {
-                Text("MATCHID")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("The Three Are Ready! 🎉").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Three candidates have accepted. Time to see your matches!").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("CANDIDATE ACCEPTED")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("CANDIDATENAME")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACCEPTEDCOUNT")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("Candidate Accepted! 🎊").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("CANDIDATE DECLINED")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("CANDIDATENAME")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("Searching for Your Match").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("We're inviting another great candidate for you!").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("NOTIFICATIONS FOR MATCH INVITATIONS AND UPDATES")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("SoulLinkMessagingService")
+            Text("NotificationChannel")
+            Text("NotificationManager")
+            Text("Notifications for match invitations and updates")
+            Text("Context")
+                .navigationTitle("SoulLinkMessagingService")
+        }
+        .onAppear { viewModel.onEvent(SoulLinkMessagingServiceEvent.onAppear) }
     }
 }

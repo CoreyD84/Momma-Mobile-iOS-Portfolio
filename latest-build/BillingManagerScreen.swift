@@ -1,54 +1,108 @@
 import SwiftUI
 
 struct BillingManagerScreen: View {
+    @StateObject private var viewModel = BillingManagerViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("BillingManager").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("DESTINY SEARCH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Activity")
+            Text("Context")
+            Text("ProductDetails")
+            Text("ApplicationContext")
+            Text("MutableStateFlow")
+            Text("StateFlow")
+            Text("Inject")
+            Text("Singleton")
+            Text("Singleton")
+            Text("BillingManager")
+            Text("ApplicationContext")
+            VStack {
             }
-            Button(action: {}) {
-                Text("USD")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("BillingClient")
+            Text("MutableStateFlow")
+            Text("StateFlow")
+            Text("MutableStateFlow")
+            Text("StateFlow")
+            Text("BillingClient")
+            VStack {
             }
-            Button(action: {}) {
-                Text("DESTINY SEARCH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("DESTINY SEARCH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Text("Unlock your three most compatible soul matches").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("DESTINY SEARCH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("BillingState")
+            Text("BillingState")
+            Text("BillingState")
+            Text("Try")
+            Text("QueryProductDetailsParams")
+            Text("destiny_search")
+            Text("BillingClient")
+            Text("QueryProductDetailsParams")
+            VStack {
             }
-            Button(action: {}) {
-                Text("DESTINY SEARCH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("USD")
+            Text("ProductDetails")
+            Text("destiny_search")
+            Text("Destiny Search")
+            Text("Unlock your three most compatible soul matches")
+            Text("QueryPurchasesParams")
+            Text("BillingClient")
+            VStack {
             }
-            Button(action: {}) {
-                Text("PRODUCT NOT FOUND")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("destiny_search")
+            Text("Purchase")
+            Text("BillingState")
+            Text("Acknowledge")
+            VStack {
             }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("BillingManager")
+            Text("BillingFlowParams")
+            Text("BillingFlowParams")
+            VStack {
+            }
+            Text("BillingState")
+            Text("QueryProductDetailsParams")
+            Text("destiny_search")
+            Text("BillingClient")
+            Text("QueryProductDetailsParams")
+            VStack {
+            }
+            Text("Product not found")
+            Text("BillingState")
+            Text("BillingResult")
+            Text("MutableList")
+            VStack {
+            }
+            VStack {
+            }
+            Text("BillingState")
+            Text("Acknowledge")
+            VStack {
+            }
+            Text("BillingState")
+            VStack {
+            }
+            Text("BillingState")
+            Text("BillingState")
+            VStack {
+            }
+            Text("AcknowledgePurchaseParams")
+            VStack {
+            }
+            Text("Purchase")
+            Text("BillingState")
+            VStack {
+            }
+            Text("Idle")
+            Text("Loading")
+            Text("Connected")
+            Text("Disconnected")
+            Text("PurchasePending")
+            Text("PurchaseCancelled")
+            Text("PurchaseSuccess")
+            Text("AlreadyPurchased")
+            Text("Error")
+                .navigationTitle("BillingManager")
+        }
+        .onAppear { viewModel.onEvent(BillingManagerEvent.onAppear) }
     }
 }

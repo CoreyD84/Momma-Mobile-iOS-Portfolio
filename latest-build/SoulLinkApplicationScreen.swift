@@ -1,11 +1,21 @@
 import SwiftUI
 
 struct SoulLinkApplicationScreen: View {
+    @StateObject private var viewModel = SoulLinkApplicationViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("SoulLinkApplication").font(.largeTitle).bold().padding(.bottom, 10)
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("SoulLinkApplication")
+        NavigationView {
+            Text("Application")
+            Text("FirebaseApp")
+            Text("HiltAndroidApp")
+            Text("HiltAndroidApp")
+            Button(action: { }) {
+                Text("SoulLinkApplication")
+            }
+            Text("Initialize")
+            Text("FirebaseApp")
+                .navigationTitle("SoulLinkApplication")
+        }
+        .onAppear { viewModel.onEvent(SoulLinkApplicationEvent.onAppear) }
     }
 }

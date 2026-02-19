@@ -1,372 +1,141 @@
 import SwiftUI
 
 struct FinalSelectionScreen: View {
+    @StateObject private var viewModel = FinalSelectionViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("FinalSelection").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            VStack {
             }
-            Button(action: {}) {
-                Text("AWAITING PARTNER")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("FINAL SELECTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            ProgressView()
+            VStack {
             }
-            Text("pulse").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("scale").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Text("✨ Analyzing Your Matches ✨").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("🔮 The Decision is Made 🔮").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("REVEAL MY MATCH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("💫 YOUR MATCH 💫")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("CONTINUE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("📊 Analysis Breakdown").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("BASE COMPATIBILITY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("QUIZ ACCURACY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("EMOTIONAL ALIGNMENT")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("OVERALL SCORE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("BASE COMPATIBILITY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("QUIZ ACCURACY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("EMOTIONAL ALIGNMENT")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("OVERALL SCORE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("Key Decision Factors").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Action").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("NOT SELECTED")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("SELECTION ERROR")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("TRY AGAIN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("GO BACK")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Image("")
+            Spacer()
+            Text("")
+            Spacer()
+            Spacer()
+            Text("")
+            Spacer()
+            VStack {
             }
             Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("FinalSelection")
+            VStack {
+            }
+            Text("")
+            Spacer()
+            Text("")
+            VStack {
+            }
+            Spacer()
+            VStack {
+            }
+            Image("")
+            Spacer()
+            Text("")
+            Spacer()
+            Spacer()
+            VStack {
+            }
+            Spacer()
+            Spacer()
+            Button(action: { }) {
+                Text(" ")
+            }
+            Text("")
+            Spacer()
+            VStack {
+            }
+            Text("")
+            Spacer()
+            Text("")
+            Spacer()
+            Text("")
+            VStack {
+            }
+            Spacer()
+            Text("")
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Button(action: { }) {
+                Text(" ")
+            }
+            Text("Continue")
+            Spacer()
+            VStack {
+            }
+            Image("")
+            Spacer()
+            Text("")
+            Spacer()
+            Text("")
+            Spacer()
+            VStack {
+            }
+            Text("")
+            Spacer()
+            Text("")
+            VStack {
+            }
+            Text("")
+            Spacer()
+            Text("")
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Text("")
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Text("")
+            Spacer()
+            Spacer()
+            VStack {
+            }
+            Text("")
+            Text("")
+            VStack {
+            }
+            Image("")
+            Spacer()
+            VStack {
+            }
+            Text("")
+            Text("")
+            VStack {
+            }
+            Text("")
+            Spacer()
+            Text("")
+            Spacer()
+            Text("")
+            VStack {
+            }
+            VStack {
+            }
+            Text("")
+            Spacer()
+            Text("")
+            Spacer()
+            Button(action: { }) {
+                Text(" ")
+            }
+            Text("Try Again")
+            Spacer()
+            Text("Go Back")
+                .navigationTitle("FinalSelection")
+        }
+        .onAppear { viewModel.onEvent(FinalSelectionEvent.onAppear) }
     }
 }

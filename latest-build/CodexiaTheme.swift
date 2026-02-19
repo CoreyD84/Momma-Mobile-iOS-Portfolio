@@ -1,24 +1,10 @@
 import SwiftUI
-#if canImport(UIKit)
-import UIKit
-#endif
 
 struct CodexiaTheme {
-    static let primary = Color(hex: "#007AFF")
-    static let label = Color(UIColor.label)
-    #if os(iOS)
-    static let background = Color(UIColor.systemBackground)
-    static let secondaryBackground = Color(UIColor.secondarySystemBackground)
-    #else
-    static let background = Color.white
-    static let secondaryBackground = Color.gray.opacity(0.1)
-    #endif
-
-    struct Components {
-        static let cornerRadius: CGFloat = 12
-        static let padding: CGFloat = 16
-        static let shadowRadius: CGFloat = 4
-    }
+    static let primary = Color(hex: "#FFD700")
+    static let label = Color.white
+    static let background = Color(red: 0.05, green: 0.0, blue: 0.12)
+    static let card = Color(red: 0.15, green: 0.1, blue: 0.25)
 }
 
 extension Color {
@@ -26,22 +12,21 @@ extension Color {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
         Scanner(string: hex).scanHexInt64(&int)
-        let a, r, g, b: UInt64
+        let r, g, b: UInt64
         switch hex.count {
-        case 3: (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6: (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8: (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
-        default: (a, r, g, b) = (1, 1, 1, 0)
+        case 3: (r, g, b) = ((int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
+        case 6: (r, g, b) = (int >> 16, int >> 8 & 0xFF, int & 0xFF)
+        default: (r, g, b) = (255, 215, 0)
         }
-        self.init(.sRGB, red: Double(r) / 255, green: Double(g) / 255, blue: Double(b) / 255, opacity: Double(a) / 255)
+        self.init(.sRGB, red: Double(r) / 255, green: Double(g) / 255, blue: Double(b) / 255, opacity: 1)
     }
 }
 
 extension View {
     func codexiaCardStyle() -> some View {
         self.padding()
-            .background(CodexiaTheme.secondaryBackground)
-            .cornerRadius(16)
-            .shadow(color: .black.opacity(0.1), radius: 5)
+            .background(CodexiaTheme.card)
+            .cornerRadius(24)
+            .shadow(color: .black.opacity(0.4), radius: 10)
     }
 }

@@ -1,29 +1,70 @@
 import SwiftUI
 
 struct TypeScreen: View {
+    @StateObject private var viewModel = TypeViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("Type").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Typography")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Button(action: { }) {
+                Text("SoulLink")
             }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("Type")
+            Text("Typography")
+            Text("Display")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("Headlines")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("Titles")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("Body")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("Labels")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+            Text("TextStyle")
+            Text("FontFamily")
+            Text("FontWeight")
+                .navigationTitle("Type")
+        }
+        .onAppear { viewModel.onEvent(TypeEvent.onAppear) }
     }
 }

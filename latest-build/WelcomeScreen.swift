@@ -1,47 +1,31 @@
 import SwiftUI
 
 struct WelcomeScreen: View {
+    @StateObject private var viewModel = WelcomeViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("Welcome").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            VStack {
             }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("SOULLINK")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("BEGIN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Button(action: {}) {
-                Text("SIGN OUT")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
             Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("Welcome")
+            VStack {
+            }
+            Text("")
+            Spacer()
+            Spacer()
+            Spacer()
+            VStack {
+            }
+            Button(action: { }) {
+                Text(" ")
+            }
+            Text("Begin")
+            Spacer()
+            Text("Sign Out")
+                .navigationTitle("Welcome")
+        }
+        .onAppear { viewModel.onEvent(WelcomeEvent.onAppear) }
     }
 }

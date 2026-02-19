@@ -1,83 +1,138 @@
 import SwiftUI
 
 struct CandidateInvitationServiceScreen: View {
+    @StateObject private var viewModel = CandidateInvitationServiceViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("CandidateInvitationService").font(.largeTitle).bold().padding(.bottom, 10)
-            Text("Failed to find candidates").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Failed to create match").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("CURRENTMATCHID")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Timestamp")
+            Text("CandidateInvitation")
+            Text("InvitationStatus")
+            Text("Match")
+            Text("MatchPhase")
+            Text("MatchStatus")
+            Text("PushNotificationService")
+            Text("TimeUnit")
+            Text("Inject")
+            Text("Singleton")
+            Text("Service")
+            Text("This")
+            Text("Singleton")
+            Text("CandidateInvitationService")
+            Text("MatchingService")
+            Text("PushNotificationService")
+            Text("Start")
+            Text("This")
+            VStack {
             }
-            Button(action: {}) {
-                Text("CURRENTMATCHSTATE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Find")
+            Text("Result")
+            Text("Failed to find candidates")
+            Text("Create")
+            Text("Match")
+            Text("Will")
+            Text("MatchStatus")
+            Text("MatchPhase")
+            Text("Store")
+            Text("Will")
+            Text("Compatibility")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("Save")
+            Text("Result")
+            Text("Failed to create match")
+            Text("Create")
+            Text("CandidateInvitation")
+            Text("Timestamp")
+            Text("InvitationStatus")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("Save")
+            Text("Add")
+            Text("Send")
+            Text("Update")
+            Text("currentMatchId")
+            Text("currentMatchState")
+            Text("Result")
+            VStack {
             }
-            Text("Invitation not found").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("MATCH NOT FOUND")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Result")
+            Text("Handle")
+            VStack {
             }
-            Button(action: {}) {
-                Text("ACCEPTEDCANDIDATES")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Get")
+            Text("Invitation not found")
+            Text("Get")
+            Text("Match not found")
+            Text("Update")
+            Text("InvitationStatus")
+            Text("Add")
+            Text("acceptedCandidates")
+            Text("Notify")
+            Toggle("Check", isOn: .constant(false))
+            Text("We")
+            Text("theThreeCandidates")
+            Text("phase")
+            Text("updatedAt")
+            Text("Update")
+            Text("currentMatchState")
+            Text("Notify")
+            Text("Cancel")
+            Text("Result")
+            VStack {
             }
-            Button(action: {}) {
-                Text("THETHREECANDIDATES")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Result")
+            Text("Handle")
+            VStack {
             }
-            Button(action: {}) {
-                Text("PHASE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Get")
+            Text("Invitation not found")
+            Text("Get")
+            Text("Match not found")
+            Text("Update")
+            Text("InvitationStatus")
+            Text("Add")
+            Text("declinedCandidates")
+            Text("Notify")
+            Text("Find")
+            Text("Result")
+            VStack {
             }
-            Button(action: {}) {
-                Text("UPDATEDAT")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Result")
+            Text("Invite")
+            VStack {
             }
-            Button(action: {}) {
-                Text("CURRENTMATCHSTATE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Get")
+            Text("Find")
+            Text("Find")
+            Text("Create")
+            Text("CandidateInvitation")
+            Text("Timestamp")
+            Text("InvitationStatus")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("Save")
+            Text("Add")
+            Text("Update")
+            Text("invitedCandidates")
+            Text("Send")
+            VStack {
             }
-            Text("Invitation not found").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("MATCH NOT FOUND")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Cancel")
+            VStack {
             }
-            Button(action: {}) {
-                Text("DECLINEDCANDIDATES")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("InvitationStatus")
+            Text("Mark")
+            Text("InvitationStatus")
+            Text("Remove")
+            VStack {
             }
-            Button(action: {}) {
-                Text("INVITEDCANDIDATES")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Text("CandidateInvitationService").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("CandidateInvitationService").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("CandidateInvitationService")
+                .navigationTitle("CandidateInvitationService")
+        }
+        .onAppear { viewModel.onEvent(CandidateInvitationServiceEvent.onAppear) }
     }
 }

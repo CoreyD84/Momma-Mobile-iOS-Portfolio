@@ -1,187 +1,229 @@
 import SwiftUI
 
 struct NavGraphScreen: View {
+    @StateObject private var viewModel = NavGraphViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("NavGraph").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("SPLASH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Composable")
+            Text("NavHostController")
+            Text("NavType")
+            Text("NavHost")
+            VStack {
             }
-            Button(action: {}) {
-                Text("WELCOME")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("splash")
+            Text("welcome")
+            Text("sign_in")
+            Text("sign_up")
+            Text("profile_setup")
+            Text("profile")
+            Text("questionnaire")
+            Text("questionnaire_reflection")
+            Text(") = ")
+            Text("candidate_invitation")
+            Text("candidate_waiting")
+            Text("candidate_quiz")
+            Text("elimination")
+            Text("the_three")
+            Text("quiz")
+            Text("final_selection")
+            Text("awaiting_partner")
+            Text("partner_decision")
+            Text("match_success")
+            Text("second_chance")
+            Text("home")
+            Text("notifications")
+            Text("browse_members")
+            Text("Composable")
+            Button(action: { }) {
+                Text("SoulLinkNavGraph")
             }
-            Button(action: {}) {
-                Text("SIGN IN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("NavHostController")
+            Text("String")
+            Text("NavHost")
+            VStack {
             }
-            Button(action: {}) {
-                Text("SIGN UP")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("SplashScreen")
+            VStack {
             }
-            Button(action: {}) {
-                Text("PROFILE SETUP")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("PROFILE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("QUESTIONNAIRE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Text("questionnaire_reflection").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text(") = ")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Text("candidate_invitation").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("CANDIDATE WAITING")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("CANDIDATE QUIZ")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("search")
+            VStack {
             }
-            Button(action: {}) {
-                Text("ELIMINATION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("THE THREE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("QUIZ")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("FINAL SELECTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("AWAITING PARTNER")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("PARTNER DECISION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("MATCH SUCCESS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("SECOND CHANCE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("HOME")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("NOTIFICATIONS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("BROWSE MEMBERS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("SEARCH")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("PAYMENTTYPE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("CONTEXTID")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("PAYMENTTYPE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("CONTEXTID")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("CANDIDATE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("USERID")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Button(action: {}) {
-                Text("USERID")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            VStack {
             }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("NavGraph")
+            VStack {
+            }
+            VStack {
+            }
+            Text("WelcomeScreen")
+            VStack {
+            }
+            Text("SignInScreen")
+            VStack {
+            }
+            Text("SignUpScreen")
+            VStack {
+            }
+            Text("ProfileSetupScreen")
+            VStack {
+            }
+            Text("ProfileScreen")
+            VStack {
+            }
+            VStack {
+            }
+            Text("QuestionnaireScreen")
+            VStack {
+            }
+            Text("QuestionnaireReflectionScreen")
+            Text("Screen")
+            Text("paymentType")
+            Text("contextId")
+            Text("NavType")
+            Text("paymentType")
+            Text("contextId")
+            Text("PaymentScreen")
+            VStack {
+            }
+            Text("CandidateInvitationScreen")
+            Text("candidate")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("Simple")
+            Text("CandidateWaitingScreen")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("CandidateQuizScreen")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("EliminationScreen")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("TheThreeScreen")
+            VStack {
+            }
+            Text("QuizScreen")
+            VStack {
+            }
+            Text("FinalSelectionScreen")
+            VStack {
+            }
+            Text("AwaitingPartnerScreen")
+            VStack {
+            }
+            Text("PartnerDecisionScreen")
+            VStack {
+            }
+            Text("MatchSuccessScreen")
+            VStack {
+            }
+            Text("ChatScreen")
+            VStack {
+            }
+            Text("SecondChanceScreen")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("HomeScreen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            Text("Screen")
+            VStack {
+            }
+            Text("NotificationsScreen")
+            Text("Screen")
+            VStack {
+            }
+            Text("BrowseMembersScreen")
+            Text("Screen")
+            Text("Screen")
+            Text("userId")
+            Text("userId")
+            Text("UserProfileScreen")
+                .navigationTitle("NavGraph")
+        }
+        .onAppear { viewModel.onEvent(NavGraphEvent.onAppear) }
     }
 }

@@ -1,23 +1,50 @@
 import SwiftUI
 
 struct MessageScreen: View {
+    @StateObject private var viewModel = MessageViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("Message").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Timestamp")
+            Text("DocumentId")
+            Text("ServerTimestamp")
+            Text("Represents")
+            Text("Message")
+            Text("DocumentId")
+            Text("String")
+            Text("String")
+            Text("String")
+            Text("String")
+            Text("String")
+            Text("MessageType")
+            Text("String")
+            Text("Boolean")
+            Text("Timestamp")
+            Text("ServerTimestamp")
+            Text("Timestamp")
+            VStack {
             }
-            Button(action: {}) {
-                Text("ACTION")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
-            }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("Message")
+            Text("TEXT")
+            Image("IMAGE")
+            Text("SYSTEM")
+            Text("Messages")
+            Text("Chat")
+            Text("Conversation")
+            Text("DocumentId")
+            Text("String")
+            Text("String")
+            Text("List")
+            Text("String")
+            Text("Timestamp")
+            Text("String")
+            Text("Map")
+            Text("Boolean")
+            Text("ServerTimestamp")
+            Text("Timestamp")
+            Text("ServerTimestamp")
+            Text("Timestamp")
+                .navigationTitle("Message")
+        }
+        .onAppear { viewModel.onEvent(MessageEvent.onAppear) }
     }
 }

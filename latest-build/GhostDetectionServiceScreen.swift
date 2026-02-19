@@ -1,80 +1,113 @@
 import SwiftUI
 
 struct GhostDetectionServiceScreen: View {
+    @StateObject private var viewModel = GhostDetectionServiceViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("GhostDetectionService").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("MATCH NOT FOUND")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("Timestamp")
+            Text("Match")
+            Text("MatchStatus")
+            Text("Message")
+            Text("TimeUnit")
+            Text("Inject")
+            Text("Singleton")
+            Text("Service")
+            Text("Monitors")
+            Text("Singleton")
+            Text("GhostDetectionService")
+            Text("Minimum")
+            Toggle("Check", isOn: .constant(false))
+            VStack {
             }
-            Button(action: {}) {
-                Text("MATCH NOT ACTIVE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Match not found")
+            Text("Only")
+            VStack {
             }
-            Text("Not enough messages exchanged").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("No message timestamp").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Text("Could not determine ghosting user").font(.body).foregroundColor(CodexiaTheme.label).multilineTextAlignment(.center)
-            Button(action: {}) {
-                Text("UNKNOWN ERROR")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Match not active")
+            Text("Don")
+            Text("GhostDetectionResult")
+            Text("Need")
+            Text("Not enough messages exchanged")
+            Text("Get")
+            Text("No message timestamp")
+            Toggle("Check", isOn: .constant(false))
+            Text("System")
+            Text("Determine")
+            Text("Could not determine ghosting user")
+            Text("GhostDetectionResult")
+            Text("TimeUnit")
+            Text("GhostDetectionResult")
+            Text("TimeUnit")
+            VStack {
             }
-            Button(action: {}) {
-                Text("MATCH NOT FOUND")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Unknown error")
+            Text("Determine")
+            Text("The")
+            VStack {
             }
-            Button(action: {}) {
-                Text("GHOSTDETECTED")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("List")
+            VStack {
             }
-            Button(action: {}) {
-                Text("GHOSTDETECTEDDATE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("The")
+            VStack {
             }
-            Button(action: {}) {
-                Text("STATUS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Mark")
+            Text("String")
+            Text("String")
+            Text("String")
+            VStack {
             }
-            Button(action: {}) {
-                Text("OUTCOME")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Match not found")
+            Text("String")
+            Text("ghostDetected")
+            Text("ghostDetectedDate")
+            Text("status")
+            Text("outcome")
+            Text("outcomeReason")
+            Text("Trigger")
+            Text("The")
+            Text("status")
+            Text("Result")
+            VStack {
             }
-            Button(action: {}) {
-                Text("OUTCOMEREASON")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Result")
+            Toggle("Check", isOn: .constant(false))
+            VStack {
             }
-            Button(action: {}) {
-                Text("STATUS")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("MatchStatus")
+            VStack {
             }
-            Button(action: {}) {
-                Text("LESS THAN 1M")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Get")
+            VStack {
             }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("GhostDetectionService")
+            Text("System")
+            Text("Format")
+            VStack {
+            }
+            Text("TimeUnit")
+            Text("TimeUnit")
+            Text("Less than 1m")
+            Text("Result")
+            VStack {
+            }
+            Text("GhostDetected")
+            Text("String")
+            Text("String")
+            Text("Int")
+            Text("GhostDetectionResult")
+            Text("NoGhosting")
+            Text("Int")
+            Text("GhostDetectionResult")
+            Text("AlreadyGhosted")
+            Text("NotApplicable")
+            Text("String")
+            Text("GhostDetectionResult")
+            Text("Error")
+            Text("String")
+            Text("GhostDetectionResult")
+                .navigationTitle("GhostDetectionService")
+        }
+        .onAppear { viewModel.onEvent(GhostDetectionServiceEvent.onAppear) }
     }
 }

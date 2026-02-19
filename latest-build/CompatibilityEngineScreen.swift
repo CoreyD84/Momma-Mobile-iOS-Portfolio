@@ -1,29 +1,85 @@
 import SwiftUI
 
 struct CompatibilityEngineScreen: View {
+    @StateObject private var viewModel = CompatibilityEngineViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("CompatibilityEngine").font(.largeTitle).bold().padding(.bottom, 10)
-            Button(action: {}) {
-                Text("BRAIN")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+        NavigationView {
+            Text("CompatibilityVector")
+            Text("ConflictStyle")
+            Text("Inject")
+            Text("Singleton")
+            Text("The")
+            Text("brain")
+            Text("Singleton")
+            VStack {
             }
-            Button(action: {}) {
-                Text("DEFINITELY")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Dimension")
+            Text("Calculate")
+            Text("CompatibilityVector")
+            Text("CompatibilityVector")
+            VStack {
             }
-            Button(action: {}) {
-                Text("UNSURE")
-                    .font(.headline).foregroundColor(.white)
-                    .frame(maxWidth: .infinity).padding()
-                    .background(CodexiaTheme.primary).cornerRadius(25)
+            Text("Apply")
+            Text("CompatibilityScore")
+            Text("Values")
+            VStack {
             }
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("CompatibilityEngine")
+            Text("Conflict")
+            VStack {
+            }
+            Text("Conflict")
+            Text("ConflictStyle")
+            Text("ConflictStyle")
+            Text("ConflictStyle")
+            Text("Future")
+            VStack {
+            }
+            Text("Children")
+            Text("DEFINITELY")
+            Text("Deal")
+            Text("UNSURE")
+            Text("Communication")
+            Text("CommunicationVector")
+            Text("CommunicationVector")
+            VStack {
+            }
+            Text("Philosophy")
+            Text("PhilosophyVector")
+            Text("PhilosophyVector")
+            VStack {
+            }
+            Text("Calculate")
+            VStack {
+            }
+            Text("Calculate")
+            Text("Normalize")
+            Text("Rank")
+            Text("CompatibilityVector")
+            Text("Map")
+            VStack {
+            }
+            Text("RankedCandidate")
+            Text("Select")
+            Text("CompatibilityVector")
+            Text("Map")
+            Text("Int")
+            VStack {
+            }
+            Text("CompatibilityScore")
+            Text("Double")
+            Text("Double")
+            Text("Double")
+            Text("Double")
+            Text("Double")
+            Text("Double")
+            Text("Boolean")
+            Text("Int")
+            Text("RankedCandidate")
+            Text("String")
+            Text("CompatibilityScore")
+                .navigationTitle("CompatibilityEngine")
+        }
+        .onAppear { viewModel.onEvent(CompatibilityEngineEvent.onAppear) }
     }
 }

@@ -1,11 +1,14 @@
 import SwiftUI
 
 struct MainActivityScreen: View {
+    @StateObject private var viewModel = MainActivityViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("MainActivity").font(.largeTitle).bold().padding(.bottom, 10)
-            Spacer()
-        }.padding().background(CodexiaTheme.background).navigationTitle("MainActivity")
+        NavigationView {
+            VStack {
+            }
+                .navigationTitle("MainActivity")
+        }
+        .onAppear { viewModel.onEvent(MainActivityEvent.onAppear) }
     }
 }
