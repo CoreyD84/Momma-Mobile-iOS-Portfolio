@@ -13,40 +13,40 @@ struct MatchProfileCardScreen: View {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
-            Spacer()
-            VStack {
-            }
-            Image("")
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
+            Text("TEXT")
             Spacer()
             VStack {
             }
+            Image("IMAGE")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            Spacer()
             VStack {
             }
-            Image("")
+            VStack {
+            }
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Text("Eliminate This Match")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
@@ -56,8 +56,8 @@ struct MatchProfileCardScreen: View {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
                 .navigationTitle("MatchProfileCard")
         }

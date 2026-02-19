@@ -9,11 +9,11 @@ struct SplashScreen: View {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             ProgressView()
-            Text("")
+            Text("TEXT")
                 .navigationTitle("Splash")
         }
         .onAppear { viewModel.onEvent(SplashEvent.onAppear) }

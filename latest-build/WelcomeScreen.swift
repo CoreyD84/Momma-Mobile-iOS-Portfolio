@@ -12,14 +12,14 @@ struct WelcomeScreen: View {
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
             VStack {
             }
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Begin")
             Spacer()

@@ -13,90 +13,90 @@ struct PaymentScreen: View {
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            VStack {
-            }
-            Image("")
+            Spacer()
+            Text("TEXT")
+            Spacer()
             Spacer()
             VStack {
             }
-            Text("")
-            Text("")
+            Image("IMAGE")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Text("Go Back")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
             ProgressView()
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Continue")
             VStack {
             }
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Begin Search")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Continue to The Three")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

@@ -12,80 +12,80 @@ struct CandidateQuizScreen: View {
             VStack {
             }
             ProgressView()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
             ProgressView()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Text("")
             Spacer()
             VStack {
             }
-            VStack {
-            }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("")
-            Image("")
             VStack {
             }
             VStack {
             }
-            Image("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
+            Spacer()
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
+            Image("IMAGE")
+            VStack {
+            }
+            VStack {
+            }
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

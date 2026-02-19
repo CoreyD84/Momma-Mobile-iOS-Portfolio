@@ -9,42 +9,42 @@ struct BrowseMembersScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             ProgressView()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Retry")
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             VStack {
             }
-            Text("")
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
+            Text("TEXT")
                 .navigationTitle("BrowseMembers")
         }
         .onAppear { viewModel.onEvent(BrowseMembersEvent.onAppear) }

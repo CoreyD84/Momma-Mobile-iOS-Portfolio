@@ -9,8 +9,8 @@ struct ProgressBarScreen: View {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
                 .navigationTitle("ProgressBar")
         }

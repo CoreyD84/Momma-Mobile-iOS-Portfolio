@@ -10,55 +10,55 @@ struct ProfileSetupScreen: View {
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            TextField("Input", text: .constant(""))
+            TextField("INPUT", text: .constant(""))
             Text("Age")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            TextField("Input", text: .constant(""))
+            TextField("INPUT", text: .constant(""))
             Text("Min")
-            TextField("Input", text: .constant(""))
+            TextField("INPUT", text: .constant(""))
             Text("Max")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             ProgressView()
             Text("Continue")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             List {
             }
             VStack {
             }
             ProgressView()
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             Text("_")

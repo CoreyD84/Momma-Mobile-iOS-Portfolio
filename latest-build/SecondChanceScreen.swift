@@ -15,41 +15,41 @@ struct SecondChanceScreen: View {
             VStack {
             }
             ProgressView()
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
-            Text("")
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
                 .navigationTitle("SecondChance")
         }

@@ -10,22 +10,22 @@ struct CandidateWaitingScreen: View {
             VStack {
             }
             Spacer()
-            Image("")
-            Text("")
-            Text("")
+            Image("IMAGE")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             ProgressView()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
                 .navigationTitle("CandidateWaiting")
         }
         .onAppear { viewModel.onEvent(CandidateWaitingEvent.onAppear) }

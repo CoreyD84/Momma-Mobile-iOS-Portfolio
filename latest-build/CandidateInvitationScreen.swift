@@ -13,17 +13,17 @@ struct CandidateInvitationScreen: View {
             VStack {
             }
             ProgressView()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Image("")
-            Text("")
-            Text("")
+            Image("IMAGE")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Go to Home")
             VStack {
@@ -35,32 +35,32 @@ struct CandidateInvitationScreen: View {
             VStack {
             }
             Spacer()
-            Image("")
-            Text("")
-            Text("")
+            Image("IMAGE")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Text("Yes, Decline")
             Text("Cancel")
                 .navigationTitle("CandidateInvitation")

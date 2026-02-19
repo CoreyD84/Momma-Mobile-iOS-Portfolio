@@ -13,9 +13,9 @@ struct QuestionnaireScreen: View {
             VStack {
             }
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
             Spacer()
             Spacer()
@@ -26,28 +26,28 @@ struct QuestionnaireScreen: View {
             }
             ProgressView()
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Enter SoulLink")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Go to Home")
             Spacer()
@@ -56,12 +56,12 @@ struct QuestionnaireScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Go Back")
                 .navigationTitle("Questionnaire")

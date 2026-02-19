@@ -18,80 +18,80 @@ struct QuizScreen: View {
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            VStack {
-            }
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Text("")
-            Text("")
-            VStack {
-            }
-            Text("")
-            VStack {
-            }
-            VStack {
-            }
-            Text("")
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
+            Text("TEXT")
+            Text("TEXT")
             VStack {
             }
-            Text("")
-            Image("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Image("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
-            Text("")
+            VStack {
+            }
+            VStack {
+            }
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Image("IMAGE")
+            VStack {
+            }
+            VStack {
+            }
+            Image("IMAGE")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("See SoulLink's Choice")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
@@ -99,19 +99,19 @@ struct QuizScreen: View {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

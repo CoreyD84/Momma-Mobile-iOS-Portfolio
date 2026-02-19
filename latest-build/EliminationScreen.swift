@@ -15,39 +15,39 @@ struct EliminationScreen: View {
             Spacer()
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Continue")
                 .navigationTitle("Elimination")

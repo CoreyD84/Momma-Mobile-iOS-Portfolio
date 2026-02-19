@@ -7,14 +7,14 @@ struct QuestionCardScreen: View {
         NavigationView {
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
                 .navigationTitle("QuestionCard")
         }
         .onAppear { viewModel.onEvent(QuestionCardEvent.onAppear) }

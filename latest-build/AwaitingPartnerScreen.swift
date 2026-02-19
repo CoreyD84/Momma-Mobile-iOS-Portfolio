@@ -15,82 +15,82 @@ struct AwaitingPartnerScreen: View {
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Text("")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             VStack {
             }
             Spacer()
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             Spacer()
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             Text("Maybe Later")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Return Home")
             Spacer()
@@ -98,12 +98,12 @@ struct AwaitingPartnerScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

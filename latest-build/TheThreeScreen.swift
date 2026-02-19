@@ -14,65 +14,65 @@ struct TheThreeScreen: View {
             }
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
             ProgressView()
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Go to Payment")
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Spacer()
-            Text("")
             Spacer()
             Spacer()
             VStack {
             }
-            Text("")
             Spacer()
-            Text("")
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             Spacer()
             VStack {
             }
             VStack {
             }
-            Text("")
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Confirm & Continue to Quiz")
             Spacer()
@@ -81,31 +81,31 @@ struct TheThreeScreen: View {
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             VStack {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Begin Quiz Challenge")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

@@ -9,36 +9,36 @@ struct UserProfileScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             ProgressView()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             List {
             }
             List {
             }
             VStack {
             }
-            Text("")
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
+            Text("TEXT")
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
                 .navigationTitle("UserProfile")
         }
         .onAppear { viewModel.onEvent(UserProfileEvent.onAppear) }

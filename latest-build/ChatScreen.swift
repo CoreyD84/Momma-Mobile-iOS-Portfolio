@@ -11,7 +11,7 @@ struct ChatScreen: View {
             }
             Text("Chat")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Image("Back")
             VStack {
@@ -20,10 +20,10 @@ struct ChatScreen: View {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Image("Back")
             VStack {
@@ -37,44 +37,44 @@ struct ChatScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            TextField("Input", text: .constant(""))
+            TextField("INPUT", text: .constant(""))
             Text("Type a message...")
             Spacer()
             ProgressView()
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

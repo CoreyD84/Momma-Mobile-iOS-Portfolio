@@ -13,50 +13,50 @@ struct MatchSuccessScreen: View {
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
-            Spacer()
-            VStack {
-            }
-            Image("")
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Spacer()
+            Text("TEXT")
             Spacer()
             VStack {
             }
+            Image("IMAGE")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            VStack {
-            }
-            Text("")
             Spacer()
-            Text("")
-            VStack {
-            }
-            Text("")
             Spacer()
             VStack {
             }
             VStack {
             }
+            Text("TEXT")
             Spacer()
-            Text("")
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            VStack {
+            }
+            VStack {
+            }
+            Spacer()
+            Text("TEXT")
                 .navigationTitle("MatchSuccess")
         }
         .onAppear { viewModel.onEvent(MatchSuccessEvent.onAppear) }

@@ -9,11 +9,11 @@ struct NotificationsScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             VStack {
@@ -23,11 +23,11 @@ struct NotificationsScreen: View {
             }
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             List {
             }
             VStack {
@@ -35,19 +35,19 @@ struct NotificationsScreen: View {
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Image("")
+            Text("TEXT")
+            Image("IMAGE")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
                 .navigationTitle("Notifications")
         }
         .onAppear { viewModel.onEvent(NotificationsEvent.onAppear) }

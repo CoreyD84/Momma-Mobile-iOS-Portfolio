@@ -14,29 +14,29 @@ struct FinalSelectionScreen: View {
             }
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            VStack {
-            }
-            Spacer()
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Text("")
             VStack {
             }
             Spacer()
             VStack {
             }
-            Image("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
+            VStack {
+            }
+            Spacer()
+            VStack {
+            }
+            Image("IMAGE")
+            Spacer()
+            Text("TEXT")
             Spacer()
             Spacer()
             VStack {
@@ -44,92 +44,92 @@ struct FinalSelectionScreen: View {
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             VStack {
             }
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
             Spacer()
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Continue")
             Spacer()
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Text("")
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("")
-            Spacer()
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             VStack {
             }
-            Image("")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Text("TEXT")
+            Spacer()
             Spacer()
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            VStack {
+            }
+            Text("TEXT")
+            Text("TEXT")
+            VStack {
+            }
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

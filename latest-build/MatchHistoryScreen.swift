@@ -9,11 +9,11 @@ struct MatchHistoryScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Image("")
+            Image("IMAGE")
             VStack {
             }
             VStack {
@@ -21,12 +21,12 @@ struct MatchHistoryScreen: View {
             ProgressView()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             List {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
             Spacer()
@@ -34,32 +34,32 @@ struct MatchHistoryScreen: View {
             }
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             List {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             VStack {
             }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
             VStack {
             }
-            Text("")
-            Text("")
-            Text("")
+            Text("TEXT")
+            Text("TEXT")
+            Text("TEXT")
                 .navigationTitle("MatchHistory")
         }
         .onAppear { viewModel.onEvent(MatchHistoryEvent.onAppear) }

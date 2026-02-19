@@ -11,13 +11,13 @@ struct SoulLinkMessageScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
-            Text("")
+            Text("TEXT")
                 .navigationTitle("SoulLinkMessage")
         }
         .onAppear { viewModel.onEvent(SoulLinkMessageEvent.onAppear) }

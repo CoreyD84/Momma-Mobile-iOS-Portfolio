@@ -15,84 +15,84 @@ struct PartnerDecisionScreen: View {
             Spacer()
             VStack {
             }
-            Image("")
+            Image("IMAGE")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Spacer()
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             Spacer()
             Text("Decline")
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
             Text("Go Back")
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Decline")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
-            Spacer()
-            VStack {
-            }
-            Text("")
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             VStack {
             }
-            VStack {
-            }
-            Text("")
-            Text("")
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            Spacer()
+            Text("TEXT")
+            Spacer()
             VStack {
             }
             VStack {
             }
-            Image("")
+            Text("TEXT")
+            Text("TEXT")
+            VStack {
+            }
+            VStack {
+            }
+            Image("IMAGE")
             Spacer()
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
-            Text("")
+            Text("TEXT")
             VStack {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             Text("Try Again")
             Spacer()

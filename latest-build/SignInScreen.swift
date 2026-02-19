@@ -9,25 +9,25 @@ struct SignInScreen: View {
             }
             VStack {
             }
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            TextField("Input", text: .constant(""))
+            TextField("INPUT", text: .constant(""))
             Text("Email")
             Spacer()
-            TextField("Input", text: .constant(""))
+            TextField("INPUT", text: .constant(""))
             Text("Password")
             Spacer()
             Button(action: { }) {
-                Text(" ")
+                Text("BUTTON")
             }
             ProgressView()
             Text("Sign In")
             Spacer()
-            Text("")
+            Text("TEXT")
             Spacer()
-            Text("")
+            Text("TEXT")
                 .navigationTitle("SignIn")
         }
         .onAppear { viewModel.onEvent(SignInEvent.onAppear) }
