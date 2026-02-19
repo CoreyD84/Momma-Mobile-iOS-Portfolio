@@ -1,5 +1,7 @@
 import Foundation
 
 final class NotificationRepositoryClient {
-    func NotificationRepository() { }
+    func initializeFcm() { }
+    func subscribeToTopic() { }
+    func unsubscribeFromTopic() { }
 }

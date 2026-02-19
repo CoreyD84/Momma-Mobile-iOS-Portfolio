@@ -4,12 +4,13 @@ import SwiftUI
 @MainActor
 final class ProfileSetupViewModel: ObservableObject {
     @Published var state: ProfileSetupState = .initial
-    @Published var isUploadingPhoto: String = ""
-    @Published var locationService: String = ""
+    @Published var userRepository: String = ""
     @Published var photoRepository: String = ""
+    @Published var locationService: String = ""
     @Published var uiState: String = ""
     @Published var uploadedPhotos: [String] = []
-    @Published var userRepository: String = ""
+    @Published var isUploadingPhoto: String = ""
+    @Published var message: String = ""
 
     func onEvent(_ event: ProfileSetupEvent) {
         switch event {
@@ -17,5 +18,3 @@ final class ProfileSetupViewModel: ObservableObject {
         }
     }
 }
-struct ProfileSetupState { static let initial = ProfileSetupState() }
-enum ProfileSetupEvent { case dummy }

@@ -4,15 +4,21 @@ import SwiftUI
 @MainActor
 final class TheThreeViewModel: ObservableObject {
     @Published var state: TheThreeState = .initial
-    @Published var allThree: [String] = []
+    @Published var matchingService: String = ""
+    @Published var userRepository: String = ""
+    @Published var matchRepository: String = ""
+    @Published var uiState: String = ""
+    @Published var currentUserId: String = ""
     @Published var currentMatchId: String = ""
     @Published var currentUser: String = ""
-    @Published var currentUserId: String = ""
+    @Published var allThree: [String] = []
     @Published var eliminatedCandidate: String = ""
-    @Published var matchRepository: String = ""
-    @Published var matchingService: String = ""
-    @Published var uiState: String = ""
-    @Published var userRepository: String = ""
+    @Published var updates: String = ""
+    @Published var candidates: [String] = []
+    @Published var canEliminate: Bool = false
+    @Published var remainingCandidates: [String] = []
+    @Published var finalTwo: [String] = []
+    @Published var message: String = ""
 
     func onEvent(_ event: TheThreeEvent) {
         switch event {
@@ -20,5 +26,3 @@ final class TheThreeViewModel: ObservableObject {
         }
     }
 }
-struct TheThreeState { static let initial = TheThreeState() }
-enum TheThreeEvent { case dummy }

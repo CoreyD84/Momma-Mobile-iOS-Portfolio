@@ -7,8 +7,16 @@ struct QuestionCardScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
+            VStack {
+            }
+            Text("TEXT")
             Spacer()
+            VStack {
+            }
+            VStack {
+            }
             Spacer()
+            Text("TEXT")
             }
             .navigationTitle("Question Card")
             .foregroundStyle(CodexiaTheme.label)

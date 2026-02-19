@@ -4,12 +4,17 @@ import SwiftUI
 @MainActor
 final class QuestionnaireViewModel: ObservableObject {
     @Published var state: QuestionnaireState = .initial
-    @Published var allQuestions: [String] = []
-    @Published var compatibilityRepository: String = ""
-    @Published var currentQuestionIndex: Int = 0
-    @Published var currentUserId: String = ""
-    @Published var uiState: String = ""
     @Published var userRepository: String = ""
+    @Published var compatibilityRepository: String = ""
+    @Published var uiState: String = ""
+    @Published var currentUserId: String = ""
+    @Published var question: String = ""
+    @Published var questionNumber: Int = 0
+    @Published var totalQuestions: Int = 0
+    @Published var progress: Float = 0
+    @Published var canGoBack: Bool = false
+    @Published var compatibilityVector: String = ""
+    @Published var message: String = ""
 
     func onEvent(_ event: QuestionnaireEvent) {
         switch event {
@@ -17,5 +22,3 @@ final class QuestionnaireViewModel: ObservableObject {
         }
     }
 }
-struct QuestionnaireState { static let initial = QuestionnaireState() }
-enum QuestionnaireEvent { case dummy }

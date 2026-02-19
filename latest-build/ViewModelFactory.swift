@@ -2,8 +2,8 @@ import Foundation
 
 struct ViewModelFactory {
     @MainActor
-    static func makeAwaitingPartnerScreenViewModel() -> AwaitingPartnerScreenViewModel {
-        return AwaitingPartnerScreenViewModel()
+    static func makeAwaitingPartnerViewModel() -> AwaitingPartnerViewModel {
+        return AwaitingPartnerViewModel()
     }
 
     @MainActor
@@ -12,18 +12,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeBrowseMembersScreenViewModel() -> BrowseMembersScreenViewModel {
-        return BrowseMembersScreenViewModel()
-    }
-
-    @MainActor
-    static func makeCandidateAnalysisViewModel() -> CandidateAnalysisViewModel {
-        return CandidateAnalysisViewModel()
-    }
-
-    @MainActor
-    static func makeCandidateComparisonViewModel() -> CandidateComparisonViewModel {
-        return CandidateComparisonViewModel()
+    static func makeBrowseMembersViewModel() -> BrowseMembersViewModel {
+        return BrowseMembersViewModel()
     }
 
     @MainActor
@@ -32,33 +22,23 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeCandidateInvitationScreenViewModel() -> CandidateInvitationScreenViewModel {
-        return CandidateInvitationScreenViewModel()
-    }
-
-    @MainActor
     static func makeCandidateInvitationServiceViewModel() -> CandidateInvitationServiceViewModel {
         return CandidateInvitationServiceViewModel()
     }
 
     @MainActor
-    static func makeCandidateQuizScreenViewModel() -> CandidateQuizScreenViewModel {
-        return CandidateQuizScreenViewModel()
+    static func makeCandidateQuizViewModel() -> CandidateQuizViewModel {
+        return CandidateQuizViewModel()
     }
 
     @MainActor
-    static func makeCandidateWaitingScreenViewModel() -> CandidateWaitingScreenViewModel {
-        return CandidateWaitingScreenViewModel()
+    static func makeCandidateWaitingViewModel() -> CandidateWaitingViewModel {
+        return CandidateWaitingViewModel()
     }
 
     @MainActor
-    static func makeChatScreenViewModel() -> ChatScreenViewModel {
-        return ChatScreenViewModel()
-    }
-
-    @MainActor
-    static func makeChildrenDesireViewModel() -> ChildrenDesireViewModel {
-        return ChildrenDesireViewModel()
+    static func makeChatViewModel() -> ChatViewModel {
+        return ChatViewModel()
     }
 
     @MainActor
@@ -72,23 +52,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeCommunicationVectorViewModel() -> CommunicationVectorViewModel {
-        return CommunicationVectorViewModel()
-    }
-
-    @MainActor
-    static func makeCompatibilityBreakdownViewModel() -> CompatibilityBreakdownViewModel {
-        return CompatibilityBreakdownViewModel()
-    }
-
-    @MainActor
     static func makeCompatibilityEngineViewModel() -> CompatibilityEngineViewModel {
         return CompatibilityEngineViewModel()
-    }
-
-    @MainActor
-    static func makeCompatibilityScoreViewModel() -> CompatibilityScoreViewModel {
-        return CompatibilityScoreViewModel()
     }
 
     @MainActor
@@ -97,53 +62,13 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeConflictStyleViewModel() -> ConflictStyleViewModel {
-        return ConflictStyleViewModel()
+    static func makeEliminationViewModel() -> EliminationViewModel {
+        return EliminationViewModel()
     }
 
     @MainActor
-    static func makeConflictVectorViewModel() -> ConflictVectorViewModel {
-        return ConflictVectorViewModel()
-    }
-
-    @MainActor
-    static func makeConversationViewModel() -> ConversationViewModel {
-        return ConversationViewModel()
-    }
-
-    @MainActor
-    static func makeConversationItemViewModel() -> ConversationItemViewModel {
-        return ConversationItemViewModel()
-    }
-
-    @MainActor
-    static func makeDecisionFactorViewModel() -> DecisionFactorViewModel {
-        return DecisionFactorViewModel()
-    }
-
-    @MainActor
-    static func makeEliminationScreenViewModel() -> EliminationScreenViewModel {
-        return EliminationScreenViewModel()
-    }
-
-    @MainActor
-    static func makeFinalSelectionScreenViewModel() -> FinalSelectionScreenViewModel {
-        return FinalSelectionScreenViewModel()
-    }
-
-    @MainActor
-    static func makeFutureVectorViewModel() -> FutureVectorViewModel {
-        return FutureVectorViewModel()
-    }
-
-    @MainActor
-    static func makeGenderViewModel() -> GenderViewModel {
-        return GenderViewModel()
-    }
-
-    @MainActor
-    static func makeGhostDetectionResultViewModel() -> GhostDetectionResultViewModel {
-        return GhostDetectionResultViewModel()
+    static func makeFinalSelectionViewModel() -> FinalSelectionViewModel {
+        return FinalSelectionViewModel()
     }
 
     @MainActor
@@ -157,28 +82,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeGhostDetectionWorker_HiltModuleViewModel() -> GhostDetectionWorker_HiltModuleViewModel {
-        return GhostDetectionWorker_HiltModuleViewModel()
-    }
-
-    @MainActor
-    static func makeHomeScreenViewModel() -> HomeScreenViewModel {
-        return HomeScreenViewModel()
-    }
-
-    @MainActor
-    static func makeInvitationItemViewModel() -> InvitationItemViewModel {
-        return InvitationItemViewModel()
-    }
-
-    @MainActor
-    static func makeInvitationStatusViewModel() -> InvitationStatusViewModel {
-        return InvitationStatusViewModel()
-    }
-
-    @MainActor
-    static func makeLocationViewModel() -> LocationViewModel {
-        return LocationViewModel()
+    static func makeHomeViewModel() -> HomeViewModel {
+        return HomeViewModel()
     }
 
     @MainActor
@@ -192,33 +97,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeMatchCandidateViewModel() -> MatchCandidateViewModel {
-        return MatchCandidateViewModel()
-    }
-
-    @MainActor
-    static func makeMatchFilterViewModel() -> MatchFilterViewModel {
-        return MatchFilterViewModel()
-    }
-
-    @MainActor
-    static func makeMatchHistoryItemViewModel() -> MatchHistoryItemViewModel {
-        return MatchHistoryItemViewModel()
-    }
-
-    @MainActor
-    static func makeMatchHistoryScreenViewModel() -> MatchHistoryScreenViewModel {
-        return MatchHistoryScreenViewModel()
-    }
-
-    @MainActor
-    static func makeMatchOutcomeViewModel() -> MatchOutcomeViewModel {
-        return MatchOutcomeViewModel()
-    }
-
-    @MainActor
-    static func makeMatchPhaseViewModel() -> MatchPhaseViewModel {
-        return MatchPhaseViewModel()
+    static func makeMatchHistoryViewModel() -> MatchHistoryViewModel {
+        return MatchHistoryViewModel()
     }
 
     @MainActor
@@ -227,18 +107,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeMatchStatisticsViewModel() -> MatchStatisticsViewModel {
-        return MatchStatisticsViewModel()
-    }
-
-    @MainActor
-    static func makeMatchStatusViewModel() -> MatchStatusViewModel {
-        return MatchStatusViewModel()
-    }
-
-    @MainActor
-    static func makeMatchSuccessScreenViewModel() -> MatchSuccessScreenViewModel {
-        return MatchSuccessScreenViewModel()
+    static func makeMatchSuccessViewModel() -> MatchSuccessViewModel {
+        return MatchSuccessViewModel()
     }
 
     @MainActor
@@ -252,33 +122,18 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeMessageTypeViewModel() -> MessageTypeViewModel {
-        return MessageTypeViewModel()
-    }
-
-    @MainActor
     static func makeNavGraphViewModel() -> NavGraphViewModel {
         return NavGraphViewModel()
     }
 
     @MainActor
-    static func makeNotificationsScreenViewModel() -> NotificationsScreenViewModel {
-        return NotificationsScreenViewModel()
+    static func makeNotificationsViewModel() -> NotificationsViewModel {
+        return NotificationsViewModel()
     }
 
     @MainActor
-    static func makeOrientationViewModel() -> OrientationViewModel {
-        return OrientationViewModel()
-    }
-
-    @MainActor
-    static func makePartnerDecisionScreenViewModel() -> PartnerDecisionScreenViewModel {
-        return PartnerDecisionScreenViewModel()
-    }
-
-    @MainActor
-    static func makePartnerResponseViewModel() -> PartnerResponseViewModel {
-        return PartnerResponseViewModel()
+    static func makePartnerDecisionViewModel() -> PartnerDecisionViewModel {
+        return PartnerDecisionViewModel()
     }
 
     @MainActor
@@ -287,38 +142,13 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makePaymentScreenViewModel() -> PaymentScreenViewModel {
-        return PaymentScreenViewModel()
+    static func makeProfileViewModel() -> ProfileViewModel {
+        return ProfileViewModel()
     }
 
     @MainActor
-    static func makePaymentStatusViewModel() -> PaymentStatusViewModel {
-        return PaymentStatusViewModel()
-    }
-
-    @MainActor
-    static func makePhilosophyVectorViewModel() -> PhilosophyVectorViewModel {
-        return PhilosophyVectorViewModel()
-    }
-
-    @MainActor
-    static func makePhotoModerationStatusViewModel() -> PhotoModerationStatusViewModel {
-        return PhotoModerationStatusViewModel()
-    }
-
-    @MainActor
-    static func makeProductDetailsViewModel() -> ProductDetailsViewModel {
-        return ProductDetailsViewModel()
-    }
-
-    @MainActor
-    static func makeProfileScreenViewModel() -> ProfileScreenViewModel {
-        return ProfileScreenViewModel()
-    }
-
-    @MainActor
-    static func makeProfileSetupScreenViewModel() -> ProfileSetupScreenViewModel {
-        return ProfileSetupScreenViewModel()
+    static func makeProfileSetupViewModel() -> ProfileSetupViewModel {
+        return ProfileSetupViewModel()
     }
 
     @MainActor
@@ -337,18 +167,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeQuestionAnswerViewModel() -> QuestionAnswerViewModel {
-        return QuestionAnswerViewModel()
-    }
-
-    @MainActor
     static func makeQuestionCardViewModel() -> QuestionCardViewModel {
         return QuestionCardViewModel()
-    }
-
-    @MainActor
-    static func makeQuestionCategoryViewModel() -> QuestionCategoryViewModel {
-        return QuestionCategoryViewModel()
     }
 
     @MainActor
@@ -357,43 +177,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeQuestionOptionViewModel() -> QuestionOptionViewModel {
-        return QuestionOptionViewModel()
-    }
-
-    @MainActor
-    static func makeQuestionTypeViewModel() -> QuestionTypeViewModel {
-        return QuestionTypeViewModel()
-    }
-
-    @MainActor
-    static func makeQuestionnaireResponseViewModel() -> QuestionnaireResponseViewModel {
-        return QuestionnaireResponseViewModel()
-    }
-
-    @MainActor
-    static func makeQuestionnaireScreenViewModel() -> QuestionnaireScreenViewModel {
-        return QuestionnaireScreenViewModel()
-    }
-
-    @MainActor
-    static func makeQuizCategoryViewModel() -> QuizCategoryViewModel {
-        return QuizCategoryViewModel()
-    }
-
-    @MainActor
-    static func makeQuizOptionViewModel() -> QuizOptionViewModel {
-        return QuizOptionViewModel()
-    }
-
-    @MainActor
-    static func makeQuizQuestionViewModel() -> QuizQuestionViewModel {
-        return QuizQuestionViewModel()
-    }
-
-    @MainActor
-    static func makeQuizQuestionDataViewModel() -> QuizQuestionDataViewModel {
-        return QuizQuestionDataViewModel()
+    static func makeQuestionnaireViewModel() -> QuestionnaireViewModel {
+        return QuestionnaireViewModel()
     }
 
     @MainActor
@@ -402,68 +187,33 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeQuizResultViewModel() -> QuizResultViewModel {
-        return QuizResultViewModel()
-    }
-
-    @MainActor
     static func makeQuizScorerViewModel() -> QuizScorerViewModel {
         return QuizScorerViewModel()
     }
 
     @MainActor
-    static func makeQuizScreenViewModel() -> QuizScreenViewModel {
-        return QuizScreenViewModel()
+    static func makeQuizViewModel() -> QuizViewModel {
+        return QuizViewModel()
     }
 
     @MainActor
-    static func makeRankedCandidateViewModel() -> RankedCandidateViewModel {
-        return RankedCandidateViewModel()
+    static func makeSecondChanceViewModel() -> SecondChanceViewModel {
+        return SecondChanceViewModel()
     }
 
     @MainActor
-    static func makeSearchSessionViewModel() -> SearchSessionViewModel {
-        return SearchSessionViewModel()
+    static func makeSignInViewModel() -> SignInViewModel {
+        return SignInViewModel()
     }
 
     @MainActor
-    static func makeSecondChanceReasonViewModel() -> SecondChanceReasonViewModel {
-        return SecondChanceReasonViewModel()
-    }
-
-    @MainActor
-    static func makeSecondChanceScreenViewModel() -> SecondChanceScreenViewModel {
-        return SecondChanceScreenViewModel()
-    }
-
-    @MainActor
-    static func makeSelectionAnalysisViewModel() -> SelectionAnalysisViewModel {
-        return SelectionAnalysisViewModel()
-    }
-
-    @MainActor
-    static func makeSignInScreenViewModel() -> SignInScreenViewModel {
-        return SignInScreenViewModel()
-    }
-
-    @MainActor
-    static func makeSignUpScreenViewModel() -> SignUpScreenViewModel {
-        return SignUpScreenViewModel()
+    static func makeSignUpViewModel() -> SignUpViewModel {
+        return SignUpViewModel()
     }
 
     @MainActor
     static func makeSoulLinkApplicationViewModel() -> SoulLinkApplicationViewModel {
         return SoulLinkApplicationViewModel()
-    }
-
-    @MainActor
-    static func makeSoulLinkApplication_ComponentTreeDepsViewModel() -> SoulLinkApplication_ComponentTreeDepsViewModel {
-        return SoulLinkApplication_ComponentTreeDepsViewModel()
-    }
-
-    @MainActor
-    static func makeSoulLinkApplication_HiltComponentsViewModel() -> SoulLinkApplication_HiltComponentsViewModel {
-        return SoulLinkApplication_HiltComponentsViewModel()
     }
 
     @MainActor
@@ -482,23 +232,18 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeSplashScreenViewModel() -> SplashScreenViewModel {
-        return SplashScreenViewModel()
+    static func makeSplashViewModel() -> SplashViewModel {
+        return SplashViewModel()
     }
 
     @MainActor
-    static func makeTheThreeScreenViewModel() -> TheThreeScreenViewModel {
-        return TheThreeScreenViewModel()
+    static func makeTheThreeViewModel() -> TheThreeViewModel {
+        return TheThreeViewModel()
     }
 
     @MainActor
     static func makeThemeViewModel() -> ThemeViewModel {
         return ThemeViewModel()
-    }
-
-    @MainActor
-    static func makeTuple4ViewModel() -> Tuple4ViewModel {
-        return Tuple4ViewModel()
     }
 
     @MainActor
@@ -512,22 +257,12 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeUserProfileScreenViewModel() -> UserProfileScreenViewModel {
-        return UserProfileScreenViewModel()
+    static func makeUserProfileViewModel() -> UserProfileViewModel {
+        return UserProfileViewModel()
     }
 
     @MainActor
-    static func makeValuesVectorViewModel() -> ValuesVectorViewModel {
-        return ValuesVectorViewModel()
-    }
-
-    @MainActor
-    static func makeVectorMappingViewModel() -> VectorMappingViewModel {
-        return VectorMappingViewModel()
-    }
-
-    @MainActor
-    static func makeWelcomeScreenViewModel() -> WelcomeScreenViewModel {
-        return WelcomeScreenViewModel()
+    static func makeWelcomeViewModel() -> WelcomeViewModel {
+        return WelcomeViewModel()
     }
 }

@@ -5,8 +5,8 @@ import SwiftUI
 final class MatchSuccessViewModel: ObservableObject {
     @Published var state: MatchSuccessState = .initial
     @Published var authRepository: String = ""
-    @Published var matchId: String = ""
     @Published var userRepository: String = ""
+    @Published var matchId: String = ""
 
     func onEvent(_ event: MatchSuccessEvent) {
         switch event {
@@ -14,5 +14,3 @@ final class MatchSuccessViewModel: ObservableObject {
         }
     }
 }
-struct MatchSuccessState { static let initial = MatchSuccessState() }
-enum MatchSuccessEvent { case dummy }

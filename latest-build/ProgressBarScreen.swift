@@ -7,6 +7,12 @@ struct ProgressBarScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
+            VStack {
+            }
+            VStack {
+            }
+            Text("TEXT")
+            Text("TEXT")
             Spacer()
             }
             .navigationTitle("Progress Bar")

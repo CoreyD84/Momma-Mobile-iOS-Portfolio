@@ -1,5 +1,11 @@
 import Foundation
 
 final class MessageRepositoryClient {
-    func MessageRepository() { }
+    func sendMessage() { }
+    func getMessagesFlow() { }
+    func markMessageAsRead() { }
+    func getConversation() { }
+    func createConversation() { }
+    func updateConversationLastMessage() { }
+    func getUserConversationsFlow() { }
 }

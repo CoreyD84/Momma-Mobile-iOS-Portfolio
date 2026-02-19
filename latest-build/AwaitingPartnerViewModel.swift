@@ -4,12 +4,18 @@ import SwiftUI
 @MainActor
 final class AwaitingPartnerViewModel: ObservableObject {
     @Published var state: AwaitingPartnerState = .initial
+    @Published var chosenCandidate: String = ""
+    @Published var timeWaiting: String = ""
+    @Published var soulLinkMessage: String = ""
+    @Published var celebrationMessage: String = ""
+    @Published var hasSecondChance: Bool = false
+    @Published var comfortMessage: String = ""
+    @Published var message: String = ""
     @Published var authRepository: String = ""
-    @Published var currentMatch: String = ""
-    @Published var isMonitoring: Bool = false
+    @Published var userRepository: String = ""
     @Published var matchRepository: String = ""
     @Published var uiState: String = ""
-    @Published var userRepository: String = ""
+    @Published var currentMatch: String = ""
 
     func onEvent(_ event: AwaitingPartnerEvent) {
         switch event {
@@ -17,5 +23,3 @@ final class AwaitingPartnerViewModel: ObservableObject {
         }
     }
 }
-struct AwaitingPartnerState { static let initial = AwaitingPartnerState() }
-enum AwaitingPartnerEvent { case dummy }

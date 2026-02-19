@@ -7,18 +7,64 @@ struct CandidateInvitationScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("id")
-            Text("matchId")
-            Text("initiatorId")
-            Text("candidateId")
-            Text("status")
-            Text("CandidateInvitation(id=")
-            Text("id")
-            Text("matchId")
-            Text("initiatorId")
-            Text("candidateId")
-            Text("status")
-            Text(" : str, (i & 2) != 0 ? ")
+            VStack {
+            }
+            ProgressView()
+            VStack {
+            }
+            VStack {
+            }
+            ProgressView()
+            Text("TEXT")
+            VStack {
+            }
+            VStack {
+            }
+            Image("IMAGE")
+            Text("TEXT")
+            Text("TEXT")
+            Spacer()
+            Button(action: { }) {
+                Text("BUTTON")
+            }
+            Text("Go to Home")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Spacer()
+            Image("IMAGE")
+            Text("TEXT")
+            Text("TEXT")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            VStack {
+            }
+            Text("TEXT")
+            Text("TEXT")
+            Text("TEXT")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Text("TEXT")
+            Spacer()
+            Button(action: { }) {
+                Text("BUTTON")
+            }
+            Text("TEXT")
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Text("TEXT")
+            Text("Yes, Decline")
+            Text("Cancel")
             }
             .navigationTitle("Candidate Invitation")
             .foregroundStyle(CodexiaTheme.label)

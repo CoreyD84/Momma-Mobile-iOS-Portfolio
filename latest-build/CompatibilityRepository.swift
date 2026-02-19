@@ -1,5 +1,8 @@
 import Foundation
 
 final class CompatibilityRepositoryClient {
-    func CompatibilityRepository() { }
+    func saveCompatibilityVector() { }
+    func getCompatibilityVector() { }
+    func updateCompatibilityVector() { }
+    func getMultipleVectors() { }
 }

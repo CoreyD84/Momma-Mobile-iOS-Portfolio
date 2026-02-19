@@ -7,6 +7,8 @@ final class EliminationViewModel: ObservableObject {
     @Published var authRepository: String = ""
     @Published var matchRepository: String = ""
     @Published var uiState: String = ""
+    @Published var explanation: String = ""
+    @Published var message: String = ""
 
     func onEvent(_ event: EliminationEvent) {
         switch event {
@@ -14,5 +16,3 @@ final class EliminationViewModel: ObservableObject {
         }
     }
 }
-struct EliminationState { static let initial = EliminationState() }
-enum EliminationEvent { case dummy }

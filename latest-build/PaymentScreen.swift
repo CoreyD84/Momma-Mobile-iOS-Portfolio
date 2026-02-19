@@ -7,24 +7,102 @@ struct PaymentScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("id")
-            Text("userId")
-            Text("currency")
-            Text("status")
-            Text("purchaseToken")
-            Text("orderId")
-            Text("productId")
-            Text("timestamp")
-            Text("Payment(id=")
-            Text("id")
-            Text("userId")
-            Text("currency")
-            Text("status")
-            Text("purchaseToken")
-            Text("orderId")
-            Text("productId")
-            Text("timestamp")
-            Text(" : str, (i & 2) != 0 ? ")
+            VStack {
+            }
+            VStack {
+            }
+            ProgressView()
+            VStack {
+            }
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Spacer()
+            VStack {
+            }
+            Image("IMAGE")
+            Spacer()
+            VStack {
+            }
+            Text("TEXT")
+            Text("TEXT")
+            Spacer()
+            Button(action: { }) {
+                Text("BUTTON")
+            }
+            Image("IMAGE")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Text("Go Back")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            VStack {
+            }
+            Image("IMAGE")
+            Spacer()
+            Text("TEXT")
+            VStack {
+            }
+            VStack {
+            }
+            ProgressView()
+            Spacer()
+            Text("TEXT")
+            VStack {
+            }
+            Text("TEXT")
+            Button(action: { }) {
+                Text("BUTTON")
+            }
+            Text("Continue")
+            VStack {
+            }
+            Spacer()
+            Button(action: { }) {
+                Text("BUTTON")
+            }
+            Text("Begin Search")
+            VStack {
+            }
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Button(action: { }) {
+                Text("BUTTON")
+            }
+            Text("Continue to The Three")
+            VStack {
+            }
+            VStack {
+            }
+            Text("TEXT")
+            Spacer()
+            Text("TEXT")
+            Spacer()
+            Button(action: { }) {
+                Text("BUTTON")
+            }
+            Text("Try Again")
+            Spacer()
+            Text("Go Back")
             }
             .navigationTitle("Payment")
             .foregroundStyle(CodexiaTheme.label)

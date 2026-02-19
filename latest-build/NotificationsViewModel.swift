@@ -5,9 +5,13 @@ import SwiftUI
 final class NotificationsViewModel: ObservableObject {
     @Published var state: NotificationsState = .initial
     @Published var authRepository: String = ""
+    @Published var userRepository: String = ""
     @Published var matchRepository: String = ""
     @Published var uiState: String = ""
-    @Published var userRepository: String = ""
+    @Published var invitations: [String] = []
+    @Published var message: String = ""
+    @Published var invitation: String = ""
+    @Published var initiator: String = ""
 
     func onEvent(_ event: NotificationsEvent) {
         switch event {
@@ -15,5 +19,3 @@ final class NotificationsViewModel: ObservableObject {
         }
     }
 }
-struct NotificationsState { static let initial = NotificationsState() }
-enum NotificationsEvent { case dummy }

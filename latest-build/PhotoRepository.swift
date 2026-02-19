@@ -1,9 +1,12 @@
 import Foundation
 
 final class PhotoRepositoryClient {
-    func PhotoRepository() { }
-    func equals() { }
-    func hashCode() { }
-    func toString() { }
-    func ModerationResult() { }
+    func uploadPhoto() { }
+    func deletePhoto() { }
+    func compressImage() { }
+    func moderatePhoto() { }
+    func blockUserPhotos() { }
+    func uploadToCloudinary() { }
+    func deleteFromCloudinary() { }
+    func extractPublicIdFromUrl() { }
 }

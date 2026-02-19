@@ -1,5 +1,12 @@
 import Foundation
 
 final class PaymentRepositoryClient {
-    func PaymentRepository() { }
+    func savePayment() { }
+    func getPaymentByUserId() { }
+    func hasUserPaid() { }
+    func updatePaymentStatus() { }
+    func createPayment() { }
+    func useGuarantee() { }
+    func isGuaranteeValid() { }
+    func getCurrentUserPayment() { }
 }

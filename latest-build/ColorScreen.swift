@@ -7,7 +7,8 @@ struct ColorScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("\\u0000\\n\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0002\\b&")
+            VStack {
+            }
             }
             .navigationTitle("Color")
             .foregroundStyle(CodexiaTheme.label)

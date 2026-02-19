@@ -7,13 +7,9 @@ struct CompatibilityEngineScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("user1")
-            Text("user2")
+            Text("brain")
             Text("DEFINITELY")
-            Text("userVector")
-            Text("candidates")
-            Text("userVector")
-            Text("candidates")
+            Text("UNSURE")
             }
             .navigationTitle("Compatibility Engine")
             .foregroundStyle(CodexiaTheme.label)

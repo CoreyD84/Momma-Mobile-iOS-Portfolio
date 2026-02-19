@@ -7,7 +7,7 @@ struct TypeScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("\\u0000\\n\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0002\\b\\u0003")
+            EmptyView()
             }
             .navigationTitle("Type")
             .foregroundStyle(CodexiaTheme.label)
