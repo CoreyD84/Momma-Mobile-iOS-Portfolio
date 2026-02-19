@@ -121,7 +121,7 @@ struct SoulLinkPersonalityScreen: View {
             Text("question1")
             Text("question2")
             Text("I noticed something.\\n\\nEarlier you said: ")
-                .navigationTitle("SoulLinkPersonality")
+                .navigationTitle("Soul Link Personality")
         }
         .onAppear { viewModel.onEvent(SoulLinkPersonalityEvent.onAppear) }
     }

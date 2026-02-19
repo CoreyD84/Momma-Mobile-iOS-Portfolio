@@ -37,7 +37,7 @@ struct ValuesVectorScreen: View {
             }
             VStack {
             }
-                .navigationTitle("ValuesVector")
+                .navigationTitle("Values Vector")
         }
         .onAppear { viewModel.onEvent(ValuesVectorEvent.onAppear) }
     }

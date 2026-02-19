@@ -42,7 +42,7 @@ struct CandidateAnalysisScreen: View {
             Text("name")
             VStack {
             }
-                .navigationTitle("CandidateAnalysis")
+                .navigationTitle("Candidate Analysis")
         }
         .onAppear { viewModel.onEvent(CandidateAnalysisEvent.onAppear) }
     }

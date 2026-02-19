@@ -54,7 +54,7 @@ struct MatchCandidateScreen: View {
             }
             VStack {
             }
-                .navigationTitle("MatchCandidate")
+                .navigationTitle("Match Candidate")
         }
         .onAppear { viewModel.onEvent(MatchCandidateEvent.onAppear) }
     }

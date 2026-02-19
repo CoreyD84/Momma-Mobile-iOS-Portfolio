@@ -126,7 +126,7 @@ struct CandidateInvitationScreen: View {
             }
             VStack {
             }
-                .navigationTitle("CandidateInvitation")
+                .navigationTitle("Candidate Invitation")
         }
         .onAppear { viewModel.onEvent(CandidateInvitationEvent.onAppear) }
     }

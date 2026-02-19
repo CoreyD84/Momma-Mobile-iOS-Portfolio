@@ -49,7 +49,7 @@ struct VectorMappingScreen: View {
             }
             VStack {
             }
-                .navigationTitle("VectorMapping")
+                .navigationTitle("Vector Mapping")
         }
         .onAppear { viewModel.onEvent(VectorMappingEvent.onAppear) }
     }

@@ -25,7 +25,7 @@ struct MatchStatusScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("MatchStatus")
+                .navigationTitle("Match Status")
         }
         .onAppear { viewModel.onEvent(MatchStatusEvent.onAppear) }
     }

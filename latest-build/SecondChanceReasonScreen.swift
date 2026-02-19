@@ -20,7 +20,7 @@ struct SecondChanceReasonScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("SecondChanceReason")
+                .navigationTitle("Second Chance Reason")
         }
         .onAppear { viewModel.onEvent(SecondChanceReasonEvent.onAppear) }
     }

@@ -1,2 +1,2 @@
 import SwiftUI
-struct RootNavigator: View { @AppStorage("isLoggedIn") var isLoggedIn = false; var body: some View { if isLoggedIn { HomeScreen() } else { SignInScreenKtScreen().onTapGesture { isLoggedIn = true } } } }
+struct RootNavigator: View { @AppStorage("isLoggedIn") var isLoggedIn = false; var body: some View { if isLoggedIn { HomeScreen() } else { AwaitingPartnerScreenScreen().onTapGesture { isLoggedIn = true } } } }

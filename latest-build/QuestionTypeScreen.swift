@@ -20,7 +20,7 @@ struct QuestionTypeScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("QuestionType")
+                .navigationTitle("Question Type")
         }
         .onAppear { viewModel.onEvent(QuestionTypeEvent.onAppear) }
     }

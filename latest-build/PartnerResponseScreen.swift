@@ -20,7 +20,7 @@ struct PartnerResponseScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("PartnerResponse")
+                .navigationTitle("Partner Response")
         }
         .onAppear { viewModel.onEvent(PartnerResponseEvent.onAppear) }
     }

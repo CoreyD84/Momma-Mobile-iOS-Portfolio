@@ -46,7 +46,7 @@ struct InvitationItemScreen: View {
             }
             VStack {
             }
-                .navigationTitle("InvitationItem")
+                .navigationTitle("Invitation Item")
         }
         .onAppear { viewModel.onEvent(InvitationItemEvent.onAppear) }
     }

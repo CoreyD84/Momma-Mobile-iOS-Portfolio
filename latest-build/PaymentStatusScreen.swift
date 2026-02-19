@@ -22,7 +22,7 @@ struct PaymentStatusScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("PaymentStatus")
+                .navigationTitle("Payment Status")
         }
         .onAppear { viewModel.onEvent(PaymentStatusEvent.onAppear) }
     }

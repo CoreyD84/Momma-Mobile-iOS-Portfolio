@@ -18,7 +18,7 @@ struct ChildrenDesireScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("ChildrenDesire")
+                .navigationTitle("Children Desire")
         }
         .onAppear { viewModel.onEvent(ChildrenDesireEvent.onAppear) }
     }

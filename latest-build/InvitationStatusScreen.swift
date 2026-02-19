@@ -22,7 +22,7 @@ struct InvitationStatusScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("InvitationStatus")
+                .navigationTitle("Invitation Status")
         }
         .onAppear { viewModel.onEvent(InvitationStatusEvent.onAppear) }
     }

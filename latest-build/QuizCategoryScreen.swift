@@ -17,7 +17,7 @@ struct QuizCategoryScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("QuizCategory")
+                .navigationTitle("Quiz Category")
         }
         .onAppear { viewModel.onEvent(QuizCategoryEvent.onAppear) }
     }

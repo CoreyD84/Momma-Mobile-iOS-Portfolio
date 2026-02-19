@@ -33,7 +33,7 @@ struct MatchStatisticsScreen: View {
             Text("MatchStatistics(totalMatches=")
             VStack {
             }
-                .navigationTitle("MatchStatistics")
+                .navigationTitle("Match Statistics")
         }
         .onAppear { viewModel.onEvent(MatchStatisticsEvent.onAppear) }
     }

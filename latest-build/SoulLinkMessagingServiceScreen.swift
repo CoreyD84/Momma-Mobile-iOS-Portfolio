@@ -152,7 +152,7 @@ struct SoulLinkMessagingServiceScreen: View {
             Text("notification")
             Text("null cannot be cast to non-null type android.app.NotificationManager")
             Text("NotificationManager")
-                .navigationTitle("SoulLinkMessagingService")
+                .navigationTitle("Soul Link Messaging Service")
         }
         .onAppear { viewModel.onEvent(SoulLinkMessagingServiceEvent.onAppear) }
     }

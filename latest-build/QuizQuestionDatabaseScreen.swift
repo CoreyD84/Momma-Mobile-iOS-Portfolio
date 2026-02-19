@@ -22,7 +22,7 @@ struct QuizQuestionDatabaseScreen: View {
             VStack {
             }
             Text("CollectionsKt")
-                .navigationTitle("QuizQuestionDatabase")
+                .navigationTitle("Quiz Question Database")
         }
         .onAppear { viewModel.onEvent(QuizQuestionDatabaseEvent.onAppear) }
     }

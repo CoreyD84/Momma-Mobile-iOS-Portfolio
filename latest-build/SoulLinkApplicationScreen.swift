@@ -17,7 +17,7 @@ struct SoulLinkApplicationScreen: View {
             }
             Text("Override")
             Text("FirebaseApp")
-                .navigationTitle("SoulLinkApplication")
+                .navigationTitle("Soul Link Application")
         }
         .onAppear { viewModel.onEvent(SoulLinkApplicationEvent.onAppear) }
     }

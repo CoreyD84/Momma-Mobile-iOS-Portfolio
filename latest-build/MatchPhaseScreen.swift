@@ -20,7 +20,7 @@ struct MatchPhaseScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("MatchPhase")
+                .navigationTitle("Match Phase")
         }
         .onAppear { viewModel.onEvent(MatchPhaseEvent.onAppear) }
     }

@@ -31,7 +31,7 @@ struct CandidateComparisonScreen: View {
             Text("CandidateComparison(candidate1FinalScore=")
             VStack {
             }
-                .navigationTitle("CandidateComparison")
+                .navigationTitle("Candidate Comparison")
         }
         .onAppear { viewModel.onEvent(CandidateComparisonEvent.onAppear) }
     }

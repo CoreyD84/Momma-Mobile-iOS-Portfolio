@@ -55,7 +55,7 @@ struct ConversationItemScreen: View {
             }
             VStack {
             }
-                .navigationTitle("ConversationItem")
+                .navigationTitle("Conversation Item")
         }
         .onAppear { viewModel.onEvent(ConversationItemEvent.onAppear) }
     }

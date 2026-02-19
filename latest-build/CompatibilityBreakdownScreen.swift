@@ -48,7 +48,7 @@ struct CompatibilityBreakdownScreen: View {
             }
             VStack {
             }
-                .navigationTitle("CompatibilityBreakdown")
+                .navigationTitle("Compatibility Breakdown")
         }
         .onAppear { viewModel.onEvent(CompatibilityBreakdownEvent.onAppear) }
     }

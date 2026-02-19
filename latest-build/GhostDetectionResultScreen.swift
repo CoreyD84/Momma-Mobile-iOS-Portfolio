@@ -140,7 +140,7 @@ struct GhostDetectionResultScreen: View {
             VStack {
             }
             Text("message")
-                .navigationTitle("GhostDetectionResult")
+                .navigationTitle("Ghost Detection Result")
         }
         .onAppear { viewModel.onEvent(GhostDetectionResultEvent.onAppear) }
     }

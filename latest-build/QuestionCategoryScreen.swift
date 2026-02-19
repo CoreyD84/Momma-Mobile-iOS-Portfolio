@@ -22,7 +22,7 @@ struct QuestionCategoryScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("QuestionCategory")
+                .navigationTitle("Question Category")
         }
         .onAppear { viewModel.onEvent(QuestionCategoryEvent.onAppear) }
     }

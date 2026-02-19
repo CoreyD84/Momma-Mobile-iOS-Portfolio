@@ -80,7 +80,7 @@ struct ProductDetailsScreen: View {
             }
             VStack {
             }
-                .navigationTitle("ProductDetails")
+                .navigationTitle("Product Details")
         }
         .onAppear { viewModel.onEvent(ProductDetailsEvent.onAppear) }
     }

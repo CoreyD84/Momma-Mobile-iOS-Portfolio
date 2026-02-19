@@ -98,7 +98,7 @@ struct CompatibilityEngineScreen: View {
             Text("userVector")
             Text("candidates")
             Text("CollectionsKt")
-                .navigationTitle("CompatibilityEngine")
+                .navigationTitle("Compatibility Engine")
         }
         .onAppear { viewModel.onEvent(CompatibilityEngineEvent.onAppear) }
     }

@@ -56,7 +56,7 @@ struct QuestionDatabaseScreen: View {
             VStack {
             }
             Text("NoWhenBranchMatchedException")
-                .navigationTitle("QuestionDatabase")
+                .navigationTitle("Question Database")
         }
         .onAppear { viewModel.onEvent(QuestionDatabaseEvent.onAppear) }
     }

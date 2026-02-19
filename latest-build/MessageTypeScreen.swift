@@ -20,7 +20,7 @@ struct MessageTypeScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("MessageType")
+                .navigationTitle("Message Type")
         }
         .onAppear { viewModel.onEvent(MessageTypeEvent.onAppear) }
     }

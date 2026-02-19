@@ -44,7 +44,7 @@ struct RankedCandidateScreen: View {
             }
             VStack {
             }
-                .navigationTitle("RankedCandidate")
+                .navigationTitle("Ranked Candidate")
         }
         .onAppear { viewModel.onEvent(RankedCandidateEvent.onAppear) }
     }

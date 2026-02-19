@@ -37,7 +37,7 @@ struct CompatibilityScoreScreen: View {
             Text("JADX")
             VStack {
             }
-                .navigationTitle("CompatibilityScore")
+                .navigationTitle("Compatibility Score")
         }
         .onAppear { viewModel.onEvent(CompatibilityScoreEvent.onAppear) }
     }

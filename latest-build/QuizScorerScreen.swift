@@ -67,7 +67,7 @@ struct QuizScorerScreen: View {
             Text("candidate2Quiz")
             Text("Math")
             Text("CandidateComparison")
-                .navigationTitle("QuizScorer")
+                .navigationTitle("Quiz Scorer")
         }
         .onAppear { viewModel.onEvent(QuizScorerEvent.onAppear) }
     }

@@ -173,7 +173,7 @@ struct CandidateInvitationServiceScreen: View {
             }
             Text("Method")
             Text("To")
-                .navigationTitle("CandidateInvitationService")
+                .navigationTitle("Candidate Invitation Service")
         }
         .onAppear { viewModel.onEvent(CandidateInvitationServiceEvent.onAppear) }
     }

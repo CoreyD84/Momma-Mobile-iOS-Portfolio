@@ -120,7 +120,7 @@ struct SoulLinkApplication_HiltComponentsScreen: View {
             }
             Text("Binds")
             Text("ViewWithFragmentComponentBuilder")
-                .navigationTitle("SoulLinkApplication_HiltComponents")
+                .navigationTitle("Soul Link Application_ Hilt Components")
         }
         .onAppear { viewModel.onEvent(SoulLinkApplication_HiltComponentsEvent.onAppear) }
     }

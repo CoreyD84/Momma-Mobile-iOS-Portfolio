@@ -100,7 +100,7 @@ struct MatchingServiceScreen: View {
             Text("Divergent life paths")
             Text("Communication style differences")
             Text("Different worldviews")
-                .navigationTitle("MatchingService")
+                .navigationTitle("Matching Service")
         }
         .onAppear { viewModel.onEvent(MatchingServiceEvent.onAppear) }
     }

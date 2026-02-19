@@ -46,7 +46,7 @@ struct ConflictVectorScreen: View {
             Text("ConflictStyle")
             VStack {
             }
-                .navigationTitle("ConflictVector")
+                .navigationTitle("Conflict Vector")
         }
         .onAppear { viewModel.onEvent(ConflictVectorEvent.onAppear) }
     }

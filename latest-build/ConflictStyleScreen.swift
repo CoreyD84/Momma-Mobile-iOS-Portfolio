@@ -22,7 +22,7 @@ struct ConflictStyleScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("ConflictStyle")
+                .navigationTitle("Conflict Style")
         }
         .onAppear { viewModel.onEvent(ConflictStyleEvent.onAppear) }
     }

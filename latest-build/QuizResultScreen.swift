@@ -53,7 +53,7 @@ struct QuizResultScreen: View {
             }
             VStack {
             }
-                .navigationTitle("QuizResult")
+                .navigationTitle("Quiz Result")
         }
         .onAppear { viewModel.onEvent(QuizResultEvent.onAppear) }
     }

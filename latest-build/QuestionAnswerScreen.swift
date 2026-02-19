@@ -72,7 +72,7 @@ struct QuestionAnswerScreen: View {
             }
             VStack {
             }
-                .navigationTitle("QuestionAnswer")
+                .navigationTitle("Question Answer")
         }
         .onAppear { viewModel.onEvent(QuestionAnswerEvent.onAppear) }
     }

@@ -46,7 +46,7 @@ struct MatchHistoryItemScreen: View {
             }
             VStack {
             }
-                .navigationTitle("MatchHistoryItem")
+                .navigationTitle("Match History Item")
         }
         .onAppear { viewModel.onEvent(MatchHistoryItemEvent.onAppear) }
     }

@@ -53,7 +53,7 @@ struct SelectionAnalysisScreen: View {
             }
             VStack {
             }
-                .navigationTitle("SelectionAnalysis")
+                .navigationTitle("Selection Analysis")
         }
         .onAppear { viewModel.onEvent(SelectionAnalysisEvent.onAppear) }
     }

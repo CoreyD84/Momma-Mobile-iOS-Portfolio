@@ -21,7 +21,7 @@ struct PhotoModerationStatusScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("PhotoModerationStatus")
+                .navigationTitle("Photo Moderation Status")
         }
         .onAppear { viewModel.onEvent(PhotoModerationStatusEvent.onAppear) }
     }

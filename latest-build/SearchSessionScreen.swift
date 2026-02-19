@@ -108,7 +108,7 @@ struct SearchSessionScreen: View {
             }
             VStack {
             }
-                .navigationTitle("SearchSession")
+                .navigationTitle("Search Session")
         }
         .onAppear { viewModel.onEvent(SearchSessionEvent.onAppear) }
     }

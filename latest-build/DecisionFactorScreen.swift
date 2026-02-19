@@ -52,7 +52,7 @@ struct DecisionFactorScreen: View {
             }
             VStack {
             }
-                .navigationTitle("DecisionFactor")
+                .navigationTitle("Decision Factor")
         }
         .onAppear { viewModel.onEvent(DecisionFactorEvent.onAppear) }
     }

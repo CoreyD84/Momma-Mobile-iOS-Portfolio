@@ -37,7 +37,7 @@ struct CommunicationVectorScreen: View {
             }
             VStack {
             }
-                .navigationTitle("CommunicationVector")
+                .navigationTitle("Communication Vector")
         }
         .onAppear { viewModel.onEvent(CommunicationVectorEvent.onAppear) }
     }

@@ -117,7 +117,7 @@ struct LocationServiceScreen: View {
             Text(" miles away")
             Text(" miles away")
             Text("+ miles away")
-                .navigationTitle("LocationService")
+                .navigationTitle("Location Service")
         }
         .onAppear { viewModel.onEvent(LocationServiceEvent.onAppear) }
     }

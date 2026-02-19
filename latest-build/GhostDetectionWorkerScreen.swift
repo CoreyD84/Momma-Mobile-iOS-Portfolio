@@ -71,7 +71,7 @@ struct GhostDetectionWorkerScreen: View {
             }
             Text("Method")
             Text("To")
-                .navigationTitle("GhostDetectionWorker")
+                .navigationTitle("Ghost Detection Worker")
         }
         .onAppear { viewModel.onEvent(GhostDetectionWorkerEvent.onAppear) }
     }

@@ -19,7 +19,7 @@ struct CloudinaryConfigScreen: View {
             Text("soullink_photos")
             VStack {
             }
-                .navigationTitle("CloudinaryConfig")
+                .navigationTitle("Cloudinary Config")
         }
         .onAppear { viewModel.onEvent(CloudinaryConfigEvent.onAppear) }
     }

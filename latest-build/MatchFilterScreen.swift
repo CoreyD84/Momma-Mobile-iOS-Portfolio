@@ -21,7 +21,7 @@ struct MatchFilterScreen: View {
             VStack {
             }
             Text("ENTRIES")
-                .navigationTitle("MatchFilter")
+                .navigationTitle("Match Filter")
         }
         .onAppear { viewModel.onEvent(MatchFilterEvent.onAppear) }
     }

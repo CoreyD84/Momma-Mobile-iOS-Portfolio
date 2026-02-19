@@ -6,7 +6,7 @@ struct SoulLinkApplication_ComponentTreeDepsScreen: View {
     var body: some View {
         NavigationView {
             Text("JADX")
-                .navigationTitle("SoulLinkApplication_ComponentTreeDeps")
+                .navigationTitle("Soul Link Application_ Component Tree Deps")
         }
         .onAppear { viewModel.onEvent(SoulLinkApplication_ComponentTreeDepsEvent.onAppear) }
     }

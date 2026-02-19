@@ -63,7 +63,7 @@ struct PushNotificationServiceScreen: View {
             }
             Text("Method")
             Text("To")
-                .navigationTitle("PushNotificationService")
+                .navigationTitle("Push Notification Service")
         }
         .onAppear { viewModel.onEvent(PushNotificationServiceEvent.onAppear) }
     }

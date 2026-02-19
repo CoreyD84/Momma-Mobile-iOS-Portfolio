@@ -117,7 +117,7 @@ struct CompatibilityVectorScreen: View {
             }
             VStack {
             }
-                .navigationTitle("CompatibilityVector")
+                .navigationTitle("Compatibility Vector")
         }
         .onAppear { viewModel.onEvent(CompatibilityVectorEvent.onAppear) }
     }

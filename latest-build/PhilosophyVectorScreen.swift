@@ -37,7 +37,7 @@ struct PhilosophyVectorScreen: View {
             }
             VStack {
             }
-                .navigationTitle("PhilosophyVector")
+                .navigationTitle("Philosophy Vector")
         }
         .onAppear { viewModel.onEvent(PhilosophyVectorEvent.onAppear) }
     }

@@ -134,7 +134,7 @@ struct GhostDetectionServiceScreen: View {
             Text("TimeUnit")
             Text("TimeUnit")
             Text("h ")
-                .navigationTitle("GhostDetectionService")
+                .navigationTitle("Ghost Detection Service")
         }
         .onAppear { viewModel.onEvent(GhostDetectionServiceEvent.onAppear) }
     }

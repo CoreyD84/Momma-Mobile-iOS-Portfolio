@@ -204,7 +204,7 @@ struct BillingManagerScreen: View {
             Text("billingResult")
             Text("BillingState")
             Text("BillingClient")
-                .navigationTitle("BillingManager")
+                .navigationTitle("Billing Manager")
         }
         .onAppear { viewModel.onEvent(BillingManagerEvent.onAppear) }
     }

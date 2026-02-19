@@ -47,7 +47,7 @@ struct QuestionOptionScreen: View {
             }
             VStack {
             }
-                .navigationTitle("QuestionOption")
+                .navigationTitle("Question Option")
         }
         .onAppear { viewModel.onEvent(QuestionOptionEvent.onAppear) }
     }

@@ -46,7 +46,7 @@ struct FutureVectorScreen: View {
             Text("ChildrenDesire")
             VStack {
             }
-                .navigationTitle("FutureVector")
+                .navigationTitle("Future Vector")
         }
         .onAppear { viewModel.onEvent(FutureVectorEvent.onAppear) }
     }
