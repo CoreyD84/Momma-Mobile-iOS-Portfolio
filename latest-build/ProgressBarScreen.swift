@@ -5,8 +5,12 @@ struct ProgressBarScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
-                .navigationTitle("Progress Bar")
+            }
+            .navigationTitle("Progress Bar")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(ProgressBarEvent.onAppear) }
     }

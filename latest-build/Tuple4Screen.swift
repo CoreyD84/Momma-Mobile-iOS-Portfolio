@@ -5,31 +5,12 @@ struct Tuple4Screen: View {
 
     var body: some View {
         NavigationView {
-            Text("ExifInterface")
-            Text("Metadata")
-            Text("Intrinsics")
-            Text("JADX")
-            Text("JADX")
-            VStack {
-            }
-            Text("JADX")
-            VStack {
-            }
-            VStack {
-            }
-            Text("Tuple4")
-            VStack {
-            }
-            VStack {
-            }
-            Text("Tuple4")
-            Text("Intrinsics")
-            VStack {
-            }
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Text("Tuple4(first=")
-            VStack {
             }
-                .navigationTitle("Tuple4")
+            .navigationTitle("Tuple4")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(Tuple4Event.onAppear) }
     }

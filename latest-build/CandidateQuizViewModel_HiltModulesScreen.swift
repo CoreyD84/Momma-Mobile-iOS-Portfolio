@@ -5,29 +5,10 @@ struct CandidateQuizViewModel_HiltModulesScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("Binds")
-            Text("Module")
-            Text("Provides")
-            Text("IntoMap")
-            Text("IntoSet")
-            Text("StringKey")
-            Text("JADX")
-            Text("Module")
-            VStack {
-            }
-            Text("Binds")
-            Text("IntoMap")
-            VStack {
-            }
-            Text("Module")
-            VStack {
-            }
-            VStack {
-            }
-            Text("Provides")
-            Text("IntoSet")
-            VStack {
-            }.navigationTitle("Candidate Quiz View Model_ Hilt Modules")
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
+            EmptyView()
+            }.navigationTitle("Candidate Quiz View Model_ Hilt Modules").foregroundStyle(CodexiaTheme.label)
         }.onAppear { viewModel.onEvent(CandidateQuizViewModel_HiltModulesEvent.onAppear) }
     }
 }

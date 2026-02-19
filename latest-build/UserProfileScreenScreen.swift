@@ -5,11 +5,15 @@ struct UserProfileScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             List {
             }
             List {
             }
-                .navigationTitle("User Profile")
+            }
+            .navigationTitle("User Profile")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(UserProfileScreenEvent.onAppear) }
     }

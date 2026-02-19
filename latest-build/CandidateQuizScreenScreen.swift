@@ -5,6 +5,8 @@ struct CandidateQuizScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -19,7 +21,9 @@ struct CandidateQuizScreenScreen: View {
             Button(action: { }) {
                 Text("BUTTON")
             }
-                .navigationTitle("Candidate Quiz")
+            }
+            .navigationTitle("Candidate Quiz")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(CandidateQuizScreenEvent.onAppear) }
     }

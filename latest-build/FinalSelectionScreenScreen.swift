@@ -5,6 +5,8 @@ struct FinalSelectionScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -51,7 +53,9 @@ struct FinalSelectionScreenScreen: View {
             Spacer()
             Spacer()
             Spacer()
-                .navigationTitle("Final Selection")
+            }
+            .navigationTitle("Final Selection")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(FinalSelectionScreenEvent.onAppear) }
     }

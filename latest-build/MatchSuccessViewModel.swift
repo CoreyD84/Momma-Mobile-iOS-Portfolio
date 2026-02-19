@@ -4,6 +4,9 @@ import SwiftUI
 @MainActor
 final class MatchSuccessViewModel: ObservableObject {
     @Published var state: MatchSuccessState = .initial
+    @Published var authRepository: String = ""
+    @Published var matchId: String = ""
+    @Published var userRepository: String = ""
 
     func onEvent(_ event: MatchSuccessEvent) {
         switch event {

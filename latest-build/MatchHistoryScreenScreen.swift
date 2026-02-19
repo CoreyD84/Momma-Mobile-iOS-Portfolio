@@ -5,11 +5,15 @@ struct MatchHistoryScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             List {
             }
             List {
             }
-                .navigationTitle("Match History")
+            }
+            .navigationTitle("Match History")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(MatchHistoryScreenEvent.onAppear) }
     }

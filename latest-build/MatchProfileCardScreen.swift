@@ -5,12 +5,16 @@ struct MatchProfileCardScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
             Spacer()
             Spacer()
-                .navigationTitle("Match Profile Card")
+            }
+            .navigationTitle("Match Profile Card")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(MatchProfileCardEvent.onAppear) }
     }

@@ -5,18 +5,12 @@ struct GhostDetectionWorker_HiltModuleScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("WorkerAssistedFactory")
-            Text("ListenableWorker")
-            Text("Binds")
-            Text("Module")
-            Text("IntoMap")
-            Text("StringKey")
-            Text("JADX")
-            Text("Module")
-            Text("Binds")
-            Text("IntoMap")
-            Text("WorkerAssistedFactory")
-                .navigationTitle("Ghost Detection Worker_ Hilt Module")
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
+            EmptyView()
+            }
+            .navigationTitle("Ghost Detection Worker_ Hilt Module")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(GhostDetectionWorker_HiltModuleEvent.onAppear) }
     }

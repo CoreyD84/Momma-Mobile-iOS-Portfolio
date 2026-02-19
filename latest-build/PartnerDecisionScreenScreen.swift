@@ -5,6 +5,8 @@ struct PartnerDecisionScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -28,7 +30,9 @@ struct PartnerDecisionScreenScreen: View {
             Button(action: { }) {
                 Text("BUTTON")
             }
-                .navigationTitle("Partner Decision")
+            }
+            .navigationTitle("Partner Decision")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(PartnerDecisionScreenEvent.onAppear) }
     }

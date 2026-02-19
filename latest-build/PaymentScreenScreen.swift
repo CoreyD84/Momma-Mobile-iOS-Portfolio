@@ -5,6 +5,8 @@ struct PaymentScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -32,7 +34,9 @@ struct PaymentScreenScreen: View {
             Button(action: { }) {
                 Text("BUTTON")
             }
-                .navigationTitle("Payment")
+            }
+            .navigationTitle("Payment")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(PaymentScreenEvent.onAppear) }
     }

@@ -5,6 +5,8 @@ struct TheThreeScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -35,7 +37,9 @@ struct TheThreeScreenScreen: View {
             Button(action: { }) {
                 Text("BUTTON")
             }
-                .navigationTitle("The Three")
+            }
+            .navigationTitle("The Three")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(TheThreeScreenEvent.onAppear) }
     }

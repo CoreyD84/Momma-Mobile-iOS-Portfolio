@@ -5,6 +5,7 @@ import SwiftUI
 final class QuizScreenViewModel: ObservableObject {
     @Published var state: QuizScreenState = .initial
 
+
     func onEvent(_ event: QuizScreenEvent) {
         switch event {
         default: break

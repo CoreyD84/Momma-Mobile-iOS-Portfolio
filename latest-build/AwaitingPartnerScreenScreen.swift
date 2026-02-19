@@ -5,6 +5,8 @@ struct AwaitingPartnerScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -43,7 +45,9 @@ struct AwaitingPartnerScreenScreen: View {
                 Text("BUTTON")
             }
             Spacer()
-                .navigationTitle("Awaiting Partner")
+            }
+            .navigationTitle("Awaiting Partner")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(AwaitingPartnerScreenEvent.onAppear) }
     }

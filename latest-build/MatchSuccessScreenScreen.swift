@@ -5,6 +5,8 @@ struct MatchSuccessScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -18,7 +20,9 @@ struct MatchSuccessScreenScreen: View {
             VStack {
             }
             Spacer()
-                .navigationTitle("Match Success")
+            }
+            .navigationTitle("Match Success")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(MatchSuccessScreenEvent.onAppear) }
     }

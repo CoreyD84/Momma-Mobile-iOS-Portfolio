@@ -5,6 +5,7 @@ import SwiftUI
 final class MessageTypeViewModel: ObservableObject {
     @Published var state: MessageTypeState = .initial
 
+
     func onEvent(_ event: MessageTypeEvent) {
         switch event {
         default: break

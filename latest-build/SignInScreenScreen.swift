@@ -5,6 +5,8 @@ struct SignInScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             TextField("INPUT", text: .constant(""))
@@ -16,7 +18,9 @@ struct SignInScreenScreen: View {
             }
             Spacer()
             Spacer()
-                .navigationTitle("Sign In")
+            }
+            .navigationTitle("Sign In")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(SignInScreenEvent.onAppear) }
     }

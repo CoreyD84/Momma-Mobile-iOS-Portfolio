@@ -5,6 +5,8 @@ struct QuizScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -33,7 +35,9 @@ struct QuizScreenScreen: View {
             Spacer()
             Spacer()
             Spacer()
-                .navigationTitle("Quiz")
+            }
+            .navigationTitle("Quiz")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(QuizScreenEvent.onAppear) }
     }

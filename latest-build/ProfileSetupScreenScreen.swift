@@ -5,12 +5,16 @@ struct ProfileSetupScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             List {
             }
             Button(action: { }) {
                 Text("BUTTON")
             }
-                .navigationTitle("Profile Setup")
+            }
+            .navigationTitle("Profile Setup")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(ProfileSetupScreenEvent.onAppear) }
     }

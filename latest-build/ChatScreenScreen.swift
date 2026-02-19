@@ -5,6 +5,8 @@ struct ChatScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Button(action: { }) {
                 Text("BUTTON")
             }
@@ -19,7 +21,9 @@ struct ChatScreenScreen: View {
             Spacer()
             TextField("INPUT", text: .constant(""))
             Spacer()
-                .navigationTitle("Chat")
+            }
+            .navigationTitle("Chat")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(ChatScreenEvent.onAppear) }
     }

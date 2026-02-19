@@ -5,6 +5,8 @@ struct SecondChanceScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -15,7 +17,9 @@ struct SecondChanceScreenScreen: View {
             }
             Spacer()
             Spacer()
-                .navigationTitle("Second Chance")
+            }
+            .navigationTitle("Second Chance")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(SecondChanceScreenEvent.onAppear) }
     }

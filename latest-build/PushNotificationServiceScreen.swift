@@ -5,65 +5,13 @@ struct PushNotificationServiceScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("FirebaseFirestore")
-            Text("Constants")
-            Text("Inject")
-            Text("Singleton")
-            Text("Metadata")
-            Text("Intrinsics")
-            Text("JADX")
-            Text("JADX")
-            Text("Singleton")
-            VStack {
-            }
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Text("PushNotificationService")
-            Text("FirebaseFirestore")
-            Text("Inject")
-            VStack {
-            }
             Text("firestore")
-            Text("JADX")
-            Text("JADX")
-            Text("Code")
-            Text("To")
-            VStack {
             }
-            Text("Method")
-            Text("To")
-            Text("JADX")
-            Text("JADX")
-            Text("Code")
-            Text("To")
-            VStack {
-            }
-            Text("Method")
-            Text("To")
-            Text("JADX")
-            Text("JADX")
-            Text("Code")
-            Text("To")
-            VStack {
-            }
-            Text("Method")
-            Text("To")
-            Text("JADX")
-            Text("JADX")
-            Text("Code")
-            Text("To")
-            VStack {
-            }
-            Text("Method")
-            Text("To")
-            Text("JADX")
-            Text("JADX")
-            Text("JADX")
-            Text("Code")
-            Text("To")
-            VStack {
-            }
-            Text("Method")
-            Text("To")
-                .navigationTitle("Push Notification Service")
+            .navigationTitle("Push Notification Service")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(PushNotificationServiceEvent.onAppear) }
     }

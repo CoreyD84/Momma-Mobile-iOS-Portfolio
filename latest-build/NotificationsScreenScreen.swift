@@ -5,6 +5,8 @@ struct NotificationsScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             List {
@@ -12,7 +14,9 @@ struct NotificationsScreenScreen: View {
             Spacer()
             Spacer()
             Spacer()
-                .navigationTitle("Notifications")
+            }
+            .navigationTitle("Notifications")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(NotificationsScreenEvent.onAppear) }
     }

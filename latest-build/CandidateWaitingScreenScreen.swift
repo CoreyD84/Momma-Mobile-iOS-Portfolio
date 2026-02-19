@@ -5,6 +5,8 @@ struct CandidateWaitingScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -12,7 +14,9 @@ struct CandidateWaitingScreenScreen: View {
             Button(action: { }) {
                 Text("BUTTON")
             }
-                .navigationTitle("Candidate Waiting")
+            }
+            .navigationTitle("Candidate Waiting")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(CandidateWaitingScreenEvent.onAppear) }
     }

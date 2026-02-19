@@ -3,8 +3,8 @@ import SwiftUI
 struct CodexiaTheme {
     static let primary = Color(hex: "#FFD700")
     static let label = Color.white
-    static let background = Color(red: 0.05, green: 0.0, blue: 0.12)
-    static let card = Color(red: 0.15, green: 0.1, blue: 0.25)
+    static let background = Color(hex: "#0D001F")
+    static let card = Color(hex: "#261A40")
 }
 
 extension Color {

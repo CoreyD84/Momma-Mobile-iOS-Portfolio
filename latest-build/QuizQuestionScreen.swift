@@ -5,81 +5,24 @@ struct QuizQuestionScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("Metadata")
-            Text("DefaultConstructorMarker")
-            Text("Intrinsics")
-            Text("JADX")
-            Text("JADX")
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Text("\\u0000")
-            VStack {
-            }
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("String")
-            VStack {
-            }
-            VStack {
-            }
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("JADX")
-            VStack {
-            }
-            Text("JADX")
-            VStack {
-            }
-            Text("JADX")
-            VStack {
-            }
-            Text("JADX")
-            VStack {
-            }
-            Text("JADX")
-            Text("JADX")
-            VStack {
-            }
-            VStack {
-            }
             Text("questionId")
             Text("questionText")
             Text("userPrediction")
             Text("partnerActualAnswer")
             Text("soulLinkInsight")
-            Text("QuizQuestion")
-            VStack {
-            }
-            VStack {
-            }
-            Text("QuizQuestion")
-            Text("Intrinsics")
-            Text("Boolean")
-            VStack {
-            }
             Text("QuizQuestion(questionId=")
-            VStack {
-            }
             Text("questionId")
             Text("questionText")
             Text("userPrediction")
             Text("partnerActualAnswer")
             Text("soulLinkInsight")
-            VStack {
-            }
             Text(" : str, (i & 2) != 0 ? ")
-            VStack {
             }
-            VStack {
-            }
-            VStack {
-            }
-            VStack {
-            }
-            VStack {
-            }
-                .navigationTitle("Quiz Question")
+            .navigationTitle("Quiz Question")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(QuizQuestionEvent.onAppear) }
     }

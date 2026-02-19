@@ -5,8 +5,12 @@ struct SplashScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
-                .navigationTitle("Splash")
+            }
+            .navigationTitle("Splash")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(SplashScreenEvent.onAppear) }
     }

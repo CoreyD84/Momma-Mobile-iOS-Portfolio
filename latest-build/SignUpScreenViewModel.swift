@@ -5,6 +5,7 @@ import SwiftUI
 final class SignUpScreenViewModel: ObservableObject {
     @Published var state: SignUpScreenState = .initial
 
+
     func onEvent(_ event: SignUpScreenEvent) {
         switch event {
         default: break

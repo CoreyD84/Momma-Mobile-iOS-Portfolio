@@ -5,6 +5,8 @@ struct WelcomeScreenScreen: View {
 
     var body: some View {
         NavigationView {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
             Spacer()
             Spacer()
             Spacer()
@@ -13,7 +15,9 @@ struct WelcomeScreenScreen: View {
                 Text("BUTTON")
             }
             Spacer()
-                .navigationTitle("Welcome")
+            }
+            .navigationTitle("Welcome")
+            .foregroundStyle(CodexiaTheme.label)
         }
         .onAppear { viewModel.onEvent(WelcomeScreenEvent.onAppear) }
     }
