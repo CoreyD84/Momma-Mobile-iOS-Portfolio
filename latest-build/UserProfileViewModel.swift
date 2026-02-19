@@ -11,3 +11,5 @@ final class UserProfileViewModel: ObservableObject {
         }
     }
 }
+struct UserProfileState { static let initial = UserProfileState() }
+enum UserProfileEvent { case dummy }

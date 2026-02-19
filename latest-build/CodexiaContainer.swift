@@ -12,61 +12,116 @@ class CodexiaContainer: ObservableObject {
     let paymentRepository: PaymentRepository
     let photoRepository: PhotoRepository
     let userRepository: UserRepository
-    let appModuleViewModel: AppModuleViewModel
-    let awaitingPartnerViewModel: AwaitingPartnerViewModel
+    let appModule_ProvideFirebaseAuthFactoryViewModel: AppModule_ProvideFirebaseAuthFactoryViewModel
+    let appModule_ProvideFirebaseFirestoreFactoryViewModel: AppModule_ProvideFirebaseFirestoreFactoryViewModel
+    let appModule_ProvideFirebaseStorageFactoryViewModel: AppModule_ProvideFirebaseStorageFactoryViewModel
+    let awaitingPartnerScreenKtViewModel: AwaitingPartnerScreenKtViewModel
     let billingManagerViewModel: BillingManagerViewModel
-    let browseMembersViewModel: BrowseMembersViewModel
+    let browseMembersScreenKtViewModel: BrowseMembersScreenKtViewModel
+    let candidateAnalysisViewModel: CandidateAnalysisViewModel
+    let candidateComparisonViewModel: CandidateComparisonViewModel
     let candidateInvitationViewModel: CandidateInvitationViewModel
+    let candidateInvitationScreenKtViewModel: CandidateInvitationScreenKtViewModel
     let candidateInvitationServiceViewModel: CandidateInvitationServiceViewModel
-    let candidateQuizViewModel: CandidateQuizViewModel
-    let candidateWaitingViewModel: CandidateWaitingViewModel
-    let chatViewModel: ChatViewModel
+    let candidateQuizScreenKtViewModel: CandidateQuizScreenKtViewModel
+    let candidateWaitingScreenKtViewModel: CandidateWaitingScreenKtViewModel
+    let chatScreenKtViewModel: ChatScreenKtViewModel
+    let childrenDesireViewModel: ChildrenDesireViewModel
     let cloudinaryConfigViewModel: CloudinaryConfigViewModel
-    let colorViewModel: ColorViewModel
+    let colorKtViewModel: ColorKtViewModel
+    let communicationVectorViewModel: CommunicationVectorViewModel
+    let compatibilityBreakdownViewModel: CompatibilityBreakdownViewModel
     let compatibilityEngineViewModel: CompatibilityEngineViewModel
+    let compatibilityScoreViewModel: CompatibilityScoreViewModel
     let compatibilityVectorViewModel: CompatibilityVectorViewModel
-    let eliminationViewModel: EliminationViewModel
-    let finalSelectionViewModel: FinalSelectionViewModel
+    let conflictStyleViewModel: ConflictStyleViewModel
+    let conflictVectorViewModel: ConflictVectorViewModel
+    let conversationViewModel: ConversationViewModel
+    let conversationItemViewModel: ConversationItemViewModel
+    let decisionFactorViewModel: DecisionFactorViewModel
+    let eliminationScreenKtViewModel: EliminationScreenKtViewModel
+    let finalSelectionScreenKtViewModel: FinalSelectionScreenKtViewModel
+    let futureVectorViewModel: FutureVectorViewModel
+    let genderViewModel: GenderViewModel
+    let ghostDetectionResultViewModel: GhostDetectionResultViewModel
     let ghostDetectionServiceViewModel: GhostDetectionServiceViewModel
     let ghostDetectionWorkerViewModel: GhostDetectionWorkerViewModel
-    let homeViewModel: HomeViewModel
+    let ghostDetectionWorker_AssistedFactoryViewModel: GhostDetectionWorker_AssistedFactoryViewModel
+    let ghostDetectionWorker_AssistedFactory_ImplViewModel: GhostDetectionWorker_AssistedFactory_ImplViewModel
+    let homeScreenKtViewModel: HomeScreenKtViewModel
+    let invitationItemViewModel: InvitationItemViewModel
+    let invitationStatusViewModel: InvitationStatusViewModel
+    let locationViewModel: LocationViewModel
     let locationServiceViewModel: LocationServiceViewModel
-    let mainActivityViewModel: MainActivityViewModel
     let matchViewModel: MatchViewModel
-    let matchHistoryViewModel: MatchHistoryViewModel
-    let matchProfileCardViewModel: MatchProfileCardViewModel
-    let matchSuccessViewModel: MatchSuccessViewModel
+    let matchCandidateViewModel: MatchCandidateViewModel
+    let matchFilterViewModel: MatchFilterViewModel
+    let matchHistoryItemViewModel: MatchHistoryItemViewModel
+    let matchHistoryScreenKtViewModel: MatchHistoryScreenKtViewModel
+    let matchOutcomeViewModel: MatchOutcomeViewModel
+    let matchPhaseViewModel: MatchPhaseViewModel
+    let matchProfileCardKtViewModel: MatchProfileCardKtViewModel
+    let matchStatisticsViewModel: MatchStatisticsViewModel
+    let matchStatusViewModel: MatchStatusViewModel
+    let matchSuccessScreenKtViewModel: MatchSuccessScreenKtViewModel
     let matchingServiceViewModel: MatchingServiceViewModel
     let messageViewModel: MessageViewModel
-    let navGraphViewModel: NavGraphViewModel
-    let notificationsViewModel: NotificationsViewModel
-    let partnerDecisionViewModel: PartnerDecisionViewModel
+    let messageTypeViewModel: MessageTypeViewModel
+    let navGraphKtViewModel: NavGraphKtViewModel
+    let notificationsScreenKtViewModel: NotificationsScreenKtViewModel
+    let orientationViewModel: OrientationViewModel
+    let partnerDecisionScreenKtViewModel: PartnerDecisionScreenKtViewModel
+    let partnerResponseViewModel: PartnerResponseViewModel
     let paymentViewModel: PaymentViewModel
-    let profileViewModel: ProfileViewModel
-    let profileSetupViewModel: ProfileSetupViewModel
-    let progressBarViewModel: ProgressBarViewModel
+    let paymentScreenKtViewModel: PaymentScreenKtViewModel
+    let paymentStatusViewModel: PaymentStatusViewModel
+    let philosophyVectorViewModel: PhilosophyVectorViewModel
+    let photoModerationStatusViewModel: PhotoModerationStatusViewModel
+    let productDetailsViewModel: ProductDetailsViewModel
+    let profileScreenKtViewModel: ProfileScreenKtViewModel
+    let profileSetupScreenKtViewModel: ProfileSetupScreenKtViewModel
+    let progressBarKtViewModel: ProgressBarKtViewModel
     let pushNotificationServiceViewModel: PushNotificationServiceViewModel
     let questionViewModel: QuestionViewModel
-    let questionCardViewModel: QuestionCardViewModel
+    let questionAnswerViewModel: QuestionAnswerViewModel
+    let questionCardKtViewModel: QuestionCardKtViewModel
+    let questionCategoryViewModel: QuestionCategoryViewModel
     let questionDatabaseViewModel: QuestionDatabaseViewModel
-    let questionnaireViewModel: QuestionnaireViewModel
+    let questionOptionViewModel: QuestionOptionViewModel
+    let questionTypeViewModel: QuestionTypeViewModel
+    let questionnaireResponseViewModel: QuestionnaireResponseViewModel
+    let questionnaireScreenKtViewModel: QuestionnaireScreenKtViewModel
+    let quizCategoryViewModel: QuizCategoryViewModel
+    let quizOptionViewModel: QuizOptionViewModel
+    let quizQuestionViewModel: QuizQuestionViewModel
+    let quizQuestionDataViewModel: QuizQuestionDataViewModel
     let quizQuestionDatabaseViewModel: QuizQuestionDatabaseViewModel
+    let quizResultViewModel: QuizResultViewModel
     let quizScorerViewModel: QuizScorerViewModel
-    let quizViewModel: QuizViewModel
-    let secondChanceViewModel: SecondChanceViewModel
-    let signInViewModel: SignInViewModel
-    let signUpViewModel: SignUpViewModel
+    let quizScreenKtViewModel: QuizScreenKtViewModel
+    let rankedCandidateViewModel: RankedCandidateViewModel
+    let searchSessionViewModel: SearchSessionViewModel
+    let secondChanceReasonViewModel: SecondChanceReasonViewModel
+    let secondChanceScreenKtViewModel: SecondChanceScreenKtViewModel
+    let selectionAnalysisViewModel: SelectionAnalysisViewModel
+    let signInScreenKtViewModel: SignInScreenKtViewModel
+    let signUpScreenKtViewModel: SignUpScreenKtViewModel
     let soulLinkApplicationViewModel: SoulLinkApplicationViewModel
-    let soulLinkMessageViewModel: SoulLinkMessageViewModel
+    let soulLinkApplication_ComponentTreeDepsViewModel: SoulLinkApplication_ComponentTreeDepsViewModel
+    let soulLinkApplication_HiltComponentsViewModel: SoulLinkApplication_HiltComponentsViewModel
+    let soulLinkMessageKtViewModel: SoulLinkMessageKtViewModel
     let soulLinkMessagingServiceViewModel: SoulLinkMessagingServiceViewModel
     let soulLinkPersonalityViewModel: SoulLinkPersonalityViewModel
-    let splashViewModel: SplashViewModel
-    let theThreeViewModel: TheThreeViewModel
-    let themeViewModel: ThemeViewModel
-    let typeViewModel: TypeViewModel
+    let splashScreenKtViewModel: SplashScreenKtViewModel
+    let theThreeScreenKtViewModel: TheThreeScreenKtViewModel
+    let themeKtViewModel: ThemeKtViewModel
+    let tuple4ViewModel: Tuple4ViewModel
+    let typeKtViewModel: TypeKtViewModel
     let userViewModel: UserViewModel
-    let userProfileViewModel: UserProfileViewModel
-    let welcomeViewModel: WelcomeViewModel
+    let userProfileScreenKtViewModel: UserProfileScreenKtViewModel
+    let valuesVectorViewModel: ValuesVectorViewModel
+    let vectorMappingViewModel: VectorMappingViewModel
+    let welcomeScreenKtViewModel: WelcomeScreenKtViewModel
 
     private init() {
         self.authRepository = AuthRepositoryImpl.shared
@@ -77,60 +132,115 @@ class CodexiaContainer: ObservableObject {
         self.paymentRepository = PaymentRepositoryImpl.shared
         self.photoRepository = PhotoRepositoryImpl.shared
         self.userRepository = UserRepositoryImpl.shared
-        self.appModuleViewModel = AppModuleViewModelFactory.make()
-        self.awaitingPartnerViewModel = AwaitingPartnerViewModelFactory.make()
+        self.appModule_ProvideFirebaseAuthFactoryViewModel = AppModule_ProvideFirebaseAuthFactoryViewModelFactory.make()
+        self.appModule_ProvideFirebaseFirestoreFactoryViewModel = AppModule_ProvideFirebaseFirestoreFactoryViewModelFactory.make()
+        self.appModule_ProvideFirebaseStorageFactoryViewModel = AppModule_ProvideFirebaseStorageFactoryViewModelFactory.make()
+        self.awaitingPartnerScreenKtViewModel = AwaitingPartnerScreenKtViewModelFactory.make()
         self.billingManagerViewModel = BillingManagerViewModelFactory.make()
-        self.browseMembersViewModel = BrowseMembersViewModelFactory.make()
+        self.browseMembersScreenKtViewModel = BrowseMembersScreenKtViewModelFactory.make()
+        self.candidateAnalysisViewModel = CandidateAnalysisViewModelFactory.make()
+        self.candidateComparisonViewModel = CandidateComparisonViewModelFactory.make()
         self.candidateInvitationViewModel = CandidateInvitationViewModelFactory.make()
+        self.candidateInvitationScreenKtViewModel = CandidateInvitationScreenKtViewModelFactory.make()
         self.candidateInvitationServiceViewModel = CandidateInvitationServiceViewModelFactory.make()
-        self.candidateQuizViewModel = CandidateQuizViewModelFactory.make()
-        self.candidateWaitingViewModel = CandidateWaitingViewModelFactory.make()
-        self.chatViewModel = ChatViewModelFactory.make()
+        self.candidateQuizScreenKtViewModel = CandidateQuizScreenKtViewModelFactory.make()
+        self.candidateWaitingScreenKtViewModel = CandidateWaitingScreenKtViewModelFactory.make()
+        self.chatScreenKtViewModel = ChatScreenKtViewModelFactory.make()
+        self.childrenDesireViewModel = ChildrenDesireViewModelFactory.make()
         self.cloudinaryConfigViewModel = CloudinaryConfigViewModelFactory.make()
-        self.colorViewModel = ColorViewModelFactory.make()
+        self.colorKtViewModel = ColorKtViewModelFactory.make()
+        self.communicationVectorViewModel = CommunicationVectorViewModelFactory.make()
+        self.compatibilityBreakdownViewModel = CompatibilityBreakdownViewModelFactory.make()
         self.compatibilityEngineViewModel = CompatibilityEngineViewModelFactory.make()
+        self.compatibilityScoreViewModel = CompatibilityScoreViewModelFactory.make()
         self.compatibilityVectorViewModel = CompatibilityVectorViewModelFactory.make()
-        self.eliminationViewModel = EliminationViewModelFactory.make()
-        self.finalSelectionViewModel = FinalSelectionViewModelFactory.make()
+        self.conflictStyleViewModel = ConflictStyleViewModelFactory.make()
+        self.conflictVectorViewModel = ConflictVectorViewModelFactory.make()
+        self.conversationViewModel = ConversationViewModelFactory.make()
+        self.conversationItemViewModel = ConversationItemViewModelFactory.make()
+        self.decisionFactorViewModel = DecisionFactorViewModelFactory.make()
+        self.eliminationScreenKtViewModel = EliminationScreenKtViewModelFactory.make()
+        self.finalSelectionScreenKtViewModel = FinalSelectionScreenKtViewModelFactory.make()
+        self.futureVectorViewModel = FutureVectorViewModelFactory.make()
+        self.genderViewModel = GenderViewModelFactory.make()
+        self.ghostDetectionResultViewModel = GhostDetectionResultViewModelFactory.make()
         self.ghostDetectionServiceViewModel = GhostDetectionServiceViewModelFactory.make()
         self.ghostDetectionWorkerViewModel = GhostDetectionWorkerViewModelFactory.make()
-        self.homeViewModel = HomeViewModelFactory.make()
+        self.ghostDetectionWorker_AssistedFactoryViewModel = GhostDetectionWorker_AssistedFactoryViewModelFactory.make()
+        self.ghostDetectionWorker_AssistedFactory_ImplViewModel = GhostDetectionWorker_AssistedFactory_ImplViewModelFactory.make()
+        self.homeScreenKtViewModel = HomeScreenKtViewModelFactory.make()
+        self.invitationItemViewModel = InvitationItemViewModelFactory.make()
+        self.invitationStatusViewModel = InvitationStatusViewModelFactory.make()
+        self.locationViewModel = LocationViewModelFactory.make()
         self.locationServiceViewModel = LocationServiceViewModelFactory.make()
-        self.mainActivityViewModel = MainActivityViewModelFactory.make()
         self.matchViewModel = MatchViewModelFactory.make()
-        self.matchHistoryViewModel = MatchHistoryViewModelFactory.make()
-        self.matchProfileCardViewModel = MatchProfileCardViewModelFactory.make()
-        self.matchSuccessViewModel = MatchSuccessViewModelFactory.make()
+        self.matchCandidateViewModel = MatchCandidateViewModelFactory.make()
+        self.matchFilterViewModel = MatchFilterViewModelFactory.make()
+        self.matchHistoryItemViewModel = MatchHistoryItemViewModelFactory.make()
+        self.matchHistoryScreenKtViewModel = MatchHistoryScreenKtViewModelFactory.make()
+        self.matchOutcomeViewModel = MatchOutcomeViewModelFactory.make()
+        self.matchPhaseViewModel = MatchPhaseViewModelFactory.make()
+        self.matchProfileCardKtViewModel = MatchProfileCardKtViewModelFactory.make()
+        self.matchStatisticsViewModel = MatchStatisticsViewModelFactory.make()
+        self.matchStatusViewModel = MatchStatusViewModelFactory.make()
+        self.matchSuccessScreenKtViewModel = MatchSuccessScreenKtViewModelFactory.make()
         self.matchingServiceViewModel = MatchingServiceViewModelFactory.make()
         self.messageViewModel = MessageViewModelFactory.make()
-        self.navGraphViewModel = NavGraphViewModelFactory.make()
-        self.notificationsViewModel = NotificationsViewModelFactory.make()
-        self.partnerDecisionViewModel = PartnerDecisionViewModelFactory.make()
+        self.messageTypeViewModel = MessageTypeViewModelFactory.make()
+        self.navGraphKtViewModel = NavGraphKtViewModelFactory.make()
+        self.notificationsScreenKtViewModel = NotificationsScreenKtViewModelFactory.make()
+        self.orientationViewModel = OrientationViewModelFactory.make()
+        self.partnerDecisionScreenKtViewModel = PartnerDecisionScreenKtViewModelFactory.make()
+        self.partnerResponseViewModel = PartnerResponseViewModelFactory.make()
         self.paymentViewModel = PaymentViewModelFactory.make()
-        self.profileViewModel = ProfileViewModelFactory.make()
-        self.profileSetupViewModel = ProfileSetupViewModelFactory.make()
-        self.progressBarViewModel = ProgressBarViewModelFactory.make()
+        self.paymentScreenKtViewModel = PaymentScreenKtViewModelFactory.make()
+        self.paymentStatusViewModel = PaymentStatusViewModelFactory.make()
+        self.philosophyVectorViewModel = PhilosophyVectorViewModelFactory.make()
+        self.photoModerationStatusViewModel = PhotoModerationStatusViewModelFactory.make()
+        self.productDetailsViewModel = ProductDetailsViewModelFactory.make()
+        self.profileScreenKtViewModel = ProfileScreenKtViewModelFactory.make()
+        self.profileSetupScreenKtViewModel = ProfileSetupScreenKtViewModelFactory.make()
+        self.progressBarKtViewModel = ProgressBarKtViewModelFactory.make()
         self.pushNotificationServiceViewModel = PushNotificationServiceViewModelFactory.make()
         self.questionViewModel = QuestionViewModelFactory.make()
-        self.questionCardViewModel = QuestionCardViewModelFactory.make()
+        self.questionAnswerViewModel = QuestionAnswerViewModelFactory.make()
+        self.questionCardKtViewModel = QuestionCardKtViewModelFactory.make()
+        self.questionCategoryViewModel = QuestionCategoryViewModelFactory.make()
         self.questionDatabaseViewModel = QuestionDatabaseViewModelFactory.make()
-        self.questionnaireViewModel = QuestionnaireViewModelFactory.make()
+        self.questionOptionViewModel = QuestionOptionViewModelFactory.make()
+        self.questionTypeViewModel = QuestionTypeViewModelFactory.make()
+        self.questionnaireResponseViewModel = QuestionnaireResponseViewModelFactory.make()
+        self.questionnaireScreenKtViewModel = QuestionnaireScreenKtViewModelFactory.make()
+        self.quizCategoryViewModel = QuizCategoryViewModelFactory.make()
+        self.quizOptionViewModel = QuizOptionViewModelFactory.make()
+        self.quizQuestionViewModel = QuizQuestionViewModelFactory.make()
+        self.quizQuestionDataViewModel = QuizQuestionDataViewModelFactory.make()
         self.quizQuestionDatabaseViewModel = QuizQuestionDatabaseViewModelFactory.make()
+        self.quizResultViewModel = QuizResultViewModelFactory.make()
         self.quizScorerViewModel = QuizScorerViewModelFactory.make()
-        self.quizViewModel = QuizViewModelFactory.make()
-        self.secondChanceViewModel = SecondChanceViewModelFactory.make()
-        self.signInViewModel = SignInViewModelFactory.make()
-        self.signUpViewModel = SignUpViewModelFactory.make()
+        self.quizScreenKtViewModel = QuizScreenKtViewModelFactory.make()
+        self.rankedCandidateViewModel = RankedCandidateViewModelFactory.make()
+        self.searchSessionViewModel = SearchSessionViewModelFactory.make()
+        self.secondChanceReasonViewModel = SecondChanceReasonViewModelFactory.make()
+        self.secondChanceScreenKtViewModel = SecondChanceScreenKtViewModelFactory.make()
+        self.selectionAnalysisViewModel = SelectionAnalysisViewModelFactory.make()
+        self.signInScreenKtViewModel = SignInScreenKtViewModelFactory.make()
+        self.signUpScreenKtViewModel = SignUpScreenKtViewModelFactory.make()
         self.soulLinkApplicationViewModel = SoulLinkApplicationViewModelFactory.make()
-        self.soulLinkMessageViewModel = SoulLinkMessageViewModelFactory.make()
+        self.soulLinkApplication_ComponentTreeDepsViewModel = SoulLinkApplication_ComponentTreeDepsViewModelFactory.make()
+        self.soulLinkApplication_HiltComponentsViewModel = SoulLinkApplication_HiltComponentsViewModelFactory.make()
+        self.soulLinkMessageKtViewModel = SoulLinkMessageKtViewModelFactory.make()
         self.soulLinkMessagingServiceViewModel = SoulLinkMessagingServiceViewModelFactory.make()
         self.soulLinkPersonalityViewModel = SoulLinkPersonalityViewModelFactory.make()
-        self.splashViewModel = SplashViewModelFactory.make()
-        self.theThreeViewModel = TheThreeViewModelFactory.make()
-        self.themeViewModel = ThemeViewModelFactory.make()
-        self.typeViewModel = TypeViewModelFactory.make()
+        self.splashScreenKtViewModel = SplashScreenKtViewModelFactory.make()
+        self.theThreeScreenKtViewModel = TheThreeScreenKtViewModelFactory.make()
+        self.themeKtViewModel = ThemeKtViewModelFactory.make()
+        self.tuple4ViewModel = Tuple4ViewModelFactory.make()
+        self.typeKtViewModel = TypeKtViewModelFactory.make()
         self.userViewModel = UserViewModelFactory.make()
-        self.userProfileViewModel = UserProfileViewModelFactory.make()
-        self.welcomeViewModel = WelcomeViewModelFactory.make()
+        self.userProfileScreenKtViewModel = UserProfileScreenKtViewModelFactory.make()
+        self.valuesVectorViewModel = ValuesVectorViewModelFactory.make()
+        self.vectorMappingViewModel = VectorMappingViewModelFactory.make()
+        self.welcomeScreenKtViewModel = WelcomeScreenKtViewModelFactory.make()
     }
 }

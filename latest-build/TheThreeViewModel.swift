@@ -11,3 +11,5 @@ final class TheThreeViewModel: ObservableObject {
         }
     }
 }
+struct TheThreeState { static let initial = TheThreeState() }
+enum TheThreeEvent { case dummy }

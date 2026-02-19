@@ -5,183 +5,293 @@ struct MatchScreen: View {
 
     var body: some View {
         NavigationView {
+            Text("NotificationCompat")
+            Text("AccessibilityEventCompat")
+            Text("Ints")
             Text("Timestamp")
             Text("DocumentId")
             Text("ServerTimestamp")
-            Text("Represents")
-            Text("Match")
+            Text("List")
+            Text("Map")
+            Text("Metadata")
+            Text("CollectionsKt")
+            Text("MapsKt")
+            Text("DefaultConstructorMarker")
+            Text("Intrinsics")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("List")
+            Text("Map")
+            Text("List")
+            Text("Map")
+            Text("Map")
+            Text("ServerTimestamp")
+            Text("Timestamp")
+            Text("List")
+            Text("String")
+            Text("List")
+            Text("Timestamp")
+            Text("List")
+            Text("Timestamp")
+            Text("Timestamp")
             Text("DocumentId")
             Text("String")
             Text("String")
-            Text("String")
-            Text("Match")
-            Text("MatchStatus")
-            Text("MatchPhase")
-            Text("Compatibility")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("The")
             Text("List")
-            Text("List")
-            Text("List")
-            Text("List")
-            Text("Map")
-            Text("List")
-            Text("String")
-            Text("List")
-            Text("List")
-            Text("List")
-            Text("Quiz")
-            Text("Map")
-            Text("Map")
-            Text("Map")
-            Text("Boolean")
-            Text("Final")
-            Text("String")
-            Text("String")
-            Text("Reciprocity")
-            Text("Boolean")
-            Text("PartnerResponse")
             Text("Timestamp")
-            Text("Engagement")
-            Text("Boolean")
             Text("Timestamp")
-            Text("Int")
-            Text("Boolean")
             Text("Timestamp")
-            Text("Second")
-            Text("Boolean")
-            Text("Boolean")
             Text("Timestamp")
-            Text("Outcome")
+            Text("Map")
             Text("MatchOutcome")
             Text("String")
-            Text("Boolean")
-            Text("Additional")
+            Text("String")
+            Text("PartnerResponse")
             Text("Timestamp")
-            Text("Timestamp")
-            Text("Ghost")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Metadata")
-            Text("UNCHECKED_CAST")
+            Text("MatchPhase")
             Text("Map")
-            Text("ServerTimestamp")
-            Text("Timestamp")
-            Text("ServerTimestamp")
-            Text("Timestamp")
-            VStack {
-            }
-            Text("PENDING")
-            Text("ACCEPTED")
-            Text("DECLINED")
-            Text("GHOSTED")
-            Text("ACTIVE")
-            Text("COMPLETED")
-            Text("FAILED")
-            Text("ENDED")
-            Text("User")
-            VStack {
-            }
-            Text("Inviting")
-            Text("Inviting")
-            Text("Showing")
-            Text("QUIZ")
-            Text("Alias")
-            Button(action: { }) {
-                Text("SoulLink")
-            }
-            Text("Waiting")
-            Text("MATCHED")
-            Text("ENDED")
-            VStack {
-            }
-            Text("PENDING")
-            Text("ACCEPTED")
-            Text("DECLINED")
-            VStack {
-            }
-            Text("SUCCESS")
-            Text("DECLINED")
-            Text("GHOSTED")
-            Text("MISMATCH")
-            Text("Both")
-            Text("System")
-            Text("Candidate")
-            Text("Quiz")
-            Text("QuizResult")
-            Text("String")
             Text("List")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("QuizQuestion")
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("Boolean")
-            Text("String")
-            Text("Search")
-            Text("SearchSession")
-            Text("DocumentId")
-            Text("String")
-            Text("String")
-            Text("Int")
-            Text("Boolean")
-            Text("Boolean")
-            Text("Payment")
-            Text("String")
-            Text("Double")
             Text("Timestamp")
-            Text("Search")
             Text("String")
-            Text("Int")
+            Text("String")
+            Text("MatchStatus")
             Text("List")
-            Text("Results")
-            Text("String")
-            Text("Boolean")
-            Text("Boolean")
-            Text("ServerTimestamp")
-            Text("Timestamp")
-            Text("ServerTimestamp")
-            Text("Timestamp")
-            Text("Candidate")
-            Text("The Three")
-            Text("CandidateInvitation")
-            Text("DocumentId")
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("Invitation")
-            Text("Double")
-            Text("Boolean")
-            Text("Timestamp")
-            Text("Response")
-            Text("InvitationStatus")
-            Text("Timestamp")
-            Text("Payment")
-            Text("Boolean")
-            Text("Boolean")
-            Text("String")
-            Text("Timestamp")
-            Text("Expiration")
-            Text("Timestamp")
-            Text("Boolean")
-            Text("ServerTimestamp")
-            Text("Timestamp")
             Text("ServerTimestamp")
             Text("Timestamp")
             VStack {
             }
-            Text("PENDING")
-            Text("ACCEPTED")
-            Text("DECLINED")
-            Text("EXPIRED")
-            Text("REPLACED")
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("id")
+            Text("initiatorId")
+            Text("partnerId")
+            Text("status")
+            Text("phase")
+            Text("invitedCandidates")
+            Text("candidateIds")
+            Text("acceptedCandidates")
+            Text("declinedCandidates")
+            Text("candidateResponses")
+            Text("theThreeCandidates")
+            Text("eliminatedCandidates")
+            Text("finalTwoCandidates")
+            Text("quizResults")
+            Text("candidateAnswers")
+            Text("candidateQuizStatus")
+            Text("soulLinkExplanation")
+            Text("outcomeReason")
+            Text("metadata")
+            Text("Match")
+            VStack {
+            }
+            VStack {
+            }
+            Text("Match")
+            Text("Intrinsics")
+            Text("Double")
+            VStack {
+            }
+            Text("Match(id=")
+            Text("JADX")
+            VStack {
+            }
+            Text("id")
+            Text("initiatorId")
+            Text("partnerId")
+            Text("status")
+            Text("phase")
+            Text("invitedCandidates")
+            Text("candidateIds")
+            Text("acceptedCandidates")
+            Text("declinedCandidates")
+            Text("candidateResponses")
+            Text("theThreeCandidates")
+            Text("eliminatedCandidates")
+            Text("finalTwoCandidates")
+            Text("quizResults")
+            Text("candidateAnswers")
+            Text("candidateQuizStatus")
+            Text("soulLinkExplanation")
+            Text("outcomeReason")
+            Text("metadata")
+            VStack {
+            }
+            Text(" : str, (i2 & 2) != 0 ? ")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
                 .navigationTitle("Match")
         }
         .onAppear { viewModel.onEvent(MatchEvent.onAppear) }

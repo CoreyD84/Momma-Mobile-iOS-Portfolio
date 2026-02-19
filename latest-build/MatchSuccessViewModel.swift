@@ -11,3 +11,5 @@ final class MatchSuccessViewModel: ObservableObject {
         }
     }
 }
+struct MatchSuccessState { static let initial = MatchSuccessState() }
+enum MatchSuccessEvent { case dummy }

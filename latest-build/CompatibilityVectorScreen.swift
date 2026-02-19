@@ -8,80 +8,115 @@ struct CompatibilityVectorScreen: View {
             Text("Timestamp")
             Text("DocumentId")
             Text("ServerTimestamp")
-            Text("Represents")
-            Text("This")
-            Text("CompatibilityVector")
-            Text("DocumentId")
-            Text("String")
-            Text("String")
-            Text("Values")
-            Text("ValuesVector")
-            Text("Conflict")
-            Text("ConflictVector")
-            Text("Future")
-            Text("FutureVector")
-            Text("Communication")
-            Text("CommunicationVector")
-            Text("Philosophy")
-            Text("PhilosophyVector")
+            Text("List")
             Text("Metadata")
-            Text("Double")
-            Text("Double")
+            Text("CollectionsKt")
+            Text("DefaultConstructorMarker")
+            Text("Intrinsics")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("CommunicationVector")
+            Text("ConflictVector")
             Text("List")
             Text("ServerTimestamp")
             Text("Timestamp")
+            Text("FutureVector")
+            Text("DocumentId")
+            Text("String")
+            Text("PhilosophyVector")
             Text("ServerTimestamp")
             Text("Timestamp")
-            Text("Values")
+            Text("String")
             Text("ValuesVector")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Conflict")
-            Text("ConflictVector")
-            Text("ConflictStyle")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("id")
+            Text("userId")
+            Text("valuesVector")
+            Text("conflictVector")
+            Text("futureVector")
+            Text("communicationVector")
+            Text("philosophyVector")
+            Text("contradictionFlags")
+            Text("CompatibilityVector")
+            VStack {
+            }
+            VStack {
+            }
+            Text("CompatibilityVector")
+            Text("Intrinsics")
             Text("Double")
             VStack {
             }
-            Text("AVOIDER")
-            Text("ACCOMMODATOR")
-            Text("COMPETITOR")
-            Text("COLLABORATOR")
-            Text("BALANCED")
-            Text("Future")
-            Text("FutureVector")
-            Text("ChildrenDesire")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
+            Text("CompatibilityVector(id=")
             VStack {
             }
-            Text("UNSURE")
-            Text("Communication")
-            Text("CommunicationVector")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Philosophy")
-            Text("PhilosophyVector")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
+            Text("id")
+            Text("userId")
+            Text("valuesVector")
+            Text("conflictVector")
+            Text("futureVector")
+            Text("communicationVector")
+            Text("philosophyVector")
+            Text("contradictionFlags")
+            VStack {
+            }
+            Text(" : str, (i & 2) == 0 ? str2 : ")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
                 .navigationTitle("CompatibilityVector")
         }
         .onAppear { viewModel.onEvent(CompatibilityVectorEvent.onAppear) }

@@ -11,3 +11,5 @@ final class QuizViewModel: ObservableObject {
         }
     }
 }
+struct QuizState { static let initial = QuizState() }
+enum QuizEvent { case dummy }

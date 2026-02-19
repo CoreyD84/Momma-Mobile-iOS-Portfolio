@@ -11,3 +11,5 @@ final class ChatViewModel: ObservableObject {
         }
     }
 }
+struct ChatState { static let initial = ChatState() }
+enum ChatEvent { case dummy }

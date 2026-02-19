@@ -11,3 +11,5 @@ final class CandidateQuizViewModel: ObservableObject {
         }
     }
 }
+struct CandidateQuizState { static let initial = CandidateQuizState() }
+enum CandidateQuizEvent { case dummy }

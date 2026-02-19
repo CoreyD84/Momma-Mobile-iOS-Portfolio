@@ -11,3 +11,5 @@ final class FinalSelectionViewModel: ObservableObject {
         }
     }
 }
+struct FinalSelectionState { static let initial = FinalSelectionState() }
+enum FinalSelectionEvent { case dummy }

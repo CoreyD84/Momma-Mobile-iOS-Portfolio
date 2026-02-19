@@ -11,3 +11,5 @@ final class EliminationViewModel: ObservableObject {
         }
     }
 }
+struct EliminationState { static let initial = EliminationState() }
+enum EliminationEvent { case dummy }

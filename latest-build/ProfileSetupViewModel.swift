@@ -11,3 +11,5 @@ final class ProfileSetupViewModel: ObservableObject {
         }
     }
 }
+struct ProfileSetupState { static let initial = ProfileSetupState() }
+enum ProfileSetupEvent { case dummy }

@@ -11,3 +11,5 @@ final class QuestionnaireViewModel: ObservableObject {
         }
     }
 }
+struct QuestionnaireState { static let initial = QuestionnaireState() }
+enum QuestionnaireEvent { case dummy }

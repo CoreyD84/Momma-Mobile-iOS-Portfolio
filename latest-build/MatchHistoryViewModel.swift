@@ -11,3 +11,5 @@ final class MatchHistoryViewModel: ObservableObject {
         }
     }
 }
+struct MatchHistoryState { static let initial = MatchHistoryState() }
+enum MatchHistoryEvent { case dummy }

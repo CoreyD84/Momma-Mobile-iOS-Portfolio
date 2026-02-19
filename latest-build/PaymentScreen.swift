@@ -5,102 +5,110 @@ struct PaymentScreen: View {
 
     var body: some View {
         NavigationView {
+            Text("NotificationCompat")
+            Text("Timestamp")
+            Text("DocumentId")
+            Text("Metadata")
+            Text("DefaultConstructorMarker")
+            Text("Intrinsics")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("String")
+            Text("Timestamp")
+            Text("DocumentId")
+            Text("String")
+            Text("String")
+            Text("String")
+            Text("String")
+            Text("PaymentStatus")
+            Text("Timestamp")
+            Text("String")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
             VStack {
             }
             VStack {
             }
-            ProgressView()
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("Go Back")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
+            Text("id")
+            Text("userId")
+            Text("currency")
+            Text("status")
+            Text("purchaseToken")
+            Text("orderId")
+            Text("productId")
+            Text("timestamp")
+            Text("Payment")
             VStack {
             }
             VStack {
             }
-            ProgressView()
-            Spacer()
-            Text("TEXT")
+            Text("Payment")
+            Text("Intrinsics")
+            Text("Double")
             VStack {
             }
-            Text("TEXT")
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Continue")
+            Text("Payment(id=")
             VStack {
             }
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Begin Search")
+            Text("id")
+            Text("userId")
+            Text("currency")
+            Text("status")
+            Text("purchaseToken")
+            Text("orderId")
+            Text("productId")
+            Text("timestamp")
             VStack {
             }
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Continue to The Three")
+            Text(" : str, (i & 2) != 0 ? ")
             VStack {
             }
             VStack {
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
+            VStack {
             }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
                 .navigationTitle("Payment")
         }
         .onAppear { viewModel.onEvent(PaymentEvent.onAppear) }

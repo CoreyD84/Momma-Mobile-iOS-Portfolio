@@ -11,3 +11,5 @@ final class HomeViewModel: ObservableObject {
         }
     }
 }
+struct HomeState { static let initial = HomeState() }
+enum HomeEvent { case dummy }

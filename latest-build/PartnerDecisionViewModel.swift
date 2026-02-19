@@ -11,3 +11,5 @@ final class PartnerDecisionViewModel: ObservableObject {
         }
     }
 }
+struct PartnerDecisionState { static let initial = PartnerDecisionState() }
+enum PartnerDecisionEvent { case dummy }

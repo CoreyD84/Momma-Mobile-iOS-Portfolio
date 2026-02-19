@@ -11,3 +11,5 @@ final class SecondChanceViewModel: ObservableObject {
         }
     }
 }
+struct SecondChanceState { static let initial = SecondChanceState() }
+enum SecondChanceEvent { case dummy }

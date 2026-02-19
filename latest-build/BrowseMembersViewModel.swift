@@ -11,3 +11,5 @@ final class BrowseMembersViewModel: ObservableObject {
         }
     }
 }
+struct BrowseMembersState { static let initial = BrowseMembersState() }
+enum BrowseMembersEvent { case dummy }

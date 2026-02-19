@@ -11,3 +11,5 @@ final class NotificationsViewModel: ObservableObject {
         }
     }
 }
+struct NotificationsState { static let initial = NotificationsState() }
+enum NotificationsEvent { case dummy }

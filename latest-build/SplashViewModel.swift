@@ -11,3 +11,5 @@ final class SplashViewModel: ObservableObject {
         }
     }
 }
+struct SplashState { static let initial = SplashState() }
+enum SplashEvent { case dummy }

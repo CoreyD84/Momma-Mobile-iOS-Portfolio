@@ -5,132 +5,174 @@ struct CandidateInvitationServiceScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("Timestamp")
-            Text("CandidateInvitation")
-            Text("InvitationStatus")
-            Text("Match")
-            Text("MatchPhase")
-            Text("MatchStatus")
             Text("PushNotificationService")
-            Text("TimeUnit")
             Text("Inject")
             Text("Singleton")
-            Text("Service")
-            Text("This")
+            Text("Metadata")
+            Text("Continuation")
+            Text("ContinuationImpl")
+            Text("Intrinsics")
+            Text("JADX")
+            Text("JADX")
             Text("Singleton")
-            Text("CandidateInvitationService")
+            VStack {
+            }
             Text("MatchingService")
             Text("PushNotificationService")
-            Text("Start")
-            Text("This")
+            Text("JADX")
+            Text("JADX")
             VStack {
             }
-            Text("Find")
-            Text("Result")
-            Text("Failed to find candidates")
-            Text("Create")
-            Text("Match")
-            Text("Will")
-            Text("MatchStatus")
-            Text("MatchPhase")
-            Text("Store")
-            Text("Will")
-            Text("Compatibility")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Save")
-            Text("Result")
-            Text("Failed to create match")
-            Text("Create")
-            Text("CandidateInvitation")
-            Text("Timestamp")
-            Text("InvitationStatus")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Save")
-            Text("Add")
-            Text("Send")
-            Text("Update")
-            Text("currentMatchId")
-            Text("currentMatchState")
-            Text("Result")
             VStack {
             }
-            Text("Result")
-            Text("Handle")
+            Text("Object")
+            Text("Object")
+            Text("Object")
+            Text("Object")
+            Text("Object")
             VStack {
             }
-            Text("Get")
-            Text("Invitation not found")
-            Text("Get")
-            Text("Match not found")
-            Text("Update")
-            Text("InvitationStatus")
-            Text("Add")
-            Text("acceptedCandidates")
-            Text("Notify")
-            Toggle("Check", isOn: .constant(false))
-            Text("We")
-            Text("theThreeCandidates")
-            Text("phase")
-            Text("updatedAt")
-            Text("Update")
-            Text("currentMatchState")
-            Text("Notify")
-            Text("Cancel")
-            Text("Result")
+            Text("Override")
             VStack {
             }
-            Text("Result")
-            Text("Handle")
+            Text("Integer")
+            Text("CandidateInvitationService")
+            Text("JADX")
+            Text("JADX")
             VStack {
             }
-            Text("Get")
-            Text("Invitation not found")
-            Text("Get")
-            Text("Match not found")
-            Text("Update")
-            Text("InvitationStatus")
-            Text("Add")
-            Text("declinedCandidates")
-            Text("Notify")
-            Text("Find")
-            Text("Result")
             VStack {
             }
-            Text("Result")
-            Text("Invite")
+            Text("Object")
+            Text("Object")
+            Text("Object")
+            Text("Object")
+            Text("Object")
+            Text("Object")
+            Text("Object")
             VStack {
             }
-            Text("Get")
-            Text("Find")
-            Text("Find")
-            Text("Create")
-            Text("CandidateInvitation")
-            Text("Timestamp")
-            Text("InvitationStatus")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Save")
-            Text("Add")
-            Text("Update")
-            Text("invitedCandidates")
-            Text("Send")
+            Text("Override")
             VStack {
             }
-            Text("Cancel")
+            Text("Integer")
+            Text("CandidateInvitationService")
+            Text("Inject")
             VStack {
             }
-            Text("InvitationStatus")
-            Text("Mark")
-            Text("InvitationStatus")
-            Text("Remove")
+            Text("matchingService")
+            Text("pushNotificationService")
+            Text("JADX")
+            Text("JADX")
             VStack {
             }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("Code")
+            Text("To")
+            VStack {
+            }
+            Text("Method")
+            Text("To")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("Code")
+            Text("To")
+            VStack {
+            }
+            Text("Method")
+            Text("To")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("Code")
+            Text("To")
+            VStack {
+            }
+            Text("Method")
+            Text("To")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("Code")
+            Text("To")
+            VStack {
+            }
+            Text("Method")
+            Text("To")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("Code")
+            Text("To")
+            VStack {
+            }
+            Text("Method")
+            Text("To")
                 .navigationTitle("CandidateInvitationService")
         }
         .onAppear { viewModel.onEvent(CandidateInvitationServiceEvent.onAppear) }

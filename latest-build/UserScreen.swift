@@ -5,96 +5,220 @@ struct UserScreen: View {
 
     var body: some View {
         NavigationView {
+            Text("HintConstants")
+            Text("AccessibilityEventCompat")
+            Text("Ints")
             Text("Timestamp")
             Text("DocumentId")
             Text("ServerTimestamp")
-            Text("User")
-            Text("DocumentId")
-            Text("String")
-            Text("String")
-            Text("String")
-            Text("Int")
-            Text("Gender")
-            Text("Orientation")
-            Text("Location")
-            Text("String")
             Text("List")
-            Text("String")
-            Text("Photo")
-            Text("PhotoModerationStatus")
-            Text("List")
-            Text("Boolean")
-            Text("Matching")
-            Text("Gender")
-            Text("Int")
-            Text("Int")
-            Text("Int")
-            Text("Profile")
-            Text("Boolean")
-            Text("Boolean")
-            Text("Boolean")
-            Text("Legal")
-            Text("Boolean")
-            Text("Boolean")
-            Text("Timestamp")
-            Text("Candidate")
-            Text("List")
-            Text("Boolean")
-            Text("Push")
-            Text("String")
-            Text("Questionnaire")
-            Text("Int")
             Text("Map")
-            Text("Match")
+            Text("Metadata")
+            Text("CollectionsKt")
+            Text("MapsKt")
+            Text("DefaultConstructorMarker")
+            Text("Intrinsics")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("String")
+            Text("Timestamp")
+            Text("ServerTimestamp")
+            Text("Timestamp")
+            Text("String")
             Text("MatchState")
             Text("String")
-            Text("Boolean")
-            Text("Boolean")
-            Text("Second")
-            Text("Boolean")
-            Text("Int")
-            Text("Timestamp")
-            Text("Timestamp")
-            Text("Authenticity")
-            Text("Double")
-            Text("Boolean")
-            Text("ServerTimestamp")
-            Text("Timestamp")
-            Text("ServerTimestamp")
+            Text("String")
+            Text("String")
+            Text("Gender")
+            Text("DocumentId")
+            Text("String")
             Text("Timestamp")
             Text("Location")
-            Text("Double")
-            Text("Double")
+            Text("Orientation")
+            Text("List")
+            Text("List")
+            Text("PhotoModerationStatus")
+            Text("List")
+            Text("Gender")
             Text("String")
-            Text("String")
-            Text("String")
+            Text("Map")
+            Text("Timestamp")
+            Text("ServerTimestamp")
+            Text("Timestamp")
             VStack {
             }
-            Text("MALE")
-            Text("FEMALE")
+            Text("JADX")
             VStack {
             }
-            Text("STRAIGHT")
-            Text("GAY")
-            Text("LESBIAN")
-            Text("BISEXUAL")
-            Text("PANSEXUAL")
-            Text("ASEXUAL")
-            Text("OTHER")
+            Text("JADX")
             VStack {
             }
-            Text("SEARCHING")
-            Text("Waiting")
-            Text("Waiting")
-            Text("MATCHED")
-            Text("DECLINED")
-            Text("GHOSTED")
+            Text("JADX")
             VStack {
             }
-            Text("PENDING")
-            Text("APPROVED")
-            Text("REJECTED")
-            Text("FLAGGED")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("id")
+            Text("email")
+            Text("displayName")
+            Text("gender")
+            Text("orientation")
+            Text("location")
+            Text("profileImageUrl")
+            Text("photoUrls")
+            Text("bio")
+            Text("photoModerationStatus")
+            Text("photoModerationFlags")
+            Text("pendingInvitations")
+            Text("questionnaireAnswers")
+            Text("currentMatchState")
+            Text("User")
+            VStack {
+            }
+            VStack {
+            }
+            Text("User")
+            Text("Intrinsics")
+            Text("Integer")
+            VStack {
+            }
+            Text("User(id=")
+            VStack {
+            }
+            Text("id")
+            Text("email")
+            Text("displayName")
+            Text("gender")
+            Text("orientation")
+            Text("location")
+            Text("profileImageUrl")
+            Text("photoUrls")
+            Text("bio")
+            Text("photoModerationStatus")
+            Text("photoModerationFlags")
+            Text("pendingInvitations")
+            Text("questionnaireAnswers")
+            Text("currentMatchState")
+            VStack {
+            }
+            Text(" : str, (i7 & 2) != 0 ? ")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
                 .navigationTitle("User")
         }
         .onAppear { viewModel.onEvent(UserEvent.onAppear) }

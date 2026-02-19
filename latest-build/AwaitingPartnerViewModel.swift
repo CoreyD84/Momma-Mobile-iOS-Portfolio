@@ -11,3 +11,5 @@ final class AwaitingPartnerViewModel: ObservableObject {
         }
     }
 }
+struct AwaitingPartnerState { static let initial = AwaitingPartnerState() }
+enum AwaitingPartnerEvent { case dummy }

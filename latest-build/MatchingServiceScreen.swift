@@ -5,62 +5,87 @@ struct MatchingServiceScreen: View {
 
     var body: some View {
         NavigationView {
-            Text("CompatibilityVector")
             Text("User")
             Text("CompatibilityEngine")
             Text("CompatibilityScore")
+            Text("ArrayList")
+            Text("Iterator")
+            Text("List")
+            Text("Map")
             Text("Inject")
             Text("Singleton")
-            Text("Service")
+            Text("Metadata")
+            Text("TuplesKt")
+            Text("MapsKt")
+            Text("Intrinsics")
+            Text("JADX")
+            Text("JADX")
             Text("Singleton")
-            Text("MatchingService")
+            Text("\\u0000J\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0010\\u0000\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0002\\b\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0010 \\n\\u0002\\u0018\\u0002\\n\\u0000\\n\\u0002\\u0010\\u000e\\n\\u0002\\b\\u0003\\n\\u0002\\u0018\\u0002\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0002\\b\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\b\\u0003\\b\\u0007\\u0018\\u00002\\u00020\\u0001B\\u001f\\b\\u0007\\u0012\\u0006\\u0010\\u0002\\u001a\\u00020\\u0003\\u0012\\u0006\\u0010\\u0004\\u001a\\u00020\\u0005\\u0012\\u0006\\u0010\\u0006\\u001a\\u00020\\u0007¢\\u0006\\u0002\\u0010\\bJ*\\u0010\\t\\u001a\\u000e\\u0012\\n\\u0012\\b\\u0012\\u0004\\u0012\\u00020\\f0\\u000b0\\n2\\u0006\\u0010\\r\\u001a\\u00020\\u000eH\\u0086@ø\\u0001\\u0000ø\\u0001\\u0001¢\\u0006\\u0004\\b\\u000f\\u0010\\u0010J\\u000e\\u0010\\u0011\\u001a\\u00020\\u00122\\u0006\\u0010\\u0013\\u001a\\u00020\\u0014J\\u0018\\u0010\\u0015\\u001a\\u00020\\u000e2\\u0006\\u0010\\u0013\\u001a\\u00020\\u00142\\u0006\\u0010\\u0016\\u001a\\u00020\\u0017H\\u0002J\\u0016\\u0010\\u0018\\u001a\\b\\u0012\\u0004\\u0012\\u00020\\u000e0\\u000b2\\u0006\\u0010\\u0013\\u001a\\u00020\\u0014H\\u0002J\\u0016\\u0010\\u0019\\u001a\\b\\u0012\\u0004\\u0012\\u00020\\u000e0\\u000b2\\u0006\\u0010\\u0013\\u001a\\u00020\\u0014H\\u0002R\\u000e\\u0010\\u0006\\u001a\\u00020\\u0007X\\u0082\\u0004¢\\u0006\\u0002\\n\\u0000R\\u000e\\u0010\\u0004\\u001a\\u00020\\u0005X\\u0082\\u0004¢\\u0006\\u0002\\n\\u0000R\\u000e\\u0010\\u0002\\u001a\\u00020\\u0003X\\u0082\\u0004¢\\u0006\\u0002\\n\\u0000\\u0082\\u0002\\u000b\\n\\u0002\\b!\\n\\u0005\\b¡\\u001e0\\u0001¨\\u0006\\u001a")
+            VStack {
+            }
             Text("CompatibilityEngine")
-            Text("Find")
+            Text("Inject")
             VStack {
             }
-            Text("Get")
-            Text("Result")
-            Text("User not found")
-            Text("Get")
-            Text("Result")
-            Text("Compatibility vector not found. Please complete the questionnaire.")
-            Text("Search")
-            Text("Result")
-            Text("Failed to search for matches")
-            Text("No potential matches found in your area")
-            Text("Get")
+            Text("compatibilityEngine")
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            Text("Code")
+            Text("To")
+            VStack {
+            }
+            Text("Method")
+            Text("To")
+            VStack {
+            }
+            Text("Object")
             Text("String")
-            Text("No compatible matches found")
-            Text("Rank")
-            Text("Result")
-            Text("Build")
-            Text("MatchCandidate")
-            Text("Result")
-            VStack {
-            }
-            Text("Result")
-            Text("Generate")
-            VStack {
-            }
-            Text("Determine")
             Text("values")
-            Text("conflict resolution")
-            Text("future vision")
-            Text("communication")
-            Text("philosophy")
-            Text("connection")
-            Text("Generate")
-            Text("I sense a deep potential here.")
-            Text("This connection holds genuine promise.")
-            Text("There's real potential to explore.")
-            Text("Growth is possible with effort.")
-            Text("Generate")
+            Text("Iterator")
+            Text("Object")
+            Text("Map")
+            Text("Number")
+            Text("Object")
+            Text("Map")
+            Text("Number")
             VStack {
             }
+            Text("Map")
+            VStack {
+            }
+            Text("connection")
+            Text("This soul resonates at ")
+            VStack {
+            }
+            Text("score")
             Text("CompatibilityBreakdown")
             VStack {
             }
-            Text("String")
+            Text("List")
             Text("Shared core values")
             Text("Compatible conflict styles")
             Text("Aligned life goals")
@@ -69,26 +94,12 @@ struct MatchingServiceScreen: View {
             Text("Potential for growth together")
             VStack {
             }
-            Text("String")
+            Text("List")
             Text("Different core values")
             Text("Contrasting conflict approaches")
             Text("Divergent life paths")
             Text("Communication style differences")
             Text("Different worldviews")
-            Text("MatchCandidate")
-            Text("User")
-            Text("CompatibilityScore")
-            Text("String")
-            Text("Detailed")
-            Text("CompatibilityBreakdown")
-            Text("Int")
-            Text("Int")
-            Text("Int")
-            Text("Int")
-            Text("Int")
-            Text("Int")
-            Text("List")
-            Text("List")
                 .navigationTitle("MatchingService")
         }
         .onAppear { viewModel.onEvent(MatchingServiceEvent.onAppear) }

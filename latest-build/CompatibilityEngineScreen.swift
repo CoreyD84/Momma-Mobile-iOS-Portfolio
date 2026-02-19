@@ -5,79 +5,99 @@ struct CompatibilityEngineScreen: View {
 
     var body: some View {
         NavigationView {
+            Text("CommunicationVector")
             Text("CompatibilityVector")
             Text("ConflictStyle")
+            Text("ConflictVector")
+            Text("FutureVector")
+            Text("PhilosophyVector")
+            Text("ValuesVector")
+            Text("ArrayList")
+            Text("Collection")
+            Text("Comparator")
+            Text("List")
+            Text("Map")
             Text("Inject")
             Text("Singleton")
-            Text("The")
-            Text("brain")
+            Text("Metadata")
+            Text("Pair")
+            Text("TuplesKt")
+            Text("CollectionsKt")
+            Text("ComparisonsKt")
+            Text("Intrinsics")
+            Text("StringsKt")
+            Text("JADX")
+            Text("JADX")
             Text("Singleton")
             VStack {
             }
-            Text("Dimension")
-            Text("Calculate")
-            Text("CompatibilityVector")
-            Text("CompatibilityVector")
+            Text("Inject")
             VStack {
             }
-            Text("Apply")
+            VStack {
+            }
+            Text("user1")
+            Text("user2")
             Text("CompatibilityScore")
-            Text("Values")
             VStack {
             }
-            Text("Conflict")
             VStack {
             }
-            Text("Conflict")
-            Text("ConflictStyle")
-            Text("ConflictStyle")
-            Text("ConflictStyle")
-            Text("Future")
             VStack {
             }
-            Text("Children")
+            Text("ConflictStyle")
+            VStack {
+            }
+            VStack {
+            }
             Text("DEFINITELY")
-            Text("Deal")
-            Text("UNSURE")
-            Text("Communication")
-            Text("CommunicationVector")
-            Text("CommunicationVector")
             VStack {
             }
-            Text("Philosophy")
-            Text("PhilosophyVector")
-            Text("PhilosophyVector")
             VStack {
             }
-            Text("Calculate")
             VStack {
             }
-            Text("Calculate")
-            Text("Normalize")
-            Text("Rank")
-            Text("CompatibilityVector")
-            Text("Map")
             VStack {
             }
-            Text("RankedCandidate")
-            Text("Select")
-            Text("CompatibilityVector")
-            Text("Map")
-            Text("Int")
             VStack {
             }
-            Text("CompatibilityScore")
+            VStack {
+            }
+            Text("List")
+            Text("Collection")
+            VStack {
+            }
+            Text("Pair")
+            Text("Number")
+            Text("Number")
             Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Double")
-            Text("Boolean")
-            Text("Int")
-            Text("RankedCandidate")
+            Text("CollectionsKt")
+            VStack {
+            }
+            Text("userVector")
+            Text("candidates")
+            Text("Collection")
+            VStack {
+            }
             Text("String")
+            Text("CompatibilityVector")
             Text("CompatibilityScore")
+            Text("RankedCandidate")
+            Text("Iterable")
+            VStack {
+            }
+            Text("JADX")
+            Text("Override")
+            Text("RankedCandidate")
+            Text("RankedCandidate")
+            Text("ComparisonsKt")
+            VStack {
+            }
+            VStack {
+            }
+            Text("userVector")
+            Text("candidates")
+            Text("CollectionsKt")
                 .navigationTitle("CompatibilityEngine")
         }
         .onAppear { viewModel.onEvent(CompatibilityEngineEvent.onAppear) }

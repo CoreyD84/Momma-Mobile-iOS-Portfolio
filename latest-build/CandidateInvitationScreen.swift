@@ -5,27 +5,103 @@ struct CandidateInvitationScreen: View {
 
     var body: some View {
         NavigationView {
+            Text("NotificationCompat")
+            Text("Timestamp")
+            Text("DocumentId")
+            Text("ServerTimestamp")
+            Text("Metadata")
+            Text("DefaultConstructorMarker")
+            Text("Intrinsics")
+            Text("JADX")
+            Text("JADX")
             VStack {
             }
-            ProgressView()
+            Text("String")
+            Text("ServerTimestamp")
+            Text("Timestamp")
+            Text("Timestamp")
+            Text("DocumentId")
+            Text("String")
+            Text("String")
+            Text("Timestamp")
+            Text("String")
+            Text("Timestamp")
+            Text("String")
+            Text("Timestamp")
+            Text("InvitationStatus")
+            Text("ServerTimestamp")
+            Text("Timestamp")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            Text("JADX")
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
+            VStack {
+            }
+            Text("JADX")
             VStack {
             }
             VStack {
             }
-            ProgressView()
-            Text("TEXT")
+            Text("id")
+            Text("matchId")
+            Text("initiatorId")
+            Text("candidateId")
+            Text("status")
+            Text("CandidateInvitation")
             VStack {
             }
             VStack {
             }
-            Image("IMAGE")
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
+            Text("CandidateInvitation")
+            Text("Intrinsics")
+            Text("Double")
+            VStack {
             }
-            Text("Go to Home")
+            Text("CandidateInvitation(id=")
+            VStack {
+            }
+            Text("id")
+            Text("matchId")
+            Text("initiatorId")
+            Text("candidateId")
+            Text("status")
+            VStack {
+            }
+            Text(" : str, (i & 2) != 0 ? ")
             VStack {
             }
             VStack {
@@ -34,35 +110,22 @@ struct CandidateInvitationScreen: View {
             }
             VStack {
             }
-            Spacer()
-            Image("IMAGE")
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
             VStack {
             }
-            Text("TEXT")
             VStack {
             }
-            Text("TEXT")
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
             VStack {
             }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
+            VStack {
             }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Text("TEXT")
-            Text("Yes, Decline")
-            Text("Cancel")
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
+            VStack {
+            }
                 .navigationTitle("CandidateInvitation")
         }
         .onAppear { viewModel.onEvent(CandidateInvitationEvent.onAppear) }
