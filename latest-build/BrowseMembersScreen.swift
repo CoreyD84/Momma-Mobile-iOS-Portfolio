@@ -8,49 +8,58 @@ struct BrowseMembersScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                        Text("Browse Members")
+                        Image("Icon")
+                        Button(action: { }) {
+                            Text("Back")
+                        }
+                    }
+                }
+                VStack {
+                    ProgressView()
+                    VStack {
+                        VStack {
+                        }
+                        Text("Error loading members")
+                        VStack {
+                        }
+                        Text("Unknown error")
+                        Button(action: { }) {
+                            VStack {
+                            }
+                        }
+                    }
+                    VStack {
+                        Image("Icon")
+                        VStack {
+                        }
+                        Text("No members yet")
+                        VStack {
+                        }
+                        Text("Be the first to complete your profile!")
+                    }
+                    VStack {
+                        VStack {
+                            Image("Icon")
+                        }
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                            VStack {
+                                VStack {
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            VStack {
-            }
-            Text("TEXT")
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Image("IMAGE")
-            VStack {
-            }
-            ProgressView()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Retry")
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Text("TEXT")
-            VStack {
-            }
-            VStack {
-            }
-            Image("IMAGE")
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Text("TEXT")
-            }
-            .navigationTitle("Browse Members")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(BrowseMembersEvent.onAppear) }
+            }.navigationTitle("Browse Members").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(BrowseMembersEvent.onAppear) }
     }
 }

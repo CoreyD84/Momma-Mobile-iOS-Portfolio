@@ -4,18 +4,20 @@ import SwiftUI
 @MainActor
 final class NotificationsViewModel: ObservableObject {
     @Published var state: NotificationsState = .initial
-    @Published var authRepository: String = ""
-    @Published var userRepository: String = ""
-    @Published var matchRepository: String = ""
-    @Published var uiState: String = ""
-    @Published var invitations: [String] = []
+    @Published var authRepository: AuthRepository? = nil
+    @Published var userRepository: UserRepository? = nil
+    @Published var matchRepository: MatchRepository? = nil
+    @Published var uiState: NotificationsUiState? = nil
+    @Published var invitations: [InvitationItem] = []
     @Published var message: String = ""
-    @Published var invitation: String = ""
-    @Published var initiator: String = ""
+    @Published var initiator: User? = nil
 
     func onEvent(_ event: NotificationsEvent) {
         switch event {
         default: break
         }
     }
+
+    func loadNotifications() {/* TODO: port logic */ }
+    func refresh() {/* TODO: port logic */ }
 }

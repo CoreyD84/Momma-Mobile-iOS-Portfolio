@@ -4,17 +4,17 @@ import SwiftUI
 @MainActor
 final class MatchHistoryViewModel: ObservableObject {
     @Published var state: MatchHistoryState = .initial
-    @Published var authRepository: String = ""
-    @Published var matchRepository: String = ""
-    @Published var userRepository: String = ""
-    @Published var uiState: String = ""
-    @Published var filterState: String = ""
-    @Published var allMatches: [String] = []
-    @Published var filteredMatches: [String] = []
-    @Published var statistics: String = ""
+    @Published var authRepository: AuthRepository? = nil
+    @Published var matchRepository: MatchRepository? = nil
+    @Published var userRepository: UserRepository? = nil
+    @Published var uiState: MatchHistoryUiState? = nil
+    @Published var filterState: MatchFilter? = nil
+    @Published var allMatches: [MatchHistoryItem] = []
+    @Published var filteredMatches: [MatchHistoryItem] = []
+    @Published var statistics: MatchStatistics? = nil
     @Published var message: String = ""
-    @Published var match: String = ""
-    @Published var partner: String = ""
+    @Published var match: Match? = nil
+    @Published var partner: User? = nil
     @Published var wasInitiator: Bool = false
     @Published var totalMatches: Int = 0
     @Published var successfulMatches: Int = 0
@@ -29,4 +29,10 @@ final class MatchHistoryViewModel: ObservableObject {
         default: break
         }
     }
+
+    func loadMatchHistory() {/* TODO: port logic */ }
+    func setFilter(filter: MatchFilter) {/* TODO: port logic */ }
+    func applyFilter(matches: [MatchHistoryItem], filter: MatchFilter) -> [MatchHistoryItem] { return [] /* TODO: port logic */ }
+    func calculateStatistics(matches: [MatchHistoryItem]) -> MatchStatistics { fatalError("Stub") /* TODO: port logic */ }
+    func refresh() {/* TODO: port logic */ }
 }

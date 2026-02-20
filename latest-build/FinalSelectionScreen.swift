@@ -8,138 +8,139 @@ struct FinalSelectionScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                Text("awaiting_partner")
+                Text("final_selection")
             }
             VStack {
+                ProgressView()
             }
-            ProgressView()
+            Text("pulse")
+            Text("scale")
             VStack {
-            }
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Continue")
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
+                VStack {
+                    Image("Icon")
+                }
+                VStack {
+                }
+                Text("✨ Analyzing Your Matches ✨")
+                VStack {
+                }
+                VStack {
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
             }
             VStack {
+                VStack {
+                    Image("Icon")
+                }
+                VStack {
+                }
+                Text("🔮 The Decision is Made 🔮")
+                VStack {
+                }
+                Button(action: { }) {
+                    VStack {
+                    }
+                    Text("Reveal My Match")
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
+            VStack {
+                VStack {
+                }
+                Text("💫 Your Match 💫")
+                Button(action: { }) {
+                    VStack {
+                    }
+                }
+                VStack {
+                    Image("Icon")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                        }
+                    }
+                    VStack {
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                    Text("📊 Analysis Breakdown")
+                    VStack {
+                    }
+                    Text("Base Compatibility")
+                    Text("Quiz Accuracy")
+                    Text("Emotional Alignment")
+                    Text("Overall Score")
+                    VStack {
+                    }
+                    Text("Base Compatibility")
+                    Text("Quiz Accuracy")
+                    Text("Emotional Alignment")
+                    Text("Overall Score")
+                    VStack {
+                    }
+                    Text("Key Decision Factors")
+                }
             }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back")
+            VStack {
+                VStack {
+                }
+                VStack {
+                }
             }
-            .navigationTitle("Final Selection")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(FinalSelectionEvent.onAppear) }
+            VStack {
+                VStack {
+                    Image("Icon")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                    Text("Not Selected")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
+            }
+            VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Selection Error")
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
+            }
+            }.navigationTitle("Final Selection").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(FinalSelectionEvent.onAppear) }
     }
 }

@@ -11,4 +11,5 @@ final class ColorViewModel: ObservableObject {
         default: break
         }
     }
+
 }

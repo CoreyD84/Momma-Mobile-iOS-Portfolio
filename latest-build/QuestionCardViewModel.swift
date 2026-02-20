@@ -11,4 +11,5 @@ final class QuestionCardViewModel: ObservableObject {
         default: break
         }
     }
+
 }

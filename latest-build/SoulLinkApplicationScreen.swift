@@ -8,10 +8,7 @@ struct SoulLinkApplicationScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             EmptyView()
-            }
-            .navigationTitle("Soul Link Application")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(SoulLinkApplicationEvent.onAppear) }
+            }.navigationTitle("Soul Link Application").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(SoulLinkApplicationEvent.onAppear) }
     }
 }

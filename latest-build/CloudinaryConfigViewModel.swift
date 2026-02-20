@@ -11,4 +11,5 @@ final class CloudinaryConfigViewModel: ObservableObject {
         default: break
         }
     }
+
 }

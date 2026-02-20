@@ -4,13 +4,14 @@ import SwiftUI
 @MainActor
 final class GhostDetectionWorkerViewModel: ObservableObject {
     @Published var state: GhostDetectionWorkerState = .initial
-    @Published var ghostDetectionService: String = ""
-    @Published var authRepository: String = ""
-    @Published var matchRepository: String = ""
+    @Published var ghostDetectionService: GhostDetectionService? = nil
+    @Published var authRepository: AuthRepository? = nil
+    @Published var matchRepository: MatchRepository? = nil
 
     func onEvent(_ event: GhostDetectionWorkerEvent) {
         switch event {
         default: break
         }
     }
+
 }

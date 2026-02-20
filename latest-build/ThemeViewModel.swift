@@ -11,4 +11,5 @@ final class ThemeViewModel: ObservableObject {
         default: break
         }
     }
+
 }

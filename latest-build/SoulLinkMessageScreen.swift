@@ -8,22 +8,26 @@ struct SoulLinkMessageScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    VStack {
+                        Text("SoulLink")
+                        VStack {
+                            VStack {
+                            }
+                            Text("SoulLink")
+                            VStack {
+                                VStack {
+                                }
+                            }
+                        }
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                }
             }
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            VStack {
-            }
-            Text("TEXT")
-            VStack {
-            }
-            Text("TEXT")
-            }
-            .navigationTitle("Soul Link Message")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(SoulLinkMessageEvent.onAppear) }
+            }.navigationTitle("Soul Link Message").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(SoulLinkMessageEvent.onAppear) }
     }
 }

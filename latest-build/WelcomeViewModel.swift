@@ -11,4 +11,5 @@ final class WelcomeViewModel: ObservableObject {
         default: break
         }
     }
+
 }

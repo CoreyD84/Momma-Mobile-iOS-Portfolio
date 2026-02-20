@@ -4,9 +4,9 @@ import SwiftUI
 @MainActor
 final class EliminationViewModel: ObservableObject {
     @Published var state: EliminationState = .initial
-    @Published var authRepository: String = ""
-    @Published var matchRepository: String = ""
-    @Published var uiState: String = ""
+    @Published var authRepository: AuthRepository? = nil
+    @Published var matchRepository: MatchRepository? = nil
+    @Published var uiState: EliminationUiState? = nil
     @Published var explanation: String = ""
     @Published var message: String = ""
 
@@ -15,4 +15,6 @@ final class EliminationViewModel: ObservableObject {
         default: break
         }
     }
+
+    func loadEliminationData() {/* TODO: port logic */ }
 }

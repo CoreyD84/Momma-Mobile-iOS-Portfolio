@@ -8,19 +8,16 @@ struct QuestionCardScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    VStack {
+                    }
+                }
             }
-            Text("TEXT")
-            Spacer()
             VStack {
+                VStack {
+                }
             }
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            }
-            .navigationTitle("Question Card")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(QuestionCardEvent.onAppear) }
+            }.navigationTitle("Question Card").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(QuestionCardEvent.onAppear) }
     }
 }

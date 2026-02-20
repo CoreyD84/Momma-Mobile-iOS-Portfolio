@@ -11,4 +11,5 @@ final class SoulLinkMessageViewModel: ObservableObject {
         default: break
         }
     }
+
 }

@@ -11,4 +11,5 @@ final class SoulLinkPersonalityViewModel: ObservableObject {
         default: break
         }
     }
+
 }

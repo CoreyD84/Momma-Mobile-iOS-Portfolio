@@ -8,10 +8,7 @@ struct TypeScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             EmptyView()
-            }
-            .navigationTitle("Type")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(TypeEvent.onAppear) }
+            }.navigationTitle("Type").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(TypeEvent.onAppear) }
     }
 }

@@ -11,4 +11,5 @@ final class ProgressBarViewModel: ObservableObject {
         default: break
         }
     }
+
 }

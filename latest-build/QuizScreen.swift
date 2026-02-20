@@ -8,120 +8,134 @@ struct QuizScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                Text("final_selection")
+                Text("quiz")
             }
             VStack {
-            }
-            ProgressView()
-            VStack {
-            }
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
+                ProgressView()
             }
             VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("✨ What This Reveals")
+                    VStack {
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    Text("Predicting for:")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                        }
+                    }
+                }
+                VStack {
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
+                VStack {
+                    VStack {
+                        VStack {
+                        }
+                    }
+                    VStack {
+                    }
+                    Text("You ")
+                    Text("you ")
+                    Text("Your ")
+                    Text("your ")
+                    VStack {
+                    }
+                    Text("Predict their answer:")
+                }
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Text("TEXT")
+            Text("border_color")
             VStack {
-            }
-            Text("TEXT")
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Image("IMAGE")
-            VStack {
-            }
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("TEXT")
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("See SoulLink's Choice")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
+                Text("background_color")
+                VStack {
+                    VStack {
+                        Image("Icon")
+                        Text("Selected")
+                    }
+                }
             }
             VStack {
+                VStack {
+                    Image("Icon")
+                }
+                VStack {
+                }
+                Text("✨ Candidate Complete ✨")
+                VStack {
+                    Button(action: { }) {
+                        VStack {
+                        }
+                    }
+                }
             }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
             VStack {
+                VStack {
+                }
+                Text("🎯 Quiz Complete 🎯")
+                VStack {
+                    Text("You've completed the Quiz Challenge. I'm analyzing your predictions to understand which connection runs deeper...")
+                    VStack {
+                        VStack {
+                        }
+                        Text("✨ What Happens Next")
+                        VStack {
+                        }
+                        Text("Based on your quiz performance and compatibility scores, I will choose the one soul most aligned with yours.")
+                    }
+                }
+                Button(action: { }) {
+                    VStack {
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                    Text("Prediction Accuracy")
+                    Text("Emotional Alignment")
+                    Text("Overall Understanding")
+                }
+                VStack {
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
             }
             VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Quiz Error")
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back")
-            }
-            .navigationTitle("Quiz")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(QuizEvent.onAppear) }
+            }.navigationTitle("Quiz").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(QuizEvent.onAppear) }
     }
 }

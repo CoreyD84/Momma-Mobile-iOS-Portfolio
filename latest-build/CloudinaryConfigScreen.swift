@@ -11,10 +11,7 @@ struct CloudinaryConfigScreen: View {
             Text("758654299117598")
             Text("s7jYGRLAz-kLN6G6S-tEsD_MDow")
             Text("soullink_photos")
-            }
-            .navigationTitle("Cloudinary Config")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(CloudinaryConfigEvent.onAppear) }
+            }.navigationTitle("Cloudinary Config").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(CloudinaryConfigEvent.onAppear) }
     }
 }

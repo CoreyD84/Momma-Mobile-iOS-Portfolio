@@ -4,15 +4,14 @@ import SwiftUI
 @MainActor
 final class CandidateInvitationViewModel: ObservableObject {
     @Published var state: CandidateInvitationState = .initial
-    @Published var auth: String = ""
-    @Published var userRepository: String = ""
-    @Published var matchRepository: String = ""
-    @Published var candidateInvitationService: String = ""
-    @Published var uiState: String = ""
-    @Published var navigationState: String = ""
-    @Published var currentInvitationId: String = ""
-    @Published var invitation: String = ""
-    @Published var initiator: String = ""
+    @Published var auth: FirebaseAuth? = nil
+    @Published var userRepository: UserRepository? = nil
+    @Published var matchRepository: MatchRepository? = nil
+    @Published var uiState: CandidateInvitationUiState? = nil
+    @Published var navigationState: CandidateInvitationNavigationState? = nil
+    @Published var currentInvitationId: String? = nil
+    @Published var invitation: CandidateInvitation? = nil
+    @Published var initiator: User? = nil
     @Published var message: String = ""
     @Published var invitationId: String = ""
     @Published var amount: Double = 0
@@ -22,4 +21,11 @@ final class CandidateInvitationViewModel: ObservableObject {
         default: break
         }
     }
+
+    func loadInvitation() {/* TODO: port logic */ }
+    func onAcceptInvitation() {/* TODO: port logic */ }
+    func onDeclineInvitation() {/* TODO: port logic */ }
+    func onPaymentCompletedFromNavigation(paymentToken: String) {/* TODO: port logic */ }
+    func onPaymentCompleted(invitationId: String, paymentToken: String) {/* TODO: port logic */ }
+    func resetNavigation() {/* TODO: port logic */ }
 }

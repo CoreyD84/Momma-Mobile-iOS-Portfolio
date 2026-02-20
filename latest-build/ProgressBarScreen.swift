@@ -8,16 +8,17 @@ struct ProgressBarScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                Text("progress")
+                VStack {
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
             }
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            }
-            .navigationTitle("Progress Bar")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(ProgressBarEvent.onAppear) }
+            }.navigationTitle("Progress Bar").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(ProgressBarEvent.onAppear) }
     }
 }

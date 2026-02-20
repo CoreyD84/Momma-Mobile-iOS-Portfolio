@@ -2,13 +2,13 @@ import Foundation
 
 struct ViewModelFactory {
     @MainActor
-    static func makeAwaitingPartnerViewModel() -> AwaitingPartnerViewModel {
-        return AwaitingPartnerViewModel()
+    static func makeAppModuleViewModel() -> AppModuleViewModel {
+        return AppModuleViewModel()
     }
 
     @MainActor
-    static func makeBillingManagerViewModel() -> BillingManagerViewModel {
-        return BillingManagerViewModel()
+    static func makeAwaitingPartnerViewModel() -> AwaitingPartnerViewModel {
+        return AwaitingPartnerViewModel()
     }
 
     @MainActor
@@ -19,11 +19,6 @@ struct ViewModelFactory {
     @MainActor
     static func makeCandidateInvitationViewModel() -> CandidateInvitationViewModel {
         return CandidateInvitationViewModel()
-    }
-
-    @MainActor
-    static func makeCandidateInvitationServiceViewModel() -> CandidateInvitationServiceViewModel {
-        return CandidateInvitationServiceViewModel()
     }
 
     @MainActor
@@ -52,16 +47,6 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeCompatibilityEngineViewModel() -> CompatibilityEngineViewModel {
-        return CompatibilityEngineViewModel()
-    }
-
-    @MainActor
-    static func makeCompatibilityVectorViewModel() -> CompatibilityVectorViewModel {
-        return CompatibilityVectorViewModel()
-    }
-
-    @MainActor
     static func makeEliminationViewModel() -> EliminationViewModel {
         return EliminationViewModel()
     }
@@ -69,11 +54,6 @@ struct ViewModelFactory {
     @MainActor
     static func makeFinalSelectionViewModel() -> FinalSelectionViewModel {
         return FinalSelectionViewModel()
-    }
-
-    @MainActor
-    static func makeGhostDetectionServiceViewModel() -> GhostDetectionServiceViewModel {
-        return GhostDetectionServiceViewModel()
     }
 
     @MainActor
@@ -87,13 +67,8 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeLocationServiceViewModel() -> LocationServiceViewModel {
-        return LocationServiceViewModel()
-    }
-
-    @MainActor
-    static func makeMatchViewModel() -> MatchViewModel {
-        return MatchViewModel()
+    static func makeMainViewModel() -> MainViewModel {
+        return MainViewModel()
     }
 
     @MainActor
@@ -109,21 +84,6 @@ struct ViewModelFactory {
     @MainActor
     static func makeMatchSuccessViewModel() -> MatchSuccessViewModel {
         return MatchSuccessViewModel()
-    }
-
-    @MainActor
-    static func makeMatchingServiceViewModel() -> MatchingServiceViewModel {
-        return MatchingServiceViewModel()
-    }
-
-    @MainActor
-    static func makeMessageViewModel() -> MessageViewModel {
-        return MessageViewModel()
-    }
-
-    @MainActor
-    static func makeNavGraphViewModel() -> NavGraphViewModel {
-        return NavGraphViewModel()
     }
 
     @MainActor
@@ -157,16 +117,6 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makePushNotificationServiceViewModel() -> PushNotificationServiceViewModel {
-        return PushNotificationServiceViewModel()
-    }
-
-    @MainActor
-    static func makeQuestionViewModel() -> QuestionViewModel {
-        return QuestionViewModel()
-    }
-
-    @MainActor
     static func makeQuestionCardViewModel() -> QuestionCardViewModel {
         return QuestionCardViewModel()
     }
@@ -179,16 +129,6 @@ struct ViewModelFactory {
     @MainActor
     static func makeQuestionnaireViewModel() -> QuestionnaireViewModel {
         return QuestionnaireViewModel()
-    }
-
-    @MainActor
-    static func makeQuizQuestionDatabaseViewModel() -> QuizQuestionDatabaseViewModel {
-        return QuizQuestionDatabaseViewModel()
-    }
-
-    @MainActor
-    static func makeQuizScorerViewModel() -> QuizScorerViewModel {
-        return QuizScorerViewModel()
     }
 
     @MainActor
@@ -222,11 +162,6 @@ struct ViewModelFactory {
     }
 
     @MainActor
-    static func makeSoulLinkMessagingServiceViewModel() -> SoulLinkMessagingServiceViewModel {
-        return SoulLinkMessagingServiceViewModel()
-    }
-
-    @MainActor
     static func makeSoulLinkPersonalityViewModel() -> SoulLinkPersonalityViewModel {
         return SoulLinkPersonalityViewModel()
     }
@@ -249,11 +184,6 @@ struct ViewModelFactory {
     @MainActor
     static func makeTypeViewModel() -> TypeViewModel {
         return TypeViewModel()
-    }
-
-    @MainActor
-    static func makeUserViewModel() -> UserViewModel {
-        return UserViewModel()
     }
 
     @MainActor

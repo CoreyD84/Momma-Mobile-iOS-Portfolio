@@ -11,4 +11,5 @@ final class SoulLinkApplicationViewModel: ObservableObject {
         default: break
         }
     }
+
 }

@@ -11,4 +11,5 @@ final class SignUpViewModel: ObservableObject {
         default: break
         }
     }
+
 }

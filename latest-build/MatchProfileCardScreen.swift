@@ -8,63 +8,59 @@ struct MatchProfileCardScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    VStack {
+                        VStack {
+                        }
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        Image("Icon")
+                    }
+                }
+                VStack {
+                }
+                VStack {
+                    Image("Icon")
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                            Image("Icon")
+                            VStack {
+                            }
+                            Text("SoulLink's Insight")
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
             }
             VStack {
+                VStack {
+                }
+                Text("Compatibility Breakdown")
+                Text("Values")
+                Text("Conflict")
+                Text("Future")
+                Text("Communication")
+                Text("Philosophy")
             }
             VStack {
+                Text("progress")
+                VStack {
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
             }
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Text("Eliminate This Match")
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            }
-            .navigationTitle("Match Profile Card")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(MatchProfileCardEvent.onAppear) }
+            }.navigationTitle("Match Profile Card").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(MatchProfileCardEvent.onAppear) }
     }
 }

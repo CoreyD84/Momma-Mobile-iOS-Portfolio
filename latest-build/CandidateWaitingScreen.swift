@@ -8,30 +8,43 @@ struct CandidateWaitingScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    Image("Icon")
+                    Image("Icon")
+                    VStack {
+                    }
+                    Text("You're In! ✨")
+                    VStack {
+                    }
+                    VStack {
+                        Text("You've accepted the invitation and paid your candidate fee.")
+                        VStack {
+                            VStack {
+                            }
+                            Text("What's Next?")
+                            VStack {
+                            }
+                            Text("• We're waiting for two more candidates to accept\\n")
+                            Text("• Once all three candidates are ready, the initiator will see their options\\n")
+                            Text("• You'll be notified when the matching process continues\\n")
+                            Text("• Check back soon for updates!")
+                        }
+                    }
+                    ProgressView()
+                    VStack {
+                    }
+                    Text("Waiting for other candidates...")
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        Text("Go to Home")
+                    }
+                }
             }
-            VStack {
-            }
-            Spacer()
-            Image("IMAGE")
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            ProgressView()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("TEXT")
-            }
-            .navigationTitle("Candidate Waiting")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(CandidateWaitingEvent.onAppear) }
+            }.navigationTitle("Candidate Waiting").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(CandidateWaitingEvent.onAppear) }
     }
 }

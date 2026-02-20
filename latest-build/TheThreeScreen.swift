@@ -8,114 +8,132 @@ struct TheThreeScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    Text("payment")
+                    Text("quiz")
+                    Text("the_three")
+                }
             }
             VStack {
-            }
-            ProgressView()
-            VStack {
+                ProgressView()
             }
             VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            ProgressView()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Go to Payment")
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
+                VStack {
+                    Image("Icon")
+                    ProgressView()
+                    VStack {
+                    }
+                    Text("✨ Searching the cosmos... ✨")
+                    VStack {
+                    }
+                    Text("SoulLink is analyzing thousands of souls to find your perfect matches")
+                }
             }
             VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Confirm & Continue to Quiz")
-            Spacer()
-            Text("Go Back")
-            Spacer()
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Payment Required")
+                    VStack {
+                    }
+                    Text("Please complete payment to unlock The Three")
+                    Button(action: { }) {
+                        VStack {
+                        }
+                    }
+                }
             }
             VStack {
+                VStack {
+                }
+                VStack {
+                    Text("✨ The Three ✨")
+                    VStack {
+                        VStack {
+                        }
+                        Text("Your Task")
+                        VStack {
+                        }
+                        Text("Review each match carefully. You must eliminate one to proceed to the Quiz Challenge with the final two.")
+                    }
+                }
             }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Begin Quiz Challenge")
             VStack {
+                VStack {
+                }
+                Text("⚠️ Confirm Elimination")
+                VStack {
+                    Text("This decision is final. Are you certain?")
+                    VStack {
+                        VStack {
+                        }
+                        Text("Eliminated")
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
+                VStack {
+                }
+                VStack {
+                    Text("Continuing with:")
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
+                Button(action: { }) {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
             }
             VStack {
+                VStack {
+                }
+                Text("✨ The Final Two ✨")
+                Text("You've narrowed it down to two souls.\\n\\n")
+                Text("Now comes the Quiz Challenge—a test of how well you understand them.\\n\\n")
+                VStack {
+                    Text("Your answers will reveal which connection runs deeper.")
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
+                Button(action: { }) {
+                    VStack {
+                    }
+                }
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
+            VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Search Error")
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
             }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back")
-            }
-            .navigationTitle("The Three")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(TheThreeEvent.onAppear) }
+            }.navigationTitle("The Three").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(TheThreeEvent.onAppear) }
     }
 }

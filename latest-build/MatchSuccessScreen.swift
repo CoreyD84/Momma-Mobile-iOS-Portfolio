@@ -8,61 +8,70 @@ struct MatchSuccessScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    VStack {
+                        VStack {
+                        }
+                        Text("🎉 It's a Match! 🎉")
+                        VStack {
+                        }
+                        Text("Two souls have found each other")
+                    }
+                    Button(action: { }) {
+                        Text("match_success")
+                        Image("Icon")
+                        VStack {
+                        }
+                        Text("Start Chatting")
+                    }
+                }
+            }
+            Text("pulse")
+            Text("scale")
+            VStack {
+                Image("Icon")
+                VStack {
+                    VStack {
+                    }
+                    Text("💫 What Happens Next")
+                    Text("Start Chatting")
+                    Text("Get to know each other through messages")
+                    Text("Plan Your First Meeting")
+                    Text("When you're both ready, meet in person")
+                    Text("Build Your Connection")
+                    Text("Take your time and let the relationship develop naturally")
+                }
             }
             VStack {
-            }
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                    Text("✨ Guidelines for Success")
+                    Text("Be authentic and honest")
+                    Text("Communicate openly about your feelings")
+                    Text("Respect each other's boundaries")
+                    Text("Take your time getting to know each other")
+                    Text("Meet in public places for safety")
+                    Text("Trust the process and enjoy the journey")
+                }
             }
             VStack {
+                VStack {
+                }
+                VStack {
+                }
             }
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            VStack {
-            }
-            Spacer()
-            Text("TEXT")
-            }
-            .navigationTitle("Match Success")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(MatchSuccessEvent.onAppear) }
+            }.navigationTitle("Match Success").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(MatchSuccessEvent.onAppear) }
     }
 }

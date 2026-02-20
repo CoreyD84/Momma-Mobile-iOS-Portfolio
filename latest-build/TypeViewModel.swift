@@ -11,4 +11,5 @@ final class TypeViewModel: ObservableObject {
         default: break
         }
     }
+
 }

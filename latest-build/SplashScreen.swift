@@ -7,19 +7,28 @@ struct SplashScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Spacer()
             ProgressView()
-            Text("TEXT")
+            VStack {
+                Text("splash_animation")
+                Text("pulse_scale")
+                Text("fade_in")
+                VStack {
+                    VStack {
+                        Text("SoulLink Character")
+                        VStack {
+                        }
+                        Text("SoulLink")
+                        VStack {
+                        }
+                        Text("Where souls find their match")
+                        ProgressView()
+                    }
+                    VStack {
+                    }
+                    Text("Version 1.0.0")
+                }
             }
-            .navigationTitle("Splash")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(SplashEvent.onAppear) }
+            }.navigationTitle("Splash").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(SplashEvent.onAppear) }
     }
 }

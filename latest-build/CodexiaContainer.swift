@@ -5,127 +5,111 @@ class CodexiaContainer: ObservableObject {
     static let shared = CodexiaContainer()
 
     let authRepository: AuthRepository
+    let candidateInvitationService: CandidateInvitationService
     let compatibilityRepository: CompatibilityRepository
+    let ghostDetectionService: GhostDetectionService
+    let locationService: LocationService
     let matchRepository: MatchRepository
+    let matchingService: MatchingService
     let messageRepository: MessageRepository
     let notificationRepository: NotificationRepository
     let paymentRepository: PaymentRepository
     let photoRepository: PhotoRepository
+    let pushNotificationService: PushNotificationService
+    let soulLinkMessagingService: SoulLinkMessagingService
     let userRepository: UserRepository
+    let appModuleViewModel: AppModuleViewModel
     let awaitingPartnerViewModel: AwaitingPartnerViewModel
-    let billingManagerViewModel: BillingManagerViewModel
     let browseMembersViewModel: BrowseMembersViewModel
     let candidateInvitationViewModel: CandidateInvitationViewModel
-    let candidateInvitationServiceViewModel: CandidateInvitationServiceViewModel
     let candidateQuizViewModel: CandidateQuizViewModel
     let candidateWaitingViewModel: CandidateWaitingViewModel
     let chatViewModel: ChatViewModel
     let cloudinaryConfigViewModel: CloudinaryConfigViewModel
     let colorViewModel: ColorViewModel
-    let compatibilityEngineViewModel: CompatibilityEngineViewModel
-    let compatibilityVectorViewModel: CompatibilityVectorViewModel
     let eliminationViewModel: EliminationViewModel
     let finalSelectionViewModel: FinalSelectionViewModel
-    let ghostDetectionServiceViewModel: GhostDetectionServiceViewModel
     let ghostDetectionWorkerViewModel: GhostDetectionWorkerViewModel
     let homeViewModel: HomeViewModel
-    let locationServiceViewModel: LocationServiceViewModel
-    let matchViewModel: MatchViewModel
+    let mainViewModel: MainViewModel
     let matchHistoryViewModel: MatchHistoryViewModel
     let matchProfileCardViewModel: MatchProfileCardViewModel
     let matchSuccessViewModel: MatchSuccessViewModel
-    let matchingServiceViewModel: MatchingServiceViewModel
-    let messageViewModel: MessageViewModel
-    let navGraphViewModel: NavGraphViewModel
     let notificationsViewModel: NotificationsViewModel
     let partnerDecisionViewModel: PartnerDecisionViewModel
     let paymentViewModel: PaymentViewModel
     let profileViewModel: ProfileViewModel
     let profileSetupViewModel: ProfileSetupViewModel
     let progressBarViewModel: ProgressBarViewModel
-    let pushNotificationServiceViewModel: PushNotificationServiceViewModel
-    let questionViewModel: QuestionViewModel
     let questionCardViewModel: QuestionCardViewModel
     let questionDatabaseViewModel: QuestionDatabaseViewModel
     let questionnaireViewModel: QuestionnaireViewModel
-    let quizQuestionDatabaseViewModel: QuizQuestionDatabaseViewModel
-    let quizScorerViewModel: QuizScorerViewModel
     let quizViewModel: QuizViewModel
     let secondChanceViewModel: SecondChanceViewModel
     let signInViewModel: SignInViewModel
     let signUpViewModel: SignUpViewModel
     let soulLinkApplicationViewModel: SoulLinkApplicationViewModel
     let soulLinkMessageViewModel: SoulLinkMessageViewModel
-    let soulLinkMessagingServiceViewModel: SoulLinkMessagingServiceViewModel
     let soulLinkPersonalityViewModel: SoulLinkPersonalityViewModel
     let splashViewModel: SplashViewModel
     let theThreeViewModel: TheThreeViewModel
     let themeViewModel: ThemeViewModel
     let typeViewModel: TypeViewModel
-    let userViewModel: UserViewModel
     let userProfileViewModel: UserProfileViewModel
     let welcomeViewModel: WelcomeViewModel
 
     private init() {
         self.authRepository = AuthRepositoryImpl.shared
+        self.candidateInvitationService = CandidateInvitationServiceImpl.shared
         self.compatibilityRepository = CompatibilityRepositoryImpl.shared
+        self.ghostDetectionService = GhostDetectionServiceImpl.shared
+        self.locationService = LocationServiceImpl.shared
         self.matchRepository = MatchRepositoryImpl.shared
+        self.matchingService = MatchingServiceImpl.shared
         self.messageRepository = MessageRepositoryImpl.shared
         self.notificationRepository = NotificationRepositoryImpl.shared
         self.paymentRepository = PaymentRepositoryImpl.shared
         self.photoRepository = PhotoRepositoryImpl.shared
+        self.pushNotificationService = PushNotificationServiceImpl.shared
+        self.soulLinkMessagingService = SoulLinkMessagingServiceImpl.shared
         self.userRepository = UserRepositoryImpl.shared
+        self.appModuleViewModel = AppModuleViewModelFactory.make()
         self.awaitingPartnerViewModel = AwaitingPartnerViewModelFactory.make()
-        self.billingManagerViewModel = BillingManagerViewModelFactory.make()
         self.browseMembersViewModel = BrowseMembersViewModelFactory.make()
         self.candidateInvitationViewModel = CandidateInvitationViewModelFactory.make()
-        self.candidateInvitationServiceViewModel = CandidateInvitationServiceViewModelFactory.make()
         self.candidateQuizViewModel = CandidateQuizViewModelFactory.make()
         self.candidateWaitingViewModel = CandidateWaitingViewModelFactory.make()
         self.chatViewModel = ChatViewModelFactory.make()
         self.cloudinaryConfigViewModel = CloudinaryConfigViewModelFactory.make()
         self.colorViewModel = ColorViewModelFactory.make()
-        self.compatibilityEngineViewModel = CompatibilityEngineViewModelFactory.make()
-        self.compatibilityVectorViewModel = CompatibilityVectorViewModelFactory.make()
         self.eliminationViewModel = EliminationViewModelFactory.make()
         self.finalSelectionViewModel = FinalSelectionViewModelFactory.make()
-        self.ghostDetectionServiceViewModel = GhostDetectionServiceViewModelFactory.make()
         self.ghostDetectionWorkerViewModel = GhostDetectionWorkerViewModelFactory.make()
         self.homeViewModel = HomeViewModelFactory.make()
-        self.locationServiceViewModel = LocationServiceViewModelFactory.make()
-        self.matchViewModel = MatchViewModelFactory.make()
+        self.mainViewModel = MainViewModelFactory.make()
         self.matchHistoryViewModel = MatchHistoryViewModelFactory.make()
         self.matchProfileCardViewModel = MatchProfileCardViewModelFactory.make()
         self.matchSuccessViewModel = MatchSuccessViewModelFactory.make()
-        self.matchingServiceViewModel = MatchingServiceViewModelFactory.make()
-        self.messageViewModel = MessageViewModelFactory.make()
-        self.navGraphViewModel = NavGraphViewModelFactory.make()
         self.notificationsViewModel = NotificationsViewModelFactory.make()
         self.partnerDecisionViewModel = PartnerDecisionViewModelFactory.make()
         self.paymentViewModel = PaymentViewModelFactory.make()
         self.profileViewModel = ProfileViewModelFactory.make()
         self.profileSetupViewModel = ProfileSetupViewModelFactory.make()
         self.progressBarViewModel = ProgressBarViewModelFactory.make()
-        self.pushNotificationServiceViewModel = PushNotificationServiceViewModelFactory.make()
-        self.questionViewModel = QuestionViewModelFactory.make()
         self.questionCardViewModel = QuestionCardViewModelFactory.make()
         self.questionDatabaseViewModel = QuestionDatabaseViewModelFactory.make()
         self.questionnaireViewModel = QuestionnaireViewModelFactory.make()
-        self.quizQuestionDatabaseViewModel = QuizQuestionDatabaseViewModelFactory.make()
-        self.quizScorerViewModel = QuizScorerViewModelFactory.make()
         self.quizViewModel = QuizViewModelFactory.make()
         self.secondChanceViewModel = SecondChanceViewModelFactory.make()
         self.signInViewModel = SignInViewModelFactory.make()
         self.signUpViewModel = SignUpViewModelFactory.make()
         self.soulLinkApplicationViewModel = SoulLinkApplicationViewModelFactory.make()
         self.soulLinkMessageViewModel = SoulLinkMessageViewModelFactory.make()
-        self.soulLinkMessagingServiceViewModel = SoulLinkMessagingServiceViewModelFactory.make()
         self.soulLinkPersonalityViewModel = SoulLinkPersonalityViewModelFactory.make()
         self.splashViewModel = SplashViewModelFactory.make()
         self.theThreeViewModel = TheThreeViewModelFactory.make()
         self.themeViewModel = ThemeViewModelFactory.make()
         self.typeViewModel = TypeViewModelFactory.make()
-        self.userViewModel = UserViewModelFactory.make()
         self.userProfileViewModel = UserProfileViewModelFactory.make()
         self.welcomeViewModel = WelcomeViewModelFactory.make()
     }

@@ -32,13 +32,15 @@ struct SoulLinkPersonalityScreen: View {
             Text("I need to know how you give and receive love.")
             Text("Finally, the deepest layer: what you believe.\\n\\n")
             Text("About fate. About change. About whether love is work or magic. ")
-            Text("These beliefs shape everything.")
-            Text("You're deeply family-oriented. Relationships are your foundation.")
-            Text("You value independence. You need space to be yourself.")
-            Text("You prioritize emotional safety over excitement. You protect your peace.")
-            Text("You forgive quickly, but you don't forget easily.")
-            Text("You hold onto hurt. Repair takes time for you.")
-            Text("Your career drives you. A partner needs to understand that ambition.")
+            VStack {
+                Text("These beliefs shape everything.")
+                Text("You're deeply family-oriented. Relationships are your foundation.")
+                Text("You value independence. You need space to be yourself.")
+                Text("You prioritize emotional safety over excitement. You protect your peace.")
+                Text("You forgive quickly, but you don't forget easily.")
+                Text("You hold onto hurt. Repair takes time for you.")
+                Text("Your career drives you. A partner needs to understand that ambition.")
+            }
             Text("\\n\\n")
             Text("Now I'm ready to search for the three souls most aligned with you.")
             Text("I'm ready to search.\\n\\n")
@@ -50,9 +52,11 @@ struct SoulLinkPersonalityScreen: View {
             Text("Now I want to see if you feel your partners accurately.\\n\\n")
             Text("I'll ask you to predict how they would respond in certain situations. ")
             Text("This isn't a test of knowledge—it's a test of emotional resonance.\\n\\n")
-            Text("Can you sense them?")
-            Text("You felt that correctly. You're reading their patterns.")
-            Text("You misread that. It's okay—this is where you learn about each other.")
+            VStack {
+                Text("Can you sense them?")
+                Text("You felt that correctly. You're reading their patterns.")
+                Text("You misread that. It's okay—this is where you learn about each other.")
+            }
             Text("I've weighed everything:\\n")
             Text("• Your core compatibility\\n")
             Text("• How well you understand each other\\n")
@@ -87,10 +91,7 @@ struct SoulLinkPersonalityScreen: View {
             Text("But later you said: ")
             Text("That's not wrong—it might mean you're still figuring out your patterns. ")
             Text("I'll treat this as a growth area, not a flaw.")
-            }
-            .navigationTitle("Soul Link Personality")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(SoulLinkPersonalityEvent.onAppear) }
+            }.navigationTitle("Soul Link Personality").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(SoulLinkPersonalityEvent.onAppear) }
     }
 }

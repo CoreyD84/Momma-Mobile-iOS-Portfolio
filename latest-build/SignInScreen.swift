@@ -8,32 +8,30 @@ struct SignInScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("SoulLink")
+                    VStack {
+                    }
+                    Text("Welcome back")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        ProgressView()
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        Text("Don't have an account? Sign Up")
+                        VStack {
+                        }
+                    }
+                }
             }
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            TextField("INPUT", text: .constant(""))
-            Text("Email")
-            Spacer()
-            TextField("INPUT", text: .constant(""))
-            Text("Password")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            ProgressView()
-            Text("Sign In")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            }
-            .navigationTitle("Sign In")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(SignInEvent.onAppear) }
+            }.navigationTitle("Sign In").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(SignInEvent.onAppear) }
     }
 }

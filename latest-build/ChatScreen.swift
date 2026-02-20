@@ -8,83 +8,89 @@ struct ChatScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                        Button(action: { }) {
+                            Text("Back")
+                        }
+                    }
+                }
+                VStack {
+                }
             }
             VStack {
-            }
-            Text("Chat")
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Image("Back")
-            VStack {
-            }
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Text("TEXT")
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Image("Back")
-            VStack {
-            }
-            ProgressView()
-            VStack {
-            }
-            List {
+                VStack {
+                }
+                VStack {
+                }
+                VStack {
+                }
+                Button(action: { }) {
+                    Text("Back")
+                }
             }
             VStack {
+                ProgressView()
             }
             VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
+                VStack {
+                }
             }
             VStack {
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
             }
             VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            Text("TEXT")
-            VStack {
-            }
-            VStack {
-            }
-            TextField("INPUT", text: .constant(""))
-            Text("Type a message...")
-            Spacer()
-            ProgressView()
-            Image("IMAGE")
-            VStack {
+                VStack {
+                    VStack {
+                        VStack {
+                        }
+                    }
+                    VStack {
+                    }
+                    Text("SoulLink")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                }
             }
             VStack {
+                VStack {
+                }
+                VStack {
+                    VStack {
+                        ProgressView()
+                        Image("Icon")
+                        Text("Send")
+                    }
+                }
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
+            VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Chat Error")
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
+                Text("Just now")
+                Text("h:mm a")
+                Text("MMM d, h:mm a")
             }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back")
-            }
-            .navigationTitle("Chat")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(ChatEvent.onAppear) }
+            }.navigationTitle("Chat").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(ChatEvent.onAppear) }
     }
 }

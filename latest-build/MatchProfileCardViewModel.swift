@@ -11,4 +11,5 @@ final class MatchProfileCardViewModel: ObservableObject {
         default: break
         }
     }
+
 }

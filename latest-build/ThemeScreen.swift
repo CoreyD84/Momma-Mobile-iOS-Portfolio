@@ -8,10 +8,7 @@ struct ThemeScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             EmptyView()
-            }
-            .navigationTitle("Theme")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(ThemeEvent.onAppear) }
+            }.navigationTitle("Theme").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(ThemeEvent.onAppear) }
     }
 }

@@ -275,10 +275,7 @@ struct QuestionDatabaseScreen: View {
             Text("p6_d")
             Text("p6_e")
             Text("philosophy")
-            }
-            .navigationTitle("Question Database")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(QuestionDatabaseEvent.onAppear) }
+            }.navigationTitle("Question Database").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(QuestionDatabaseEvent.onAppear) }
     }
 }

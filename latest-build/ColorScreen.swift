@@ -9,10 +9,7 @@ struct ColorScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
             }
-            }
-            .navigationTitle("Color")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(ColorEvent.onAppear) }
+            }.navigationTitle("Color").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(ColorEvent.onAppear) }
     }
 }

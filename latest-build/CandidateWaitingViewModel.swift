@@ -11,4 +11,5 @@ final class CandidateWaitingViewModel: ObservableObject {
         default: break
         }
     }
+
 }

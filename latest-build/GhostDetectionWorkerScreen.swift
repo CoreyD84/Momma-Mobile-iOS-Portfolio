@@ -8,10 +8,7 @@ struct GhostDetectionWorkerScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             Text("ghost_detection_worker")
-            }
-            .navigationTitle("Ghost Detection Worker")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(GhostDetectionWorkerEvent.onAppear) }
+            }.navigationTitle("Ghost Detection Worker").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(GhostDetectionWorkerEvent.onAppear) }
     }
 }

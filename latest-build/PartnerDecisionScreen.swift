@@ -8,101 +8,113 @@ struct PartnerDecisionScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                Text("match_success")
+                Text("partner_decision")
+                Text("home")
             }
             VStack {
-            }
-            ProgressView()
-            VStack {
-            }
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("TEXT")
-            Spacer()
-            Text("Decline")
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("Go Back")
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Decline")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
+                ProgressView()
             }
             VStack {
+                VStack {
+                    Image("Icon")
+                }
+                VStack {
+                }
+                Text("💫 You Have a Match! 💫")
+                Text("Someone has been searching for a connection like yours. ")
+                Text("I've analyzed your compatibility, and the patterns align beautifully.\\n\\n")
+                VStack {
+                    Text("Take your time. Review their profile. Trust your intuition.")
+                    VStack {
+                        VStack {
+                        }
+                        Text("✨ Why This Match")
+                        VStack {
+                        }
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        Text("Accept This Match")
+                        VStack {
+                        }
+                        VStack {
+                            VStack {
+                            }
+                            Text("Are you sure?")
+                            VStack {
+                            }
+                            Text("This person has been carefully chosen for you. Declining means this opportunity won't come back.")
+                            VStack {
+                                VStack {
+                                }
+                                Button(action: { }) {
+                                    VStack {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                        }
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        Text("Gender")
+                        Text("Orientation")
+                        Text("Location")
+                    }
+                }
             }
-            Text("TEXT")
-            Text("TEXT")
             VStack {
+                VStack {
+                }
+                VStack {
+                }
             }
             VStack {
+                VStack {
+                    Image("Icon")
+                }
+                VStack {
+                    VStack {
+                    }
+                    Text("Match Accepted! 💫")
+                    VStack {
+                        Text("Your decision has been recorded.")
+                    }
+                }
+                Button(action: { }) {
+                    VStack {
+                    }
+                    Text("Continue")
+                }
             }
-            Image("IMAGE")
-            Spacer()
             VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Error")
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("TEXT")
-            VStack {
-            }
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back")
-            }
-            .navigationTitle("Partner Decision")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(PartnerDecisionEvent.onAppear) }
+            }.navigationTitle("Partner Decision").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(PartnerDecisionEvent.onAppear) }
     }
 }

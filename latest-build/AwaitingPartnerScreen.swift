@@ -8,112 +8,120 @@ struct AwaitingPartnerScreen: View {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
+                Text("match_success")
+                Text("awaiting_partner")
+                Text("the_three")
+                Text("awaiting_partner")
+                Text("home")
             }
             VStack {
+                ProgressView()
             }
-            ProgressView()
+            Text("pulse")
+            Text("scale")
             VStack {
-            }
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            VStack {
-            }
-            Spacer()
-            VStack {
-            }
-            Image("IMAGE")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            VStack {
-            }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("TEXT")
-            Spacer()
-            Text("Maybe Later")
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Text("Return Home")
-            Spacer()
-            VStack {
+                VStack {
+                    VStack {
+                    }
+                }
+                VStack {
+                }
+                Text("⏳ Awaiting Response ⏳")
+                VStack {
+                    VStack {
+                        VStack {
+                        }
+                        Text("💫 What's Happening")
+                        VStack {
+                        }
+                        Text("• They're reviewing your profile\\n")
+                        Text("• You'll be notified when they respond\\n")
+                        Text("• This usually takes a few hours")
+                    }
+                }
+                VStack {
+                    VStack {
+                    }
+                    Text("Your Match")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                        }
+                    }
+                    VStack {
+                    }
+                }
             }
             VStack {
+                VStack {
+                    Image("Icon")
+                }
+                VStack {
+                }
+                Text("💫 They Said Yes! 💫")
+                Button(action: { }) {
+                    VStack {
+                    }
+                    Text("Start Your Journey Together")
+                }
+                VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    Text("has accepted your match!")
+                    VStack {
+                    }
+                }
             }
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
+            VStack {
+                VStack {
+                    Image("Icon")
+                }
+                VStack {
+                }
+                Text("Not This Time")
+                VStack {
+                    VStack {
+                        VStack {
+                        }
+                        Text("🎁 Your 90-Day Guarantee")
+                        VStack {
+                        }
+                        Text("You have a second chance included with your purchase. ")
+                        Text("I'll search again and find three new potential matches for you.")
+                        Button(action: { }) {
+                            VStack {
+                            }
+                            Text("Use My Second Chance")
+                        }
+                    }
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                }
             }
-            Text("Try Again")
-            Spacer()
-            Text("Go Back")
+            VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Error")
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                }
             }
-            .navigationTitle("Awaiting Partner")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(AwaitingPartnerEvent.onAppear) }
+            }.navigationTitle("Awaiting Partner").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(AwaitingPartnerEvent.onAppear) }
     }
 }

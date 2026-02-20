@@ -7,70 +7,64 @@ struct ProfileSetupScreen: View {
         NavigationView {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
+            Text("18")
+            Text("99")
+            VStack {
+                VStack {
+                    VStack {
+                    }
+                    Text("Tell me about yourself")
+                    VStack {
+                    }
+                    Text("Add Photos (Optional)")
+                    VStack {
+                    }
+                    Text("Add up to 6 photos. All photos are reviewed for safety.")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    Text("Your Gender")
+                    VStack {
+                    }
+                    Text("Your Orientation")
+                    VStack {
+                    }
+                    Text("Looking For")
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                    }
+                    Button(action: { }) {
+                        ProgressView()
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                            ProgressView()
+                            Image("Icon")
+                            Text("Add photo")
+                        }
+                    }
+                    VStack {
+                        VStack {
+                            Text("Profile photo")
+                            Image("Icon")
+                            Text("Delete photo")
+                        }
+                    }
+                }
+            }
             VStack {
             }
             VStack {
             }
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            TextField("INPUT", text: .constant(""))
-            Text("Age")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            VStack {
-            }
-            TextField("INPUT", text: .constant(""))
-            Text("Min")
-            TextField("INPUT", text: .constant(""))
-            Text("Max")
-            Spacer()
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            ProgressView()
-            Text("Continue")
-            Spacer()
-            Text("TEXT")
-            Spacer()
-            List {
-            }
-            VStack {
-            }
-            ProgressView()
-            Image("IMAGE")
-            VStack {
-            }
-            Button(action: { }) {
-                Text("BUTTON")
-            }
-            Image("IMAGE")
-            VStack {
-            }
-            Text("_")
-            VStack {
-            }
-            Text("_")
-            }
-            .navigationTitle("Profile Setup")
-            .foregroundStyle(CodexiaTheme.label)
-        }
-        .onAppear { viewModel.onEvent(ProfileSetupEvent.onAppear) }
+            }.navigationTitle("Profile Setup").foregroundStyle(CodexiaTheme.label)
+        }.onAppear { viewModel.onEvent(ProfileSetupEvent.onAppear) }
     }
 }
