@@ -4,7 +4,7 @@ struct SignInScreen: View {
     @StateObject private var viewModel = SignInViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -31,7 +31,10 @@ struct SignInScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Sign In").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(SignInEvent.onAppear) }
+            }
+            .navigationTitle("Sign In")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(SignInEvent.onAppear) }
     }
 }

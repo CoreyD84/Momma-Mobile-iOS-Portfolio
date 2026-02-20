@@ -4,7 +4,7 @@ struct QuestionnaireScreen: View {
     @StateObject private var viewModel = QuestionnaireViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -73,7 +73,10 @@ struct QuestionnaireScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Questionnaire").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(QuestionnaireEvent.onAppear) }
+            }
+            .navigationTitle("Questionnaire")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(QuestionnaireEvent.onAppear) }
     }
 }

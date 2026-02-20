@@ -4,7 +4,7 @@ struct ProgressBarScreen: View {
     @StateObject private var viewModel = ProgressBarViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -18,7 +18,10 @@ struct ProgressBarScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Progress Bar").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(ProgressBarEvent.onAppear) }
+            }
+            .navigationTitle("Progress Bar")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(ProgressBarEvent.onAppear) }
     }
 }

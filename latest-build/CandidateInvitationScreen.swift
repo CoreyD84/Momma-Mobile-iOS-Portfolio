@@ -4,7 +4,7 @@ struct CandidateInvitationScreen: View {
     @StateObject private var viewModel = CandidateInvitationViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             Text("CandidateInvitationScreen")
@@ -118,7 +118,10 @@ struct CandidateInvitationScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Candidate Invitation").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(CandidateInvitationEvent.onAppear) }
+            }
+            .navigationTitle("Candidate Invitation")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(CandidateInvitationEvent.onAppear) }
     }
 }

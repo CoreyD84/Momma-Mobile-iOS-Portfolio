@@ -4,7 +4,7 @@ struct MatchSuccessScreen: View {
     @StateObject private var viewModel = MatchSuccessViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -71,7 +71,10 @@ struct MatchSuccessScreen: View {
                 VStack {
                 }
             }
-            }.navigationTitle("Match Success").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(MatchSuccessEvent.onAppear) }
+            }
+            .navigationTitle("Match Success")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(MatchSuccessEvent.onAppear) }
     }
 }

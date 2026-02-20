@@ -4,11 +4,14 @@ struct ThemeScreen: View {
     @StateObject private var viewModel = ThemeViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             EmptyView()
-            }.navigationTitle("Theme").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(ThemeEvent.onAppear) }
+            }
+            .navigationTitle("Theme")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(ThemeEvent.onAppear) }
     }
 }

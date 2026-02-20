@@ -4,7 +4,7 @@ struct PartnerDecisionScreen: View {
     @StateObject private var viewModel = PartnerDecisionViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -114,7 +114,10 @@ struct PartnerDecisionScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Partner Decision").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(PartnerDecisionEvent.onAppear) }
+            }
+            .navigationTitle("Partner Decision")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(PartnerDecisionEvent.onAppear) }
     }
 }

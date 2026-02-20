@@ -4,7 +4,7 @@ struct SoulLinkMessageScreen: View {
     @StateObject private var viewModel = SoulLinkMessageViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -27,7 +27,10 @@ struct SoulLinkMessageScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Soul Link Message").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(SoulLinkMessageEvent.onAppear) }
+            }
+            .navigationTitle("Soul Link Message")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(SoulLinkMessageEvent.onAppear) }
     }
 }

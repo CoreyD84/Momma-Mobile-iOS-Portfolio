@@ -4,7 +4,7 @@ struct MatchProfileCardScreen: View {
     @StateObject private var viewModel = MatchProfileCardViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -60,7 +60,10 @@ struct MatchProfileCardScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Match Profile Card").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(MatchProfileCardEvent.onAppear) }
+            }
+            .navigationTitle("Match Profile Card")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(MatchProfileCardEvent.onAppear) }
     }
 }

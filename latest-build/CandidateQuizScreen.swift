@@ -4,7 +4,7 @@ struct CandidateQuizScreen: View {
     @StateObject private var viewModel = CandidateQuizViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -109,7 +109,10 @@ struct CandidateQuizScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Candidate Quiz").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(CandidateQuizEvent.onAppear) }
+            }
+            .navigationTitle("Candidate Quiz")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(CandidateQuizEvent.onAppear) }
     }
 }

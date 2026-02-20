@@ -4,7 +4,7 @@ struct WelcomeScreen: View {
     @StateObject private var viewModel = WelcomeViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -24,7 +24,10 @@ struct WelcomeScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Welcome").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(WelcomeEvent.onAppear) }
+            }
+            .navigationTitle("Welcome")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(WelcomeEvent.onAppear) }
     }
 }

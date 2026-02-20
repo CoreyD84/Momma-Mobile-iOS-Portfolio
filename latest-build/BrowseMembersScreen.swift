@@ -4,7 +4,7 @@ struct BrowseMembersScreen: View {
     @StateObject private var viewModel = BrowseMembersViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -59,7 +59,10 @@ struct BrowseMembersScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Browse Members").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(BrowseMembersEvent.onAppear) }
+            }
+            .navigationTitle("Browse Members")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(BrowseMembersEvent.onAppear) }
     }
 }

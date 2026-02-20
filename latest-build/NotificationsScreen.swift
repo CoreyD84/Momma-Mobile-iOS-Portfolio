@@ -4,7 +4,7 @@ struct NotificationsScreen: View {
     @StateObject private var viewModel = NotificationsViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -64,7 +64,10 @@ struct NotificationsScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Notifications").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(NotificationsEvent.onAppear) }
+            }
+            .navigationTitle("Notifications")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(NotificationsEvent.onAppear) }
     }
 }

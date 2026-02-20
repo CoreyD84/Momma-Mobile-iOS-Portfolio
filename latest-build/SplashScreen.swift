@@ -4,7 +4,7 @@ struct SplashScreen: View {
     @StateObject private var viewModel = SplashViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             ProgressView()
@@ -28,7 +28,10 @@ struct SplashScreen: View {
                     Text("Version 1.0.0")
                 }
             }
-            }.navigationTitle("Splash").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(SplashEvent.onAppear) }
+            }
+            .navigationTitle("Splash")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(SplashEvent.onAppear) }
     }
 }

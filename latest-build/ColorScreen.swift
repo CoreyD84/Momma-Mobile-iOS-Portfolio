@@ -4,12 +4,15 @@ struct ColorScreen: View {
     @StateObject private var viewModel = ColorViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
             }
-            }.navigationTitle("Color").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(ColorEvent.onAppear) }
+            }
+            .navigationTitle("Color")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(ColorEvent.onAppear) }
     }
 }

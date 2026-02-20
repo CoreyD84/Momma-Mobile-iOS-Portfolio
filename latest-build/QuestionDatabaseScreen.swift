@@ -4,7 +4,7 @@ struct QuestionDatabaseScreen: View {
     @StateObject private var viewModel = QuestionDatabaseViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             Text("values_1")
@@ -275,7 +275,10 @@ struct QuestionDatabaseScreen: View {
             Text("p6_d")
             Text("p6_e")
             Text("philosophy")
-            }.navigationTitle("Question Database").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(QuestionDatabaseEvent.onAppear) }
+            }
+            .navigationTitle("Question Database")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(QuestionDatabaseEvent.onAppear) }
     }
 }

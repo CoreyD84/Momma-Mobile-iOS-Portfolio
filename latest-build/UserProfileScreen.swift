@@ -4,7 +4,7 @@ struct UserProfileScreen: View {
     @StateObject private var viewModel = UserProfileViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -58,7 +58,10 @@ struct UserProfileScreen: View {
                     }
                 }
             }
-            }.navigationTitle("User Profile").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(UserProfileEvent.onAppear) }
+            }
+            .navigationTitle("User Profile")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(UserProfileEvent.onAppear) }
     }
 }

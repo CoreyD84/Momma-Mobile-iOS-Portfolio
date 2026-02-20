@@ -4,7 +4,7 @@ struct MatchHistoryScreen: View {
     @StateObject private var viewModel = MatchHistoryViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -108,7 +108,10 @@ struct MatchHistoryScreen: View {
                     Text("MMM d, yyyy")
                 }
             }
-            }.navigationTitle("Match History").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(MatchHistoryEvent.onAppear) }
+            }
+            .navigationTitle("Match History")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(MatchHistoryEvent.onAppear) }
     }
 }

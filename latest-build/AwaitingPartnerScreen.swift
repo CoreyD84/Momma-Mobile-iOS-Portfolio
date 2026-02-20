@@ -4,7 +4,7 @@ struct AwaitingPartnerScreen: View {
     @StateObject private var viewModel = AwaitingPartnerViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -121,7 +121,10 @@ struct AwaitingPartnerScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Awaiting Partner").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(AwaitingPartnerEvent.onAppear) }
+            }
+            .navigationTitle("Awaiting Partner")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(AwaitingPartnerEvent.onAppear) }
     }
 }

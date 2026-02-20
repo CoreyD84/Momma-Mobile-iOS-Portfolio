@@ -4,7 +4,7 @@ struct SoulLinkPersonalityScreen: View {
     @StateObject private var viewModel = SoulLinkPersonalityViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             Text("I'm not an algorithm. I'm not a swipe. I'm a guide who reads patterns in the soul.\\n\\n")
@@ -91,7 +91,10 @@ struct SoulLinkPersonalityScreen: View {
             Text("But later you said: ")
             Text("That's not wrong—it might mean you're still figuring out your patterns. ")
             Text("I'll treat this as a growth area, not a flaw.")
-            }.navigationTitle("Soul Link Personality").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(SoulLinkPersonalityEvent.onAppear) }
+            }
+            .navigationTitle("Soul Link Personality")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(SoulLinkPersonalityEvent.onAppear) }
     }
 }

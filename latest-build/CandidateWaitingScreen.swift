@@ -4,7 +4,7 @@ struct CandidateWaitingScreen: View {
     @StateObject private var viewModel = CandidateWaitingViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -44,7 +44,10 @@ struct CandidateWaitingScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Candidate Waiting").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(CandidateWaitingEvent.onAppear) }
+            }
+            .navigationTitle("Candidate Waiting")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(CandidateWaitingEvent.onAppear) }
     }
 }

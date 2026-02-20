@@ -4,7 +4,7 @@ struct QuizScreen: View {
     @StateObject private var viewModel = QuizViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -135,7 +135,10 @@ struct QuizScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Quiz").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(QuizEvent.onAppear) }
+            }
+            .navigationTitle("Quiz")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(QuizEvent.onAppear) }
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-typealias FirebaseUser = Void
+typealias FirebaseUser = Any
 typealias Uri = String
 typealias FlowUser = Any
 typealias FlowMatch = Any
@@ -9,7 +9,7 @@ typealias FlowListConversation = Any
 typealias Address = Any
 typealias Timestamp = Date
 typealias RemoteMessage = Any
-typealias FirebaseAuth = Any
+typealias MapString = [String: Any]
 
 protocol AuthRepository {
     func isUserLoggedIn() -> Bool

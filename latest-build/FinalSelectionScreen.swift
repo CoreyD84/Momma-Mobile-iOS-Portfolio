@@ -4,7 +4,7 @@ struct FinalSelectionScreen: View {
     @StateObject private var viewModel = FinalSelectionViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -140,7 +140,10 @@ struct FinalSelectionScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Final Selection").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(FinalSelectionEvent.onAppear) }
+            }
+            .navigationTitle("Final Selection")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(FinalSelectionEvent.onAppear) }
     }
 }

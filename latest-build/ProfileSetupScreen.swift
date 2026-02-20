@@ -4,7 +4,7 @@ struct ProfileSetupScreen: View {
     @StateObject private var viewModel = ProfileSetupViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             Text("18")
@@ -64,7 +64,10 @@ struct ProfileSetupScreen: View {
             }
             VStack {
             }
-            }.navigationTitle("Profile Setup").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(ProfileSetupEvent.onAppear) }
+            }
+            .navigationTitle("Profile Setup")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(ProfileSetupEvent.onAppear) }
     }
 }

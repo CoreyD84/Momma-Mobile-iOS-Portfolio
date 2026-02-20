@@ -4,7 +4,7 @@ struct ChatScreen: View {
     @StateObject private var viewModel = ChatViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -90,7 +90,10 @@ struct ChatScreen: View {
                 Text("h:mm a")
                 Text("MMM d, h:mm a")
             }
-            }.navigationTitle("Chat").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(ChatEvent.onAppear) }
+            }
+            .navigationTitle("Chat")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(ChatEvent.onAppear) }
     }
 }

@@ -4,7 +4,7 @@ struct EliminationScreen: View {
     @StateObject private var viewModel = EliminationViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -59,7 +59,10 @@ struct EliminationScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Elimination").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(EliminationEvent.onAppear) }
+            }
+            .navigationTitle("Elimination")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(EliminationEvent.onAppear) }
     }
 }

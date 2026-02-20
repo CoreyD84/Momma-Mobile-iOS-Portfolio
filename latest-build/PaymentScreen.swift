@@ -4,7 +4,7 @@ struct PaymentScreen: View {
     @StateObject private var viewModel = PaymentViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -145,7 +145,10 @@ struct PaymentScreen: View {
                     }
                 }
             }
-            }.navigationTitle("Payment").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(PaymentEvent.onAppear) }
+            }
+            .navigationTitle("Payment")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(PaymentEvent.onAppear) }
     }
 }

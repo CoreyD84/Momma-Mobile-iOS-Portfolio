@@ -4,7 +4,7 @@ struct SecondChanceScreen: View {
     @StateObject private var viewModel = SecondChanceViewModel()
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
             VStack {
@@ -69,7 +69,10 @@ struct SecondChanceScreen: View {
                 Text("This is your guaranteed second search at no additional cost.\\n")
                 Text("I won't give up on you.")
             }
-            }.navigationTitle("Second Chance").foregroundStyle(CodexiaTheme.label)
-        }.onAppear { viewModel.onEvent(SecondChanceEvent.onAppear) }
+            }
+            .navigationTitle("Second Chance")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(SecondChanceEvent.onAppear) }
     }
 }
