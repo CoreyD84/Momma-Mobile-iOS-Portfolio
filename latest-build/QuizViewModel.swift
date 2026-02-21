@@ -38,7 +38,7 @@ final class QuizViewModel: ObservableObject {
     func selectAnswer(questionId: String, optionId: String) {/* TODO: port logic */ }
     func continueToNextCandidate() {/* TODO: port logic */ }
     func completeQuiz() {/* TODO: port logic */ }
-    func calculateEmotionalAlignment(predictions: [String: String], actualAnswers: [String: String]) -> Double { return 0 /* TODO: port logic */ }
+    func calculateEmotionalAlignment(predictions: [String: Any], actualAnswers: [String: Any]) -> Double { return 0 /* TODO: port logic */ }
     func generateInsight(question: QuizQuestionData, isCorrect: Bool, emotionalSignature: String) -> String { return "" /* TODO: port logic */ }
     func retryQuiz() {/* TODO: port logic */ }
 }

@@ -5,5 +5,5 @@ final class PushNotificationServiceClient {
     func sendMatchReady(initiatorId: String, matchId: String) -> Result<Void, Error> {  fatalError("Stub")  /* TODO: port implementation */ }
     func sendCandidateAccepted(initiatorId: String, candidateName: String, acceptedCount: Int) -> Result<Void, Error> {  fatalError("Stub")  /* TODO: port implementation */ }
     func sendCandidateDeclined(initiatorId: String) -> Result<Void, Error> {  fatalError("Stub")  /* TODO: port implementation */ }
-    func sendNotification(fcmToken: String, notification: [String: String], data: [String: String]) -> Result<Void, Error> {  fatalError("Stub")  /* TODO: port implementation */ }
+    func sendNotification(fcmToken: String, notification: [String: Any], data: [String: Any]) -> Result<Void, Error> {  fatalError("Stub")  /* TODO: port implementation */ }
 }
