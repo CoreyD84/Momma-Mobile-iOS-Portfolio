@@ -6,26 +6,73 @@ class CodexiaContainer: ObservableObject {
 
     let appBlockerService: AppBlockerService
     let feelScopeService: FeelScopeService
+    let mommaNotificationService: MommaNotificationService
     let nettieProtectionService: NettieProtectionService
     let websiteBlockerService: WebsiteBlockerService
+    let appScopeToggleViewModel: AppScopeToggleViewModel
     let autoHideProviderViewModel: AutoHideProviderViewModel
     let blockedAppViewModel: BlockedAppViewModel
     let blockedWebsiteViewModel: BlockedWebsiteViewModel
     let bootReceiverViewModel: BootReceiverViewModel
+    let childLinkViewModel: ChildLinkViewModel
+    let childSelectorViewModel: ChildSelectorViewModel
     let colorViewModel: ColorViewModel
+    let composePlatformControlViewModel: ComposePlatformControlViewModel
+    let consentManagementViewModel: ConsentManagementViewModel
+    let consentModalViewModel: ConsentModalViewModel
+    let consentOverviewViewModel: ConsentOverviewViewModel
+    let consentOverviewTabViewModel: ConsentOverviewTabViewModel
     let emotionalPatternLoaderViewModel: EmotionalPatternLoaderViewModel
+    let emotionalRadarViewModel: EmotionalRadarViewModel
+    let exampleInstrumentedTestViewModel: ExampleInstrumentedTestViewModel
+    let exampleUnitTestViewModel: ExampleUnitTestViewModel
     let firebaseExtensionsViewModel: FirebaseExtensionsViewModel
     let firebaseLoggerViewModel: FirebaseLoggerViewModel
     let firebaseSyncViewModel: FirebaseSyncViewModel
+    let flaggedMessageAdapterViewModel: FlaggedMessageAdapterViewModel
+    let flaggedMessagesViewModel: FlaggedMessagesViewModel
+    let flaggedMessagesTabViewModel: FlaggedMessagesTabViewModel
+    let freezeReflexViewModel: FreezeReflexViewModel
+    let freezeReflexTabViewModel: FreezeReflexTabViewModel
+    let freezeReflexWarningViewModel: FreezeReflexWarningViewModel
+    let generateLinkQrViewModel: GenerateLinkQrViewModel
+    let guardianDashboardViewModel: GuardianDashboardViewModel
+    let guardianTabAdapterViewModel: GuardianTabAdapterViewModel
     let harmfulPatternsViewModel: HarmfulPatternsViewModel
+    let linkedChildrenViewModel: LinkedChildrenViewModel
+    let locationStatusViewModel: LocationStatusViewModel
+    let locationSyncViewModel: LocationSyncViewModel
+    let loginViewModel: LoginViewModel
     let mainViewModel: MainViewModel
+    let mainApplicationViewModel: MainApplicationViewModel
+    let mascotMoodViewModel: MascotMoodViewModel
     let messageNotificationListenerViewModel: MessageNotificationListenerViewModel
+    let messageScannerViewModel: MessageScannerViewModel
+    let messageScannerTabViewModel: MessageScannerTabViewModel
     let mommaDeviceAdminViewModel: MommaDeviceAdminViewModel
+    let mommaMobileThemeViewModel: MommaMobileThemeViewModel
     let mommaTakeoverViewModel: MommaTakeoverViewModel
+    let nettieDeviceAdminReceiverViewModel: NettieDeviceAdminReceiverViewModel
+    let onlineSafetyViewModel: OnlineSafetyViewModel
+    let onlineSafetyTabViewModel: OnlineSafetyTabViewModel
+    let platformControlViewModel: PlatformControlViewModel
     let platformControlReceiverViewModel: PlatformControlReceiverViewModel
+    let platformControlTabViewModel: PlatformControlTabViewModel
+    let qRUtilsViewModel: QRUtilsViewModel
+    let recentDetectionsActivitiesViewModel: RecentDetectionsActivitiesViewModel
+    let recentDetectionsViewModel: RecentDetectionsViewModel
+    let recentDetectionsTabViewModel: RecentDetectionsTabViewModel
+    let safeScopeViewModel: SafeScopeViewModel
+    let safeScopeToggleViewModel: SafeScopeToggleViewModel
     let scannerGlobalsViewModel: ScannerGlobalsViewModel
+    let serviceStarterViewModel: ServiceStarterViewModel
     let setupViewModel: SetupViewModel
+    let smsComposeViewModel: SmsComposeViewModel
+    let smsDetectionsViewModel: SmsDetectionsViewModel
+    let smsDetectionsTabViewModel: SmsDetectionsTabViewModel
+    let smsInboxViewModel: SmsInboxViewModel
     let smsReceiverViewModel: SmsReceiverViewModel
+    let subscriptionExpiredViewModel: SubscriptionExpiredViewModel
     let themeViewModel: ThemeViewModel
     let typeViewModel: TypeViewModel
     let vpnPermissionViewModel: VpnPermissionViewModel
@@ -33,26 +80,73 @@ class CodexiaContainer: ObservableObject {
     private init() {
         self.appBlockerService = AppBlockerServiceImpl.shared
         self.feelScopeService = FeelScopeServiceImpl.shared
+        self.mommaNotificationService = MommaNotificationServiceImpl.shared
         self.nettieProtectionService = NettieProtectionServiceImpl.shared
         self.websiteBlockerService = WebsiteBlockerServiceImpl.shared
+        self.appScopeToggleViewModel = AppScopeToggleViewModelFactory.make()
         self.autoHideProviderViewModel = AutoHideProviderViewModelFactory.make()
         self.blockedAppViewModel = BlockedAppViewModelFactory.make()
         self.blockedWebsiteViewModel = BlockedWebsiteViewModelFactory.make()
         self.bootReceiverViewModel = BootReceiverViewModelFactory.make()
+        self.childLinkViewModel = ChildLinkViewModelFactory.make()
+        self.childSelectorViewModel = ChildSelectorViewModelFactory.make()
         self.colorViewModel = ColorViewModelFactory.make()
+        self.composePlatformControlViewModel = ComposePlatformControlViewModelFactory.make()
+        self.consentManagementViewModel = ConsentManagementViewModelFactory.make()
+        self.consentModalViewModel = ConsentModalViewModelFactory.make()
+        self.consentOverviewViewModel = ConsentOverviewViewModelFactory.make()
+        self.consentOverviewTabViewModel = ConsentOverviewTabViewModelFactory.make()
         self.emotionalPatternLoaderViewModel = EmotionalPatternLoaderViewModelFactory.make()
+        self.emotionalRadarViewModel = EmotionalRadarViewModelFactory.make()
+        self.exampleInstrumentedTestViewModel = ExampleInstrumentedTestViewModelFactory.make()
+        self.exampleUnitTestViewModel = ExampleUnitTestViewModelFactory.make()
         self.firebaseExtensionsViewModel = FirebaseExtensionsViewModelFactory.make()
         self.firebaseLoggerViewModel = FirebaseLoggerViewModelFactory.make()
         self.firebaseSyncViewModel = FirebaseSyncViewModelFactory.make()
+        self.flaggedMessageAdapterViewModel = FlaggedMessageAdapterViewModelFactory.make()
+        self.flaggedMessagesViewModel = FlaggedMessagesViewModelFactory.make()
+        self.flaggedMessagesTabViewModel = FlaggedMessagesTabViewModelFactory.make()
+        self.freezeReflexViewModel = FreezeReflexViewModelFactory.make()
+        self.freezeReflexTabViewModel = FreezeReflexTabViewModelFactory.make()
+        self.freezeReflexWarningViewModel = FreezeReflexWarningViewModelFactory.make()
+        self.generateLinkQrViewModel = GenerateLinkQrViewModelFactory.make()
+        self.guardianDashboardViewModel = GuardianDashboardViewModelFactory.make()
+        self.guardianTabAdapterViewModel = GuardianTabAdapterViewModelFactory.make()
         self.harmfulPatternsViewModel = HarmfulPatternsViewModelFactory.make()
+        self.linkedChildrenViewModel = LinkedChildrenViewModelFactory.make()
+        self.locationStatusViewModel = LocationStatusViewModelFactory.make()
+        self.locationSyncViewModel = LocationSyncViewModelFactory.make()
+        self.loginViewModel = LoginViewModelFactory.make()
         self.mainViewModel = MainViewModelFactory.make()
+        self.mainApplicationViewModel = MainApplicationViewModelFactory.make()
+        self.mascotMoodViewModel = MascotMoodViewModelFactory.make()
         self.messageNotificationListenerViewModel = MessageNotificationListenerViewModelFactory.make()
+        self.messageScannerViewModel = MessageScannerViewModelFactory.make()
+        self.messageScannerTabViewModel = MessageScannerTabViewModelFactory.make()
         self.mommaDeviceAdminViewModel = MommaDeviceAdminViewModelFactory.make()
+        self.mommaMobileThemeViewModel = MommaMobileThemeViewModelFactory.make()
         self.mommaTakeoverViewModel = MommaTakeoverViewModelFactory.make()
+        self.nettieDeviceAdminReceiverViewModel = NettieDeviceAdminReceiverViewModelFactory.make()
+        self.onlineSafetyViewModel = OnlineSafetyViewModelFactory.make()
+        self.onlineSafetyTabViewModel = OnlineSafetyTabViewModelFactory.make()
+        self.platformControlViewModel = PlatformControlViewModelFactory.make()
         self.platformControlReceiverViewModel = PlatformControlReceiverViewModelFactory.make()
+        self.platformControlTabViewModel = PlatformControlTabViewModelFactory.make()
+        self.qRUtilsViewModel = QRUtilsViewModelFactory.make()
+        self.recentDetectionsActivitiesViewModel = RecentDetectionsActivitiesViewModelFactory.make()
+        self.recentDetectionsViewModel = RecentDetectionsViewModelFactory.make()
+        self.recentDetectionsTabViewModel = RecentDetectionsTabViewModelFactory.make()
+        self.safeScopeViewModel = SafeScopeViewModelFactory.make()
+        self.safeScopeToggleViewModel = SafeScopeToggleViewModelFactory.make()
         self.scannerGlobalsViewModel = ScannerGlobalsViewModelFactory.make()
+        self.serviceStarterViewModel = ServiceStarterViewModelFactory.make()
         self.setupViewModel = SetupViewModelFactory.make()
+        self.smsComposeViewModel = SmsComposeViewModelFactory.make()
+        self.smsDetectionsViewModel = SmsDetectionsViewModelFactory.make()
+        self.smsDetectionsTabViewModel = SmsDetectionsTabViewModelFactory.make()
+        self.smsInboxViewModel = SmsInboxViewModelFactory.make()
         self.smsReceiverViewModel = SmsReceiverViewModelFactory.make()
+        self.subscriptionExpiredViewModel = SubscriptionExpiredViewModelFactory.make()
         self.themeViewModel = ThemeViewModelFactory.make()
         self.typeViewModel = TypeViewModelFactory.make()
         self.vpnPermissionViewModel = VpnPermissionViewModelFactory.make()
