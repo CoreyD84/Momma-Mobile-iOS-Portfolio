@@ -60,32 +60,6 @@ class FeelScopeServiceImpl: FeelScopeService {
     func onDestroy() { } 
 }
 
-protocol MommaNotificationService {
-    func onCreate()
-    func onNewToken(token: String)
-    func onMessageReceived(message: RemoteMessage)
-    func sendFreezeReflexActivatedNotification(childName: String, contact: String, category: String, severity: String, message: String)
-    func sendBlockedAttemptNotification(childName: String, contact: String, message: String, severity: String)
-    func sendThreatDetectedNotification(childName: String, threat: String, severity: String)
-    func sendGenericNotification(title: String, body: String, severity: String)
-    func createNotificationChannels()
-    func saveTokenToFirebase(token: String)
-}
-
-class MommaNotificationServiceImpl: MommaNotificationService {
-    static let shared = MommaNotificationServiceImpl()
-    private init() {}
-    func onCreate() { } 
-    func onNewToken(token: String) { } 
-    func onMessageReceived(message: RemoteMessage) { } 
-    func sendFreezeReflexActivatedNotification(childName: String, contact: String, category: String, severity: String, message: String) { } 
-    func sendBlockedAttemptNotification(childName: String, contact: String, message: String, severity: String) { } 
-    func sendThreatDetectedNotification(childName: String, threat: String, severity: String) { } 
-    func sendGenericNotification(title: String, body: String, severity: String) { } 
-    func createNotificationChannels() { } 
-    func saveTokenToFirebase(token: String) { } 
-}
-
 protocol NettieProtectionService {
     func onReceive(context: Any, intent: Any)
     func onServiceConnected()
