@@ -10,11 +10,11 @@ struct BootReceiverScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("MommaStealth")
-                Text("Com.Airnettie.Mobile.Child.LauncherAlias")
+                Text("com.airnettie.mobile.child.LauncherAlias")
                 Text("MommaStealth")
                 Text("MommaStealth")
                 VStack {
-                    Text("Guardian Id")
+                    Text("guardian_id")
                     VStack {
                         Text("MommaStealth")
                         Text("MommaStealth")

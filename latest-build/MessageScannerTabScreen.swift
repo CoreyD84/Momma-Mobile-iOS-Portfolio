@@ -20,18 +20,18 @@ struct MessageScannerTabScreen: View {
                 VStack {
                 }
                 Button(action: { }) {
-                    Text("⚠️ Scanner Not Ready. Please Wait For Patterns To Load.")
+                    Text("⚠️ Scanner not ready. Please wait for patterns to load.")
                     Button(action: { }) {
                         Text("Button")
                     }
-                    Text("⚠️ Please Enter A Message To Scan.")
+                    Text("⚠️ Please enter a message to scan.")
                     Button(action: { }) {
                         Text("Button")
                     }
                     Text("MessageScannerTab")
                     Text("MessageScannerTab")
                     Text("MessageScannerTab")
-                    Text("Threat Grooming")
+                    Text("threat_grooming")
                     VStack {
                         Text("MessageScannerTab")
                         Text("MessageScannerTab")
@@ -40,7 +40,7 @@ struct MessageScannerTabScreen: View {
                     }
                     VStack {
                         Text("MessageScannerTab")
-                        Text("✅ No Threats Detected")
+                        Text("✅ No threats detected")
                     }
                     VStack {
                     }

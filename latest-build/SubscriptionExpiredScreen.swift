@@ -21,21 +21,21 @@ struct SubscriptionExpiredScreen: View {
                             Text("Subscription Expired")
                         }
                         VStack {
-                            Text("Your 7-Day Free Trial Has Ended. Subscribe Now To Continue Protecting Your Family.")
-                            Text("Your 30-Day Beta Trial Has Ended. Thank You For Testing MommaNettie! Subscribe Now To Continue Using All Features.")
-                            Text("Your Subscription Has Expired. Renew Now To Continue Protecting Your Family.")
+                            Text("Your 7-day free trial has ended. Subscribe now to continue protecting your family.")
+                            Text("Your 30-day beta trial has ended. Thank you for testing MommaNettie! Subscribe now to continue using all features.")
+                            Text("Your subscription has expired. Renew now to continue protecting your family.")
                             VStack {
                                 VStack {
                                 }
                                 VStack {
                                 }
-                                Text("Cancel Anytime")
+                                Text("Cancel anytime")
                             }
                         }
                         VStack {
                             Text("🛡️ SafeScope Web Filtering")
                             Text("📱 App Control & Blocking")
-                            Text("📍 Real-Time GPS Tracking")
+                            Text("📍 Real-time GPS Tracking")
                             Text("💬 Message Scanner")
                             Text("📲 SMS Monitoring")
                         }
@@ -48,13 +48,13 @@ struct SubscriptionExpiredScreen: View {
                             Text("Subscribe Now")
                             VStack {
                             }
-                            Text("🎁 Beta Testers Get 60% Off Lifetime With A Testimonial!")
+                            Text("🎁 Beta testers get 60% off lifetime with a testimonial!")
                         }
                         VStack {
                             Text("Already Purchased?")
                             VStack {
                             }
-                            Text("Already Purchased? Enter License Key")
+                            Text("Already purchased? Enter license key")
                         }
                     }
                     VStack {
@@ -63,7 +63,7 @@ struct SubscriptionExpiredScreen: View {
                     VStack {
                         VStack {
                         }
-                        Text("Enter The License Key You Received From Gumroad After Purchasing.")
+                        Text("Enter the license key you received from Gumroad after purchasing.")
                         VStack {
                         }
                         VStack {

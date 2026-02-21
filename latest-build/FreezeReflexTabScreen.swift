@@ -9,19 +9,19 @@ struct FreezeReflexTabScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Guardian Id")
-                Text("Child Id")
+                Text("guardian_id")
+                Text("child_id")
                 VStack {
-                    Text("IsEscalated")
-                    Text("No Freeze Reflex Events Recorded.")
-                    Text("Category")
-                    Text("MatchedPhrases")
-                    Text("SourceApp")
-                    Text("Timestamp")
+                    Text("isEscalated")
+                    Text("No freeze reflex events recorded.")
+                    Text("category")
+                    Text("matchedPhrases")
+                    Text("sourceApp")
+                    Text("timestamp")
                     VStack {
-                        Text("DeflectionUsed")
+                        Text("deflectionUsed")
                         VStack {
-                            Text("🚨 Freeze Reflex Triggered\\N")
+                            Text("🚨 Freeze Reflex Triggered\\n")
                             Text("🛡️ Deflection: ")
                         }
                     }

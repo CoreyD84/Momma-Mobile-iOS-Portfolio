@@ -11,10 +11,10 @@ struct ConsentManagementScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("ConsentManagement")
                 VStack {
-                    Text("Household Id")
-                    Text("Nickname")
+                    Text("household_id")
+                    Text("nickname")
                     Text("ConsentManagement")
-                    Text("Granted")
+                    Text("granted")
                     Text("ConsentManagement")
                 }
                 VStack {
@@ -44,7 +44,7 @@ struct ConsentManagementScreen: View {
                                 Text("Current Status")
                                 VStack {
                                 }
-                                Text("⚠️ No Linked Children Found. Please Link A Child Device First.")
+                                Text("⚠️ No linked children found. Please link a child device first.")
                                 VStack {
                                 }
                                 VStack {
@@ -64,41 +64,41 @@ struct ConsentManagementScreen: View {
                                 }
                                 Text("Version 1.0")
                                 Text("MONITORING & DETECTION:")
-                                Text("Monitor Text-Based Communications Across Supported Platforms (SMS, Discord, Roblox, And Other Connected Services)")
-                                Text("Analyze Emotional Signals And Detect Potentially Harmful Patterns Using AI-Powered Analysis")
-                                Text("Flag Content That May Indicate Bullying, Grooming, Self-Harm, Or Other Safety Concerns")
-                                Text("Escalate Critical Threats To Your Guardian Dashboard With Real-Time Notifications")
+                                Text("Monitor text-based communications across supported platforms (SMS, Discord, Roblox, and other connected services)")
+                                Text("Analyze emotional signals and detect potentially harmful patterns using AI-powered analysis")
+                                Text("Flag content that may indicate bullying, grooming, self-harm, or other safety concerns")
+                                Text("Escalate critical threats to your guardian dashboard with real-time notifications")
                                 Text("DATA COLLECTION & STORAGE:")
-                                Text("Collect And Store Message Content, Timestamps, Platform Information, And Emotional Analysis Results")
-                                Text("Store Data Securely In Firebase (Google Cloud Platform, US Region) With Encryption")
-                                Text("Use Anonymized Data To Improve Detection Algorithms (No Personally Identifiable Information Shared)")
+                                Text("Collect and store message content, timestamps, platform information, and emotional analysis results")
+                                Text("Store data securely in Firebase (Google Cloud Platform, US region) with encryption")
+                                Text("Use anonymized data to improve detection algorithms (no personally identifiable information shared)")
                                 Text("GUARDIAN ACCESS & CONTROL:")
-                                Text("Provide You With Access To Emotional Insights, Flagged Content, And Activity Summaries")
-                                Text("Display Mascot Mood Overlays On The Child'S Device To Reflect Emotional State")
-                                Text("Allow You To Review, Acknowledge, Or Delete Any Flagged Content At Any Time")
-                                Text("Enable You To Adjust Monitoring Settings And Platform Controls")
+                                Text("Provide you with access to emotional insights, flagged content, and activity summaries")
+                                Text("Display mascot mood overlays on the child's device to reflect emotional state")
+                                Text("Allow you to review, acknowledge, or delete any flagged content at any time")
+                                Text("Enable you to adjust monitoring settings and platform controls")
                                 Text("YOUR RIGHTS:")
-                                Text("You May Revoke This Consent At Any Time Through This Screen")
-                                Text("Upon Revocation, Active Monitoring Will Cease Immediately")
-                                Text("You May Request Deletion Of All Stored Data By Contacting D2thecor@Gmail.Com")
-                                Text("You Have The Right To Export All Collected Data In A Readable Format")
-                                Text("Nettie Will Never Share Your Child'S Data With Third Parties For Marketing Purposes")
+                                Text("You may revoke this consent at any time through this screen")
+                                Text("Upon revocation, active monitoring will cease immediately")
+                                Text("You may request deletion of all stored data by contacting D2thecor@gmail.com")
+                                Text("You have the right to export all collected data in a readable format")
+                                Text("Nettie will never share your child's data with third parties for marketing purposes")
                                 Text("LIMITATIONS:")
-                                Text("Nettie Is A Monitoring Tool, Not A Replacement For Parental Supervision")
-                                Text("Nettie Cannot Guarantee Detection Of All Harmful Content")
-                                Text("Nettie Will Not Intervene Directly With Your Child Without Your Explicit Authorization")
+                                Text("Nettie is a monitoring tool, not a replacement for parental supervision")
+                                Text("Nettie cannot guarantee detection of all harmful content")
+                                Text("Nettie will not intervene directly with your child without your explicit authorization")
                                 Text("THIRD-PARTY SERVICES:")
-                                Text("Nettie Uses Firebase (Google) For Data Storage And Authentication")
-                                Text("Platform Monitoring Requires Permissions On The Child'S Device")
-                                Text("No Data Is Sold Or Shared With Advertisers")
+                                Text("Nettie uses Firebase (Google) for data storage and authentication")
+                                Text("Platform monitoring requires permissions on the child's device")
+                                Text("No data is sold or shared with advertisers")
                             }
                             VStack {
                                 VStack {
                                 }
                                 Text("Required Confirmations")
-                                Text("I Understand That Nettie Will Monitor My Child'S Communications")
-                                Text("I Agree To The Data Collection And Storage Practices Described Above")
-                                Text("I Understand I Can Revoke Consent At Any Time")
+                                Text("I understand that Nettie will monitor my child's communications")
+                                Text("I agree to the data collection and storage practices described above")
+                                Text("I understand I can revoke consent at any time")
                             }
                         }
                         VStack {
@@ -106,14 +106,14 @@ struct ConsentManagementScreen: View {
                                 Text("Button")
                             }
                             Button(action: { }) {
-                                Text("Please Check All Required Confirmations")
+                                Text("Please check all required confirmations")
                                 Button(action: { }) {
-                                    Text("No Linked Children Found. Please Link A Child Device First.")
+                                    Text("No linked children found. Please link a child device first.")
                                 }
                                 Button(action: { }) {
-                                    Text("Consent Granted Successfully")
-                                    Text("Failed To Grant Consent")
-                                    Text("Missing Guardian Or Child Information")
+                                    Text("Consent granted successfully")
+                                    Text("Failed to grant consent")
+                                    Text("Missing guardian or child information")
                                 }
                                 Image("Grant Consent")
                                 VStack {
@@ -123,11 +123,11 @@ struct ConsentManagementScreen: View {
                                 Text("Button")
                             }
                             Button(action: { }) {
-                                Text("No Linked Children Found")
+                                Text("No linked children found")
                                 Button(action: { }) {
-                                    Text("Consent Revoked Successfully")
-                                    Text("Failed To Revoke Consent")
-                                    Text("Missing Guardian Or Child Information")
+                                    Text("Consent revoked successfully")
+                                    Text("Failed to revoke consent")
+                                    Text("Missing guardian or child information")
                                 }
                                 Image("Revoke Consent")
                                 VStack {
@@ -136,7 +136,7 @@ struct ConsentManagementScreen: View {
                         }
                         VStack {
                         }
-                        Text("Questions? Contact: D2thecor@Gmail.Com")
+                        Text("Questions? Contact: D2thecor@gmail.com")
                     }
                     VStack {
                     }
@@ -153,28 +153,28 @@ struct ConsentManagementScreen: View {
                     VStack {
                     }
                 }
-                Text("Granted")
+                Text("granted")
                 VStack {
-                    Text("Timestamp")
+                    Text("timestamp")
                     Text("ConsentManagement")
                     Text("ConsentManagement")
                 }
-                Text("Granted")
+                Text("granted")
                 VStack {
-                    Text("Timestamp")
+                    Text("timestamp")
                     Text("ConsentManagement")
                     Text("ConsentManagement")
                 }
-                Text("Timestamp")
-                Text("ConsentGiven")
-                Text("IpAddress")
-                Text("Version")
-                Text("UserAgent")
-                Text("ConsentType")
-                Text("ChildId")
-                Text("ConsentGiven")
-                Text("LastUpdated")
-                Text("Version")
+                Text("timestamp")
+                Text("consentGiven")
+                Text("ipAddress")
+                Text("version")
+                Text("userAgent")
+                Text("consentType")
+                Text("childId")
+                Text("consentGiven")
+                Text("lastUpdated")
+                Text("version")
                 }
                 .padding()
             }

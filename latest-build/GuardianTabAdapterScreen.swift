@@ -10,7 +10,7 @@ struct GuardianTabAdapterScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("Unused")
+                    Text("unused")
                     Text("Recent")
                     Text("Flagged")
                     Text("Freeze")

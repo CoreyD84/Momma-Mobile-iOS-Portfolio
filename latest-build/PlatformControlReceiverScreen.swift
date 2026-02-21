@@ -10,21 +10,21 @@ struct PlatformControlReceiverScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("PlatformControlReceiver")
-                Text("Messenger")
-                Text("Discord")
-                Text("Roblox")
-                Text("Tiktok")
-                Text("Tiktok Alt")
-                Text("Snapchat")
-                Text("Youtube")
-                Text("Facebook")
+                Text("messenger")
+                Text("discord")
+                Text("roblox")
+                Text("tiktok")
+                Text("tiktok_alt")
+                Text("snapchat")
+                Text("youtube")
+                Text("facebook")
                 VStack {
-                    Text("Twitter")
-                    Text("Com.Airnettie.Mobile.PLATFORM CONTROL")
-                    Text("Platform")
+                    Text("twitter")
+                    Text("com.airnettie.mobile.PLATFORM_CONTROL")
+                    Text("platform")
                     VStack {
-                        Text("Enabled")
-                        Text("Blocked Apps")
+                        Text("enabled")
+                        Text("blocked_apps")
                     }
                 }
                 }

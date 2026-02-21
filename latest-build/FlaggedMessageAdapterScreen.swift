@@ -10,11 +10,11 @@ struct FlaggedMessageAdapterScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("MMM Dd, Yyyy • H:Mm A")
-                    Text("Chat")
-                    Text("Web")
+                    Text("MMM dd, yyyy • h:mm a")
+                    Text("chat")
+                    Text("web")
                     Text("🧠")
-                    Text("📝 No Notes Added.")
+                    Text("📝 No notes added.")
                     Text("🚨 Escalated")
                     Text("🛡️ Deflection: ")
                 }

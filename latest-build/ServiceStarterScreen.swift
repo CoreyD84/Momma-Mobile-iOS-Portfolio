@@ -11,10 +11,10 @@ struct ServiceStarterScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
                     Text("ServiceStarter")
-                    Text("GuardianNotificationService Started Successfully")
-                    Text("Error Starting GuardianNotificationService")
-                    Text("GuardianNotificationService Stopped")
-                    Text("Error Stopping GuardianNotificationService")
+                    Text("GuardianNotificationService started successfully")
+                    Text("Error starting GuardianNotificationService")
+                    Text("GuardianNotificationService stopped")
+                    Text("Error stopping GuardianNotificationService")
                 }
                 }
                 .padding()

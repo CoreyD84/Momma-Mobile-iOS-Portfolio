@@ -9,12 +9,12 @@ struct MainScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Guardian Id")
-                Text("Child Id")
+                Text("guardian_id")
+                Text("child_id")
                 VStack {
-                    Text("Token")
-                    Text("Invalid Link. Please Re-Scan The QR Code.")
-                    Text("Linking Token")
+                    Text("token")
+                    Text("Invalid link. Please re-scan the QR code.")
+                    Text("linking_token")
                 }
                 }
                 .padding()

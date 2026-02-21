@@ -10,15 +10,15 @@ struct EmotionalRadarScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("EmotionalRadar")
-                Text("I Want To Disappear")
-                Text("You'Re Worthless")
+                Text("I want to disappear")
+                Text("you're worthless")
                 VStack {
-                    Text("I'M Scared")
-                    Text("No Authenticated User — Skipping Flag.")
-                    Text("Source")
-                    Text("Message")
-                    Text("Timestamp")
-                    Text("Severity")
+                    Text("I'm scared")
+                    Text("No authenticated user — skipping flag.")
+                    Text("source")
+                    Text("message")
+                    Text("timestamp")
+                    Text("severity")
                 }
                 }
                 .padding()

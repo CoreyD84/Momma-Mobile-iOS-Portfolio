@@ -29,7 +29,7 @@ struct BlockedWebsiteScreen: View {
                             }
                             VStack {
                             }
-                            Text("This Website Has Been Restricted By SafeScope.")
+                            Text("This website has been restricted by SafeScope.")
                             Button(action: { }) {
                                 Text("Button")
                             }

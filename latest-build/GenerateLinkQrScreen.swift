@@ -9,17 +9,17 @@ struct GenerateLinkQrScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Guardian Not Signed In")
+                Text("Guardian not signed in")
                 Text("GenerateLinkQr")
-                Text("GuardianId")
-                Text("Timestamp")
-                Text("ExpiresAt")
-                Text("Used")
+                Text("guardianId")
+                Text("timestamp")
+                Text("expiresAt")
+                Text("used")
                 Text("GenerateLinkQr")
                 Text("GenerateLinkQr")
                 VStack {
                     Text("GenerateLinkQr")
-                    Text("QR Code Ready! Token Valid For 15 Minutes")
+                    Text("QR Code ready! Token valid for 15 minutes")
                     Text("GenerateLinkQr")
                     Text("GenerateLinkQr")
                 }

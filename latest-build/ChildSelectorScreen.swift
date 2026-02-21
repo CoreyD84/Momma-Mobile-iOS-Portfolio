@@ -13,7 +13,7 @@ struct ChildSelectorScreen: View {
                     ProgressView()
                     VStack {
                     }
-                    Text("No Children Linked. Please Link A Child Device First.")
+                    Text("No children linked. Please link a child device first.")
                     VStack {
                     }
                     VStack {
@@ -30,7 +30,7 @@ struct ChildSelectorScreen: View {
                         }
                     }
                 }
-                Text("MMM Dd, Yyyy 'At' H:Mm A")
+                Text("MMM dd, yyyy 'at' h:mm a")
                 }
                 .padding()
             }

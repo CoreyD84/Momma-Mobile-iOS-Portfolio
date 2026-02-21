@@ -9,10 +9,10 @@ struct ConsentOverviewTabScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Household Id")
+                Text("household_id")
                 VStack {
-                    Text("Guardian Id")
-                    Text("No Consent Records Found.")
+                    Text("guardian_id")
+                    Text("No consent records found.")
                 }
                 }
                 .padding()

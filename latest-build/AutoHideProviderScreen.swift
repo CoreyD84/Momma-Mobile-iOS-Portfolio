@@ -11,10 +11,10 @@ struct AutoHideProviderScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("MommaStealth")
                 VStack {
-                    Text("Guardian Id")
+                    Text("guardian_id")
                     VStack {
                         Text("MommaStealth")
-                        Text("Com.Airnettie.Mobile.Child.LauncherAlias")
+                        Text("com.airnettie.mobile.child.LauncherAlias")
                         Text("MommaStealth")
                         Text("MommaStealth")
                         Text("MommaStealth")

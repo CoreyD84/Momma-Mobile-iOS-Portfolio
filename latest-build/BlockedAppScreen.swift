@@ -10,7 +10,7 @@ struct BlockedAppScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("App Name")
+                    Text("app_name")
                     VStack {
                         VStack {
                             VStack {
@@ -20,7 +20,7 @@ struct BlockedAppScreen: View {
                             Text("APP BLOCKED")
                             VStack {
                             }
-                            Text("Access To This App Has Been Restricted.")
+                            Text("Access to this app has been restricted.")
                         }
                     }
                 }

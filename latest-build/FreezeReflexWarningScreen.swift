@@ -9,8 +9,8 @@ struct FreezeReflexWarningScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Blocked App")
-                Text("Message")
+                Text("blocked_app")
+                Text("message")
                 VStack {
                     VStack {
                         Image("Icon")
@@ -28,7 +28,7 @@ struct FreezeReflexWarningScreen: View {
                                 }
                                 VStack {
                                 }
-                                Text("This Contact Has Been Blocked And Your Guardian Has Been Notified. Future Messages From This Person Will Be Automatically Handled By Momma Mobile.")
+                                Text("This contact has been blocked and your guardian has been notified. Future messages from this person will be automatically handled by Momma Mobile.")
                             }
                         }
                         Button(action: { }) {

@@ -11,37 +11,37 @@ struct ConsentModalScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
                     Text("ConsentModal")
-                    Text("Discord")
-                    Text("Roblox")
-                    Text("Facebook")
-                    Text("\\N\\NThis Applies To All Interactions On This Platform, Including Private Messages.")
+                    Text("discord")
+                    Text("roblox")
+                    Text("facebook")
+                    Text("\\n\\nThis applies to all interactions on this platform, including private messages.")
                     Text("I Consent")
                     Button(action: { }) {
                         Text("Cancel")
                     }
                     VStack {
-                        Text("Are You Sure You Want To Revoke Consent? Nettie Will No Longer Monitor This Platform.")
+                        Text("Are you sure you want to revoke consent? Nettie will no longer monitor this platform.")
                         Text("Revoke")
                         Button(action: { }) {
                             Text("Cancel")
                         }
                     }
-                    Text("Guardian Id")
-                    Text("Household Id")
-                    Text("Initial")
-                    Text("Timestamp")
-                    Text("ConsentGiven")
-                    Text("IpAddress")
-                    Text("Version")
-                    Text("UserAgent")
-                    Text("ConsentType")
-                    Text("Platform")
-                    Text("ConsentGiven")
-                    Text("LastUpdated")
-                    Text("Version")
-                    Text("Platform")
-                    Text("Local")
-                    Text("Mobile-Device")
+                    Text("guardian_id")
+                    Text("household_id")
+                    Text("initial")
+                    Text("timestamp")
+                    Text("consentGiven")
+                    Text("ipAddress")
+                    Text("version")
+                    Text("userAgent")
+                    Text("consentType")
+                    Text("platform")
+                    Text("consentGiven")
+                    Text("lastUpdated")
+                    Text("version")
+                    Text("platform")
+                    Text("local")
+                    Text("mobile-device")
                 }
                 }
                 .padding()

@@ -13,38 +13,38 @@ struct RecentDetectionsScreen: View {
                     VStack {
                         Text("RecentDetections")
                         VStack {
-                            Text("Error Loading Recent Detections")
-                            Text("Conversations")
-                            Text("BlockedAttempts")
+                            Text("Error loading recent detections")
+                            Text("conversations")
+                            Text("blockedAttempts")
                         }
                         Text("RecentDetections")
-                        Text("No Alerts Yet. All Clear! ✅")
+                        Text("No alerts yet. All clear! ✅")
                     }
-                    Text("Timestamp")
-                    Text("Message")
-                    Text("Severity")
-                    Text("Type")
-                    Text("Timestamp")
-                    Text("ActionRequired")
-                    Text("Source")
+                    Text("timestamp")
+                    Text("message")
+                    Text("severity")
+                    Text("type")
+                    Text("timestamp")
+                    Text("actionRequired")
+                    Text("source")
                     VStack {
-                        Text("Action")
-                        Text("MMM Dd, Yyyy • H:Mm A")
+                        Text("action")
+                        Text("MMM dd, yyyy • h:mm a")
                         VStack {
-                            Text("Unknown Time")
-                            Text("🚨 FREEZEREFLEX:")
-                            Text("🚨")
+                            Text("Unknown time")
+                            Text("🚨 FREEZEREFLEX: ")
+                            Text("🚨 ")
                             VStack {
-                                Text("\\N")
-                                Text("\\N")
+                                Text("\\n")
+                                Text("\\n")
                             }
-                            Text("\\N")
-                            Text("\\N")
+                            Text("\\n")
+                            Text("\\n")
                             VStack {
-                                Text("Critical")
-                                Text("High")
-                                Text("Medium")
-                                Text("Low")
+                                Text("critical")
+                                Text("high")
+                                Text("medium")
+                                Text("low")
                             }
                         }
                         Button(action: { }) {
@@ -54,11 +54,11 @@ struct RecentDetectionsScreen: View {
                     }
                     VStack {
                         Text("RecentDetections")
-                        Text("Unable To Delete: Not Authenticated")
-                        Text("Alert Deleted")
+                        Text("Unable to delete: not authenticated")
+                        Text("Alert deleted")
                         VStack {
                             Text("RecentDetections")
-                            Text("Alert Deleted")
+                            Text("Alert deleted")
                             Text("RecentDetections")
                             Text("RecentDetections")
                         }

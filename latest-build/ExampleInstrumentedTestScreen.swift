@@ -9,7 +9,7 @@ struct ExampleInstrumentedTestScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Com.Airnettie.Mobile.Child")
+                Text("com.airnettie.mobile.child")
                 }
                 .padding()
             }

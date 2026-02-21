@@ -11,44 +11,44 @@ struct ChildLinkScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("ChildLinkActivity")
                 VStack {
-                    Text("Token")
-                    Text("Processing QR Code Link...")
+                    Text("token")
+                    Text("Processing QR code link...")
                     VStack {
-                        Text("Invalid Link - No Token Found")
+                        Text("Invalid link - no token found")
                         VStack {
-                            Text("Token=")
-                            Text("Invalid QR Code Format")
+                            Text("token=")
+                            Text("Invalid QR code format")
                         }
                     }
                 }
-                Text("Token=")
+                Text("token=")
                 Text("ChildLinkActivity")
                 VStack {
                     Text("ChildLinkActivity")
-                    Text("Invalid Or Expired QR Code")
-                    Text("GuardianId")
-                    Text("ExpiresAt")
+                    Text("Invalid or expired QR code")
+                    Text("guardianId")
+                    Text("expiresAt")
                     VStack {
-                        Text("Used")
-                        Text("Invalid QR Code Data")
-                        Text("This QR Code Has Already Been Used")
-                        Text("QR Code Has Expired. Please Generate A New One.")
+                        Text("used")
+                        Text("Invalid QR code data")
+                        Text("This QR code has already been used")
+                        Text("QR code has expired. Please generate a new one.")
                     }
-                    Text("Used")
+                    Text("used")
                     VStack {
                         Text("Child Device")
-                        Text("Yyyy-MM-Dd HH:Mm:Ss")
+                        Text("yyyy-MM-dd HH:mm:ss")
                     }
-                    Text("Nickname")
-                    Text("Last Seen")
-                    Text("Mood")
+                    Text("nickname")
+                    Text("last_seen")
+                    Text("mood")
                     VStack {
-                        Text("Linked At")
-                        Text("Household Id")
-                        Text("Device Nickname")
+                        Text("linked_at")
+                        Text("household_id")
+                        Text("device_nickname")
                         Text("ChildLinkActivity")
                         Text("ChildLinkActivity")
-                        Text("Successfully Linked To Guardian! 🎯")
+                        Text("Successfully linked to guardian! 🎯")
                         Text("ChildLinkActivity")
                         Text("ChildLinkActivity")
                     }
@@ -56,60 +56,60 @@ struct ChildLinkScreen: View {
                 }
                 VStack {
                     Text("Child Device")
-                    Text("Yyyy-MM-Dd HH:Mm:Ss")
+                    Text("yyyy-MM-dd HH:mm:ss")
                 }
-                Text("Calm")
-                Text("Nickname")
-                Text("Last Seen")
+                Text("calm")
+                Text("nickname")
+                Text("last_seen")
                 VStack {
-                    Text("Mood")
-                    Text("Household Id")
-                    Text("Device Nickname")
+                    Text("mood")
+                    Text("household_id")
+                    Text("device_nickname")
                     Text("ChildLinkActivity")
                     Text("ChildLinkActivity")
                 }
                 Text("🔒 Enable Device Protection?")
                 VStack {
-                    Text("To Prevent Unauthorized App Removal, Momma Mobile Needs Device Administrator Permission. This Ensures The App Stays Protected And Can'T Be Uninstalled Without Guardian Authorization.")
+                    Text("To prevent unauthorized app removal, Momma Mobile needs Device Administrator permission. This ensures the app stays protected and can't be uninstalled without guardian authorization.")
                     Text("Enable Protection")
                     Text("Skip")
-                    Text("⚠️ Warning: App Can Be Uninstalled Without Protection")
+                    Text("⚠️ Warning: App can be uninstalled without protection")
                 }
                 Text("📊 Enable Uninstall Detection?")
                 VStack {
-                    Text("Momma Mobile Can Detect When Someone Tries To Uninstall The App And Alert Your Guardian Immediately. This Requires Usage Access Permission.")
+                    Text("Momma Mobile can detect when someone tries to uninstall the app and alert your guardian immediately. This requires Usage Access permission.")
                     Text("Enable Detection")
                     Text("Skip")
-                    Text("⚠️ Uninstall Attempts Won'T Be Detected")
-                    Text("Please Enable Usage Access For Momma Mobile")
+                    Text("⚠️ Uninstall attempts won't be detected")
+                    Text("Please enable Usage Access for Momma Mobile")
                     Text("ChildLinkActivity")
-                    Text("✅ Device Protection Already Enabled")
-                    Text("Momma Mobile Needs Device Admin Permission To Prevent Unauthorized App Removal.")
+                    Text("✅ Device protection already enabled")
+                    Text("Momma Mobile needs Device Admin permission to prevent unauthorized app removal. ")
                     VStack {
-                        Text("This Ensures Your Guardian Can Keep You Safe Even If Someone Tries To Uninstall The App.")
-                        Text("✅ Device Protection Enabled!")
+                        Text("This ensures your guardian can keep you safe even if someone tries to uninstall the app.")
+                        Text("✅ Device protection enabled!")
                         Text("ChildLinkActivity")
-                        Text("⚠️ Device Protection Not Enabled - App May Be Vulnerable To Removal")
+                        Text("⚠️ Device protection not enabled - app may be vulnerable to removal")
                         Text("ChildLinkActivity")
                     }
                 }
                 Text("Enable Stealth Mode?")
                 VStack {
-                    Text("Momma Mobile Can Quietly Protect You In The Background. Would You Like To Hide The App Icon From Your Home Screen?")
+                    Text("Momma Mobile can quietly protect you in the background. Would you like to hide the app icon from your home screen?")
                     VStack {
-                        Text("Yes, Hide It")
-                        Text("Stealth Mode Enabled. App Icon Hidden.")
+                        Text("Yes, hide it")
+                        Text("Stealth Mode enabled. App icon hidden.")
                     }
-                    Text("No, Keep Visible")
+                    Text("No, keep visible")
                 }
                 Text("Enable Emotional Radar?")
                 VStack {
-                    Text("To Help Protect You From Harmful Messages, Nettie Needs Permission To Become Your Default SMS App. This Allows Her To Scan Incoming Texts For Emotional Safety Risks. No Messages Are Stored Or Shared — Only Flagged Patterns Are Reported To Your Guardian.")
+                    Text("To help protect you from harmful messages, Nettie needs permission to become your default SMS app. This allows her to scan incoming texts for emotional safety risks. No messages are stored or shared — only flagged patterns are reported to your guardian.")
                     Text("Enable Emotional Radar")
-                    Text("Not Now")
+                    Text("Not now")
                     VStack {
-                        Text("Emotional Radar Not Enabled. You Can Turn It On Later In Settings.")
-                        Text("SMS Role Not Available On This Device.")
+                        Text("Emotional radar not enabled. You can turn it on later in settings.")
+                        Text("SMS role not available on this device.")
                     }
                 }
                 }

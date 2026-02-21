@@ -11,21 +11,21 @@ struct VpnPermissionScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("VpnPermissionActivity")
                 VStack {
-                    Text("VpnPermissionActivity Started")
-                    Text("Requesting VPN Permission From User")
+                    Text("VpnPermissionActivity started")
+                    Text("Requesting VPN permission from user")
                     VStack {
-                        Text("VPN Permission Already Granted")
-                        Text("VPN Permission Granted By User")
-                        Text("VPN Permission Denied By User")
-                        Text("SafeScope Requires VPN Permission To Filter Content")
+                        Text("VPN permission already granted")
+                        Text("VPN permission granted by user")
+                        Text("VPN permission denied by user")
+                        Text("SafeScope requires VPN permission to filter content")
                     }
                 }
-                Text("SafeScope Enabled")
-                Text("SafeScopeVpnService Started After Permission Grant")
-                Text("Guardian Id")
+                Text("SafeScope enabled")
+                Text("SafeScopeVpnService started after permission grant")
+                Text("guardian_id")
                 VStack {
-                    Text("Child Id")
-                    Text("SafeScope Toggle Reset To False In Firebase")
+                    Text("child_id")
+                    Text("SafeScope toggle reset to false in Firebase")
                 }
                 }
                 .padding()

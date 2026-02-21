@@ -12,7 +12,7 @@ struct RecentDetectionsActivitiesScreen: View {
                 Text("DEPRECATION")
                 VStack {
                     Text("RecentDetections")
-                    Text("Error Loading Recent Detections")
+                    Text("Error loading Recent Detections")
                 }
                 }
                 .padding()

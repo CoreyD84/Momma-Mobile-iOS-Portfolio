@@ -10,11 +10,11 @@ struct SmsInboxScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("SMS Permission Denied. Cannot Load Inbox.")
-                    Text("(No Content)")
-                    Text("(Unknown Sender)")
+                    Text("SMS permission denied. Cannot load inbox.")
+                    Text("(No content)")
+                    Text("(Unknown sender)")
                 }
-                Text("📭 No SMS Messages Found.")
+                Text("📭 No SMS messages found.")
                 }
                 .padding()
             }

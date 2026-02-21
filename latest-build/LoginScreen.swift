@@ -9,22 +9,22 @@ struct LoginScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Guardian Email")
-                Text("Guardian Password")
+                Text("guardian_email")
+                Text("guardian_password")
                 VStack {
-                    Text("Guardian Email")
-                    Text("Guardian Email")
-                    Text("Guardian Password")
-                    Text("Guardian Email")
-                    Text("Guardian Password")
+                    Text("guardian_email")
+                    Text("guardian_email")
+                    Text("guardian_password")
+                    Text("guardian_email")
+                    Text("guardian_password")
                     VStack {
-                        Text("Guardian Id")
-                        Text("Guardian Name")
-                        Text("Guardian Id")
+                        Text("guardian_id")
+                        Text("guardian_name")
+                        Text("guardian_id")
                     }
-                    Text("Name")
+                    Text("name")
                 }
-                Text("Household Id")
+                Text("household_id")
                 }
                 .padding()
             }

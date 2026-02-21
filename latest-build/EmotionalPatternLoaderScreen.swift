@@ -12,18 +12,18 @@ struct EmotionalPatternLoaderScreen: View {
                 VStack {
                     Text("EmotionalPatternLoader")
                     VStack {
-                        Text("🔄 Starting To Load Patterns From Firebase Root...")
-                        Text("Emotion")
-                        Text("Threat")
-                        Text("Mental Health")
-                        Text("Self Esteem")
+                        Text("🔄 Starting to load patterns from Firebase root...")
+                        Text("emotion_")
+                        Text("threat_")
+                        Text("mental_health")
+                        Text("self_esteem")
                         VStack {
-                            Text("Self Harm")
+                            Text("self_harm")
                             VStack {
-                                Text("Suicidal Ideation")
-                                Text("Emojis")
+                                Text("suicidal_ideation")
+                                Text("_emojis")
                             }
-                            Text("⚠️ Firebase Patterns Were Empty. Loading Fallbacks.")
+                            Text("⚠️ Firebase patterns were empty. Loading fallbacks.")
                         }
                     }
                 }

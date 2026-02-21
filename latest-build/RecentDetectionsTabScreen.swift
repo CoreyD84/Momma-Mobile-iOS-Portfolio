@@ -14,33 +14,33 @@ struct RecentDetectionsTabScreen: View {
                 }
                 VStack {
                     Text("SpellCheckingInspection")
-                    Text("Household Id")
+                    Text("household_id")
                     VStack {
-                        Text("Child Id")
+                        Text("child_id")
                         Text("RecentDetectionsTab")
                         VStack {
                             Text("RecentDetectionsTab")
-                            Text("No Recent Detections Found.")
+                            Text("No recent detections found.")
                             Text("RecentDetectionsTab")
                             VStack {
                                 Text("RecentDetectionsTab")
-                                Text("Severity")
-                                Text("MatchedPhrases")
-                                Text("Category")
-                                Text("SourceApp")
+                                Text("severity")
+                                Text("matchedPhrases")
+                                Text("category")
+                                Text("sourceApp")
                                 VStack {
-                                    Text("Timestamp")
-                                    Text("MMM Dd, Yyyy • H:Mm A")
+                                    Text("timestamp")
+                                    Text("MMM dd, yyyy • h:mm a")
                                 }
                                 Text("Unknown")
                                 VStack {
-                                    Text("IsEscalated")
+                                    Text("isEscalated")
                                     VStack {
-                                        Text("🚨")
-                                        Text("Critical")
-                                        Text("High")
-                                        Text("Medium")
-                                        Text("Low")
+                                        Text(" 🚨")
+                                        Text("critical")
+                                        Text("high")
+                                        Text("medium")
+                                        Text("low")
                                     }
                                     Button(action: { }) {
                                         Text("Button")
@@ -50,7 +50,7 @@ struct RecentDetectionsTabScreen: View {
                             }
                             Text("RecentDetectionsTab")
                         }
-                        Text("Detection Deleted")
+                        Text("Detection deleted")
                         Text("RecentDetectionsTab")
                         Text("RecentDetectionsTab")
                     }

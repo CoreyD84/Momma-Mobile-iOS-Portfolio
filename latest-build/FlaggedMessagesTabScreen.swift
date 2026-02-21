@@ -11,8 +11,8 @@ struct FlaggedMessagesTabScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 Button(action: { }) {
                     VStack {
-                        Text("I'M Scared")
-                        Text("Sms")
+                        Text("I'm scared")
+                        Text("sms")
                         Text("Messenger")
                     }
                 }

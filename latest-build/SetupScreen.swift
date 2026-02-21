@@ -38,7 +38,7 @@ struct SetupScreen: View {
                         Text("Step 2: Enable Protection Features")
                         VStack {
                         }
-                        Text("Nettie Protection Provides:")
+                        Text("Nettie Protection provides:")
                         VStack {
                         }
                         VStack {
@@ -88,7 +88,7 @@ struct SetupScreen: View {
                         }
                         VStack {
                         }
-                        Text("Note: This Is Required For The App To Function Properly.")
+                        Text("Note: This is required for the app to function properly.")
                     }
                     VStack {
                     }

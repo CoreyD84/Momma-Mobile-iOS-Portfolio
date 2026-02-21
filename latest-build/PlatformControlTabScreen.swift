@@ -12,17 +12,17 @@ struct PlatformControlTabScreen: View {
                 VStack {
                     Text("Discord")
                     VStack {
-                        Text("📄 Share Stories Of Online Safety Wins...")
+                        Text("📄 Share stories of online safety wins...")
                         Text("PlatformControlTab")
-                        Text("Nickname")
+                        Text("nickname")
                         VStack {
-                            Text("Dob")
+                            Text("dob")
                             Text("PlatformControlTab")
                             Text("PlatformControlTab")
                         }
-                        Text("Police")
-                        Text("School")
-                        Text("Sheriff")
+                        Text("police")
+                        Text("school")
+                        Text("sheriff")
                     }
                     VStack {
                         VStack {
@@ -49,15 +49,15 @@ struct PlatformControlTabScreen: View {
                         }
                         VStack {
                         }
-                        Text("Toggles Above Control Both Access And Nettie’S Emotional Radar Per Platform.")
+                        Text("Toggles above control both access and Nettie’s emotional radar per platform.")
                         VStack {
                         }
                         VStack {
-                            Text("Nickname")
+                            Text("nickname")
                         }
                         VStack {
-                            Text("Dob")
-                            Text("Granted")
+                            Text("dob")
+                            Text("granted")
                             Text("ConsentSection")
                         }
                     }
@@ -80,28 +80,28 @@ struct PlatformControlTabScreen: View {
                         }
                         VStack {
                         }
-                        Text("Consent Currently Granted")
+                        Text("Consent currently granted")
                         VStack {
                         }
                         VStack {
                         }
                         Button(action: { }) {
-                            Text("Granted")
+                            Text("granted")
                             VStack {
-                                Text("Timestamp")
-                                Text("Failed To Grant Consent")
-                                Text("Missing Guardian Info — Please Sign In Again")
+                                Text("timestamp")
+                                Text("Failed to grant consent")
+                                Text("Missing guardian info — please sign in again")
                             }
                             Image("Grant Consent")
                             VStack {
                             }
                         }
                         Button(action: { }) {
-                            Text("Granted")
+                            Text("granted")
                             VStack {
-                                Text("Timestamp")
-                                Text("Failed To Revoke Consent")
-                                Text("Missing Guardian Info — Please Sign In Again")
+                                Text("timestamp")
+                                Text("Failed to revoke consent")
+                                Text("Missing guardian info — please sign in again")
                             }
                             Image("Revoke Consent")
                             VStack {

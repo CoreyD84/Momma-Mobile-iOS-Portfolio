@@ -9,15 +9,15 @@ struct SmsReceiverScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Guardian Id")
+                Text("guardian_id")
                 VStack {
-                    Text("Child Id")
+                    Text("child_id")
                     Text("Unknown")
-                    Text("Sms")
+                    Text("sms")
                     VStack {
                         Text("Clear")
-                        Text("Sms")
-                        Text("Critical Sms Detected")
+                        Text("sms")
+                        Text("critical_sms_detected")
                     }
                 }
                 Text("SmsReceiver")

@@ -12,10 +12,10 @@ struct AppScopeToggleScreen: View {
                 VStack {
                 }
                 VStack {
-                    Text("Waiting For Child ID...")
-                    Text("Error: Guardian ID Is Null.")
+                    Text("Waiting for Child ID...")
+                    Text("Error: Guardian ID is null.")
                     VStack {
-                        Text("Attaching Firebase Listener...")
+                        Text("Attaching Firebase listener...")
                         Text("AppScopeToggle")
                     }
                     VStack {
@@ -39,10 +39,10 @@ struct AppScopeToggleScreen: View {
                         VStack {
                             VStack {
                             }
-                            Image("Add App")
+                            Image("Add app")
                             VStack {
                             }
-                            Text("No Blocked Apps Yet. Tap + To Add Apps To Block.")
+                            Text("No blocked apps yet. Tap + to add apps to block.")
                         }
                         VStack {
                             VStack {
@@ -66,7 +66,7 @@ struct AppScopeToggleScreen: View {
                     }
                     VStack {
                     }
-                    Text("Examples: Com.Squareup.Cash (Cash App), Com.Snapchat.Android (Snapchat), Com.Zhiliaoapp.Musically (TikTok)")
+                    Text("Examples: com.squareup.cash (Cash App), com.snapchat.android (Snapchat), com.zhiliaoapp.musically (TikTok)")
                     VStack {
                     }
                     VStack {

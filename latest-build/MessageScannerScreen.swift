@@ -10,7 +10,7 @@ struct MessageScannerScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("I Want To Disappear")
+                    Text("I want to disappear")
                     Text("MessageScanner")
                     VStack {
                         Text("MessageScanner")

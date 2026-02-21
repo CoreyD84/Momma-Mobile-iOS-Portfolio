@@ -13,16 +13,16 @@ struct SafeScopeToggleScreen: View {
                     VStack {
                     }
                     VStack {
-                        Text("Waiting For Child ID...")
-                        Text("Error: Guardian ID Is Null.")
+                        Text("Waiting for Child ID...")
+                        Text("Error: Guardian ID is null.")
                         VStack {
-                            Text("Attaching Firebase Listener...")
+                            Text("Attaching Firebase listener...")
                             Text("SafeScopeToggle")
-                            Text("Suicideforum.Com")
-                            Text("Pornhub.Com")
-                            Text("Fapello.Com")
-                            Text("Leakgirls.Com")
-                            Text("Omegle.Com")
+                            Text("suicideforum.com")
+                            Text("pornhub.com")
+                            Text("fapello.com")
+                            Text("leakgirls.com")
+                            Text("omegle.com")
                             Text("SafeScopeToggle")
                         }
                         VStack {

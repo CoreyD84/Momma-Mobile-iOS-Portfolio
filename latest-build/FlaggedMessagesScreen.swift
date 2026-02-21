@@ -12,7 +12,7 @@ struct FlaggedMessagesScreen: View {
                 Button(action: { }) {
                     VStack {
                         Text("FlaggedMessages")
-                        Text("Error Loading Flagged Messages")
+                        Text("Error loading flagged messages")
                     }
                     Text("FlaggedMessages")
                     Text("FlaggedMessages")
@@ -20,27 +20,27 @@ struct FlaggedMessagesScreen: View {
                         Text("FlaggedMessages")
                         VStack {
                             Text("FlaggedMessages")
-                            Text("No Threats Detected Yet. All Clear! ✅")
+                            Text("No threats detected yet. All clear! ✅")
                             Text("FlaggedMessages")
-                            Text("Timestamp")
-                            Text("Message")
-                            Text("Severity")
-                            Text("Category")
-                            Text("Timestamp")
-                            Text("SourceApp")
+                            Text("timestamp")
+                            Text("message")
+                            Text("severity")
+                            Text("category")
+                            Text("timestamp")
+                            Text("sourceApp")
                             VStack {
-                                Text("IsEscalated")
-                                Text("MMM Dd, Yyyy • H:Mm A")
+                                Text("isEscalated")
+                                Text("MMM dd, yyyy • h:mm a")
                                 VStack {
-                                    Text("Unknown Time")
-                                    Text("🚨")
-                                    Text("\\N")
-                                    Text("\\N")
+                                    Text("Unknown time")
+                                    Text("🚨 ")
+                                    Text("\\n")
+                                    Text("\\n")
                                     VStack {
-                                        Text("\\N")
-                                        Text("Critical")
-                                        Text("High")
-                                        Text("Low")
+                                        Text("\\n")
+                                        Text("critical")
+                                        Text("high")
+                                        Text("low")
                                     }
                                 }
                                 Button(action: { }) {
@@ -51,7 +51,7 @@ struct FlaggedMessagesScreen: View {
                         }
                         Text("FlaggedMessages")
                         Text("FlaggedMessages")
-                        Text("Detection Deleted")
+                        Text("Detection deleted")
                         Text("FlaggedMessages")
                         Text("FlaggedMessages")
                     }

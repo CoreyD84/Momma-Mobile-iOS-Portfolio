@@ -11,8 +11,8 @@ struct SmsDetectionsTabScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
                     VStack {
-                        Text("Unknown Device")
-                        Text("Body")
+                        Text("unknown_device")
+                        Text("body")
                     }
                     VStack {
                     }
