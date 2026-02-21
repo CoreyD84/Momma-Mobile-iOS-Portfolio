@@ -1,0 +1,23 @@
+import SwiftUI
+
+struct FlaggedMessagesTabScreen: View {
+    @StateObject private var viewModel = FlaggedMessagesTabViewModel()
+
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
+            Button(action: { }) {
+                VStack {
+                    Text("I'm scared")
+                    Text("sms")
+                    Text("Messenger")
+                }
+            }
+            }
+            .navigationTitle("Flagged Messages Tab")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(FlaggedMessagesTabEvent.onAppear) }
+    }
+}
