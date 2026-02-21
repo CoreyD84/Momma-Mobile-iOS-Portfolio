@@ -7,28 +7,33 @@ struct ChildSelectorScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                ProgressView()
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                }
-                Text("No children linked. Please link a child device first.")
-                VStack {
-                }
-                VStack {
-                }
-                VStack {
-                    Text("Select Child")
+                    ProgressView()
+                    VStack {
+                    }
+                    Text("No Children Linked. Please Link A Child Device First.")
                     VStack {
                     }
                     VStack {
+                    }
+                    VStack {
+                        Text("Select Child")
+                        VStack {
+                        }
+                        VStack {
+                            VStack {
+                            }
+                        }
                         VStack {
                         }
                     }
-                    VStack {
-                    }
                 }
+                Text("MMM Dd, Yyyy 'At' H:Mm A")
+                }
+                .padding()
             }
-            Text("MMM dd, yyyy 'at' h:mm a")
             }
             .navigationTitle("Child Selector")
             .foregroundStyle(CodexiaTheme.label)

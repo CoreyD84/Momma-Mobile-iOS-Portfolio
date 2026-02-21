@@ -7,12 +7,17 @@ struct ServiceStarterScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("ServiceStarter")
-                Text("GuardianNotificationService started successfully")
-                Text("Error starting GuardianNotificationService")
-                Text("GuardianNotificationService stopped")
-                Text("Error stopping GuardianNotificationService")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                VStack {
+                    Text("ServiceStarter")
+                    Text("GuardianNotificationService Started Successfully")
+                    Text("Error Starting GuardianNotificationService")
+                    Text("GuardianNotificationService Stopped")
+                    Text("Error Stopping GuardianNotificationService")
+                }
+                }
+                .padding()
             }
             }
             .navigationTitle("Service Starter")

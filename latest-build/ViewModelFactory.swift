@@ -2,11 +2,6 @@ import Foundation
 
 struct ViewModelFactory {
     @MainActor
-    static func makeAdminDeactivationMonitorViewModel() -> AdminDeactivationMonitorViewModel {
-        return AdminDeactivationMonitorViewModel()
-    }
-
-    @MainActor
     static func makeAppScopeToggleViewModel() -> AppScopeToggleViewModel {
         return AppScopeToggleViewModel()
     }
@@ -334,11 +329,6 @@ struct ViewModelFactory {
     @MainActor
     static func makeTypeViewModel() -> TypeViewModel {
         return TypeViewModel()
-    }
-
-    @MainActor
-    static func makeUninstallAttemptMonitorViewModel() -> UninstallAttemptMonitorViewModel {
-        return UninstallAttemptMonitorViewModel()
     }
 
     @MainActor

@@ -7,10 +7,15 @@ struct ConsentOverviewTabScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("household_id")
-            VStack {
-                Text("guardian_id")
-                Text("No consent records found.")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Household Id")
+                VStack {
+                    Text("Guardian Id")
+                    Text("No Consent Records Found.")
+                }
+                }
+                .padding()
             }
             }
             .navigationTitle("Consent Overview Tab")

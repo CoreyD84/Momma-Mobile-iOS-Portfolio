@@ -7,15 +7,20 @@ struct GuardianTabAdapterScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("unused")
-                Text("Recent")
-                Text("Flagged")
-                Text("Freeze")
-                Text("Mascot")
-                Text("Scanner")
-                Text("SMS")
-                Text("Location")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                VStack {
+                    Text("Unused")
+                    Text("Recent")
+                    Text("Flagged")
+                    Text("Freeze")
+                    Text("Mascot")
+                    Text("Scanner")
+                    Text("SMS")
+                    Text("Location")
+                }
+                }
+                .padding()
             }
             }
             .navigationTitle("Guardian Tab Adapter")

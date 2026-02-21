@@ -7,73 +7,78 @@ struct AppScopeToggleScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-            }
-            VStack {
-                Text("Waiting for Child ID...")
-                Text("Error: Guardian ID is null.")
-                VStack {
-                    Text("Attaching Firebase listener...")
-                    Text("AppScopeToggle")
-                }
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
                 }
                 VStack {
-                }
-                VStack {
+                    Text("Waiting For Child ID...")
+                    Text("Error: Guardian ID Is Null.")
+                    VStack {
+                        Text("Attaching Firebase Listener...")
+                        Text("AppScopeToggle")
+                    }
                     VStack {
                     }
-                    ProgressView()
                     VStack {
-                    }
-                    VStack {
-                        VStack {
-                        }
-                        VStack {
-                        }
-                        VStack {
-                        }
                     }
                     VStack {
                         VStack {
                         }
-                        Image("Add app")
+                        ProgressView()
                         VStack {
                         }
-                        Text("No blocked apps yet. Tap + to add apps to block.")
-                    }
-                    VStack {
+                        VStack {
+                            VStack {
+                            }
+                            VStack {
+                            }
+                            VStack {
+                            }
+                        }
+                        VStack {
+                            VStack {
+                            }
+                            Image("Add App")
+                            VStack {
+                            }
+                            Text("No Blocked Apps Yet. Tap + To Add Apps To Block.")
+                        }
                         VStack {
                             VStack {
                                 VStack {
+                                    VStack {
+                                    }
+                                    VStack {
+                                    }
+                                    VStack {
+                                    }
+                                    Image("Remove")
                                 }
-                                VStack {
-                                }
-                                VStack {
-                                }
-                                Image("Remove")
                             }
                         }
                     }
                 }
-            }
-            VStack {
                 VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    Text("Examples: Com.Squareup.Cash (Cash App), Com.Snapchat.Android (Snapchat), Com.Zhiliaoapp.Musically (TikTok)")
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        Text("Cancel")
+                    }
                 }
-                VStack {
                 }
-                VStack {
-                }
-                Text("Examples: com.squareup.cash (Cash App), com.snapchat.android (Snapchat), com.zhiliaoapp.musically (TikTok)")
-                VStack {
-                }
-                VStack {
-                }
-                VStack {
-                }
-                Button(action: { }) {
-                    Text("Cancel")
-                }
+                .padding()
             }
             }
             .navigationTitle("App Scope Toggle")

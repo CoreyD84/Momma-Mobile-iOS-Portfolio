@@ -7,19 +7,24 @@ struct LocationSyncScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("LocationSync")
-                Text("child_id")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("household_id")
-                    Text("⚠️ Missing child or household ID. Location not sent.")
-                    Text("⚠️ No location available. Skipping send.")
+                    Text("LocationSync")
+                    Text("Child Id")
+                    VStack {
+                        Text("Household Id")
+                        Text("⚠️ Missing Child Or Household ID. Location Not Sent.")
+                        Text("⚠️ No Location Available. Skipping Send.")
+                    }
+                    Text("Latitude")
+                    Text("Longitude")
+                    Text("Accuracy")
+                    Text("Timestamp")
+                    Text("Provider")
                 }
-                Text("latitude")
-                Text("longitude")
-                Text("accuracy")
-                Text("timestamp")
-                Text("provider")
+                }
+                .padding()
             }
             }
             .navigationTitle("Location Sync")

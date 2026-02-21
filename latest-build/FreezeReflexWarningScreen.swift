@@ -7,41 +7,46 @@ struct FreezeReflexWarningScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("blocked_app")
-            Text("message")
-            VStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Blocked App")
+                Text("Message")
                 VStack {
-                    Image("Icon")
                     VStack {
-                    }
-                    Text("⚠️")
-                    VStack {
-                    }
-                    VStack {
-                        Text("Conversation Blocked")
-                        VStack {
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            Text("This contact has been blocked and your guardian has been notified. Future messages from this person will be automatically handled by Momma Mobile.")
-                        }
-                    }
-                    Button(action: { }) {
-                        Text("Button")
-                    }
-                    Button(action: { }) {
+                        Image("Icon")
                         VStack {
                         }
-                        Text("I Understand")
-                    }
-                    VStack {
-                    }
-                    VStack {
+                        Text("⚠️")
+                        VStack {
+                        }
+                        VStack {
+                            Text("Conversation Blocked")
+                            VStack {
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                Text("This Contact Has Been Blocked And Your Guardian Has Been Notified. Future Messages From This Person Will Be Automatically Handled By Momma Mobile.")
+                            }
+                        }
+                        Button(action: { }) {
+                            Text("Button")
+                        }
+                        Button(action: { }) {
+                            VStack {
+                            }
+                            Text("I Understand")
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
                     }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Freeze Reflex Warning")

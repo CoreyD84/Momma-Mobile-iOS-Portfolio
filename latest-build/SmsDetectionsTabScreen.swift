@@ -7,21 +7,26 @@ struct SmsDetectionsTabScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("unknown_device")
-                    Text("body")
-                }
-                VStack {
-                }
-                VStack {
+                    VStack {
+                        Text("Unknown Device")
+                        Text("Body")
+                    }
+                    VStack {
+                    }
                     VStack {
                         VStack {
                             VStack {
+                                VStack {
+                                }
                             }
                         }
                     }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Sms Detections Tab")

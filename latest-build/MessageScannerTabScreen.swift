@@ -7,43 +7,48 @@ struct MessageScannerTabScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            Text("MessageScannerTab")
-            VStack {
-            }
-            VStack {
-            }
-            VStack {
-            }
-            Button(action: { }) {
-                Text("⚠️ Scanner not ready. Please wait for patterns to load.")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("MessageScannerTab")
+                Text("MessageScannerTab")
+                Text("MessageScannerTab")
+                Text("MessageScannerTab")
+                VStack {
+                }
+                VStack {
+                }
+                VStack {
+                }
                 Button(action: { }) {
-                    Text("Button")
-                }
-                Text("⚠️ Please enter a message to scan.")
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Text("MessageScannerTab")
-                Text("MessageScannerTab")
-                Text("MessageScannerTab")
-                Text("threat_grooming")
-                VStack {
+                    Text("⚠️ Scanner Not Ready. Please Wait For Patterns To Load.")
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Text("⚠️ Please Enter A Message To Scan.")
+                    Button(action: { }) {
+                        Text("Button")
+                    }
                     Text("MessageScannerTab")
                     Text("MessageScannerTab")
                     Text("MessageScannerTab")
-                    Text("MessageScannerTab")
+                    Text("Threat Grooming")
+                    VStack {
+                        Text("MessageScannerTab")
+                        Text("MessageScannerTab")
+                        Text("MessageScannerTab")
+                        Text("MessageScannerTab")
+                    }
+                    VStack {
+                        Text("MessageScannerTab")
+                        Text("✅ No Threats Detected")
+                    }
+                    VStack {
+                    }
+                    VStack {
+                    }
                 }
-                VStack {
-                    Text("MessageScannerTab")
-                    Text("✅ No threats detected")
                 }
-                VStack {
-                }
-                VStack {
-                }
+                .padding()
             }
             }
             .navigationTitle("Message Scanner Tab")

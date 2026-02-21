@@ -7,105 +7,110 @@ struct PlatformControlTabScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("Discord")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("📄 Share stories of online safety wins...")
-                    Text("PlatformControlTab")
-                    Text("nickname")
+                    Text("Discord")
                     VStack {
-                        Text("dob")
+                        Text("📄 Share Stories Of Online Safety Wins...")
                         Text("PlatformControlTab")
-                        Text("PlatformControlTab")
+                        Text("Nickname")
+                        VStack {
+                            Text("Dob")
+                            Text("PlatformControlTab")
+                            Text("PlatformControlTab")
+                        }
+                        Text("Police")
+                        Text("School")
+                        Text("Sheriff")
                     }
-                    Text("police")
-                    Text("school")
-                    Text("sheriff")
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                            VStack {
+                            }
+                        }
+                        VStack {
+                        }
+                        Text("Toggles Above Control Both Access And Nettie’S Emotional Radar Per Platform.")
+                        VStack {
+                        }
+                        VStack {
+                            Text("Nickname")
+                        }
+                        VStack {
+                            Text("Dob")
+                            Text("Granted")
+                            Text("ConsentSection")
+                        }
+                    }
+                    VStack {
+                    }
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        Text("Consent Currently Granted")
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        Button(action: { }) {
+                            Text("Granted")
+                            VStack {
+                                Text("Timestamp")
+                                Text("Failed To Grant Consent")
+                                Text("Missing Guardian Info — Please Sign In Again")
+                            }
+                            Image("Grant Consent")
+                            VStack {
+                            }
+                        }
+                        Button(action: { }) {
+                            Text("Granted")
+                            VStack {
+                                Text("Timestamp")
+                                Text("Failed To Revoke Consent")
+                                Text("Missing Guardian Info — Please Sign In Again")
+                            }
+                            Image("Revoke Consent")
+                            VStack {
+                            }
+                        }
+                    }
                 }
-                VStack {
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                        VStack {
-                        }
-                    }
-                    VStack {
-                    }
-                    Text("Toggles above control both access and Nettie’s emotional radar per platform.")
-                    VStack {
-                    }
-                    VStack {
-                        Text("nickname")
-                    }
-                    VStack {
-                        Text("dob")
-                        Text("granted")
-                        Text("ConsentSection")
-                    }
                 }
-                VStack {
-                }
-                VStack {
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    Text("Consent currently granted")
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    Button(action: { }) {
-                        Text("granted")
-                        VStack {
-                            Text("timestamp")
-                            Text("Failed to grant consent")
-                            Text("Missing guardian info — please sign in again")
-                        }
-                        Image("Grant Consent")
-                        VStack {
-                        }
-                    }
-                    Button(action: { }) {
-                        Text("granted")
-                        VStack {
-                            Text("timestamp")
-                            Text("Failed to revoke consent")
-                            Text("Missing guardian info — please sign in again")
-                        }
-                        Image("Revoke Consent")
-                        VStack {
-                        }
-                    }
-                }
+                .padding()
             }
             }
             .navigationTitle("Platform Control Tab")

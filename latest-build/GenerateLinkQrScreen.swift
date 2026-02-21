@@ -7,19 +7,24 @@ struct GenerateLinkQrScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("Guardian not signed in")
-            Text("GenerateLinkQr")
-            Text("guardianId")
-            Text("timestamp")
-            Text("expiresAt")
-            Text("used")
-            Text("GenerateLinkQr")
-            Text("GenerateLinkQr")
-            VStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Guardian Not Signed In")
                 Text("GenerateLinkQr")
-                Text("QR Code ready! Token valid for 15 minutes")
+                Text("GuardianId")
+                Text("Timestamp")
+                Text("ExpiresAt")
+                Text("Used")
                 Text("GenerateLinkQr")
                 Text("GenerateLinkQr")
+                VStack {
+                    Text("GenerateLinkQr")
+                    Text("QR Code Ready! Token Valid For 15 Minutes")
+                    Text("GenerateLinkQr")
+                    Text("GenerateLinkQr")
+                }
+                }
+                .padding()
             }
             }
             .navigationTitle("Generate Link Qr")

@@ -7,22 +7,27 @@ struct FreezeReflexTabScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("guardian_id")
-            Text("child_id")
-            VStack {
-                Text("isEscalated")
-                Text("No freeze reflex events recorded.")
-                Text("category")
-                Text("matchedPhrases")
-                Text("sourceApp")
-                Text("timestamp")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Guardian Id")
+                Text("Child Id")
                 VStack {
-                    Text("deflectionUsed")
+                    Text("IsEscalated")
+                    Text("No Freeze Reflex Events Recorded.")
+                    Text("Category")
+                    Text("MatchedPhrases")
+                    Text("SourceApp")
+                    Text("Timestamp")
                     VStack {
-                        Text("🚨 Freeze Reflex Triggered\\n")
-                        Text("🛡️ Deflection: ")
+                        Text("DeflectionUsed")
+                        VStack {
+                            Text("🚨 Freeze Reflex Triggered\\N")
+                            Text("🛡️ Deflection: ")
+                        }
                     }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Freeze Reflex Tab")

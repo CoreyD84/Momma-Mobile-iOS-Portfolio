@@ -7,37 +7,42 @@ struct BlockedWebsiteScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Button(action: { }) {
-                Text("Button")
-            }
-            VStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 Button(action: { }) {
-                    Text("OK")
+                    Text("Button")
                 }
                 VStack {
+                    Button(action: { }) {
+                        Text("OK")
+                    }
                     VStack {
-                        Image("Icon")
                         VStack {
-                        }
-                        Text("🚫")
-                        VStack {
-                        }
-                        Text("WEBSITE BLOCKED")
-                        VStack {
-                        }
-                        VStack {
-                        }
-                        Text("This website has been restricted by SafeScope.")
-                        Button(action: { }) {
-                            Text("Button")
-                        }
-                        Button(action: { }) {
+                            Image("Icon")
+                            VStack {
+                            }
+                            Text("🚫")
+                            VStack {
+                            }
+                            Text("WEBSITE BLOCKED")
+                            VStack {
+                            }
+                            VStack {
+                            }
+                            Text("This Website Has Been Restricted By SafeScope.")
                             Button(action: { }) {
-                                Text("OK")
+                                Text("Button")
+                            }
+                            Button(action: { }) {
+                                Button(action: { }) {
+                                    Text("OK")
+                                }
                             }
                         }
                     }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Blocked Website")

@@ -7,33 +7,38 @@ struct FirebaseLoggerScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("phrase")
-            VStack {
-                Text("Messenger")
-                Text("Message: ")
-                Text("emoji")
-                Text("message")
-                Text("matchedPhrases")
-                Text("severity")
-                Text("timestamp")
-                Text("source")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Phrase")
                 VStack {
-                    Text("isEscalated")
-                    Text("category")
-                    Text("sourceApp")
-                    Text("critical")
+                    Text("Messenger")
+                    Text("Message: ")
+                    Text("Emoji")
+                    Text("Message")
+                    Text("MatchedPhrases")
+                    Text("Severity")
+                    Text("Timestamp")
+                    Text("Source")
+                    VStack {
+                        Text("IsEscalated")
+                        Text("Category")
+                        Text("SourceApp")
+                        Text("Critical")
+                    }
+                    Text("Critical")
+                    Text("Type")
+                    Text("Message")
+                    Text("Timestamp")
+                    Text("Type")
+                    Text("Message")
+                    Text("Timestamp")
+                    Text("Yyyy-MM-Dd HH:Mm:Ss")
                 }
-                Text("critical")
-                Text("type")
-                Text("message")
-                Text("timestamp")
-                Text("type")
-                Text("message")
-                Text("timestamp")
-                Text("yyyy-MM-dd_HH:mm:ss")
+                Text("Guardian Id")
+                Text("Child Id")
+                }
+                .padding()
             }
-            Text("guardian_id")
-            Text("child_id")
             }
             .navigationTitle("Firebase Logger")
             .foregroundStyle(CodexiaTheme.label)

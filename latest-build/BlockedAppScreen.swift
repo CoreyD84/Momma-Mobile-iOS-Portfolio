@@ -7,20 +7,25 @@ struct BlockedAppScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("app_name")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
+                    Text("App Name")
                     VStack {
                         VStack {
+                            VStack {
+                            }
+                            VStack {
+                            }
+                            Text("APP BLOCKED")
+                            VStack {
+                            }
+                            Text("Access To This App Has Been Restricted.")
                         }
-                        VStack {
-                        }
-                        Text("APP BLOCKED")
-                        VStack {
-                        }
-                        Text("Access to this app has been restricted.")
                     }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Blocked App")

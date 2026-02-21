@@ -7,23 +7,28 @@ struct EmotionalPatternLoaderScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("EmotionalPatternLoader")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("🔄 Starting to load patterns from Firebase root...")
-                    Text("emotion_")
-                    Text("threat_")
-                    Text("mental_health")
-                    Text("self_esteem")
+                    Text("EmotionalPatternLoader")
                     VStack {
-                        Text("self_harm")
+                        Text("🔄 Starting To Load Patterns From Firebase Root...")
+                        Text("Emotion")
+                        Text("Threat")
+                        Text("Mental Health")
+                        Text("Self Esteem")
                         VStack {
-                            Text("suicidal_ideation")
-                            Text("_emojis")
+                            Text("Self Harm")
+                            VStack {
+                                Text("Suicidal Ideation")
+                                Text("Emojis")
+                            }
+                            Text("⚠️ Firebase Patterns Were Empty. Loading Fallbacks.")
                         }
-                        Text("⚠️ Firebase patterns were empty. Loading fallbacks.")
                     }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Emotional Pattern Loader")

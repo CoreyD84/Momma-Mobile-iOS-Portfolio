@@ -7,7 +7,12 @@ struct ExampleInstrumentedTestScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("com.airnettie.mobile.child")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Com.Airnettie.Mobile.Child")
+                }
+                .padding()
+            }
             }
             .navigationTitle("Example Instrumented Test")
             .foregroundStyle(CodexiaTheme.label)

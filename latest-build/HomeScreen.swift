@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    private let screenNames = ["Admin Deactivation Monitor","App Scope Toggle","Auto Hide Provider","Blocked App","Blocked Website","Boot Receiver","Child Link","Child Selector","Color","Compose Platform Control","Consent Management","Consent Modal","Consent Overview","Consent Overview Tab","Emotional Pattern Loader","Emotional Radar","Example Instrumented Test","Example Unit Test","Firebase Extensions","Firebase Logger","Firebase Sync","Flagged Message Adapter","Flagged Messages","Flagged Messages Tab","Freeze Reflex","Freeze Reflex Tab","Freeze Reflex Warning","Generate Link Qr","Guardian Dashboard","Guardian Tab Adapter","Harmful Patterns","Linked Children","Location Status","Location Sync","Login","Main","Main Application","Mascot Mood","Message Notification Listener","Message Scanner","Message Scanner Tab","Momma Device Admin","Momma Mobile Theme","Momma Takeover","Nettie Device Admin Receiver","Online Safety","Online Safety Tab","Platform Control","Platform Control Receiver","Platform Control Tab","Q R Utils","Recent Detections Activities","Recent Detections","Recent Detections Tab","Safe Scope","Safe Scope Toggle","Scanner Globals","Service Starter","Setup","Sms Compose","Sms Detections","Sms Detections Tab","Sms Inbox","Sms Receiver","Subscription Expired","Theme","Type","Uninstall Attempt Monitor","Vpn Permission"];
+    private let screenNames = ["App Scope Toggle","Auto Hide Provider","Blocked App","Blocked Website","Boot Receiver","Child Link","Child Selector","Color","Compose Platform Control","Consent Management","Consent Modal","Consent Overview","Consent Overview Tab","Emotional Pattern Loader","Emotional Radar","Example Instrumented Test","Example Unit Test","Firebase Extensions","Firebase Logger","Firebase Sync","Flagged Message Adapter","Flagged Messages","Flagged Messages Tab","Freeze Reflex","Freeze Reflex Tab","Freeze Reflex Warning","Generate Link Qr","Guardian Dashboard","Guardian Tab Adapter","Harmful Patterns","Linked Children","Location Status","Location Sync","Login","Main","Main Application","Mascot Mood","Message Notification Listener","Message Scanner","Message Scanner Tab","Momma Device Admin","Momma Mobile Theme","Momma Takeover","Nettie Device Admin Receiver","Online Safety","Online Safety Tab","Platform Control","Platform Control Receiver","Platform Control Tab","Q R Utils","Recent Detections Activities","Recent Detections","Recent Detections Tab","Safe Scope","Safe Scope Toggle","Scanner Globals","Service Starter","Setup","Sms Compose","Sms Detections","Sms Detections Tab","Sms Inbox","Sms Receiver","Subscription Expired","Theme","Type","Vpn Permission"];
 
     var body: some View {
         NavigationStack {
@@ -15,7 +15,6 @@ struct HomeScreen: View {
     @ViewBuilder
     private func destination(for name: String) -> some View {
         switch name {
-        case "Admin Deactivation Monitor": AdminDeactivationMonitorScreen()
         case "App Scope Toggle": AppScopeToggleScreen()
         case "Auto Hide Provider": AutoHideProviderScreen()
         case "Blocked App": BlockedAppScreen()
@@ -82,7 +81,6 @@ struct HomeScreen: View {
         case "Subscription Expired": SubscriptionExpiredScreen()
         case "Theme": ThemeScreen()
         case "Type": TypeScreen()
-        case "Uninstall Attempt Monitor": UninstallAttemptMonitorScreen()
         case "Vpn Permission": VpnPermissionScreen()
         default:
             Text(name)

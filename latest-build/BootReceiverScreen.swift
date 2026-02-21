@@ -7,19 +7,24 @@ struct BootReceiverScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("MommaStealth")
-            Text("com.airnettie.mobile.child.LauncherAlias")
-            Text("MommaStealth")
-            Text("MommaStealth")
-            VStack {
-                Text("guardian_id")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("MommaStealth")
+                Text("Com.Airnettie.Mobile.Child.LauncherAlias")
+                Text("MommaStealth")
+                Text("MommaStealth")
                 VStack {
-                    Text("MommaStealth")
+                    Text("Guardian Id")
+                    VStack {
+                        Text("MommaStealth")
+                        Text("MommaStealth")
+                        Text("MommaStealth")
+                    }
                     Text("MommaStealth")
                     Text("MommaStealth")
                 }
-                Text("MommaStealth")
-                Text("MommaStealth")
+                }
+                .padding()
             }
             }
             .navigationTitle("Boot Receiver")

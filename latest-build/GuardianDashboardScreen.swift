@@ -7,40 +7,45 @@ struct GuardianDashboardScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Button(action: { }) {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 Button(action: { }) {
-                    Text("Button")
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
                 }
-                Button(action: { }) {
-                    Text("Button")
                 }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
-                Button(action: { }) {
-                    Text("Button")
-                }
+                .padding()
             }
             }
             .navigationTitle("Guardian Dashboard")

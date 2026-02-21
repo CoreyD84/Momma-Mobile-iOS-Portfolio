@@ -7,22 +7,27 @@ struct LoginScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("guardian_email")
-            Text("guardian_password")
-            VStack {
-                Text("guardian_email")
-                Text("guardian_email")
-                Text("guardian_password")
-                Text("guardian_email")
-                Text("guardian_password")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Guardian Email")
+                Text("Guardian Password")
                 VStack {
-                    Text("guardian_id")
-                    Text("guardian_name")
-                    Text("guardian_id")
+                    Text("Guardian Email")
+                    Text("Guardian Email")
+                    Text("Guardian Password")
+                    Text("Guardian Email")
+                    Text("Guardian Password")
+                    VStack {
+                        Text("Guardian Id")
+                        Text("Guardian Name")
+                        Text("Guardian Id")
+                    }
+                    Text("Name")
                 }
-                Text("name")
+                Text("Household Id")
+                }
+                .padding()
             }
-            Text("household_id")
             }
             .navigationTitle("Login")
             .foregroundStyle(CodexiaTheme.label)

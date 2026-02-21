@@ -7,18 +7,23 @@ struct SmsReceiverScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("guardian_id")
-            VStack {
-                Text("child_id")
-                Text("Unknown")
-                Text("sms")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Guardian Id")
                 VStack {
-                    Text("Clear")
-                    Text("sms")
-                    Text("critical_sms_detected")
+                    Text("Child Id")
+                    Text("Unknown")
+                    Text("Sms")
+                    VStack {
+                        Text("Clear")
+                        Text("Sms")
+                        Text("Critical Sms Detected")
+                    }
                 }
+                Text("SmsReceiver")
+                }
+                .padding()
             }
-            Text("SmsReceiver")
             }
             .navigationTitle("Sms Receiver")
             .foregroundStyle(CodexiaTheme.label)

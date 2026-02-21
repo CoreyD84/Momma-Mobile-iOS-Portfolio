@@ -7,60 +7,65 @@ struct RecentDetectionsScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Button(action: { }) {
-                VStack {
-                    Text("RecentDetections")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Button(action: { }) {
                     VStack {
-                        Text("Error loading recent detections")
-                        Text("conversations")
-                        Text("blockedAttempts")
-                    }
-                    Text("RecentDetections")
-                    Text("No alerts yet. All clear! ✅")
-                }
-                Text("timestamp")
-                Text("message")
-                Text("severity")
-                Text("type")
-                Text("timestamp")
-                Text("actionRequired")
-                Text("source")
-                VStack {
-                    Text("action")
-                    Text("MMM dd, yyyy • h:mm a")
-                    VStack {
-                        Text("Unknown time")
-                        Text("🚨 FREEZEREFLEX: ")
-                        Text("🚨 ")
+                        Text("RecentDetections")
                         VStack {
-                            Text("\\n")
-                            Text("\\n")
+                            Text("Error Loading Recent Detections")
+                            Text("Conversations")
+                            Text("BlockedAttempts")
                         }
-                        Text("\\n")
-                        Text("\\n")
+                        Text("RecentDetections")
+                        Text("No Alerts Yet. All Clear! ✅")
+                    }
+                    Text("Timestamp")
+                    Text("Message")
+                    Text("Severity")
+                    Text("Type")
+                    Text("Timestamp")
+                    Text("ActionRequired")
+                    Text("Source")
+                    VStack {
+                        Text("Action")
+                        Text("MMM Dd, Yyyy • H:Mm A")
                         VStack {
-                            Text("critical")
-                            Text("high")
-                            Text("medium")
-                            Text("low")
+                            Text("Unknown Time")
+                            Text("🚨 FREEZEREFLEX:")
+                            Text("🚨")
+                            VStack {
+                                Text("\\N")
+                                Text("\\N")
+                            }
+                            Text("\\N")
+                            Text("\\N")
+                            VStack {
+                                Text("Critical")
+                                Text("High")
+                                Text("Medium")
+                                Text("Low")
+                            }
                         }
+                        Button(action: { }) {
+                            Text("Button")
+                        }
+                        Text("🗑️")
                     }
-                    Button(action: { }) {
-                        Text("Button")
-                    }
-                    Text("🗑️")
-                }
-                VStack {
-                    Text("RecentDetections")
-                    Text("Unable to delete: not authenticated")
-                    Text("Alert deleted")
                     VStack {
                         Text("RecentDetections")
-                        Text("Alert deleted")
-                        Text("RecentDetections")
-                        Text("RecentDetections")
+                        Text("Unable To Delete: Not Authenticated")
+                        Text("Alert Deleted")
+                        VStack {
+                            Text("RecentDetections")
+                            Text("Alert Deleted")
+                            Text("RecentDetections")
+                            Text("RecentDetections")
+                        }
                     }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Recent Detections")

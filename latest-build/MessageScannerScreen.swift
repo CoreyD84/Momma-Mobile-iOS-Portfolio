@@ -7,13 +7,18 @@ struct MessageScannerScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("I want to disappear")
-                Text("MessageScanner")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
+                    Text("I Want To Disappear")
                     Text("MessageScanner")
-                    Text("MessageScanner")
+                    VStack {
+                        Text("MessageScanner")
+                        Text("MessageScanner")
+                    }
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Message Scanner")

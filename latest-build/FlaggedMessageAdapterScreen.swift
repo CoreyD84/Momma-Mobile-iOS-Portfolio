@@ -7,14 +7,19 @@ struct FlaggedMessageAdapterScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("MMM dd, yyyy • h:mm a")
-                Text("chat")
-                Text("web")
-                Text("🧠")
-                Text("📝 No notes added.")
-                Text("🚨 Escalated")
-                Text("🛡️ Deflection: ")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                VStack {
+                    Text("MMM Dd, Yyyy • H:Mm A")
+                    Text("Chat")
+                    Text("Web")
+                    Text("🧠")
+                    Text("📝 No Notes Added.")
+                    Text("🚨 Escalated")
+                    Text("🛡️ Deflection: ")
+                }
+                }
+                .padding()
             }
             }
             .navigationTitle("Flagged Message Adapter")

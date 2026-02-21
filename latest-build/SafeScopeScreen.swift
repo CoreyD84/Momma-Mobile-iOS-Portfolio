@@ -7,9 +7,14 @@ struct SafeScopeScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("ProduceStateDoesNotAssignValue")
-                Text("SafeScopeFragment")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                VStack {
+                    Text("ProduceStateDoesNotAssignValue")
+                    Text("SafeScopeFragment")
+                }
+                }
+                .padding()
             }
             }
             .navigationTitle("Safe Scope")

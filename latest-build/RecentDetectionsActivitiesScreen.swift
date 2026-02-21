@@ -7,10 +7,15 @@ struct RecentDetectionsActivitiesScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("DEPRECATION")
-            VStack {
-                Text("RecentDetections")
-                Text("Error loading Recent Detections")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("DEPRECATION")
+                VStack {
+                    Text("RecentDetections")
+                    Text("Error Loading Recent Detections")
+                }
+                }
+                .padding()
             }
             }
             .navigationTitle("Recent Detections Activities")

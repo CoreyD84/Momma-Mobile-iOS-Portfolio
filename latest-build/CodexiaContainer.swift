@@ -5,17 +5,10 @@ class CodexiaContainer: ObservableObject {
     static let shared = CodexiaContainer()
 
     let appBlockerService: AppBlockerService
-    let childSyncService: ChildSyncService
     let feelScopeService: FeelScopeService
-    let guardianNotificationService: GuardianNotificationService
-    let heartbeatMonitorService: HeartbeatMonitorService
-    let locationTrackerService: LocationTrackerService
     let mommaNotificationService: MommaNotificationService
     let nettieProtectionService: NettieProtectionService
-    let platformEnforcementService: PlatformEnforcementService
-    let safeScopeVpnService: SafeScopeVpnService
     let websiteBlockerService: WebsiteBlockerService
-    let adminDeactivationMonitorViewModel: AdminDeactivationMonitorViewModel
     let appScopeToggleViewModel: AppScopeToggleViewModel
     let autoHideProviderViewModel: AutoHideProviderViewModel
     let blockedAppViewModel: BlockedAppViewModel
@@ -82,22 +75,14 @@ class CodexiaContainer: ObservableObject {
     let subscriptionExpiredViewModel: SubscriptionExpiredViewModel
     let themeViewModel: ThemeViewModel
     let typeViewModel: TypeViewModel
-    let uninstallAttemptMonitorViewModel: UninstallAttemptMonitorViewModel
     let vpnPermissionViewModel: VpnPermissionViewModel
 
     private init() {
         self.appBlockerService = AppBlockerServiceImpl.shared
-        self.childSyncService = ChildSyncServiceImpl.shared
         self.feelScopeService = FeelScopeServiceImpl.shared
-        self.guardianNotificationService = GuardianNotificationServiceImpl.shared
-        self.heartbeatMonitorService = HeartbeatMonitorServiceImpl.shared
-        self.locationTrackerService = LocationTrackerServiceImpl.shared
         self.mommaNotificationService = MommaNotificationServiceImpl.shared
         self.nettieProtectionService = NettieProtectionServiceImpl.shared
-        self.platformEnforcementService = PlatformEnforcementServiceImpl.shared
-        self.safeScopeVpnService = SafeScopeVpnServiceImpl.shared
         self.websiteBlockerService = WebsiteBlockerServiceImpl.shared
-        self.adminDeactivationMonitorViewModel = AdminDeactivationMonitorViewModelFactory.make()
         self.appScopeToggleViewModel = AppScopeToggleViewModelFactory.make()
         self.autoHideProviderViewModel = AutoHideProviderViewModelFactory.make()
         self.blockedAppViewModel = BlockedAppViewModelFactory.make()
@@ -164,7 +149,6 @@ class CodexiaContainer: ObservableObject {
         self.subscriptionExpiredViewModel = SubscriptionExpiredViewModelFactory.make()
         self.themeViewModel = ThemeViewModelFactory.make()
         self.typeViewModel = TypeViewModelFactory.make()
-        self.uninstallAttemptMonitorViewModel = UninstallAttemptMonitorViewModelFactory.make()
         self.vpnPermissionViewModel = VpnPermissionViewModelFactory.make()
     }
 }

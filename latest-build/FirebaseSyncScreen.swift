@@ -7,14 +7,19 @@ struct FirebaseSyncScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("severity")
-            Text("message")
-            Text("timestamp")
-            Text("type")
-            Text("actionRequired")
-            Text("flags")
-            Text("FirebaseSync")
-            Text("FirebaseSync")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("Severity")
+                Text("Message")
+                Text("Timestamp")
+                Text("Type")
+                Text("ActionRequired")
+                Text("Flags")
+                Text("FirebaseSync")
+                Text("FirebaseSync")
+                }
+                .padding()
+            }
             }
             .navigationTitle("Firebase Sync")
             .foregroundStyle(CodexiaTheme.label)

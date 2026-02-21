@@ -7,68 +7,73 @@ struct SafeScopeToggleScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                }
-                VStack {
-                    Text("Waiting for Child ID...")
-                    Text("Error: Guardian ID is null.")
-                    VStack {
-                        Text("Attaching Firebase listener...")
-                        Text("SafeScopeToggle")
-                        Text("suicideforum.com")
-                        Text("pornhub.com")
-                        Text("fapello.com")
-                        Text("leakgirls.com")
-                        Text("omegle.com")
-                        Text("SafeScopeToggle")
-                    }
                     VStack {
                     }
                     VStack {
-                    }
-                    VStack {
+                        Text("Waiting For Child ID...")
+                        Text("Error: Guardian ID Is Null.")
+                        VStack {
+                            Text("Attaching Firebase Listener...")
+                            Text("SafeScopeToggle")
+                            Text("Suicideforum.Com")
+                            Text("Pornhub.Com")
+                            Text("Fapello.Com")
+                            Text("Leakgirls.Com")
+                            Text("Omegle.Com")
+                            Text("SafeScopeToggle")
+                        }
                         VStack {
                         }
-                        ProgressView()
                         VStack {
                         }
                         VStack {
                             VStack {
                             }
+                            ProgressView()
                             VStack {
                             }
-                            VStack {
-                            }
-                        }
-                        VStack {
-                            VStack {
-                            }
-                            VStack {
-                            }
-                        }
-                        VStack {
-                        }
-                        VStack {
                             VStack {
                                 VStack {
-                                    Image("Remove")
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                            }
+                            VStack {
+                                VStack {
+                                }
+                                VStack {
+                                }
+                            }
+                            VStack {
+                            }
+                            VStack {
+                                VStack {
+                                    VStack {
+                                        Image("Remove")
+                                    }
                                 }
                             }
                         }
                     }
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        Button(action: { }) {
+                            Text("Cancel")
+                        }
+                    }
                 }
-                VStack {
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    Button(action: { }) {
-                        Text("Cancel")
-                    }
                 }
+                .padding()
             }
             }
             .navigationTitle("Safe Scope Toggle")

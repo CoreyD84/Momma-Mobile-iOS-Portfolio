@@ -7,12 +7,17 @@ struct SmsInboxScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("SMS permission denied. Cannot load inbox.")
-                Text("(No content)")
-                Text("(Unknown sender)")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                VStack {
+                    Text("SMS Permission Denied. Cannot Load Inbox.")
+                    Text("(No Content)")
+                    Text("(Unknown Sender)")
+                }
+                Text("📭 No SMS Messages Found.")
+                }
+                .padding()
             }
-            Text("📭 No SMS messages found.")
             }
             .navigationTitle("Sms Inbox")
             .foregroundStyle(CodexiaTheme.label)

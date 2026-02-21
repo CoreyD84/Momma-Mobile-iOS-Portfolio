@@ -7,112 +7,117 @@ struct SetupScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-            }
-            Button(action: { }) {
-                Text("Button")
-            }
-            ProgressView()
-            VStack {
-                VStack {
-                    ProgressView()
-                    VStack {
-                    }
-                    VStack {
-                    }
-                }
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
                 }
-                VStack {
-                    Button(action: { }) {
-                        Text("Button")
-                    }
-                    VStack {
-                    }
+                Button(action: { }) {
+                    Text("Button")
                 }
+                ProgressView()
                 VStack {
                     VStack {
-                    }
-                    Text("Step 2: Enable Protection Features")
-                    VStack {
-                    }
-                    Text("Nettie Protection provides:")
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                    }
-                    VStack {
-                        Text("Instructions:")
-                        VStack {
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            VStack {
-                            }
-                            VStack {
-                            }
-                        }
+                        ProgressView()
                         VStack {
                         }
                         VStack {
                         }
-                        VStack {
-                        }
+                    }
+                    VStack {
+                    }
+                    VStack {
                         Button(action: { }) {
+                            Text("Button")
+                        }
+                        VStack {
+                        }
+                    }
+                    VStack {
+                        VStack {
+                        }
+                        Text("Step 2: Enable Protection Features")
+                        VStack {
+                        }
+                        Text("Nettie Protection Provides:")
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                        }
+                        VStack {
+                            Text("Instructions:")
+                            VStack {
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                                VStack {
+                                }
+                            }
                             VStack {
                             }
+                            VStack {
+                            }
+                            VStack {
+                            }
+                            Button(action: { }) {
+                                VStack {
+                                }
+                            }
+                            Button(action: { }) {
+                                VStack {
+                                }
+                            }
+                            Button(action: { }) {
+                                VStack {
+                                }
+                            }
                         }
+                        VStack {
+                        }
+                        Text("Note: This Is Required For The App To Function Properly.")
+                    }
+                    VStack {
+                    }
+                    VStack {
                         Button(action: { }) {
-                            VStack {
-                            }
+                            Text("Button")
                         }
+                        VStack {
+                        }
+                    }
+                    VStack {
+                    }
+                    VStack {
                         Button(action: { }) {
-                            VStack {
-                            }
+                            Text("Button")
+                        }
+                        VStack {
                         }
                     }
                     VStack {
-                    }
-                    Text("Note: This is required for the app to function properly.")
-                }
-                VStack {
-                }
-                VStack {
-                    Button(action: { }) {
-                        Text("Button")
-                    }
-                    VStack {
+                        Button(action: { }) {
+                            Text("Button")
+                        }
+                        VStack {
+                        }
                     }
                 }
-                VStack {
                 }
-                VStack {
-                    Button(action: { }) {
-                        Text("Button")
-                    }
-                    VStack {
-                    }
-                }
-                VStack {
-                    Button(action: { }) {
-                        Text("Button")
-                    }
-                    VStack {
-                    }
-                }
+                .padding()
             }
             }
             .navigationTitle("Setup")

@@ -7,47 +7,52 @@ struct OnlineSafetyTabScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
+                    VStack {
+                        VStack {
+                        }
+                        VStack {
+                            Text("💡 Online Safety Tip")
+                            Image("Icon")
+                            Text("Next Tip")
+                        }
+                    }
                     VStack {
                     }
                     VStack {
-                        Text("💡 Online Safety Tip")
-                        Image("Icon")
-                        Text("Next tip")
                     }
                 }
-                VStack {
+                Text("Talk To Your Child Regularly About Their Online Activities And Who They'Re Communicating With.")
+                Text("Teach Your Child Never To Share Personal Information (Address, Phone Number, School Name) Online.")
+                Text("Remind Your Child That People Online May Not Be Who They Claim To Be.")
+                Text("Encourage Your Child To Tell You Immediately If Something Online Makes Them Uncomfortable.")
+                Text("Keep Devices In Common Areas Of The Home, Not In Bedrooms.")
+                Text("Review Privacy Settings On All Apps And Social Media Accounts Together.")
+                Text("Teach Your Child About The Permanence Of Online Posts - Once Shared, It'S Hard To Take Back.")
+                Text("Discuss Cyberbullying And Ensure Your Child Knows How To Block And Report Inappropriate Behavior.")
+                Text("Use Parental Controls, But Remember They'Re Not A Substitute For Open Communication.")
+                Text("Teach Your Child To Think Critically About What They See Online - Not Everything Is True.")
+                Text("Make Sure Your Child Knows Their Passwords Should Be Kept Private, Even From Friends.")
+                Text("Discuss The Risks Of Meeting Online Friends In Person Without Parental Supervision.")
+                Text("Review Your Child'S Friend Lists And Followers Periodically On Social Media.")
+                Text("Encourage Your Child To Come To You With Questions Or Concerns Without Fear Of Punishment.")
+                Text("Set Up Age-Appropriate Email And Social Media Accounts Together.")
+                Text("Discuss The Dangers Of Clicking On Unknown Links Or Downloading Files From Strangers.")
+                Text("Teach Your Child About Respectful Online Communication And Treating Others With Kindness.")
+                Text("Monitor In-App Purchases And Set Up Parental Approval For Transactions.")
+                Text("Discuss The Difference Between Healthy And Unhealthy Online Relationships.")
+                Text("Teach Your Child To Recognize Warning Signs Of Online Predators (Excessive Compliments, Secrecy, Gifts).")
+                Text("Review And Update Privacy Settings Regularly As Apps And Platforms Change.")
+                Text("Discuss The Risks Of Sharing Photos Online, Especially Those That Reveal Location Or Personal Details.")
+                Text("Teach Your Child About Phishing Scams And How To Identify Suspicious Messages.")
+                Text("Make Sure Your Child Knows That If They Make A Mistake Online, They Can Come To You For Help.")
+                Text("Set Boundaries Around Device Use During Family Time, Meals, And Before Bedtime.")
+                Text("Stay Informed About The Latest Apps, Games, And Social Media Platforms Your Child Is Using.")
                 }
-                VStack {
-                }
+                .padding()
             }
-            Text("Talk to your child regularly about their online activities and who they're communicating with.")
-            Text("Teach your child never to share personal information (address, phone number, school name) online.")
-            Text("Remind your child that people online may not be who they claim to be.")
-            Text("Encourage your child to tell you immediately if something online makes them uncomfortable.")
-            Text("Keep devices in common areas of the home, not in bedrooms.")
-            Text("Review privacy settings on all apps and social media accounts together.")
-            Text("Teach your child about the permanence of online posts - once shared, it's hard to take back.")
-            Text("Discuss cyberbullying and ensure your child knows how to block and report inappropriate behavior.")
-            Text("Use parental controls, but remember they're not a substitute for open communication.")
-            Text("Teach your child to think critically about what they see online - not everything is true.")
-            Text("Make sure your child knows their passwords should be kept private, even from friends.")
-            Text("Discuss the risks of meeting online friends in person without parental supervision.")
-            Text("Review your child's friend lists and followers periodically on social media.")
-            Text("Encourage your child to come to you with questions or concerns without fear of punishment.")
-            Text("Set up age-appropriate email and social media accounts together.")
-            Text("Discuss the dangers of clicking on unknown links or downloading files from strangers.")
-            Text("Teach your child about respectful online communication and treating others with kindness.")
-            Text("Monitor in-app purchases and set up parental approval for transactions.")
-            Text("Discuss the difference between healthy and unhealthy online relationships.")
-            Text("Teach your child to recognize warning signs of online predators (excessive compliments, secrecy, gifts).")
-            Text("Review and update privacy settings regularly as apps and platforms change.")
-            Text("Discuss the risks of sharing photos online, especially those that reveal location or personal details.")
-            Text("Teach your child about phishing scams and how to identify suspicious messages.")
-            Text("Make sure your child knows that if they make a mistake online, they can come to you for help.")
-            Text("Set boundaries around device use during family time, meals, and before bedtime.")
-            Text("Stay informed about the latest apps, games, and social media platforms your child is using.")
             }
             .navigationTitle("Online Safety Tab")
             .foregroundStyle(CodexiaTheme.label)

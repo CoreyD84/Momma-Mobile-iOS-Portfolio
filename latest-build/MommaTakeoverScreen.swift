@@ -7,41 +7,46 @@ struct MommaTakeoverScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("Momma Takeover")
-                Text("MommaTakeover")
-                Text("I don't know… I'm really tired. I think I'm going to bed.")
-                Text("Sorry, I'm not feeling well. Maybe tomorrow.")
-                Text("I'm kinda busy right now. Can we talk later?")
-                Text("I need to go. My mom's calling me.")
-                Text("I'm not sure what to say. I'll talk to you later.")
-                Text("I'm not comfortable talking about that.")
-                Text("I need to go. My mom's calling me.")
-                Text("I don't think I should be sharing that.")
-                Text("I'm not okay with this. Please stop.")
-                Text("That's not okay. I'm stepping away.")
-                Text("I don't deserve to be talked to like this.")
-                Text("I'm not sure I trust this conversation.")
-                Text("I need to think about this. Talk later?")
-                Text("I'm feeling confused. I'm going to step away.")
-                Text("I'm not feeling okay. I need to talk to someone.")
-                Text("I'm going to take a break and breathe.")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("I'm reaching out to someone I trust.")
-                    Text("❌ No active window found for takeover.")
-                    Text("❌ No input field found for Momma Takeover.")
-                    Text("⚠️ Failed to insert deflection phrase into input field.")
+                    Text("Momma Takeover")
+                    Text("MommaTakeover")
+                    Text("I Don'T Know… I'M Really Tired. I Think I'M Going To Bed.")
+                    Text("Sorry, I'M Not Feeling Well. Maybe Tomorrow.")
+                    Text("I'M Kinda Busy Right Now. Can We Talk Later?")
+                    Text("I Need To Go. My Mom'S Calling Me.")
+                    Text("I'M Not Sure What To Say. I'Ll Talk To You Later.")
+                    Text("I'M Not Comfortable Talking About That.")
+                    Text("I Need To Go. My Mom'S Calling Me.")
+                    Text("I Don'T Think I Should Be Sharing That.")
+                    Text("I'M Not Okay With This. Please Stop.")
+                    Text("That'S Not Okay. I'M Stepping Away.")
+                    Text("I Don'T Deserve To Be Talked To Like This.")
+                    Text("I'M Not Sure I Trust This Conversation.")
+                    Text("I Need To Think About This. Talk Later?")
+                    Text("I'M Feeling Confused. I'M Going To Step Away.")
+                    Text("I'M Not Feeling Okay. I Need To Talk To Someone.")
+                    Text("I'M Going To Take A Break And Breathe.")
                     VStack {
-                        Text("✅ Inserted deflection: ")
-                        Text("✅ Clicked send button!")
-                        Text("⚠️ Could not find a send button to click.")
-                        Text("EditText")
+                        Text("I'M Reaching Out To Someone I Trust.")
+                        Text("❌ No Active Window Found For Takeover.")
+                        Text("❌ No Input Field Found For Momma Takeover.")
+                        Text("⚠️ Failed To Insert Deflection Phrase Into Input Field.")
+                        VStack {
+                            Text("✅ Inserted Deflection: ")
+                            Text("✅ Clicked Send Button!")
+                            Text("⚠️ Could Not Find A Send Button To Click.")
+                            Text("EditText")
+                        }
+                    }
+                    VStack {
+                        Text("Send")
+                        Text("Send")
                     }
                 }
-                VStack {
-                    Text("send")
-                    Text("send")
                 }
+                .padding()
             }
             }
             .navigationTitle("Momma Takeover")

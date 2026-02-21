@@ -7,51 +7,56 @@ struct RecentDetectionsTabScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Button(action: { }) {
-                Text("Button")
-            }
-            VStack {
-                Text("SpellCheckingInspection")
-                Text("household_id")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Button(action: { }) {
+                    Text("Button")
+                }
                 VStack {
-                    Text("child_id")
-                    Text("RecentDetectionsTab")
+                    Text("SpellCheckingInspection")
+                    Text("Household Id")
                     VStack {
-                        Text("RecentDetectionsTab")
-                        Text("No recent detections found.")
+                        Text("Child Id")
                         Text("RecentDetectionsTab")
                         VStack {
                             Text("RecentDetectionsTab")
-                            Text("severity")
-                            Text("matchedPhrases")
-                            Text("category")
-                            Text("sourceApp")
+                            Text("No Recent Detections Found.")
+                            Text("RecentDetectionsTab")
                             VStack {
-                                Text("timestamp")
-                                Text("MMM dd, yyyy • h:mm a")
-                            }
-                            Text("Unknown")
-                            VStack {
-                                Text("isEscalated")
+                                Text("RecentDetectionsTab")
+                                Text("Severity")
+                                Text("MatchedPhrases")
+                                Text("Category")
+                                Text("SourceApp")
                                 VStack {
-                                    Text(" 🚨")
-                                    Text("critical")
-                                    Text("high")
-                                    Text("medium")
-                                    Text("low")
+                                    Text("Timestamp")
+                                    Text("MMM Dd, Yyyy • H:Mm A")
                                 }
-                                Button(action: { }) {
-                                    Text("Button")
+                                Text("Unknown")
+                                VStack {
+                                    Text("IsEscalated")
+                                    VStack {
+                                        Text("🚨")
+                                        Text("Critical")
+                                        Text("High")
+                                        Text("Medium")
+                                        Text("Low")
+                                    }
+                                    Button(action: { }) {
+                                        Text("Button")
+                                    }
+                                    Text("🗑️")
                                 }
-                                Text("🗑️")
                             }
+                            Text("RecentDetectionsTab")
                         }
+                        Text("Detection Deleted")
+                        Text("RecentDetectionsTab")
                         Text("RecentDetectionsTab")
                     }
-                    Text("Detection deleted")
-                    Text("RecentDetectionsTab")
-                    Text("RecentDetectionsTab")
                 }
+                }
+                .padding()
             }
             }
             .navigationTitle("Recent Detections Tab")

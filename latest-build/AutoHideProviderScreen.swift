@@ -7,24 +7,29 @@ struct AutoHideProviderScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            Text("MommaStealth")
-            VStack {
-                Text("guardian_id")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("MommaStealth")
                 VStack {
-                    Text("MommaStealth")
-                    Text("com.airnettie.mobile.child.LauncherAlias")
-                    Text("MommaStealth")
-                    Text("MommaStealth")
-                    Text("MommaStealth")
+                    Text("Guardian Id")
                     VStack {
                         Text("MommaStealth")
+                        Text("Com.Airnettie.Mobile.Child.LauncherAlias")
+                        Text("MommaStealth")
+                        Text("MommaStealth")
+                        Text("MommaStealth")
+                        VStack {
+                            Text("MommaStealth")
+                            Text("MommaStealth")
+                            Text("MommaStealth")
+                        }
                         Text("MommaStealth")
                         Text("MommaStealth")
                     }
                     Text("MommaStealth")
-                    Text("MommaStealth")
                 }
-                Text("MommaStealth")
+                }
+                .padding()
             }
             }
             .navigationTitle("Auto Hide Provider")

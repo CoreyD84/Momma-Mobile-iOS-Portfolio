@@ -7,59 +7,64 @@ struct NettieDeviceAdminReceiverScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            VStack {
-                Text("NettieDeviceAdmin")
-                Text("✅ Device Admin enabled - App is now protected from uninstallation")
-                Text("✅ Device protection activated")
-                Text("⚠️ Device Admin disabled - App can now be uninstalled")
-                Text("⚠️ Device protection deactivated")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
                 VStack {
-                    Text("⚠️ User attempting to disable Device Admin - onDisableRequested called")
-                    Text("admin_deactivation_authorized")
+                    Text("NettieDeviceAdmin")
+                    Text("✅ Device Admin Enabled - App Is Now Protected From Uninstallation")
+                    Text("✅ Device Protection Activated")
+                    Text("⚠️ Device Admin Disabled - App Can Now Be Uninstalled")
+                    Text("⚠️ Device Protection Deactivated")
                     VStack {
-                        Text("🔒 UNAUTHORIZED deactivation (cached) - attempting immediate lock")
-                        Text("🔒 Device locked immediately from onDisableRequested")
-                        Text("🔒 Device locked - guardian will be notified")
-                        Text("❌ Cannot lock device - admin not active")
+                        Text("⚠️ User Attempting To Disable Device Admin - OnDisableRequested Called")
+                        Text("Admin Deactivation Authorized")
+                        VStack {
+                            Text("🔒 UNAUTHORIZED Deactivation (Cached) - Attempting Immediate Lock")
+                            Text("🔒 Device Locked Immediately From OnDisableRequested")
+                            Text("🔒 Device Locked - Guardian Will Be Notified")
+                            Text("❌ Cannot Lock Device - Admin Not Active")
+                        }
+                        Text("✅ Deactivation Authorized (Cached)")
                     }
-                    Text("✅ Deactivation authorized (cached)")
+                    Text("🚨 CRITICAL WARNING 🚨\\N\\N")
+                    Text("⚠️ UNAUTHORIZED ATTEMPT DETECTED ⚠️\\N\\N")
+                    Text("Disabling Device Admin Requires Guardian Authorization.\\N\\N")
+                    Text("If You Proceed Without Authorization:\\N")
+                    Text("• This Device Will Be LOCKED Immediately\\N")
+                    Text("• Your Guardian Will Be Notified\\N")
+                    Text("• You Will Need The Guardian Password To Unlock\\N\\N")
+                    VStack {
+                        Text("Only Proceed If Your Guardian Has Authorized This Action!")
+                        Text("🔒 LOCKING DEVICE NOW!")
+                        Text("🔒 Device Locked - Guardian Password Required")
+                        Text("❌ Cannot Lock Device - Admin Not Active")
+                        Text("Admin Deactivation Authorized")
+                    }
+                    Text("Household Id")
+                    Text("Household Id")
+                    VStack {
+                        Text("Device Nickname")
+                        Text("Severity")
+                        Text("Message")
+                        Text("Timestamp")
+                        Text("Type")
+                        Text("ActionRequired")
+                        Text("✅ Alerted Guardian Of Unauthorized Admin Deactivation")
+                        Text("✅ Set Uninstall Imminent Flag")
+                    }
+                    Text("Device Nickname")
+                    Text("Severity")
+                    Text("Message")
+                    Text("Timestamp")
+                    Text("Type")
+                    Text("ActionRequired")
+                    Text("✅ Alerted Guardian Of Unauthorized Deactivation Attempt")
+                    Text("Password Changed")
+                    Text("Password Failed")
+                    Text("Password Succeeded")
                 }
-                Text("🚨 CRITICAL WARNING 🚨\\n\\n")
-                Text("⚠️ UNAUTHORIZED ATTEMPT DETECTED ⚠️\\n\\n")
-                Text("Disabling Device Admin requires guardian authorization.\\n\\n")
-                Text("If you proceed without authorization:\\n")
-                Text("• This device will be LOCKED immediately\\n")
-                Text("• Your guardian will be notified\\n")
-                Text("• You will need the guardian password to unlock\\n\\n")
-                VStack {
-                    Text("Only proceed if your guardian has authorized this action!")
-                    Text("🔒 LOCKING DEVICE NOW!")
-                    Text("🔒 Device locked - Guardian password required")
-                    Text("❌ Cannot lock device - admin not active")
-                    Text("admin_deactivation_authorized")
                 }
-                Text("household_id")
-                Text("household_id")
-                VStack {
-                    Text("device_nickname")
-                    Text("severity")
-                    Text("message")
-                    Text("timestamp")
-                    Text("type")
-                    Text("actionRequired")
-                    Text("✅ Alerted guardian of unauthorized admin deactivation")
-                    Text("✅ Set uninstall_imminent flag")
-                }
-                Text("device_nickname")
-                Text("severity")
-                Text("message")
-                Text("timestamp")
-                Text("type")
-                Text("actionRequired")
-                Text("✅ Alerted guardian of unauthorized deactivation attempt")
-                Text("Password changed")
-                Text("Password failed")
-                Text("Password succeeded")
+                .padding()
             }
             }
             .navigationTitle("Nettie Device Admin Receiver")
