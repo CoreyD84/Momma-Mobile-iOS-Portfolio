@@ -4,7 +4,8 @@ import SwiftUI
 @MainActor
 final class MainViewModel: ObservableObject {
     @Published var state: MainState = .initial
-    @Published var notificationRepository: NotificationRepository? = nil
+    @Published var prefs: SharedPreferences? = nil
+
 
     func onEvent(_ event: MainEvent) {
         switch event {
