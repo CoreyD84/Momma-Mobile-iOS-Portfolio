@@ -7,13 +7,7 @@ struct ColorScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            ScrollView {
-                VStack(alignment: .leading, spacing: 12) {
-                VStack {
-                }
-                }
-                .padding()
-            }
+            EmptyView()
             }
             .navigationTitle("Color")
             .foregroundStyle(CodexiaTheme.label)

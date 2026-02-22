@@ -1,260 +1,89 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    @StateObject private var viewModel = HomeViewModel()
+    private let screenNames = ["App Scope Toggle","Auto Hide Provider","Blocked App","Blocked Website","Boot Receiver","Child Link","Child Selector","Color","Compose Platform Control","Consent Management","Consent Modal","Consent Overview","Consent Overview Tab","Emotional Pattern Loader","Emotional Radar","Example Instrumented Test","Example Unit Test","Firebase Extensions","Firebase Logger","Firebase Sync","Flagged Message Adapter","Flagged Messages","Flagged Messages Tab","Freeze Reflex","Freeze Reflex Tab","Freeze Reflex Warning","Generate Link Qr","Guardian Dashboard","Guardian Tab Adapter","Harmful Patterns","Linked Children","Location Status","Location Sync","Login","Main","Main Application","Mascot Mood","Message Notification Listener","Message Scanner","Message Scanner Tab","Momma Device Admin","Momma Mobile Theme","Momma Takeover","Nettie Device Admin Receiver","Online Safety","Online Safety Tab","Platform Control","Platform Control Receiver","Platform Control Tab","Q R Utils","Recent Detections Activities","Recent Detections","Recent Detections Tab","Safe Scope","Safe Scope Toggle","Scanner Globals","Service Starter","Setup","Sms Compose","Sms Detections","Sms Detections Tab","Sms Inbox","Sms Receiver","Subscription Expired","Theme","Type","Vpn Permission"];
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                CodexiaTheme.background.ignoresSafeArea()
-                content
+            List(screenNames, id: \.self) { name in
+                NavigationLink(name, destination: destination(for: name))
             }
-            .navigationTitle("Home")
-            .foregroundStyle(CodexiaTheme.label)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button { viewModel.onEvent(.refresh) } label: {
-                        Image(systemName: "arrow.clockwise")
-                    }
-                }
-            }
+            .navigationTitle("Dashboard")
         }
-        .onAppear { viewModel.onEvent(.onAppear) }
     }
 
     @ViewBuilder
-    private var content: some View {
-        switch viewModel.uiState ?? .loading {
-        case .loading:
-            ProgressView()
-                .progressViewStyle(.circular)
-                .padding()
-        case .error(let message):
-            VStack(spacing: 12) {
-                Text(message).font(.headline)
-                Button("Retry") { viewModel.onEvent(.refresh) }
-            }
-            .padding()
-        case let .success(currentUser, conversations, activeMatch, matchInProgress, hasSecondChance, _, pendingInvitationsCount):
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    welcomeCard(name: currentUser.displayName, pendingInvites: pendingInvitationsCount)
-
-                    if hasSecondChance {
-                        secondChanceCard()
-                    }
-
-                    if let match = activeMatch ?? matchInProgress {
-                        activeMatchCard(match: match)
-                    }
-
-                    if !conversations.isEmpty {
-                        Text("Conversations")
-                            .font(.title3)
-                            .bold()
-                            .padding(.horizontal, 12)
-                        VStack(spacing: 12) {
-                            ForEach(conversations, id: \.id) { item in
-                                conversationRow(item: item)
-                            }
-                        }
-                    } else {
-                        emptyStateCard(currentUserId: currentUser.id)
-                    }
-                }
-                .padding()
-            }
-        }
-    }
-
-    private func welcomeCard(name: String, pendingInvites: Int) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text("SoulLink")
-                    .font(.largeTitle)
-                    .bold()
-                Spacer()
-                if pendingInvites > 0 {
-                    NavigationLink {
-                        NotificationsScreen()
-                    } label: {
-                        HStack {
-                            Image(systemName: "bell.fill")
-                            Text("\(pendingInvites)")
-                                .font(.caption)
-                        }
-                    }
-                }
-            }
-            Text("Welcome back, \(name)")
-                .font(.title3)
-                .foregroundColor(.secondary)
-            Text("Your journey to meaningful connection continues.")
-                .font(.body)
-        }
-        .padding()
-        .background(.thinMaterial)
-        .cornerRadius(12)
-    }
-
-    private func secondChanceCard() -> some View {
-        NavigationLink {
-            SecondChanceScreen()
-        } label: {
-            HStack(spacing: 12) {
-                Text("⚠️")
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Second Chance Available").font(.headline)
-                    Text("Your match didn't work out. Start a new search at no cost.")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
-                Spacer()
-                Image(systemName: "chevron.right")
-            }
-            .padding()
-            .background(.ultraThickMaterial)
-            .cornerRadius(12)
-        }
-    }
-
-    private func activeMatchCard(match: Match) -> some View {
-        let title: String
-        let description: String
-
-        switch match.phase {
-        case .tHE_THREE:
-            title = "The Three"
-            description = "Review your three potential matches"
-        case .qUIZ, .qUIZ_PHASE:
-            title = "Quiz Challenge"
-            description = "Predict how your matches would respond"
-        case .fINAL_SELECTION:
-            title = "Final Selection"
-            description = "SoulLink is making the final choice"
-        case .aWAITING_PARTNER:
-            title = "Awaiting Partner"
-            description = "Waiting for your match to respond"
-        case .mATCHED:
-            title = "🎉 You're Matched!"
-            description = "Tap to start chatting with your soulmate"
+    private func destination(for name: String) -> some View {
+        switch name {
+        case "App Scope Toggle": AppScopeToggleScreen()
+        case "Auto Hide Provider": AutoHideProviderScreen()
+        case "Blocked App": BlockedAppScreen()
+        case "Blocked Website": BlockedWebsiteScreen()
+        case "Boot Receiver": BootReceiverScreen()
+        case "Child Link": ChildLinkScreen()
+        case "Child Selector": ChildSelectorScreen()
+        case "Color": ColorScreen()
+        case "Compose Platform Control": ComposePlatformControlScreen()
+        case "Consent Management": ConsentManagementScreen()
+        case "Consent Modal": ConsentModalScreen()
+        case "Consent Overview": ConsentOverviewScreen()
+        case "Consent Overview Tab": ConsentOverviewTabScreen()
+        case "Emotional Pattern Loader": EmotionalPatternLoaderScreen()
+        case "Emotional Radar": EmotionalRadarScreen()
+        case "Example Instrumented Test": ExampleInstrumentedTestScreen()
+        case "Example Unit Test": ExampleUnitTestScreen()
+        case "Firebase Extensions": FirebaseExtensionsScreen()
+        case "Firebase Logger": FirebaseLoggerScreen()
+        case "Firebase Sync": FirebaseSyncScreen()
+        case "Flagged Message Adapter": FlaggedMessageAdapterScreen()
+        case "Flagged Messages": FlaggedMessagesScreen()
+        case "Flagged Messages Tab": FlaggedMessagesTabScreen()
+        case "Freeze Reflex": FreezeReflexScreen()
+        case "Freeze Reflex Tab": FreezeReflexTabScreen()
+        case "Freeze Reflex Warning": FreezeReflexWarningScreen()
+        case "Generate Link Qr": GenerateLinkQrScreen()
+        case "Guardian Dashboard": GuardianDashboardScreen()
+        case "Guardian Tab Adapter": GuardianTabAdapterScreen()
+        case "Harmful Patterns": HarmfulPatternsScreen()
+        case "Linked Children": LinkedChildrenScreen()
+        case "Location Status": LocationStatusScreen()
+        case "Location Sync": LocationSyncScreen()
+        case "Login": LoginScreen()
+        case "Main": MainScreen()
+        case "Main Application": MainApplicationScreen()
+        case "Mascot Mood": MascotMoodScreen()
+        case "Message Notification Listener": MessageNotificationListenerScreen()
+        case "Message Scanner": MessageScannerScreen()
+        case "Message Scanner Tab": MessageScannerTabScreen()
+        case "Momma Device Admin": MommaDeviceAdminScreen()
+        case "Momma Mobile Theme": MommaMobileThemeScreen()
+        case "Momma Takeover": MommaTakeoverScreen()
+        case "Nettie Device Admin Receiver": NettieDeviceAdminReceiverScreen()
+        case "Online Safety": OnlineSafetyScreen()
+        case "Online Safety Tab": OnlineSafetyTabScreen()
+        case "Platform Control": PlatformControlScreen()
+        case "Platform Control Receiver": PlatformControlReceiverScreen()
+        case "Platform Control Tab": PlatformControlTabScreen()
+        case "Q R Utils": QRUtilsScreen()
+        case "Recent Detections Activities": RecentDetectionsActivitiesScreen()
+        case "Recent Detections": RecentDetectionsScreen()
+        case "Recent Detections Tab": RecentDetectionsTabScreen()
+        case "Safe Scope": SafeScopeScreen()
+        case "Safe Scope Toggle": SafeScopeToggleScreen()
+        case "Scanner Globals": ScannerGlobalsScreen()
+        case "Service Starter": ServiceStarterScreen()
+        case "Setup": SetupScreen()
+        case "Sms Compose": SmsComposeScreen()
+        case "Sms Detections": SmsDetectionsScreen()
+        case "Sms Detections Tab": SmsDetectionsTabScreen()
+        case "Sms Inbox": SmsInboxScreen()
+        case "Sms Receiver": SmsReceiverScreen()
+        case "Subscription Expired": SubscriptionExpiredScreen()
+        case "Theme": ThemeScreen()
+        case "Type": TypeScreen()
+        case "Vpn Permission": VpnPermissionScreen()
         default:
-            title = "Match in progress"
-            description = "Stay tuned..."
-        }
-
-        return NavigationLink {
-            destination(for: match)
-        } label: {
-            HStack(alignment: .center, spacing: 12) {
-                Text("✨")
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(title).font(.headline)
-                    Text(description)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
-                Spacer()
-                Image(systemName: "chevron.right")
-            }
-            .padding()
-            .background(.ultraThinMaterial)
-            .cornerRadius(12)
+            Text(name)
         }
     }
-
-    private func conversationRow(item: ConversationItem) -> some View {
-        NavigationLink {
-            ChatScreen()
-        } label: {
-            HStack(spacing: 12) {
-                Circle()
-                    .fill(Color.accentColor.opacity(0.2))
-                    .frame(width: 44, height: 44)
-                    .overlay(Text(String(item.partner.displayName.prefix(1))).bold())
-
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack {
-                        Text(item.partner.displayName).font(.headline)
-                        Spacer()
-                        if let timestamp = item.conversation.lastMessageTime {
-                            Text(Self.format(timestamp))
-                                .font(.caption)
-                                .foregroundColor(.secondary)
-                        }
-                    }
-                    Text(item.conversation.lastMessage)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .lineLimit(1)
-                }
-
-                if item.unreadCount > 0 {
-                    Text("\(item.unreadCount)")
-                        .font(.caption)
-                        .padding(6)
-                        .background(Circle().fill(Color.accentColor))
-                        .foregroundColor(.white)
-                }
-            }
-            .padding()
-            .background(.thinMaterial)
-            .cornerRadius(12)
-        }
-    }
-
-    private func emptyStateCard(currentUserId: String) -> some View {
-        VStack(spacing: 12) {
-            Text("Ready to Find Your Match?")
-                .font(.headline)
-            Text("Your profile is live! Start a search or browse members.")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-            NavigationLink("Find My Match") { PaymentScreen() }
-                .buttonStyle(.borderedProminent)
-
-            NavigationLink("Browse Members") { BrowseMembersScreen() }
-                .buttonStyle(.bordered)
-
-            NavigationLink("Update Questionnaire") { QuestionnaireScreen() }
-                .buttonStyle(.bordered)
-        }
-        .padding()
-        .frame(maxWidth: .infinity)
-        .background(.thinMaterial)
-        .cornerRadius(12)
-    }
-
-    @ViewBuilder
-    private func destination(for match: Match) -> some View {
-        switch match.phase {
-        case .tHE_THREE: TheThreeScreen()
-        case .qUIZ, .qUIZ_PHASE: QuizScreen()
-        case .fINAL_SELECTION: FinalSelectionScreen()
-        case .aWAITING_PARTNER: AwaitingPartnerScreen()
-        case .mATCHED: ChatScreen()
-        default: EmptyView()
-        }
-    }
-
-    private static func format(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .short
-        return formatter.string(from: date)
-    }
-}
-
-enum HomeDestination: Hashable {
-    case theThree
-    case quiz
-    case finalSelection
-    case awaitingPartner
-    case browseMembers
-    case questionnaire
-    case chat
-    case payment
-    case secondChance
-    case notifications
 }
