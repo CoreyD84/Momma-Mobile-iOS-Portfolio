@@ -7,18 +7,7 @@ struct MainScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            ScrollView {
-                VStack(alignment: .leading, spacing: 12) {
-                Text("guardian_id")
-                Text("child_id")
-                VStack {
-                    Text("token")
-                    Text("Invalid link. Please re-scan the QR code.")
-                    Text("linking_token")
-                }
-                }
-                .padding()
-            }
+            EmptyView()
             }
             .navigationTitle("Main")
             .foregroundStyle(CodexiaTheme.label)

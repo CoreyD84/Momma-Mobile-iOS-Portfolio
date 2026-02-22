@@ -1,0 +1,105 @@
+import SwiftUI
+
+struct SoulLinkPersonalityScreen: View {
+    @StateObject private var viewModel = SoulLinkPersonalityViewModel()
+
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("I'm not an algorithm. I'm not a swipe. I'm a guide who reads patterns in the soul.\\n\\n")
+                Text("the way you repair, the way you dream.\\n\\n")
+                Text("This isn't about finding someone perfect. It's about finding someone aligned.")
+                Text("Let's begin.\\n\\n")
+                Text("I'll ask about five dimensions of your inner world:\\n")
+                Text("• What you value\\n")
+                Text("• How you handle conflict\\n")
+                Text("• Where your future is headed\\n")
+                Text("• How you communicate\\n")
+                Text("• What you believe about love\\n\\n")
+                Text("Answer honestly. I can sense contradictions, and I'll ask you about them—not to judge, ")
+                Text("but to understand.")
+                Text("First, let's talk about what matters to you.\\n\\n")
+                Text("Not what you think should matter. What actually pulls at your heart when you're alone at night.")
+                Text("Now, the hard part: conflict.\\n\\n")
+                Text("Everyone fights. Everyone hurts each other. The question is: how do you repair? ")
+                Text("How do you hold pain? How do you forgive?")
+                Text("Let's look ahead.\\n\\n")
+                Text("Where is your life going? Not where it 'should' go—where it's actually headed. ")
+                Text("Your dreams, your priorities, your non-negotiables.")
+                Text("How do you speak your truth?\\n\\n")
+                Text("Some people need words. Some need touch. Some need silence. ")
+                Text("I need to know how you give and receive love.")
+                Text("Finally, the deepest layer: what you believe.\\n\\n")
+                Text("About fate. About change. About whether love is work or magic. ")
+                VStack {
+                    Text("These beliefs shape everything.")
+                    Text("You're deeply family-oriented. Relationships are your foundation.")
+                    Text("You value independence. You need space to be yourself.")
+                    Text("You prioritize emotional safety over excitement. You protect your peace.")
+                    Text("You forgive quickly, but you don't forget easily.")
+                    Text("You hold onto hurt. Repair takes time for you.")
+                    Text("Your career drives you. A partner needs to understand that ambition.")
+                }
+                Text("\\n\\n")
+                Text("Now I'm ready to search for the three souls most aligned with you.")
+                Text("I'm ready to search.\\n\\n")
+                Text("If I fail you—if your match declines, disappears, or never clicks—")
+                Text("I'll search again at no cost.\\n\\n")
+                Text("This is my promise: I won't give up on you.")
+                Text("I've found them.\\n\\n")
+                Text("One of these three is not your path. Trust your intuition. Choose quickly.")
+                Text("Now I want to see if you feel your partners accurately.\\n\\n")
+                Text("I'll ask you to predict how they would respond in certain situations. ")
+                Text("This isn't a test of knowledge—it's a test of emotional resonance.\\n\\n")
+                VStack {
+                    Text("Can you sense them?")
+                    Text("You felt that correctly. You're reading their patterns.")
+                    Text("You misread that. It's okay—this is where you learn about each other.")
+                }
+                Text("I've weighed everything:\\n")
+                Text("• Your core compatibility\\n")
+                Text("• How well you understand each other\\n")
+                Text("• The patterns I see in both your souls\\n\\n")
+                Text("I've made my choice.")
+                Text("This is the moment everything has been building toward.\\n\\n")
+                Text("You've both chosen each other. The algorithms aligned. The quiz revealed understanding. ")
+                Text("And now, two souls stand at the threshold of something beautiful.\\n\\n")
+                Text("Your journey together begins now. Be patient. Be honest. Be brave.\\n\\n")
+                Text("I'll be watching over your connection.")
+                Text("Here's why:\\n\\n")
+                Text("What I see is two people who can grow together without losing themselves.\\n\\n")
+                Text("I'm sending them a message now. They're free to accept or decline.")
+                Text("SoulLink has identified a high-alignment match for you.\\n\\n")
+                Text("You're free to accept or decline. There's no pressure—only possibility.")
+                Text("Your connection is now open. I'll stay in the background, watching for signs of ghosting ")
+                Text("or misalignment.\\n\\n")
+                Text("But for now: talk. Feel. See if this is real.")
+                Text("They declined.\\n\\n")
+                Text("This connection didn't root. That's not failure—it's information.\\n\\n")
+                Text("You're not the same person after disappointment.")
+                Text("I've noticed silence.\\n\\n")
+                Text("This match has gone cold. That's not your fault—sometimes people disappear.\\n\\n")
+                Text("I'm activating your second chance guarantee. We'll search again, together.")
+                Text("Let's try again.\\n\\n")
+                Text("Heartbreak changes us. Disappointment shifts our priorities.\\n\\n")
+                Text("Answer these questions again—honestly, from where you are now.")
+                Text("I've adjusted my search based on what happened:\\n\\n")
+                Text("This time, I'll weigh things differently.")
+                Text("I noticed something.\\n\\n")
+                Text("Earlier you said: ")
+                Text("But later you said: ")
+                Text("That's not wrong—it might mean you're still figuring out your patterns. ")
+                Text("I'll treat this as a growth area, not a flaw.")
+                }
+                .padding()
+            }
+            }
+            .navigationTitle("Soul Link Personality")
+            .foregroundStyle(CodexiaTheme.label)
+        }
+        .onAppear { viewModel.onEvent(SoulLinkPersonalityEvent.onAppear) }
+    }
+}
