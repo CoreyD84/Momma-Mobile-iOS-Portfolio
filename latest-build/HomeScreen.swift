@@ -2,10 +2,9 @@ import SwiftUI
 
 struct HomeScreen: View {
     @StateObject private var viewModel = HomeViewModel()
-    @State private var path: [HomeDestination] = []
 
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
                 content
@@ -17,20 +16,6 @@ struct HomeScreen: View {
                     Button { viewModel.onEvent(.refresh) } label: {
                         Image(systemName: "arrow.clockwise")
                     }
-                }
-            }
-            .navigationDestination(for: HomeDestination.self) { destination in
-                switch destination {
-                case .theThree: TheThreeScreen()
-                case .quiz: QuizScreen()
-                case .finalSelection: FinalSelectionScreen()
-                case .awaitingPartner: AwaitingPartnerScreen()
-                case .browseMembers: BrowseMembersScreen()
-                case .questionnaire: QuestionnaireScreen()
-                case .chat: ChatScreen()
-                case .payment: PaymentScreen()
-                case .secondChance: SecondChanceScreen()
-                case .notifications: NotificationsScreen()
                 }
             }
         }
@@ -90,8 +75,8 @@ struct HomeScreen: View {
                     .bold()
                 Spacer()
                 if pendingInvites > 0 {
-                    Button {
-                        path.append(.notifications)
+                    NavigationLink {
+                        NotificationsScreen()
                     } label: {
                         HStack {
                             Image(systemName: "bell.fill")
@@ -113,8 +98,8 @@ struct HomeScreen: View {
     }
 
     private func secondChanceCard() -> some View {
-        Button {
-            path.append(.secondChance)
+        NavigationLink {
+            SecondChanceScreen()
         } label: {
             HStack(spacing: 12) {
                 Text("⚠️")
@@ -134,17 +119,6 @@ struct HomeScreen: View {
     }
 
     private func activeMatchCard(match: Match) -> some View {
-        let destination: HomeDestination? = {
-            switch match.phase {
-            case .tHE_THREE: return .theThree
-            case .qUIZ, .qUIZ_PHASE: return .quiz
-            case .fINAL_SELECTION: return .finalSelection
-            case .aWAITING_PARTNER: return .awaitingPartner
-            case .mATCHED: return .chat
-            default: return nil
-            }
-        }()
-
         let title: String
         let description: String
 
@@ -169,14 +143,8 @@ struct HomeScreen: View {
             description = "Stay tuned..."
         }
 
-        return Button {
-            if let destination {
-                if destination == .chat {
-                    path.append(.chat)
-                } else {
-                    path.append(destination)
-                }
-            }
+        return NavigationLink {
+            destination(for: match)
         } label: {
             HStack(alignment: .center, spacing: 12) {
                 Text("✨")
@@ -196,8 +164,8 @@ struct HomeScreen: View {
     }
 
     private func conversationRow(item: ConversationItem) -> some View {
-        Button {
-            path.append(.chat)
+        NavigationLink {
+            ChatScreen()
         } label: {
             HStack(spacing: 12) {
                 Circle()
@@ -243,25 +211,31 @@ struct HomeScreen: View {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
-            Button("Find My Match") {
-                path.append(.payment)
-            }
-            .buttonStyle(.borderedProminent)
+            NavigationLink("Find My Match") { PaymentScreen() }
+                .buttonStyle(.borderedProminent)
 
-            Button("Browse Members") {
-                path.append(.browseMembers)
-            }
-            .buttonStyle(.bordered)
+            NavigationLink("Browse Members") { BrowseMembersScreen() }
+                .buttonStyle(.bordered)
 
-            Button("Update Questionnaire") {
-                path.append(.questionnaire)
-            }
-            .buttonStyle(.bordered)
+            NavigationLink("Update Questionnaire") { QuestionnaireScreen() }
+                .buttonStyle(.bordered)
         }
         .padding()
         .frame(maxWidth: .infinity)
         .background(.thinMaterial)
         .cornerRadius(12)
+    }
+
+    @ViewBuilder
+    private func destination(for match: Match) -> some View {
+        switch match.phase {
+        case .tHE_THREE: TheThreeScreen()
+        case .qUIZ, .qUIZ_PHASE: QuizScreen()
+        case .fINAL_SELECTION: FinalSelectionScreen()
+        case .aWAITING_PARTNER: AwaitingPartnerScreen()
+        case .mATCHED: ChatScreen()
+        default: EmptyView()
+        }
     }
 
     private static func format(_ date: Date) -> String {
