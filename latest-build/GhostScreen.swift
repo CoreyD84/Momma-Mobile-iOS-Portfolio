@@ -10,6 +10,17 @@ struct GhostScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
+                    VStack {
+                    }
+                    VStack {
+                    }
+                    Button(action: { }) {
+                        Text("Button")
+                    }
+                    Button(action: { }) {
+                        VStack {
+                        }
+                    }
                 }
                 }
                 .padding()
