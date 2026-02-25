@@ -9,7 +9,7 @@ struct GhostCoreScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("Divide by zero in GF(256)")
+                Text("splitByte")
                 }
                 .padding()
             }

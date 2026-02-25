@@ -9,7 +9,7 @@ struct GhostShieldScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("PBKDF2WithHmacSHA256")
+                Text("authenticateAndDerive")
                 }
                 .padding()
             }

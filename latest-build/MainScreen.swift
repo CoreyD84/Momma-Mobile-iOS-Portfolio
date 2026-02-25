@@ -7,7 +7,12 @@ struct MainScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            EmptyView()
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("MainActivity")
+                }
+                .padding()
+            }
             }
             .navigationTitle("Main")
             .foregroundStyle(CodexiaTheme.label)

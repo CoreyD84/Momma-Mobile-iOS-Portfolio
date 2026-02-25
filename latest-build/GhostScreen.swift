@@ -11,20 +11,6 @@ struct GhostScreen: View {
                 VStack(alignment: .leading, spacing: 12) {
                 VStack {
                 }
-                VStack {
-                }
-                VStack {
-                }
-                Button(action: { }) {
-                    Text("target_photo.jpg")
-                }
-                VStack {
-                }
-                Button(action: { }) {
-                    Text("pass")
-                }
-                VStack {
-                }
                 }
                 .padding()
             }
