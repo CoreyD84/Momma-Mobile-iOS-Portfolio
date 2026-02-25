@@ -9,12 +9,14 @@ struct MainScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("guardian_id")
-                Text("child_id")
+                Text("--- 👻 GHOST KEEPER: SECURE VAULT 👻 ---")
+                Text("Set Master Password for this session: ")
+                Text("target_photo.jpg")
+                Text("[!] Original image is GHOSTED. Data no longer exists in plaintext.")
+                Text("\\n--- RECONSTRUCTION MODE ---")
                 VStack {
-                    Text("token")
-                    Text("Invalid link. Please re-scan the QR code.")
-                    Text("linking_token")
+                    Text("Enter Master Password to resurrect: ")
+                    Text("[*] Passwords match. Aligning polynomial via GhostShield...")
                 }
                 }
                 .padding()
