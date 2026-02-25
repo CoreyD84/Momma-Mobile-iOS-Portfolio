@@ -10,14 +10,18 @@ struct MainScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                 Text("--- 👻 GHOST KEEPER: SECURE VAULT 👻 ---")
-                Text("Set Master Password for this session: ")
-                Text("target_photo.jpg")
-                Text("[!] Original image is GHOSTED. Data no longer exists in plaintext.")
-                Text("\\n--- RECONSTRUCTION MODE ---")
+                TextField("USER_INPUT_REQUIRED", text: .constant(""))
                 VStack {
-                    Text("Enter Master Password to resurrect: ")
-                    Text("[*] Passwords match. Aligning polynomial via GhostShield...")
+                    Text("[+] Opening Universal File Picker...")
+                    Text("[-] Operation cancelled: No file selected.")
                 }
+                Text("[!] Data is GHOSTED. Original plaintext destroyed.")
+                VStack {
+                    Text("\\n--- RECONSTRUCTION MODE ---")
+                    Text("[*] Identity verified. Aligning polynomial via GhostShield...")
+                    Text("CRITICAL FAILURE: Password still incorrect or shards corrupted.")
+                }
+                Text("target_photo.jpg")
                 }
                 .padding()
             }

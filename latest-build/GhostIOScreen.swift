@@ -7,7 +7,12 @@ struct GhostIOScreen: View {
         NavigationStack {
             ZStack {
                 CodexiaTheme.background.ignoresSafeArea()
-            EmptyView()
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                Text("USER_DOCUMENTS_DIR")
+                }
+                .padding()
+            }
             }
             .navigationTitle("Ghost I O")
             .foregroundStyle(CodexiaTheme.label)
