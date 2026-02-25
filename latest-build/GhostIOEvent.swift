@@ -1,6 +1,2 @@
 import Foundation
-
-enum GhostIOEvent: Equatable {
-    case onAppear
-    case refresh
-}
+enum GhostIOEvent { case dummy }

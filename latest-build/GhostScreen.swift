@@ -6,26 +6,29 @@ struct GhostScreen: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                CodexiaTheme.background.ignoresSafeArea()
-            ScrollView {
-                VStack(alignment: .leading, spacing: 12) {
+                Color(UIColor.systemBackground).ignoresSafeArea()
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
                 VStack {
-                    Text("TEXT")
-                    Text("TEXT")
-                    Button(action: { }) {
+                    Text("")
+                    Text("")
+                    Button(action: {
+                        /* TODO: Wire Action */
+                    }) {
                         Text("Import File to Vault")
                     }
-                    Button(action: { }) {
+                    Button(action: {
+                        /* TODO: Wire Action */
+                    }) {
                         Text("Resurrect Data")
                     }
                 }
+
+                    }
+                    .padding()
                 }
-                .padding()
-            }
             }
             .navigationTitle("Ghost")
-            .foregroundStyle(CodexiaTheme.label)
         }
-        .onAppear { viewModel.onEvent(GhostEvent.onAppear) }
     }
 }

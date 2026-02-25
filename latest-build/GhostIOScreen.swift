@@ -6,17 +6,16 @@ struct GhostIOScreen: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                CodexiaTheme.background.ignoresSafeArea()
-            ScrollView {
-                VStack(alignment: .leading, spacing: 12) {
+                Color(UIColor.systemBackground).ignoresSafeArea()
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
                 Text("getSafePath")
+
+                    }
+                    .padding()
                 }
-                .padding()
             }
-            }
-            .navigationTitle("Ghost I O")
-            .foregroundStyle(CodexiaTheme.label)
+            .navigationTitle("GhostIO")
         }
-        .onAppear { viewModel.onEvent(GhostIOEvent.onAppear) }
     }
 }
