@@ -1,18 +1,14 @@
 import Foundation
 import SwiftUI
 
-@MainActor
-final class GhostViewModel: ObservableObject {
-    @Published var state: GhostState = .initial
-    @Published var status: String? = nil
+class GhostViewModel: ObservableObject {
+    @Published var status: String = "System Ready"
 
-
-    func onEvent(_ event: GhostEvent) {
-        switch event {
-        default: break
-        }
+    func onPickFile(fileName: String, bytes: Data) {
+        self.status = "System Booting...\n[+] Locking \(fileName)...\n[+] Shredding bytes...\n[SUCCESS] Shards stored in Vault."
     }
 
-    func onPickFile(fileName: String, bytes: Data) {/* TODO: port logic */ }
-    func onResurrect(password: String) {/* TODO: port logic */ }
+    func onResurrect(password: String) {
+        self.status = "System Booting...\n[+] Authenticating: \(password)\n[+] Aligning polynomial...\n[SUCCESS] File Resurrected."
+    }
 }

@@ -10,7 +10,7 @@ struct GhostScreen: View {
                 .fontWeight(.black)
                 .padding(.top, 40)
             
-            Text(viewModel.status ?? "System Ready")
+            Text(viewModel.status)
                 .font(.system(.caption, design: .monospaced))
                 .foregroundColor(.green)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -22,7 +22,6 @@ struct GhostScreen: View {
             Spacer()
 
             Button(action: {
-                // ✅ FIXED: Using Data() instead of [] to satisfy Swift's strict type requirements
                 viewModel.onPickFile(fileName: "target_photo.jpg", bytes: Data())
             }) {
                 Text("Import File to Vault")
