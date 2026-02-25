@@ -16,7 +16,7 @@ struct GhostScreen: View {
                 VStack {
                 }
                 Button(action: { }) {
-                    Text("Button")
+                    Text("target_photo.jpg")
                 }
                 VStack {
                 }
