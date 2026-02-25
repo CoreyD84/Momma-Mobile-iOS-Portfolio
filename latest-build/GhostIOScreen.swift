@@ -9,8 +9,7 @@ struct GhostIOScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("[IO] Error: File not found at Sandbox/Documents")
-                Text("Missing shard: Local/Shard_Storage")
+                Text("getSafePath")
                 }
                 .padding()
             }

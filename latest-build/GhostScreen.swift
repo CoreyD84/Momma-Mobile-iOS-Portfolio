@@ -4,50 +4,28 @@ struct GhostScreen: View {
     @StateObject private var viewModel = GhostViewModel()
 
     var body: some View {
-        VStack(spacing: 24) {
-            Text("--- 👻 GHOST KEEPER 👻 ---")
-                .font(.title2)
-                .fontWeight(.black)
-                .padding(.top, 40)
-            
-            Text(viewModel.status)
-                .font(.system(.caption, design: .monospaced))
-                .foregroundColor(.green)
-                .frame(maxWidth: .infinity, alignment: .leading)
+        NavigationStack {
+            ZStack {
+                CodexiaTheme.background.ignoresSafeArea()
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                VStack {
+                    Text("TEXT")
+                    Text("TEXT")
+                    Button(action: { }) {
+                        Text("Import File to Vault")
+                    }
+                    Button(action: { }) {
+                        Text("Resurrect Data")
+                    }
+                }
+                }
                 .padding()
-                .background(Color.black)
-                .cornerRadius(8)
-                .padding(.horizontal)
-
-            Spacer()
-
-            Button(action: {
-                viewModel.onPickFile(fileName: "target_photo.jpg", bytes: Data())
-            }) {
-                Text("Import File to Vault")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(12)
             }
-            .padding(.horizontal)
-
-            Button(action: {
-                viewModel.onResurrect(password: "pass")
-            }) {
-                Text("Resurrect Data (Default: pass)")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.red)
-                    .cornerRadius(12)
             }
-            .padding(.horizontal)
-            .padding(.bottom, 40)
+            .navigationTitle("Ghost")
+            .foregroundStyle(CodexiaTheme.label)
         }
-        .navigationTitle("Ghost")
+        .onAppear { viewModel.onEvent(GhostEvent.onAppear) }
     }
 }
