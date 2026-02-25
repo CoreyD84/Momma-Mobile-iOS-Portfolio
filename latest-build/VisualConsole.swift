@@ -1,0 +1,2 @@
+import SwiftUI
+struct VisualConsoleView: View { @State private var logs = ["System Booting...", "I/O Sandbox initialized"]; var body: some View { ScrollView { VStack(alignment: .leading) { ForEach(logs, id: \.self) { log in Text(log).font(.system(size: 10, design: .monospaced)).foregroundColor(.green) } } }.frame(height: 80).background(Color.black.opacity(0.8)).cornerRadius(8).padding(.horizontal) } }

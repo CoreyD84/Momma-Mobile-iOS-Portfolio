@@ -15,10 +15,15 @@ struct MainScreen: View {
                     Text("[+] Opening Universal File Picker...")
                     Text("[-] Operation cancelled: No file selected.")
                 }
+                Text("\\n[+] Locking ${selectedFile.name} with Hardware-grade Entropy...")
                 Text("[!] Data is GHOSTED. Original plaintext destroyed.")
                 VStack {
                     Text("\\n--- RECONSTRUCTION MODE ---")
+                    Text("$shardPrefix.shard1.ghost")
+                    Text("$shardPrefix.shard3.ghost")
+                    Text("$shardPrefix.shard5.ghost")
                     Text("[*] Identity verified. Aligning polynomial via GhostShield...")
+                    Text("GHOST_RECOVERED_${selectedFile.name}")
                     Text("CRITICAL FAILURE: Password still incorrect or shards corrupted.")
                 }
                 Text("target_photo.jpg")

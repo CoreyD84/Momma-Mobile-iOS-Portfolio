@@ -1,33 +1,49 @@
 import Foundation
+import SwiftUI
 
+/**
+ * ViewModelFactory: Orchestrates the instantiation of all mirrored logic.
+ */
 struct ViewModelFactory {
     @MainActor
     static func makeGhostCoreViewModel() -> GhostCoreViewModel {
-        return GhostCoreViewModel()
+        let viewModel = GhostCoreViewModel()
+        // Register with global log observer for the Visual Console
+        return viewModel
     }
 
     @MainActor
     static func makeGhostIOViewModel() -> GhostIOViewModel {
-        return GhostIOViewModel()
+        let viewModel = GhostIOViewModel()
+        // Register with global log observer for the Visual Console
+        return viewModel
     }
 
     @MainActor
     static func makeGhostManagerViewModel() -> GhostManagerViewModel {
-        return GhostManagerViewModel()
+        let viewModel = GhostManagerViewModel()
+        // Register with global log observer for the Visual Console
+        return viewModel
     }
 
     @MainActor
     static func makeGhostShieldViewModel() -> GhostShieldViewModel {
-        return GhostShieldViewModel()
+        let viewModel = GhostShieldViewModel()
+        // Register with global log observer for the Visual Console
+        return viewModel
     }
 
     @MainActor
     static func makeMainViewModel() -> MainViewModel {
-        return MainViewModel()
+        let viewModel = MainViewModel()
+        // Register with global log observer for the Visual Console
+        return viewModel
     }
 
     @MainActor
     static func makeRecoverViewModel() -> RecoverViewModel {
-        return RecoverViewModel()
+        let viewModel = RecoverViewModel()
+        // Register with global log observer for the Visual Console
+        return viewModel
     }
 }
