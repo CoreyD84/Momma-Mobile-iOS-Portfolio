@@ -9,7 +9,6 @@ struct GhostShieldScreen: View {
                 CodexiaTheme.background.ignoresSafeArea()
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
-                Text("[Shield] Deriving hardware-grade entropy from Master Password...")
                 Text("PBKDF2WithHmacSHA256")
                 }
                 .padding()
