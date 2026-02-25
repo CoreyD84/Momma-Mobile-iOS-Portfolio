@@ -27,6 +27,13 @@ struct ViewModelFactory {
     }
 
     @MainActor
+    static func makeGhostViewModel() -> GhostViewModel {
+        let viewModel = GhostViewModel()
+        // Register with global log observer for the Visual Console
+        return viewModel
+    }
+
+    @MainActor
     static func makeGhostShieldViewModel() -> GhostShieldViewModel {
         let viewModel = GhostShieldViewModel()
         // Register with global log observer for the Visual Console
