@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    private let screenNames = ["Ghost Core","Ghost I O","Ghost Manager","Ghost","Ghost Shield","Main","Recover"];
+    private let screenNames = ["Ghost I O","Ghost"];
 
     var body: some View {
         NavigationStack {
@@ -15,13 +15,8 @@ struct HomeScreen: View {
     @ViewBuilder
     private func destination(for name: String) -> some View {
         switch name {
-        case "Ghost Core": GhostCoreScreen()
         case "Ghost I O": GhostIOScreen()
-        case "Ghost Manager": GhostManagerScreen()
         case "Ghost": GhostScreen()
-        case "Ghost Shield": GhostShieldScreen()
-        case "Main": MainScreen()
-        case "Recover": RecoverScreen()
         default:
             Text(name)
         }
