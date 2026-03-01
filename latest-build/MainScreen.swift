@@ -9,13 +9,11 @@ struct MainScreen: View {
                 VStack {
                     Text("GHOSTKEEPER")
                     Text("Universal Data Encryption")
-                    TextField("Input", text: .constant(""))
-                    Text("Enter Ghost ID")
+                    TextField("Enter Ghost ID", text: $viewModel.ghostId)
                     Button(action: {  }) {
                         Text("Button")
                     }
-                    TextField("Input", text: .constant(""))
-                    Text("Enter Text OR...")
+                    TextField("Enter Text OR...", text: $viewModel.secretMessage)
                     Button(action: {  }) {
                         Text("FILE LOADED (Click to change)")
                     }
