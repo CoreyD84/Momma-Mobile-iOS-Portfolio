@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    private let screenNames = ["Link Child Device","Recent","Flagged","Freeze","Linked","Mascot","Scanner","Platforms","SMS","Location","Consent"];
+    private let screenNames = ["Ghost Login","Main"];
 
     var body: some View {
         NavigationStack {
@@ -15,17 +15,8 @@ struct HomeScreen: View {
     @ViewBuilder
     private func destination(for name: String) -> some View {
         switch name {
-        case "Link Child Device": GenerateLinkQrScreen()
-        case "Recent": RecentDetectionsTabScreen()
-        case "Flagged": FlaggedMessagesTabScreen()
-        case "Freeze": FreezeReflexTabScreen()
-        case "Linked": LinkedChildrenTabScreen()
-        case "Mascot": MascotMoodTabScreen()
-        case "Scanner": MessageScannerTabScreen()
-        case "Platforms": PlatformControlTabScreen()
-        case "SMS": SmsDetectionsTabScreen()
-        case "Location": LocationStatusTabScreen()
-        case "Consent": ConsentOverviewTabScreen()
+        case "Ghost Login": GhostLoginScreen()
+        case "Main": MainScreen()
         default:
             Text(name)
         }
