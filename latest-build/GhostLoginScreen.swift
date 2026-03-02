@@ -11,7 +11,7 @@ struct GhostLoginScreen: View {
                 Text("GHOSTKEEPER")
                 Text("Zero-Knowledge Entry Point")
                 TextField("Enter Ghost ID", text: $viewModel.userId)
-                Button(action: {  }) {
+                Button(action: { viewModel.onRegisterClicked(viewModel.userId) }) {
                     Text("INITIALIZE QUANTUM KEYPAIR")
                 }
                 Text("By initializing, a post-quantum keypair is generated in your device\\'s Secure Enclave.")

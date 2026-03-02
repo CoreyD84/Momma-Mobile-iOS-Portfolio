@@ -10,15 +10,8 @@ struct MainScreen: View {
                     Text("GHOSTKEEPER")
                     Text("Universal Data Encryption")
                     TextField("Enter Ghost ID", text: $viewModel.ghostId)
-                    Button(action: {  }) {
-                        Text("Button")
-                    }
-                    TextField("Enter Text OR...", text: $viewModel.secretMessage)
-                    Button(action: {  }) {
-                        Text("FILE LOADED (Click to change)")
-                    }
-                    Button(action: {  }) {
-                        Text("Button")
+                    Button(action: { viewModel.openFilePicker() }) {
+                        Text("2. ENCRYPT & GHOST DATA")
                     }
                     Button(action: {  }) {
                         Text("Button")

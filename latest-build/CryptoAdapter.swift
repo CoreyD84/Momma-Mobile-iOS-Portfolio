@@ -17,7 +17,7 @@ enum CryptoAdapter {
     static func encrypt(data: Data, with keyString: String) -> [String: String] {
         do {
             let key = key(from: keyString)
-            let nonce = try AES.GCM.Nonce()
+            let nonce = AES.GCM.Nonce()
             let sealed = try AES.GCM.seal(data, using: key, nonce: nonce)
             let cipher = sealed.combined?.base64EncodedString() ?? ""
             return ["status": "SUCCESS", "locked_payload": cipher]
