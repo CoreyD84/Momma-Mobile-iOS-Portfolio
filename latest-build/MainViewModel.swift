@@ -14,7 +14,7 @@ final class MainViewModel: ObservableObject {
     @Published var selectedExtension: String = "bin"
     func openFilePicker() {
         // Phase 2: Implement iOS .fileImporter logic
-        self.ghostId = "✅ FILE READY"
+        print("File Picker Intent Triggered")
     }
 }
 

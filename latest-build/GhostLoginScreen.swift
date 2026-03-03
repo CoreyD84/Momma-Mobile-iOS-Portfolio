@@ -5,19 +5,19 @@ struct GhostLoginScreen: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 32) {
+            VStack(alignment: .leading, spacing: 16) {
                 VStack {
                 }
                 Text("GHOSTKEEPER")
                 Text("Zero-Knowledge Entry Point")
-                TextField("Enter Ghost ID", text: $viewModel.userId).textFieldStyle(RoundedBorderTextFieldStyle()).padding(.horizontal)
+                TextField("Enter Ghost ID", text: $viewModel.userId)
                 Button(action: { viewModel.onRegisterClicked(viewModel.userId) }) {
                     Text("INITIALIZE QUANTUM KEYPAIR")
                 }
                 Text("By initializing, a post-quantum keypair is generated in your device\\'s Secure Enclave.")
 
             }
-            .padding().navigationTitle("GhostLogin")
+            .navigationTitle("GhostLogin")
         }
     }
 }

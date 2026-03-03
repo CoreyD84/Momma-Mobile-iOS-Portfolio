@@ -8,7 +8,7 @@ struct HomeScreen: View {
             List(screenNames, id: \.self) { name in
                 NavigationLink(name, destination: destination(for: name))
             }
-            .padding().navigationTitle("Dashboard")
+            .navigationTitle("Dashboard")
         }
     }
 
