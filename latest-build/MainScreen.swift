@@ -5,11 +5,11 @@ struct MainScreen: View {
 
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(spacing: 32) {
                 VStack {
                     Text("GHOSTKEEPER")
                     Text("Universal Data Encryption")
-                    TextField("Enter Ghost ID", text: $viewModel.ghostId)
+                    TextField("Enter Ghost ID", text: $viewModel.ghostId).textFieldStyle(RoundedBorderTextFieldStyle()).padding(.horizontal)
                     Button(action: { viewModel.openFilePicker() }) {
                         Text("2. ENCRYPT & GHOST DATA")
                     }
@@ -20,7 +20,7 @@ struct MainScreen: View {
                 }
 
             }
-            .navigationTitle("Main")
+            .padding().navigationTitle("Main")
         }
     }
 }
