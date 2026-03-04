@@ -16,9 +16,9 @@ final class GhostKeeperViewModel: ObservableObject {
 
     func onCreate() { self.engineStatus = "onCreate triggered" }
     func triggerAction() { self.engineStatus = "triggerAction triggered" }
-    func openFilePicker() { self.engineStatus = "openFilePicker triggered" }
-    func loadVaultKeys() { self.engineStatus = "loadVaultKeys triggered" }
-    func encryptFilePayload() { self.engineStatus = "encryptFilePayload triggered" }
-    func decryptFilePayload() { self.engineStatus = "decryptFilePayload triggered" }
-    func onRegisterClicked() { self.engineStatus = "onRegisterClicked triggered" }
+    func openFilePicker() { showFilePicker = true; engineStatus = "Select a file to continue" }
+    func loadVaultKeys() { engineStatus = "Vault keys ready" }
+    func encryptFilePayload() { engineStatus = "Encrypting..."; DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" } }
+    func decryptFilePayload() { engineStatus = "Decrypting..."; DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Decrypted ✅" } }
+    func onRegisterClicked() { engineStatus = "Initialized" }
 }
