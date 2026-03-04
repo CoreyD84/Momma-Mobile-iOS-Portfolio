@@ -17,7 +17,7 @@ final class GhostVaultViewModel: ObservableObject {
     }
 
     func onRegisterClicked() {
-        self.engineStatus = "onRegisterClicked triggered"
+        self.engineStatus = "Initialized"
     }
 
     private func performEncryption() {

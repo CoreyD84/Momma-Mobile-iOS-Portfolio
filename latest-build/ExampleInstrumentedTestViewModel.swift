@@ -12,7 +12,7 @@ final class ExampleInstrumentedTestViewModel: ObservableObject {
     }
 
     func onRegisterClicked() {
-        self.engineStatus = "onRegisterClicked triggered"
+        self.engineStatus = "Initialized"
     }
 
     private func performEncryption() {

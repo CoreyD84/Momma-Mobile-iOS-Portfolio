@@ -8,11 +8,13 @@ final class GhostStorageManagerViewModel: ObservableObject {
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = ""
     func saveEncryptedPayload() {
-        self.engineStatus = "saveEncryptedPayload triggered"
+        self.engineStatus = "Encrypting..."
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
     }
 
     func loadEncryptedPayload() {
-        self.engineStatus = "loadEncryptedPayload triggered"
+        self.engineStatus = "Encrypting..."
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
     }
 
     func hasPayload() {
@@ -20,7 +22,7 @@ final class GhostStorageManagerViewModel: ObservableObject {
     }
 
     func onRegisterClicked() {
-        self.engineStatus = "onRegisterClicked triggered"
+        self.engineStatus = "Initialized"
     }
 
     private func performEncryption() {

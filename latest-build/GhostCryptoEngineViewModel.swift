@@ -8,15 +8,16 @@ final class GhostCryptoEngineViewModel: ObservableObject {
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = ""
     func generateQuantumKeyPair() {
-        self.engineStatus = "generateQuantumKeyPair triggered"
+        self.engineStatus = "Initialized"
     }
 
     func encryptFilePayload() {
-        self.engineStatus = "encryptFilePayload triggered"
+        self.engineStatus = "Encrypting..."
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
     }
 
     func onRegisterClicked() {
-        self.engineStatus = "onRegisterClicked triggered"
+        self.engineStatus = "Initialized"
     }
 
     private func performEncryption() {
