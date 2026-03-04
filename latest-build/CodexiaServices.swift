@@ -77,24 +77,3 @@ final class ServiceHub: ObservableObject {
         self.services = services
     }
 }
-
-struct MockMapView: View {
-    var location: (lat: Double, lon: Double)?
-    var body: some View {
-        VStack {
-            Text("Map Preview")
-                .font(.headline)
-            if let location {
-                Text("Lat: \(location.lat), Lon: \(location.lon)")
-                    .font(.caption)
-            } else {
-                Text("Location unavailable")
-                    .font(.caption)
-            }
-        }
-        .frame(maxWidth: .infinity, minHeight: 120)
-        .padding()
-        .background(Color.blue.opacity(0.1))
-        .cornerRadius(12)
-    }
-}

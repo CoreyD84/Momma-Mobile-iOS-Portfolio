@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @EnvironmentObject var container: AppDependencyContainer
     private let screenNames = ["Ghost Login","Main"];
 
     var body: some View {
