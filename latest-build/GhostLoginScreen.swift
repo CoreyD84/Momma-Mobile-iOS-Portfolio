@@ -2,19 +2,21 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct GhostLoginScreen: View {
-    @StateObject var viewModel = GhostLoginViewModel()
+    @EnvironmentObject var container: AppDependencyContainer
+    @StateObject private var viewModel: GhostLoginViewModel
+
+    init(viewModel: GhostLoginViewModel? = nil) {
+        _viewModel = StateObject(wrappedValue: viewModel ?? GhostLoginViewModel())
+    }
 
     var body: some View {
         ZStack {
             CodexiaTheme.background.ignoresSafeArea()
             VStack {
-
-                VisualConsoleView()
                 VStack {
-
-                    
                     Text("GHOSTKEEPER")
                     Text("Zero-Knowledge Entry Point")
+                    TextField("Enter Ghost ID", text: $viewModel.userId).textFieldStyle(.roundedBorder)
                     Spacer().frame(minHeight: 44)
                     Button(action: { viewModel.onRegisterClicked() }) {
                         Text("INITIALIZE QUANTUM KEYPAIR")

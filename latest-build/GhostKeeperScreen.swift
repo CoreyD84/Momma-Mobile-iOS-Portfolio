@@ -1,28 +1,32 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct MainScreen: View {
-    @StateObject var viewModel = MainViewModel()
+struct GhostKeeperScreen: View {
+    @EnvironmentObject var container: AppDependencyContainer
+    @StateObject private var viewModel: GhostKeeperViewModel
+
+    init(viewModel: GhostKeeperViewModel? = nil) {
+        _viewModel = StateObject(wrappedValue: viewModel ?? GhostKeeperViewModel())
+    }
 
     var body: some View {
         ZStack {
             CodexiaTheme.background.ignoresSafeArea()
             VStack {
-
-                VisualConsoleView()
                 VStack {
-
-                    
                     Spacer().frame(minHeight: 44)
                     Text("GHOSTKEEPER")
                     Text("Universal Data Encryption")
                     Spacer().frame(minHeight: 44)
+                    TextField("Enter Ghost ID", text: $viewModel.ghostId).textFieldStyle(.roundedBorder)
                     Spacer().frame(minHeight: 44)
                     Button(action: { viewModel.loadVaultKeys() }) {
                         Text("1. LOAD VAULT KEYS")
                     }
                     Spacer().frame(minHeight: 44)
+                    Divider()
                     Spacer().frame(minHeight: 44)
+                    TextField("Enter Text OR...", text: $viewModel.secretMessage).textFieldStyle(.roundedBorder)
                     Spacer().frame(minHeight: 44)
                     Button(action: { viewModel.openFilePicker() }) {
                         Text("FILE LOADED (Click to change)")

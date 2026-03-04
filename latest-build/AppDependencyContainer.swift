@@ -8,7 +8,7 @@ final class AppDependencyContainer: ObservableObject {
     func makeGhostLoginViewModel() -> GhostLoginViewModel { 
         return GhostLoginViewModel() 
     }
-    func makeMainViewModel() -> MainViewModel { 
-        return MainViewModel() 
+    func makeGhostKeeperViewModel() -> GhostKeeperViewModel { 
+        return GhostKeeperViewModel() 
     }
 }

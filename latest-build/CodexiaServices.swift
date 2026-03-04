@@ -2,6 +2,11 @@ import Foundation
 import CoreLocation
 import SwiftUI
 
+struct CodexiaTheme {
+    static let background = Color(.systemBackground)
+    static let primary = Color.accentColor
+}
+
 struct CodexiaConfig: Decodable {
     let apiBaseURL: URL?
     let mockChildId: String?
@@ -76,4 +81,48 @@ final class ServiceHub: ObservableObject {
     private init(services: CodexiaServices = .shared) {
         self.services = services
     }
+}
+
+// Android compatibility shims for generated logic
+struct AndroidFile {
+    let url: URL
+
+    init(path: String) {
+        self.url = URL(fileURLWithPath: path)
+    }
+
+    init(parent: String, child: String) {
+        let base = parent.isEmpty
+            ? FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            : URL(fileURLWithPath: parent, isDirectory: true)
+        self.url = base.appendingPathComponent(child)
+    }
+
+    func exists() -> Bool { FileManager.default.fileExists(atPath: url.path) }
+
+    func mkdirs() {
+        try? FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
+    }
+
+    func createNewFile() {
+        if !exists() {
+            FileManager.default.createFile(atPath: url.path, contents: Data())
+        }
+    }
+
+    func writeText(_ content: String) {
+        try? content.write(to: url, atomically: true, encoding: .utf8)
+    }
+
+    func readText() -> String {
+        (try? String(contentsOf: url, encoding: .utf8)) ?? ""
+    }
+}
+
+func File(_ path: String) -> AndroidFile { AndroidFile(path: path) }
+func File(_ parent: String, _ child: String) -> AndroidFile { AndroidFile(parent: parent, child: child) }
+
+enum Base64 {
+    static func encodeToString(_ data: Data, _ flags: Any? = nil) -> String { data.base64EncodedString() }
+    static func decode(_ string: String, _ flags: Any? = nil) -> Data { Data(base64Encoded: string) ?? Data() }
 }
