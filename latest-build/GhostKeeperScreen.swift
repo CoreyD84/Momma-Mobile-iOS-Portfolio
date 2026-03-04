@@ -12,7 +12,8 @@ struct GhostKeeperScreen: View {
     var body: some View {
         ZStack {
             CodexiaTheme.background.ignoresSafeArea()
-            VStack {
+            ScrollView {
+                VStack {
                 VStack {
                     Spacer().frame(minHeight: 44)
                     Text("GHOSTKEEPER")
@@ -42,6 +43,7 @@ struct GhostKeeperScreen: View {
                     Spacer().frame(minHeight: 44)
                     Text(viewModel.engineStatus)
                     Spacer().frame(minHeight: 44)
+                }
                 }
             }
         }.fileImporter(

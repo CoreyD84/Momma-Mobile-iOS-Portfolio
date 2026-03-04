@@ -23,6 +23,8 @@ struct GhostLoginScreen: View {
                     }
                     Text("By initializing, a post-quantum keypair is generated in your device\'s Secure Enclave.")
                 }
+                Spacer().frame(minHeight: 16)
+                Text(viewModel.engineStatus)
             }
         }.fileImporter(
             isPresented: $viewModel.showFilePicker,
