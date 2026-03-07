@@ -2,15 +2,12 @@ import Foundation
 import Combine
 
 @MainActor
-final class SmsInboxViewModel: ObservableObject {
+final class GhostLoginViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = ""
+    @Published var userId: String = ""
 
-
-    func onCreate() { self.engineStatus = "onCreate triggered" }
-    func onRequestPermissionsResult() { self.engineStatus = "onRequestPermissionsResult triggered" }
-    func loadSmsInbox() { self.engineStatus = "loadSmsInbox triggered" }
     func triggerAction() { self.engineStatus = "triggerAction triggered" }
     func openFilePicker() { showFilePicker = true; engineStatus = "Select a file to continue" }
     func loadVaultKeys() { engineStatus = "Vault keys ready" }

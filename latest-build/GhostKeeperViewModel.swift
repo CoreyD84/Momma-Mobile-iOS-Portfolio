@@ -2,14 +2,19 @@ import Foundation
 import Combine
 
 @MainActor
-final class MessageScannerTabViewModel: ObservableObject {
+final class GhostKeeperViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = ""
-    @Published var input: String = ""
-    @Published var results: String = ""
-    @Published var isLoaded: String = ""
+    @Published var ghostId: String = ""
+    @Published var secretMessage: String = ""
+    @Published var activePublicKey: String = ""
+    @Published var activePrivateKey: String = ""
+    @Published var selectedFileUri: String = ""
+    @Published var selectedMimeType: String = ""
+    @Published var selectedExtension: String = ""
 
+    func onCreate() { self.engineStatus = "onCreate triggered" }
     func triggerAction() { self.engineStatus = "triggerAction triggered" }
     func openFilePicker() { showFilePicker = true; engineStatus = "Select a file to continue" }
     func loadVaultKeys() { engineStatus = "Vault keys ready" }

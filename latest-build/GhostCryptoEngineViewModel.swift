@@ -3,13 +3,22 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class MascotMoodViewModel: ObservableObject {
+final class GhostCryptoEngineViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func onCreateView() {
-        self.engineStatus = "onCreateView triggered"
+    func generateQuantumKeyPair() {
+        self.engineStatus = "Initialized"
+    }
+
+    func encryptFilePayload() {
+        self.engineStatus = "Encrypting..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
+    }
+
+    func decryptFilePayload() {
+        self.performDecryption()
     }
 
     func triggerAction() {

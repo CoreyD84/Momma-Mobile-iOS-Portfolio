@@ -3,29 +3,18 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class HarmfulPatternsViewModel: ObservableObject {
+final class GhostVaultViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
+    @Published var sharedPreferences: String = ""
 
-    func addPhrase() {
-        self.engineStatus = "addPhrase triggered"
+    func saveKeys() {
+        self.engineStatus = "saveKeys triggered"
     }
 
-    func addEmoji() {
-        self.engineStatus = "addEmoji triggered"
-    }
-
-    func loadFallbackPatterns() {
-        self.engineStatus = "loadFallbackPatterns triggered"
-    }
-
-    func loadFallbackEmojis() {
-        self.engineStatus = "loadFallbackEmojis triggered"
-    }
-
-    func getAllEmojis() {
-        self.engineStatus = "getAllEmojis triggered"
+    func loadKeys() {
+        self.engineStatus = "loadKeys triggered"
     }
 
     func triggerAction() {

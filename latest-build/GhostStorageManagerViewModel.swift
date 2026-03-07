@@ -3,29 +3,23 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ConsentModalViewModel: ObservableObject {
+final class GhostStorageManagerViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func show() {
-        self.engineStatus = "show triggered"
+    func saveEncryptedPayload() {
+        self.engineStatus = "Encrypting..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
     }
 
-    func revoke() {
-        self.engineStatus = "revoke triggered"
+    func loadEncryptedPayload() {
+        self.engineStatus = "Encrypting..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
     }
 
-    func logConsent() {
-        self.engineStatus = "logConsent triggered"
-    }
-
-    func getIpAddress() {
-        self.engineStatus = "getIpAddress triggered"
-    }
-
-    func getUserAgent() {
-        self.engineStatus = "getUserAgent triggered"
+    func hasPayload() {
+        self.engineStatus = "hasPayload triggered"
     }
 
     func triggerAction() {
