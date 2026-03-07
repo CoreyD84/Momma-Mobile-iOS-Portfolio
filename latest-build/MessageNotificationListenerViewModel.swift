@@ -3,13 +3,37 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class MessageNotificationListenerViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onNotificationPosted() {
+        self.engineStatus = "onNotificationPosted triggered"
+    }
+
+    func scanNotificationMessage() {
+        self.engineStatus = "scanNotificationMessage triggered"
+    }
+
+    func saveDetectionToFirebase() {
+        self.engineStatus = "saveDetectionToFirebase triggered"
+    }
+
+    func handleCriticalThreat() {
+        self.engineStatus = "handleCriticalThreat triggered"
+    }
+
+    func onNotificationRemoved() {
+        self.engineStatus = "onNotificationRemoved triggered"
+    }
+
+    func onListenerConnected() {
+        self.engineStatus = "onListenerConnected triggered"
+    }
+
+    func onListenerDisconnected() {
+        self.engineStatus = "onListenerDisconnected triggered"
     }
 
     func triggerAction() {

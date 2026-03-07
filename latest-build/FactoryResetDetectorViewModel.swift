@@ -3,13 +3,45 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class FactoryResetDetectorViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func checkForFactoryReset() {
+        self.engineStatus = "checkForFactoryReset triggered"
+    }
+
+    func getDeviceId() {
+        self.engineStatus = "getDeviceId triggered"
+    }
+
+    func createDeviceFingerprint() {
+        self.engineStatus = "createDeviceFingerprint triggered"
+    }
+
+    func handlePossibleFactoryReset() {
+        self.engineStatus = "handlePossibleFactoryReset triggered"
+    }
+
+    func saveGuardianInfo() {
+        self.engineStatus = "saveGuardianInfo triggered"
+    }
+
+    func alertGuardianFactoryReset() {
+        self.engineStatus = "alertGuardianFactoryReset triggered"
+    }
+
+    func logFactoryResetEvent() {
+        self.engineStatus = "logFactoryResetEvent triggered"
+    }
+
+    func isDeviceLinked() {
+        self.engineStatus = "isDeviceLinked triggered"
+    }
+
+    func getStoredGuardianInfo() {
+        self.engineStatus = "getStoredGuardianInfo triggered"
     }
 
     func triggerAction() {

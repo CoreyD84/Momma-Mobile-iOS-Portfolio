@@ -3,13 +3,41 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class PlatformEnforcementServiceViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func run() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { self.run() } // Translated Android Handler Loop
+    }
+
+    func onCreate() {
+        self.engineStatus = "onCreate triggered"
+    }
+
+    func onStartCommand() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { self.onStartCommand() } // Translated Android Handler Loop
+    }
+
+    func updateBlockedPackages() {
+        self.engineStatus = "updateBlockedPackages triggered"
+    }
+
+    func onDestroy() {
+        self.engineStatus = "onDestroy triggered"
+    }
+
+    func onBind() {
+        self.engineStatus = "onBind triggered"
+    }
+
+    func enforceBlockedApps() {
+        self.engineStatus = "enforceBlockedApps triggered"
+    }
+
+    func blockApp() {
+        self.engineStatus = "blockApp triggered"
     }
 
     func triggerAction() {

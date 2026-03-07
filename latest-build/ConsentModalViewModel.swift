@@ -3,13 +3,29 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class ConsentModalViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func show() {
+        self.engineStatus = "show triggered"
+    }
+
+    func revoke() {
+        self.engineStatus = "revoke triggered"
+    }
+
+    func logConsent() {
+        self.engineStatus = "logConsent triggered"
+    }
+
+    func getIpAddress() {
+        self.engineStatus = "getIpAddress triggered"
+    }
+
+    func getUserAgent() {
+        self.engineStatus = "getUserAgent triggered"
     }
 
     func triggerAction() {

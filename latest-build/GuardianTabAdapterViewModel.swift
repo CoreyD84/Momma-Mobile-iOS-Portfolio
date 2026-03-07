@@ -3,21 +3,28 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class GhostCryptoEngineViewModel: ObservableObject {
+final class GuardianTabAdapterViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
-    @Published var lastCiphertext: String = ""
-    func generateQuantumKeyPair() {
-        self.engineStatus = "Initialized"
+    @Published var lastCiphertext: String = "Ready"
+
+    func getItemCount() {
+        self.engineStatus = "getItemCount triggered"
     }
 
-    func encryptFilePayload() {
-        self.engineStatus = "Encrypting..."
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
+    func createFragment() {
+        self.engineStatus = "createFragment triggered"
+    }
+
+    func triggerAction() {
+        self.engineStatus = "Action Processed"
     }
 
     func onRegisterClicked() {
-        self.engineStatus = "Initialized"
+        self.engineStatus = "Initializing Quantum Keypair..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+        self.engineStatus = "✅ Keypair Ready"
+        }
     }
 
     private func performEncryption() {
@@ -26,6 +33,7 @@ final class GhostCryptoEngineViewModel: ObservableObject {
             self.engineStatus = "✅ SUCCESS: Data Ghosted"
         }
     }
+
     private func performDecryption() {
         self.engineStatus = "🔓 Decrypting Vault..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {

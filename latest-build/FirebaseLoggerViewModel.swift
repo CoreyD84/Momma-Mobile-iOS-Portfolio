@@ -3,13 +3,37 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class FirebaseLoggerViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func logDetection() {
+        self.engineStatus = "logDetection triggered"
+    }
+
+    func logCritical() {
+        self.engineStatus = "logCritical triggered"
+    }
+
+    func logEvent() {
+        self.engineStatus = "logEvent triggered"
+    }
+
+    func logSystem() {
+        self.engineStatus = "logSystem triggered"
+    }
+
+    func getTimestamp() {
+        self.engineStatus = "getTimestamp triggered"
+    }
+
+    func getGuardianId() {
+        self.engineStatus = "getGuardianId triggered"
+    }
+
+    func getChildId() {
+        self.engineStatus = "getChildId triggered"
     }
 
     func triggerAction() {

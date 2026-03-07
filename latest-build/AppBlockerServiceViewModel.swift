@@ -3,13 +3,41 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class AppBlockerServiceViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onServiceConnected() {
+        self.engineStatus = "onServiceConnected triggered"
+    }
+
+    func setupAppScopeListener() {
+        self.engineStatus = "setupAppScopeListener triggered"
+    }
+
+    func onDataChange() {
+        self.engineStatus = "onDataChange triggered"
+    }
+
+    func onCancelled() {
+        self.engineStatus = "onCancelled triggered"
+    }
+
+    func onAccessibilityEvent() {
+        self.engineStatus = "onAccessibilityEvent triggered"
+    }
+
+    func blockApp() {
+        self.engineStatus = "blockApp triggered"
+    }
+
+    func onInterrupt() {
+        self.engineStatus = "onInterrupt triggered"
+    }
+
+    func onDestroy() {
+        self.engineStatus = "onDestroy triggered"
     }
 
     func triggerAction() {

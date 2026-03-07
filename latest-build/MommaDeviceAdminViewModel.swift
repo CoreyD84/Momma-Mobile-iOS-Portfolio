@@ -3,13 +3,37 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class MommaDeviceAdminViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onEnabled() {
+        self.engineStatus = "onEnabled triggered"
+    }
+
+    func onDisabled() {
+        self.engineStatus = "onDisabled triggered"
+    }
+
+    func onDisableRequested() {
+        self.engineStatus = "onDisableRequested triggered"
+    }
+
+    func logDeviceAdminEvent() {
+        self.engineStatus = "logDeviceAdminEvent triggered"
+    }
+
+    func alertGuardianAdminDisabled() {
+        self.engineStatus = "alertGuardianAdminDisabled triggered"
+    }
+
+    func alertGuardianAdminDisableAttempt() {
+        self.engineStatus = "alertGuardianAdminDisableAttempt triggered"
+    }
+
+    func sendFinalHeartbeat() {
+        self.engineStatus = "sendFinalHeartbeat triggered"
     }
 
     func triggerAction() {

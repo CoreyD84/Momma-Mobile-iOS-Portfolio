@@ -3,13 +3,33 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class ConsentOverviewTabViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onCreateView() {
+        self.engineStatus = "onCreateView triggered"
+    }
+
+    func loadConsentStatus() {
+        self.engineStatus = "loadConsentStatus triggered"
+    }
+
+    func onDataChange() {
+        self.engineStatus = "onDataChange triggered"
+    }
+
+    func onCancelled() {
+        self.engineStatus = "onCancelled triggered"
+    }
+
+    func showMessage() {
+        self.engineStatus = "showMessage triggered"
+    }
+
+    func onDestroyView() {
+        self.engineStatus = "onDestroyView triggered"
     }
 
     func triggerAction() {

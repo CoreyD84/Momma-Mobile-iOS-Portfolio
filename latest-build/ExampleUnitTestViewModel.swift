@@ -6,13 +6,21 @@ import CryptoKit
 final class ExampleUnitTestViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
-    @Published var lastCiphertext: String = ""
+    @Published var lastCiphertext: String = "Ready"
+
     func addition_isCorrect() {
         self.engineStatus = "addition_isCorrect triggered"
     }
 
+    func triggerAction() {
+        self.engineStatus = "Action Processed"
+    }
+
     func onRegisterClicked() {
-        self.engineStatus = "Initialized"
+        self.engineStatus = "Initializing Quantum Keypair..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+        self.engineStatus = "✅ Keypair Ready"
+        }
     }
 
     private func performEncryption() {
@@ -21,6 +29,7 @@ final class ExampleUnitTestViewModel: ObservableObject {
             self.engineStatus = "✅ SUCCESS: Data Ghosted"
         }
     }
+
     private func performDecryption() {
         self.engineStatus = "🔓 Decrypting Vault..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {

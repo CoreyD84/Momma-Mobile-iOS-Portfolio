@@ -3,13 +3,21 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class MommaTakeoverViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func respond() {
+        self.engineStatus = "respond triggered"
+    }
+
+    func findInputField() {
+        self.engineStatus = "findInputField triggered"
+    }
+
+    func findSendButton() {
+        self.engineStatus = "findSendButton triggered"
     }
 
     func triggerAction() {

@@ -3,13 +3,17 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class ScannerGlobalsViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func loadFallbackPatterns() {
+        self.engineStatus = "loadFallbackPatterns triggered"
+    }
+
+    func ensureDefaultPatternsLoaded() {
+        self.engineStatus = "ensureDefaultPatternsLoaded triggered"
     }
 
     func triggerAction() {

@@ -3,13 +3,21 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class LocationTrackerServiceViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onStartCommand() {
+        self.engineStatus = "onStartCommand triggered"
+    }
+
+    func onDestroy() {
+        self.engineStatus = "onDestroy triggered"
+    }
+
+    func onBind() {
+        self.engineStatus = "onBind triggered"
     }
 
     func triggerAction() {

@@ -3,13 +3,21 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class ScannerEngineViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func loadPatterns() {
+        self.engineStatus = "loadPatterns triggered"
+    }
+
+    func scan() {
+        self.engineStatus = "scan triggered"
+    }
+
+    func logDetection() {
+        self.engineStatus = "logDetection triggered"
     }
 
     func triggerAction() {

@@ -3,13 +3,21 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class SelectedChildViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func loadLinkedChildren() {
+        self.engineStatus = "loadLinkedChildren triggered"
+    }
+
+    func selectChild() {
+        self.engineStatus = "selectChild triggered"
+    }
+
+    func getSelectedChild() {
+        self.engineStatus = "getSelectedChild triggered"
     }
 
     func triggerAction() {

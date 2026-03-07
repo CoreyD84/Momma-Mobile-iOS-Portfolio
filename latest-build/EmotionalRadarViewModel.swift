@@ -3,13 +3,25 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class EmotionalRadarViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func scanSMS() {
+        self.engineStatus = "scanSMS triggered"
+    }
+
+    func scanThirdParty() {
+        self.engineStatus = "scanThirdParty triggered"
+    }
+
+    func containsDistress() {
+        self.engineStatus = "containsDistress triggered"
+    }
+
+    func flagMessage() {
+        self.engineStatus = "flagMessage triggered"
     }
 
     func triggerAction() {

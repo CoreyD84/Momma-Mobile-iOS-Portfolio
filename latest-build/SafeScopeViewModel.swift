@@ -3,13 +3,14 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class SafeScopeViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
+    @Published var childId: String = ""
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onCreateView() {
+        self.engineStatus = "onCreateView triggered"
     }
 
     func triggerAction() {

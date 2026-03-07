@@ -3,13 +3,37 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class SubscriptionManagerViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func initializeSubscription() {
+        self.engineStatus = "Initialized"
+    }
+
+    func getSubscriptionStatus() {
+        self.engineStatus = "getSubscriptionStatus triggered"
+    }
+
+    func onDataChange() {
+        self.engineStatus = "onDataChange triggered"
+    }
+
+    func onCancelled() {
+        self.engineStatus = "onCancelled triggered"
+    }
+
+    func upgradeToPaid() {
+        self.engineStatus = "upgradeToPaid triggered"
+    }
+
+    func extendTrial() {
+        self.engineStatus = "extendTrial triggered"
+    }
+
+    func isSubscriptionActive() async {
+        self.engineStatus = "isSubscriptionActive triggered"
     }
 
     func triggerAction() {

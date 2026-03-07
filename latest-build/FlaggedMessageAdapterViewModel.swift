@@ -3,13 +3,21 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class FlaggedMessageAdapterViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onCreateViewHolder() {
+        self.engineStatus = "onCreateViewHolder triggered"
+    }
+
+    func onBindViewHolder() {
+        self.engineStatus = "onBindViewHolder triggered"
+    }
+
+    func getItemCount() {
+        self.engineStatus = "getItemCount triggered"
     }
 
     func triggerAction() {

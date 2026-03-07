@@ -3,13 +3,25 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class FirebaseExtensionsViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func addValueEventListener() {
+        self.engineStatus = "addValueEventListener triggered"
+    }
+
+    func onDataChange() {
+        self.engineStatus = "onDataChange triggered"
+    }
+
+    func onCancelled() {
+        self.engineStatus = "onCancelled triggered"
+    }
+
+    func removeEventListener() {
+        self.engineStatus = "removeEventListener triggered"
     }
 
     func triggerAction() {

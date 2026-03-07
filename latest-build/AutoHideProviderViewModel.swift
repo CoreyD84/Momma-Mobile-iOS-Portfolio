@@ -3,13 +3,33 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class AutoHideProviderViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onCreate() {
+        self.engineStatus = "onCreate triggered"
+    }
+
+    func query() {
+        self.engineStatus = "query triggered"
+    }
+
+    func getType() {
+        self.engineStatus = "getType triggered"
+    }
+
+    func insert() {
+        self.engineStatus = "insert triggered"
+    }
+
+    func delete() {
+        self.engineStatus = "delete triggered"
+    }
+
+    func update() {
+        self.engineStatus = "update triggered"
     }
 
     func triggerAction() {

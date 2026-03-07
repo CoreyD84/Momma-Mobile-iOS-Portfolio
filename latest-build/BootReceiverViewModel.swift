@@ -3,13 +3,17 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class BootReceiverViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func onReceive() {
+        self.engineStatus = "onReceive triggered"
+    }
+
+    func handleBootOrUpdate() {
+        self.engineStatus = "handleBootOrUpdate triggered"
     }
 
     func triggerAction() {

@@ -3,13 +3,29 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class ExampleInstrumentedTestViewModel: ObservableObject {
+final class HarmfulPatternsViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func useAppContext() {
-        self.engineStatus = "useAppContext triggered"
+    func addPhrase() {
+        self.engineStatus = "addPhrase triggered"
+    }
+
+    func addEmoji() {
+        self.engineStatus = "addEmoji triggered"
+    }
+
+    func loadFallbackPatterns() {
+        self.engineStatus = "loadFallbackPatterns triggered"
+    }
+
+    func loadFallbackEmojis() {
+        self.engineStatus = "loadFallbackEmojis triggered"
+    }
+
+    func getAllEmojis() {
+        self.engineStatus = "getAllEmojis triggered"
     }
 
     func triggerAction() {
