@@ -3,23 +3,13 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class GhostStorageManagerViewModel: ObservableObject {
+final class RecoverViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func saveEncryptedPayload() {
-        self.engineStatus = "Encrypting..."
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
-    }
-
-    func loadEncryptedPayload() {
-        self.engineStatus = "Encrypting..."
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
-    }
-
-    func hasPayload() {
-        self.engineStatus = "hasPayload triggered"
+    func main() {
+        self.engineStatus = "main triggered"
     }
 
     func triggerAction() {
@@ -39,7 +29,6 @@ final class GhostStorageManagerViewModel: ObservableObject {
             self.engineStatus = "✅ SUCCESS: Data Ghosted"
         }
     }
-
     private func performDecryption() {
         self.engineStatus = "🔓 Decrypting Vault..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {

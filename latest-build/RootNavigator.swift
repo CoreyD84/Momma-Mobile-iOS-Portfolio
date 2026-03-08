@@ -9,7 +9,7 @@ struct RootNavigator: View {
             if isLoggedIn { 
                 HomeScreen() 
             } else { 
-                GhostLoginScreen(viewModel: container.makeGhostLoginViewModel())
+                GhostScreen(viewModel: container.makeGhostViewModel())
                     .onTapGesture { isLoggedIn = true } 
             } 
         }

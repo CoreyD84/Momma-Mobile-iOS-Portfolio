@@ -2,12 +2,13 @@ import Foundation
 import Combine
 
 @MainActor
-final class GhostLoginViewModel: ObservableObject {
+final class MainViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = ""
-    @Published var userId: String = ""
 
+
+    func onCreate() { self.engineStatus = "onCreate triggered" }
     func triggerAction() { self.engineStatus = "triggerAction triggered" }
     func openFilePicker() { showFilePicker = true; engineStatus = "Select a file to continue" }
     func loadVaultKeys() { engineStatus = "Vault keys ready" }
