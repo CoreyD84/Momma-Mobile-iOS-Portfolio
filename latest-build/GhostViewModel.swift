@@ -21,6 +21,10 @@ final class GhostViewModel: ObservableObject {
         self.engineStatus = "Action Processed"
     }
 
+    func openFilePicker() {
+        self.showFilePicker = true
+    }
+
     func onRegisterClicked() {
         self.engineStatus = "Initializing Quantum Keypair..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {

@@ -18,7 +18,7 @@ struct GhostScreen: View {
                     Spacer().frame(minHeight: 44)
                     Text(viewModel.status)
                     Spacer().frame(minHeight: 44)
-                    Button(action: { viewModel.onPickFile("target_photo.jpg", Data()) }) {
+                    Button(action: { viewModel.openFilePicker() }) {
                         Text("Import File to Vault")
                     }
                     Spacer().frame(minHeight: 44)
@@ -37,7 +37,13 @@ struct GhostScreen: View {
             switch result {
             case .success(let urls):
                 if let url = urls.first {
-                    viewModel.engineStatus = "✅ FILE READY: \(url.lastPathComponent)"
+                    do {
+                        let fileData = try Data(contentsOf: url)
+                        viewModel.onPickFile(url.lastPathComponent, fileData)
+                        viewModel.engineStatus = "✅ FILE IMPORTED: \(url.lastPathComponent)"
+                    } catch {
+                        viewModel.engineStatus = "❌ FILE READ FAILED"
+                    }
                 }
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
