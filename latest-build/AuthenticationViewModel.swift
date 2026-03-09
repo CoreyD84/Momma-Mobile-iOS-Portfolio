@@ -8,10 +8,30 @@ final class AuthenticationViewModel: ObservableObject {
     @Published var lastCiphertext: String = ""
 
 
-    func triggerAction() { self.engineStatus = "triggerAction triggered" }
-    func openFilePicker() { showFilePicker = true; engineStatus = "Select a file to continue" }
-    func loadVaultKeys() { engineStatus = "Vault keys ready" }
-    func encryptFilePayload() { engineStatus = "Encrypting..."; DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" } }
-    func decryptFilePayload() { engineStatus = "Decrypting..."; DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Decrypted ✅" } }
-    func onRegisterClicked() { engineStatus = "Initialized" }
+    func triggerAction(_ args: Any...) {
+        self.engineStatus = "triggerAction triggered"
+    }
+    func openFilePicker(_ args: Any...) {
+        showFilePicker = true
+        engineStatus = "Select a file to continue"
+    }
+    func loadVaultKeys(_ args: Any...) {
+        engineStatus = "Vault keys ready"
+    }
+    func encryptFilePayload(_ args: Any...) {
+        let source = engineStatus.isEmpty ? "sample" : engineStatus
+        lastCiphertext = Data(source.utf8).base64EncodedString()
+        engineStatus = "Encrypted ✅"
+    }
+    func decryptFilePayload(_ args: Any...) {
+        guard let data = Data(base64Encoded: lastCiphertext), !lastCiphertext.isEmpty else {
+            engineStatus = "No encrypted payload"
+            return
+        }
+        engineStatus = "Decrypted ✅"
+    }
+    func onRegisterClicked(_ args: Any...) {
+        loadVaultKeys()
+        engineStatus = "Initialized"
+    }
 }
