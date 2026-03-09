@@ -4,7 +4,6 @@ import UniformTypeIdentifiers
 struct GhostLoginScreen: View {
     @EnvironmentObject var container: AppDependencyContainer
     @StateObject private var viewModel: GhostLoginViewModel
-    @State private var localInput1: String = ""
 
     init(viewModel: GhostLoginViewModel? = nil) {
         _viewModel = StateObject(wrappedValue: viewModel ?? GhostLoginViewModel())
@@ -17,7 +16,7 @@ struct GhostLoginScreen: View {
                 VStack {
                     Text("GHOSTKEEPER")
                     Text("Zero-Knowledge Entry Point")
-                    TextField("Enter Ghost ID", text: $localInput1).textFieldStyle(.roundedBorder)
+                    TextField("Enter Ghost ID", text: $viewModel.userId).textFieldStyle(.roundedBorder)
                     Spacer().frame(minHeight: 44)
                     Button(action: { viewModel.onRegisterClicked(viewModel.userId) }) {
                         Text("INITIALIZE QUANTUM KEYPAIR")
@@ -27,7 +26,7 @@ struct GhostLoginScreen: View {
                 Spacer().frame(minHeight: 16)
                 Text(viewModel.engineStatus)
             }
-        }.fileImporter(
+        }.foregroundStyle(CodexiaTheme.label).fileImporter(
             isPresented: $viewModel.showFilePicker,
             allowedContentTypes: [.data, .item, .content],
             allowsMultipleSelection: false
