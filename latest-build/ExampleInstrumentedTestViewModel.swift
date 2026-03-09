@@ -3,13 +3,13 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class RecoverViewModel: ObservableObject {
+final class ExampleInstrumentedTestViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
 
-    func main() {
-        self.engineStatus = "main triggered"
+    func useAppContext() {
+        self.engineStatus = "useAppContext triggered"
     }
 
     func triggerAction() {

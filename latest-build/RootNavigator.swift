@@ -8,7 +8,7 @@ struct RootNavigator: View {
     }
 
     var body: some View {
-        GhostScreen(viewModel: container.makeGhostViewModel())
+        HomeScreen()
             .environmentObject(container)
     }
 }

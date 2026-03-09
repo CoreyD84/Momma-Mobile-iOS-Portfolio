@@ -3,18 +3,20 @@ import Combine
 import CryptoKit
 
 @MainActor
-final class GhostViewModel: ObservableObject {
+final class GhostCryptoEngineViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = "Ready"
-    @Published var status: String = ""
 
-    func onPickFile(_ fileName: String, _ bytes: Data) {
-        GhostIOViewModel.shredData(bytes, fileName, 5, 3)
+    func generateQuantumKeyPair() -> (Data, Data) {
+        self.engineStatus = "Initialized"
+        return (Data(), Data())
     }
 
-    func onResurrect(_ password: String) {
-        self.engineStatus = "onResurrect triggered"
+    func encryptFilePayload(_ fileData: Data, _ masterKey: Data) -> [String: String] {
+        self.engineStatus = "Encrypting..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { self.engineStatus = "Encrypted ✅" }
+        return [:]
     }
 
     func triggerAction() {

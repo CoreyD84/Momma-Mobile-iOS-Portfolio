@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     @EnvironmentObject var container: AppDependencyContainer
-    private let screenNames = ["Ghost"];
+    private let screenNames = ["Ghost Login","Authentication"];
 
     var body: some View {
         NavigationStack {
@@ -16,7 +16,8 @@ struct HomeScreen: View {
     @ViewBuilder
     private func destination(for name: String) -> some View {
         switch name {
-        case "Ghost": GhostScreen(viewModel: container.makeGhostViewModel())
+        case "Ghost Login": GhostLoginScreen(viewModel: container.makeGhostLoginViewModel())
+        case "Authentication": AuthenticationScreen(viewModel: container.makeAuthenticationViewModel())
         default:
             Text(name)
         }

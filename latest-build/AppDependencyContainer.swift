@@ -5,7 +5,10 @@ final class AppDependencyContainer: ObservableObject {
     let services = CodexiaServices.shared
     
     // Deterministic ViewModel Factories
-    func makeGhostViewModel() -> GhostViewModel { 
-        return GhostViewModel() 
+    func makeGhostLoginViewModel() -> GhostLoginViewModel { 
+        return GhostLoginViewModel() 
+    }
+    func makeAuthenticationViewModel() -> AuthenticationViewModel { 
+        return AuthenticationViewModel() 
     }
 }
