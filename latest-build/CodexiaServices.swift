@@ -4,6 +4,8 @@ import SwiftUI
 
 struct CodexiaTheme {
     static let primary = Color(hex: "#FFD700")
+    static let secondary = Color(hex: "#4A90E2")
+    static let tertiary = Color(hex: "#9B59B6")
     static let label = Color.white
     static let background = Color(hex: "#0D001F")
     static let card = Color(hex: "#261A40")
