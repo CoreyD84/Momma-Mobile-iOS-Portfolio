@@ -24,7 +24,7 @@ final class AuthenticationViewModel: ObservableObject {
         engineStatus = "Encrypted ✅"
     }
     func decryptFilePayload(_ args: Any...) {
-        guard let data = Data(base64Encoded: lastCiphertext), !lastCiphertext.isEmpty else {
+        guard let _ = Data(base64Encoded: lastCiphertext), !lastCiphertext.isEmpty else {
             engineStatus = "No encrypted payload"
             return
         }
