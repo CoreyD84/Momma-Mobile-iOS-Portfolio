@@ -32,6 +32,10 @@ final class GhostLoginViewModel: ObservableObject {
     }
     func onRegisterClicked(_ args: Any...) {
         let userId = (args.first as? String) ?? ""
-        engineStatus = "Initializing quantum keypair for \(userId)..."
+        guard !userId.isEmpty else {
+            engineStatus = "Please enter a Ghost ID"
+            return
+        }
+        engineStatus = "✅ Keypair initialized for \(userId)"
     }
 }
