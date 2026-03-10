@@ -1,0 +1,108 @@
+{
+  "score": 341,
+  "scores": {
+    "screens": 73,
+    "viewModels": 1133,
+    "uiComponents": 87,
+    "stateVariables": 73,
+    "functions": 65,
+    "platformAPIs": 86,
+    "overall": 341
+  },
+  "issues": [
+    {
+      "type": "MISSING_SCREENS",
+      "severity": "HIGH",
+      "android": 48,
+      "ios": 35,
+      "missing": [
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/BlockedWebsiteActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/ChildLinkActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/ComposePlatformControlFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/ConsentOverviewActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/ConsentOverviewFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/FlaggedMessagesActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/FlaggedMessagesFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/GenerateLinkQrActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/LinkedChildrenActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/LinkedChildrenFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/LocationStatusActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/LocationStatusFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/LoginActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/MainActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/MascotMoodActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/MascotMoodFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/MessageScannerActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/MessageScannerFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/OnlineSafetyActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/OnlineSafetyFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/PlatformControlActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/RecentDetectionsFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/SafeScopeFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/SmsComposeActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/SmsDetectionsActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/SmsDetectionsFragment.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/SmsInboxActivity.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/VpnPermissionActivity.kt"
+      ]
+    },
+    {
+      "type": "MISSING_VIEWMODELS",
+      "severity": "HIGH",
+      "android": 3,
+      "ios": 34,
+      "missing": [
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/SelectedChildViewModel.kt",
+        "/Users/runner/work/Codexia2/Codexia2/engine/android_input/SetupActivity.kt"
+      ]
+    },
+    {
+      "type": "MISSING_UI_COMPONENTS",
+      "severity": "MEDIUM",
+      "android": 511,
+      "ios": 447,
+      "missing": [
+        "Image",
+        "Icon",
+        "Icon",
+        "Card",
+        "Card",
+        "Switch",
+        "CircularProgressIndicator",
+        "Card",
+        "Card",
+        "CircularProgressIndicator"
+      ]
+    },
+    {
+      "type": "MISSING_STATE_VARIABLES",
+      "severity": "MEDIUM",
+      "android": 15,
+      "ios": 11,
+      "missing": [
+        "_linkedChildren",
+        "_selectedChildId",
+        "_isLoading",
+        "_uiState"
+      ]
+    },
+    {
+      "type": "MISSING_FUNCTIONS",
+      "severity": "MEDIUM",
+      "android": 23,
+      "ios": 15,
+      "missing": [
+        "loadLinkedChildren",
+        "selectChild",
+        "getSelectedChild",
+        "onCreate",
+        "isAccessibilityServiceEnabled",
+        "isUsageStatsEnabled",
+        "isDeviceAdminEnabled",
+        "isNotificationListenerEnabled"
+      ]
+    }
+  ],
+  "isPerfect": false,
+  "isGood": true
+}

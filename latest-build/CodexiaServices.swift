@@ -30,7 +30,7 @@ struct CodexiaConfig: Decodable {
     let apiBaseURL: URL?
     let mockChildId: String?
 
-    static func load() -> CodexiaConfig {
+    static func load() { return CodexiaConfig { }
         if let url = Bundle.main.url(forResource: "codexia_config", withExtension: "json"),
            let data = try? Data(contentsOf: url),
            let decoded = try? JSONDecoder().decode(CodexiaConfig.self, from: data) {
@@ -40,33 +40,33 @@ struct CodexiaConfig: Decodable {
     }
 }
 
-protocol QRService {
-    func generateLink() -> String
-    func scanCode() -> String
+protocol QRNSObject {
+    func generateLink() { return String }
+    func scanCode() { return String }
 }
 
-protocol LocationService {
+protocol LocationNSObject {
     func requestPermission()
-    func currentLocation() -> (lat: Double, lon: Double)?
+    func currentLocation() { return (lat: Double, lon: Double)? }
 }
 
 protocol APIClient {
-    func get(path: String) async throws -> Data
-    func post(path: String, body: Data?) async throws -> Data
+    func get(path: String) async throws { return Data }
+    func post(path: String, body: Data?) async throws { return Data }
 }
 
-final class MockQRService: QRService {
-    func generateLink() -> String { "https://example.com/link/mock" }
-    func scanCode() -> String { "mock-scan-code" }
+final class MockQRNSObject: QRNSObject {
+    func generateLink() { return String { "https://example.com/link/mock" } }
+    func scanCode() { return String { "mock-scan-code" } }
 }
 
-final class MockLocationService: NSObject, LocationService, CLLocationManagerDelegate {
+final class MockLocationNSObject: NSObject, LocationNSObject, CLLocationManagerDelegate {
     private let manager = CLLocationManager()
     private var cachedLocation: (Double, Double)? = (37.7749, -122.4194)
     func requestPermission() {
         manager.requestWhenInUseAuthorization()
     }
-    func currentLocation() -> (lat: Double, lon: Double)? {
+    func currentLocation() { return (lat: Double, lon: Double)? { }
         if let loc = manager.location?.coordinate {
             cachedLocation = (loc.latitude, loc.longitude)
         }
@@ -75,18 +75,18 @@ final class MockLocationService: NSObject, LocationService, CLLocationManagerDel
 }
 
 final class MockAPIClient: APIClient {
-    func get(path: String) async throws -> Data { Data() }
-    func post(path: String, body: Data?) async throws -> Data { Data() }
+    func get(path: String) async throws { return Data { Data() } }
+    func post(path: String, body: Data?) async throws { return Data { Data() } }
 }
 
 final class CodexiaServices {
     static let shared = CodexiaServices()
     let config: CodexiaConfig
-    let qr: QRService
-    let location: LocationService
+    let qr: QRNSObject
+    let location: LocationNSObject
     let api: APIClient
 
-    init(config: CodexiaConfig = .load(), qr: QRService = MockQRService(), location: LocationService = MockLocationService(), api: APIClient = MockAPIClient()) {
+    init(config: CodexiaConfig = .load(), qr: QRNSObject = MockQRNSObject(), location: LocationNSObject = MockLocationNSObject(), api: APIClient = MockAPIClient()) {
         self.config = config
         self.qr = qr
         self.location = location
@@ -117,7 +117,7 @@ struct SwiftFile {
         self.url = base.appendingPathComponent(child)
     }
 
-    func exists() -> Bool { FileManager.default.fileExists(atPath: url.path) }
+    func exists() { return Bool { FileManager.default.fileExists(atPath: url.path) } }
 
     func mkdirs() {
         try? FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
@@ -133,12 +133,12 @@ struct SwiftFile {
         try? content.write(to: url, atomically: true, encoding: .utf8)
     }
 
-    func readText() -> String {
+    func readText() { return String { }
         (try? String(contentsOf: url, encoding: .utf8)) ?? ""
     }
 
     // CRITICAL: Swift file I/O methods (replaces Kotlin readBytes/writeBytes)
-    func readData() -> Data {
+    func readData() { return Data { }
         (try? Data(contentsOf: url)) ?? Data()
     }
 
@@ -147,7 +147,7 @@ struct SwiftFile {
     }
 
     // Aliases for Kotlin compatibility (in case regex doesn't catch all)
-    func readBytes() -> Data {
+    func readBytes() { return Data { }
         readData()
     }
 
@@ -164,10 +164,10 @@ struct SwiftFile {
     }
 }
 
-func File(_ path: String) -> SwiftFile { SwiftFile(path: path) }
-func File(_ parent: String, _ child: String) -> SwiftFile { SwiftFile(parent: parent, child: child) }
+func File(_ path: String) { return SwiftFile { SwiftFile(path: path) } }
+func File(_ parent: String, _ child: String) { return SwiftFile { SwiftFile(parent: parent, child: child) } }
 
 enum Base64 {
-    static func encodeToString(_ data: Data, _ flags: Any? = nil) -> String { data.base64EncodedString() }
-    static func decode(_ string: String, _ flags: Any? = nil) -> Data { Data(base64Encoded: string) ?? Data() }
+    static func encodeToString(_ data: Data, _ flags: Any? = nil) { return String { data.base64EncodedString() } }
+    static func decode(_ string: String, _ flags: Any? = nil) { return Data { Data(base64Encoded: string) ?? Data() } }
 }

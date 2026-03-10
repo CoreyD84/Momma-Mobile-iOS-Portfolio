@@ -2,20 +2,20 @@ import SwiftUI
 
 struct RootNavigator: View {
     @StateObject private var container: AppDependencyContainer
-    @StateObject private var rootViewModel: GhostLoginViewModel
+    @StateObject private var rootViewModel: LinkedChildrenTabViewModel
 
     init() {
         let c = AppDependencyContainer()
         _container = StateObject(wrappedValue: c)
-        _rootViewModel = StateObject(wrappedValue: c.makeGhostLoginViewModel())
+        _rootViewModel = StateObject(wrappedValue: c.makeLinkedChildrenTabViewModel())
     }
 
     var body: some View {
         Group {
             if rootViewModel.isInitialized {
-                AuthenticationScreen(viewModel: container.makeAuthenticationViewModel())
+                BlockedAppScreen(viewModel: container.makeBlockedAppViewModel())
             } else {
-                GhostLoginScreen(viewModel: rootViewModel)
+                LinkedChildrenTabScreen(viewModel: rootViewModel)
             }
         }
         .environmentObject(container)
