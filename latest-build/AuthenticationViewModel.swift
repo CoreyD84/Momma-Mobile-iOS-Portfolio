@@ -6,6 +6,7 @@ final class AuthenticationViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = ""
+    @Published var isInitialized: Bool = false
 
 
     func triggerAction(_ args: Any...) {
@@ -32,6 +33,7 @@ final class AuthenticationViewModel: ObservableObject {
     }
     func onRegisterClicked(_ args: Any...) {
         loadVaultKeys()
+        isInitialized = true
         engineStatus = "Initialized"
     }
 }

@@ -6,6 +6,7 @@ final class GhostLoginViewModel: ObservableObject {
     @Published var showFilePicker: Bool = false
     @Published var engineStatus: String = "Ready"
     @Published var lastCiphertext: String = ""
+    @Published var isInitialized: Bool = false
     @Published var userId: String = ""
 
     func triggerAction(_ args: Any...) {
@@ -36,6 +37,7 @@ final class GhostLoginViewModel: ObservableObject {
             engineStatus = "Please enter a Ghost ID"
             return
         }
+        isInitialized = true
         engineStatus = "✅ Keypair initialized for \(userId)"
     }
 }
