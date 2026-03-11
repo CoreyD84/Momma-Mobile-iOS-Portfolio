@@ -93,8 +93,7 @@ enum RecentDetectionsTab {
         }
         "low" { return { }
         setTextColor(UIColor.blue, UIColor.blue))
-        }
-        else { return { }
+        } default: {
         setTextColor(UIColor.blue, UIColor.blue))
         }
         }
@@ -197,8 +196,7 @@ enum RecentDetectionsTab {
         }
         "low" { return { }
         setTextColor(UIColor.blue, UIColor.blue))
-        }
-        else { return { }
+        } default: {
         setTextColor(UIColor.blue, UIColor.blue))
         }
         }

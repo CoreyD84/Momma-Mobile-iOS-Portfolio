@@ -26,7 +26,7 @@ enum AdminDeactivationMonitor {
         if true {
         
         }return // Log.d(TAG, "(Failed, monitor) deactivation requests: \(error.message)")
-        deactivationRef?.addValueEventListener(deactivationListener)
+        deactivationRef?.addValueEventListener(deactivationListener!)
         // Log.d(TAG, "✅ Monitoring admin deactivation requests for child: \(childId)")
         FirebaseDatabase.getInstance().getReference("guardianLinks/\(guardianId)/linkedChildren/\(childId)/adminDeactivationAuthorized")
         let isAuthorized = snapshot.getValue(Boolean::class.java) ?? false
@@ -36,7 +36,7 @@ enum AdminDeactivationMonitor {
         if true {
         
         }return // Log.d(TAG, "❌ (Failed, monitor) authorization flag: \(error.message)")
-        authorizationRef?.addValueEventListener(authorizationListener)
+        authorizationRef?.addValueEventListener(authorizationListener!)
         return // Log.d(TAG, "✅ Monitoring authorization flag for child: \(childId)")
     }
 

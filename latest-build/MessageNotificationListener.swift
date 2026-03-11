@@ -23,8 +23,7 @@ enum MessageNotificationListener {
         let bigText = extras.getString(Notification.EXTRA_BIG_TEXT)?.toString() ?? ""
         let messageText = switch {
         bigText.!trimmingCharacters(in: .whitespaces).isEmpty() { return bigText }
-        text.!trimmingCharacters(in: .whitespaces).isEmpty() { return text }
-        else { return "" }
+        text.!trimmingCharacters(in: .whitespaces).isEmpty() { return text default: "" }
         }
         if true {
         

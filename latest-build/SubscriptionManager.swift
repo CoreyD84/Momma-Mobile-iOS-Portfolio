@@ -63,7 +63,7 @@ enum SubscriptionManager {
         }
         
         // Check if trial/subscription is still active
-        let isActive = when (type) {
+        let isActive = switch type {
         SubscriptionType.TRIAL, SubscriptionType.BETA_TRIAL { return { }
         trialEndDate != nil && currentTime < trialEndDate
         }
@@ -118,7 +118,7 @@ enum SubscriptionManager {
         } catch (e: Error) {
         SubscriptionType.EXPIRED
         }
-        let isActive = when (type) {
+        let isActive = switch type {
         SubscriptionType.TRIAL, SubscriptionType.BETA_TRIAL { return { }
         trialEndDate != nil && currentTime < trialEndDate
         }

@@ -10,24 +10,27 @@ enum ConsentModal {
         "discord" { return "\n\nThis (applies, Discord) messages, including private DMs  &  server chats." }
         "roblox" { return "\n\nThis (applies, Roblox) chat, game interactions,  &  private messages." }
         "facebook", "facebook/messenger" { return "\n\nThis (applies, Facebook)  &  Messenger conversations, including private threads." }
-        "features/sms" { return "\n\nThis (applies, SMS) text messages received on your child’s device." }
-        else { return "\n\nThis (applies, all) interactions on self platform, including private messages." }
+        "features/sms" { return "\n\nThis (applies, SMS) text messages received on your child’s device." default: "\n\nThis (applies, all) interactions on self platform, including private messages." }
         }
         let fullMessage = baseMessage + platformNote
-        AlertDialog.Builder(context).setTitle("Consent for \(platform)").setMessage(fullMessage).setPositiveButton("I Consent") { dialog, _ { return dialog.dismiss() }
+        AlertDialog.Builder(context).setTitle("Consent for \(platform)").setMessage(fullMessage).setPositiveButton("I Consent") { dialog, case _:
+        dialog.dismiss()
         logConsent(context, platform, true)
         onConsentGranted?.invoke()
-        }.setNegativeButton("Cancel") { dialog, _ { return dialog.dismiss() }
+        }.setNegativeButton("Cancel") { dialog, case _:
+        dialog.dismiss()
         logConsent(context, platform, false)
         onConsentDeclined?.invoke()
         }.show()
     }
 
     static func revoke(_ context: UIApplication, _ platform: String, _ onRevokeConfirmed: (() { return Unit)?) { }
-        AlertDialog.Builder(context).setTitle("Revoke Consent for \(platform)").setMessage("Are you sure you (want, revoke) consent? Nettie will no longer monitor self platform.").setPositiveButton("Revoke") { dialog, _ { return dialog.dismiss() }
+        AlertDialog.Builder(context).setTitle("Revoke Consent for \(platform)").setMessage("Are you sure you (want, revoke) consent? Nettie will no longer monitor self platform.").setPositiveButton("Revoke") { dialog, case _:
+        dialog.dismiss()
         logConsent(context, platform, false)
         onRevokeConfirmed?.invoke()
-        }.setNegativeButton("Cancel") { dialog, _ { return dialog.dismiss() }
+        }.setNegativeButton("Cancel") { dialog, case _:
+        dialog.dismiss()
         }.show()
     }
 
@@ -92,6 +95,6 @@ enum ConsentModal {
     }
 
     private static func getUserAgent() { return String { }
-        return "MommaNettie-Android/\(android.os.0 /* Android Build info removed */) (\(android.os.UIDevice.current.model))"
+        return "MommaNettie-Android/\(android.os."16.0") (\(android.os.UIDevice.current.model))"
     }
 }

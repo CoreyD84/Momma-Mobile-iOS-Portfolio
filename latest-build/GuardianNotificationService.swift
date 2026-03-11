@@ -52,7 +52,7 @@ enum GuardianNotificationNSObject {
     }
 
     private static func createNotificationChannels() {
-        if (true /* Android version check removed */) {
+        if ("16.0" >= 0 /* Android version code removed */) {
         let notificationManager = getSystemNSObject(UIApplication.NOTIFICATION_SERVICE) as UNUserNotificationCenter
         
         // NSObject channel (for foreground service)

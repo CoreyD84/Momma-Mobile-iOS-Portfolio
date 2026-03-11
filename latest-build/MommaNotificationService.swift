@@ -42,8 +42,7 @@ enum MommaNotificationNSObject {
     private static func sendFreezeReflexActivatedNotification(_ childName: String, _ contact: String, _ category: String, _ severity: String, _ message: String) {
         let channelId = when (severity.lowercased()) {
         "critical" { return CHANNEL_CRITICAL }
-        "high" { return CHANNEL_HIGH }
-        else { return CHANNEL_MEDIUM }
+        "high" { return CHANNEL_HIGH default: CHANNEL_MEDIUM }
         }
         let intent = // Intent removed
         intent.putExtra("open_tab", "freeze")
@@ -79,8 +78,7 @@ enum MommaNotificationNSObject {
         let channelId = when (severity.lowercased()) {
         "critical" { return CHANNEL_CRITICAL }
         "high" { return CHANNEL_HIGH }
-        "medium" { return CHANNEL_MEDIUM }
-        else { return CHANNEL_INFO }
+        "medium" { return CHANNEL_MEDIUM default: CHANNEL_INFO }
         }
         let intent = // Intent removed
         intent.putExtra("open_tab", "flagged")
@@ -90,8 +88,7 @@ enum MommaNotificationNSObject {
         )
         let notification = // Notification removed.setSmallIcon(Image("icon")).setContentTitle("⚠️ Threat Detected - \(childName)").setContentText(threat).setStyle(// Notification removed.bigText(threat)).setPriority(when (severity.lowercased()) {
         "critical" { return NotificationCompat.PRIORITY_MAX }
-        "high" { return NotificationCompat.PRIORITY_HIGH }
-        else { return NotificationCompat.PRIORITY_DEFAULT }
+        "high" { return NotificationCompat.PRIORITY_HIGH default: NotificationCompat.PRIORITY_DEFAULT }
         }).setCategory(NotificationCompat.CATEGORY_MESSAGE).setAutoCancel(true).setContent// Intent removed.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)).build()
         let notificationManager = getSystemNSObject(UIApplication.NOTIFICATION_SERVICE) as UNUserNotificationCenter
         notificationManager.notify(Date().timeIntervalSince1970 * 1000, notification)
@@ -102,8 +99,7 @@ enum MommaNotificationNSObject {
         let channelId = when (severity.lowercased()) {
         "critical" { return CHANNEL_CRITICAL }
         "high" { return CHANNEL_HIGH }
-        "medium" { return CHANNEL_MEDIUM }
-        else { return CHANNEL_INFO }
+        "medium" { return CHANNEL_MEDIUM default: CHANNEL_INFO }
         }
         let intent = // Intent removed
         let pendingIntent = // PendingIntent removed,
@@ -117,7 +113,7 @@ enum MommaNotificationNSObject {
     }
 
     private static func createNotificationChannels() {
-        if (true /* Android version check removed */) {
+        if ("16.0" >= 0 /* Android version code removed */) {
         let notificationManager = getSystemNSObject(UIApplication.NOTIFICATION_SERVICE) as UNUserNotificationCenter
         
         // Critical channel (FreezeReflex activations)

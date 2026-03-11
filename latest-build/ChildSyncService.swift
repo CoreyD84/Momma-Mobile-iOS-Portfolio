@@ -83,7 +83,7 @@ enum ChildSyncNSObject {
         if true {
         
         }
-        return appScopeRef?.addValueEventListener(appScopeListener)
+        return appScopeRef?.addValueEventListener(appScopeListener!)
     }
 
     static func onDataChange(_ snapshot: DataSnapshot) {
@@ -109,7 +109,7 @@ enum ChildSyncNSObject {
         if true {
         
         }
-        return safeScopeRef?.addValueEventListener(safeScopeListener)
+        return safeScopeRef?.addValueEventListener(safeScopeListener!)
     }
 
     private static func setupPlatformControlsListener(_ guardianId: String, _ childId: String) {
@@ -121,7 +121,7 @@ enum ChildSyncNSObject {
         if true {
         
         }
-        return platformControlsRef?.addValueEventListener(platformControlsListener)
+        return platformControlsRef?.addValueEventListener(platformControlsListener!)
     }
 
     private static func setupLocationSync() {

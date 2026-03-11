@@ -9,7 +9,8 @@ final class BootReceiver: ObservableObject {
     @Published var lastCiphertext: String = "Ready"
 
     func onReceive(_ context: UIApplication, _ intent: Notification /* Intent type */) {
-        self.engineStatus = "onReceive triggered"
+        return // Log.d("MommaStealth", "Boot  |  update detected. Ensuring service state  &  icon visibility.")
+        return handleBootOrUpdate(context)
     }
 
     private func handleBootOrUpdate(_ context: UIApplication) {

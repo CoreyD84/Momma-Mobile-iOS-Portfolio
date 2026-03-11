@@ -9,8 +9,65 @@ final class ScannerGlobals: ObservableObject {
     @Published var lastCiphertext: String = "Ready"
 
     func loadFallbackPatterns() { return Map<String, List<String>> { }
-        self.engineStatus = "loadFallbackPatterns triggered"
-        return Map<String, List<String>>()
+        return // Log.d("ScannerGlobals", "Loading fallback emotional/threat patterns")
+        return [
+        // Emotions
+        "emotion_sadness" : [
+        "i want : disappear",
+        "i feel so sad",
+        "i am depressed",
+        "i can't do self anymore"
+        ),
+        "emotion_anger" : [
+        "i hate you",
+        "i'm so mad",
+        "i'm furious"
+        ),
+        "emotion_anxiety" : [
+        "i'm anxious",
+        "i'm worried",
+        "panic attack"
+        ),
+        
+        // Threats / safety-related
+        "threat_self_harm" : [
+        "i want : hurt myself",
+        "i want : kill myself",
+        "self harm",
+        "suicidal"
+        ),
+        "threat_bullying" : [
+        "you're worthless",
+        "no one likes you",
+        "go away loser"
+        ),
+        "threat_grooming" : [
+        "keep self secret",
+        "don't tell your parents",
+        "don't tell anyone",
+        "don't tell your mom",
+        "don't tell your dad",
+        "how old are you",
+        "what's your age",
+        "where do you live",
+        "what school do you go :",
+        "are you alone",
+        "when are your parents home",
+        "send me pics",
+        "show me",
+        "meet up",
+        "come over",
+        "our little secret",
+        "mature for your age",
+        "special relationship",
+        "talk privately",
+        "let's talk privately",
+        "create another account",
+        "make another account",
+        "get a new account",
+        "use a different account"
+        )
+        ]
     }
 
     func ensureDefaultPatternsLoaded() {

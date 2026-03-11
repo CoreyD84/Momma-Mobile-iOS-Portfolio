@@ -104,7 +104,7 @@ enum ConsentOverviewTab {
         // Remove (listener, avoid) leaks
         if (!householdId.isNullOrEmpty() && !guardianId.isNullOrEmpty() && consentListener != nil) {
         let ref = database.getReference("consent_status/\(householdId)/\(guardianId)")
-        ref.removeEventListener(consentListener)
+        ref.removeEventListener(consentListener!)
         }
     }
 }
